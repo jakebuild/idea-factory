@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#9c9ca2",
+              "on-error-container": "#6e0a12",
+              "surface-container": "#ededf6",
+              "tertiary-container": "#e4ceff",
+              "inverse-surface": "#0d0e12",
+              "secondary-fixed-dim": "#cdd4eb",
+              "tertiary-dim": "#5d4b74",
+              "inverse-primary": "#b6ccff",
+              "tertiary-fixed-dim": "#d6c0f0",
+              "error-container": "#fa746f",
+              "on-tertiary-fixed-variant": "#5e4c75",
+              "tertiary": "#695781",
+              "secondary": "#575f72",
+              "on-secondary-container": "#4a5264",
+              "surface-container-high": "#e7e7f1",
+              "tertiary-fixed": "#e4ceff",
+              "on-secondary-fixed": "#383f51",
+              "primary-dim": "#3d537e",
+              "surface-container-low": "#f3f3fa",
+              "primary-fixed": "#b6ccff",
+              "on-surface": "#2f323a",
+              "on-primary-fixed": "#182f59",
+              "on-tertiary": "#fef6ff",
+              "on-background": "#2f323a",
+              "surface-bright": "#faf9fe",
+              "on-primary": "#f9f8ff",
+              "surface-tint": "#495f8b",
+              "surface-variant": "#e0e2ed",
+              "secondary-fixed": "#dbe2f9",
+              "on-secondary-fixed-variant": "#545b6e",
+              "on-secondary": "#f9f8ff",
+              "on-primary-container": "#2d436e",
+              "secondary-dim": "#4b5366",
+              "on-error": "#fff7f6",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#5c5f68",
+              "outline": "#787a84",
+              "on-tertiary-fixed": "#413057",
+              "primary": "#495f8b",
+              "background": "#faf9fe",
+              "primary-container": "#b6ccff",
+              "outline-variant": "#afb1bc",
+              "surface-dim": "#d8d9e4",
+              "surface-container-highest": "#e0e2ed",
+              "on-primary-fixed-variant": "#374c77",
+              "on-tertiary-container": "#54436b",
+              "error-dim": "#67040d",
+              "error": "#a83836",
+              "surface": "#faf9fe",
+              "secondary-container": "#dbe2f9",
+              "primary-fixed-dim": "#a9bef0"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+html, body { margin: 0; padding: 0; background: #111827; min-height: 100vh; }
+body { display: flex; justify-content: center; align-items: flex-start; padding: 32px 16px; box-sizing: border-box; }
+.phone-frame { width: 390px; min-height: 844px; background: #fff; border-radius: 44px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,255,255,0.08); position: relative; flex-shrink: 0; }
+</style>
+</head>
+<body class="bg-background text-on-surface min-h-screen pb-32"><div class="phone-frame">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-[#faf9fe] dark:bg-slate-950 flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="text-[#495f8b] dark:text-[#8FB3FF] active:scale-95 duration-200 hover:bg-[#ededf6] dark:hover:bg-slate-800 p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-plus-jakarta text-lg font-semibold text-[#2f323a] dark:text-slate-100">Settings</h1>
+</div>
+<div class="text-xl font-bold text-[#495f8b] dark:text-[#8FB3FF]">MoodDot</div>
+</header>
+<main class="max-w-2xl mx-auto px-6 mt-8 space-y-10">
+<!-- Notifications Section -->
+<section class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">notifications</span>
+<h2 class="text-xl font-bold tracking-tight text-on-surface">Notifications</h2>
+</div>
+<div class="bg-surface-container-low rounded-xl p-6 space-y-6">
+<!-- Toggle Row -->
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<p class="font-semibold text-on-surface">Weekly Insights Report</p>
+<p class="text-sm text-on-surface-variant">Personalized emotional trends via email</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Time Picker Row -->
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<p class="font-semibold text-on-surface">Daily Reminder Time</p>
+<p class="text-sm text-on-surface-variant">When we check in on you</p>
+</div>
+<div class="bg-surface-container-highest px-4 py-2 rounded-lg font-bold text-primary flex items-center gap-2">
+<span>9:00 PM</span>
+<span class="material-symbols-outlined text-sm">schedule</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Tag Management Section -->
+<section class="space-y-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">sell</span>
+<h2 class="text-xl font-bold tracking-tight text-on-surface">Tag Management</h2>
+</div>
+<button class="flex items-center gap-2 text-sm font-bold text-primary hover:opacity-80 transition-opacity uppercase tracking-wider">
+<span class="material-symbols-outlined text-lg">add</span>
+                    Add Custom Tag
+                </button>
+</div>
+<div class="grid grid-cols-1 gap-3">
+<!-- Tag Item: Work -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-4 rounded-lg shadow-[0_4px_12px_rgba(47,50,58,0.03)] group hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-grab active:cursor-grabbing">drag_indicator</span>
+<div class="w-2 h-2 rounded-full bg-primary-container"></div>
+<span class="font-medium">Work</span>
+</div>
+<button class="text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<!-- Tag Item: Exercise -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-4 rounded-lg shadow-[0_4px_12px_rgba(47,50,58,0.03)] group hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-grab active:cursor-grabbing">drag_indicator</span>
+<div class="w-2 h-2 rounded-full bg-tertiary-container"></div>
+<span class="font-medium">Exercise</span>
+</div>
+<button class="text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<!-- Tag Item: Sleep -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-4 rounded-lg shadow-[0_4px_12px_rgba(47,50,58,0.03)] group hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-grab active:cursor-grabbing">drag_indicator</span>
+<div class="w-2 h-2 rounded-full bg-secondary-container"></div>
+<span class="font-medium">Sleep</span>
+</div>
+<button class="text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<!-- Tag Item: Social -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-4 rounded-lg shadow-[0_4px_12px_rgba(47,50,58,0.03)] group hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-grab active:cursor-grabbing">drag_indicator</span>
+<div class="w-2 h-2 rounded-full bg-primary-fixed"></div>
+<span class="font-medium">Social</span>
+</div>
+<button class="text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<!-- Tag Item: Nature -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-4 rounded-lg shadow-[0_4px_12px_rgba(47,50,58,0.03)] group hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-grab active:cursor-grabbing">drag_indicator</span>
+<div class="w-2 h-2 rounded-full bg-on-tertiary-fixed-variant"></div>
+<span class="font-medium">Nature</span>
+</div>
+<button class="text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+<!-- Tag Item: Hobby -->
+<div class="flex items-center justify-between bg-surface-container-lowest p-4 rounded-lg shadow-[0_4px_12px_rgba(47,50,58,0.03)] group hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-grab active:cursor-grabbing">drag_indicator</span>
+<div class="w-2 h-2 rounded-full bg-surface-variant"></div>
+<span class="font-medium">Hobby</span>
+</div>
+<button class="text-outline-variant opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Data Section -->
+<section class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">database</span>
+<h2 class="text-xl font-bold tracking-tight text-on-surface">Data</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 px-6 py-4 rounded-full border-2 border-outline-variant text-on-surface font-bold hover:bg-surface-container transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined">download</span>
+                    Export Data as CSV
+                </button>
+<button class="flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-error-container text-on-error-container font-bold hover:opacity-90 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined">delete_forever</span>
+                    Clear All Data
+                </button>
+</div>
+<p class="text-center text-xs text-on-surface-variant px-12">
+                Clearing your data is permanent and cannot be undone. Please ensure you have exported your journal if you wish to keep your history.
+            </p>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-sm border-t border-surface-variant/20 flex justify-around items-center px-2 py-2 pb-safe" style="padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));">
+<button onclick="window.location.href='35d2830e5dda4d30aebf4094247b4b4a.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">home</span></div>
+<span class="text-[10px] font-semibold">Home</span>
+</button><button onclick="window.location.href='abbb7773a73b44cd9c6ccc6ec3793243.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">calendar_month</span></div>
+<span class="text-[10px] font-semibold">Calendar</span>
+</button><button onclick="window.location.href='d3dba6ef50524b6c905109f45cc10fbf.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">bar_chart</span></div>
+<span class="text-[10px] font-semibold">Patterns</span>
+</button><button onclick="window.location.href='68b0c5de728a4e248a8641faac3b2eb6.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-primary font-bold transition-colors hover:text-primary">
+<div class="bg-primary-container/50 rounded-full px-3 py-1"><span class="material-symbols-outlined text-[22px]">settings</span></div>
+<span class="text-[10px] font-semibold">Settings</span>
+</button>
+</nav>
+</div>
+</body></html>

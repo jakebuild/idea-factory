@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Serene Pulse - MoodDot Widget</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-surface": "#2f323a",
+                        "tertiary-dim": "#5d4b74",
+                        "error-container": "#fa746f",
+                        "surface-container": "#ededf6",
+                        "primary": "#495f8b",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#374c77",
+                        "inverse-on-surface": "#9c9ca2",
+                        "on-error-container": "#6e0a12",
+                        "tertiary-fixed": "#e4ceff",
+                        "on-tertiary-fixed": "#413057",
+                        "surface-container-low": "#f3f3fa",
+                        "primary-container": "#b6ccff",
+                        "secondary": "#575f72",
+                        "surface": "#faf9fe",
+                        "surface-container-high": "#e7e7f1",
+                        "inverse-surface": "#0d0e12",
+                        "error": "#a83836",
+                        "on-secondary-fixed": "#383f51",
+                        "inverse-primary": "#b6ccff",
+                        "tertiary": "#695781",
+                        "on-surface-variant": "#5c5f68",
+                        "on-primary": "#f9f8ff",
+                        "surface-variant": "#e0e2ed",
+                        "surface-bright": "#faf9fe",
+                        "on-tertiary": "#fef6ff",
+                        "secondary-fixed": "#dbe2f9",
+                        "on-secondary-container": "#4a5264",
+                        "tertiary-fixed-dim": "#d6c0f0",
+                        "on-secondary-fixed-variant": "#545b6e",
+                        "outline": "#787a84",
+                        "surface-dim": "#d8d9e4",
+                        "on-error": "#fff7f6",
+                        "error-dim": "#67040d",
+                        "on-primary-container": "#2d436e",
+                        "on-tertiary-fixed-variant": "#5e4c75",
+                        "primary-dim": "#3d537e",
+                        "on-tertiary-container": "#54436b",
+                        "secondary-dim": "#4b5366",
+                        "outline-variant": "#afb1bc",
+                        "primary-fixed": "#b6ccff",
+                        "on-background": "#2f323a",
+                        "on-secondary": "#f9f8ff",
+                        "surface-tint": "#495f8b",
+                        "background": "#faf9fe",
+                        "tertiary-container": "#e4ceff",
+                        "surface-container-highest": "#e0e2ed",
+                        "on-primary-fixed": "#182f59",
+                        "primary-fixed-dim": "#a9bef0",
+                        "secondary-fixed-dim": "#cdd4eb",
+                        "secondary-container": "#dbe2f9"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            background: rgba(250, 249, 254, 0.7);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #495f8b 0%, #3d537e 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+html, body { margin: 0; padding: 0; background: #111827; min-height: 100vh; }
+body { display: flex; justify-content: center; align-items: flex-start; padding: 32px 16px; box-sizing: border-box; }
+.phone-frame { width: 390px; min-height: 844px; background: #fff; border-radius: 44px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,255,255,0.08); position: relative; flex-shrink: 0; }
+</style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex items-center justify-center p-6"><div class="phone-frame">
+<!-- Mobile Home Screen Mockup Wrapper -->
+<div class="relative w-full max-w-[400px] aspect-[9/19.5] bg-slate-900 rounded-[3rem] border-[8px] border-slate-800 shadow-2xl overflow-hidden flex flex-col">
+<!-- Wallpaper Background -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-tr from-[#dbe2f9] via-[#faf9fe] to-[#e4ceff] opacity-60"></div>
+<img class="w-full h-full object-cover mix-blend-overlay opacity-40" data-alt="Soft abstract fluid gradient with pastel lavender and muted blue tones, clean and peaceful visual style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxtI09XZBK8RjoRw6zE5UZ6adb7DJ2Sg5iEeEfnsU4G6wT1kp5EpLkUI1Vhnu4AM7YgrCZ9ZLM3Fck8y-2OfLl22gjobkaLoz5jBKdgkQUa_rNlAcjsH92U43vy9A-yqJZsJtABP_ByMnW20JFojQs7jw2HAObn0mPc2nasb52hsQR2UY_c2mI7xYpIM2Dg0NyYSkKo9Q7UMPDdYaJAsN7_SD2BMlOOocqhJukJYsashVafSp9InLp1CfIWhkv2uV7-vgnJ6pToYI"/>
+</div>
+<!-- Status Bar -->
+<div class="relative z-10 px-8 pt-4 flex justify-between items-center text-on-surface/80">
+<span class="text-xs font-bold">9:41</span>
+<div class="flex gap-1.5 items-center">
+<span class="material-symbols-outlined text-sm">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-sm">wifi</span>
+<span class="material-symbols-outlined text-sm">battery_full</span>
+</div>
+</div>
+<!-- Home Screen Content -->
+<div class="relative z-10 flex-1 px-6 pt-12 flex flex-col gap-8">
+<!-- Date & Time Large -->
+<div class="flex flex-col items-center gap-1 mb-4">
+<h2 class="text-4xl font-light tracking-tight text-on-surface">Monday</h2>
+<p class="text-on-surface-variant font-medium">October 24</p>
+</div>
+<!-- MoodDot Widget (The Core Task) -->
+<div class="w-full bg-surface-container-lowest/80 backdrop-blur-md rounded-xl p-6 shadow-[0_12px_32px_rgba(47,50,58,0.06)] border border-white/20">
+<div class="flex justify-between items-center mb-6">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant/70">Serene Pulse</span>
+</div>
+<span class="text-[10px] font-bold text-primary/60 bg-primary-container/30 px-2 py-0.5 rounded-full">LIVE WIDGET</span>
+</div>
+<h3 class="text-lg font-bold text-on-surface mb-2">How are you feeling?</h3>
+<p class="text-xs text-on-surface-variant mb-6">Log your mood instantly from home</p>
+<!-- Emoji Row -->
+<div class="flex justify-between items-center gap-2">
+<!-- Mood 1 -->
+<button class="group flex flex-col items-center gap-2 flex-1" onclick="window.location.href='6d76bfb4379d4d09b2391d613cdb550f.html'">
+<div class="w-full aspect-square flex items-center justify-center bg-surface-container rounded-lg group-hover:bg-error-container/20 group-active:scale-90 transition-all duration-200">
+<span class="text-3xl filter grayscale group-hover:grayscale-0 transition-all">😢</span>
+</div>
+<span class="text-[10px] font-medium text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">Sad</span>
+</button>
+<!-- Mood 2 -->
+<button class="group flex flex-col items-center gap-2 flex-1" onclick="window.location.href='6d76bfb4379d4d09b2391d613cdb550f.html'">
+<div class="w-full aspect-square flex items-center justify-center bg-surface-container rounded-lg group-hover:bg-secondary-container group-active:scale-90 transition-all duration-200">
+<span class="text-3xl filter grayscale group-hover:grayscale-0 transition-all">😞</span>
+</div>
+<span class="text-[10px] font-medium text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">Down</span>
+</button>
+<!-- Mood 3 -->
+<button class="group flex flex-col items-center gap-2 flex-1" onclick="window.location.href='6d76bfb4379d4d09b2391d613cdb550f.html'">
+<div class="w-full aspect-square flex items-center justify-center bg-surface-container rounded-lg group-hover:bg-surface-variant group-active:scale-90 transition-all duration-200">
+<span class="text-3xl filter grayscale group-hover:grayscale-0 transition-all">😐</span>
+</div>
+<span class="text-[10px] font-medium text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">Neutral</span>
+</button>
+<!-- Mood 4 -->
+<button class="group flex flex-col items-center gap-2 flex-1" onclick="window.location.href='6d76bfb4379d4d09b2391d613cdb550f.html'">
+<div class="w-full aspect-square flex items-center justify-center bg-surface-container rounded-lg group-hover:bg-primary-container group-active:scale-90 transition-all duration-200">
+<span class="text-3xl filter grayscale group-hover:grayscale-0 transition-all">😊</span>
+</div>
+<span class="text-[10px] font-medium text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">Good</span>
+</button>
+<!-- Mood 5 -->
+<button class="group flex flex-col items-center gap-2 flex-1" onclick="window.location.href='6d76bfb4379d4d09b2391d613cdb550f.html'">
+<div class="w-full aspect-square flex items-center justify-center bg-surface-container rounded-lg group-hover:bg-[#c4ffb6]/40 group-active:scale-90 transition-all duration-200">
+<span class="text-3xl filter grayscale group-hover:grayscale-0 transition-all">😄</span>
+</div>
+<span class="text-[10px] font-medium text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">Great</span>
+</button>
+</div>
+</div>
+<!-- Other App Icons (Contextual) -->
+<div class="grid grid-cols-4 gap-6 px-2 mt-4">
+<div class="flex flex-col items-center gap-1">
+<div class="w-14 h-14 bg-white/20 backdrop-blur-md rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-3xl">mail</span>
+</div>
+<span class="text-[10px] font-medium text-on-surface/80">Mail</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-14 h-14 bg-white/20 backdrop-blur-md rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-3xl">calendar_month</span>
+</div>
+<span class="text-[10px] font-medium text-on-surface/80">Calendar</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-14 h-14 bg-white/20 backdrop-blur-md rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-3xl">photo_library</span>
+</div>
+<span class="text-[10px] font-medium text-on-surface/80">Photos</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-14 h-14 bg-white/20 backdrop-blur-md rounded-lg flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Person practicing yoga in a serene sunlit room, minimalist and peaceful aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE4Q9hD0hcN3qz5hLD-qYxIMUUgiRescWB1GdIm9rm2tId1ap5tSw4y-QS-nM5W6hjEVgPwZLVNwpza1x9upIjl1xy19285wybfZIZ4QTfNloeJhrJD_B6WG5E_nEttXPee2bmOspTKK6jUUsywDuByN6G2Wns7XDWAO4uZzeF8owNpTjrD3ccGLPit4GRLEpbzschUX87QvMK72rfVV5BQQRMuv3fa_B9E6THf0r9Kzgsl99lVIB4MScSEIt9NsZquCGdCi0nPvA"/>
+</div>
+<span class="text-[10px] font-medium text-on-surface/80">Pulse</span>
+</div>
+</div>
+</div>
+<!-- Dock -->
+<div class="relative z-10 mx-4 mb-8 p-4 glass-effect rounded-[2.5rem] flex justify-around items-center">
+<div class="w-12 h-12 bg-emerald-400 rounded-xl flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-white">call</span>
+</div>
+<div class="w-12 h-12 bg-sky-400 rounded-xl flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-white">chat</span>
+</div>
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-slate-800">public</span>
+</div>
+<div class="w-12 h-12 bg-indigo-500 rounded-xl flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-white">music_note</span>
+</div>
+</div>
+<!-- Home Indicator -->
+<div class="relative z-10 w-32 h-1 bg-on-surface/30 mx-auto mb-2 rounded-full"></div>
+</div>
+</div>
+</body></html>

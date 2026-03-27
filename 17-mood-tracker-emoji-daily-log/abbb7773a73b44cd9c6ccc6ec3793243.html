@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MoodDot - Calendar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#54436b",
+              "tertiary-fixed": "#e4ceff",
+              "secondary-fixed": "#dbe2f9",
+              "on-secondary-container": "#4a5264",
+              "tertiary-dim": "#5d4b74",
+              "surface-bright": "#faf9fe",
+              "on-tertiary-fixed-variant": "#5e4c75",
+              "background": "#faf9fe",
+              "outline-variant": "#afb1bc",
+              "surface-container": "#ededf6",
+              "inverse-primary": "#b6ccff",
+              "on-error-container": "#6e0a12",
+              "on-surface": "#2f323a",
+              "on-primary-fixed": "#182f59",
+              "secondary-fixed-dim": "#cdd4eb",
+              "primary-container": "#b6ccff",
+              "error-container": "#fa746f",
+              "on-secondary-fixed": "#383f51",
+              "on-primary-fixed-variant": "#374c77",
+              "inverse-on-surface": "#9c9ca2",
+              "on-background": "#2f323a",
+              "surface-container-high": "#e7e7f1",
+              "on-error": "#fff7f6",
+              "inverse-surface": "#0d0e12",
+              "secondary-dim": "#4b5366",
+              "on-tertiary": "#fef6ff",
+              "tertiary-fixed-dim": "#d6c0f0",
+              "on-tertiary-fixed": "#413057",
+              "error": "#a83836",
+              "tertiary-container": "#e4ceff",
+              "surface": "#faf9fe",
+              "error-dim": "#67040d",
+              "surface-variant": "#e0e2ed",
+              "surface-container-low": "#f3f3fa",
+              "surface-tint": "#495f8b",
+              "on-secondary-fixed-variant": "#545b6e",
+              "primary-dim": "#3d537e",
+              "surface-dim": "#d8d9e4",
+              "primary": "#495f8b",
+              "primary-fixed": "#b6ccff",
+              "on-primary-container": "#2d436e",
+              "on-secondary": "#f9f8ff",
+              "secondary": "#575f72",
+              "secondary-container": "#dbe2f9",
+              "on-surface-variant": "#5c5f68",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-highest": "#e0e2ed",
+              "tertiary": "#695781",
+              "primary-fixed-dim": "#a9bef0",
+              "on-primary": "#f9f8ff",
+              "outline": "#787a84"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Plus Jakarta Sans', sans-serif; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+html, body { margin: 0; padding: 0; background: #111827; min-height: 100vh; }
+body { display: flex; justify-content: center; align-items: flex-start; padding: 32px 16px; box-sizing: border-box; }
+.phone-frame { width: 390px; min-height: 844px; background: #fff; border-radius: 44px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,255,255,0.08); position: relative; flex-shrink: 0; }
+</style>
+</head>
+<body class="bg-background text-on-surface min-h-screen pb-32"><div class="phone-frame">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-40 bg-[#faf9fe] dark:bg-slate-950 flex items-center justify-between px-6 py-4 no-line tonal-shift bg-[#f3f3fa] dark:bg-slate-900/50">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#495f8b] dark:text-[#8FB3FF] hover:bg-[#ededf6] dark:hover:bg-slate-800 transition-colors p-2 rounded-full active:scale-95 duration-200">
+                menu
+            </button>
+<h1 class="font-['Plus_Jakarta_Sans'] text-lg font-semibold tracking-tight text-[#2f323a] dark:text-slate-100 font-bold">Calendar</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="material-symbols-outlined text-[#5c5f68] dark:text-slate-400 hover:bg-[#ededf6] dark:hover:bg-slate-800 transition-colors p-2 rounded-full active:scale-95 duration-200">
+                search
+            </button>
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a serene young person with a soft smile in a bright airy studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ebvc9YNO1_MWu3lSKS62PXGWnpUJ77slI3qOJlj8SagbU5gwfs3caSyCBfEUX_KwbfHCtD1jeeZ5-L6MBhtehWmqq9vB6gdkRyAkr2mZC-Rmw6IEBR-gm2Hya_qmPJbCLNECs3WLqWwnqspqp53gMNh_O3Yswql3ZJTX6gkfw32LClQDFpE1NGXRZuRAHA5-Bb-Zg8z90I-pVfyHumhiQNI8iGuiscB8tsgs2brAaU8Z91UNWYAboeFqKZOH38rEmOoiWZYebdY"/>
+</div>
+</div>
+</header>
+<main class="px-6 pt-8 max-w-2xl mx-auto space-y-10">
+<!-- Month Header -->
+<section class="flex items-center justify-between">
+<div class="space-y-1">
+<p class="text-on-surface-variant font-medium tracking-widest text-xs uppercase">March 2024</p>
+<h2 class="text-3xl font-extrabold tracking-tight text-on-surface">Spring Reflection</h2>
+</div>
+<div class="flex gap-2">
+<button class="p-3 bg-surface-container-low rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined align-middle">chevron_left</span>
+</button>
+<button class="p-3 bg-surface-container-low rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined align-middle">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Calendar Heatmap Grid -->
+<section class="bg-surface-container-lowest rounded-xl p-6 shadow-[0_12px_32px_rgba(47,50,58,0.04)] relative">
+<!-- Day Labels -->
+<div class="grid grid-cols-7 mb-4">
+<div class="text-center text-[10px] font-bold text-outline uppercase tracking-tighter">Mon</div>
+<div class="text-center text-[10px] font-bold text-outline uppercase tracking-tighter">Tue</div>
+<div class="text-center text-[10px] font-bold text-outline uppercase tracking-tighter">Wed</div>
+<div class="text-center text-[10px] font-bold text-outline uppercase tracking-tighter">Thu</div>
+<div class="text-center text-[10px] font-bold text-outline uppercase tracking-tighter">Fri</div>
+<div class="text-center text-[10px] font-bold text-outline uppercase tracking-tighter">Sat</div>
+<div class="text-center text-[10px] font-bold text-outline uppercase tracking-tighter">Sun</div>
+</div>
+<!-- Calendar Cells -->
+<div class="grid grid-cols-7 gap-y-6">
+<!-- Empty start days (Feb padding) -->
+<div class="h-14 flex items-center justify-center text-outline/30 font-medium text-sm">26</div>
+<div class="h-14 flex items-center justify-center text-outline/30 font-medium text-sm">27</div>
+<div class="h-14 flex items-center justify-center text-outline/30 font-medium text-sm">28</div>
+<div class="h-14 flex items-center justify-center text-outline/30 font-medium text-sm">29</div>
+<!-- March Days -->
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">1</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-sm shadow-emerald-200"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">2</span>
+<div class="w-2.5 h-2.5 rounded-full bg-primary shadow-sm shadow-primary/20"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">3</span>
+<div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">4</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">5</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">6</span>
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">7</span>
+<div class="w-2.5 h-2.5 rounded-full bg-error shadow-sm shadow-error/20"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">8</span>
+<div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">9</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">10</span>
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">11</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">12</span>
+<div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">13</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">14</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">15</span>
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">16</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold text-outline/40">17</span>
+<div class="w-2.5 h-2.5 rounded-full bg-surface-container"></div>
+</div>
+<!-- THE HIGHLIGHTED DAY (18th) -->
+<div class="relative h-14 flex flex-col items-center justify-between group cursor-pointer">
+<div class="absolute inset-0 -m-2 bg-primary/10 rounded-xl border border-primary/20"></div>
+<span class="text-sm font-bold text-primary relative z-10">18</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400 relative z-10"></div>
+<!-- Detail Popup -->
+<div class="absolute top-full mt-4 left-1/2 -translate-x-1/2 z-50 w-64 p-5 bg-surface-container-lowest rounded-lg shadow-xl backdrop-blur-xl border border-outline-variant/10 ring-1 ring-black/5">
+<div class="flex items-start gap-4">
+<div class="text-4xl">😊</div>
+<div class="space-y-2">
+<h4 class="font-bold text-on-surface leading-tight">Good Day</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">"Feeling refreshed after a long morning walk and meeting friends."</p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded-full">exercised</span>
+<span class="px-2 py-0.5 bg-tertiary-container text-on-tertiary-container text-[10px] font-bold rounded-full">social time</span>
+</div>
+</div>
+</div>
+<!-- Anchor pointer -->
+<div class="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-surface-container-lowest rotate-45 border-t border-l border-outline-variant/10"></div>
+</div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">19</span>
+<div class="w-2.5 h-2.5 rounded-full bg-primary shadow-sm shadow-primary/20"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">20</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">21</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">22</span>
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">23</span>
+<div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">24</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">25</span>
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">26</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">27</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">28</span>
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">29</span>
+<div class="w-2.5 h-2.5 rounded-full bg-amber-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">30</span>
+<div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
+</div>
+<div class="h-14 flex flex-col items-center justify-between">
+<span class="text-sm font-semibold">31</span>
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+</div>
+</div>
+</section>
+<!-- Stats Bento Section -->
+<section class="grid grid-cols-2 gap-4">
+<div class="col-span-1 bg-primary-container p-6 rounded-lg flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-on-primary-container text-3xl">trending_up</span>
+<div class="space-y-1">
+<p class="text-[10px] font-bold text-on-primary-container/70 uppercase">Weekly Avg</p>
+<h3 class="text-2xl font-bold text-on-primary-container">Great</h3>
+</div>
+</div>
+<div class="col-span-1 space-y-4">
+<div class="bg-secondary-container p-5 rounded-lg flex items-center justify-between">
+<div class="space-y-1">
+<p class="text-[10px] font-bold text-on-secondary-container/70 uppercase">Streak</p>
+<h3 class="text-xl font-bold text-on-secondary-container">12 Days</h3>
+</div>
+<span class="material-symbols-outlined text-on-secondary-container">local_fire_department</span>
+</div>
+<div class="bg-surface-container-high p-5 rounded-lg flex items-center justify-between">
+<div class="space-y-1">
+<p class="text-[10px] font-bold text-on-surface-variant/70 uppercase">Logs</p>
+<h3 class="text-xl font-bold text-on-surface">248 Total</h3>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">equalizer</span>
+</div>
+</div>
+</section>
+<!-- Legend -->
+<section class="flex justify-center items-center gap-6 py-4">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-error"></div>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Bad</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-amber-400"></div>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Okay</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-emerald-400"></div>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Good</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Great</span>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-sm border-t border-surface-variant/20 flex justify-around items-center px-2 py-2 pb-safe" style="padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));">
+<button onclick="window.location.href='35d2830e5dda4d30aebf4094247b4b4a.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">home</span></div>
+<span class="text-[10px] font-semibold">Home</span>
+</button><button onclick="window.location.href='abbb7773a73b44cd9c6ccc6ec3793243.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-primary font-bold transition-colors hover:text-primary">
+<div class="bg-primary-container/50 rounded-full px-3 py-1"><span class="material-symbols-outlined text-[22px]">calendar_month</span></div>
+<span class="text-[10px] font-semibold">Calendar</span>
+</button><button onclick="window.location.href='d3dba6ef50524b6c905109f45cc10fbf.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">bar_chart</span></div>
+<span class="text-[10px] font-semibold">Patterns</span>
+</button><button onclick="window.location.href='68b0c5de728a4e248a8641faac3b2eb6.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">settings</span></div>
+<span class="text-[10px] font-semibold">Settings</span>
+</button>
+</nav>
+</div>
+</body></html>

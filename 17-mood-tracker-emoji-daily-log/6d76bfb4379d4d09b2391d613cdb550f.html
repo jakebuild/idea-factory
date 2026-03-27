@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MoodDot - Log Your Mood</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com/css2?family=Plus_Jakarta_Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#495f8b",
+              "secondary-container": "#dbe2f9",
+              "on-primary-fixed": "#182f59",
+              "surface-container-highest": "#e0e2ed",
+              "on-background": "#2f323a",
+              "on-tertiary-container": "#54436b",
+              "surface-container": "#ededf6",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#f9f8ff",
+              "on-primary-fixed-variant": "#374c77",
+              "primary-fixed-dim": "#a9bef0",
+              "surface-tint": "#495f8b",
+              "primary-container": "#b6ccff",
+              "surface-container-low": "#f3f3fa",
+              "secondary": "#575f72",
+              "surface-variant": "#e0e2ed",
+              "secondary-dim": "#4b5366",
+              "on-tertiary": "#fef6ff",
+              "surface-container-high": "#e7e7f1",
+              "tertiary-dim": "#5d4b74",
+              "outline-variant": "#afb1bc",
+              "surface": "#faf9fe",
+              "secondary-fixed-dim": "#cdd4eb",
+              "on-tertiary-fixed": "#413057",
+              "on-secondary-container": "#4a5264",
+              "on-error": "#fff7f6",
+              "secondary-fixed": "#dbe2f9",
+              "background": "#faf9fe",
+              "tertiary": "#695781",
+              "primary-dim": "#3d537e",
+              "error-dim": "#67040d",
+              "on-error-container": "#6e0a12",
+              "on-secondary": "#f9f8ff",
+              "tertiary-fixed": "#e4ceff",
+              "primary-fixed": "#b6ccff",
+              "surface-dim": "#d8d9e4",
+              "inverse-surface": "#0d0e12",
+              "outline": "#787a84",
+              "on-secondary-fixed-variant": "#545b6e",
+              "tertiary-fixed-dim": "#d6c0f0",
+              "error": "#a83836",
+              "tertiary-container": "#e4ceff",
+              "on-surface-variant": "#5c5f68",
+              "inverse-on-surface": "#9c9ca2",
+              "on-surface": "#2f323a",
+              "surface-bright": "#faf9fe",
+              "on-primary-container": "#2d436e",
+              "inverse-primary": "#b6ccff",
+              "on-secondary-fixed": "#383f51",
+              "error-container": "#fa746f",
+              "on-tertiary-fixed-variant": "#5e4c75"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .emoji-hero-shadow {
+            box-shadow: 0 20px 50px rgba(73, 95, 139, 0.12);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+html, body { margin: 0; padding: 0; background: #111827; min-height: 100vh; }
+body { display: flex; justify-content: center; align-items: flex-start; padding: 32px 16px; box-sizing: border-box; }
+.phone-frame { width: 390px; min-height: 844px; background: #fff; border-radius: 44px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,255,255,0.08); position: relative; flex-shrink: 0; }
+</style>
+</head>
+<body class="bg-background font-body text-on-surface min-h-screen flex flex-col"><div class="phone-frame">
+<!-- TopAppBar Navigation Shell (Transactional Suppression: Contextual Back Only) -->
+<header class="w-full top-0 sticky z-50 flex items-center justify-between px-6 py-4 w-full bg-[#faf9fe] no-border tonal-shift">
+<div class="flex items-center gap-4">
+<button class="text-[#495f8b] hover:opacity-80 transition-opacity scale-95 active:duration-150">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="text-[#495f8b] font-['Plus_Jakarta_Sans'] font-semibold text-lg">Log Mood</h1>
+</div>
+<button class="text-[#495f8b] hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<main class="flex-grow flex flex-col items-center px-6 pt-8 pb-32 max-w-2xl mx-auto w-full">
+<!-- Top Section: Emoji Hero -->
+<section class="w-full flex flex-col items-center mb-12">
+<div class="bg-surface-container-lowest rounded-xl p-10 emoji-hero-shadow aspect-square flex items-center justify-center transition-transform hover:scale-105 duration-300">
+<span aria-label="Smiling Face" class="text-8xl md:text-9xl leading-none" role="img">😊</span>
+</div>
+<div class="mt-8 text-center">
+<p class="text-on-surface-variant font-medium tracking-wide text-sm uppercase mb-1">Current Mood</p>
+<h2 class="text-on-surface font-headline font-bold text-4xl tracking-tight">Feeling Content</h2>
+</div>
+</section>
+<!-- Middle Section: Context Tags -->
+<section class="w-full">
+<div class="mb-8">
+<h3 class="text-on-surface font-headline font-bold text-xl mb-2 text-center">What's contributing to your mood?</h3>
+<p class="text-on-surface-variant text-center text-sm">Select up to 3 factors that shaped your day</p>
+</div>
+<div class="flex flex-wrap justify-center gap-3">
+<!-- Selected Tag -->
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-medium text-sm transition-all duration-200 shadow-sm flex items-center gap-2">
+                    slept well
+                </button>
+<!-- Unselected Tags -->
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-medium text-sm hover:bg-surface-container-highest transition-all duration-200">
+                    exercised
+                </button>
+<!-- Selected Tag -->
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-medium text-sm transition-all duration-200 shadow-sm">
+                    social time
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-medium text-sm hover:bg-surface-container-highest transition-all duration-200">
+                    work stress
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-medium text-sm hover:bg-surface-container-highest transition-all duration-200">
+                    alcohol
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-medium text-sm hover:bg-surface-container-highest transition-all duration-200">
+                    poor sleep
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-medium text-sm hover:bg-surface-container-highest transition-all duration-200">
+                    good food
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-medium text-sm hover:bg-surface-container-highest transition-all duration-200">
+                    skipped gym
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-medium text-sm hover:bg-surface-container-highest transition-all duration-200">
+                    stressful meeting
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-medium text-sm hover:bg-surface-container-highest transition-all duration-200">
+                    relaxed
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-medium text-sm hover:bg-surface-container-highest transition-all duration-200">
+                    creative work
+                </button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-medium text-sm hover:bg-surface-container-highest transition-all duration-200">
+                    nature
+                </button>
+</div>
+</section>
+<!-- Bottom Section: Actions -->
+<section class="fixed bottom-0 left-0 w-full px-6 pb-10 pt-6 glass-panel flex flex-col items-center gap-4">
+<button onclick="window.location.href='35d2830e5dda4d30aebf4094247b4b4a.html'" class="w-full max-w-md bg-gradient-to-br from-primary to-primary-dim text-on-primary py-4 rounded-full font-bold text-lg shadow-lg active:scale-95 transition-transform duration-150">
+                Confirm</button>
+<button onclick="window.location.href='35d2830e5dda4d30aebf4094247b4b4a.html'" class="text-primary font-bold tracking-widest text-xs uppercase hover:opacity-70 transition-opacity">
+                Skip
+            </button>
+</section>
+</main>
+<!-- Shell Suppression: BottomNavBar excluded as this is a focused journaling transaction -->
+<!-- Background Texture Elements -->
+<div class="fixed top-20 -left-20 w-64 h-64 bg-primary-container/20 blur-[100px] rounded-full pointer-events-none -z-10"></div>
+<div class="fixed bottom-40 -right-20 w-80 h-80 bg-secondary-container/30 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-sm border-t border-surface-variant/20 flex justify-around items-center px-2 py-2 pb-safe" style="padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));">
+<button onclick="window.location.href='35d2830e5dda4d30aebf4094247b4b4a.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-primary font-bold transition-colors hover:text-primary">
+<div class="bg-primary-container/50 rounded-full px-3 py-1"><span class="material-symbols-outlined text-[22px]">home</span></div>
+<span class="text-[10px] font-semibold">Home</span>
+</button><button onclick="window.location.href='abbb7773a73b44cd9c6ccc6ec3793243.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">calendar_month</span></div>
+<span class="text-[10px] font-semibold">Calendar</span>
+</button><button onclick="window.location.href='d3dba6ef50524b6c905109f45cc10fbf.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">bar_chart</span></div>
+<span class="text-[10px] font-semibold">Patterns</span>
+</button><button onclick="window.location.href='68b0c5de728a4e248a8641faac3b2eb6.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">settings</span></div>
+<span class="text-[10px] font-semibold">Settings</span>
+</button>
+</nav>
+</div>
+</body></html>

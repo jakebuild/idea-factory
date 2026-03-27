@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MoodDot - Today</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#545b6e",
+              "on-secondary-container": "#4a5264",
+              "tertiary-fixed-dim": "#d6c0f0",
+              "surface-dim": "#d8d9e4",
+              "outline": "#787a84",
+              "on-error": "#fff7f6",
+              "on-tertiary-fixed-variant": "#5e4c75",
+              "on-primary-container": "#2d436e",
+              "error-dim": "#67040d",
+              "primary-dim": "#3d537e",
+              "outline-variant": "#afb1bc",
+              "secondary-dim": "#4b5366",
+              "on-tertiary-container": "#54436b",
+              "on-background": "#2f323a",
+              "surface-tint": "#495f8b",
+              "on-secondary": "#f9f8ff",
+              "primary-fixed": "#b6ccff",
+              "surface-container-highest": "#e0e2ed",
+              "tertiary-container": "#e4ceff",
+              "background": "#faf9fe",
+              "secondary-fixed-dim": "#cdd4eb",
+              "secondary-container": "#dbe2f9",
+              "primary-fixed-dim": "#a9bef0",
+              "on-primary-fixed": "#182f59",
+              "error-container": "#fa746f",
+              "tertiary-dim": "#5d4b74",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#ededf6",
+              "primary": "#495f8b",
+              "on-surface": "#2f323a",
+              "on-primary-fixed-variant": "#374c77",
+              "inverse-on-surface": "#9c9ca2",
+              "tertiary-fixed": "#e4ceff",
+              "on-tertiary-fixed": "#413057",
+              "primary-container": "#b6ccff",
+              "surface-container-low": "#f3f3fa",
+              "on-error-container": "#6e0a12",
+              "secondary": "#575f72",
+              "surface-container-high": "#e7e7f1",
+              "surface": "#faf9fe",
+              "error": "#a83836",
+              "inverse-surface": "#0d0e12",
+              "inverse-primary": "#b6ccff",
+              "tertiary": "#695781",
+              "on-secondary-fixed": "#383f51",
+              "surface-bright": "#faf9fe",
+              "on-tertiary": "#fef6ff",
+              "surface-variant": "#e0e2ed",
+              "on-surface-variant": "#5c5f68",
+              "on-primary": "#f9f8ff",
+              "secondary-fixed": "#dbe2f9"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <style>
+html, body { margin: 0; padding: 0; background: #111827; min-height: 100vh; }
+body { display: flex; justify-content: center; align-items: flex-start; padding: 32px 16px; box-sizing: border-box; }
+.phone-frame { width: 390px; min-height: 844px; background: #fff; border-radius: 44px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,255,255,0.08); position: relative; flex-shrink: 0; }
+</style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-32"><div class="phone-frame">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-50 bg-[#faf9fe] dark:bg-slate-950 flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close up portrait of a smiling woman with a soft natural background, warm sunset lighting, high-end editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAblqvBD2KStjtxrIAuE5ZJpHasjSLyoPrwPkDJ440Pv-F_p4tazZ_JLrwRO2yzoAv3gG-wwpytj7sBUbI3A-kbRclXjuLh4JVrlzE2XWARkUN-Uz3rwWFCViE5vMxIYuJ96Zn41l8sCKYcm0XzaWw7BwmmyP8hekm-0HWaTDDN3skV0swzUEHvPiRJvqJN4uSHJMRVQ4YlD7CxpmHLMaSxWtxlyh76hkjfMHHwVDcdvh6CD47ZQiIKkf2F-0K7CmjkrNJ-Y5Apbc"/>
+</div>
+</div>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-lg text-[#2f323a] dark:text-white">MoodDot</h1>
+<button class="text-[#495f8b] dark:text-[#8FB3FF] hover:opacity-80 transition-opacity scale-95 active:duration-150">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</header>
+<main class="px-6 pt-4 max-w-2xl mx-auto space-y-10">
+<!-- Today's Mood Log: Hero Section -->
+<section class="text-center space-y-8">
+<header class="space-y-1">
+<p class="text-on-surface-variant font-medium text-sm tracking-wide">MONDAY, OCTOBER 24</p>
+<h2 class="text-3xl font-bold text-on-surface tracking-tight">How are you feeling today?</h2>
+</header>
+<div class="bg-surface-container-lowest rounded-xl p-10 shadow-[0_12px_32px_rgba(47,50,58,0.06)] flex flex-col items-center justify-center space-y-8 transition-transform hover:scale-[1.01]">
+<div class="flex justify-around w-full gap-2">
+<!-- Sad -->
+<button class="group flex flex-col items-center gap-2 outline-none">
+<span class="text-5xl group-hover:scale-125 transition-transform duration-300 group-active:scale-95">😔</span>
+<span class="text-[10px] font-bold text-on-surface-variant tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity">Sad</span>
+</button>
+<!-- Not Great -->
+<button class="group flex flex-col items-center gap-2 outline-none">
+<span class="text-5xl group-hover:scale-125 transition-transform duration-300 group-active:scale-95">😕</span>
+<span class="text-[10px] font-bold text-on-surface-variant tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity">Meh</span>
+</button>
+<!-- Okay -->
+<button class="group flex flex-col items-center gap-2 outline-none">
+<span class="text-5xl group-hover:scale-125 transition-transform duration-300 group-active:scale-95">😐</span>
+<span class="text-[10px] font-bold text-on-surface-variant tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity">Okay</span>
+</button>
+<!-- Good -->
+<button class="group flex flex-col items-center gap-2 outline-none">
+<span class="text-5xl group-hover:scale-125 transition-transform duration-300 group-active:scale-95">🙂</span>
+<span class="text-[10px] font-bold text-on-surface-variant tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity">Good</span>
+</button>
+<!-- Great -->
+<button class="group flex flex-col items-center gap-2 outline-none">
+<span class="text-5xl group-hover:scale-125 transition-transform duration-300 group-active:scale-95">✨</span>
+<span class="text-[10px] font-bold text-on-surface-variant tracking-wider uppercase opacity-0 group-hover:opacity-100 transition-opacity">Great</span>
+</button>
+</div>
+</div>
+</section>
+<!-- 7-Day Mood Strip -->
+<section class="space-y-4">
+<h3 class="text-on-surface-variant font-semibold text-xs tracking-widest uppercase px-1">Weekly Pulse</h3>
+<div class="bg-surface-container-low rounded-lg p-6 flex justify-between items-center">
+<div class="flex flex-col items-center gap-3">
+<span class="text-lg">🙂</span>
+<span class="text-[11px] font-bold text-on-surface-variant">TUE 18</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="text-lg">😐</span>
+<span class="text-[11px] font-bold text-on-surface-variant">WED 19</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="text-lg">✨</span>
+<span class="text-[11px] font-bold text-on-surface-variant">THU 20</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="text-lg">😔</span>
+<span class="text-[11px] font-bold text-on-surface-variant">FRI 21</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="text-lg">🙂</span>
+<span class="text-[11px] font-bold text-on-surface-variant">SAT 22</span>
+</div>
+<div class="flex flex-col items-center gap-3">
+<span class="text-lg">✨</span>
+<span class="text-[11px] font-bold text-on-surface-variant">SUN 23</span>
+</div>
+<div class="flex flex-col items-center gap-3 opacity-40">
+<div class="w-6 h-6 rounded-full border-2 border-dashed border-outline-variant"></div>
+<span class="text-[11px] font-bold text-on-surface">TODAY</span>
+</div>
+</div>
+</section>
+<!-- Bento Style Insights Preview -->
+<section class="grid grid-cols-2 gap-4">
+<div class="col-span-2 bg-surface-container-lowest p-6 rounded-lg shadow-sm space-y-2 border border-outline-variant/5">
+<div class="flex justify-between items-center">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="text-[10px] font-bold bg-primary-container text-on-primary-container px-2 py-0.5 rounded-full uppercase tracking-tighter">New Insight</span>
+</div>
+<p class="text-on-surface font-medium">You feel 20% better on days you walk in nature.</p>
+</div>
+<div class="bg-secondary-container/30 p-5 rounded-lg space-y-1">
+<span class="material-symbols-outlined text-secondary" data-icon="bedtime">bedtime</span>
+<p class="text-[11px] font-bold text-on-secondary-container uppercase tracking-widest">Sleep</p>
+<p class="text-lg font-bold text-on-surface">7h 42m</p>
+</div>
+<div class="bg-tertiary-container/30 p-5 rounded-lg space-y-1">
+<span class="material-symbols-outlined text-tertiary" data-icon="bolt">bolt</span>
+<p class="text-[11px] font-bold text-on-tertiary-container uppercase tracking-widest">Streak</p>
+<p class="text-lg font-bold text-on-surface">12 Days</p>
+</div>
+</section>
+<!-- Primary CTA -->
+<div class="pt-4 flex justify-center">
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-10 py-4 rounded-full font-semibold shadow-lg hover:opacity-90 transition-all active:scale-95 flex items-center gap-2">
+<span><span onclick="window.location.href=\'d3dba6ef50524b6c905109f45cc10fbf.html\'" style="cursor:pointer">View Patterns</span></span>
+<span class="material-symbols-outlined text-sm" data-icon="trending_up">trending_up</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-sm border-t border-surface-variant/20 flex justify-around items-center px-2 py-2 pb-safe" style="padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));">
+<button onclick="window.location.href='35d2830e5dda4d30aebf4094247b4b4a.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-primary font-bold transition-colors hover:text-primary">
+<div class="bg-primary-container/50 rounded-full px-3 py-1"><span class="material-symbols-outlined text-[22px]">home</span></div>
+<span class="text-[10px] font-semibold">Home</span>
+</button><button onclick="window.location.href='abbb7773a73b44cd9c6ccc6ec3793243.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">calendar_month</span></div>
+<span class="text-[10px] font-semibold">Calendar</span>
+</button><button onclick="window.location.href='d3dba6ef50524b6c905109f45cc10fbf.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">bar_chart</span></div>
+<span class="text-[10px] font-semibold">Patterns</span>
+</button><button onclick="window.location.href='68b0c5de728a4e248a8641faac3b2eb6.html'" class="flex flex-col items-center gap-1 flex-1 py-1 text-on-surface-variant transition-colors hover:text-primary">
+<div class=""><span class="material-symbols-outlined text-[22px]">settings</span></div>
+<span class="text-[10px] font-semibold">Settings</span>
+</button>
+</nav>
+</div>
+</body></html>
