@@ -323,6 +323,16 @@
   ];
   let currentScreen = 1;
 
+  // Hide scrollbars inside the iframe on every load
+  const appFrame = document.getElementById('app');
+  appFrame.addEventListener('load', () => {
+    try {
+      const s = appFrame.contentDocument.createElement('style');
+      s.textContent = '::-webkit-scrollbar{display:none}*{-ms-overflow-style:none!important;scrollbar-width:none!important}';
+      appFrame.contentDocument.head.appendChild(s);
+    } catch(e) {}
+  });
+
   const switcher = document.getElementById('switcher');
   screens.forEach((s, i) => {
     const btn = document.createElement('button');
@@ -333,6 +343,7 @@
       document.getElementById('app').src = s.id + '.html';
       switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
     };
+
     switcher.appendChild(btn);
   });
 
