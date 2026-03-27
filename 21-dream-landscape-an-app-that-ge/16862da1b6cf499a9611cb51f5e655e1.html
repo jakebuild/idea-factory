@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#ffb2b9",
+              "on-secondary-container": "#e8fbff",
+              "tertiary-container": "#b56afb",
+              "on-secondary-fixed": "#003a42",
+              "surface-container-high": "#1e1f25",
+              "outline-variant": "#47484c",
+              "on-tertiary": "#33005a",
+              "surface-bright": "#2a2c32",
+              "on-background": "#faf8fe",
+              "surface-container": "#18191e",
+              "on-primary": "#520066",
+              "on-surface-variant": "#abaab0",
+              "tertiary": "#c280ff",
+              "on-tertiary-container": "#130028",
+              "background": "#0d0e12",
+              "primary": "#ea88ff",
+              "primary-fixed-dim": "#dd56ff",
+              "on-surface": "#faf8fe",
+              "secondary-container": "#006875",
+              "on-tertiary-fixed": "#270048",
+              "surface-container-lowest": "#000000",
+              "on-primary-fixed": "#000000",
+              "secondary": "#00e3fd",
+              "surface-dim": "#0d0e12",
+              "on-primary-container": "#400050",
+              "secondary-fixed-dim": "#00d7f0",
+              "on-secondary": "#004d57",
+              "tertiary-dim": "#c280ff",
+              "surface-container-low": "#121318",
+              "surface": "#0d0e12",
+              "secondary-dim": "#00d4ec",
+              "secondary-fixed": "#26e6ff",
+              "on-tertiary-fixed-variant": "#570093",
+              "tertiary-fixed": "#cf9aff",
+              "error-dim": "#d73357",
+              "primary-fixed": "#e470ff",
+              "tertiary-fixed-dim": "#c687ff",
+              "surface-container-highest": "#24252b",
+              "inverse-primary": "#9f00c4",
+              "outline": "#75757a",
+              "error-container": "#a70138",
+              "primary-dim": "#c200ee",
+              "surface-variant": "#24252b",
+              "error": "#ff6e84",
+              "on-error": "#490013",
+              "surface-tint": "#ea88ff",
+              "on-primary-fixed-variant": "#4f0062",
+              "inverse-on-surface": "#54555a",
+              "inverse-surface": "#faf8fe",
+              "primary-container": "#e470ff",
+              "on-secondary-fixed-variant": "#005964"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .weather-overlay {
+            background: radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.15) 0%, transparent 50%),
+                        linear-gradient(45deg, rgba(234, 136, 255, 0.05) 0%, transparent 100%);
+        }
+        .neon-glow-primary {
+            box-shadow: 0 0 15px rgba(234, 136, 255, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 min-h-screen overflow-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0d0e12]/70 backdrop-blur-3xl flex items-center justify-between px-6 h-16 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#ea88ff]" data-icon="nightlight">nightlight</span>
+<h1 class="text-lg font-black tracking-widest text-[#ea88ff] drop-shadow-[0_0_8px_rgba(234,136,255,0.4)] font-['Plus_Jakarta_Sans'] uppercase">DREAM LANDSCAPE</h1>
+</div>
+<button class="text-[#abaab0] hover:text-[#ea88ff] transition-colors duration-300 active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</header>
+<!-- Main Hero Canvas -->
+<main class="relative h-screen w-full pt-16 pb-20 overflow-hidden">
+<!-- Full-bleed Isometric City Background -->
+<div class="absolute inset-0 z-0">
+<img alt="Isometric Pixel Art City" class="w-full h-full object-cover object-center scale-110" data-alt="Vibrant isometric pixel art city with neon purple and cyan lighting, futuristic buildings, glowing windows, and atmospheric nocturnal misty streets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXb_g4vGWm5v1_CKdJxHRJISmRzpftZJ6oPhW8PhoZ1HNdC2rEb1MMUWwEn9WTcSVEnjC9NVVOVpNfWvHVQOtmNFNAskKR06yfhonSwYndig5-gTxXEN4kZFzzx9HY9eE4uTCY3wjBPOQxB6HZNkbT6feW6E_Ij-iMW_gjhp0rBA4Owf5vXeSnXci1zvYPyJR-2jsPRxaJhFfQohs3g1Zy6-X5PGFljUyH-sa7fpWB3yqwpDSm9ixZpFEl2KfQvesbLVIgTmx_nM4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40"></div>
+<!-- Weather Effects Overlaid -->
+<div class="absolute inset-0 weather-overlay pointer-events-none"></div>
+</div>
+<!-- Date Label (Top-Left) -->
+<div class="absolute top-24 left-6 z-10">
+<div class="bg-surface-container-low/60 backdrop-blur-md px-4 py-2 rounded-lg border border-outline-variant/10">
+<p class="text-secondary font-headline font-bold text-sm tracking-widest uppercase">Friday, Mar 27</p>
+</div>
+</div>
+<!-- Content Overlay Area -->
+<div class="absolute inset-x-0 bottom-24 z-20 px-6 flex flex-col gap-6">
+<!-- Sleep Summary Bar -->
+<div class="bg-surface-container-high/80 backdrop-blur-xl p-4 rounded-lg flex items-center justify-between border border-outline-variant/10 shadow-2xl">
+<div class="flex items-center gap-4">
+<div class="bg-surface-container-lowest p-2 rounded-md">
+<span class="material-symbols-outlined text-primary" data-icon="bedtime" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-[10px] font-bold uppercase tracking-wider">Sleep Duration</p>
+<p class="text-xl font-headline font-extrabold text-on-surface">7h 30m</p>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-secondary/10 px-3 py-1.5 rounded-full border border-secondary/20">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-secondary text-xs font-bold uppercase tracking-tighter">Great Quality</span>
+</div>
+</div>
+<!-- Main CTA Button -->
+<button class="w-full bg-gradient-to-r from-primary to-primary-container h-16 rounded-full flex items-center justify-center gap-3 shadow-[0_10px_30px_rgba(234,136,255,0.3)] active:scale-95 transition-all group">
+<span class="text-on-primary font-headline font-extrabold text-lg tracking-wide uppercase">View Details</span>
+<span class="material-symbols-outlined text-on-primary group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Floating Share FAB (Bottom-Right) -->
+<div class="absolute bottom-44 right-6 z-30">
+<button class="w-14 h-14 bg-surface-bright rounded-2xl flex items-center justify-center text-primary shadow-2xl border border-primary/20 hover:bg-surface-container-highest transition-all active:scale-90">
+<span class="material-symbols-outlined" data-icon="ios_share">ios_share</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#121318]/70 backdrop-blur-3xl z-50 rounded-t-[2rem] shadow-[0_-10px_30px_rgba(0,0,0,0.5)]">
+<a class="flex flex-col items-center justify-center text-[#ea88ff] bg-[#24252b] rounded-full px-5 py-2 shadow-[0_0_15px_rgba(234,136,255,0.3)] active:scale-90 transition-transform duration-300" onclick="window.location.href='16862da1b6cf499a9611cb51f5e655e1.html'" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">today</span>
+<span class="text-[10px] font-medium tracking-wide uppercase mt-1">Today</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#abaab0] opacity-60 px-5 py-2 hover:text-[#00e3fd] transition-colors active:scale-90 duration-300" onclick="window.location.href='8c62c5619bf549bf819945c8985faa47.html'" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="text-[10px] font-medium tracking-wide uppercase mt-1">History</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#abaab0] opacity-60 px-5 py-2 hover:text-[#00e3fd] transition-colors active:scale-90 duration-300" onclick="window.location.href='79708aa9c6554aaba141cee66839b499.html'" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[10px] font-medium tracking-wide uppercase mt-1">Settings</span>
+</a>
+</nav>
+</body></html>

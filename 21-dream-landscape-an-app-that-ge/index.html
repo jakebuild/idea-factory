@@ -4,72 +4,165 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Idea Factory — Design Preview</title>
+<!-- IDEA_DATA injected here by design agent -->
 <script>
 window.IDEA_DATA = {
-  ideaNum:     21,
-  title:       "Dream Landscape",
-  sub:         "Turn your sleep log into a unique isometric pixel art city, generated every morning",
-  score:       "8/10",
-  deviceType:  "MOBILE",
-  stitchId:    "8779685954844808534",
+  ideaNum:    21,
+  title:      "Dream Landscape",
+  sub:        "Turns your sleep log into a unique isometric pixel art city, generated every morning",
+  score:      "8/10",
+  deviceType: "MOBILE",
+  stitchId:   "1624531977355925935",
   startScreen: 2,
   screens: [
-    { id: "c4c06dfd5f0d4277a37e4b81709ca49e", label: "Onboarding" },
-    { id: "a962bdd71f26467282921184180f4ef0", label: "Today's City" },
-    { id: "242e10571b0f4d049918c3fa6973dcbc", label: "Sleep Input" },
-    { id: "cb69c984a785449db5609dc2c4a470bf", label: "City Details" },
-    { id: "a5e60a26da524403bed20f13f8c6fa3c", label: "History" },
-    { id: "357e54354c1d4d5da2ce5807228297f6", label: "Share" },
-    { id: "f89d13a798274b5f825f77e99a14ea68", label: "Settings" }
+    { id: "b06fb95a93a449018f95ea6c8650fe27", label: "Onboarding" },
+    { id: "944349dc7e094da3a3af6fa2c0649fed", label: "Sleep Input" },
+    { id: "16862da1b6cf499a9611cb51f5e655e1", label: "Today's City" },
+    { id: "9ea84167b47d45bc8c9a4d531f5607d7", label: "City Details" },
+    { id: "8c62c5619bf549bf819945c8985faa47", label: "History" },
+    { id: "7835102b6b884f8c89ef66d9dee99122", label: "Share" },
+    { id: "79708aa9c6554aaba141cee66839b499", label: "Settings" }
   ],
   timeline: [
     {
       status: "",
       icon: "💡",
       title: "Original Idea",
-      desc: "A pixel art city generated from your sleep data — weather, size, and lighting all reflect how you slept",
-      body: `<div class="esect"><span class="esect-label">Concept</span><p>Dream Landscape generates a unique surreal isometric pixel art city based on your sleep data. Weather in the city = how well you slept. Time of day = when you woke up. Buildings reflect your dream patterns. Check your 'dream city' each morning like checking the weather — your subconscious manifested as a world you can explore. No two cities are alike.</p></div>`
+      desc: "Sleep data → surreal isometric pixel art city, check it like the weather each morning",
+      body: `<div class="esect"><div class="esect-label">Concept</div>
+        <p>Dream Landscape generates a unique surreal isometric pixel art city based on your sleep data. Weather in the city = how well you slept. Time of day = when you woke up. Buildings reflect your dream patterns. Check your 'dream city' each morning like checking the weather — your subconscious manifested as a world you can explore. No two cities are alike.</p>
+      </div>`
     },
     {
       status: "critique",
       icon: "🔍",
       title: "Critique v1",
-      desc: "Strong hook, but vaporware data mapping and impossible scope",
       verdict: "NEEDS MAJOR WORK",
       verdictClass: "needs",
       score: "6/10",
-      body: `<div class="esect"><span class="esect-label">What's Good</span><ul><li>Genuinely beautiful and emotionally resonant concept — "your subconscious as a city" is a strong hook</li><li>Morning ritual UX is smart: checking your dream city like the weather is sticky and habit-forming</li><li>Isometric pixel art is aesthetic gold right now — huge appeal on social media, shareable by default</li><li>"No two cities are alike" is a strong retention mechanic</li></ul></div><div class="esect"><span class="esect-label">Brutal Feedback</span><ul><li>"Buildings reflect your dream patterns" is vaporware — no consumer API exposes dream data</li><li>The sleep data → city mapping is arbitrary; users will feel confused, not delighted</li><li>Isometric pixel art generation is NOT a solved AI problem — requires procedural tile-based engine</li><li>"Explore" implies interactive gameplay, which is a multi-month project solo</li><li>HealthKit integration adds weeks of overhead with zero user-visible value in v1</li></ul></div><div class="esect"><span class="esect-label">Solo Dev Reality Check</span><p>Shippable ONLY if ruthlessly descoped: web app, manual input, static image output, pre-built tile library, rule-based assembly. Add HealthKit, exploration, or AI art and it blows up.</p></div>`
+      desc: "Vaporware data mapping, impossible exploration scope, HealthKit complexity trap",
+      body: `<div class="esect"><div class="esect-label">What's Good</div>
+        <ul>
+          <li>Emotionally resonant concept — "your subconscious as a city" is a strong hook</li>
+          <li>Morning ritual UX is sticky and habit-forming</li>
+          <li>Isometric pixel art is shareable aesthetic gold</li>
+          <li>Creative angle on wellness that doesn't feel like another fitness tracker</li>
+        </ul>
+      </div>
+      <div class="esect"><div class="esect-label">Brutal Feedback</div>
+        <ul>
+          <li>"Buildings reflect dream patterns" is vaporware — no consumer API exposes dream data</li>
+          <li>Sleep data → city mapping is arbitrary; users will feel confused</li>
+          <li>Isometric pixel art generation is not a solved AI problem — needs procedural tile system</li>
+          <li>"Explore" implies a game, not an app — scope-defining issue</li>
+          <li>HealthKit approval + permissions will eat solo dev time</li>
+        </ul>
+      </div>
+      <div class="esect"><div class="esect-label">Solo Dev Reality</div>
+        <p>MAYBE shippable in 2–4 weeks only with ruthless descoping: web app, manual input, static image, pre-built tile library. Any single addition (iOS, HealthKit, exploration, AI art) blows up the timeline.</p>
+      </div>`
     },
     {
       status: "improve",
       icon: "✨",
       title: "Improved v2",
-      desc: "Web PWA with manual sleep input, fixed tile library, legible data mapping, and share-first loop",
-      body: `<div class="esect"><span class="esect-label">What Changed</span><ul><li><strong>Dropped HealthKit</strong> — manual 30-second sleep log instead (bedtime, wake time, quality 1–5)</li><li><strong>Replaced exploration with living snapshot + history</strong> — daily city portrait you can pinch-zoom and scroll through historically</li><li><strong>Legible data-to-city mapping</strong> — sleep duration → city size, quality → weather, REM % → color saturation, wake time → lighting, consistency streak → skyline height</li><li><strong>Share-first loop</strong> — morning notification → open → see city → share to Instagram/X in one tap</li><li><strong>Pre-built pixel art tile library</strong> — rule-based canvas assembly, no AI generation dependency</li></ul></div><div class="esect"><span class="esect-label">MVP Scope</span><div class="tag-row"><span class="etag">Manual sleep input</span><span class="etag">Isometric city generator</span><span class="etag">Mapping legend</span><span class="etag">City History archive</span><span class="etag">Share export PNG</span><span class="etag">Morning push notification</span><span class="etag">Mobile-first PWA</span></div></div><div class="esect"><span class="esect-label">Out of v1</span><div class="tag-row"><span class="etag" style="opacity:0.5">HealthKit</span><span class="etag" style="opacity:0.5">Wearable APIs</span><span class="etag" style="opacity:0.5">Interactive exploration</span><span class="etag" style="opacity:0.5">AI art generation</span><span class="etag" style="opacity:0.5">Native iOS/Android</span></div></div>`
+      desc: "Web PWA, manual sleep input, fixed tile library + legible mapping, share-first loop",
+      body: `<div class="esect"><div class="esect-label">What Changed</div>
+        <ul>
+          <li>Dropped HealthKit — simple manual sleep log (bedtime, wake time, quality 1–5) instead</li>
+          <li>Replaced "exploration" with living snapshot + history — daily portrait you can share</li>
+          <li>Legible data-to-city mapping: duration → city size, quality → weather, REM% → color, wake time → lighting</li>
+          <li>Share-first loop: morning push notification → open app → see city → share to Instagram/X</li>
+          <li>Pre-built pixel art tile library (~$20–50 license), rule-based assembly on HTML5 canvas</li>
+        </ul>
+      </div>
+      <div class="esect"><div class="esect-label">MVP Scope</div>
+        <ul>
+          <li>Manual sleep input form (30 seconds)</li>
+          <li>Rule-based isometric city generator on HTML5 canvas</li>
+          <li>Mapping legend (one tap away)</li>
+          <li>City History: scrollable archive with thumbnails</li>
+          <li>Share export: full-res PNG with branding, native share sheet</li>
+          <li>Morning PWA push notification</li>
+          <li>Mobile-first PWA — installable, works offline</li>
+        </ul>
+      </div>
+      <div class="esect"><div class="esect-label">Out of v1</div>
+        <div class="tag-row">
+          <span class="etag">HealthKit</span>
+          <span class="etag">Wearable APIs</span>
+          <span class="etag">Camera exploration</span>
+          <span class="etag">AI art generation</span>
+          <span class="etag">Social feed</span>
+          <span class="etag">Native iOS/Android</span>
+        </div>
+      </div>`
     },
     {
       status: "critique",
       icon: "🔍",
       title: "Critique v2",
-      desc: "Competent spec, but isometric renderer and iOS PWA notifications are real risks",
       verdict: "WORTH BUILDING",
       verdictClass: "worth",
       score: "8/10",
-      body: `<div class="esect"><span class="esect-label">What's Good</span><ul><li>Every major complaint from v1 addressed with concrete solutions, not hand-waving</li><li>Dropping HealthKit was right — removes the biggest technical and distribution landmine</li><li>Data-to-visual mapping is now legible and documented</li><li>PWA-first is the correct call for a solo builder — skip App Store, ship fast</li><li>"The city is the content, the app is the generator" — clear, compelling product pitch</li><li>Scope discipline is excellent: 7 screens, no social graph, no AI generation</li></ul></div><div class="esect"><span class="esect-label">Remaining Risks</span><ul><li>Isometric tile pack sourcing is harder than "~$20–$50" — budget 2–3 days for finding one with enough visual range</li><li>Rule-based isometric assembly is 40% of the technical work — spike it day 1</li><li>iOS Safari PWA notifications require "Add to Home Screen" — most users won't do it, breaking the morning habit loop</li><li>No cloud sync in v1 means localStorage wipe = total history loss for a daily habit app</li></ul></div><div class="esect"><span class="esect-label">Solo Dev Reality Check</span><p>3 weeks realistic if the tile assembly works cleanly. 4–5 weeks if you hit rendering edge cases or tile sourcing problems. The isometric renderer is the single biggest risk — de-risk it first.</p></div>`
+      desc: "Solid spec — every major v1 complaint addressed with concrete solutions",
+      body: `<div class="esect"><div class="esect-label">What's Good</div>
+        <ul>
+          <li>v2 is a completely different and competent spec — every major complaint addressed</li>
+          <li>Dropping HealthKit was the right call — removes the biggest technical landmine</li>
+          <li>Data-to-visual mapping is now legible and documented</li>
+          <li>PWA-first is correct for a solo builder — skip App Store, ship fast</li>
+          <li>"The city is the content, the app is the generator" — clear, compelling pitch</li>
+          <li>Scope discipline: 7 screens, no social graph, no AI generation</li>
+        </ul>
+      </div>
+      <div class="esect"><div class="esect-label">Remaining Risks</div>
+        <ul>
+          <li>Isometric tile pack sourcing harder than estimated — budget 2–3 days just for tiles</li>
+          <li>Rule-based isometric assembly is the hardest technical piece — expect a full week</li>
+          <li>iOS Safari PWA notifications require "Add to Home Screen" — most users won't</li>
+          <li>No account / data persistence strategy — localStorage is fragile for daily habit app</li>
+          <li>City variety may collapse by week 2 — needs careful parameterization</li>
+        </ul>
+      </div>
+      <div class="esect"><div class="esect-label">Build Time</div>
+        <p>3 weeks realistic if isometric renderer works cleanly. 4–5 weeks if tile sourcing or rendering edge cases hit. Rest of app (form, history, share, PWA shell) is straightforward.</p>
+      </div>`
     },
     {
       status: "validate",
       icon: "✅",
       title: "Validated",
       desc: "Score 8/10 — ready for design",
-      body: `<div class="esect"><span class="esect-label">Final Score</span><p style="font-size:2rem;font-weight:700;color:#86efac">8/10</p><p>Validated on 2026-03-27. Marked ready-for-design.</p></div><div class="esect"><span class="esect-label">Screens Designed</span><ul><li>Onboarding — concept intro with example cities</li><li>Sleep Input Form — 30-second bedtime/wake/quality log</li><li>Today's City — full-bleed isometric city hero</li><li>City Details Panel — mapping legend slide-up sheet</li><li>City History / Archive — calendar strip + thumbnail grid</li><li>Share Screen — one-tap social export</li><li>Settings — notifications + data preferences</li></ul></div>`
+      body: `<div class="esect"><div class="esect-label">Validation</div>
+        <p>Final score: <strong>8/10</strong>. Verdict: WORTH BUILDING. All 7 screens ready for design handoff.</p>
+      </div>
+      <div class="esect"><div class="esect-label">Screens</div>
+        <ul>
+          <li>Onboarding — concept intro, 3 city examples, CTA</li>
+          <li>Sleep Input Form — 30-second log: bedtime, wake, quality, notes</li>
+          <li>Today's City — full-bleed hero city canvas + weather effects</li>
+          <li>City Details Panel — slide-up mapping legend + sleep metrics</li>
+          <li>History / Archive — calendar strip + city thumbnail grid</li>
+          <li>Share Screen — city export with watermark + share/copy/download</li>
+          <li>Settings — notifications, reminder time, data management</li>
+        </ul>
+      </div>`
     },
     {
       status: "design",
       icon: "🎨",
       title: "Designed",
-      desc: "7 screens created in Stitch — mobile-first, dark Nocturnal Isometric design system",
-      body: `<div class="esect"><span class="esect-label">Design</span><p>Created in Stitch using the <strong>Nocturnal Isometric</strong> design system — deep indigo/violet palette, Space Grotesk typography, pixel art voxel components, and glassmorphism navigation. 7 screens covering the full morning flow.</p><p style="margin-top:8px"><a class="ext-link" href="https://stitch.withgoogle.com/projects/8779685954844808534" target="_blank">Edit in Stitch ↗</a></p></div><div class="esect"><span class="esect-label">Device</span><p>Mobile (390px) — mobile-first PWA</p></div>`
+      desc: "Stitch project created — 7 screens, dark neon aesthetic (Nocturne Grid design system)",
+      body: `<div class="esect"><div class="esect-label">Design</div>
+        <p>Stitch project created with all 7 screens. Design system: <strong>Nocturne Grid</strong> — dark atmospheric theme, neon accents (#ea88ff purple, #00e3fd cyan), Plus Jakarta Sans + Manrope typography.</p>
+      </div>
+      <div class="esect"><div class="esect-label">Links</div>
+        <a class="ext-link" href="https://stitch.withgoogle.com/projects/1624531977355925935" target="_blank">✏️ Edit in Stitch</a>
+      </div>
+      <div class="esect"><div class="esect-label">Device</div>
+        <p>MOBILE — mobile-first PWA</p>
+      </div>`
     }
   ]
 };
