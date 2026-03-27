@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-dim": "#8d2954",
+              "inverse-on-surface": "#9c9d9f",
+              "surface-container-low": "#f0f1f3",
+              "surface-container": "#e7e8ea",
+              "on-secondary-fixed": "#471580",
+              "error-dim": "#a70138",
+              "on-error": "#ffefef",
+              "tertiary-fixed-dim": "#f57ca9",
+              "tertiary": "#9c3660",
+              "surface-bright": "#f6f6f8",
+              "surface": "#f6f6f8",
+              "background": "#f6f6f8",
+              "primary-container": "#a98fff",
+              "surface-container-high": "#e1e2e5",
+              "primary-dim": "#5826cf",
+              "primary-fixed-dim": "#9c7eff",
+              "primary-fixed": "#a98fff",
+              "on-tertiary": "#ffeff2",
+              "secondary-dim": "#64379e",
+              "on-primary-fixed": "#000000",
+              "on-tertiary-container": "#640335",
+              "on-surface-variant": "#5a5c5d",
+              "surface-dim": "#d2d4d8",
+              "on-secondary-container": "#5b2e95",
+              "tertiary-container": "#ff8db6",
+              "error": "#b41340",
+              "tertiary-fixed": "#ff8db6",
+              "on-error-container": "#510017",
+              "on-primary-container": "#280072",
+              "surface-container-highest": "#dbdde0",
+              "primary": "#6437db",
+              "on-secondary": "#faefff",
+              "secondary-container": "#e1c7ff",
+              "surface-variant": "#dbdde0",
+              "outline": "#757779",
+              "on-secondary-fixed-variant": "#65389f",
+              "on-primary": "#f7f0ff",
+              "inverse-primary": "#9a7bff",
+              "on-tertiary-fixed": "#37001a",
+              "secondary": "#7144ab",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#d6b6ff",
+              "inverse-surface": "#0c0e10",
+              "on-tertiary-fixed-variant": "#70103e",
+              "on-primary-fixed-variant": "#32008a",
+              "surface-tint": "#6437db",
+              "outline-variant": "#acadaf",
+              "error-container": "#f74b6d",
+              "secondary-fixed": "#e1c7ff",
+              "on-background": "#2d2f31",
+              "on-surface": "#2d2f31"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-morphism {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .mood-glow {
+        box-shadow: 0 0 60px 10px rgba(124, 77, 255, 0.15);
+      }
+      .signature-gradient {
+        background: linear-gradient(135deg, #6437db 0%, #a98fff 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-[#f6f6f8] dark:bg-[#1a1b1e] w-full pt-4 pb-2 z-30">
+<div class="flex items-center px-8 w-full max-w-7xl mx-auto">
+<button class="mr-4 text-[#7C4DFF] dark:text-[#a98fff] hover:opacity-80 transition-opacity active:scale-95 active:duration-150" onclick="window.location.href='58b917d03e334b8d9a07114317e7b035.html'"><span class="material-symbols-outlined">arrow_back</span></button>
+<h1 class="font-manrope font-bold text-xl tracking-tight text-[#2d2f31] dark:text-[#e2e2e6]">Log Detail</h1>
+</div>
+</header>
+<main class="flex-grow w-full max-w-lg mx-auto px-6 pt-8 pb-32">
+<!-- Hero Section: Ethereal Mood -->
+<section class="flex flex-col items-center text-center mb-12">
+<div class="relative w-48 h-48 mb-8 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full bg-primary/5 animate-pulse mood-glow"></div>
+<div class="absolute inset-4 rounded-full glass-morphism border border-white/20 flex items-center justify-center">
+<span class="text-7xl">🤩</span>
+</div>
+</div>
+<h2 class="font-headline font-extrabold text-3xl tracking-tight mb-2">You're feeling Joyful!</h2>
+<p class="text-on-surface-variant font-medium">Capture what's making this moment special.</p>
+</section>
+<!-- Context Tags Section -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline font-bold text-lg">Add context tags (optional)</h3>
+<span class="text-xs font-bold text-primary tracking-widest uppercase">Quick Select</span>
+</div>
+<div class="flex flex-wrap gap-3">
+<!-- Selected Tags -->
+<button class="px-5 py-3 rounded-full signature-gradient text-on-primary font-semibold text-sm shadow-lg shadow-primary/20 transition-all active:scale-95">
+                    slept well
+                </button>
+<button class="px-5 py-3 rounded-full signature-gradient text-on-primary font-semibold text-sm shadow-lg shadow-primary/20 transition-all active:scale-95">
+                    good food
+                </button>
+<!-- Unselected Tags -->
+<button class="px-5 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    exercised
+                </button>
+<button class="px-5 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    work stress
+                </button>
+<button class="px-5 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    social time
+                </button>
+<button class="px-5 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    alcohol
+                </button>
+<button class="px-5 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    poor sleep
+                </button>
+<button class="px-5 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    skipped gym
+                </button>
+<button class="px-5 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    stressful meeting
+                </button>
+<button class="px-5 py-3 rounded-full bg-surface-container-high text-on-surface-variant font-medium text-sm hover:bg-surface-container-highest transition-colors active:scale-95">
+                    relaxed
+                </button>
+</div>
+</section>
+<!-- Action Section -->
+<section class="flex flex-col items-center gap-6">
+<button onclick="window.location.href='58b917d03e334b8d9a07114317e7b035.html'" class="w-full py-5 rounded-lg signature-gradient text-on-primary font-headline font-extrabold text-xl shadow-[0_12px_24px_rgba(100,55,219,0.3)] active:scale-[0.98] transition-all">
+                Confirm
+            </button>
+<button onclick="window.location.href='58b917d03e334b8d9a07114317e7b035.html'" class="text-on-surface-variant font-bold text-sm tracking-widest uppercase hover:text-primary transition-colors">
+                Skip
+            </button>
+</section>
+</main>
+
+
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 py-4 bg-white/60 backdrop-blur-xl z-50 shadow-[0_-8px_32px_rgba(45,47,49,0.06)]">
+<a class="flex flex-col items-center justify-center bg-[#7C4DFF] text-white rounded-full px-5 py-2 scale-110 shadow-lg active:scale-90 transition-all" onclick="window.location.href='58b917d03e334b8d9a07114317e7b035.html'; return false;" href="58b917d03e334b8d9a07114317e7b035.html"><span class="material-symbols-outlined text-xl">home</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Home</span></a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-2 hover:text-[#7C4DFF] transition-colors" onclick="window.location.href='5c4c81dd9ebd48fb81f416ee5d7abbef.html'; return false;" href="5c4c81dd9ebd48fb81f416ee5d7abbef.html"><span class="material-symbols-outlined text-xl">calendar_month</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Calendar</span></a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-2 hover:text-[#7C4DFF] transition-colors" onclick="window.location.href='6754a8cb41ed4127944e8135a2caf3ac.html'; return false;" href="6754a8cb41ed4127944e8135a2caf3ac.html"><span class="material-symbols-outlined text-xl">insert_chart</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Patterns</span></a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-2 hover:text-[#7C4DFF] transition-colors" onclick="window.location.href='7c5cce8e4f2a4fbe877f2976eebe329e.html'; return false;" href="7c5cce8e4f2a4fbe877f2976eebe329e.html"><span class="material-symbols-outlined text-xl">settings</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Settings</span></a>
+</nav>
+
+</body></html>

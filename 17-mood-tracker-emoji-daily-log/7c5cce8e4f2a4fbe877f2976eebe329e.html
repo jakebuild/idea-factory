@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>MoodDot Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#9c9d9f",
+              "on-secondary-fixed": "#471580",
+              "primary-container": "#a98fff",
+              "on-tertiary-fixed-variant": "#70103e",
+              "tertiary": "#9c3660",
+              "secondary-fixed": "#e1c7ff",
+              "secondary-container": "#e1c7ff",
+              "on-background": "#2d2f31",
+              "on-secondary": "#faefff",
+              "on-error-container": "#510017",
+              "error-container": "#f74b6d",
+              "on-surface-variant": "#5a5c5d",
+              "primary": "#6437db",
+              "on-primary-fixed": "#000000",
+              "on-primary": "#f7f0ff",
+              "on-primary-fixed-variant": "#32008a",
+              "error-dim": "#a70138",
+              "surface-container-highest": "#dbdde0",
+              "secondary": "#7144ab",
+              "surface-container-high": "#e1e2e5",
+              "secondary-fixed-dim": "#d6b6ff",
+              "tertiary-fixed": "#ff8db6",
+              "on-secondary-fixed-variant": "#65389f",
+              "inverse-primary": "#9a7bff",
+              "background": "#f6f6f8",
+              "surface-dim": "#d2d4d8",
+              "on-tertiary": "#ffeff2",
+              "inverse-surface": "#0c0e10",
+              "surface-tint": "#6437db",
+              "surface-container-lowest": "#ffffff",
+              "outline": "#757779",
+              "surface-bright": "#f6f6f8",
+              "error": "#b41340",
+              "secondary-dim": "#64379e",
+              "tertiary-container": "#ff8db6",
+              "surface-variant": "#dbdde0",
+              "primary-dim": "#5826cf",
+              "on-tertiary-container": "#640335",
+              "primary-fixed-dim": "#9c7eff",
+              "surface-container-low": "#f0f1f3",
+              "on-secondary-container": "#5b2e95",
+              "tertiary-fixed-dim": "#f57ca9",
+              "on-tertiary-fixed": "#37001a",
+              "on-surface": "#2d2f31",
+              "on-primary-container": "#280072",
+              "on-error": "#ffefef",
+              "surface": "#f6f6f8",
+              "outline-variant": "#acadaf",
+              "surface-container": "#e7e8ea",
+              "tertiary-dim": "#8d2954",
+              "primary-fixed": "#a98fff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-50 bg-[#f6f6f8] dark:bg-[#1a1b1e] w-full flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#7C4DFF] dark:text-[#a98fff] active:scale-95 duration-200" data-icon="arrow_back">arrow_back</button>
+<h1 class="font-['Manrope'] font-bold text-lg tracking-tight">Settings</h1>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a smiling woman with soft lighting and professional photographic bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6oYT1KmrkKABePQN8M1bj8I21Ql-DvGXAwdIw7LXCPZyvJ0aeplQT0dgdyZhSW7sj3cgyntxyLRAbtA8jjVFX3diIsCk7Y0tfnoCWhJ24k1QbHCkdf9zw4ThC8fVZZLd0KV8vwmX010UrBzLKH5JIG8cakj3hA2qEdo4nFNv52phabS-_fMi4Z_RDJz4Zjz6HQmyMpKQRkMyZ5GO9mK1ZzLPAnSTPquWu4-eEABu7MThLqhcojjAD5344dMZwuyeIlcatrDyV9iuX"/>
+</div>
+</header>
+<main class="px-6 space-y-8 mt-4">
+<!-- Notifications Section -->
+<section class="space-y-4">
+<h2 class="text-on-surface-variant font-semibold text-sm tracking-wider uppercase pl-2">Notifications</h2>
+<div class="bg-surface-container-lowest p-6 rounded-xl flex items-center justify-between shadow-[0_8px_32px_0_rgba(45,47,49,0.04)]">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="notifications_active">notifications_active</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Daily Reminder</p>
+<p class="text-sm text-on-surface-variant">8:00 AM</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-surface-container-low px-4 py-2 rounded-lg font-semibold text-sm text-primary hover:bg-[#f0f1f3] transition-colors">Edit Time</button>
+<!-- Toggle Switch -->
+<div class="w-12 h-6 bg-primary rounded-full relative p-1 cursor-pointer">
+<div class="w-4 h-4 bg-white rounded-full absolute right-1"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tags Section -->
+<section class="space-y-4">
+<div class="flex items-center justify-between pl-2 pr-2">
+<h2 class="text-on-surface-variant font-semibold text-sm tracking-wider uppercase">Context Tags</h2>
+<button class="text-primary font-bold text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="edit">edit</span>
+                    Edit
+                </button>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl">
+<div class="flex flex-wrap gap-3">
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">slept well</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">good food</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">exercised</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">work stress</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">social time</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">alcohol</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">poor sleep</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">skipped gym</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">stressful meeting</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">relaxed</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">coffee</span>
+<span class="bg-surface-container-lowest text-on-surface px-4 py-2.5 rounded-full text-sm font-medium border border-transparent hover:border-primary-container transition-all">focused</span>
+</div>
+</div>
+</section>
+<!-- Data Management -->
+<section class="space-y-4">
+<h2 class="text-on-surface-variant font-semibold text-sm tracking-wider uppercase pl-2">Data &amp; Privacy</h2>
+<div class="space-y-1 bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_8px_32px_0_rgba(45,47,49,0.04)]">
+<button class="w-full flex items-center justify-between p-6 bg-surface-container-lowest hover:bg-surface-container-low transition-colors group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-outline" data-icon="ios_share">ios_share</span>
+<span class="font-bold text-on-surface">Export Data</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-6 bg-surface-container-lowest hover:bg-error/5 transition-colors group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-error" data-icon="delete_sweep">delete_sweep</span>
+<span class="font-bold text-error">Clear All Data</span>
+</div>
+<span class="material-symbols-outlined text-error/40 group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Aesthetic Card / Promotion -->
+<section class="pt-4">
+<div class="relative overflow-hidden bg-primary rounded-xl p-8 text-on-primary">
+<div class="relative z-10 space-y-2">
+<h3 class="text-xl font-bold">Reflect Pro</h3>
+<p class="text-on-primary/80 text-sm max-w-[200px]">Unlock deep emotional trends and AI-driven insights.</p>
+<button class="mt-4 bg-white text-primary px-6 py-2 rounded-full text-sm font-bold active:scale-95 transition-all">Upgrade Now</button>
+</div>
+<!-- Abstract visual element -->
+<div class="absolute -right-10 -bottom-10 w-48 h-48 bg-primary-container/30 rounded-full blur-3xl"></div>
+<div class="absolute right-4 top-4 opacity-20">
+<span class="material-symbols-outlined text-[100px]" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+
+
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 py-4 bg-white/60 backdrop-blur-xl z-50 shadow-[0_-8px_32px_rgba(45,47,49,0.06)]">
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-2 hover:text-[#7C4DFF] transition-colors" onclick="window.location.href='58b917d03e334b8d9a07114317e7b035.html'; return false;" href="58b917d03e334b8d9a07114317e7b035.html"><span class="material-symbols-outlined text-xl">home</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Home</span></a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-2 hover:text-[#7C4DFF] transition-colors" onclick="window.location.href='5c4c81dd9ebd48fb81f416ee5d7abbef.html'; return false;" href="5c4c81dd9ebd48fb81f416ee5d7abbef.html"><span class="material-symbols-outlined text-xl">calendar_month</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Calendar</span></a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-2 hover:text-[#7C4DFF] transition-colors" onclick="window.location.href='6754a8cb41ed4127944e8135a2caf3ac.html'; return false;" href="6754a8cb41ed4127944e8135a2caf3ac.html"><span class="material-symbols-outlined text-xl">insert_chart</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Patterns</span></a>
+<a class="flex flex-col items-center justify-center bg-[#7C4DFF] text-white rounded-full px-5 py-2 scale-110 shadow-lg active:scale-90 transition-all" onclick="window.location.href='7c5cce8e4f2a4fbe877f2976eebe329e.html'; return false;" href="7c5cce8e4f2a4fbe877f2976eebe329e.html"><span class="material-symbols-outlined text-xl">settings</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Settings</span></a>
+</nav>
+
+</body></html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>MoodDot - Your Patterns</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error-container": "#f74b6d",
+              "surface-bright": "#f6f6f8",
+              "surface-variant": "#dbdde0",
+              "on-error": "#ffefef",
+              "error": "#b41340",
+              "primary-container": "#a98fff",
+              "on-tertiary-container": "#640335",
+              "on-tertiary-fixed": "#37001a",
+              "secondary-dim": "#64379e",
+              "on-error-container": "#510017",
+              "primary-fixed-dim": "#9c7eff",
+              "secondary-fixed": "#e1c7ff",
+              "on-tertiary-fixed-variant": "#70103e",
+              "primary-dim": "#5826cf",
+              "primary": "#6437db",
+              "on-primary": "#f7f0ff",
+              "outline": "#757779",
+              "primary-fixed": "#a98fff",
+              "on-secondary-container": "#5b2e95",
+              "on-background": "#2d2f31",
+              "surface-container-lowest": "#ffffff",
+              "error-dim": "#a70138",
+              "secondary": "#7144ab",
+              "tertiary-fixed": "#ff8db6",
+              "tertiary-container": "#ff8db6",
+              "inverse-surface": "#0c0e10",
+              "on-surface-variant": "#5a5c5d",
+              "inverse-primary": "#9a7bff",
+              "outline-variant": "#acadaf",
+              "on-secondary-fixed": "#471580",
+              "on-secondary-fixed-variant": "#65389f",
+              "background": "#f6f6f8",
+              "tertiary-dim": "#8d2954",
+              "secondary-fixed-dim": "#d6b6ff",
+              "on-secondary": "#faefff",
+              "surface-container-high": "#e1e2e5",
+              "surface-container-highest": "#dbdde0",
+              "on-primary-fixed-variant": "#32008a",
+              "on-primary-container": "#280072",
+              "tertiary-fixed-dim": "#f57ca9",
+              "on-primary-fixed": "#000000",
+              "surface": "#f6f6f8",
+              "surface-dim": "#d2d4d8",
+              "surface-tint": "#6437db",
+              "on-surface": "#2d2f31",
+              "tertiary": "#9c3660",
+              "secondary-container": "#e1c7ff",
+              "surface-container-low": "#f0f1f3",
+              "surface-container": "#e7e8ea",
+              "on-tertiary": "#ffeff2",
+              "inverse-on-surface": "#9c9d9f"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky z-40 bg-[#f6f6f8] dark:bg-slate-900 flex items-center justify-between px-8 py-4 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#7C4DFF] dark:text-[#a98fff]" style="font-size: 28px;">bubble_chart</span>
+<span class="font-['Manrope'] font-black text-[#7C4DFF] tracking-tighter text-2xl">MoodDot</span>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-slate-400 hover:opacity-80 transition-opacity"><span class="material-symbols-outlined">search</span></button>
+<button class="text-slate-400 hover:opacity-80 transition-opacity"><span class="material-symbols-outlined">notifications</span></button>
+</div>
+</header>
+<main class="max-w-screen-md mx-auto px-6 pt-8 space-y-10">
+<!-- Header & Toggle Section -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div>
+<h1 class="font-headline text-display-sm text-4xl font-extrabold tracking-tight text-on-surface">Your Patterns</h1>
+<p class="text-on-surface-variant body-sm mt-1">Discover what moves your mood.</p>
+</div>
+<div class="bg-surface-container-low p-1.5 rounded-full flex items-center w-fit self-start md:self-auto">
+<button class="px-6 py-2 rounded-full text-label-sm font-semibold transition-all bg-surface-container-lowest text-on-surface shadow-sm">30-day</button>
+<button class="px-6 py-2 rounded-full text-label-sm font-semibold transition-all text-on-surface-variant hover:text-on-surface">90-day</button>
+</div>
+</div>
+<!-- Positive Correlations Section -->
+<section class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+<h2 class="font-headline text-xl font-bold tracking-tight">Positive Correlations</h2>
+</div>
+<div class="grid gap-4">
+<!-- Row 1: Exercise -->
+<div class="glass-card p-8 rounded-xl border border-white/20 shadow-sm active:scale-95 transition-all cursor-pointer">
+<div class="flex justify-between items-end mb-4">
+<div>
+<p class="text-on-surface-variant label-sm uppercase tracking-widest font-bold mb-1">Activity</p>
+<h3 class="font-headline text-2xl font-bold">Exercise</h3>
+</div>
+<div class="text-right">
+<span class="text-primary font-bold text-2xl">+1.3</span>
+<span class="text-on-surface-variant label-sm block">Mood Impact</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-primary-container rounded-full" style="width: 82%;"></div>
+</div>
+<div class="flex justify-between text-xs font-medium text-on-surface-variant px-1">
+<span>Mood 4.1 (With)</span>
+<span class="opacity-50">2.8 (Without)</span>
+</div>
+<div class="relative w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-surface-variant rounded-full" style="width: 56%;"></div>
+</div>
+</div>
+</div>
+<!-- Row 2: Good Sleep -->
+<div class="glass-card p-8 rounded-xl border border-white/20 shadow-sm active:scale-95 transition-all cursor-pointer">
+<div class="flex justify-between items-end mb-4">
+<div>
+<p class="text-on-surface-variant label-sm uppercase tracking-widest font-bold mb-1">Wellness</p>
+<h3 class="font-headline text-2xl font-bold">Good Sleep</h3>
+</div>
+<div class="text-right">
+<span class="text-primary font-bold text-2xl">+1.8</span>
+<span class="text-on-surface-variant label-sm block">Mood Impact</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-primary-container rounded-full" style="width: 86%;"></div>
+</div>
+<div class="flex justify-between text-xs font-medium text-on-surface-variant px-1">
+<span>Mood 4.3 (With)</span>
+<span class="opacity-50">2.5 (Without)</span>
+</div>
+<div class="relative w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-surface-variant rounded-full" style="width: 50%;"></div>
+</div>
+</div>
+</div>
+<!-- Row 3: Social Time -->
+<div class="glass-card p-8 rounded-xl border border-white/20 shadow-sm active:scale-95 transition-all cursor-pointer">
+<div class="flex justify-between items-end mb-4">
+<div>
+<p class="text-on-surface-variant label-sm uppercase tracking-widest font-bold mb-1">Social</p>
+<h3 class="font-headline text-2xl font-bold">Social Time</h3>
+</div>
+<div class="text-right">
+<span class="text-primary font-bold text-2xl">+0.8</span>
+<span class="text-on-surface-variant label-sm block">Mood Impact</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-primary-container rounded-full" style="width: 78%;"></div>
+</div>
+<div class="flex justify-between text-xs font-medium text-on-surface-variant px-1">
+<span>Mood 3.9 (With)</span>
+<span class="opacity-50">3.1 (Without)</span>
+</div>
+<div class="relative w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-surface-variant rounded-full" style="width: 62%;"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Negative Correlations Section -->
+<section class="space-y-6 pb-12">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">trending_down</span>
+<h2 class="font-headline text-xl font-bold tracking-tight">Negative Correlations</h2>
+</div>
+<div class="grid gap-4">
+<!-- Caffeine Late -->
+<div class="bg-surface-container-low p-8 rounded-xl active:scale-95 transition-all cursor-pointer">
+<div class="flex justify-between items-end mb-4">
+<div>
+<p class="text-on-surface-variant label-sm uppercase tracking-widest font-bold mb-1">Habit</p>
+<h3 class="font-headline text-2xl font-bold">Late Caffeine</h3>
+</div>
+<div class="text-right">
+<span class="text-error font-bold text-2xl">-1.1</span>
+<span class="text-on-surface-variant label-sm block">Mood Impact</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-error-container" style="width: 44%;"></div>
+</div>
+<div class="flex justify-between text-xs font-medium text-on-surface-variant px-1">
+<span>Mood 2.2 (With)</span>
+<span class="opacity-50">3.3 (Without)</span>
+</div>
+<div class="relative w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-surface-variant rounded-full" style="width: 66%;"></div>
+</div>
+</div>
+</div>
+<!-- Overtime -->
+<div class="bg-surface-container-low p-8 rounded-xl active:scale-95 transition-all cursor-pointer">
+<div class="flex justify-between items-end mb-4">
+<div>
+<p class="text-on-surface-variant label-sm uppercase tracking-widest font-bold mb-1">Work</p>
+<h3 class="font-headline text-2xl font-bold">Overtime</h3>
+</div>
+<div class="text-right">
+<span class="text-error font-bold text-2xl">-0.9</span>
+<span class="text-on-surface-variant label-sm block">Mood Impact</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-error-container" style="width: 52%;"></div>
+</div>
+<div class="flex justify-between text-xs font-medium text-on-surface-variant px-1">
+<span>Mood 2.6 (With)</span>
+<span class="opacity-50">3.5 (Without)</span>
+</div>
+<div class="relative w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full bg-surface-variant rounded-full" style="width: 70%;"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Insights Bento Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-primary-container/20 p-8 rounded-xl flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-primary text-4xl">lightbulb</span>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Weekend Peak</h4>
+<p class="text-on-surface-variant body-sm leading-relaxed">Your mood averages 4.2 on Saturdays, which is 15% higher than your weekday average.</p>
+</div>
+</div>
+<div class="bg-secondary-container/20 p-8 rounded-xl flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-secondary text-4xl">schedule</span>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Morning Slump</h4>
+<p class="text-on-surface-variant body-sm leading-relaxed">Early logs (before 8 AM) show the lowest consistency. Consider a later check-in.</p>
+</div>
+</div>
+</section>
+</main>
+
+
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 py-4 bg-white/60 backdrop-blur-xl z-50 shadow-[0_-8px_32px_rgba(45,47,49,0.06)]">
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-2 hover:text-[#7C4DFF] transition-colors" onclick="window.location.href='58b917d03e334b8d9a07114317e7b035.html'; return false;" href="58b917d03e334b8d9a07114317e7b035.html"><span class="material-symbols-outlined text-xl">home</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Home</span></a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-2 hover:text-[#7C4DFF] transition-colors" onclick="window.location.href='5c4c81dd9ebd48fb81f416ee5d7abbef.html'; return false;" href="5c4c81dd9ebd48fb81f416ee5d7abbef.html"><span class="material-symbols-outlined text-xl">calendar_month</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Calendar</span></a>
+<a class="flex flex-col items-center justify-center bg-[#7C4DFF] text-white rounded-full px-5 py-2 scale-110 shadow-lg active:scale-90 transition-all" onclick="window.location.href='6754a8cb41ed4127944e8135a2caf3ac.html'; return false;" href="6754a8cb41ed4127944e8135a2caf3ac.html"><span class="material-symbols-outlined text-xl">insert_chart</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Patterns</span></a>
+<a class="flex flex-col items-center justify-center text-slate-400 px-4 py-2 hover:text-[#7C4DFF] transition-colors" onclick="window.location.href='7c5cce8e4f2a4fbe877f2976eebe329e.html'; return false;" href="7c5cce8e4f2a4fbe877f2976eebe329e.html"><span class="material-symbols-outlined text-xl">settings</span><span class="text-[10px] font-semibold tracking-wide uppercase mt-0.5">Settings</span></a>
+</nav>
+
+</body></html>

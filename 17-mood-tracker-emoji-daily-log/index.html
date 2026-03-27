@@ -3,76 +3,106 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Idea #17 — Design Preview</title>
+<title>MoodDot — Prototype</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: #111827; color: #f9fafb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 32px 16px 64px; }
-  .header { text-align: center; margin-bottom: 48px; }
-  .header h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 8px; }
-  .header p { color: #9ca3af; font-size: 0.95rem; margin-bottom: 12px; }
-  .badge { display: inline-flex; align-items: center; gap: 6px; background: #1f2937; border: 1px solid #374151; border-radius: 9999px; padding: 4px 14px; font-size: 0.85rem; color: #d1d5db; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto; }
-  .card { background: #1f2937; border-radius: 16px; overflow: hidden; border: 1px solid #374151; transition: transform 0.2s, box-shadow 0.2s; }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
-  .card-label { padding: 12px 16px; }
-  .card-label .num { font-size: 0.7rem; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
-  .card-label a { font-size: 0.95rem; font-weight: 600; color: #60a5fa; text-decoration: none; }
-  .card-label a:hover { color: #93c5fd; }
-  .preview { width: 100%; height: 422px; border: none; display: block; background: #0f172a; }
-  .stitch-link { display: block; text-align: center; margin-top: 40px; color: #6b7280; font-size: 0.85rem; }
-  .stitch-link a { color: #60a5fa; }
+  body {
+    background: #111827;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    padding: 24px 16px 40px;
+  }
+  .label {
+    color: rgba(255,255,255,0.5);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  .title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .phone-frame {
+    width: 390px;
+    height: 844px;
+    border-radius: 44px;
+    background: #fff;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 2px rgba(255,255,255,0.1);
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .phone-frame iframe {
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .switcher {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 420px;
+  }
+  .switcher button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .switcher button:hover { background: rgba(255,255,255,0.3); }
+  .switcher button.active { background: #7C4DFF; }
 </style>
 </head>
 <body>
-<div class="header">
-  <h1>Idea #17 — MoodDot</h1>
-  <p>Daily Mood + Context Tracker</p>
-  <span class="badge">📱 Mobile</span>
+<div class="label">📱 Mobile Prototype</div>
+<div class="title">MoodDot — Daily Mood + Context Tracker</div>
+<div class="phone-frame">
+  <iframe id="app" src="58b917d03e334b8d9a07114317e7b035.html"></iframe>
 </div>
-<div class="grid">
-  <div class="card">
-    <div class="card-label">
-      <div class="num">Screen 1</div>
-      <a href="a71a8ec4381947d49034e2f31f5ca731.html" target="_blank">Widget</a>
-    </div>
-    <iframe class="preview" src="a71a8ec4381947d49034e2f31f5ca731.html" title="Screen 1: Widget" loading="lazy"></iframe>
-  </div>
-  <div class="card">
-    <div class="card-label">
-      <div class="num">Screen 2</div>
-      <a href="35d2830e5dda4d30aebf4094247b4b4a.html" target="_blank">Home / Today</a>
-    </div>
-    <iframe class="preview" src="35d2830e5dda4d30aebf4094247b4b4a.html" title="Screen 2: Home / Today" loading="lazy"></iframe>
-  </div>
-  <div class="card">
-    <div class="card-label">
-      <div class="num">Screen 3</div>
-      <a href="6d76bfb4379d4d09b2391d613cdb550f.html" target="_blank">Log Detail</a>
-    </div>
-    <iframe class="preview" src="6d76bfb4379d4d09b2391d613cdb550f.html" title="Screen 3: Log Detail" loading="lazy"></iframe>
-  </div>
-  <div class="card">
-    <div class="card-label">
-      <div class="num">Screen 4</div>
-      <a href="d3dba6ef50524b6c905109f45cc10fbf.html" target="_blank">Pattern View</a>
-    </div>
-    <iframe class="preview" src="d3dba6ef50524b6c905109f45cc10fbf.html" title="Screen 4: Pattern View" loading="lazy"></iframe>
-  </div>
-  <div class="card">
-    <div class="card-label">
-      <div class="num">Screen 5</div>
-      <a href="abbb7773a73b44cd9c6ccc6ec3793243.html" target="_blank">Calendar</a>
-    </div>
-    <iframe class="preview" src="abbb7773a73b44cd9c6ccc6ec3793243.html" title="Screen 5: Calendar" loading="lazy"></iframe>
-  </div>
-  <div class="card">
-    <div class="card-label">
-      <div class="num">Screen 6</div>
-      <a href="68b0c5de728a4e248a8641faac3b2eb6.html" target="_blank">Settings</a>
-    </div>
-    <iframe class="preview" src="68b0c5de728a4e248a8641faac3b2eb6.html" title="Screen 6: Settings" loading="lazy"></iframe>
-  </div>
+<div class="switcher">
+  <button onclick="setScreen(0)" title="Widget">1</button>
+  <button onclick="setScreen(1)" class="active" title="Home">2</button>
+  <button onclick="setScreen(2)" title="Log Detail">3</button>
+  <button onclick="setScreen(3)" title="Pattern View">4</button>
+  <button onclick="setScreen(4)" title="Calendar">5</button>
+  <button onclick="setScreen(5)" title="Settings">6</button>
 </div>
-<p class="stitch-link">Edit in <a href="https://stitch.withgoogle.com/projects/3408830973137008397" target="_blank">Stitch</a></p>
+<script>
+  var screens = [
+    "c9ffff6ca10f40ba9430a7633eede0f3.html",
+    "58b917d03e334b8d9a07114317e7b035.html",
+    "0072f10ebaa8407c83dce7142eba381a.html",
+    "6754a8cb41ed4127944e8135a2caf3ac.html",
+    "5c4c81dd9ebd48fb81f416ee5d7abbef.html",
+    "7c5cce8e4f2a4fbe877f2976eebe329e.html"
+  ];
+  var labels = ["Widget","Home","Log Detail","Patterns","Calendar","Settings"];
+  var btns = document.querySelectorAll('.switcher button');
+
+  function setScreen(i) {
+    document.getElementById('app').src = screens[i];
+    btns.forEach(function(b,j){ b.classList.toggle('active', i===j); });
+  }
+</script>
 </body>
 </html>
