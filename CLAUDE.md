@@ -16,6 +16,7 @@ This triggers a multi-round pipeline:
 3. **Improve** — spawns another agent to address critique and write `idea-v<n+1>.md`
 4. **Refine** — runs 2 rounds of critique+improve by default; stops early if score ≥ 8/10
 5. **Validate** — marks idea as `ready-for-design`, updates the GitHub issue label
+6. **Design** — spawns a `claude` agent that creates a Stitch project with all screens from the Design Handoff, posts the link to the GitHub issue
 
 ## Repo Structure
 
@@ -23,12 +24,13 @@ Each numbered folder is a synced snapshot of an idea at some refinement stage:
 
 ```
 <n>-<slug>/
-  idea-v1.md          # original submission
-  idea-v2.md          # improved version (after round 1)
-  critique-v1.md      # critique of v1 (Verdict, Score, Brutal Feedback, Design Handoff)
-  critique-score.txt  # e.g. "7/10"
+  idea-v1.md            # original submission
+  idea-v2.md            # improved version (after round 1)
+  critique-v1.md        # critique of v1 (Verdict, Score, Brutal Feedback, Design Handoff)
+  critique-score.txt    # e.g. "7/10"
   github-issue-num.txt
-  status.txt          # submitted | in-review | improved | ready-for-design
+  status.txt            # submitted | in-review | improved | ready-for-design
+  stitch-project-id.txt # Stitch project ID (added after design step)
 ```
 
 The canonical working directory for pipeline artifacts is `~/workspace/idea-factory/`. This is also the git repo — ideas are committed and pushed automatically on submit.
@@ -49,12 +51,13 @@ tmux attach -t idea-improve-<n>       # watch improve agent
 
 | Command | Description |
 |---------|-------------|
-| `idea-factory submit <idea>` | Submit + auto-run 2-round pipeline |
+| `idea-factory submit <idea>` | Submit + auto-run full pipeline |
 | `idea-factory critique <n>` | Run critique agent for idea #n |
 | `idea-factory improve <n>` | Run improve agent for idea #n |
 | `idea-factory refine <n> [rounds]` | Manual multi-round refine |
-| `idea-factory validate <n>` | Mark ready for design |
-| `idea-factory list` | Show all ideas and status |
+| `idea-factory validate <n>` | Validate + trigger Stitch design agent |
+| `idea-factory design <n>` | (Re)run Stitch design agent for idea #n |
+| `idea-factory list` | Show all ideas with score and design status |
 
 ## Critique Format
 

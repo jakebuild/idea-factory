@@ -20,6 +20,8 @@ idea-factory submit "your idea"
    Round 2 (repeat, stops early if score ≥ 8/10)
        ↓
    Validate → ready-for-design label
+       ↓
+   Design agent (tmux) → Stitch project with all screens
 ```
 
 Each idea lives in its own numbered folder with versioned files at every stage.
@@ -68,8 +70,9 @@ gh issue list --repo jakebuild/idea-factory
 | `idea-factory critique <n>` | Run critique agent for idea #n |
 | `idea-factory improve <n>` | Run improve agent for idea #n |
 | `idea-factory refine <n> [rounds]` | Manual multi-round refine |
-| `idea-factory validate <n>` | Mark ready for design |
-| `idea-factory list` | Show all ideas and status |
+| `idea-factory validate <n>` | Validate + trigger Stitch design agent |
+| `idea-factory design <n>` | (Re)run Stitch design agent for idea #n |
+| `idea-factory list` | List all ideas with score and design status |
 
 ---
 
