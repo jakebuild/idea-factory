@@ -85,6 +85,7 @@ window.IDEA_DATA = {
     }
   ]
 };
+
 </script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -465,6 +466,15 @@ window.IDEA_DATA = {
   const startIdx = D.startScreen != null ? D.startScreen : (screens.length > 1 ? 1 : 0);
   const switcher = document.getElementById('switcher');
   const iframe   = document.getElementById('app');
+
+  function hideIframeScrollbars() {
+    try {
+      const style = iframe.contentDocument.createElement('style');
+      style.textContent = '::-webkit-scrollbar{display:none}*{-ms-overflow-style:none!important;scrollbar-width:none!important}';
+      iframe.contentDocument.head.appendChild(style);
+    } catch(e) {}
+  }
+  iframe.addEventListener('load', hideIframeScrollbars);
 
   function goTo(i) {
     iframe.src = screens[i].id + '.html';
