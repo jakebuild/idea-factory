@@ -1,0 +1,3 @@
+status: ready-for-design
+validated_at: 2026-03-25 20:55
+score: 6/10

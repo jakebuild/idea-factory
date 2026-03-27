@@ -1,0 +1,1 @@
+gh issue comment 9 --repo jakebuild/idea-factory failed: GraphQL: Could not resolve to an issue or pull request with the number of 9.
