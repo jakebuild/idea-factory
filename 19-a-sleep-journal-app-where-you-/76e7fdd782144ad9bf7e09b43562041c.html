@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-secondary-fixed": "#13144a",
+            "primary-fixed": "#e1e0ff",
+            "on-background": "#dae2fd",
+            "inverse-primary": "#494bd6",
+            "tertiary": "#ffb783",
+            "surface-tint": "#c0c1ff",
+            "on-secondary": "#292a60",
+            "inverse-surface": "#dae2fd",
+            "on-tertiary-container": "#452000",
+            "outline-variant": "#464554",
+            "error": "#ffb4ab",
+            "secondary-fixed": "#e1e0ff",
+            "surface-variant": "#2d3449",
+            "on-surface-variant": "#c7c4d7",
+            "on-primary": "#1000a9",
+            "tertiary-container": "#d97721",
+            "surface-bright": "#31394d",
+            "background": "#0b1326",
+            "surface-container-highest": "#2d3449",
+            "primary-fixed-dim": "#c0c1ff",
+            "on-tertiary": "#4f2500",
+            "on-primary-fixed": "#07006c",
+            "secondary-fixed-dim": "#c0c1ff",
+            "secondary-container": "#42447b",
+            "on-primary-fixed-variant": "#2f2ebe",
+            "inverse-on-surface": "#283044",
+            "surface-dim": "#0b1326",
+            "outline": "#908fa0",
+            "on-error": "#690005",
+            "on-secondary-container": "#b2b3f2",
+            "on-surface": "#dae2fd",
+            "tertiary-fixed-dim": "#ffb783",
+            "on-secondary-fixed-variant": "#404178",
+            "error-container": "#93000a",
+            "surface-container": "#171f33",
+            "primary": "#c0c1ff",
+            "surface-container-lowest": "#060e20",
+            "secondary": "#c0c1ff",
+            "surface-container-high": "#222a3d",
+            "surface": "#0b1326",
+            "on-error-container": "#ffdad6",
+            "tertiary-fixed": "#ffdcc5",
+            "on-tertiary-fixed": "#301400",
+            "surface-container-low": "#131b2e",
+            "on-primary-container": "#0d0096",
+            "primary-container": "#8083ff",
+            "on-tertiary-fixed-variant": "#703700"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-header {
+      background: rgba(11, 19, 38, 0.7);
+      backdrop-filter: blur(20px);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30 min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0b1326]/70 backdrop-blur-xl dark:bg-[#0b1326]/70 flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#c0c1ff] hover:bg-[#222a3d] transition-colors p-2 rounded-full active:scale-95 duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-['Manrope'] font-semibold tracking-tight text-[#dae2fd] text-xl">24 Oct</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-surface-container-high">
+<img alt="User Profile" data-alt="Close-up portrait of a serene person in soft blue twilight lighting, cinematic aesthetic, high-end photography style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhcJk1va-947hpOLyJN4Irm4byMkTcWdRwif1tWAjsAopEnzW1GtPxdbuqJIDLUrf21EwpInE9bB014a4_5zwLEuKXW43gHuzLWrOvu8KlddYwRpIdedhRMFe_Jh_Zp3xN-Ij0dIrBBrd_r5nKuGRscsXvQf2s9vy9QHDpedeX6UlU4sdwLwk1raoWbIIyeANo6rYTngH8xKGlD9RGE_fMOj_vVQQ6u3f39x9LiWqllZ4_ZtE3UP1D2_fpGkEII1eCoQ0vK4MjESI"/>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Header Section -->
+<section class="space-y-2">
+<div class="flex items-center justify-between text-on-surface-variant">
+<button class="p-2 hover:bg-surface-container-high rounded-full transition-colors active:scale-90">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<span class="font-label text-sm font-medium tracking-widest">Oct 20 - Oct 26</span>
+<button class="p-2 hover:bg-surface-container-high rounded-full transition-colors active:scale-90">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<h2 class="font-headline text-4xl font-extrabold tracking-tight text-on-surface mt-4">Weekly Overview</h2>
+</section>
+<!-- Bento Grid Dashboard -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Chart Card (Span Full) -->
+<section class="col-span-1 md:col-span-2 bg-surface-container rounded-[2rem] p-6 space-y-6">
+<div class="flex justify-between items-end">
+<div>
+<p class="text-on-surface-variant text-sm font-medium">Avg. Sleep Duration</p>
+<h3 class="font-headline text-3xl font-bold">7h 12m</h3>
+</div>
+<div class="flex gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="w-3 h-3 rounded-full bg-error"></span>
+</div>
+</div>
+<!-- Bar Chart -->
+<div class="flex items-end justify-between h-48 px-2">
+<!-- Sun - Yellow -->
+<div class="flex flex-col items-center gap-3 w-full">
+<div class="w-full max-w-[32px] bg-tertiary rounded-full h-32 opacity-90 hover:opacity-100 transition-all cursor-pointer group relative" onclick="window.location.href=\'0d17cd07ae184f4cbc0670d1bf090a94.html\'">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-surface-container-highest px-2 py-1 rounded text-[10px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">6h 45m</div>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">SUN</span>
+</div>
+<!-- Mon - Green (Goal) -->
+<div class="flex flex-col items-center gap-3 w-full">
+<div class="w-full max-w-[32px] bg-primary rounded-full h-40 opacity-90 hover:opacity-100 transition-all cursor-pointer group relative" onclick="window.location.href=\'0d17cd07ae184f4cbc0670d1bf090a94.html\'">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-surface-container-highest px-2 py-1 rounded text-[10px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">8h 10m</div>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">MON</span>
+</div>
+<!-- Tue - Red -->
+<div class="flex flex-col items-center gap-3 w-full">
+<div class="w-full max-w-[32px] bg-error rounded-full h-24 opacity-90 hover:opacity-100 transition-all cursor-pointer group relative" onclick="window.location.href=\'0d17cd07ae184f4cbc0670d1bf090a94.html\'">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-surface-container-highest px-2 py-1 rounded text-[10px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">5h 30m</div>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">TUE</span>
+</div>
+<!-- Wed - Green -->
+<div class="flex flex-col items-center gap-3 w-full">
+<div class="w-full max-w-[32px] bg-primary rounded-full h-44 opacity-90 hover:opacity-100 transition-all cursor-pointer group relative" onclick="window.location.href=\'0d17cd07ae184f4cbc0670d1bf090a94.html\'">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-surface-container-highest px-2 py-1 rounded text-[10px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">8h 45m</div>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">WED</span>
+</div>
+<!-- Thu - Green -->
+<div class="flex flex-col items-center gap-3 w-full">
+<div class="w-full max-w-[32px] bg-primary rounded-full h-36 opacity-90 hover:opacity-100 transition-all cursor-pointer group relative" onclick="window.location.href=\'0d17cd07ae184f4cbc0670d1bf090a94.html\'">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-surface-container-highest px-2 py-1 rounded text-[10px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">7h 20m</div>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">THU</span>
+</div>
+<!-- Fri - Yellow -->
+<div class="flex flex-col items-center gap-3 w-full">
+<div class="w-full max-w-[32px] bg-tertiary rounded-full h-32 opacity-90 hover:opacity-100 transition-all cursor-pointer group relative" onclick="window.location.href=\'0d17cd07ae184f4cbc0670d1bf090a94.html\'">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-surface-container-highest px-2 py-1 rounded text-[10px] opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">6h 50m</div>
+</div>
+<span class="text-[10px] font-bold text-on-surface-variant">FRI</span>
+</div>
+<!-- Sat - No Data -->
+<div class="flex flex-col items-center gap-3 w-full">
+<div class="w-full max-w-[32px] bg-surface-container-high rounded-full h-8 opacity-40"></div>
+<span class="text-[10px] font-bold text-on-surface-variant">SAT</span>
+</div>
+</div>
+</section>
+<!-- Consistency Score -->
+<section class="bg-surface-container-high rounded-[2rem] p-6 flex flex-col justify-between aspect-square md:aspect-auto">
+<div>
+<h4 class="text-on-surface-variant text-sm font-semibold uppercase tracking-widest mb-4">Consistency</h4>
+<p class="font-headline text-2xl font-bold">5/7 nights logged</p>
+</div>
+<div class="w-full bg-surface-container-lowest h-3 rounded-full overflow-hidden mt-6">
+<div class="h-full bg-gradient-to-r from-primary to-primary-container w-[71%] rounded-full shadow-[0_0_12px_rgba(192,193,255,0.4)]"></div>
+</div>
+</section>
+<!-- Sleep Debt -->
+<section class="bg-surface-container-lowest border border-outline-variant/10 rounded-[2rem] p-6 flex flex-col justify-center items-center text-center space-y-2">
+<span class="material-symbols-outlined text-tertiary text-4xl" style="font-variation-settings: 'FILL' 1;">warning</span>
+<h4 class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">Sleep Debt</h4>
+<p class="font-headline text-3xl font-extrabold text-tertiary">–3.5 hrs</p>
+<p class="text-[11px] text-on-surface-variant opacity-70">vs last week</p>
+</section>
+<!-- Insight Section -->
+<section class="col-span-1 md:col-span-2 bg-gradient-to-br from-surface-container-high to-surface-container rounded-[2rem] p-8 relative overflow-hidden">
+<!-- Abstract Glow Decor -->
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-primary/10 blur-[60px] rounded-full"></div>
+<div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+<div class="bg-primary/10 p-4 rounded-2xl">
+<span class="material-symbols-outlined text-primary text-4xl">lightbulb</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-headline text-xl font-bold text-on-surface">Weekly Insight</h4>
+<p class="text-on-surface-variant leading-relaxed">
+              Your <span class="text-error font-semibold">2 worst nights</span> both had a <span class="text-primary font-semibold">Late screen tag</span>.
+            </p>
+<p class="text-sm text-on-surface-variant/60 pt-2 italic">Try reading for 15 mins before bed tonight.</p>
+</div>
+</div>
+</section>
+</div>
+<!-- Magazine-style Extra Insight -->
+<div class="py-10 border-t border-outline-variant/10">
+<p class="font-headline text-sm font-bold text-primary mb-4 tracking-tighter">RECOMMENDED FOR YOU</p>
+<div class="flex gap-4 overflow-x-auto custom-scrollbar">
+<div class="flex-shrink-0 w-64 h-40 bg-surface-container rounded-2xl p-4 flex flex-col justify-end relative overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay" data-alt="Breathtaking deep forest at twilight with mystical fog and bioluminescent plants, dreamlike atmosphere, nocturnal nature photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9gzAyINE-BZ8U4rGvlkor34R49Om6o4jZ6R2A_yH2ONE7N93T5cOflGrEqqY5MSj8tYCU5BmCv8iDZusZL0c6cfXc5ZVIFSs2g6yzHrIO7WgS3BvGjvHQG5mBJ0M2Ae8foDs2RqqA7madzGntjgCkASXNfpE1RFo4Z-fLIGbgxV2-XnRQN7kQcq3bu41362bzrq22xJMYzVWYQAQHi8O0E7ywh7wJ4YzkpKOGm8kpTHludAIhWWMSiZ3-LNGhcnsU1EUI2pAfrLo"/>
+<p class="relative z-10 font-bold text-lg leading-tight">Deep Night <br/>Forest Sounds</p>
+</div>
+<div class="flex-shrink-0 w-64 h-40 bg-surface-container rounded-2xl p-4 flex flex-col justify-end relative overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay" data-alt="Abstract smooth fluid motion of deep blue and violet silk in slow motion, calming visual meditation, luxury soft textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_5S-8Yml6KmrZa6okq2O8hv0dTstahWhpd-nYtgFeLdItcXZ_4FHv_sLWP61xO3z-AfddK0-AixbTu3x520cq3tVr5V_i3J2KuRNN5XvlAs-B9jECGFxvZ3iFs7-3_W1zdgb5-90urpSHZmnwO5okYt5DayWqceq4f1n0sBZSkmlmlx_52GKpuv5mWFo-aTythkI0WA35hfI3UlCX5KN4ikUd-ILlbrzaPJHwf3Z9LJ3nAldQpny3coZksyDhCoU5bb3w2WT5F-s"/>
+<p class="relative z-10 font-bold text-lg leading-tight">Guided <br/>Box Breathing</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#171f33]/80 backdrop-blur-2xl dark:bg-[#171f33]/80 rounded-t-[2rem] shadow-[0_-4px_40px_rgba(99,102,241,0.06)]">
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='f2b0f838f912489f87aa82d208546778.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Log</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-gradient-to-tr from-[#c0c1ff] to-[#8083ff] text-[#0b1326] rounded-2xl p-3 shadow-lg scale-95" onclick="window.location.href='76e7fdd782144ad9bf7e09b43562041c.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="date_range" style="font-variation-settings: 'FILL' 1;">date_range</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Week</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='c0ac3a1723134306a502a4ee31da1f17.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Calendar</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='0ba877bbbd5e476d9bcfcfa558a76ecb.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="equalizer">equalizer</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Stats</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='1b1bb4d84ae94dddb0dfde840148cc13.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Settings</span>
+</div>
+</nav>
+</body></html>

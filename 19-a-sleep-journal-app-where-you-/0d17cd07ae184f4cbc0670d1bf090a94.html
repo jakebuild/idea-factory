@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "tertiary": "#ffb783",
+            "surface-bright": "#31394d",
+            "secondary-container": "#42447b",
+            "secondary-fixed": "#e1e0ff",
+            "error": "#ffb4ab",
+            "surface-tint": "#c0c1ff",
+            "surface-container-lowest": "#060e20",
+            "outline": "#908fa0",
+            "on-tertiary": "#4f2500",
+            "surface-dim": "#0b1326",
+            "inverse-surface": "#dae2fd",
+            "on-tertiary-fixed-variant": "#703700",
+            "on-secondary-fixed-variant": "#404178",
+            "inverse-primary": "#494bd6",
+            "background": "#0b1326",
+            "inverse-on-surface": "#283044",
+            "on-secondary-fixed": "#13144a",
+            "primary-container": "#8083ff",
+            "surface": "#0b1326",
+            "outline-variant": "#464554",
+            "surface-container": "#171f33",
+            "tertiary-fixed": "#ffdcc5",
+            "primary-fixed": "#e1e0ff",
+            "on-primary": "#1000a9",
+            "tertiary-fixed-dim": "#ffb783",
+            "on-tertiary-fixed": "#301400",
+            "on-surface": "#dae2fd",
+            "on-primary-fixed-variant": "#2f2ebe",
+            "secondary": "#c0c1ff",
+            "surface-container-highest": "#2d3449",
+            "surface-container-high": "#222a3d",
+            "secondary-fixed-dim": "#c0c1ff",
+            "on-primary-container": "#0d0096",
+            "on-error": "#690005",
+            "on-tertiary-container": "#452000",
+            "primary-fixed-dim": "#c0c1ff",
+            "on-primary-fixed": "#07006c",
+            "surface-container-low": "#131b2e",
+            "on-secondary-container": "#b2b3f2",
+            "on-background": "#dae2fd",
+            "on-surface-variant": "#c7c4d7",
+            "on-secondary": "#292a60",
+            "on-error-container": "#ffdad6",
+            "error-container": "#93000a",
+            "primary": "#c0c1ff",
+            "tertiary-container": "#d97721",
+            "surface-variant": "#2d3449"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-header {
+      background: rgba(23, 31, 51, 0.7);
+      backdrop-filter: blur(20px);
+    }
+    .premium-gradient-btn {
+      background: linear-gradient(135deg, #c0c1ff 0%, #8083ff 100%);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col pb-24">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 flex items-center justify-between px-6 h-16 bg-[#171f33]/70 backdrop-blur-md">
+<div class="flex items-center gap-4">
+<button class="active:scale-95 transition-transform text-[#c0c1ff]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-headline font-semibold text-lg tracking-tight text-[#c0c1ff]">Entry Detail</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="bg-surface-container-highest text-on-surface-variant text-[10px] px-2 py-0.5 rounded-full font-label tracking-widest uppercase">backfill</span>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-20 px-6 max-w-lg mx-auto w-full">
+<!-- Hero Date & Summary -->
+<header class="mb-8 ml-4">
+<p class="font-label text-on-surface-variant text-sm mb-1">Wednesday, Mar 26</p>
+<div class="flex items-baseline gap-2">
+<h2 class="font-headline font-extrabold text-5xl tracking-tighter text-on-surface">7h 30m</h2>
+<span class="font-headline text-error text-lg font-bold">–30 min</span>
+</div>
+</header>
+<!-- Bento Grid Details -->
+<div class="grid grid-cols-2 gap-4 mb-8">
+<!-- Bedtime Card -->
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between aspect-square">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary">bedtime</span>
+<span class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Bedtime</span>
+</div>
+<div class="mt-auto">
+<p class="font-headline text-2xl font-bold text-on-surface">11:45</p>
+<p class="font-label text-xs text-on-surface-variant uppercase">PM</p>
+</div>
+</div>
+<!-- Wake Time Card -->
+<div class="bg-surface-container-high p-5 rounded-xl flex flex-col justify-between aspect-square">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-tertiary">wb_sunny</span>
+<span class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Wake Up</span>
+</div>
+<div class="mt-auto">
+<p class="font-headline text-2xl font-bold text-on-surface">7:15</p>
+<p class="font-label text-xs text-on-surface-variant uppercase">AM</p>
+</div>
+</div>
+<!-- Sleep Goal Status -->
+<div class="col-span-2 bg-surface-container-low p-6 rounded-xl flex items-center justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Goal Progress</span>
+<p class="font-body text-sm text-on-surface opacity-80">93% of 8h daily goal</p>
+</div>
+<div class="relative w-12 h-12">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="24" cy="24" fill="transparent" r="20" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary" cx="24" cy="24" fill="transparent" r="20" stroke="currentColor" stroke-dasharray="125.6" stroke-dashoffset="8" stroke-width="4"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+</div>
+<!-- Tags Section -->
+<div class="col-span-2 bg-surface-container p-6 rounded-xl">
+<span class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest mb-4 block">Influencing Factors</span>
+<div class="flex flex-wrap gap-2">
+<div class="flex items-center gap-2 bg-secondary-container/50 px-4 py-2 rounded-lg border border-outline-variant/15">
+<span class="material-symbols-outlined text-secondary text-sm">screenshot_monitor</span>
+<span class="font-label text-sm text-on-secondary-container">Late screen</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-highest px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">coffee</span>
+<span class="font-label text-sm text-on-surface-variant">Caffeine late</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Sleep Quality Insight -->
+<section class="bg-surface-container-lowest p-6 rounded-2xl mb-12 border border-outline-variant/10">
+<div class="flex items-start gap-4">
+<div class="p-3 bg-tertiary/10 rounded-xl">
+<span class="material-symbols-outlined text-tertiary">lightbulb</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-on-surface mb-1">Morning Insight</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+            Your late screen time exposure correlated with a 15-minute delay in falling asleep compared to your weekly average.
+          </p>
+</div>
+</div>
+</section>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-4 mb-8">
+<button class="premium-gradient-btn w-full py-4 rounded-xl font-headline font-bold text-on-primary-fixed flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-xl">edit</span>
+        Modify Entry
+      </button>
+<button class="w-full py-4 rounded-xl font-headline font-bold text-error flex items-center justify-center gap-2 bg-error-container/10 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-xl">delete</span>
+        Delete Entry
+      </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#171f33]/80 backdrop-blur-2xl dark:bg-[#171f33]/80 rounded-t-[2rem] shadow-[0_-4px_40px_rgba(99,102,241,0.06)]">
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='f2b0f838f912489f87aa82d208546778.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Log</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-gradient-to-tr from-[#c0c1ff] to-[#8083ff] text-[#0b1326] rounded-2xl p-3 shadow-lg scale-95" onclick="window.location.href='76e7fdd782144ad9bf7e09b43562041c.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="date_range" style="font-variation-settings: 'FILL' 1;">date_range</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Week</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='c0ac3a1723134306a502a4ee31da1f17.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Calendar</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='0ba877bbbd5e476d9bcfcfa558a76ecb.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="equalizer">equalizer</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Stats</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='1b1bb4d84ae94dddb0dfde840148cc13.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Settings</span>
+</div>
+</nav>
+</body></html>

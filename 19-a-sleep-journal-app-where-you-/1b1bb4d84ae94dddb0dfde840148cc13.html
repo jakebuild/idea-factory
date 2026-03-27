@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>Settings - The Nocturnal Edit</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#8083ff",
+                        "on-background": "#dae2fd",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "primary": "#c0c1ff",
+                        "on-secondary": "#292a60",
+                        "tertiary-container": "#d97721",
+                        "surface": "#0b1326",
+                        "secondary-container": "#42447b",
+                        "background": "#0b1326",
+                        "on-secondary-fixed-variant": "#404178",
+                        "on-error": "#690005",
+                        "outline-variant": "#464554",
+                        "on-primary": "#1000a9",
+                        "on-surface": "#dae2fd",
+                        "on-tertiary-fixed": "#301400",
+                        "surface-variant": "#2d3449",
+                        "inverse-primary": "#494bd6",
+                        "on-secondary-container": "#b2b3f2",
+                        "tertiary-fixed": "#ffdcc5",
+                        "on-primary-fixed": "#07006c",
+                        "inverse-on-surface": "#283044",
+                        "on-secondary-fixed": "#13144a",
+                        "surface-container": "#171f33",
+                        "surface-bright": "#31394d",
+                        "surface-container-high": "#222a3d",
+                        "on-surface-variant": "#c7c4d7",
+                        "on-tertiary": "#4f2500",
+                        "on-primary-container": "#0d0096",
+                        "tertiary": "#ffb783",
+                        "on-tertiary-container": "#452000",
+                        "error": "#ffb4ab",
+                        "surface-dim": "#0b1326",
+                        "tertiary-fixed-dim": "#ffb783",
+                        "surface-container-low": "#131b2e",
+                        "surface-container-highest": "#2d3449",
+                        "outline": "#908fa0",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#c0c1ff",
+                        "error-container": "#93000a",
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "primary-fixed": "#e1e0ff",
+                        "secondary-fixed": "#e1e0ff",
+                        "secondary": "#c0c1ff",
+                        "on-tertiary-fixed-variant": "#703700",
+                        "surface-container-lowest": "#060e20",
+                        "inverse-surface": "#dae2fd"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+            -webkit-font-smoothing: antialiased;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0b1326]/70 backdrop-blur-xl flex items-center justify-between px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#c0c1ff] active:scale-95 duration-200 hover:bg-[#222a3d] transition-colors p-2 rounded-full">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+</div>
+<h1 class="font-['Manrope'] font-semibold text-lg tracking-tight text-[#c0c1ff]">Settings</h1>
+<div class="w-10"></div> <!-- Spacer for centering -->
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto space-y-8">
+<!-- User Profile Header Section -->
+<section class="mb-10 flex items-center gap-6">
+<div class="relative">
+<div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-container p-[2px]">
+<div class="w-full h-full rounded-full bg-surface-container overflow-hidden">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="portrait of a woman with soft lighting and cool blue tones reflecting the nocturnal app aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1juSqf1LuxadYi195VrP9PPO6AwzijwmntEVhpX8q8z5Q5JqwVB_G-jTJQhhW94-pGaitJIa2r5hSJLJxoBGvBdSnQud3Z7N400zpiw6JoaPjIBwMKqNwCBgADt_69cnxMryWAHHE05WHllFy0KLUf6LQ6zs-YbwL7_UfdvUF2dGd_H1EaQAueBCo41r9LFRGYhsBCpZc7aUMh-oTDcRe1Jc4SzMC66Cah-0sFo1QVmK-kj-GA_pIfKWQdjh3iKhpi4gThx31-80"/>
+</div>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-tertiary w-6 h-6 rounded-full flex items-center justify-center border-2 border-surface">
+<span class="material-symbols-outlined text-[14px] text-on-tertiary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div>
+<h2 class="font-headline font-bold text-2xl text-on-surface tracking-tight">Evelyn Harper</h2>
+<p class="text-on-surface-variant text-sm">Member since Nov 2023</p>
+</div>
+</section>
+<!-- Settings Group: Sleep Configuration -->
+<div class="space-y-4">
+<h3 class="ml-4 font-headline text-xs font-extrabold uppercase tracking-[0.2em] text-on-surface-variant/60">Sleep Targets</h3>
+<div class="bg-surface-container rounded-2xl overflow-hidden">
+<!-- Sleep Goal -->
+<button class="w-full flex items-center justify-between p-5 hover:bg-surface-container-high transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="bedtime">bedtime</span>
+</div>
+<div class="text-left">
+<span class="block text-on-surface font-semibold tracking-tight">Sleep goal</span>
+<span class="text-on-surface-variant text-sm">Daily rest target</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-primary font-bold">8 hours</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Settings Group: Notifications -->
+<div class="space-y-4">
+<h3 class="ml-4 font-headline text-xs font-extrabold uppercase tracking-[0.2em] text-on-surface-variant/60">Reminders</h3>
+<div class="bg-surface-container rounded-2xl overflow-hidden divide-y divide-outline-variant/10">
+<!-- Notification Toggle -->
+<div class="flex items-center justify-between p-5">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</div>
+<div class="text-left">
+<span class="block text-on-surface font-semibold tracking-tight">Bedtime Reminder</span>
+<span class="text-on-surface-variant text-sm">Gentle nudge to unwind</span>
+</div>
+</div>
+<!-- Toggle Switch -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Time Picker (Disabled State) -->
+<div class="flex items-center justify-between p-5 bg-surface-container-low opacity-40">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+<div class="text-left">
+<span class="block text-on-surface-variant font-medium tracking-tight">Set Reminder</span>
+</div>
+</div>
+<span class="text-on-surface-variant font-medium">10:30 PM</span>
+</div>
+</div>
+</div>
+<!-- Settings Group: Data & Storage -->
+<div class="space-y-4">
+<h3 class="ml-4 font-headline text-xs font-extrabold uppercase tracking-[0.2em] text-on-surface-variant/60">Privacy &amp; Data</h3>
+<div class="bg-surface-container rounded-2xl overflow-hidden divide-y divide-outline-variant/10">
+<!-- Export Data -->
+<button class="w-full flex items-center justify-between p-5 hover:bg-surface-container-high transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="ios_share">ios_share</span>
+</div>
+<div class="text-left">
+<span class="block text-on-surface font-semibold tracking-tight">Export Data (CSV)</span>
+<span class="text-on-surface-variant text-sm">Download your sleep history</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<!-- Clear Data -->
+<button class="w-full flex items-center justify-between p-5 hover:bg-error-container/20 transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined" data-icon="delete_forever">delete_forever</span>
+</div>
+<div class="text-left">
+<span class="block text-error font-semibold tracking-tight">Clear all data</span>
+<span class="text-error/60 text-sm">This action cannot be undone</span>
+</div>
+</div>
+</button>
+</div>
+</div>
+<!-- Footer / Version Info -->
+<div class="flex flex-col items-center justify-center py-8 space-y-2 opacity-50">
+<span class="font-headline text-xs font-bold uppercase tracking-[0.3em] text-on-surface-variant">The Nocturnal Edit</span>
+<span class="text-xs font-medium text-on-surface-variant">Version 1.2.0</span>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#171f33]/80 backdrop-blur-2xl dark:bg-[#171f33]/80 rounded-t-[2rem] shadow-[0_-4px_40px_rgba(99,102,241,0.06)]">
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='f2b0f838f912489f87aa82d208546778.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Log</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='76e7fdd782144ad9bf7e09b43562041c.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="date_range">date_range</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Week</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='c0ac3a1723134306a502a4ee31da1f17.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Calendar</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='0ba877bbbd5e476d9bcfcfa558a76ecb.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="equalizer">equalizer</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Stats</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-gradient-to-tr from-[#c0c1ff] to-[#8083ff] text-[#0b1326] rounded-2xl p-3 shadow-lg scale-95" onclick="window.location.href='1b1bb4d84ae94dddb0dfde840148cc13.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="settings" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Settings</span>
+</div>
+</nav>
+</body></html>

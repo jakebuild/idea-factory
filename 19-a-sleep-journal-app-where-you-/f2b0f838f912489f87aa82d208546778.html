@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>Log Entry - The Digital Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#404178",
+              "primary": "#c0c1ff",
+              "inverse-surface": "#dae2fd",
+              "on-tertiary-fixed-variant": "#703700",
+              "secondary-fixed": "#e1e0ff",
+              "on-error": "#690005",
+              "outline-variant": "#464554",
+              "on-primary": "#1000a9",
+              "surface-tint": "#c0c1ff",
+              "surface-dim": "#0b1326",
+              "on-tertiary-container": "#452000",
+              "inverse-primary": "#494bd6",
+              "surface-bright": "#31394d",
+              "on-tertiary": "#4f2500",
+              "tertiary-fixed": "#ffdcc5",
+              "tertiary": "#ffb783",
+              "primary-fixed-dim": "#c0c1ff",
+              "inverse-on-surface": "#283044",
+              "secondary-container": "#42447b",
+              "background": "#0b1326",
+              "surface-container-low": "#131b2e",
+              "on-primary-fixed": "#07006c",
+              "outline": "#908fa0",
+              "surface-container": "#171f33",
+              "on-surface": "#dae2fd",
+              "tertiary-container": "#d97721",
+              "secondary-fixed-dim": "#c0c1ff",
+              "on-secondary-container": "#b2b3f2",
+              "error-container": "#93000a",
+              "on-primary-container": "#0d0096",
+              "tertiary-fixed-dim": "#ffb783",
+              "secondary": "#c0c1ff",
+              "surface-container-highest": "#2d3449",
+              "on-surface-variant": "#c7c4d7",
+              "on-secondary": "#292a60",
+              "surface-container-high": "#222a3d",
+              "on-tertiary-fixed": "#301400",
+              "on-error-container": "#ffdad6",
+              "error": "#ffb4ab",
+              "surface": "#0b1326",
+              "surface-container-lowest": "#060e20",
+              "on-background": "#dae2fd",
+              "surface-variant": "#2d3449",
+              "on-primary-fixed-variant": "#2f2ebe",
+              "on-secondary-fixed": "#13144a",
+              "primary-container": "#8083ff",
+              "primary-fixed": "#e1e0ff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-gradient {
+            background: linear-gradient(135deg, #c0c1ff 0%, #8083ff 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0b1326]/70 backdrop-blur-xl dark:bg-[#0b1326]/70">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#c0c1ff]" data-icon="menu">menu</span>
+</div>
+<h1 class="text-xl font-bold text-[#dae2fd] dark:text-[#dae2fd] font-['Manrope'] tracking-tight">24 Oct</h1>
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high border border-outline-variant/20">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="professional headshot of a person with soft cinematic lighting and a blurred dark interior background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJE0YXX7MvKKVRkoEpmUHYFqBxPlbB7JYFJFJbD4sLjWW1yILz4nuDN6h9bgTqZPL7BKZFPyYPPdUEpKci5DHlvcirrtyVHAJ7SUclEhbChyJoMIM_MkOObZrDEmx8_nb600pIyDYNlnK1WdLwu80QLkU0FMVKFLwZp7I80cdawawR6Z3MERiqA5Bvh1vCrzyRTvwXHTVf0pD71zpZe_xPtOb32e0PMyIbExJz2V-CW9xV__fLEz7LbZiDKtTBtWC-EP9_2rb-oZ4"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-md mx-auto">
+<!-- Duration Hero -->
+<section class="mb-10 ml-11">
+<p class="text-on-surface-variant font-label text-sm mb-1">Calculated Sleep</p>
+<div class="flex items-baseline gap-2">
+<span class="text-[3.5rem] font-extrabold font-headline leading-none text-primary">7h 30m</span>
+<span class="material-symbols-outlined text-tertiary text-xl" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+</section>
+<!-- Time Picker Section -->
+<div class="grid grid-cols-2 gap-4 mb-8">
+<!-- Bedtime Picker -->
+<div class="bg-surface-container rounded-xl p-5 flex flex-col items-center">
+<div class="flex items-center gap-2 mb-6 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="bedtime">bedtime</span>
+<span class="text-xs font-semibold uppercase tracking-widest">Bedtime</span>
+</div>
+<div class="flex flex-col items-center gap-1 relative w-full overflow-hidden h-32">
+<span class="text-on-surface-variant/30 font-headline text-lg">10:00 PM</span>
+<span class="text-on-surface font-headline text-2xl font-bold py-2 border-y border-outline-variant/10 w-full text-center">10:30 PM</span>
+<span class="text-on-surface-variant/30 font-headline text-lg">11:00 PM</span>
+</div>
+</div>
+<!-- Wake Picker -->
+<div class="bg-surface-container rounded-xl p-5 flex flex-col items-center">
+<div class="flex items-center gap-2 mb-6 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="sunny">sunny</span>
+<span class="text-xs font-semibold uppercase tracking-widest">Wake Up</span>
+</div>
+<div class="flex flex-col items-center gap-1 relative w-full overflow-hidden h-32">
+<span class="text-on-surface-variant/30 font-headline text-lg">05:30 AM</span>
+<span class="text-on-surface font-headline text-2xl font-bold py-2 border-y border-outline-variant/10 w-full text-center">06:00 AM</span>
+<span class="text-on-surface-variant/30 font-headline text-lg">06:30 AM</span>
+</div>
+</div>
+</div>
+<!-- Optional Reason Tags -->
+<section class="mb-10">
+<h3 class="text-on-surface font-headline font-semibold mb-4 ml-2">Influencers</h3>
+<div class="flex flex-wrap gap-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface text-sm font-medium hover:bg-surface-bright transition-colors border border-transparent focus:border-primary/30">Stress</button>
+<button class="px-4 py-2 rounded-lg bg-secondary-container text-on-secondary-container text-sm font-medium border border-primary/20">Alcohol</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface text-sm font-medium hover:bg-surface-bright transition-colors">Late screen</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface text-sm font-medium hover:bg-surface-bright transition-colors">Caffeine</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface text-sm font-medium hover:bg-surface-bright transition-colors">Travel</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface text-sm font-medium hover:bg-surface-bright transition-colors">Exercise</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface text-sm font-medium hover:bg-surface-bright transition-colors">Kid</button>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface text-sm font-medium hover:bg-surface-bright transition-colors">Other</button>
+</div>
+</section>
+<!-- Action Area -->
+<div class="flex flex-col gap-6 items-center">
+<button class="w-full py-5 glass-gradient text-on-primary font-bold text-lg rounded-xl shadow-lg shadow-primary/10 active:scale-95 transition-transform"> onclick="window.location.href=\'76e7fdd782144ad9bf7e09b43562041c.html\'" style="cursor:pointer"> Save Entry
+            </button>
+<a class="text-on-surface-variant text-sm font-medium hover:text-primary transition-colors" href="#">Log for a different day</a>
+</div>
+<!-- Inset Data Visual -->
+<div class="mt-12 p-6 bg-surface-container-lowest rounded-2xl">
+<div class="flex justify-between items-center mb-4">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Projected Quality</span>
+<span class="text-tertiary text-sm font-bold">82%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full glass-gradient w-[82%] rounded-full"></div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#171f33]/80 backdrop-blur-2xl dark:bg-[#171f33]/80 rounded-t-[2rem] shadow-[0_-4px_40px_rgba(99,102,241,0.06)]">
+<div class="flex flex-col items-center justify-center bg-gradient-to-tr from-[#c0c1ff] to-[#8083ff] text-[#0b1326] rounded-2xl p-3 shadow-lg scale-95" onclick="window.location.href='f2b0f838f912489f87aa82d208546778.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="edit_note" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Log</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='76e7fdd782144ad9bf7e09b43562041c.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="date_range">date_range</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Week</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='c0ac3a1723134306a502a4ee31da1f17.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Calendar</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='0ba877bbbd5e476d9bcfcfa558a76ecb.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="equalizer">equalizer</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Stats</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#c7c4d7] p-3 hover:text-[#dae2fd] transition-all" onclick="window.location.href='1b1bb4d84ae94dddb0dfde840148cc13.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Settings</span>
+</div>
+</nav>
+</body></html>
