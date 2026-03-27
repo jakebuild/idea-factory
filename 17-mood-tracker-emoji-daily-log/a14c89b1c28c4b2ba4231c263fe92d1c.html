@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#f87aa5",
+              "secondary": "#4af8e3",
+              "secondary-fixed-dim": "#33e9d5",
+              "surface-variant": "#262626",
+              "on-surface-variant": "#adaaaa",
+              "error": "#ff6e84",
+              "on-primary": "#440080",
+              "outline": "#767575",
+              "on-tertiary-fixed": "#380019",
+              "on-secondary-container": "#dcfff8",
+              "on-primary-fixed-variant": "#40007a",
+              "on-tertiary": "#6b0636",
+              "on-surface": "#ffffff",
+              "tertiary-dim": "#f175a0",
+              "on-background": "#ffffff",
+              "surface-container-low": "#131313",
+              "on-primary-container": "#340064",
+              "on-primary-fixed": "#000000",
+              "tertiary-container": "#fe7faa",
+              "on-secondary-fixed": "#00463f",
+              "surface-container-lowest": "#000000",
+              "primary-fixed": "#bc87fe",
+              "surface-container-highest": "#262626",
+              "surface": "#0e0e0e",
+              "on-secondary-fixed-variant": "#00655b",
+              "primary-dim": "#ba85fb",
+              "background": "#0e0e0e",
+              "primary-container": "#bc87fe",
+              "inverse-primary": "#7744b5",
+              "inverse-on-surface": "#565555",
+              "surface-tint": "#c799ff",
+              "tertiary": "#ff97b7",
+              "primary-fixed-dim": "#af7aef",
+              "primary": "#c799ff",
+              "surface-dim": "#0e0e0e",
+              "on-tertiary-fixed-variant": "#710d3b",
+              "secondary-dim": "#33e9d5",
+              "on-secondary": "#005b51",
+              "on-tertiary-container": "#59002b",
+              "surface-bright": "#2c2c2c",
+              "inverse-surface": "#fcf9f8",
+              "secondary-container": "#006a60",
+              "error-dim": "#d73357",
+              "outline-variant": "#484847",
+              "surface-container": "#1a1a1a",
+              "error-container": "#a70138",
+              "tertiary-fixed": "#ff8db2",
+              "on-error": "#490013",
+              "secondary-fixed": "#4af8e3",
+              "on-error-container": "#ffb2b9",
+              "surface-container-high": "#20201f"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(38, 38, 38, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="w-full sticky top-0 z-50 bg-[#0e0e0e] flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#c799ff] hover:bg-[#262626]/50 transition-colors duration-300 p-2 rounded-full active:scale-95 transition-transform duration-300">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-plus-jakarta-sans text-2xl font-bold tracking-tight text-[#c799ff]">Settings</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/15">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a smiling person with soft studio lighting and a clean dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhnViWRtLlNMsYY4Ey66R4F4toekCGrTfk0pFJUWrw3VfB1FXI8yZVt7mqohW3Fal8s40eUSSXa7qWRbXLRiog0RU5r3QTIZrtP20I-LDE1ygMdnRYu55w6C-ei790VtThRtHNyp2cYOmjsL2UDmFC_vedFnLP-_DcUnXGCUYsIP8vFn_HecFlgSC8N5Q-_vJkXawhMxqHL8j7mCgGZ3tncwsdpfzk6PELeHD4t8FkxQysSpwOVAqeKY5fw0NPou8f1Yc_YSa7AnfU"/>
+</div>
+</header>
+<main class="max-w-2xl mx-auto px-6 py-8 space-y-12">
+<!-- Hero Visual (Glassmorphism Bento Style) -->
+<section class="relative overflow-hidden rounded-lg p-8 glass-panel border border-outline-variant/15 flex items-center justify-between">
+<div class="z-10">
+<p class="font-label text-on-surface-variant text-[10px] uppercase tracking-widest mb-2">Account Preference</p>
+<h2 class="font-headline text-3xl font-extrabold tracking-tight text-on-surface">Cloud Sync</h2>
+<p class="text-on-surface-variant text-sm mt-1">Your data is secured and synced</p>
+</div>
+<div class="relative z-10 w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center shadow-[0_0_40px_rgba(199,153,255,0.2)]">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">cloud_done</span>
+</div>
+<!-- Ambient Glow Decoration -->
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-primary/10 rounded-full blur-[60px]"></div>
+</section>
+<!-- Notifications Section -->
+<section class="space-y-4">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary text-xl">notifications</span>
+<h3 class="font-headline font-bold text-lg">Notifications</h3>
+</div>
+<div class="space-y-2">
+<!-- Daily Reminder Toggle -->
+<div class="group flex items-center justify-between p-5 rounded-lg bg-surface-container-high/40 hover:bg-surface-container-high transition-all duration-300 active:scale-[0.98]">
+<div class="flex flex-col">
+<span class="font-medium text-on-surface">Daily reminder</span>
+<span class="text-xs text-on-surface-variant">Stay consistent with your mood logs</span>
+</div>
+<div class="w-12 h-6 bg-primary rounded-full relative flex items-center px-1 shadow-[0_0_15px_rgba(199,153,255,0.3)]">
+<div class="w-4 h-4 bg-on-primary rounded-full ml-auto"></div>
+</div>
+</div>
+<!-- Reminder Time Row -->
+<div class="group flex items-center justify-between p-5 rounded-lg bg-surface-container-high/40 hover:bg-surface-container-high transition-all duration-300 active:scale-[0.98]">
+<span class="font-medium text-on-surface">Reminder time</span>
+<div class="flex items-center gap-3">
+<span class="font-headline font-semibold text-primary">9:00 PM</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Tags Section -->
+<section class="space-y-4">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-secondary text-xl">label</span>
+<h3 class="font-headline font-bold text-lg">Tags</h3>
+</div>
+<div class="space-y-2">
+<!-- Manage Tags -->
+<div class="group flex items-center justify-between p-5 rounded-lg bg-surface-container-high/40 hover:bg-surface-container-high transition-all duration-300 active:scale-[0.98]">
+<span class="font-medium text-on-surface">Manage tags</span>
+<div class="flex items-center gap-3">
+<span class="text-sm px-3 py-1 bg-surface-container-highest rounded-full text-on-surface-variant border border-outline-variant/10">12 tags</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+<!-- Reset to Defaults -->
+<div class="group flex items-center justify-between p-5 rounded-lg bg-surface-container-high/40 hover:bg-surface-container-high transition-all duration-300 active:scale-[0.98]">
+<span class="font-medium text-on-surface">Reset to defaults</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Data Section -->
+<section class="space-y-4 pb-12">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-tertiary text-xl">database</span>
+<h3 class="font-headline font-bold text-lg">Data</h3>
+</div>
+<div class="space-y-2">
+<!-- Export Data -->
+<div class="group flex items-center justify-between p-5 rounded-lg bg-surface-container-high/40 hover:bg-surface-container-high transition-all duration-300 active:scale-[0.98]">
+<span class="font-medium text-on-surface">Export data</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+<!-- Clear All Data -->
+<div class="group flex items-center justify-between p-5 rounded-lg bg-surface-container-high/10 border border-error/10 hover:bg-error/5 transition-all duration-300 active:scale-[0.98]">
+<span class="font-medium text-error">Clear all data</span>
+<span class="material-symbols-outlined text-error text-sm group-hover:translate-x-1 transition-transform">chevron_right</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#131313]/90 backdrop-blur-2xl rounded-t-[24px] z-50 shadow-[0_-4px_40px_rgba(199,153,255,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="ff0b8e00a9b640eabace42598b90759a.html" onclick="window.location.href='ff0b8e00a9b640eabace42598b90759a.html'; return false;">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="db84592738f04d71a205fcd3f8a4c1fd.html" onclick="window.location.href='db84592738f04d71a205fcd3f8a4c1fd.html'; return false;">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Log</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="c078cd10b6fa4eaebc7902de2074d530.html" onclick="window.location.href='c078cd10b6fa4eaebc7902de2074d530.html'; return false;">
+<span class="material-symbols-outlined" data-icon="auto_graph">auto_graph</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Patterns</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="dd9085a9585c47b4a4be321ed67b2d9d.html" onclick="window.location.href='dd9085a9585c47b4a4be321ed67b2d9d.html'; return false;">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Calendar</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#262626] text-[#c799ff] rounded-full px-4 py-2 scale-110 transition-all" href="a14c89b1c28c4b2ba4231c263fe92d1c.html" onclick="window.location.href='a14c89b1c28c4b2ba4231c263fe92d1c.html'; return false;">
+<span class="material-symbols-outlined" data-icon="settings" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Settings</span>
+</a>
+</nav>
+</body></html>

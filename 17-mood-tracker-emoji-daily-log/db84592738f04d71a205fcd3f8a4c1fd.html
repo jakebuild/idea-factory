@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>Log Detail - MoodDot</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-container": "#006a60",
+                        "surface-container-low": "#131313",
+                        "on-tertiary-container": "#59002b",
+                        "surface-tint": "#c799ff",
+                        "on-tertiary": "#6b0636",
+                        "primary-fixed": "#bc87fe",
+                        "on-secondary": "#005b51",
+                        "tertiary-fixed": "#ff8db2",
+                        "tertiary-container": "#fe7faa",
+                        "tertiary-dim": "#f175a0",
+                        "on-secondary-container": "#dcfff8",
+                        "on-secondary-fixed-variant": "#00655b",
+                        "on-error-container": "#ffb2b9",
+                        "on-secondary-fixed": "#00463f",
+                        "inverse-primary": "#7744b5",
+                        "on-primary-fixed-variant": "#40007a",
+                        "error": "#ff6e84",
+                        "background": "#0e0e0e",
+                        "secondary-dim": "#33e9d5",
+                        "primary-container": "#bc87fe",
+                        "surface-bright": "#2c2c2c",
+                        "outline-variant": "#484847",
+                        "inverse-surface": "#fcf9f8",
+                        "surface-variant": "#262626",
+                        "surface-dim": "#0e0e0e",
+                        "inverse-on-surface": "#565555",
+                        "on-primary-fixed": "#000000",
+                        "surface-container-lowest": "#000000",
+                        "surface": "#0e0e0e",
+                        "tertiary-fixed-dim": "#f87aa5",
+                        "on-surface-variant": "#adaaaa",
+                        "surface-container-highest": "#262626",
+                        "on-surface": "#ffffff",
+                        "primary-fixed-dim": "#af7aef",
+                        "error-container": "#a70138",
+                        "secondary-fixed": "#4af8e3",
+                        "on-background": "#ffffff",
+                        "surface-container-high": "#20201f",
+                        "secondary-fixed-dim": "#33e9d5",
+                        "primary-dim": "#ba85fb",
+                        "on-primary": "#440080",
+                        "on-tertiary-fixed": "#380019",
+                        "surface-container": "#1a1a1a",
+                        "outline": "#767575",
+                        "on-primary-container": "#340064",
+                        "primary": "#c799ff",
+                        "on-error": "#490013",
+                        "on-tertiary-fixed-variant": "#710d3b",
+                        "secondary": "#4af8e3",
+                        "error-dim": "#d73357",
+                        "tertiary": "#ff97b7"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background-color: rgba(38, 38, 38, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .mood-gradient {
+            background: linear-gradient(135deg, #c799ff 0%, #bc87fe 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body min-h-screen selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar Mapping from JSON -->
+<header class="w-full top-0 sticky bg-[#0e0e0e] flex items-center px-6 py-4 z-50">
+<div class="flex items-center gap-4">
+<button onclick="window.location.href='ff0b8e00a9b640eabace42598b90759a.html'" class="flex items-center justify-center w-10 h-10 rounded-full text-[#c799ff] hover:bg-[#262626]/50 transition-colors duration-300 active:scale-95 ease-in-out">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] text-xl font-bold tracking-tight text-[#c799ff]">Add Context</h1>
+</div>
+</header>
+<main class="max-w-2xl mx-auto px-6 pb-32">
+<!-- Hero Mood Indicator: Asymmetric Layout -->
+<section class="mt-12 mb-16 flex flex-col items-center justify-center">
+<div class="relative group">
+<!-- Ambient Shadow/Glow -->
+<div class="absolute inset-0 bg-surface-tint opacity-10 blur-[40px] rounded-full"></div>
+<div class="relative flex flex-col items-center gap-6">
+<span class="text-8xl md:text-9xl filter drop-shadow-2xl transform group-hover:scale-105 transition-transform duration-500">😐</span>
+<div class="flex flex-col items-center text-center">
+<span class="font-headline text-5xl md:text-6xl font-extrabold tracking-tighter text-on-surface">Neutral</span>
+<span class="font-label text-sm text-on-surface-variant uppercase tracking-[0.2em] mt-2">Current State</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Context Grid Section -->
+<section class="space-y-8">
+<header class="flex flex-col gap-1">
+<h2 class="font-headline text-2xl font-bold text-on-surface">What's happening?</h2>
+<p class="font-label text-sm text-on-surface-variant">Select activities that influenced your mood</p>
+</header>
+<!-- Bento-style Grid for Context Chips -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+<!-- Chip: Active Primary -->
+<button class="flex items-center justify-center p-4 bg-primary text-on-primary-container rounded-lg font-medium transition-all duration-300 shadow-[0_10px_30px_-10px_rgba(199,153,255,0.3)] border border-primary/20">
+                    Slept well
+                </button>
+<!-- Chip: Inactive -->
+<button class="flex items-center justify-center p-4 bg-surface-container-low hover:bg-surface-container-highest text-on-surface-variant rounded-lg font-medium transition-all duration-300 border border-outline-variant/15">
+                    Poor sleep
+                </button>
+<!-- Chip: Active Secondary -->
+<button class="flex items-center justify-center p-4 bg-secondary text-on-secondary font-medium rounded-lg transition-all duration-300 shadow-[0_10px_30px_-10px_rgba(74,248,227,0.3)] border border-secondary/20">
+                    Exercised
+                </button>
+<!-- Chip: Inactive -->
+<button class="flex items-center justify-center p-4 bg-surface-container-low hover:bg-surface-container-highest text-on-surface-variant rounded-lg font-medium transition-all duration-300 border border-outline-variant/15">
+                    Skipped gym
+                </button>
+<!-- Chip: Active Primary -->
+<button class="flex items-center justify-center p-4 bg-primary text-on-primary-container rounded-lg font-medium transition-all duration-300 border border-primary/20">
+                    Work stress
+                </button>
+<!-- Chip: Inactive -->
+<button class="flex items-center justify-center p-4 bg-surface-container-low hover:bg-surface-container-highest text-on-surface-variant rounded-lg font-medium transition-all duration-300 border border-outline-variant/15">
+                    Productive
+                </button>
+<!-- Chip: Inactive -->
+<button class="flex items-center justify-center p-4 bg-surface-container-low hover:bg-surface-container-highest text-on-surface-variant rounded-lg font-medium transition-all duration-300 border border-outline-variant/15">
+                    Social time
+                </button>
+<!-- Chip: Inactive -->
+<button class="flex items-center justify-center p-4 bg-surface-container-low hover:bg-surface-container-highest text-on-surface-variant rounded-lg font-medium transition-all duration-300 border border-outline-variant/15">
+                    Alone time
+                </button>
+<!-- Chip: Inactive -->
+<button class="flex items-center justify-center p-4 bg-surface-container-low hover:bg-surface-container-highest text-on-surface-variant rounded-lg font-medium transition-all duration-300 border border-outline-variant/15">
+                    Alcohol
+                </button>
+<!-- Chip: Active Secondary -->
+<button class="flex items-center justify-center p-4 bg-secondary text-on-secondary font-medium rounded-lg transition-all duration-300 border border-secondary/20">
+                    Healthy eating
+                </button>
+<!-- Chip: Inactive -->
+<button class="flex items-center justify-center p-4 bg-surface-container-low hover:bg-surface-container-highest text-on-surface-variant rounded-lg font-medium transition-all duration-300 border border-outline-variant/15">
+                    Sick
+                </button>
+<!-- Chip: Inactive -->
+<button class="flex items-center justify-center p-4 bg-surface-container-low hover:bg-surface-container-highest text-on-surface-variant rounded-lg font-medium transition-all duration-300 border border-outline-variant/15">
+                    Outdoors
+                </button>
+</div>
+</section>
+<!-- Journaling Section: Deep Inset Field -->
+<section class="mt-12 space-y-4">
+<h2 class="font-headline text-xl font-bold text-on-surface">Journaling (Optional)</h2>
+<div class="glass-panel p-6 rounded-lg border border-outline-variant/10">
+<textarea class="w-full bg-surface-container-lowest border-none rounded-md p-4 text-on-surface focus:ring-1 focus:ring-primary h-32 resize-none placeholder:text-on-surface-variant/50 font-body" placeholder="Write your thoughts..."></textarea>
+</div>
+</section>
+</main>
+<!-- Bottom Action Bar (Sticky Footer) -->
+<footer class="fixed bottom-0 left-0 right-0 p-6 md:px-12 md:pb-12 bg-gradient-to-t from-background via-background to-transparent z-40">
+<div class="max-w-2xl mx-auto flex flex-col items-center gap-6">
+<button class="w-full py-5 mood-gradient text-on-primary-container font-headline font-bold text-lg rounded-xl shadow-[0_20px_40px_-15px_rgba(199,153,255,0.4)] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2">
+<span>Confirm</span>
+<span class="material-symbols-outlined text-xl">check_circle</span>
+</button>
+<button class="font-label text-on-surface-variant hover:text-on-surface transition-colors duration-300 uppercase tracking-widest text-xs font-semibold">
+                Skip for now
+            </button>
+</div>
+</footer>
+<!-- Image placeholders for background texture/aesthetic (if needed) -->
+<div class="fixed inset-0 -z-10 pointer-events-none opacity-20">
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-primary rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -left-20 w-96 h-96 bg-secondary rounded-full blur-[120px]"></div>
+</div>
+</body></html>

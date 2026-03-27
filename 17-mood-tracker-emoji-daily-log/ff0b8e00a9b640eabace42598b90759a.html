@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>MoodDot - Luminous Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#fe7faa",
+              "secondary-fixed-dim": "#33e9d5",
+              "on-error": "#490013",
+              "surface-variant": "#262626",
+              "on-primary-container": "#340064",
+              "inverse-primary": "#7744b5",
+              "on-tertiary-fixed-variant": "#710d3b",
+              "surface-container-highest": "#262626",
+              "error-dim": "#d73357",
+              "surface-container": "#1a1a1a",
+              "secondary-container": "#006a60",
+              "on-error-container": "#ffb2b9",
+              "background": "#0e0e0e",
+              "tertiary-fixed": "#ff8db2",
+              "on-surface": "#ffffff",
+              "primary-fixed-dim": "#af7aef",
+              "surface-container-low": "#131313",
+              "primary": "#c799ff",
+              "inverse-surface": "#fcf9f8",
+              "outline-variant": "#484847",
+              "surface-tint": "#c799ff",
+              "on-secondary-container": "#dcfff8",
+              "surface-container-lowest": "#000000",
+              "on-surface-variant": "#adaaaa",
+              "outline": "#767575",
+              "primary-dim": "#ba85fb",
+              "primary-container": "#bc87fe",
+              "on-background": "#ffffff",
+              "tertiary-dim": "#f175a0",
+              "on-secondary-fixed-variant": "#00655b",
+              "on-primary": "#440080",
+              "surface-container-high": "#20201f",
+              "inverse-on-surface": "#565555",
+              "error": "#ff6e84",
+              "on-primary-fixed-variant": "#40007a",
+              "on-secondary-fixed": "#00463f",
+              "primary-fixed": "#bc87fe",
+              "on-tertiary-fixed": "#380019",
+              "surface-bright": "#2c2c2c",
+              "on-secondary": "#005b51",
+              "secondary-fixed": "#4af8e3",
+              "on-tertiary": "#6b0636",
+              "secondary-dim": "#33e9d5",
+              "surface": "#0e0e0e",
+              "tertiary-fixed-dim": "#f87aa5",
+              "surface-dim": "#0e0e0e",
+              "tertiary": "#ff97b7",
+              "on-primary-fixed": "#000000",
+              "error-container": "#a70138",
+              "on-tertiary-container": "#59002b",
+              "secondary": "#4af8e3"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            font-family: 'Manrope', sans-serif;
+        }
+        .glass-card {
+            background: rgba(38, 38, 38, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .mood-glow {
+            box-shadow: 0 0 60px 0 rgba(199, 153, 255, 0.15);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0e0e]/80 backdrop-blur-xl flex items-center justify-between px-8 py-4 w-full">
+<h1 class="text-[#c799ff] font-bold tracking-tighter font-headline text-2xl tracking-tight font-bold">MoodDot</h1>
+<button onclick="window.location.href='a14c89b1c28c4b2ba4231c263fe92d1c.html'" class="text-[#adaaaa] hover:opacity-80 transition-opacity duration-300 active:scale-95 ease-in-out">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-12">
+<!-- Hero Mood Log Section -->
+<section class="relative">
+<div class="flex flex-col items-center text-center space-y-8">
+<div class="w-full text-left">
+<p class="font-label text-sm uppercase tracking-[0.2em] text-on-surface-variant opacity-60 mb-2">Current State</p>
+<h2 class="font-headline text-6xl font-extrabold tracking-tighter text-on-surface">Radiant</h2>
+</div>
+<!-- Central Mood Orb -->
+<div class="relative group cursor-pointer">
+<div class="absolute inset-0 bg-primary opacity-20 blur-[80px] rounded-full group-hover:opacity-40 transition-opacity duration-700"></div>
+<div class="glass-card w-64 h-64 rounded-full flex items-center justify-center border border-white/5 relative z-10 mood-glow overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay" data-alt="abstract flowing 3d shapes with soft iridescent purple and teal gradients and atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaBO-PiF2BYKJPnnvVDm5cJwcUKZj77JnOTgjSXWcQbC879h1AzGrf7cLimBJ8YbtEZX7JvuAyMhWRLmgZ0cYB1BgRw0ed6vbqHrFSIhJxhpVkrtV0Ge6npoqlp4R2SgyC0rFHriwBtP_VnzF8gv8muJV3tAn6S0Rju0IrWh4WjPXLRcJ8wHaWbaNiqJ_2EiLR_pMb_Kb89_qXIcD9twhBDvTyoCH-sWLgPCJuwLKHy3S6Cz5nmBWFUyCFcF4pAZh90oLJeLSvp_Lq"/>
+<span class="text-9xl filter drop-shadow-2xl">😐</span>
+</div>
+</div>
+<div class="space-y-4">
+<p class="font-body text-lg text-on-surface-variant max-w-[280px] mx-auto leading-relaxed">How are you feeling today?</p>
+<div class="flex gap-3 justify-center">
+<span class="px-4 py-2 rounded-full bg-surface-container-highest border border-outline-variant/15 font-label text-xs uppercase tracking-widest text-primary">Neutral</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Weekly Summary strip -->
+<section class="space-y-6">
+<div class="flex justify-between items-end">
+<h3 class="font-headline text-xl font-bold tracking-tight">Weekly Pulse</h3>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Last 7 Days</span>
+</div>
+<div class="glass-card rounded-lg p-6 flex justify-between items-center border border-white/5">
+<!-- Day 1 -->
+<div class="flex flex-col items-center gap-3">
+<span class="font-label text-[10px] text-on-surface-variant">MON</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-lg">😊</div>
+</div>
+<!-- Day 2 -->
+<div class="flex flex-col items-center gap-3">
+<span class="font-label text-[10px] text-on-surface-variant">TUE</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-lg">😔</div>
+</div>
+<!-- Day 3 -->
+<div class="flex flex-col items-center gap-3">
+<span class="font-label text-[10px] text-on-surface-variant">WED</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-lg">😌</div>
+</div>
+<!-- Day 4 -->
+<div class="flex flex-col items-center gap-3">
+<span class="font-label text-[10px] text-on-surface-variant text-primary font-bold">THU</span>
+<div class="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary/40 flex items-center justify-center text-xl shadow-[0_0_20px_rgba(199,153,255,0.3)]">😐</div>
+</div>
+<!-- Day 5 -->
+<div class="flex flex-col items-center gap-3">
+<span class="font-label text-[10px] text-on-surface-variant">FRI</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-lg opacity-40"></div>
+</div>
+<!-- Day 6 -->
+<div class="flex flex-col items-center gap-3">
+<span class="font-label text-[10px] text-on-surface-variant">SAT</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-lg opacity-40"></div>
+</div>
+<!-- Day 7 -->
+<div class="flex flex-col items-center gap-3">
+<span class="font-label text-[10px] text-on-surface-variant">SUN</span>
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-lg opacity-40"></div>
+</div>
+</div>
+</section>
+<!-- Insights Bento Preview -->
+<section class="grid grid-cols-2 gap-4">
+<div class="col-span-2 glass-card rounded-lg p-6 border border-white/5 flex items-center justify-between group cursor-pointer hover:bg-surface-container-highest transition-all duration-300">
+<div class="space-y-1">
+<h4 class="font-headline text-lg font-bold">Mood Trends</h4>
+<p class="font-body text-sm text-on-surface-variant">Your energy is 12% higher this week.</p>
+</div>
+<div class="bg-secondary/10 p-3 rounded-full text-secondary">
+<span class="material-symbols-outlined" data-icon="auto_graph">auto_graph</span>
+</div>
+</div>
+<button onclick="window.location.href='c078cd10b6fa4eaebc7902de2074d530.html'" class="col-span-2 bg-primary text-on-primary font-headline font-bold py-5 rounded-full mt-4 flex items-center justify-center gap-3 shadow-[0_20px_40px_rgba(199,153,255,0.2)] hover:scale-[1.02] transition-transform active:scale-95">
+                <span onclick="window.location.href='c078cd10b6fa4eaebc7902de2074d530.html'" style="cursor:pointer">View Patterns</span>
+                <span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#131313]/90 backdrop-blur-2xl rounded-t-[24px] z-50 shadow-[0_-4px_40px_rgba(199,153,255,0.06)]">
+<a class="flex flex-col items-center justify-center bg-[#262626] text-[#c799ff] rounded-full px-4 py-2 scale-110 transition-all" href="ff0b8e00a9b640eabace42598b90759a.html" onclick="window.location.href='ff0b8e00a9b640eabace42598b90759a.html'; return false;">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="db84592738f04d71a205fcd3f8a4c1fd.html" onclick="window.location.href='db84592738f04d71a205fcd3f8a4c1fd.html'; return false;">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Log</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="c078cd10b6fa4eaebc7902de2074d530.html" onclick="window.location.href='c078cd10b6fa4eaebc7902de2074d530.html'; return false;">
+<span class="material-symbols-outlined" data-icon="auto_graph">auto_graph</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Patterns</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="dd9085a9585c47b4a4be321ed67b2d9d.html" onclick="window.location.href='dd9085a9585c47b4a4be321ed67b2d9d.html'; return false;">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Calendar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="a14c89b1c28c4b2ba4231c263fe92d1c.html" onclick="window.location.href='a14c89b1c28c4b2ba4231c263fe92d1c.html'; return false;">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Settings</span>
+</a>
+</nav>
+</body></html>

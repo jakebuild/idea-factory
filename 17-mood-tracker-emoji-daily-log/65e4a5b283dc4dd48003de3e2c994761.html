@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>MoodDot Widget</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline-variant": "#484847",
+              "surface": "#0e0e0e",
+              "primary-fixed": "#bc87fe",
+              "tertiary-dim": "#f175a0",
+              "surface-container": "#1a1a1a",
+              "on-tertiary-fixed": "#380019",
+              "tertiary-fixed-dim": "#f87aa5",
+              "on-surface": "#ffffff",
+              "on-primary-container": "#340064",
+              "on-error": "#490013",
+              "primary-fixed-dim": "#af7aef",
+              "primary-dim": "#ba85fb",
+              "on-tertiary-container": "#59002b",
+              "surface-container-low": "#131313",
+              "on-secondary-container": "#dcfff8",
+              "tertiary-container": "#fe7faa",
+              "surface-variant": "#262626",
+              "surface-bright": "#2c2c2c",
+              "secondary-dim": "#33e9d5",
+              "error": "#ff6e84",
+              "surface-tint": "#c799ff",
+              "surface-container-lowest": "#000000",
+              "outline": "#767575",
+              "inverse-surface": "#fcf9f8",
+              "on-tertiary": "#6b0636",
+              "surface-dim": "#0e0e0e",
+              "background": "#0e0e0e",
+              "inverse-primary": "#7744b5",
+              "on-secondary-fixed-variant": "#00655b",
+              "tertiary-fixed": "#ff8db2",
+              "error-dim": "#d73357",
+              "on-primary-fixed-variant": "#40007a",
+              "on-primary": "#440080",
+              "surface-container-high": "#20201f",
+              "secondary-fixed-dim": "#33e9d5",
+              "secondary": "#4af8e3",
+              "surface-container-highest": "#262626",
+              "on-primary-fixed": "#000000",
+              "on-surface-variant": "#adaaaa",
+              "on-secondary": "#005b51",
+              "error-container": "#a70138",
+              "on-error-container": "#ffb2b9",
+              "on-background": "#ffffff",
+              "primary": "#c799ff",
+              "tertiary": "#ff97b7",
+              "secondary-container": "#006a60",
+              "secondary-fixed": "#4af8e3",
+              "on-tertiary-fixed-variant": "#710d3b",
+              "inverse-on-surface": "#565555",
+              "primary-container": "#bc87fe",
+              "on-secondary-fixed": "#00463f"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0e0e0e;
+            font-family: 'Manrope', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .widget-canvas {
+            width: 320px;
+            height: 160px;
+            position: relative;
+            padding: 1px;
+            border-radius: 2rem;
+            background: linear-gradient(135deg, rgba(199, 153, 255, 0.15) 0%, rgba(14, 14, 14, 0) 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface">
+<!-- Widget Container -->
+<div class="widget-canvas shadow-[0_40px_40px_-15px_rgba(199,153,255,0.08)]">
+<div class="w-full h-full bg-surface-container-highest/80 backdrop-blur-2xl rounded-lg p-5 flex flex-col justify-between overflow-hidden relative">
+<!-- Ambient Glow for Depth -->
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-12 -left-12 w-32 h-32 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Header Section -->
+<div class="flex items-center justify-between z-10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'FILL' 1;">bubble_chart</span>
+<h1 class="font-headline font-bold tracking-tighter text-zinc-100 text-sm">MoodDot</h1>
+</div>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant/60 font-medium">Quick Log</span>
+</div>
+<!-- Editorial Prompt -->
+<div class="mt-2 z-10">
+<p class="font-headline text-lg font-bold tracking-tight text-on-surface/90 leading-none">How are you feeling?</p>
+</div>
+<!-- Mood Emoji Grid (5 icons in a row) -->
+<div class="flex items-center justify-between mt-4 gap-2 z-10">
+<!-- Mood 1: Very Sad -->
+<button onclick="window.location.href='db84592738f04d71a205fcd3f8a4c1fd.html'" class="flex-1 aspect-square bg-surface-container-lowest/40 hover:bg-surface-container-low transition-all duration-300 rounded-xl flex items-center justify-center group active:scale-90 border border-white/5">
+<span class="text-2xl transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0">😢</span>
+</button>
+<!-- Mood 2: Sad -->
+<button onclick="window.location.href='db84592738f04d71a205fcd3f8a4c1fd.html'" class="flex-1 aspect-square bg-surface-container-lowest/40 hover:bg-surface-container-low transition-all duration-300 rounded-xl flex items-center justify-center group active:scale-90 border border-white/5">
+<span class="text-2xl transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0">😕</span>
+</button>
+<!-- Mood 3: Neutral -->
+<button onclick="window.location.href='db84592738f04d71a205fcd3f8a4c1fd.html'" class="flex-1 aspect-square bg-surface-container-lowest/40 hover:bg-surface-container-low transition-all duration-300 rounded-xl flex items-center justify-center group active:scale-90 border border-white/5">
+<span class="text-2xl transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0">😐</span>
+</button>
+<!-- Mood 4: Good -->
+<button onclick="window.location.href='db84592738f04d71a205fcd3f8a4c1fd.html'" class="flex-1 aspect-square bg-surface-container-lowest/40 hover:bg-surface-container-low transition-all duration-300 rounded-xl flex items-center justify-center group active:scale-90 border border-white/5">
+<span class="text-2xl transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0">🙂</span>
+</button>
+<!-- Mood 5: Great -->
+<button onclick="window.location.href='db84592738f04d71a205fcd3f8a4c1fd.html'" class="flex-1 aspect-square bg-surface-container-lowest/40 hover:bg-surface-container-low transition-all duration-300 rounded-xl flex items-center justify-center group active:scale-90 border border-white/5">
+<span class="text-2xl transition-transform duration-300 group-hover:scale-110 grayscale group-hover:grayscale-0">😄</span>
+</button>
+</div>
+<!-- Footer Meta -->
+<div class="flex justify-end mt-2">
+<div class="w-8 h-1 bg-white/10 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Background Decorative Texture -->
+<div class="fixed inset-0 -z-10 bg-surface flex items-center justify-center overflow-hidden">
+<div class="w-[800px] h-[800px] opacity-20 filter blur-[120px] rounded-full bg-gradient-to-tr from-primary/30 to-secondary/30"></div>
+</div>
+</body></html>

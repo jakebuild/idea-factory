@@ -3,495 +3,438 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Idea #17 — MoodDot</title>
+<title>Idea #17: MoodDot — Daily Mood + Context Tracker</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   body {
-    background: #0a0f1a;
+    background: #111827;
     color: #f9fafb;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
   }
-
-  /* ── Header ─────────────────────────────────────── */
-  .header {
+  /* Top bar */
+  .topbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    border-bottom: 1px solid #1a2235;
-    flex-shrink: 0;
+    padding: 16px 24px;
+    border-bottom: 1px solid #1f2937;
+    background: #0f172a;
   }
-  .header-left { display: flex; align-items: center; gap: 16px; }
-  .idea-num {
-    font-size: 0.7rem; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.12em;
-    color: #3b82f6; background: #1e3a5f;
-    padding: 3px 10px; border-radius: 99px;
+  .topbar-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f9fafb;
   }
-  .idea-title { font-size: 1.15rem; font-weight: 700; color: #f9fafb; }
-  .idea-sub { font-size: 0.8rem; color: #6b7280; margin-top: 1px; }
-  .header-right { display: flex; align-items: center; gap: 12px; }
-  .badge {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: #111827; border: 1px solid #1f2937;
-    border-radius: 99px; padding: 5px 14px;
-    font-size: 0.78rem; color: #9ca3af;
+  .topbar-badge {
+    background: #1f2937;
+    color: #9ca3af;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    border: 1px solid #374151;
   }
-  .score-pill {
-    background: #1a2e1a; border: 1px solid #2d4a2d;
-    color: #86efac; font-size: 0.78rem; font-weight: 700;
-    padding: 5px 14px; border-radius: 99px;
-  }
-  .toggle-timeline-btn {
-    display: flex; align-items: center; gap: 6px;
-    background: #111827; border: 1px solid #1f2937;
-    color: #9ca3af; font-size: 0.78rem;
-    padding: 5px 14px; border-radius: 99px;
-    cursor: pointer; transition: all 0.15s;
-  }
-  .toggle-timeline-btn:hover { background: #1f2937; color: #f9fafb; border-color: #374151; }
-
-  /* ── Body layout ─────────────────────────────────── */
-  .body {
+  /* Layout */
+  .layout {
     display: flex;
-    flex: 1;
-    overflow: hidden;
-    align-items: stretch;
+    gap: 32px;
+    padding: 24px;
+    align-items: flex-start;
   }
-
-  /* ── Phone column ────────────────────────────────── */
-  .phone-col {
+  /* Left column */
+  .left-col {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 40px;
     flex-shrink: 0;
-    gap: 20px;
-    background: #0a0f1a;
   }
-
+  /* Phone frame */
   .phone-frame {
     width: 390px;
     height: 844px;
-    border-radius: 48px;
+    border-radius: 44px;
+    background: white;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 2px rgba(255,255,255,0.1);
     overflow: hidden;
-    box-shadow:
-      0 0 0 1px rgba(255,255,255,0.08),
-      0 0 0 10px #0f172a,
-      0 0 0 11px rgba(255,255,255,0.06),
-      0 60px 120px rgba(0,0,0,0.7);
-    background: #000;
     flex-shrink: 0;
+    position: relative;
   }
   .phone-frame iframe {
-    width: 100%; height: 100%;
-    border: none; display: block;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
-
-  .switcher {
-    display: flex; gap: 8px;
-    flex-wrap: wrap; justify-content: center;
+  /* Screen switcher */
+  .screen-switcher {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .screen-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #1f2937;
+    color: #9ca3af;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .screen-btn:hover, .screen-btn.active {
+    background: #3b82f6;
+    color: white;
+  }
+  .screen-label {
+    margin-top: 6px;
+    font-size: 0.7rem;
+    color: #6b7280;
+    text-align: center;
     max-width: 390px;
   }
-  .switcher button {
-    height: 32px; padding: 0 12px; min-width: 32px;
-    border-radius: 8px; border: 1px solid #1f2937;
-    background: #111827; color: #6b7280;
-    font-size: 0.72rem; font-weight: 600;
-    cursor: pointer; transition: all 0.15s;
-    white-space: nowrap;
-  }
-  .switcher button:hover { background: #1f2937; color: #d1d5db; border-color: #374151; }
-  .switcher button.active { background: #1e3a5f; color: #60a5fa; border-color: #3b82f6; }
-
-  /* ── Divider ─────────────────────────────────────── */
-  .divider {
-    width: 1px;
-    background: #1a2235;
-    flex-shrink: 0;
-  }
-
-  /* ── Timeline column ─────────────────────────────── */
-  .timeline-col {
-    flex: 1;
-    min-width: 0;
+  /* Right column - timeline */
+  .right-col {
     display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: flex 0.3s ease, min-width 0.3s ease;
-    background: #0d1424;
-  }
-  .timeline-col.collapsed {
-    flex: 0;
-    min-width: 0;
-    max-width: 0;
-  }
-
-  .timeline-header {
-    padding: 24px 32px 16px;
-    border-bottom: 1px solid #1a2235;
+    flex-direction: row;
+    width: 392px;
     flex-shrink: 0;
+    position: relative;
   }
-  .timeline-header h2 {
-    font-size: 0.72rem; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.1em;
-    color: #4b5563;
+  .panel-toggle {
+    width: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 8px;
   }
-
-  .timeline-scroll {
+  .toggle-btn {
+    width: 28px;
+    height: 48px;
+    background: #1f2937;
+    border: none;
+    border-radius: 6px;
+    color: #9ca3af;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+  }
+  .toggle-btn:hover { background: #374151; color: white; }
+  .panel-content {
     flex: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .panel-content.collapsed {
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .right-col.collapsed .panel-content {
+    width: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .panel-header {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #f9fafb;
+    padding: 8px 0 12px;
+  }
+  .timeline-scroll {
     overflow-y: auto;
-    padding: 20px 32px 40px;
+    max-height: 844px;
+    padding-right: 4px;
   }
   .timeline-scroll::-webkit-scrollbar { width: 4px; }
   .timeline-scroll::-webkit-scrollbar-track { background: transparent; }
-  .timeline-scroll::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 2px; }
-
-  /* ── Vertical timeline line ──────────────────────── */
-  .timeline-line {
-    position: relative;
-    padding-left: 28px;
-  }
-  .timeline-line::before {
-    content: '';
-    position: absolute;
-    left: 7px; top: 8px; bottom: 8px;
-    width: 2px;
-    background: linear-gradient(to bottom, #1e3a5f 0%, #1f2937 100%);
-    border-radius: 2px;
-  }
-
-  /* ── Entry cards ─────────────────────────────────── */
-  .entry {
-    position: relative;
-    margin-bottom: 12px;
-  }
-  .entry::before {
-    content: '';
-    position: absolute;
-    left: -24px; top: 18px;
-    width: 10px; height: 10px;
-    border-radius: 50%;
+  .timeline-scroll::-webkit-scrollbar-thumb { background: #374151; border-radius: 2px; }
+  /* Timeline cards */
+  .t-card {
     background: #1f2937;
-    border: 2px solid #374151;
-    z-index: 1;
-  }
-  .entry.status-critique::before { background: #78350f; border-color: #d97706; }
-  .entry.status-improve::before  { background: #1e3a5f; border-color: #3b82f6; }
-  .entry.status-validate::before { background: #14532d; border-color: #16a34a; }
-  .entry.status-design::before   { background: #312e81; border-color: #6366f1; }
-
-  .entry-card {
-    background: #111827;
-    border: 1px solid #1f2937;
+    border: 1px solid #374151;
     border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  .t-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  .t-card-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+  }
+  .t-icon { font-size: 1.1rem; flex-shrink: 0; }
+  .t-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #f9fafb;
+    white-space: nowrap;
     overflow: hidden;
-    transition: border-color 0.15s;
+    text-overflow: ellipsis;
   }
-  .entry-card:hover { border-color: #374151; }
-
-  .entry-head {
-    display: flex; align-items: center; gap: 12px;
-    padding: 14px 16px;
-    cursor: pointer; user-select: none;
+  .t-summary {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-top: 4px;
   }
-  .entry-icon { font-size: 1.15rem; flex-shrink: 0; line-height: 1; }
-  .entry-info { flex: 1; min-width: 0; }
-  .entry-title {
-    font-size: 0.88rem; font-weight: 600; color: #f9fafb;
-    display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  .t-date {
+    font-size: 0.7rem;
+    color: #6b7280;
+    flex-shrink: 0;
   }
-  .entry-desc { font-size: 0.75rem; color: #6b7280; margin-top: 3px; }
-  .entry-chevron {
-    color: #374151; font-size: 0.65rem; flex-shrink: 0;
+  .t-chevron {
+    color: #6b7280;
+    font-size: 0.8rem;
     transition: transform 0.2s;
+    flex-shrink: 0;
   }
-  .entry.open .entry-chevron { transform: rotate(180deg); color: #6b7280; }
-
-  .verdict {
-    font-size: 0.62rem; font-weight: 700;
-    padding: 2px 7px; border-radius: 4px;
-    text-transform: uppercase; letter-spacing: 0.04em;
-  }
-  .verdict-needs { background: #451a03; color: #fb923c; }
-  .verdict-worth { background: #14532d; color: #86efac; }
-  .verdict-kill  { background: #450a0a; color: #f87171; }
-  .score { font-size: 0.72rem; font-weight: 700; color: #60a5fa; }
-
-  .entry-body {
+  .t-card.expanded .t-chevron { transform: rotate(180deg); }
+  .t-body {
     display: none;
-    border-top: 1px solid #1f2937;
-    padding: 16px;
-    font-size: 0.78rem; color: #9ca3af; line-height: 1.65;
+    margin-top: 10px;
+    background: #111827;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 0.78rem;
+    color: #d1d5db;
+    line-height: 1.6;
+    max-height: 320px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    font-family: 'SF Mono', 'Fira Code', monospace;
   }
-  .entry.open .entry-body { display: block; }
-
-  .section { margin-top: 12px; }
-  .section:first-child { margin-top: 0; }
-  .section-label {
-    font-size: 0.65rem; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.08em;
-    color: #4b5563; margin-bottom: 6px;
+  .t-card.expanded .t-body { display: block; }
+  /* Score badge */
+  .score-badge {
+    display: inline-block;
+    background: #374151;
+    color: #fbbf24;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 9999px;
+    margin-left: 4px;
   }
-  .section ul { padding-left: 14px; }
-  .section li { margin-bottom: 4px; color: #9ca3af; }
-  .section p { color: #9ca3af; }
-  .section strong { color: #d1d5db; font-weight: 600; }
-  .tag-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
-  .tag {
-    background: #0a0f1a; border: 1px solid #1f2937;
-    border-radius: 4px; padding: 2px 8px;
-    font-size: 0.68rem; color: #6b7280;
+  .badge-validated {
+    background: #065f46;
+    color: #6ee7b7;
   }
-  .tag.green { border-color: #14532d; color: #86efac; }
-  .tag.blue  { border-color: #1e3a5f; color: #60a5fa; }
-  a.ext { color: #818cf8; text-decoration: none; }
-  a.ext:hover { text-decoration: underline; }
+  .badge-designed {
+    background: #1e3a5f;
+    color: #93c5fd;
+  }
+  a.stitch-link {
+    color: #60a5fa;
+    text-decoration: none;
+  }
+  a.stitch-link:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 
-<!-- Header -->
-<div class="header">
-  <div class="header-left">
-    <span class="idea-num">#17</span>
-    <div>
-      <div class="idea-title">MoodDot</div>
-      <div class="idea-sub">Daily Mood + Context Tracker</div>
-    </div>
-  </div>
-  <div class="header-right">
-    <span class="score-pill">6 / 10</span>
-    <span class="badge">📱 Mobile Prototype</span>
-    <button class="toggle-timeline-btn" id="toggleBtn" onclick="toggleTimeline()">
-      <span id="toggleIcon">‹</span> <span id="toggleLabel">Hide Journey</span>
-    </button>
-  </div>
+<div class="topbar">
+  <div class="topbar-title">💡 Idea #17: MoodDot — Daily Mood + Context Tracker</div>
+  <div class="topbar-badge">📱 Mobile Prototype</div>
 </div>
 
-<!-- Body -->
-<div class="body">
-
-  <!-- Phone -->
-  <div class="phone-col">
+<div class="layout">
+  <!-- Left: Phone frame -->
+  <div class="left-col">
     <div class="phone-frame">
-      <iframe id="app" src="c9ffff6ca10f40ba9430a7633eede0f3.html"></iframe>
+      <iframe id="app" src="ff0b8e00a9b640eabace42598b90759a.html" width="390" height="844"></iframe>
     </div>
-    <div class="switcher" id="switcher"></div>
+    <div class="screen-switcher">
+      <button class="screen-btn" onclick="loadScreen('65e4a5b283dc4dd48003de3e2c994761', this)" title="Widget">1</button>
+      <button class="screen-btn active" onclick="loadScreen('ff0b8e00a9b640eabace42598b90759a', this)" title="Home / Today">2</button>
+      <button class="screen-btn" onclick="loadScreen('db84592738f04d71a205fcd3f8a4c1fd', this)" title="Log Detail">3</button>
+      <button class="screen-btn" onclick="loadScreen('c078cd10b6fa4eaebc7902de2074d530', this)" title="Pattern View">4</button>
+      <button class="screen-btn" onclick="loadScreen('dd9085a9585c47b4a4be321ed67b2d9d', this)" title="Calendar">5</button>
+      <button class="screen-btn" onclick="loadScreen('a14c89b1c28c4b2ba4231c263fe92d1c', this)" title="Settings">6</button>
+    </div>
+    <div class="screen-label" id="screen-label">Screen 2: Home / Today</div>
   </div>
 
-  <div class="divider" id="divider"></div>
-
-  <!-- Timeline -->
-  <div class="timeline-col" id="timelineCol">
-    <div class="timeline-header">
-      <h2>Idea Journey</h2>
+  <!-- Right: Timeline panel -->
+  <div class="right-col" id="rightCol">
+    <div class="panel-toggle">
+      <button class="toggle-btn" onclick="togglePanel()" id="toggleBtn" title="Collapse/expand timeline">‹</button>
     </div>
-    <div class="timeline-scroll">
-      <div class="timeline-line" id="timeline"></div>
-    </div>
-  </div>
+    <div class="panel-content" id="panelContent">
+      <div class="panel-header">📋 Idea Journey</div>
+      <div class="timeline-scroll">
 
-</div>
+        <!-- Entry 1: Original Idea -->
+        <div class="t-card" onclick="toggleCard(this)">
+          <div class="t-card-header">
+            <div class="t-card-left">
+              <span class="t-icon">💡</span>
+              <span class="t-label">Original Idea</span>
+            </div>
+            <span class="t-date">2026-03-27</span>
+            <span class="t-chevron">▼</span>
+          </div>
+          <div class="t-summary">One-tap emoji mood logging with a daily calendar view</div>
+          <div class="t-body">## Idea #17: Mood Tracker — Tap an Emoji to Log How You Feel
+
+A simple mobile app where you tap an emoji to log how you feel each day. One tap, done. Over time it builds a mood calendar so you can see patterns — "I'm always low on Mondays" or "I feel great after gym days." No journaling, no long forms. Just an emoji and optionally a one-line note.</div>
+        </div>
+
+        <!-- Entry 2: Critique v1 -->
+        <div class="t-card" onclick="toggleCard(this)">
+          <div class="t-card-header">
+            <div class="t-card-left">
+              <span class="t-icon">🔍</span>
+              <span class="t-label">Critique v1 <span class="score-badge">6/10</span></span>
+            </div>
+            <span class="t-date">2026-03-27</span>
+            <span class="t-chevron">▼</span>
+          </div>
+          <div class="t-summary">NEEDS MAJOR WORK — Market saturated, emoji alone is shallow data, no retention hook</div>
+          <div class="t-body">**Verdict:** NEEDS MAJOR WORK
+**Score:** 6/10
+
+**Brutal Feedback:**
+• This market is saturated. Daylio, Bearable, Finch, Reflectly — all do this. "Simpler" is not a differentiation strategy.
+• Emoji alone is shallow data. Without knowing what "😔" means, patterns are noise.
+• No answer to: why would someone open this every day? Habit apps live or die by their retention hook.
+
+**Suggestions:**
+• Pick one specific user problem: correlate mood with sleep/exercise
+• Add a daily push notification to drive retention
+• Make the pattern view the hero — lead with insight, not logging
+• Consider a widget so logging happens without opening the app</div>
+        </div>
+
+        <!-- Entry 3: Improved v2 -->
+        <div class="t-card" onclick="toggleCard(this)">
+          <div class="t-card-header">
+            <div class="t-card-left">
+              <span class="t-icon">✨</span>
+              <span class="t-label">Improved v2</span>
+            </div>
+            <span class="t-date">2026-03-27</span>
+            <span class="t-chevron">▼</span>
+          </div>
+          <div class="t-summary">MoodDot — widget-first mood tracker with habit correlation patterns</div>
+          <div class="t-body">**What Changed:**
+• Picked specific job: correlate mood with daily habits (slept well, exercised, work stress)
+• Made widget the primary entry point — one tap, no app launch required
+• Pattern view is now the hero: "On days you tag 'good sleep' your mood averages 4.1/5"
+• Dropped cloud sync for v1 — local-only removes auth, backend costs, privacy concerns
+
+**MVP Scope:**
+• In v1: Home screen widget (5 emoji), context tags (12 presets), local storage, weekly correlation summary, pattern screen (30-day view)
+• Out of v1: Cloud sync, custom tags, social sharing, AI insights, streak tracking, export
+• Estimated: 2–3 weeks with AI coding tools</div>
+        </div>
+
+        <!-- Entry 4: Validated -->
+        <div class="t-card" onclick="toggleCard(this)">
+          <div class="t-card-header">
+            <div class="t-card-left">
+              <span class="t-icon">✅</span>
+              <span class="t-label">Validated <span class="score-badge badge-validated">Ready</span></span>
+            </div>
+            <span class="t-date">2026-03-27</span>
+            <span class="t-chevron">▼</span>
+          </div>
+          <div class="t-summary">Marked ready-for-design after critique round</div>
+          <div class="t-body">**Status:** ready-for-design
+**Validated at:** 2026-03-27
+**Final score:** 6/10
+
+The widget + correlation angle differentiates MoodDot from Daylio without excessive complexity. Core features are achievable with React Native + AI coding tools in 2-3 weeks.</div>
+        </div>
+
+        <!-- Entry 5: Designed -->
+        <div class="t-card" onclick="toggleCard(this)">
+          <div class="t-card-header">
+            <div class="t-card-left">
+              <span class="t-icon">🎨</span>
+              <span class="t-label">Designed <span class="score-badge badge-designed">Stitch</span></span>
+            </div>
+            <span class="t-date">2026-03-27</span>
+            <span class="t-chevron">▼</span>
+          </div>
+          <div class="t-summary">6-screen prototype created in Stitch with Ethereal Mood design system</div>
+          <div class="t-body">**Stitch Project:** 10585657371024735099
+**Design System:** Ethereal Mood (dark theme, #c799ff primary, Plus Jakarta Sans)
+
+**Screens designed:**
+1. Widget — 5-emoji home screen widget
+2. Home / Today — mood log + 7-day strip + patterns CTA
+3. Log Detail — context tag selection (12 presets)
+4. Pattern View — correlation bars (positive + negative)
+5. Calendar — monthly heatmap with day detail
+6. Settings — notifications, tags, data export
+
+<a class="stitch-link" href="https://stitch.withgoogle.com/projects/10585657371024735099" target="_blank">✏️ Edit in Stitch →</a></div>
+        </div>
+
+      </div><!-- timeline-scroll -->
+    </div><!-- panel-content -->
+  </div><!-- right-col -->
+</div><!-- layout -->
 
 <script>
-  // Screens
-  const screens = [
-    { id: "58b917d03e334b8d9a07114317e7b035", label: "Widget" },
-    { id: "c9ffff6ca10f40ba9430a7633eede0f3", label: "Home / Today" },
-    { id: "0072f10ebaa8407c83dce7142eba381a", label: "Log Detail" },
-    { id: "6754a8cb41ed4127944e8135a2caf3ac", label: "Pattern View" },
-    { id: "5c4c81dd9ebd48fb81f416ee5d7abbef", label: "Calendar" },
-    { id: "7c5cce8e4f2a4fbe877f2976eebe329e", label: "Settings" },
-  ];
-  let currentScreen = 1;
+  const screens = {
+    '65e4a5b283dc4dd48003de3e2c994761': 'Screen 1: Widget',
+    'ff0b8e00a9b640eabace42598b90759a': 'Screen 2: Home / Today',
+    'db84592738f04d71a205fcd3f8a4c1fd': 'Screen 3: Log Detail',
+    'c078cd10b6fa4eaebc7902de2074d530': 'Screen 4: Pattern View',
+    'dd9085a9585c47b4a4be321ed67b2d9d': 'Screen 5: Calendar',
+    'a14c89b1c28c4b2ba4231c263fe92d1c': 'Screen 6: Settings'
+  };
 
-  const switcher = document.getElementById('switcher');
-  screens.forEach((s, i) => {
-    const btn = document.createElement('button');
-    btn.textContent = (i + 1) + ' · ' + s.label;
-    btn.className = i === currentScreen ? 'active' : '';
-    btn.onclick = () => {
-      currentScreen = i;
-      document.getElementById('app').src = s.id + '.html';
-      switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
-    };
-    switcher.appendChild(btn);
-  });
-
-  // Timeline toggle
-  let timelineOpen = true;
-  function toggleTimeline() {
-    timelineOpen = !timelineOpen;
-    document.getElementById('timelineCol').classList.toggle('collapsed', !timelineOpen);
-    document.getElementById('divider').style.display = timelineOpen ? '' : 'none';
-    document.getElementById('toggleIcon').textContent = timelineOpen ? '›' : '‹';
-    document.getElementById('toggleLabel').textContent = timelineOpen ? 'Hide Journey' : 'Show Journey';
+  function loadScreen(id, btn) {
+    document.getElementById('app').src = id + '.html';
+    document.querySelectorAll('.screen-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    document.getElementById('screen-label').textContent = screens[id] || id;
   }
 
-  // Entry expand/collapse
-  function toggleEntry(el) {
-    el.closest('.entry').classList.toggle('open');
+  let panelOpen = true;
+  function togglePanel() {
+    panelOpen = !panelOpen;
+    const pc = document.getElementById('panelContent');
+    const btn = document.getElementById('toggleBtn');
+    const rc = document.getElementById('rightCol');
+    if (panelOpen) {
+      pc.style.display = 'block';
+      pc.style.opacity = '1';
+      pc.style.pointerEvents = '';
+      btn.textContent = '‹';
+      rc.style.width = '392px';
+    } else {
+      pc.style.display = 'none';
+      pc.style.opacity = '0';
+      pc.style.pointerEvents = 'none';
+      btn.textContent = '›';
+      rc.style.width = '32px';
+    }
   }
 
-  // Timeline data
-  const entries = [
-    {
-      status: '',
-      icon: '💡',
-      title: 'Original Idea',
-      desc: 'One-tap emoji mood logging with calendar patterns',
-      body: `
-        <div class="section">
-          <p>A simple mobile app where you tap an emoji to log how you feel each day. One tap, done. Over time it builds a mood calendar so you can see patterns — "I'm always low on Mondays" or "I feel great after gym days." No journaling, no long forms. Just an emoji and optionally a one-line note.</p>
-        </div>
-      `
-    },
-    {
-      status: 'critique',
-      icon: '🔍',
-      title: 'Critique v1',
-      verdict: 'NEEDS MAJOR WORK',
-      verdictClass: 'needs',
-      score: '6/10',
-      desc: 'Saturated market · no retention hook · shallow data',
-      body: `
-        <div class="section">
-          <div class="section-label">What's Actually Good</div>
-          <ul>
-            <li>One-tap UX — low friction is the right call for a habit app</li>
-            <li>Mood calendar with pattern detection is a real insight users would find useful</li>
-            <li>Tiny scope — a solo dev could build the core in a week</li>
-          </ul>
-        </div>
-        <div class="section">
-          <div class="section-label">Brutal Feedback</div>
-          <ul>
-            <li>Market is saturated — Daylio, Bearable, Finch, Reflectly all do this. "Simpler" is not differentiation.</li>
-            <li>Emoji alone is shallow data. Without context, "I'm always low on Mondays" is noise.</li>
-            <li>No retention hook. Habit apps live or die by daily engagement, not a calendar you check monthly.</li>
-            <li>One-line note is useless for pattern detection — too unstructured.</li>
-            <li>No monetisation path mentioned.</li>
-          </ul>
-        </div>
-        <div class="section">
-          <div class="section-label">Suggestions</div>
-          <ul>
-            <li>Pick one job: correlate mood with sleep/exercise</li>
-            <li>Add daily push notification for retention</li>
-            <li>Make the pattern view the hero screen</li>
-            <li>Widget so logging needs no app launch</li>
-          </ul>
-        </div>
-        <div class="section">
-          <div class="section-label">Solo Dev Reality Check</div>
-          <div class="tag-row"><span class="tag green">✅ Shippable in 2–4 weeks</span></div>
-          <p style="margin-top:8px;">Risk: building something nobody opens after day 3.</p>
-        </div>
-      `
-    },
-    {
-      status: 'improve',
-      icon: '✨',
-      title: 'Improved — MoodDot',
-      desc: 'Widget-first · habit correlation · pattern as hero',
-      body: `
-        <div class="section">
-          <div class="section-label">What Changed</div>
-          <ul>
-            <li><strong>Specific job:</strong> understand what actually affects your mood — log mood + 1–3 context tags (slept well, exercised, work stress…)</li>
-            <li><strong>Widget-first:</strong> one tap on home screen logs instantly, no app launch</li>
-            <li><strong>Pattern screen is the hero:</strong> "mood with good sleep: 4.1/5 vs without: 2.8/5" — real correlations, not just a calendar</li>
-            <li><strong>Local-only for v1:</strong> no auth, no backend, no privacy concerns</li>
-          </ul>
-        </div>
-        <div class="section">
-          <div class="section-label">Solo MVP Scope</div>
-          <div class="tag-row">
-            <span class="tag blue">Widget (5 emoji)</span>
-            <span class="tag blue">Context tags (12 presets)</span>
-            <span class="tag blue">Weekly insight</span>
-            <span class="tag blue">Pattern screen (30d)</span>
-          </div>
-          <div class="tag-row" style="margin-top:6px;">
-            <span class="tag">No cloud sync</span>
-            <span class="tag">No custom tags</span>
-            <span class="tag">No social</span>
-          </div>
-        </div>
-        <div class="section">
-          <div class="section-label">Estimated Timeline</div>
-          <div class="tag-row"><span class="tag green">2–3 weeks with AI coding tools</span></div>
-        </div>
-      `
-    },
-    {
-      status: 'validate',
-      icon: '✅',
-      title: 'Validated — Ready for Design',
-      score: '6/10',
-      desc: '6 screens · widget + home + log + patterns + calendar + settings',
-      body: `
-        <div class="section">
-          <div class="section-label">Design Handoff</div>
-          <ul>
-            <li><strong>Screen 1 — Widget:</strong> 5 emoji in a row, one tap logs immediately</li>
-            <li><strong>Screen 2 — Home / Today:</strong> today's log + 7-day strip + CTA to patterns</li>
-            <li><strong>Screen 3 — Log Detail:</strong> context tags from preset list, confirm / skip</li>
-            <li><strong>Screen 4 — Pattern View:</strong> top 3 positive + negative correlations as bar comparisons</li>
-            <li><strong>Screen 5 — Calendar:</strong> monthly heatmap, tap day to see mood + tags</li>
-            <li><strong>Screen 6 — Settings:</strong> notification time, tag management, data export</li>
-          </ul>
-        </div>
-      `
-    },
-    {
-      status: 'design',
-      icon: '🎨',
-      title: 'Designed in Stitch',
-      desc: '6 screens generated · nav wired · phone prototype',
-      body: `
-        <div class="section">
-          <p>Screens generated with MOBILE device type. Top nav and bottom nav normalized across all screens. Navigation wired between screens (bottom tabs, back buttons, CTAs).</p>
-        </div>
-        <div class="section" style="margin-top:12px;">
-          <a class="ext" href="https://stitch.withgoogle.com/projects/12795291167740058732" target="_blank">✏️ Edit in Stitch →</a>
-        </div>
-      `
-    },
-  ];
-
-  const timeline = document.getElementById('timeline');
-  entries.forEach(e => {
-    const verdictHtml = e.verdict
-      ? `<span class="verdict verdict-${e.verdictClass}">${e.verdict}</span>`
-      : '';
-    const scoreHtml = e.score
-      ? `<span class="score">${e.score}</span>`
-      : '';
-
-    const div = document.createElement('div');
-    div.className = 'entry' + (e.status ? ' status-' + e.status : '');
-    div.innerHTML = `
-      <div class="entry-card">
-        <div class="entry-head" onclick="toggleEntry(this)">
-          <span class="entry-icon">${e.icon}</span>
-          <div class="entry-info">
-            <div class="entry-title">${e.title} ${verdictHtml} ${scoreHtml}</div>
-            <div class="entry-desc">${e.desc}</div>
-          </div>
-          <span class="entry-chevron">▼</span>
-        </div>
-        <div class="entry-body">${e.body}</div>
-      </div>
-    `;
-    timeline.appendChild(div);
-  });
+  function toggleCard(card) {
+    card.classList.toggle('expanded');
+  }
 </script>
 </body>
 </html>

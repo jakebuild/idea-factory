@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#c799ff",
+              "secondary-container": "#006a60",
+              "on-surface-variant": "#adaaaa",
+              "on-tertiary-container": "#59002b",
+              "on-primary": "#440080",
+              "background": "#0e0e0e",
+              "on-secondary-container": "#dcfff8",
+              "outline": "#767575",
+              "outline-variant": "#484847",
+              "on-background": "#ffffff",
+              "on-secondary": "#005b51",
+              "surface-bright": "#2c2c2c",
+              "primary-container": "#bc87fe",
+              "surface-container-lowest": "#000000",
+              "surface-container": "#1a1a1a",
+              "primary-fixed-dim": "#af7aef",
+              "on-primary-fixed-variant": "#40007a",
+              "on-tertiary-fixed-variant": "#710d3b",
+              "secondary-fixed": "#4af8e3",
+              "tertiary-dim": "#f175a0",
+              "tertiary-fixed": "#ff8db2",
+              "on-error": "#490013",
+              "surface-variant": "#262626",
+              "inverse-on-surface": "#565555",
+              "inverse-primary": "#7744b5",
+              "on-error-container": "#ffb2b9",
+              "surface-container-highest": "#262626",
+              "primary-fixed": "#bc87fe",
+              "inverse-surface": "#fcf9f8",
+              "surface-container-low": "#131313",
+              "tertiary-container": "#fe7faa",
+              "error": "#ff6e84",
+              "surface-container-high": "#20201f",
+              "on-tertiary": "#6b0636",
+              "primary": "#c799ff",
+              "secondary-dim": "#33e9d5",
+              "on-secondary-fixed-variant": "#00655b",
+              "tertiary-fixed-dim": "#f87aa5",
+              "secondary-fixed-dim": "#33e9d5",
+              "surface-dim": "#0e0e0e",
+              "on-surface": "#ffffff",
+              "primary-dim": "#ba85fb",
+              "secondary": "#4af8e3",
+              "error-dim": "#d73357",
+              "error-container": "#a70138",
+              "on-tertiary-fixed": "#380019",
+              "on-secondary-fixed": "#00463f",
+              "surface": "#0e0e0e",
+              "on-primary-container": "#340064",
+              "tertiary": "#ff97b7",
+              "on-primary-fixed": "#000000"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-card {
+            background: rgba(38, 38, 38, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0e0e]/80 backdrop-blur-xl flex justify-between items-center px-8 h-20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#c799ff] text-2xl" data-icon="bubble_chart">bubble_chart</span>
+<h1 class="font-['Plus_Jakarta_Sans'] text-2xl font-bold tracking-tight text-[#c799ff]">Patterns</h1>
+</div>
+<button class="hover:bg-[#262626]/50 transition-all duration-300 p-2 rounded-full active:scale-95 active:duration-150">
+<span class="material-symbols-outlined text-[#adaaaa]" data-icon="settings">settings</span>
+</button>
+</header>
+<main class="pt-28 pb-32 px-6 max-w-2xl mx-auto space-y-10">
+<!-- Hero Mood Summary Visual -->
+<section class="relative h-48 rounded-lg overflow-hidden flex items-end p-8">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-secondary/10 z-0"></div>
+<img class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-luminosity" data-alt="Abstract ethereal smoke swirls in deep purple and teal colors against a black background with soft grain texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh0AZ6oh5gfqw_FAybdHKU2cEeUBtRgSbFhIUUn_0r-QmjKjmcaSHVjo13TepKB-yX38n4GBTOmYXMbmWWB5KENZt8UCULDwlwo9S7ao4VXeurC6hF73blgsteAaBggIEVIyO53Df3LuoYUq_lh0JWDN9Y_2JkxoWIOHpaYJdZiDE63I2_qPPPbUlHePjHP9hS6LaWQu0s6_OZfqcYxXtRE4CeerGEAmNbpjqFM9g0-5o0IkS-H7LA5LkQZdHn6hs6jhZrOq10drtR"/>
+<div class="relative z-10">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-2">Current Insight</p>
+<h2 class="font-headline text-4xl font-extrabold tracking-tight">Ethereal Clarity</h2>
+</div>
+</section>
+<!-- Time Range Selector -->
+<nav class="flex p-1.5 bg-surface-container-low rounded-full w-fit mx-auto">
+<button class="px-8 py-2.5 rounded-full text-sm font-bold transition-all duration-300 bg-primary text-on-primary shadow-lg shadow-primary/20">30 days</button>
+<button class="px-8 py-2.5 rounded-full text-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all duration-300">90 days</button>
+</nav>
+<!-- Top Positive Correlations -->
+<section class="space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-xl font-bold flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+                    Top Positive Correlations
+                </h3>
+</div>
+<div class="grid gap-4">
+<!-- Card 1 -->
+<div class="glass-card p-6 rounded-lg border border-outline-variant/15 hover:border-secondary/30 transition-all duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-3">
+<span class="text-2xl">😴</span>
+<span class="font-bold text-lg tracking-tight">Slept Well</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>With Activity</span>
+<span class="text-primary font-bold">4.1 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-700 ease-out" style="width: 82%"></div>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>Without</span>
+<span>2.8 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-zinc-800 rounded-full transition-all duration-700 ease-out" style="width: 56%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-6 rounded-lg border border-outline-variant/15 hover:border-secondary/30 transition-all duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-3">
+<span class="text-2xl">🏃‍♂️</span>
+<span class="font-bold text-lg tracking-tight">Exercised</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>With Activity</span>
+<span class="text-primary font-bold">4.3 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-700 ease-out" style="width: 86%"></div>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>Without</span>
+<span>3.0 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-zinc-800 rounded-full transition-all duration-700 ease-out" style="width: 60%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-6 rounded-lg border border-outline-variant/15 hover:border-secondary/30 transition-all duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-3">
+<span class="text-2xl">🥑</span>
+<span class="font-bold text-lg tracking-tight">Healthy Eating</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>With Activity</span>
+<span class="text-primary font-bold">4.0 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-700 ease-out" style="width: 80%"></div>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>Without</span>
+<span>3.2 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-zinc-800 rounded-full transition-all duration-700 ease-out" style="width: 64%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Top Negative Correlations -->
+<section class="space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-xl font-bold flex items-center gap-2 text-error">
+<span class="material-symbols-outlined" data-icon="trending_down">trending_down</span>
+                    Top Negative Correlations
+                </h3>
+</div>
+<div class="grid gap-4">
+<!-- Card 1 -->
+<div class="glass-card p-6 rounded-lg border border-outline-variant/15 hover:border-error/30 transition-all duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-3">
+<span class="text-2xl">💼</span>
+<span class="font-bold text-lg tracking-tight">Work Stress</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>With Activity</span>
+<span class="text-error font-bold">2.1 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-error/60 rounded-full transition-all duration-700 ease-out" style="width: 42%"></div>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>Without</span>
+<span>3.8 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-zinc-800 rounded-full transition-all duration-700 ease-out" style="width: 76%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-6 rounded-lg border border-outline-variant/15 hover:border-error/30 transition-all duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-3">
+<span class="text-2xl">☕</span>
+<span class="font-bold text-lg tracking-tight">Caffeine</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>With Activity</span>
+<span class="text-error font-bold">2.5 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-error/60 rounded-full transition-all duration-700 ease-out" style="width: 50%"></div>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>Without</span>
+<span>3.5 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-zinc-800 rounded-full transition-all duration-700 ease-out" style="width: 70%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-6 rounded-lg border border-outline-variant/15 hover:border-error/30 transition-all duration-300 group cursor-pointer">
+<div class="flex justify-between items-start mb-6">
+<div class="flex items-center gap-3">
+<span class="text-2xl">⛈️</span>
+<span class="font-bold text-lg tracking-tight">Bad Weather</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>With Activity</span>
+<span class="text-error font-bold">2.8 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-error/60 rounded-full transition-all duration-700 ease-out" style="width: 56%"></div>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between text-xs font-medium text-on-surface-variant mb-1">
+<span>Without</span>
+<span>3.6 ★</span>
+</div>
+<div class="h-2 w-full bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full bg-zinc-800 rounded-full transition-all duration-700 ease-out" style="width: 72%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#131313]/90 backdrop-blur-2xl rounded-t-[24px] z-50 shadow-[0_-4px_40px_rgba(199,153,255,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="ff0b8e00a9b640eabace42598b90759a.html" onclick="window.location.href='ff0b8e00a9b640eabace42598b90759a.html'; return false;">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="db84592738f04d71a205fcd3f8a4c1fd.html" onclick="window.location.href='db84592738f04d71a205fcd3f8a4c1fd.html'; return false;">
+<span class="material-symbols-outlined" data-icon="edit_note">edit_note</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Log</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#262626] text-[#c799ff] rounded-full px-4 py-2 scale-110 transition-all" href="c078cd10b6fa4eaebc7902de2074d530.html" onclick="window.location.href='c078cd10b6fa4eaebc7902de2074d530.html'; return false;">
+<span class="material-symbols-outlined" data-icon="auto_graph" style="font-variation-settings: 'FILL' 1;">auto_graph</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Patterns</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="dd9085a9585c47b4a4be321ed67b2d9d.html" onclick="window.location.href='dd9085a9585c47b4a4be321ed67b2d9d.html'; return false;">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Calendar</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#adaaaa] opacity-60 hover:text-[#4af8e3] transition-colors duration-300" href="a14c89b1c28c4b2ba4231c263fe92d1c.html" onclick="window.location.href='a14c89b1c28c4b2ba4231c263fe92d1c.html'; return false;">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest mt-1">Settings</span>
+</a>
+</nav>
+</body></html>
