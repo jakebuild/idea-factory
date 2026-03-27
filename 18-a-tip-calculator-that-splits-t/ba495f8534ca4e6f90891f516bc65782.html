@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SplitTab - Item Entry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline-variant": "#2b4680",
+              "surface": "#060e20",
+              "on-tertiary-fixed": "#444d2e",
+              "secondary-fixed-dim": "#cbd5e8",
+              "surface-container-high": "#031d4b",
+              "secondary-dim": "#949eb0",
+              "on-tertiary": "#596342",
+              "tertiary-dim": "#dfeac0",
+              "on-primary-fixed-variant": "#006947",
+              "surface-container-lowest": "#000000",
+              "on-primary": "#004a31",
+              "surface-tint": "#4edea3",
+              "primary-container": "#005236",
+              "primary-fixed-dim": "#5fedb0",
+              "surface-variant": "#00225a",
+              "surface-container-low": "#06122d",
+              "secondary": "#949eb0",
+              "on-primary-fixed": "#004930",
+              "primary": "#4edea3",
+              "secondary-container": "#323c4b",
+              "on-tertiary-container": "#515a3a",
+              "surface-container-highest": "#00225a",
+              "on-background": "#dee5ff",
+              "surface-container": "#05183c",
+              "on-surface": "#dee5ff",
+              "surface-bright": "#002867",
+              "on-primary-container": "#5ae9ac",
+              "error-container": "#7f2927",
+              "inverse-primary": "#006d4a",
+              "on-secondary-fixed": "#36404f",
+              "on-tertiary-fixed-variant": "#606a48",
+              "tertiary-container": "#e5f0c5",
+              "on-surface-variant": "#91aaeb",
+              "error": "#ee7d77",
+              "inverse-on-surface": "#4d556b",
+              "tertiary-fixed": "#eef9cd",
+              "primary-fixed": "#6ffbbe",
+              "on-secondary": "#17212e",
+              "inverse-surface": "#faf8ff",
+              "surface-dim": "#060e20",
+              "outline": "#5b74b1",
+              "tertiary-fixed-dim": "#dfeac0",
+              "on-secondary-fixed-variant": "#525c6c",
+              "secondary-fixed": "#d9e3f6",
+              "background": "#060e20",
+              "on-secondary-container": "#b6c0d2",
+              "on-error": "#490106",
+              "error-dim": "#bb5551",
+              "tertiary": "#f4fed3",
+              "primary-dim": "#3cd096",
+              "on-error-container": "#ff9993"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-40">
+<!-- Top App Bar -->
+<nav class="sticky top-0 z-50 bg-[#060e20]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#10B981] cursor-pointer active:scale-95 duration-150">arrow_back</span>
+<span class="text-2xl font-bold tracking-tight text-[#dee5ff] font-manrope">SplitTab</span>
+</div>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User" data-alt="Close up portrait of a professional man in his 30s with a clean haircut and neutral expression, soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4T2Pg6sZeZYeN_-zt2yau52yZXB6od46yrqz2bQ81qaxSRLgbU567bAOJVXlG0G1YRUQXkV8GzgpxXoOmqZUO2BBHIOG3u1_T1d7IlRjncVnQzEFEFzqlOrdET4b7hrUmcjLikTPEMEO7yasIpRstlZRecePGLdIlHE-NVoUrCbypV2gjksoW2ETpB8QkQedypO3ZbX6c57IkxsEgN68yjQASXP_Ig6YJ27ylQqPb7iFSRiSR9kEm-FsiyAoEr2VDLeIQNjBWPqw"/>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 pt-6">
+<!-- Dashboard Header Style (Intentional Asymmetry) -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest mb-1">Current Session</p>
+<h1 class="text-4xl font-extrabold font-headline tracking-tighter text-on-background">Item Entry</h1>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant font-label text-sm block">Subtotal</span>
+<span class="text-3xl font-bold font-headline text-primary">$142.50</span>
+</div>
+</div>
+<!-- Tabs Container -->
+<div class="bg-surface-container-low rounded-xl p-1 mb-6 flex max-w-md">
+<button class="flex-1 py-3 px-6 rounded-xl font-bold text-sm transition-all duration-300 bg-primary-container text-on-primary-container shadow-lg active:scale-95">
+                Quick Add
+            </button>
+<button class="flex-1 py-3 px-6 rounded-xl font-bold text-sm transition-all duration-300 text-on-surface-variant hover:bg-surface-container active:scale-95">
+                Custom
+            </button>
+</div>
+<!-- Quick Add Grid (Bento Style) -->
+<section class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-12 h-[420px] overflow-y-auto pr-2 hide-scrollbar">
+<!-- Item Cards (Repeated Pattern for 40 items - showing representative sample) -->
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">local_bar</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$7</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Beer</p>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">wine_bar</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$12</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Wine</p>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">liquor</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$15</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Cocktail</p>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">lunch_dining</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$16</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Burger</p>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">local_pizza</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$18</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Pizza</p>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">eco</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$14</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Salad</p>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">restaurant</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$6</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Fries</p>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">tapas</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$12</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Appetizer</p>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">icecream</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$9</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Dessert</p>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">coffee</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$4</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Coffee</p>
+</div>
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between hover:bg-surface-bright transition-all duration-300 cursor-pointer group active:scale-95 border-b-2 border-transparent hover:border-primary/30">
+<div class="flex justify-between items-start mb-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors">bubble_chart</span>
+<span class="text-xs font-bold text-primary bg-primary-container/30 px-2 py-1 rounded-lg">$3</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Soda</p>
+</div>
+<!-- ... imagine 29 more items ... -->
+<div class="bg-surface-container p-5 rounded-xl flex flex-col justify-between opacity-50 border-2 border-dashed border-outline-variant items-center justify-center text-on-surface-variant italic text-xs text-center">
+<span>View All 40 Items</span>
+</div>
+</section>
+<!-- Added Items List Section -->
+<section class="bg-surface-container-low rounded-3xl overflow-hidden shadow-2xl mb-24">
+<div class="px-6 py-5 border-b border-outline-variant/30 flex justify-between items-center">
+<h3 class="font-headline font-bold text-lg text-on-background">Table Summary</h3>
+<span class="text-xs font-label text-on-surface-variant uppercase tracking-widest">8 Items Added</span>
+</div>
+<div class="p-2">
+<div class="space-y-1">
+<!-- Item Row 1 -->
+<div class="flex items-center justify-between p-4 bg-surface-container rounded-2xl hover:bg-surface-bright transition-colors">
+<div class="flex items-center gap-4">
+<div class="h-10 w-10 rounded-full bg-primary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">local_pizza</span>
+</div>
+<div>
+<p class="font-bold text-on-background">Margherita Pizza</p>
+<p class="text-xs text-on-surface-variant">Quick Add</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-headline font-bold text-on-background">$18.00</span>
+<div class="flex items-center gap-2">
+<button class="p-2 hover:bg-primary-container/20 rounded-lg transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 hover:bg-error-container/20 rounded-lg transition-colors text-error">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item Row 2 -->
+<div class="flex items-center justify-between p-4 bg-surface-container rounded-2xl hover:bg-surface-bright transition-colors">
+<div class="flex items-center gap-4">
+<div class="h-10 w-10 rounded-full bg-primary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">liquor</span>
+</div>
+<div>
+<p class="font-bold text-on-background">Old Fashioned</p>
+<p class="text-xs text-on-surface-variant">Custom Entry</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-headline font-bold text-on-background">$14.50</span>
+<div class="flex items-center gap-2">
+<button class="p-2 hover:bg-primary-container/20 rounded-lg transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 hover:bg-error-container/20 rounded-lg transition-colors text-error">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item Row 3 -->
+<div class="flex items-center justify-between p-4 bg-surface-container rounded-2xl hover:bg-surface-bright transition-colors">
+<div class="flex items-center gap-4">
+<div class="h-10 w-10 rounded-full bg-primary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">lunch_dining</span>
+</div>
+<div>
+<p class="font-bold text-on-background">Truffle Burger</p>
+<p class="text-xs text-on-surface-variant">Quick Add</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="font-headline font-bold text-on-background">$22.00</span>
+<div class="flex items-center gap-2">
+<button class="p-2 hover:bg-primary-container/20 rounded-lg transition-colors text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">edit</span>
+</button>
+<button class="p-2 hover:bg-error-container/20 rounded-lg transition-colors text-error">
+<span class="material-symbols-outlined text-[20px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- List Subtotal Tonal Footer -->
+<div class="px-8 py-6 bg-surface-container-high/50 flex justify-between items-center">
+<div>
+<p class="text-sm font-label text-on-surface-variant">Subtotal</p>
+<p class="text-xs text-[#4edea3]/60 italic font-body">Excluding tax &amp; tip</p>
+</div>
+<div class="text-right">
+<p class="text-3xl font-extrabold font-headline text-on-background tracking-tight">$54.50</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating CTA Action -->
+<div class="fixed bottom-24 left-0 w-full px-6 pointer-events-none z-40">
+<div class="max-w-7xl mx-auto flex justify-center">
+<button class="pointer-events-auto bg-gradient-to-r from-primary to-primary-dim text-on-primary w-full max-w-md py-5 rounded-2xl flex items-center justify-center gap-3 shadow-[0_8px_32px_rgba(78,222,163,0.3)] hover:scale-[1.02] active:scale-95 transition-all duration-200 group">
+<span class="font-headline font-extrabold tracking-tight text-lg">Share with table</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#000000]/70 backdrop-blur-xl flex justify-around items-center px-4 pb-6 pt-2 shadow-[0_-4px_24px_rgba(78,222,163,0.08)]">
+<div class="flex flex-col items-center justify-center text-[#91aaeb] opacity-60 hover:opacity-100 transition-opacity cursor-pointer">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="text-[11px] font-medium tracking-wide uppercase mt-1">Activity</span>
+</div>
+<!-- Active Tab: Settle Up (as Item Entry is part of the billing flow) -->
+<div class="flex flex-col items-center justify-center bg-[#005236] text-[#4edea3] rounded-xl px-4 py-2 cursor-pointer transition-all duration-150 active:scale-90 shadow-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span class="text-[11px] font-medium tracking-wide uppercase mt-1">Settle Up</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#91aaeb] opacity-60 hover:opacity-100 transition-opacity cursor-pointer">
+<span class="material-symbols-outlined">group</span>
+<span class="text-[11px] font-medium tracking-wide uppercase mt-1">Groups</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#91aaeb] opacity-60 hover:opacity-100 transition-opacity cursor-pointer">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[11px] font-medium tracking-wide uppercase mt-1">Settings</span>
+</div>
+</nav>
+<!-- Visual Backdrop Gradient Layer -->
+<div class="fixed inset-0 bg-[radial-gradient(circle_at_0%_0%,rgba(0,40,103,0.15)_0%,rgba(6,14,32,0)_50%)] pointer-events-none z-[-1]"></div>
+</body></html>

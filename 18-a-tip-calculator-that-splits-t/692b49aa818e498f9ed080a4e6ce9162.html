@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SplitTab - Join Group</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-secondary-container": "#b6c0d2",
+            "on-primary-fixed": "#004930",
+            "on-tertiary": "#596342",
+            "on-primary-fixed-variant": "#006947",
+            "on-secondary": "#17212e",
+            "error-dim": "#bb5551",
+            "secondary-fixed-dim": "#cbd5e8",
+            "on-tertiary-container": "#515a3a",
+            "secondary-dim": "#949eb0",
+            "on-error": "#490106",
+            "background": "#060e20",
+            "on-background": "#dee5ff",
+            "surface-container-lowest": "#000000",
+            "outline": "#5b74b1",
+            "tertiary-dim": "#dfeac0",
+            "primary-fixed-dim": "#5fedb0",
+            "error-container": "#7f2927",
+            "surface-container-highest": "#00225a",
+            "inverse-on-surface": "#4d556b",
+            "tertiary-fixed": "#eef9cd",
+            "surface-container-high": "#031d4b",
+            "surface": "#060e20",
+            "tertiary": "#f4fed3",
+            "on-tertiary-fixed-variant": "#606a48",
+            "on-secondary-fixed-variant": "#525c6c",
+            "tertiary-fixed-dim": "#dfeac0",
+            "tertiary-container": "#e5f0c5",
+            "secondary-container": "#323c4b",
+            "surface-variant": "#00225a",
+            "surface-container-low": "#06122d",
+            "on-surface-variant": "#91aaeb",
+            "primary-dim": "#3cd096",
+            "outline-variant": "#2b4680",
+            "on-primary": "#004a31",
+            "secondary": "#949eb0",
+            "inverse-surface": "#faf8ff",
+            "on-error-container": "#ff9993",
+            "inverse-primary": "#006d4a",
+            "primary-container": "#005236",
+            "on-primary-container": "#5ae9ac",
+            "secondary-fixed": "#d9e3f6",
+            "on-tertiary-fixed": "#444d2e",
+            "surface-container": "#05183c",
+            "primary-fixed": "#6ffbbe",
+            "surface-tint": "#4edea3",
+            "surface-bright": "#002867",
+            "error": "#ee7d77",
+            "on-secondary-fixed": "#36404f",
+            "surface-dim": "#060e20",
+            "on-surface": "#dee5ff",
+            "primary": "#4edea3"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      background-color: #060e20;
+      background-image: radial-gradient(circle at 0% 0%, rgba(0, 40, 103, 0.15) 0%, transparent 50%);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-background min-h-screen flex flex-col">
+<header class="bg-[#060e20] dark:bg-[#060e20] docked full-width top-0 z-50">
+<div class="flex items-center justify-between w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#10B981] dark:text-[#4edea3] active:scale-95 transition-transform cursor-pointer" data-icon="arrow_back">arrow_back</span>
+<span class="font-['Manrope'] font-bold tracking-tight display-lg text-xl font-extrabold text-[#10B981] dark:text-[#4edea3]">SplitTab</span>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-[#91aaeb] hover:bg-[#05183c] transition-colors duration-200 p-2 rounded-full cursor-pointer" data-icon="help_outline">help_outline</span>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center px-6 py-12 max-w-2xl mx-auto w-full">
+<div class="w-full space-y-12">
+<div class="space-y-4 text-left">
+<h1 class="font-headline font-extrabold text-4xl md:text-5xl tracking-tight text-on-background">
+          Enter Group Code
+        </h1>
+<p class="font-body text-on-surface-variant text-lg max-w-md">
+          Join your friends and start splitting bills instantly.
+        </p>
+</div>
+<div class="space-y-10">
+<div class="flex justify-between gap-3 md:gap-6">
+<div class="w-16 h-20 md:w-24 md:h-32 bg-surface-container rounded-xl flex items-center justify-center border-b-2 border-outline-variant focus-within:border-primary transition-all duration-300">
+<input class="w-full h-full bg-transparent text-center font-headline text-3xl md:text-5xl font-bold text-primary focus:outline-none placeholder-on-surface-variant/20" maxlength="1" placeholder="0" type="text"/>
+</div>
+<div class="w-16 h-20 md:w-24 md:h-32 bg-surface-container rounded-xl flex items-center justify-center border-b-2 border-outline-variant focus-within:border-primary transition-all duration-300">
+<input class="w-full h-full bg-transparent text-center font-headline text-3xl md:text-5xl font-bold text-primary focus:outline-none placeholder-on-surface-variant/20" maxlength="1" placeholder="0" type="text"/>
+</div>
+<div class="w-16 h-20 md:w-24 md:h-32 bg-surface-container rounded-xl flex items-center justify-center border-b-2 border-outline-variant focus-within:border-primary transition-all duration-300">
+<input class="w-full h-full bg-transparent text-center font-headline text-3xl md:text-5xl font-bold text-primary focus:outline-none placeholder-on-surface-variant/20" maxlength="1" placeholder="0" type="text"/>
+</div>
+<div class="w-16 h-20 md:w-24 md:h-32 bg-surface-container rounded-xl flex items-center justify-center border-b-2 border-outline-variant focus-within:border-primary transition-all duration-300">
+<input class="w-full h-full bg-transparent text-center font-headline text-3xl md:text-5xl font-bold text-primary focus:outline-none placeholder-on-surface-variant/20" maxlength="1" placeholder="0" type="text"/>
+</div>
+</div>
+<div class="space-y-3">
+<label class="font-label text-sm font-medium text-on-surface-variant ml-1">What should we call you?</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low border-b border-outline-variant focus:border-primary py-4 px-1 text-xl font-body text-on-background placeholder:text-on-surface-variant/30 focus:outline-none transition-colors duration-300" placeholder="Your Name" type="text"/>
+</div>
+</div>
+<button class="w-full py-5 bg-gradient-to-br from-primary to-primary-dim rounded-xl text-on-primary font-headline font-bold text-lg tracking-wide shadow-[0_0_24px_rgba(78,222,163,0.08)] active:scale-95 transition-all duration-200 hover:brightness-110">
+          Join Group
+        </button>
+</div>
+<div class="pt-8 flex flex-col items-center gap-6">
+<div class="flex -space-x-3 overflow-hidden">
+<img alt="Friend" class="inline-block h-10 w-10 rounded-full ring-2 ring-surface" data-alt="professional headshot of a young woman with a friendly expression in a modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGAklaBwjkW8TrLFwj3wQmU3Pdfkebo0bslsqt8DvxiM0qj1pxN3TnhJaVW9oA37gNi9KM1YhzoiMifJXm0COpWsBkocQSRRe9nssu0zgYLgq2cF7wIVdL-htVYcytw3yYiew4kA1dmpXcsiT5LQrzrrOotN39lk8c4ErXFhZRiz8GEEt9z9V40ypq6_ps0kE1HciO7WQ_YGIch8zPJd0jtKYtFE2uaVZIBHPVnZ_j7utCyEjtSj0YxRKLGF6a9SxXVMxQqgNNHO4"/>
+<img alt="Friend" class="inline-block h-10 w-10 rounded-full ring-2 ring-surface" data-alt="close-up portrait of a man with a beard smiling against a soft blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGX6RsKZElKeGfNTZMkUZzjXBzWlbRa7jrWBIeaqxgvg2qiw4HmmDI8SHEyjtlroXtF_9_W8boP0Q0ldNlcYVHDrJr-JsQvnb_ha_rjZEQbhJTKwK3OswtoX6-4VS5Ni7n2OhVBTnVKYUTgbg8fSxh_z1t-3GdQFOVANwAjk2s1QbjNIWKEGnffMDJPx2jXMUJUq2Dj_uA4o-JRxpZl6W5I3gzqu4-Mj-5MsCLqd4arIVxB_H1OqO1pEsV792zKvt6TieL24eca5I"/>
+<img alt="Friend" class="inline-block h-10 w-10 rounded-full ring-2 ring-surface" data-alt="smiling woman with long hair in a casual natural outdoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3b6ZCrnY_oI63jSTo_vzfeLtVMx7kWG0kvD6hhi3TO0mLe0t-rIGXK1UKOUDYl9S4EUklWB650MVYs0Bxpe120a9iiU28UHirAZEWjwTccSmWesPTy4wLexopqw8k5LH5YGF19JSy0z1F8G6ycc-THdufoCehvG8nQykDuOBVDpT1f2UdcZWe7TimuYBZ4xEBJORPW4csh35YYG4rqtPRkdObWqAPmJr5c_oyTUBZLhl012Auc3In_LBBcafTjedf9w7pMA_EqHU"/>
+<div class="flex h-10 w-10 items-center justify-center rounded-full bg-surface-container ring-2 ring-surface text-xs font-bold text-primary">+12</div>
+</div>
+<p class="text-on-surface-variant text-sm font-medium">15 friends are active right now</p>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-center gap-12 pb-8 pt-4 bg-transparent backdrop-blur-xl">
+<div class="flex items-center gap-12">
+<div class="flex flex-col items-center gap-1 text-[#91aaeb] opacity-60 hover:opacity-100 active:scale-90 transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+<span class="font-['Inter'] text-xs font-medium">Support</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[#4edea3] opacity-100 active:scale-90 transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="info" style="font-variation-settings: 'FILL' 1;">info</span>
+<span class="font-['Inter'] text-xs font-medium">About</span>
+</div>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idea #18 — Design Preview</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: #f8fafc;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+    }
+
+    .card:hover {
+      background: #273549;
+      border-color: #4f86c6;
+      transform: translateY(-2px);
+    }
+
+    .card-number {
+      flex-shrink: 0;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 50%;
+      background: #3b82f6;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-label {
+      font-size: 0.975rem;
+      font-weight: 500;
+      color: #e2e8f0;
+      line-height: 1.4;
+    }
+
+    .card-arrow {
+      margin-left: auto;
+      color: #475569;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .card:hover .card-arrow {
+      color: #93c5fd;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Idea #18 — Design Preview</h1>
+    <p>8 screens &bull; Project ID: 2244912251953452045</p>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="4806ce5ab578438c84d4b49f1e70f01c.html">
+      <div class="card-number">1</div>
+      <div class="card-label">Home / New Session</div>
+      <div class="card-arrow">&#8594;</div>
+    </a>
+
+    <a class="card" href="ba495f8534ca4e6f90891f516bc65782.html">
+      <div class="card-number">2</div>
+      <div class="card-label">Item Entry (Host)</div>
+      <div class="card-arrow">&#8594;</div>
+    </a>
+
+    <a class="card" href="361b568eadfa48b3976a2750ab5e9ab2.html">
+      <div class="card-number">3</div>
+      <div class="card-label">Share Screen</div>
+      <div class="card-arrow">&#8594;</div>
+    </a>
+
+    <a class="card" href="692b49aa818e498f9ed080a4e6ce9162.html">
+      <div class="card-number">4</div>
+      <div class="card-label">Guest Join</div>
+      <div class="card-arrow">&#8594;</div>
+    </a>
+
+    <a class="card" href="dbfe1b303d7e4072a0f32cd3d91730e2.html">
+      <div class="card-number">5</div>
+      <div class="card-label">Guest Claim View</div>
+      <div class="card-arrow">&#8594;</div>
+    </a>
+
+    <a class="card" href="4fa04f6ae915426f92d609283dc93df3.html">
+      <div class="card-number">6</div>
+      <div class="card-label">Host Live View</div>
+      <div class="card-arrow">&#8594;</div>
+    </a>
+
+    <a class="card" href="ec0792b062b24e949ffff28c015aa648.html">
+      <div class="card-number">7</div>
+      <div class="card-label">Tip &amp; Tax</div>
+      <div class="card-arrow">&#8594;</div>
+    </a>
+
+    <a class="card" href="4c11062d3b834fd6b2ad63f06e88bbeb.html">
+      <div class="card-number">8</div>
+      <div class="card-label">Summary / Results</div>
+      <div class="card-arrow">&#8594;</div>
+    </a>
+  </div>
+
+  <footer>Generated from Stitch &bull; Idea Factory Pipeline</footer>
+</body>
+</html>

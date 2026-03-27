@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SplitTab - Summary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#f4fed3",
+              "on-secondary-container": "#b6c0d2",
+              "on-primary-fixed-variant": "#006947",
+              "on-error": "#490106",
+              "primary-fixed-dim": "#5fedb0",
+              "on-surface": "#dee5ff",
+              "secondary-fixed": "#d9e3f6",
+              "surface-dim": "#060e20",
+              "on-tertiary-fixed": "#444d2e",
+              "error-container": "#7f2927",
+              "on-primary": "#004a31",
+              "surface-container-low": "#06122d",
+              "surface-container": "#05183c",
+              "on-secondary-fixed": "#36404f",
+              "inverse-on-surface": "#4d556b",
+              "primary-fixed": "#6ffbbe",
+              "on-background": "#dee5ff",
+              "error": "#ee7d77",
+              "outline": "#5b74b1",
+              "error-dim": "#bb5551",
+              "surface": "#060e20",
+              "on-tertiary-fixed-variant": "#606a48",
+              "tertiary-fixed-dim": "#dfeac0",
+              "secondary-container": "#323c4b",
+              "surface-tint": "#4edea3",
+              "surface-container-high": "#031d4b",
+              "tertiary-dim": "#dfeac0",
+              "on-secondary-fixed-variant": "#525c6c",
+              "background": "#060e20",
+              "primary": "#4edea3",
+              "surface-bright": "#002867",
+              "on-tertiary": "#596342",
+              "secondary": "#949eb0",
+              "secondary-dim": "#949eb0",
+              "outline-variant": "#2b4680",
+              "surface-variant": "#00225a",
+              "tertiary-fixed": "#eef9cd",
+              "on-error-container": "#ff9993",
+              "inverse-surface": "#faf8ff",
+              "inverse-primary": "#006d4a",
+              "secondary-fixed-dim": "#cbd5e8",
+              "on-primary-fixed": "#004930",
+              "primary-dim": "#3cd096",
+              "on-primary-container": "#5ae9ac",
+              "on-surface-variant": "#91aaeb",
+              "tertiary-container": "#e5f0c5",
+              "surface-container-lowest": "#000000",
+              "on-tertiary-container": "#515a3a",
+              "on-secondary": "#17212e",
+              "primary-container": "#005236",
+              "surface-container-highest": "#00225a"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-glass {
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(20px);
+      }
+      .celebration-glow {
+        background: radial-gradient(circle at 50% 50%, rgba(78, 222, 163, 0.15) 0%, transparent 70%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-dim text-on-surface font-body selection:bg-primary/30 min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#060e20] dark:bg-[#060e20] flex items-center justify-between px-6 h-16 w-full bg-gradient-to-b from-[#002867]/10 to-transparent">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[#10B981] hover:opacity-80 transition-opacity active:scale-95 duration-200 cursor-pointer">close</span>
+</div>
+<h1 class="font-['Manrope'] font-bold text-lg tracking-tight text-[#10B981] text-[#10B981] font-black italic tracking-tighter">SplitTab</h1>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[#10B981] hover:opacity-80 transition-opacity active:scale-95 duration-200 cursor-pointer">share</span>
+</div>
+</header>
+<main class="flex-grow pt-24 pb-32 px-6 max-w-2xl mx-auto w-full relative">
+<!-- Celebration Header -->
+<section class="relative mb-12 text-center overflow-visible">
+<div class="absolute inset-0 -top-10 celebration-glow pointer-events-none"></div>
+<!-- Abstract Shapes (Simulated Confetti/Architectural Glow) -->
+<div class="absolute -top-4 left-1/4 w-2 h-2 rounded-full bg-primary/40"></div>
+<div class="absolute top-2 right-1/3 w-1.5 h-1.5 rounded-full bg-tertiary/30"></div>
+<div class="absolute -top-8 right-1/4 w-3 h-3 rotate-45 border border-primary/20"></div>
+<h2 class="font-headline font-extrabold text-4xl tracking-tighter mb-2 text-on-surface">Split Complete!</h2>
+<p class="font-body text-on-surface-variant text-sm tracking-wide uppercase">All calculations finalized</p>
+</section>
+<!-- Main Content: Bento Grid of Results -->
+<div class="grid grid-cols-1 gap-4">
+<!-- Alex's Card -->
+<article class="bg-surface-container rounded-xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.2)]">
+<div class="p-6">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface">Alex</h3>
+<p class="text-xs font-label text-on-surface-variant uppercase tracking-widest mt-1">Contributor</p>
+</div>
+<div class="text-right">
+<span class="font-headline font-black text-2xl text-primary">$24.50</span>
+</div>
+</div>
+<ul class="space-y-3">
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface/80">1x Burger</span>
+<span class="font-mono text-on-surface-variant">$16.00</span>
+</li>
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface/80">1x Craft Beer</span>
+<span class="font-mono text-on-surface-variant">$7.00</span>
+</li>
+<li class="pt-3 border-t border-outline-variant/30 flex justify-between items-center text-xs italic text-on-surface-variant">
+<span>Tax &amp; Tip Share</span>
+<span>$1.50</span>
+</li>
+</ul>
+</div>
+</article>
+<!-- Jordan's Card -->
+<article class="bg-surface-container rounded-xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.2)]">
+<div class="p-6">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface">Jordan</h3>
+<p class="text-xs font-label text-on-surface-variant uppercase tracking-widest mt-1">Contributor</p>
+</div>
+<div class="text-right">
+<span class="font-headline font-black text-2xl text-primary">$31.00</span>
+</div>
+</div>
+<ul class="space-y-3">
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface/80">1x Cocktail</span>
+<span class="font-mono text-on-surface-variant">$15.00</span>
+</li>
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface/80">1x Pizza Share</span>
+<span class="font-mono text-on-surface-variant">$6.00</span>
+</li>
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface/80">1x Wine</span>
+<span class="font-mono text-on-surface-variant">$10.00</span>
+</li>
+<li class="pt-3 border-t border-outline-variant/30 flex justify-between items-center text-xs italic text-on-surface-variant">
+<span>Tax &amp; Tip Share</span>
+<span>$2.00</span>
+</li>
+</ul>
+</div>
+</article>
+<!-- Taylor's Card -->
+<article class="bg-surface-container rounded-xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.2)] border-l-4 border-primary/20">
+<div class="p-6">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface">Taylor</h3>
+<p class="text-xs font-label text-on-surface-variant uppercase tracking-widest mt-1">Contributor</p>
+</div>
+<div class="text-right">
+<span class="font-headline font-black text-2xl text-primary">$28.75</span>
+</div>
+</div>
+<ul class="space-y-3">
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface/80">1x Salad</span>
+<span class="font-mono text-on-surface-variant">$14.00</span>
+</li>
+<li class="flex justify-between items-center text-sm">
+<span class="text-on-surface/80">1x Cocktail</span>
+<span class="font-mono text-on-surface-variant">$12.00</span>
+</li>
+<li class="pt-3 border-t border-outline-variant/30 flex justify-between items-center text-xs italic text-on-surface-variant">
+<span>Tax &amp; Tip Share</span>
+<span>$2.75</span>
+</li>
+</ul>
+</div>
+</article>
+</div>
+<!-- Footer / Grand Total Section -->
+<section class="mt-16 mb-8 text-center">
+<p class="font-label text-on-surface-variant text-xs uppercase tracking-[0.2em] mb-2">Grand Total Paid</p>
+<div class="inline-block relative">
+<span class="font-headline font-black text-5xl tracking-tighter text-on-surface">$84.25</span>
+<div class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent"></div>
+</div>
+</section>
+<!-- Actions -->
+<section class="flex flex-col gap-4 mt-8">
+<button class="w-full bg-gradient-to-br from-primary to-primary-dim text-on-primary font-bold py-5 rounded-full shadow-[0_4px_24px_rgba(78,222,163,0.15)] active:scale-95 transition-all flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-xl">content_copy</span>
+<span class="font-headline uppercase tracking-widest text-sm">Copy Summary as Text</span>
+</button>
+<button class="w-full border border-outline-variant/30 text-on-surface font-semibold py-5 rounded-full hover:bg-surface-container transition-all active:scale-95 flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-xl">screenshot</span>
+<span class="font-headline uppercase tracking-widest text-sm">Share Screenshot</span>
+</button>
+</section>
+<!-- Subtle Developer Tip -->
+<footer class="mt-12 text-center pb-8">
+<a class="text-[10px] font-label text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center gap-1 group" href="#">
+<span class="material-symbols-outlined text-xs group-hover:fill-current">favorite</span>
+<span>Tip the developer $1</span>
+</a>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-3xl bg-[#000000]/70 backdrop-blur-xl flex justify-around items-center pt-3 pb-8 px-6 w-full shadow-[0_-4px_24px_rgba(16,185,129,0.08)]">
+<a class="flex flex-col items-center justify-center bg-[#10B981] text-[#004a31] rounded-xl px-5 py-1.5 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-widest">History</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#91aaeb] opacity-60 hover:text-[#10B981] transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-widest">New Split</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#91aaeb] opacity-60 hover:text-[#10B981] transition-all active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[11px] font-semibold uppercase tracking-widest">Settings</span>
+</a>
+</nav>
+</body></html>

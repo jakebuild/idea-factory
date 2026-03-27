@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SplitTab - Host Live Session</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#515a3a",
+              "on-secondary-fixed": "#36404f",
+              "primary-fixed": "#6ffbbe",
+              "inverse-on-surface": "#4d556b",
+              "on-secondary": "#17212e",
+              "on-tertiary-fixed-variant": "#606a48",
+              "primary-dim": "#3cd096",
+              "background": "#060e20",
+              "surface-container-low": "#06122d",
+              "on-primary-fixed-variant": "#006947",
+              "surface-dim": "#060e20",
+              "secondary": "#949eb0",
+              "on-primary-container": "#5ae9ac",
+              "surface-variant": "#00225a",
+              "tertiary-fixed-dim": "#dfeac0",
+              "surface-tint": "#4edea3",
+              "error-container": "#7f2927",
+              "error-dim": "#bb5551",
+              "on-secondary-fixed-variant": "#525c6c",
+              "on-tertiary": "#596342",
+              "surface-container": "#05183c",
+              "outline-variant": "#2b4680",
+              "tertiary-dim": "#dfeac0",
+              "primary-fixed-dim": "#5fedb0",
+              "on-secondary-container": "#b6c0d2",
+              "on-surface-variant": "#91aaeb",
+              "on-primary-fixed": "#004930",
+              "on-surface": "#dee5ff",
+              "error": "#ee7d77",
+              "on-primary": "#004a31",
+              "on-error-container": "#ff9993",
+              "secondary-fixed-dim": "#cbd5e8",
+              "outline": "#5b74b1",
+              "primary-container": "#005236",
+              "inverse-surface": "#faf8ff",
+              "inverse-primary": "#006d4a",
+              "primary": "#4edea3",
+              "surface-container-highest": "#00225a",
+              "on-tertiary-fixed": "#444d2e",
+              "surface-bright": "#002867",
+              "surface": "#060e20",
+              "on-error": "#490106",
+              "surface-container-lowest": "#000000",
+              "tertiary-fixed": "#eef9cd",
+              "tertiary-container": "#e5f0c5",
+              "secondary-fixed": "#d9e3f6",
+              "secondary-dim": "#949eb0",
+              "tertiary": "#f4fed3",
+              "surface-container-high": "#031d4b",
+              "on-background": "#dee5ff",
+              "secondary-container": "#323c4b"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #060e20;
+        color: #dee5ff;
+        font-family: 'Inter', sans-serif;
+      }
+      .glass-card {
+        background: rgba(5, 24, 60, 0.6);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex items-center justify-between px-6 h-16 w-full bg-[#060e20] dark:bg-[#060e20] bg-gradient-to-b from-[#002867]/10 to-transparent shadow-[0px_0px_24px_0px_rgba(16,185,129,0.08)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#10B981]" data-icon="sensors">sensors</span>
+<h1 class="font-['Manrope'] font-bold text-lg tracking-tight text-[#10B981]">Live Session</h1>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high border border-outline-variant flex items-center justify-center overflow-hidden">
+<img alt="Host Profile" class="w-full h-full object-cover" data-alt="minimalist avatar of a professional host with clean features on a subtle dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgE1lnQSZStHgIC_D5jWnw5Seqtia8vt9jvz2DmhJ9NaOUmGWymUYPZkD8gFhHj4miFH5vycHs_F_kc6oj0YxmEb80kNTcXsOIGWPpuhldabcxW21y1JLo1YgFA4RnWCY96XNnykJ4kRwHCd5L2OUI4gH0iSuRplgiw3Gp4epSrVwfjsDHX6uaAybfErltE4jf4hz41dAhoAu1LsDChVTj73ivtfAXH6NkQ-_QrFfkvre0fV6et-vCCTz_OQVELnCvUx3twXRgaWk"/>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Warning Chip -->
+<div class="flex justify-start mb-8">
+<div class="inline-flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-4 py-2 rounded-full shadow-lg shadow-tertiary-container/5">
+<span class="material-symbols-outlined text-[18px]" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+<span class="font-label text-sm font-semibold tracking-tight">$38.50 unclaimed</span>
+</div>
+</div>
+<!-- Asymmetric Headline -->
+<div class="mb-10">
+<p class="font-headline text-on-surface-variant text-sm uppercase tracking-[0.2em] mb-2">Current Order</p>
+<h2 class="font-headline font-extrabold text-4xl text-on-surface tracking-tighter">The Night Owl <span class="text-primary-dim">Bistro</span></h2>
+</div>
+<!-- Item List -->
+<div class="space-y-4">
+<!-- Burger (Claimed) -->
+<div class="group relative flex items-center justify-between p-5 bg-surface-container-low rounded-xl active:scale-[0.98] transition-all duration-200">
+<div class="flex items-start gap-4">
+<div class="mt-1 w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(78,222,163,0.5)]"></div>
+<div>
+<h3 class="font-headline font-bold text-on-surface text-lg">Burger</h3>
+<p class="font-body text-primary text-sm font-medium">Claimed by Alex</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-headline font-bold text-on-surface">$18.00</span>
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-highest text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+</button>
+</div>
+</div>
+<!-- Margherita Pizza (Shared) -->
+<div class="group relative flex items-center justify-between p-5 bg-surface-container-low rounded-xl active:scale-[0.98] transition-all duration-200">
+<div class="flex items-start gap-4">
+<div class="mt-1 w-2 h-2 rounded-full bg-tertiary shadow-[0_0_8px_rgba(244,254,211,0.5)]"></div>
+<div>
+<h3 class="font-headline font-bold text-on-surface text-lg">Margherita Pizza</h3>
+<p class="font-body text-on-surface-variant text-sm">Shared — 3 people splitting</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-headline font-bold text-on-surface">$24.00</span>
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-highest text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="group">group</span>
+</button>
+</div>
+</div>
+<!-- Craft Beer (Unclaimed) -->
+<div class="group relative flex items-center justify-between p-5 bg-surface-container rounded-xl border border-outline-variant/20 active:scale-[0.98] transition-all duration-200">
+<div class="flex items-start gap-4">
+<div class="mt-1 w-2 h-2 rounded-full bg-outline-variant"></div>
+<div>
+<h3 class="font-headline font-bold text-on-surface text-lg">Craft Beer</h3>
+<p class="font-body text-on-surface-variant text-sm opacity-60">Unclaimed</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-headline font-bold text-on-surface">$9.50</span>
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-primary/10 text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined" data-icon="edit">edit</span>
+</button>
+</div>
+</div>
+<!-- House Wine (Unclaimed) -->
+<div class="group relative flex items-center justify-between p-5 bg-surface-container rounded-xl border border-outline-variant/20 active:scale-[0.98] transition-all duration-200">
+<div class="flex items-start gap-4">
+<div class="mt-1 w-2 h-2 rounded-full bg-outline-variant"></div>
+<div>
+<h3 class="font-headline font-bold text-on-surface text-lg">House Wine</h3>
+<p class="font-body text-on-surface-variant text-sm opacity-60">Unclaimed</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-headline font-bold text-on-surface">$12.00</span>
+<button class="w-10 h-10 rounded-full flex items-center justify-center bg-primary/10 text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined" data-icon="edit">edit</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Override Option -->
+<div class="mt-12 flex justify-center">
+<button class="flex items-center gap-2 px-6 py-3 rounded-full border border-outline-variant text-on-surface-variant font-label text-xs uppercase tracking-widest hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="balance">balance</span>
+                Split equally override
+            </button>
+</div>
+</main>
+<!-- Bottom Action Area -->
+<div class="fixed bottom-24 left-0 w-full px-6 z-40 pointer-events-none">
+<div class="max-w-2xl mx-auto flex flex-col items-center gap-4 pointer-events-auto">
+<p class="text-error-dim font-label text-[11px] uppercase tracking-tighter bg-error-container/20 px-3 py-1 rounded-lg backdrop-blur-sm">
+                Items still unassigned
+            </p>
+<button class="w-full h-16 rounded-full bg-secondary-container text-on-secondary-container font-headline font-bold text-lg flex items-center justify-center gap-3 cursor-not-allowed opacity-50 shadow-2xl" disabled="">
+                Finalize
+                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#000000]/70 backdrop-blur-xl z-50">
+<div class="flex flex-col items-center justify-center text-[#91aaeb] opacity-60 hover:text-[#10B981] hover:opacity-100 transition-all active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="Receipt_long">receipt_long</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Activity</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#005236] text-[#10B981] rounded-full px-4 py-1 active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="Call_split">call_split</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Split</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#91aaeb] opacity-60 hover:text-[#10B981] hover:opacity-100 transition-all active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="Group">group</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Members</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#91aaeb] opacity-60 hover:text-[#10B981] hover:opacity-100 transition-all active:scale-90 duration-150">
+<span class="material-symbols-outlined" data-icon="Settings">settings</span>
+<span class="font-['Inter'] text-[10px] font-medium uppercase tracking-widest mt-1">Settings</span>
+</div>
+</nav>
+<!-- Background Decorative Elements -->
+<div class="fixed inset-0 pointer-events-none -z-10">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-surface-bright opacity-[0.05] blur-[120px] rounded-full"></div>
+<div class="absolute bottom-[-5%] right-[-5%] w-[30%] h-[30%] bg-primary opacity-[0.03] blur-[100px] rounded-full"></div>
+</div>
+</body></html>
