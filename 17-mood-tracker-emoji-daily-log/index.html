@@ -3,106 +3,431 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>MoodDot — Prototype</title>
+<title>Idea #17 — MoodDot Design Preview</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     background: #111827;
+    color: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+  }
+
+  /* Top bar */
+  .topbar {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid #1f2937;
+    flex-shrink: 0;
+  }
+  .topbar h1 { font-size: 1rem; font-weight: 600; color: #f9fafb; }
+  .topbar .sub { font-size: 0.8rem; color: #6b7280; margin-top: 2px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #1f2937; border: 1px solid #374151;
+    border-radius: 9999px; padding: 4px 12px;
+    font-size: 0.8rem; color: #d1d5db;
+  }
+
+  /* Main layout */
+  .main {
+    display: flex;
+    flex: 1;
+    gap: 0;
+    padding: 32px 24px;
+    align-items: flex-start;
     justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    padding: 24px 16px 40px;
   }
-  .label {
-    color: rgba(255,255,255,0.5);
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-    margin-bottom: 6px;
-    text-align: center;
-  }
-  .title {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
+
+  /* Left: phone + switcher */
+  .phone-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
   }
   .phone-frame {
     width: 390px;
     height: 844px;
     border-radius: 44px;
-    background: #fff;
-    box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 2px rgba(255,255,255,0.1);
     overflow: hidden;
-    position: relative;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,255,255,0.1);
     flex-shrink: 0;
+    background: #000;
   }
   .phone-frame iframe {
-    border: none;
-    display: block;
     width: 100%;
     height: 100%;
+    border: none;
+    display: block;
   }
   .switcher {
     display: flex;
-    flex-direction: row;
     gap: 8px;
-    margin-top: 16px;
+    margin-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 420px;
+    max-width: 390px;
   }
   .switcher button {
-    width: 32px;
-    height: 32px;
+    width: 32px; height: 32px;
     border-radius: 50%;
     border: none;
-    background: rgba(255,255,255,0.15);
-    color: #fff;
-    font-size: 13px;
+    background: #1f2937;
+    color: #9ca3af;
+    font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .switcher button:hover { background: #374151; color: #f9fafb; }
+  .switcher button.active { background: #3b82f6; color: #fff; }
+  .switcher .screen-label {
+    font-size: 0.7rem;
+    color: #6b7280;
+    text-align: center;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  /* Right: timeline panel */
+  .timeline-col {
+    width: 380px;
+    flex-shrink: 0;
+    margin-left: 32px;
+    position: relative;
+    transition: width 0.25s ease;
+  }
+  .timeline-col.collapsed {
+    width: 32px;
+    overflow: hidden;
+  }
+
+  .collapse-btn {
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    transform: translateY(-50%);
+    width: 32px; height: 48px;
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    color: #9ca3af;
+    font-size: 1rem;
+    z-index: 10;
     transition: background 0.15s;
   }
-  .switcher button:hover { background: rgba(255,255,255,0.3); }
-  .switcher button.active { background: #7C4DFF; }
+  .collapse-btn:hover { background: #374151; color: #f9fafb; }
+
+  .timeline-inner {
+    overflow: hidden;
+    transition: opacity 0.2s;
+  }
+  .timeline-col.collapsed .timeline-inner {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .timeline-header {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 16px;
+    padding-left: 4px;
+  }
+
+  .timeline-scroll {
+    max-height: 844px;
+    overflow-y: auto;
+    padding-right: 4px;
+  }
+  .timeline-scroll::-webkit-scrollbar { width: 4px; }
+  .timeline-scroll::-webkit-scrollbar-track { background: transparent; }
+  .timeline-scroll::-webkit-scrollbar-thumb { background: #374151; border-radius: 2px; }
+
+  /* Timeline entries */
+  .entry {
+    background: #1f2937;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+  .entry-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .entry-header:hover { background: #243044; }
+  .entry-icon { font-size: 1.1rem; flex-shrink: 0; }
+  .entry-meta { flex: 1; min-width: 0; }
+  .entry-label { font-size: 0.85rem; font-weight: 600; color: #f9fafb; }
+  .entry-summary { font-size: 0.75rem; color: #6b7280; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .entry-chevron { color: #4b5563; font-size: 0.75rem; flex-shrink: 0; transition: transform 0.2s; }
+  .entry.open .entry-chevron { transform: rotate(180deg); }
+  .entry-verdict {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .verdict-needs { background: #78350f; color: #fcd34d; }
+  .verdict-worth { background: #14532d; color: #86efac; }
+  .verdict-kill { background: #7f1d1d; color: #fca5a5; }
+  .score-badge {
+    display: inline-block;
+    font-size: 0.7rem; font-weight: 700;
+    color: #60a5fa;
+    margin-left: 4px;
+  }
+
+  .entry-body {
+    display: none;
+    padding: 0 14px 14px;
+    font-size: 0.78rem;
+    color: #d1d5db;
+    line-height: 1.6;
+    border-top: 1px solid #374151;
+    margin-top: 0;
+  }
+  .entry.open .entry-body { display: block; }
+  .entry-body .section-title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #6b7280;
+    margin: 10px 0 4px;
+  }
+  .entry-body ul { padding-left: 16px; }
+  .entry-body li { margin-bottom: 3px; }
+  .entry-body p { margin-bottom: 6px; }
+  .entry-body .tag {
+    display: inline-block;
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.7rem;
+    color: #9ca3af;
+    margin: 2px 2px 2px 0;
+  }
+  .stitch-link { color: #60a5fa; text-decoration: none; font-size: 0.8rem; }
+  .stitch-link:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
-<div class="label">📱 Mobile Prototype</div>
-<div class="title">MoodDot — Daily Mood + Context Tracker</div>
-<div class="phone-frame">
-  <iframe id="app" src="58b917d03e334b8d9a07114317e7b035.html"></iframe>
-</div>
-<div class="switcher">
-  <button onclick="setScreen(0)" title="Widget">1</button>
-  <button onclick="setScreen(1)" class="active" title="Home">2</button>
-  <button onclick="setScreen(2)" title="Log Detail">3</button>
-  <button onclick="setScreen(3)" title="Pattern View">4</button>
-  <button onclick="setScreen(4)" title="Calendar">5</button>
-  <button onclick="setScreen(5)" title="Settings">6</button>
-</div>
-<script>
-  var screens = [
-    "c9ffff6ca10f40ba9430a7633eede0f3.html",
-    "58b917d03e334b8d9a07114317e7b035.html",
-    "0072f10ebaa8407c83dce7142eba381a.html",
-    "6754a8cb41ed4127944e8135a2caf3ac.html",
-    "5c4c81dd9ebd48fb81f416ee5d7abbef.html",
-    "7c5cce8e4f2a4fbe877f2976eebe329e.html"
-  ];
-  var labels = ["Widget","Home","Log Detail","Patterns","Calendar","Settings"];
-  var btns = document.querySelectorAll('.switcher button');
 
-  function setScreen(i) {
-    document.getElementById('app').src = screens[i];
-    btns.forEach(function(b,j){ b.classList.toggle('active', i===j); });
+<div class="topbar">
+  <div>
+    <div class="topbar h1">Idea #17 — MoodDot</div>
+    <div class="sub">Daily Mood + Context Tracker</div>
+  </div>
+  <span class="badge">📱 Mobile Prototype</span>
+</div>
+
+<div class="main">
+
+  <!-- Left: phone frame -->
+  <div class="phone-col">
+    <div class="phone-frame">
+      <iframe id="app" src="c9ffff6ca10f40ba9430a7633eede0f3.html"></iframe>
+    </div>
+    <div class="switcher" id="switcher"></div>
+    <div class="screen-label" id="screen-label">Screen 2 — Home / Today</div>
+  </div>
+
+  <!-- Right: timeline panel -->
+  <div class="timeline-col" id="timelineCol">
+    <button class="collapse-btn" id="collapseBtn" onclick="togglePanel()" title="Collapse panel">‹</button>
+    <div class="timeline-inner">
+      <div class="timeline-header">📋 Idea Journey</div>
+      <div class="timeline-scroll" id="timeline"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const screens = [
+    { id: "58b917d03e334b8d9a07114317e7b035", label: "Widget" },
+    { id: "c9ffff6ca10f40ba9430a7633eede0f3", label: "Home / Today" },
+    { id: "0072f10ebaa8407c83dce7142eba381a", label: "Log Detail" },
+    { id: "6754a8cb41ed4127944e8135a2caf3ac", label: "Pattern View" },
+    { id: "5c4c81dd9ebd48fb81f416ee5d7abbef", label: "Calendar" },
+    { id: "7c5cce8e4f2a4fbe877f2976eebe329e", label: "Settings" },
+  ];
+
+  let currentScreen = 1; // start on Home (index 1)
+
+  // Build switcher
+  const switcher = document.getElementById('switcher');
+  const screenLabel = document.getElementById('screen-label');
+  screens.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = i + 1;
+    btn.title = s.label;
+    if (i === currentScreen) btn.classList.add('active');
+    btn.onclick = () => goTo(i);
+    switcher.appendChild(btn);
+  });
+
+  function goTo(i) {
+    currentScreen = i;
+    document.getElementById('app').src = screens[i].id + '.html';
+    switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
+    screenLabel.textContent = 'Screen ' + (i + 1) + ' — ' + screens[i].label;
   }
+
+  // Panel collapse
+  let panelOpen = true;
+  function togglePanel() {
+    panelOpen = !panelOpen;
+    document.getElementById('timelineCol').classList.toggle('collapsed', !panelOpen);
+    document.getElementById('collapseBtn').textContent = panelOpen ? '›' : '‹';
+    document.getElementById('collapseBtn').title = panelOpen ? 'Collapse panel' : 'Expand panel';
+  }
+
+  // Toggle entry expand/collapse
+  function toggleEntry(el) {
+    el.closest('.entry').classList.toggle('open');
+  }
+
+  // Build timeline entries
+  const entries = [
+    {
+      icon: '💡',
+      label: 'Original Idea',
+      date: '2026-03-27',
+      summary: 'One-tap emoji mood logging with calendar patterns',
+      body: `
+        <div class="section-title">Description</div>
+        <p>A simple mobile app where you tap an emoji to log how you feel each day. One tap, done. Over time it builds a mood calendar so you can see patterns — "I'm always low on Mondays" or "I feel great after gym days." No journaling, no long forms. Just an emoji and optionally a one-line note.</p>
+      `
+    },
+    {
+      icon: '🔍',
+      label: 'Critique v1',
+      date: '2026-03-27',
+      verdict: 'NEEDS MAJOR WORK',
+      score: '6/10',
+      summary: 'Saturated market, shallow data, no retention hook',
+      body: `
+        <div class="section-title">What's Actually Good</div>
+        <ul>
+          <li>One-tap UX is genuinely good — low friction is the right call for a habit app</li>
+          <li>Mood calendar with pattern detection is a real insight users would find useful</li>
+          <li>Tiny scope — a solo dev could build the core in a week</li>
+        </ul>
+        <div class="section-title">Brutal Feedback</div>
+        <ul>
+          <li>This market is saturated. Daylio, Bearable, Finch, Reflectly — all do this. "Simpler" is not a differentiation strategy.</li>
+          <li>Emoji alone is shallow data. Without context, patterns are noise.</li>
+          <li>No answer to: why would someone open this every day? Habit apps live or die by their retention hook.</li>
+          <li>One-line note is nearly useless for pattern detection.</li>
+          <li>No monetisation path mentioned.</li>
+        </ul>
+        <div class="section-title">Suggestions</div>
+        <ul>
+          <li>Pick one specific user problem: correlate mood with sleep/exercise</li>
+          <li>Add a daily push notification to drive retention</li>
+          <li>Make the pattern view the hero screen</li>
+          <li>Consider a widget so logging happens without opening the app</li>
+        </ul>
+        <div class="section-title">Solo Dev Reality Check</div>
+        <p><span class="tag">✅ YES</span> Core is straightforward. Risk: building something nobody opens after day 3.</p>
+      `
+    },
+    {
+      icon: '✨',
+      label: 'Improved — MoodDot v2',
+      date: '2026-03-27',
+      summary: 'Widget-first, habit correlation, pattern screen as hero',
+      body: `
+        <div class="section-title">What Changed</div>
+        <ul>
+          <li><strong>Specific job:</strong> correlate mood with daily habits (sleep, exercise, stress)</li>
+          <li><strong>Widget as primary entry point:</strong> one tap on home screen, no app launch needed</li>
+          <li><strong>Pattern view is the hero:</strong> shows correlations like "mood with good sleep: 4.1 vs without: 2.8"</li>
+          <li><strong>Dropped cloud sync for v1:</strong> local-only removes auth, backend costs, privacy concerns</li>
+        </ul>
+        <div class="section-title">Solo MVP Scope</div>
+        <ul>
+          <li><span class="tag">IN v1</span> Home screen widget, context tags (12 presets), local storage, weekly correlation summary, pattern screen</li>
+          <li><span class="tag">OUT v1</span> Cloud sync, custom tags, social sharing, AI insights, streak tracking</li>
+          <li><span class="tag">Timeline</span> 2–3 weeks with AI coding tools</li>
+        </ul>
+      `
+    },
+    {
+      icon: '✅',
+      label: 'Validated',
+      date: '2026-03-27',
+      score: '6/10',
+      summary: 'Ready for design — 6 screens identified',
+      body: `
+        <div class="section-title">Final Score</div>
+        <p><span class="score-badge">6/10</span> — ready-for-design</p>
+        <div class="section-title">Design Handoff</div>
+        <ul>
+          <li><strong>Screen 1:</strong> Widget — 5 emoji in a row</li>
+          <li><strong>Screen 2:</strong> Home / Today — today's log + 7-day strip + CTA</li>
+          <li><strong>Screen 3:</strong> Log Detail — context tags, confirm/skip</li>
+          <li><strong>Screen 4:</strong> Pattern View — top correlations as bar comparisons</li>
+          <li><strong>Screen 5:</strong> Calendar — monthly heatmap</li>
+          <li><strong>Screen 6:</strong> Settings — notifications, tags, export</li>
+        </ul>
+      `
+    },
+    {
+      icon: '🎨',
+      label: 'Designed in Stitch',
+      date: '2026-03-27',
+      summary: '6 screens generated + navigation wired',
+      body: `
+        <div class="section-title">Links</div>
+        <p><a class="stitch-link" href="https://stitch.withgoogle.com/projects/12795291167740058732" target="_blank">✏️ Edit in Stitch →</a></p>
+        <p style="margin-top:8px; color: #6b7280; font-size: 0.75rem;">Screens generated with MOBILE device type. Navigation wired between all screens. Bottom nav and header normalized across all screens.</p>
+      `
+    },
+  ];
+
+  const timeline = document.getElementById('timeline');
+  entries.forEach(e => {
+    const verdictClass = e.verdict === 'WORTH BUILDING' ? 'verdict-worth' : e.verdict === 'KILL IT' ? 'verdict-kill' : 'verdict-needs';
+    const verdictBadge = e.verdict ? `<span class="entry-verdict ${verdictClass}">${e.verdict}</span>` : '';
+    const scoreBadge = e.score ? `<span class="score-badge">${e.score}</span>` : '';
+
+    const div = document.createElement('div');
+    div.className = 'entry';
+    div.innerHTML = `
+      <div class="entry-header" onclick="toggleEntry(this)">
+        <span class="entry-icon">${e.icon}</span>
+        <div class="entry-meta">
+          <div class="entry-label">${e.label}${verdictBadge}${scoreBadge}</div>
+          <div class="entry-summary">${e.summary}</div>
+        </div>
+        <span class="entry-chevron">▼</span>
+      </div>
+      <div class="entry-body">${e.body}</div>
+    `;
+    timeline.appendChild(div);
+  });
 </script>
 </body>
 </html>
