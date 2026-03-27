@@ -1,2 +1,0 @@
-- v1.1: AI Critique (Score: 7/10) - needs reward system
-- v2: Improved - added stars, offline, simple UI
