@@ -11,7 +11,7 @@ idea-factory submit "your idea description"
 ```
 
 This triggers a multi-round pipeline:
-1. **Submit** — creates local files under `~/openclaw_workspace/idea-factory/<n>-<slug>/` and a GitHub issue
+1. **Submit** — creates local files under `~/workspace/idea-factory/<n>-<slug>/`, creates a GitHub issue, and pushes to git
 2. **Critique** — spawns a `claude` agent in a tmux session to roast the idea, write `critique-v<n>.md`, and score it
 3. **Improve** — spawns another agent to address critique and write `idea-v<n+1>.md`
 4. **Refine** — runs 2 rounds of critique+improve by default; stops early if score ≥ 8/10
@@ -31,7 +31,7 @@ Each numbered folder is a synced snapshot of an idea at some refinement stage:
   status.txt          # submitted | in-review | improved | ready-for-design
 ```
 
-The canonical working directory for pipeline artifacts is `~/openclaw_workspace/idea-factory/`. This git repo tracks the ideas for version history and reference.
+The canonical working directory for pipeline artifacts is `~/workspace/idea-factory/`. This is also the git repo — ideas are committed and pushed automatically on submit.
 
 ## GitHub Integration
 

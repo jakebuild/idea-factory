@@ -36,7 +36,7 @@ idea-factory submit "math quiz game for kids"
 tmux attach -t idea-critique-1
 
 # Check results
-cat ~/openclaw_workspace/idea-factory/1-*/critique-v1.md
+cat ~/workspace/idea-factory/1-*/critique-v1.md
 
 # View on GitHub
 gh issue list --repo jakebuild/idea-factory
