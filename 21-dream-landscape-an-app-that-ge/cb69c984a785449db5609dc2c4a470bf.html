@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+
+<title>City Details Panel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#4433a4",
+              "surface-variant": "#25223f",
+              "on-surface-variant": "#aca8c3",
+              "surface-container-low": "#131027",
+              "surface-container-high": "#1f1c37",
+              "surface": "#0e0c20",
+              "tertiary": "#ffe396",
+              "on-tertiary-fixed-variant": "#675200",
+              "tertiary-fixed-dim": "#eec540",
+              "on-secondary-fixed-variant": "#4e3eaf",
+              "tertiary-container": "#fdd34d",
+              "tertiary-fixed": "#fdd34d",
+              "inverse-on-surface": "#55526a",
+              "primary-fixed-dim": "#a37bff",
+              "error-container": "#a70138",
+              "surface-container-highest": "#25223f",
+              "surface-container-lowest": "#000000",
+              "outline": "#76738c",
+              "tertiary-dim": "#eec540",
+              "on-background": "#e7e2ff",
+              "on-tertiary-container": "#5c4900",
+              "secondary-fixed-dim": "#c4bcff",
+              "secondary-dim": "#9c8fff",
+              "on-error": "#490013",
+              "background": "#0e0c20",
+              "on-tertiary": "#665100",
+              "on-secondary-container": "#d2caff",
+              "on-primary-fixed": "#000000",
+              "on-primary-fixed-variant": "#370085",
+              "error-dim": "#d73357",
+              "on-secondary": "#1c0071",
+              "on-secondary-fixed": "#301a92",
+              "surface-dim": "#0e0c20",
+              "on-surface": "#e7e2ff",
+              "primary": "#bb9eff",
+              "primary-fixed": "#af8dff",
+              "surface-tint": "#bb9eff",
+              "surface-bright": "#2b2848",
+              "error": "#ff6e84",
+              "secondary-fixed": "#d3ccff",
+              "on-tertiary-fixed": "#463600",
+              "surface-container": "#19162f",
+              "primary-container": "#af8dff",
+              "on-primary-container": "#2c006e",
+              "inverse-surface": "#fcf8ff",
+              "on-error-container": "#ffb2b9",
+              "inverse-primary": "#6e40cd",
+              "secondary": "#9c8fff",
+              "primary-dim": "#ad89ff",
+              "on-primary": "#3a008b",
+              "outline-variant": "#48455c"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .isometric-card-shadow {
+            box-shadow: 4px 4px 0px 0px #4e3eaf;
+        }
+        .glass-panel {
+            backdrop-filter: blur(12px);
+        }
+        body {
+            background-color: #0e0c20;
+            color: #e7e2ff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .pixel-border-bottom {
+            box-shadow: 0 2px 0 0 #bb9eff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col items-center justify-start">
+<div style="position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(14,12,32,0.85);backdrop-filter:blur(12px);height:56px;display:flex;align-items:center;padding:0 16px;gap:12px">
+<button onclick="window.location.href='a962bdd71f26467282921184180f4ef0.html'" style="cursor:pointer;background:none;border:none;color:#bb9eff;display:flex;align-items:center;gap:8px;font-family:'Space Grotesk';font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em">
+<span class="material-symbols-outlined" style="font-size:20px">arrow_back</span>
+Back to City
+</button>
+</div>
+<div style="position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(14,12,32,0.85);backdrop-filter:blur(12px);height:56px;display:flex;align-items:center;padding:0 16px;gap:12px">
+<button onclick="window.location.href='a962bdd71f26467282921184180f4ef0.html'" style="cursor:pointer;background:none;border:none;color:#bb9eff;display:flex;align-items:center;gap:8px;font-family:'Space Grotesk';font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em">
+<span class="material-symbols-outlined" style="font-size:20px">arrow_back</span>
+Back to City
+</button>
+</div>
+<!-- Background: Isometric Nocturne City (Blurred for Modal Focus) -->
+<div class="fixed inset-0 z-0 overflow-hidden pointer-events-none opacity-40 blur-sm">
+<img class="w-full h-full object-cover" data-alt="a detailed isometric 3D pixel art city at night with glowing purple and indigo buildings and a starlit sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH_tZEQ80x3PFksfkmP7eZeYbpO6vpqMmeMwyeJKXjiSoZB5amd_Y2mLBtvQjZy1rCGy-SOqM_SeIskN3HcN2v0hzTbxrb8NKpQkQTYIH9WpLfw41XTpEij0NoRptLlMywOI0NKA0pkMZrtKbaCXtgdjqdp7UtDjh0UBFMXSG9YD9nJveAincNQnJftpVFnBGQ9bGvyKaqU21Xe7azcWTE7-D6puSfRfGOukuDkBvmvcuKaG-hwPHm4FHNj-VRDz_Lkb7-6Io4q4o"/>
+</div>
+<!-- Top App Bar (Shared Component) -->
+<header class="bg-[#0e0c20]/70 dark:bg-[#0e0c20]/70 backdrop-blur-xl fixed top-0 w-full z-40 flex items-center justify-between px-6 py-4 shadow-[0_-4px_20px_rgba(187,158,255,0.08)]">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#bb9eff] active:scale-95 transition-all duration-75">drag_handle</span>
+<h1 class="font-['Space_Grotesk'] font-bold tracking-tight text-[#bb9eff] text-lg">City Details</h1>
+</div>
+<div class="text-xl font-bold text-[#bb9eff] tracking-widest uppercase font-['Space_Grotesk']">DREAMLAND</div>
+</header>
+<!-- Main Content Canvas (The Slide-up Modal Sheet) -->
+<main class="relative z-10 w-full max-w-2xl mt-[132px] mb-24 px-4 sm:px-6">
+<!-- Modal Sheet Container -->
+<section class="bg-[#0e0c20]/80 backdrop-blur-md glass-panel border-t border-[#48455c]/20 pt-2 pb-12 shadow-2xl">
+<!-- Drag Handle Area -->
+<div class="flex flex-col items-center py-4">
+<div class="w-12 h-1.5 bg-[#48455c] rounded-full mb-8"></div>
+<h2 class="font-['Space_Grotesk'] font-bold text-3xl text-[#bb9eff] tracking-tight mb-2">What Your City Means</h2>
+<p class="text-[#aca8c3] font-medium text-sm">Your rest built these foundations.</p>
+</div>
+<!-- Mapping Legend Section: Bento Grid / Row Style -->
+<div class="px-6 space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Legend Card 1 -->
+<div class="bg-[#131027] p-4 flex items-center gap-4 hover:bg-[#2b2848]/50 transition-colors group">
+<div class="w-12 h-12 flex items-center justify-center bg-[#4433a4]/30 border border-[#bb9eff]/20">
+<span class="material-symbols-outlined text-[#ffe396]" style="font-variation-settings: 'FILL' 1;">light_mode</span>
+</div>
+<div>
+<p class="text-[#bb9eff] font-['Space_Grotesk'] font-bold text-sm">Sunny sky</p>
+<p class="text-[#aca8c3] text-xs">Sleep score 82 (Great rest)</p>
+</div>
+</div>
+<!-- Legend Card 2 -->
+<div class="bg-[#131027] p-4 flex items-center gap-4 hover:bg-[#2b2848]/50 transition-colors">
+<div class="w-12 h-12 flex items-center justify-center bg-[#4433a4]/30 border border-[#bb9eff]/20">
+<span class="material-symbols-outlined text-[#bb9eff]">domain</span>
+</div>
+<div>
+<p class="text-[#bb9eff] font-['Space_Grotesk'] font-bold text-sm">Neon Metropolis</p>
+<p class="text-[#aca8c3] text-xs">7h 30m sleep (Full city)</p>
+</div>
+</div>
+<!-- Legend Card 3 -->
+<div class="bg-[#131027] p-4 flex items-center gap-4 hover:bg-[#2b2848]/50 transition-colors">
+<div class="w-12 h-12 flex items-center justify-center bg-[#4433a4]/30 border border-[#bb9eff]/20">
+<span class="material-symbols-outlined text-[#ffe396]">wb_twilight</span>
+</div>
+<div>
+<p class="text-[#bb9eff] font-['Space_Grotesk'] font-bold text-sm">Golden light</p>
+<p class="text-[#aca8c3] text-xs">Woke at 7:14am (Dawn rise)</p>
+</div>
+</div>
+<!-- Legend Card 4 -->
+<div class="bg-[#131027] p-4 flex items-center gap-4 hover:bg-[#2b2848]/50 transition-colors">
+<div class="w-12 h-12 flex items-center justify-center bg-[#4433a4]/30 border border-[#bb9eff]/20">
+<span class="material-symbols-outlined text-[#9c8fff]" style="font-variation-settings: 'FILL' 1;">palette</span>
+</div>
+<div>
+<p class="text-[#bb9eff] font-['Space_Grotesk'] font-bold text-sm">Vivid palette</p>
+<p class="text-[#aca8c3] text-xs">High REM activity</p>
+</div>
+</div>
+</div>
+<!-- Tall Skyline / Full-width Legend -->
+<div class="bg-[#131027] p-4 flex items-center gap-4 hover:bg-[#2b2848]/50 transition-colors">
+<div class="w-12 h-12 flex items-center justify-center bg-[#4433a4]/30 border border-[#bb9eff]/20">
+<span class="material-symbols-outlined text-[#bb9eff]">leaderboard</span>
+</div>
+<div>
+<p class="text-[#bb9eff] font-['Space_Grotesk'] font-bold text-sm">Tall skyline</p>
+<p class="text-[#aca8c3] text-xs">5-day streak</p>
+</div>
+</div>
+</div>
+<!-- Full Sleep Metrics Section -->
+<div class="mt-12 px-6">
+<h3 class="font-['Space_Grotesk'] font-bold text-xl text-[#bb9eff] mb-6 flex items-center gap-2">
+<span class="w-2 h-6 bg-[#bb9eff]"></span> Full Sleep Metrics
+                </h3>
+<div class="grid grid-cols-2 gap-4">
+<!-- Metric 1: Duration -->
+<div class="bg-[#19162f] p-5 isometric-card-shadow border-l-2 border-[#bb9eff]/50">
+<p class="text-[#aca8c3] text-[10px] uppercase tracking-widest mb-1 font-bold">Duration</p>
+<div class="flex items-baseline gap-1">
+<span class="text-2xl font-['Space_Grotesk'] font-bold text-[#e7e2ff]">7h 30m</span>
+</div>
+</div>
+<!-- Metric 2: Efficiency -->
+<div class="bg-[#19162f] p-5 isometric-card-shadow border-l-2 border-[#ffe396]/50">
+<p class="text-[#aca8c3] text-[10px] uppercase tracking-widest mb-1 font-bold">Efficiency</p>
+<div class="flex items-baseline gap-1">
+<span class="text-2xl font-['Space_Grotesk'] font-bold text-[#e7e2ff]">91%</span>
+</div>
+</div>
+<!-- Metric 3: REM -->
+<div class="bg-[#19162f] p-5 isometric-card-shadow border-l-2 border-[#9c8fff]/50">
+<p class="text-[#aca8c3] text-[10px] uppercase tracking-widest mb-1 font-bold">REM %</p>
+<div class="flex items-baseline gap-1">
+<span class="text-2xl font-['Space_Grotesk'] font-bold text-[#e7e2ff]">24%</span>
+</div>
+</div>
+<!-- Metric 4: Time in Bed -->
+<div class="bg-[#19162f] p-5 isometric-card-shadow border-l-2 border-[#4433a4]/50">
+<p class="text-[#aca8c3] text-[10px] uppercase tracking-widest mb-1 font-bold">In Bed</p>
+<div class="flex items-baseline gap-1">
+<span class="text-2xl font-['Space_Grotesk'] font-bold text-[#e7e2ff]">8h 5m</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Focus CTA: Close/Return to City -->
+<div class="mt-12 px-6">
+<button class="w-full bg-[#bb9eff] text-[#1c0071] font-['Space_Grotesk'] font-extrabold py-4 flex items-center justify-center gap-2 shadow-[inset_0_-4px_0_0_#4e3eaf] active:translate-y-[2px] active:shadow-none transition-all">
+                    RETURN TO CITY VIEW
+                    <span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Shared Component) -->
+<nav class="bg-[#0e0c20]/70 dark:bg-[#0e0c20]/70 backdrop-blur-xl fixed bottom-0 left-0 w-full flex justify-around items-center pb-safe pt-2 px-4 z-50">
+<!-- Today Tab (Active) -->
+<a class="flex flex-col items-center justify-center text-[#bb9eff] bg-[#4433a4]/30 px-4 py-1 border-b-4 border-[#bb9eff] transition-transform duration-100 active:scale-90" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-semibold">Today</span>
+</a>
+<!-- Trends Tab -->
+<a class="flex flex-col items-center justify-center text-[#aca8c3] px-4 py-1 hover:text-white transition-transform duration-100 active:scale-90" href="#">
+<span class="material-symbols-outlined">insights</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-semibold">Trends</span>
+</a>
+<!-- City Tab -->
+<a class="flex flex-col items-center justify-center text-[#aca8c3] px-4 py-1 hover:text-white transition-transform duration-100 active:scale-90" href="#">
+<span class="material-symbols-outlined">location_city</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-semibold">City</span>
+</a>
+<!-- Profile Tab -->
+<a class="flex flex-col items-center justify-center text-[#aca8c3] px-4 py-1 hover:text-white transition-transform duration-100 active:scale-90" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] text-xs font-semibold">Profile</span>
+</a>
+</nav>
+<footer class="fixed bottom-0 w-full z-50 bg-[#0e0c20]/70 backdrop-blur-xl" style="border-top: 1px solid rgba(187,158,255,0.1)">
+<div class="flex justify-around items-center w-full h-20 px-4">
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#bb9eff; background:rgba(68,51,164,0.3);"" onclick="window.location.href='a962bdd71f26467282921184180f4ef0.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1">nights_stay</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Today</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='a5e60a26da524403bed20f13f8c6fa3c.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">history</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">History</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='357e54354c1d4d5da2ce5807228297f6.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">share</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Share</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='f89d13a798274b5f825f77e99a14ea68.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">settings</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Settings</span>
+</a>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+
+<title>Dream Landscape - Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#a70138",
+                        "secondary-container": "#4433a4",
+                        "on-tertiary": "#665100",
+                        "tertiary": "#ffe396",
+                        "on-background": "#e7e2ff",
+                        "tertiary-dim": "#eec540",
+                        "outline": "#76738c",
+                        "primary": "#bb9eff",
+                        "surface-container-lowest": "#000000",
+                        "secondary-dim": "#9c8fff",
+                        "on-primary-fixed-variant": "#370085",
+                        "secondary-fixed": "#d3ccff",
+                        "surface-variant": "#25223f",
+                        "inverse-surface": "#fcf8ff",
+                        "on-primary": "#3a008b",
+                        "error": "#ff6e84",
+                        "secondary-fixed-dim": "#c4bcff",
+                        "surface-bright": "#2b2848",
+                        "on-surface-variant": "#aca8c3",
+                        "outline-variant": "#48455c",
+                        "inverse-primary": "#6e40cd",
+                        "surface-tint": "#bb9eff",
+                        "on-tertiary-fixed-variant": "#675200",
+                        "surface-container-highest": "#25223f",
+                        "primary-dim": "#ad89ff",
+                        "surface-container": "#19162f",
+                        "tertiary-container": "#fdd34d",
+                        "surface-container-low": "#131027",
+                        "error-dim": "#d73357",
+                        "on-error": "#490013",
+                        "on-secondary": "#1c0071",
+                        "primary-fixed": "#af8dff",
+                        "on-primary-container": "#2c006e",
+                        "surface-container-high": "#1f1c37",
+                        "primary-fixed-dim": "#a37bff",
+                        "primary-container": "#af8dff",
+                        "on-secondary-fixed": "#301a92",
+                        "tertiary-fixed": "#fdd34d",
+                        "tertiary-fixed-dim": "#eec540",
+                        "on-tertiary-fixed": "#463600",
+                        "background": "#0e0c20",
+                        "secondary": "#9c8fff",
+                        "on-primary-fixed": "#000000",
+                        "on-secondary-container": "#d2caff",
+                        "on-secondary-fixed-variant": "#4e3eaf",
+                        "surface-dim": "#0e0c20",
+                        "inverse-on-surface": "#55526a",
+                        "on-error-container": "#ffb2b9",
+                        "on-surface": "#e7e2ff",
+                        "surface": "#0e0c20",
+                        "on-tertiary-container": "#5c4900"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pixel-stars {
+            background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .isometric-skew {
+            transform: rotateX(30deg) rotateZ(-30deg);
+        }
+        .starlight-gradient {
+            background: linear-gradient(135deg, #bb9eff 0%, #4433a4 100%);
+        }
+        .voxel-shadow {
+            box-shadow: inset 0 -4px 0 0 #4e3eaf;
+        }
+        /* Custom scrollbar for pixel aesthetic */
+        ::-webkit-scrollbar { width: 4px; height: 4px; }
+        ::-webkit-scrollbar-track { background: #131027; }
+        ::-webkit-scrollbar-thumb { background: #bb9eff; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- Background Layer: Night Sky -->
+<div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+<div class="absolute inset-0 bg-background"></div>
+<div class="absolute inset-0 pixel-stars opacity-10"></div>
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+<div class="absolute top-1/2 right-0 w-64 h-64 bg-secondary-container/20 rounded-full blur-[100px]"></div>
+</div>
+<!-- TopAppBar - Predicted Component -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0c20]/70 backdrop-blur-md">
+<div class="flex items-center justify-between px-6 h-16 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#bb9eff]">nights_stay</span>
+<h1 class="font-['Space_Grotesk'] font-bold tracking-tighter text-2xl text-[#bb9eff]">Dream Landscape</h1>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#bb9eff] font-label text-sm font-bold uppercase tracking-widest" href="#">World</a>
+<a class="text-[#aca8c3] hover:text-[#ffe396] transition-colors duration-200 font-label text-sm font-bold uppercase tracking-widest" href="#">Sleep</a>
+<a class="text-[#aca8c3] hover:text-[#ffe396] transition-colors duration-200 font-label text-sm font-bold uppercase tracking-widest" href="#">Journal</a>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="relative z-10 pt-24 pb-32 px-6 flex flex-col items-center max-w-5xl mx-auto min-h-screen">
+<!-- Hero Section -->
+<section class="text-center mb-16 mt-8">
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface mb-4">
+                Dream Landscape
+            </h2>
+<p class="font-body text-on-surface-variant text-lg md:text-xl tracking-wide max-w-lg mx-auto">
+                Your sleep, rendered as a world
+            </p>
+</section>
+<!-- Isometric Examples Display -->
+<section class="w-full mb-20 overflow-x-auto pb-8 scroll-smooth snap-x flex gap-6 px-4 no-scrollbar">
+<!-- Card 1: Restless Night -->
+<div class="flex-shrink-0 w-72 snap-center bg-surface-container-low p-1 group">
+<div class="bg-surface-container h-48 relative overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="isometric pixel art of a tiny lonely hamlet in a dark violet night, dim street lamps glowing softly, atmospheric lo-fi aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy03vx68wRfC2LIN8ng_a57eZY3TzD_GlrylduWV4cGQBTIexXuWWsi1lJc9zzqomxqt-2Ez3gzE8ppQsa0Hx0RxTU5Cl8pDGgllCSH6pEAlbDgwvYCugcZXrlhVi7EOpVQ0FEQaluNYsOFsyXUH-QdDUqQZxpCGcUgU6XdKTH5n7qlnvy3_WwkqodR_8X1t-XBmNeLT6t_dietfBtPIfr3cIWPaw8_rbGQIRB_OOWeu3BttMj8f17Ao201ksbweQZ-yuCAv9PaKw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+</div>
+<div class="p-4 bg-surface-container-high">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-3 h-3 bg-error-dim"></span>
+<h3 class="font-headline font-bold text-on-surface uppercase text-sm tracking-tighter">Restless Night</h3>
+</div>
+<p class="text-on-surface-variant text-xs leading-relaxed">A small, cozy pixel art hamlet with dim lights and a quiet atmosphere.</p>
+</div>
+</div>
+<!-- Card 2: Cloudy Dreams -->
+<div class="flex-shrink-0 w-72 snap-center bg-surface-container-low p-1 group scale-105 z-20">
+<div class="bg-surface-container h-48 relative overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="isometric pixel art of a floating purple city surrounded by wispy white clouds, twilight sky, medium density voxel buildings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABspiarXmm06j5p8GbjXWgiUsxiCABRyHSPsFguZDjwpI7-onbl8AyMobZhooKEJmT-eDe8NATgp11m6ZVko0tYbhn_STNoxf4NI2y33ERPTJoGY5oDHJpptq7aYzKpLWyFXt11CueR4x2LHSDJ6G8B49UlqhdYjz_y0TvO4WsLVg-052AkVNfgYBHImdVo8IpYLX8N9UqpWMNECtrcqmFLQTFHJ0kCOGF0sdDf8sX70FcFs8DjQpwIXNZ_VbueFKRnG90-G4lMpQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+</div>
+<div class="p-4 bg-surface-container-highest">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-3 h-3 bg-primary"></span>
+<h3 class="font-headline font-bold text-on-surface uppercase text-sm tracking-tighter">Cloudy Dreams</h3>
+</div>
+<p class="text-on-surface-variant text-xs leading-relaxed">A medium-sized pixel art city with some clouds overhead and glowing neon foundations.</p>
+</div>
+</div>
+<!-- Card 3: Golden Slumber -->
+<div class="flex-shrink-0 w-72 snap-center bg-surface-container-low p-1 group">
+<div class="bg-surface-container h-48 relative overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="large bustling isometric pixel art metropolis glowing with vibrant golden yellow sunlight, high density futuristic towers, dreamscape city" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCZMPev6Q7T8knU8etHrH6imzk0l_GssCGffxHdA2UUEDWOpAgNVkEXJGLaaKM26trPsmGgaYCKkO22DfZMED5l3qT7A26iFjrjGiKYttbxcMjvGK7yxs4HTYtwIA_vnZC1_yktKmyG_FbcSoPuYze1WMyJ6-9rLEH9K1CN3oOKQZrgKLbJLFl2VqUoBaILKbQAoi5FlT5EWYhFO6SaeLLNyg3Sycnm7Q_Nkane0FZtafnfBEQtqUME3__Hs_1xUWmkNu0Uh_mh5k"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent"></div>
+</div>
+<div class="p-4 bg-surface-container-high">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-3 h-3 bg-tertiary"></span>
+<h3 class="font-headline font-bold text-on-surface uppercase text-sm tracking-tighter">Golden Slumber</h3>
+</div>
+<p class="text-on-surface-variant text-xs leading-relaxed">A large, bustling pixel art city glowing with bright sunshine and vibrant energy.</p>
+</div>
+</div>
+</section>
+<!-- Messaging & Interaction -->
+<div class="flex flex-col items-center gap-8 w-full">
+<div class="bg-surface-container-low px-6 py-4 flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary">info</span>
+<p class="font-body text-on-surface font-medium">No signup required. Start building your world now.</p>
+</div>
+<!-- Voxel Style Button -->
+<button onclick="window.location.href='242e10571b0f4d049918c3fa6973dcbc.html'" class="starlight-gradient voxel-shadow w-full md:w-auto px-12 py-5 font-headline font-bold text-xl text-on-primary-fixed uppercase tracking-tighter hover:brightness-110 active:scale-95 transition-all duration-100 flex items-center justify-center gap-3 group" style="cursor:pointer">
+<span>Log Last Night's Sleep</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar - Predicted Component (Suppressed on Onboarding per Shell Visibility Rule, but keeping TopAppBar for Branding Anchor) -->
+<!-- The Shell Visibility & Relevance rule: suppresses navigation for Onboarding/Transactional. -->
+<!-- Footer Branding -->
+<footer class="relative z-10 w-full py-12 px-6 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-8 bg-surface-container-lowest">
+<div class="flex flex-col gap-2">
+<h4 class="font-headline text-primary font-bold tracking-tight text-lg">Dream Landscape</h4>
+<p class="text-on-surface-variant text-xs">Built for the rest of your life.</p>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">share</span>
+</div>
+<div class="w-10 h-10 bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">settings</span>
+</div>
+<div class="w-10 h-10 bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">help_outline</span>
+</div>
+</div>
+</footer>
+<!-- Isometric Floating Element (Decorative) -->
+<div class="fixed bottom-24 right-12 z-0 opacity-20 hidden lg:block pointer-events-none">
+<div class="w-48 h-48 bg-surface-bright p-4 transform rotate-12 flex items-center justify-center shadow-2xl">
+<div class="w-full h-full bg-surface-container-highest flex flex-col items-center justify-center border-2 border-primary/20">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+<p class="font-label text-xs mt-2 text-primary font-bold">SLEEP MODE</p>
+</div>
+</div>
+</div>
+</body></html>

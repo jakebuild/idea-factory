@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+
+<title>My Archive - Dream Landscape</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#eec540",
+              "surface-container-low": "#131027",
+              "primary-fixed-dim": "#a37bff",
+              "primary": "#bb9eff",
+              "on-error": "#490013",
+              "surface-container": "#19162f",
+              "on-tertiary-container": "#5c4900",
+              "background": "#0e0c20",
+              "on-tertiary": "#665100",
+              "on-secondary-fixed": "#301a92",
+              "on-primary-container": "#2c006e",
+              "error-dim": "#d73357",
+              "secondary-fixed": "#d3ccff",
+              "primary-dim": "#ad89ff",
+              "outline-variant": "#48455c",
+              "inverse-surface": "#fcf8ff",
+              "on-surface": "#e7e2ff",
+              "tertiary-fixed": "#fdd34d",
+              "on-secondary": "#1c0071",
+              "error": "#ff6e84",
+              "on-primary": "#3a008b",
+              "surface-tint": "#bb9eff",
+              "surface-bright": "#2b2848",
+              "secondary-fixed-dim": "#c4bcff",
+              "on-tertiary-fixed-variant": "#675200",
+              "surface-variant": "#25223f",
+              "primary-fixed": "#af8dff",
+              "primary-container": "#af8dff",
+              "on-surface-variant": "#aca8c3",
+              "surface-container-high": "#1f1c37",
+              "on-tertiary-fixed": "#463600",
+              "on-primary-fixed-variant": "#370085",
+              "secondary-dim": "#9c8fff",
+              "surface-dim": "#0e0c20",
+              "inverse-primary": "#6e40cd",
+              "on-secondary-container": "#d2caff",
+              "tertiary": "#ffe396",
+              "surface": "#0e0c20",
+              "secondary": "#9c8fff",
+              "on-background": "#e7e2ff",
+              "outline": "#76738c",
+              "tertiary-dim": "#eec540",
+              "surface-container-lowest": "#000000",
+              "surface-container-highest": "#25223f",
+              "inverse-on-surface": "#55526a",
+              "on-error-container": "#ffb2b9",
+              "error-container": "#a70138",
+              "on-secondary-fixed-variant": "#4e3eaf",
+              "secondary-container": "#4433a4",
+              "tertiary-container": "#fdd34d"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0e0c20;
+            color: #e7e2ff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .vignette {
+            box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0c20]/70 backdrop-blur-md shadow-[0_4px_20px_rgba(187,158,255,0.08)] bg-gradient-to-b from-[#131027] to-transparent">
+<div class="flex items-center justify-between px-6 h-16 w-full">
+<button class="text-[#bb9eff] hover:bg-[#2b2848]/50 transition-colors duration-200 active:scale-95 transition-transform duration-150 p-2">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="text-[#bb9eff] font-['Space_Grotesk'] font-bold text-xl tracking-tight">My Archive</h1>
+<div class="w-10"></div> <!-- Spacer for centering -->
+</div>
+</header>
+<main class="pt-20 px-4 max-w-5xl mx-auto">
+<!-- Calendar Strip -->
+<section class="mb-8">
+<div class="flex justify-between items-end mb-4 px-2">
+<h2 class="font-headline text-on-surface-variant text-sm uppercase tracking-widest">March 2025</h2>
+<span class="text-primary text-xs font-bold">Today</span>
+</div>
+<div class="flex gap-3 overflow-x-auto pb-4 custom-scrollbar">
+<!-- Mon -->
+<div class="flex-shrink-0 w-12 h-20 bg-surface-container flex flex-col items-center justify-center border-b-2 border-transparent">
+<span class="font-label text-[10px] text-on-surface-variant uppercase">Mon</span>
+<span class="font-headline text-lg font-bold">23</span>
+</div>
+<!-- Tue -->
+<div class="flex-shrink-0 w-12 h-20 bg-surface-container flex flex-col items-center justify-center">
+<span class="font-label text-[10px] text-on-surface-variant uppercase">Tue</span>
+<span class="font-headline text-lg font-bold">24</span>
+</div>
+<!-- Wed -->
+<div class="flex-shrink-0 w-12 h-20 bg-surface-container flex flex-col items-center justify-center">
+<span class="font-label text-[10px] text-on-surface-variant uppercase">Wed</span>
+<span class="font-headline text-lg font-bold">25</span>
+</div>
+<!-- Thu -->
+<div class="flex-shrink-0 w-12 h-20 bg-surface-container flex flex-col items-center justify-center">
+<span class="font-label text-[10px] text-on-surface-variant uppercase">Thu</span>
+<span class="font-headline text-lg font-bold">26</span>
+</div>
+<!-- Fri (Today) -->
+<div class="flex-shrink-0 w-12 h-20 bg-surface-bright flex flex-col items-center justify-center relative ring-2 ring-primary ring-inset shadow-[0_0_15px_rgba(187,158,255,0.3)]">
+<span class="font-label text-[10px] text-primary font-bold uppercase">Fri</span>
+<span class="font-headline text-lg font-bold text-primary">27</span>
+<div class="absolute -top-1 right-1 w-1.5 h-1.5 bg-tertiary"></div>
+</div>
+<!-- Sat -->
+<div class="flex-shrink-0 w-12 h-20 bg-surface-container flex flex-col items-center justify-center">
+<span class="font-label text-[10px] text-on-surface-variant uppercase">Sat</span>
+<span class="font-headline text-lg font-bold">28</span>
+</div>
+<!-- Sun -->
+<div class="flex-shrink-0 w-12 h-20 bg-surface-container flex flex-col items-center justify-center">
+<span class="font-label text-[10px] text-on-surface-variant uppercase">Sun</span>
+<span class="font-headline text-lg font-bold">29</span>
+</div>
+</div>
+</section>
+<!-- City Archive Grid -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Card 1: Neon Metropolis -->
+<div class="group bg-surface-container-low overflow-hidden transition-all duration-300 active:scale-[0.98]">
+<div class="relative aspect-[3/4] bg-surface-container-highest">
+<img alt="Neon Metropolis" class="w-full h-full object-cover opacity-80" data-alt="Isometric pixel art of a vibrant neon city at night with glowing purple and cyan skyscrapers and floating holographic billboards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWTGC0Q5j7GkZbUE9ukusuLp-nGfnncDr0LuvmBdaPJ7p-5GHXDTOpdKeqba9kkmoh_XPghfRTPDvbxrhQus9xKW1iSAlyZBgAtOjXOaan-jlizKmGn_yCl5TjsVIQ8taZy-3R0bYN12ko9ZMvWQkF5QNmb3EHw1g6f_AWHlnM9ea7I7yDvk-cIqw2yDiJZMUl5bew8U-Gnsj_hakMdtegOdODRxW9e84WPn1Pi77EhBp4TLGYGsoYMZjXAzCcHhQiBvm3v6PAb9U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-primary text-on-primary font-headline font-bold text-xs shadow-[0_4px_0_0_#4e3eaf]">
+                        82
+                    </div>
+</div>
+<div class="p-3">
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-1">Mar 26</p>
+<h3 class="font-headline font-bold text-sm text-primary group-hover:text-tertiary transition-colors">Neon Metropolis</h3>
+</div>
+</div>
+<!-- Card 2: Quiet Village -->
+<div class="group bg-surface-container-low overflow-hidden transition-all duration-300 active:scale-[0.98]">
+<div class="relative aspect-[3/4] bg-surface-container-highest">
+<img alt="Quiet Village" class="w-full h-full object-cover opacity-80" data-alt="Isometric pixel art of a peaceful small village at midnight with warm yellow lights in cottage windows and a large full moon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMJcNZKkfJNNdQfROgzZI5KqvjcbuB2yaROTJLkkenlaamhBPyPeTgRGHUgj5NtLiXWTnCwG9GBKqjifEgeGMbk9z0BUa0x9o7ARe_JWuqlPfaR9dhS3Q8MsA_St62gtenn_WbZ4G_boDHngZNV0ZjdDARQvaQn9Jus1kvAMpaxKcGPlABzEhekyCBTCRVP4txVYdYNgV8BCc__Lo9BoWRbJWaBKx8qlOFPUWjJTVfvtmoLMH6UD-kh81ltQCM11SI-nQEE9BqnYc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-tertiary text-on-tertiary font-headline font-bold text-xs shadow-[0_4px_0_0_#675200]">
+                        94
+                    </div>
+</div>
+<div class="p-3">
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-1">Mar 25</p>
+<h3 class="font-headline font-bold text-sm text-primary group-hover:text-tertiary transition-colors">Quiet Village</h3>
+</div>
+</div>
+<!-- Card 3: Storm City -->
+<div class="group bg-surface-container-low overflow-hidden transition-all duration-300 active:scale-[0.98]">
+<div class="relative aspect-[3/4] bg-surface-container-highest">
+<img alt="Storm City" class="w-full h-full object-cover opacity-80" data-alt="Isometric pixel art of a dark, rain-slicked city under a thunderstorm with purple lightning illuminating the sharp edges of obsidian towers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaHosr_EihYgs8wbiA86F46OyteueLCKqYtvhDloh-HZbFcKd0k4gHfPR-628EfVH2oFBf9CnpRvDigdFglfsm-tLiiHyzy5MzYAQK_aCtw7Vp8iJbUGyK828JzwmI0FKhW39VWefIncVRKZUGkkwXqob45xKORPBjRwAefnBVWtmn8e_P9yDp5RcLnKjgYjfvUkYfi86O5qemoc2-7N9mlJJ32cVNdgKiVgceSueAyy0gb4hbhkP31RLzNojPitYLaDK_WvNtu7c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-error text-on-error font-headline font-bold text-xs shadow-[0_4px_0_0_#a70138]">
+                        56
+                    </div>
+</div>
+<div class="p-3">
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-1">Mar 24</p>
+<h3 class="font-headline font-bold text-sm text-primary group-hover:text-tertiary transition-colors">Storm City</h3>
+</div>
+</div>
+<!-- Card 4: Floating Islands -->
+<div class="group bg-surface-container-low overflow-hidden transition-all duration-300 active:scale-[0.98]">
+<div class="relative aspect-[3/4] bg-surface-container-highest">
+<img alt="Floating Islands" class="w-full h-full object-cover opacity-80" data-alt="Isometric pixel art of floating grassy islands with futuristic white architecture and waterfalls falling into a starry cosmic void." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE99mUjvK64nliKqYOI5mjG9WHYpD2SLSO4WHmJrDlo5kfONnO3FWciXZQQ9LRJhRcxhKiHGZM3-BZ5MYzJSN69KX-nz9rDQLyM-eZc6zmgXd0SKsPN410N45-d-tZRnwsOyLnlgFqU3HhZpSALrHV_YO1OBssNy-H4JwmHcUpK__ECddzXja9gO_HzWgNPOeTvZC5GPrkBwLVLbCSTIYHPFfIe9I-0Ily-7q-egYB7oH-aaNEMjHPMZXT9PF6VVn52UZUVe-NVbs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-secondary text-on-secondary font-headline font-bold text-xs shadow-[0_4px_0_0_#4e3eaf]">
+                        78
+                    </div>
+</div>
+<div class="p-3">
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-1">Mar 23</p>
+<h3 class="font-headline font-bold text-sm text-primary group-hover:text-tertiary transition-colors">Aether Docks</h3>
+</div>
+</div>
+<!-- Card 5: Submerged Outpost -->
+<div class="group bg-surface-container-low overflow-hidden transition-all duration-300 active:scale-[0.98]">
+<div class="relative aspect-[3/4] bg-surface-container-highest">
+<img alt="Submerged Outpost" class="w-full h-full object-cover opacity-80" data-alt="Isometric pixel art of an underwater base with glass domes glowing teal and deep sea creatures swimming past metallic hatches." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHb4zs5xHzIQMPvxZYYZVtK_x6pkPJhW_I_Xtr9Mv-YvZIcovtdjn_UhQWWFnHdbdyRo-AonH2wp5FxrZrNk4QkaHxAexP8YmoujOZYarDCdakQxitcKw6I-G7phjc1uVMDFq-Pmvx_op_XCN2znJEDo2MnpHINWJn3BAFPsdVuuwP9oL-vLkXTEN5AWwRJISuwleobvhu0KjPCh7l3XGd4gklCGZ0QWVCAM3FeaNv__DeQmOzo3N_oZNyKePcm18dkVhfW1ugqDE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-primary text-on-primary font-headline font-bold text-xs shadow-[0_4px_0_0_#4e3eaf]">
+                        88
+                    </div>
+</div>
+<div class="p-3">
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-1">Mar 22</p>
+<h3 class="font-headline font-bold text-sm text-primary group-hover:text-tertiary transition-colors">Cyan Trench</h3>
+</div>
+</div>
+<!-- Card 6: Desert Hub -->
+<div class="group bg-surface-container-low overflow-hidden transition-all duration-300 active:scale-[0.98]">
+<div class="relative aspect-[3/4] bg-surface-container-highest">
+<img alt="Desert Hub" class="w-full h-full object-cover opacity-80" data-alt="Isometric pixel art of a desert city with sandstone blocks and blue neon accents under a vast star-filled night sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq6KXXmIOWqOrLUPww3wD44wayE9fwCJ9CzjGE8AxgwImgNiDub0L4PYr1ZV4HdWIlWnOL45Ga1inFjkBc4ZThtXcSftQBM52rQ1NuwmB0N-YEcbK_QZZYqiUCgVNCWu8iPLGkphoVqjPe00Ai1eer0hmvOJwhoEZAio_6IlhkKmO6QBAlNvkn_KHv1PPZ0EErvurc4ukMi1dbILt2o90tsy8yGl-fBPM0IveW51KS3KWsyqxL-QhO0atpzjKaG5IvltY0GxksRrY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 bg-tertiary text-on-tertiary font-headline font-bold text-xs shadow-[0_4px_0_0_#675200]">
+                        91
+                    </div>
+</div>
+<div class="p-3">
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-1">Mar 21</p>
+<h3 class="font-headline font-bold text-sm text-primary group-hover:text-tertiary transition-colors">Dust Oasis</h3>
+</div>
+</div>
+</div>
+<!-- Pagination/Load More (Subtle) -->
+<div class="mt-12 flex justify-center pb-8">
+<button class="px-6 py-3 border-2 border-outline-variant font-headline font-bold text-xs uppercase tracking-widest text-on-surface-variant hover:bg-surface-bright hover:text-primary transition-all">
+                Access Older Dreams
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 border-t-0 bg-[#0e0c20]/70 backdrop-blur-md shadow-[0_-4px_20px_rgba(187,158,255,0.05)] bg-[#131027]">
+<div class="flex justify-around items-center h-20 w-full px-4 pb-safe">
+<!-- Sleep -->
+<a class="flex flex-col items-center justify-center text-[#aca8c3] opacity-60 hover:text-[#bb9eff] transition-opacity active:translate-y-0.5 transition-all duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="bedtime">bedtime</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-tighter">Sleep</span>
+</a>
+<!-- Archive (ACTIVE) -->
+<a class="flex flex-col items-center justify-center text-[#bb9eff] relative after:content-[''] after:absolute after:bottom-0 after:w-1 after:h-1 after:bg-[#ffe396] active:translate-y-0.5 transition-all duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="history" style="font-variation-settings: 'FILL' 1;">history</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-tighter">Archive</span>
+</a>
+<!-- City -->
+<a class="flex flex-col items-center justify-center text-[#aca8c3] opacity-60 hover:text-[#bb9eff] transition-opacity active:translate-y-0.5 transition-all duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="domain">domain</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-tighter">City</span>
+</a>
+<!-- Insights -->
+<a class="flex flex-col items-center justify-center text-[#aca8c3] opacity-60 hover:text-[#bb9eff] transition-opacity active:translate-y-0.5 transition-all duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="insights">insights</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[10px] font-bold uppercase tracking-tighter">Insights</span>
+</a>
+</div>
+</nav>
+<footer class="fixed bottom-0 w-full z-50 bg-[#0e0c20]/70 backdrop-blur-xl" style="border-top: 1px solid rgba(187,158,255,0.1)">
+<div class="flex justify-around items-center w-full h-20 px-4">
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='a962bdd71f26467282921184180f4ef0.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">nights_stay</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Today</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#bb9eff; background:rgba(68,51,164,0.3);"" onclick="window.location.href='a5e60a26da524403bed20f13f8c6fa3c.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1">history</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">History</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='357e54354c1d4d5da2ce5807228297f6.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">share</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Share</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='f89d13a798274b5f825f77e99a14ea68.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">settings</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Settings</span>
+</a>
+</div>
+</footer>
+</body></html>

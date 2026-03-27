@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+
+<title>Log Your Sleep - Dream Landscape</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#76738c",
+              "on-secondary-fixed": "#301a92",
+              "primary-container": "#af8dff",
+              "secondary-container": "#4433a4",
+              "inverse-primary": "#6e40cd",
+              "on-surface-variant": "#aca8c3",
+              "secondary-fixed": "#d3ccff",
+              "primary-fixed": "#af8dff",
+              "outline-variant": "#48455c",
+              "tertiary-fixed": "#fdd34d",
+              "tertiary-dim": "#eec540",
+              "primary": "#bb9eff",
+              "on-tertiary": "#665100",
+              "on-primary": "#3a008b",
+              "on-tertiary-container": "#5c4900",
+              "on-secondary-fixed-variant": "#4e3eaf",
+              "tertiary-container": "#fdd34d",
+              "secondary-fixed-dim": "#c4bcff",
+              "on-error": "#490013",
+              "surface-dim": "#0e0c20",
+              "on-tertiary-fixed": "#463600",
+              "tertiary-fixed-dim": "#eec540",
+              "inverse-surface": "#fcf8ff",
+              "on-surface": "#e7e2ff",
+              "error-dim": "#d73357",
+              "surface-container-low": "#131027",
+              "surface": "#0e0c20",
+              "surface-container-high": "#1f1c37",
+              "surface-container-lowest": "#000000",
+              "secondary-dim": "#9c8fff",
+              "on-secondary-container": "#d2caff",
+              "on-primary-fixed": "#000000",
+              "on-primary-container": "#2c006e",
+              "primary-dim": "#ad89ff",
+              "on-tertiary-fixed-variant": "#675200",
+              "error": "#ff6e84",
+              "surface-bright": "#2b2848",
+              "surface-tint": "#bb9eff",
+              "secondary": "#9c8fff",
+              "tertiary": "#ffe396",
+              "background": "#0e0c20",
+              "inverse-on-surface": "#55526a",
+              "on-secondary": "#1c0071",
+              "on-primary-fixed-variant": "#370085",
+              "on-error-container": "#ffb2b9",
+              "surface-container": "#19162f",
+              "surface-variant": "#25223f",
+              "on-background": "#e7e2ff",
+              "error-container": "#a70138",
+              "primary-fixed-dim": "#a37bff",
+              "surface-container-highest": "#25223f"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0c20;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #e7e2ff;
+        }
+        .isometric-card {
+            transform: skewY(-2deg);
+        }
+        .isometric-content {
+            transform: skewY(2deg);
+        }
+        .voxel-button {
+            box-shadow: 0 4px 0 0 #4e3eaf;
+        }
+        .voxel-button:active {
+            box-shadow: 0 0px 0 0 #4e3eaf;
+            transform: translateY(4px);
+        }
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0e0c20;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4433a4;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0c20]/70 backdrop-blur-md flex items-center h-16 px-6 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#bb9eff] hover:bg-[#25223f] transition-colors duration-75 p-2 step-based-transition scale-95 active:bg-[#1f1c37]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-[#bb9eff] font-['Space_Grotesk'] font-bold text-xl tracking-tight">Log Your Sleep</h1>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-10">
+<!-- Hero Section: Isometric Visual Area -->
+<section class="relative h-48 w-full bg-surface-container-low overflow-hidden">
+<div class="absolute inset-0 opacity-40">
+<img class="w-full h-full object-cover" data-alt="abstract isometric landscape of a digital city at night with purple neon lights and glowing cubical buildings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1b5hp2pLNBEaDZ-d0Yx9kKEGD1Bn06RgwGTCy4nM86CN1wXs_7WDLR9LdODXUvBTYV4z6kPL1vrc4Q1U9npBRAciu1e-5hjhySI4wzIZVjjIvXvdQaCHWQe-NNmSAezE1en7EhILsXhnUsmGpt4xcSQlW9yIRNudR6yp_hGCT4UCIhVU79etBTJzEc6X2E3sJBdEVJYQD0LH1EcBr8fgJ73JSXuj-HO_cB64QLK3p5pu5hTGtCDRmeXgEYldZ6oiKrWg0BwA65Hs"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+<div class="relative h-full flex flex-col justify-end p-6">
+<span class="font-headline text-primary text-xs tracking-widest uppercase">New Log</span>
+<h2 class="font-headline text-3xl font-bold tracking-tight">Build the Night.</h2>
+</div>
+</section>
+<!-- Time Inputs: Asymmetric Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Bedtime -->
+<div class="bg-surface-container p-6 relative">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline text-[10px] uppercase font-bold tracking-tighter text-on-surface-variant">Bedtime</span>
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+</div>
+<div class="relative bg-surface-container-lowest p-4">
+<input class="w-full bg-transparent border-none text-2xl font-headline font-bold text-on-surface focus:ring-0 p-0" type="text" value="11:30 PM"/>
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_rgba(187,158,255,0.5)]"></div>
+</div>
+</div>
+<!-- Wake Time -->
+<div class="bg-surface-container p-6 relative md:translate-y-4">
+<div class="flex items-center justify-between mb-4">
+<span class="font-headline text-[10px] uppercase font-bold tracking-tighter text-on-surface-variant">Wake up</span>
+<span class="material-symbols-outlined text-primary text-sm">alarm</span>
+</div>
+<div class="relative bg-surface-container-lowest p-4">
+<input class="w-full bg-transparent border-none text-2xl font-headline font-bold text-on-surface focus:ring-0 p-0" type="text" value="07:15 AM"/>
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-primary shadow-[0_0_8px_rgba(187,158,255,0.5)]"></div>
+</div>
+</div>
+</div>
+<!-- Duration Display (Calculated Visual) -->
+<div class="flex flex-col items-center py-4">
+<div class="w-full h-px bg-outline-variant/20 mb-6"></div>
+<div class="text-center">
+<p class="font-headline text-on-surface-variant text-[10px] uppercase tracking-widest mb-1">Total Rest Duration</p>
+<p class="font-headline text-5xl font-extrabold text-tertiary tracking-tighter">7<span class="text-2xl font-light opacity-50 mx-1">h</span> 45<span class="text-2xl font-light opacity-50 mx-1">m</span></p>
+</div>
+<div class="w-full h-px bg-outline-variant/20 mt-6"></div>
+</div>
+<!-- Quality Rating: The "City Stat" Chip Style -->
+<section class="space-y-6">
+<h3 class="font-headline text-sm font-bold uppercase tracking-widest text-on-surface-variant">Sleep Quality</h3>
+<div class="flex flex-wrap gap-3">
+<button class="flex items-center gap-2 px-4 py-3 bg-surface-container-highest border-b-2 border-transparent hover:border-primary transition-all duration-100">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline text-[10px] uppercase font-bold">Poor</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-3 bg-surface-container-highest border-b-2 border-transparent hover:border-primary transition-all duration-100">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="font-headline text-[10px] uppercase font-bold">Fair</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-3 bg-secondary-container border-b-2 border-primary transition-all duration-100">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline text-[10px] uppercase font-bold">Good</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-3 bg-surface-container-highest border-b-2 border-transparent hover:border-primary transition-all duration-100">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="font-headline text-[10px] uppercase font-bold">Great</span>
+</button>
+</div>
+</section>
+<!-- Notes Terminal -->
+<section class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-dim text-sm">edit_note</span>
+<label class="font-headline text-sm font-bold uppercase tracking-widest text-on-surface-variant">Dream Journal &amp; Notes</label>
+</div>
+<div class="relative bg-surface-container-lowest p-6 group">
+<textarea class="w-full bg-transparent border-none text-on-surface placeholder:text-outline-variant focus:ring-0 p-0 resize-none font-body" placeholder="Any dreams? Notes?" rows="4"></textarea>
+<div class="absolute bottom-0 left-0 w-full h-[2px] bg-outline-variant/30 group-focus-within:bg-primary transition-colors duration-200"></div>
+</div>
+</section>
+<!-- CTA: Voxel Button -->
+<div class="pt-6">
+<button class="voxel-button w-full bg-primary text-on-primary py-6 font-headline font-extrabold uppercase tracking-[0.2em] text-lg flex items-center justify-center gap-3 transition-transform">
+<span class="material-symbols-outlined">auto_awesome</span>
+                Generate My City
+            </button>
+<p class="text-center mt-4 text-[10px] font-headline text-on-surface-variant uppercase tracking-widest opacity-60">
+                Data will be used to grow your isometric dreamscape
+            </p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 h-20 bg-[#0e0c20]/70 backdrop-blur-md flex justify-around items-center w-full px-4 pb-safe shadow-[0_-8px_16px_rgba(187,158,255,0.08)]">
+<a class="flex flex-col items-center justify-center text-[#aca8c3] opacity-60 hover:text-[#bb9eff] hover:opacity-100 transition-colors" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-tighter">World</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#bb9eff] border-b-4 border-[#bb9eff] pb-1" href="#">
+<span class="material-symbols-outlined">add_box</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-tighter">Log</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#aca8c3] opacity-60 hover:text-[#bb9eff] hover:opacity-100 transition-colors" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-tighter">Stats</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#aca8c3] opacity-60 hover:text-[#bb9eff] hover:opacity-100 transition-colors" href="#">
+<span class="material-symbols-outlined">bedtime</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-tighter">Dream</span>
+</a>
+</nav>
+</body></html>

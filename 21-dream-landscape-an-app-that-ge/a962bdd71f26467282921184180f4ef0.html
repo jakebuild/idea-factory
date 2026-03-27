@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#25223f",
+              "on-primary-fixed-variant": "#370085",
+              "error-dim": "#d73357",
+              "surface-container-highest": "#25223f",
+              "tertiary-dim": "#eec540",
+              "surface-container": "#19162f",
+              "surface-bright": "#2b2848",
+              "tertiary-container": "#fdd34d",
+              "on-secondary-fixed": "#301a92",
+              "secondary-fixed": "#d3ccff",
+              "on-tertiary": "#665100",
+              "primary": "#bb9eff",
+              "outline": "#76738c",
+              "on-error-container": "#ffb2b9",
+              "tertiary-fixed-dim": "#eec540",
+              "on-surface-variant": "#aca8c3",
+              "surface-tint": "#bb9eff",
+              "on-tertiary-fixed-variant": "#675200",
+              "error-container": "#a70138",
+              "on-secondary": "#1c0071",
+              "tertiary-fixed": "#fdd34d",
+              "outline-variant": "#48455c",
+              "inverse-surface": "#fcf8ff",
+              "tertiary": "#ffe396",
+              "surface": "#0e0c20",
+              "primary-container": "#af8dff",
+              "on-secondary-container": "#d2caff",
+              "on-primary": "#3a008b",
+              "inverse-on-surface": "#55526a",
+              "surface-container-low": "#131027",
+              "error": "#ff6e84",
+              "secondary": "#9c8fff",
+              "on-secondary-fixed-variant": "#4e3eaf",
+              "secondary-dim": "#9c8fff",
+              "on-tertiary-fixed": "#463600",
+              "on-primary-fixed": "#000000",
+              "on-tertiary-container": "#5c4900",
+              "primary-fixed": "#af8dff",
+              "on-surface": "#e7e2ff",
+              "secondary-fixed-dim": "#c4bcff",
+              "secondary-container": "#4433a4",
+              "primary-dim": "#ad89ff",
+              "on-background": "#e7e2ff",
+              "surface-container-lowest": "#000000",
+              "inverse-primary": "#6e40cd",
+              "surface-dim": "#0e0c20",
+              "on-primary-container": "#2c006e",
+              "on-error": "#490013",
+              "background": "#0e0c20",
+              "surface-container-high": "#1f1c37",
+              "primary-fixed-dim": "#a37bff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .isometric-card {
+            clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+        }
+        .voxel-shadow {
+            box-shadow: 0 4px 0 0 #4e3eaf;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0e0c20]/70 dark:bg-[#0e0c20]/70 backdrop-blur-xl flex items-center justify-between px-6 h-16 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#bb9eff]" data-icon="calendar_today">calendar_today</span>
+<h1 class="font-['Space_Grotesk'] font-bold text-xl uppercase tracking-wider text-[#bb9eff]">Friday, Mar 27</h1>
+</div>
+<div class="hidden md:flex gap-8 items-center font-label text-sm tracking-widest uppercase">
+<a class="text-[#bb9eff] hover:text-[#ffe396] transition-colors duration-200" onclick="window.location.href='a962bdd71f26467282921184180f4ef0.html'" style="cursor:pointer">Today</a>
+<a class="text-[#aca8c3] hover:text-[#ffe396] transition-colors duration-200" onclick="window.location.href='a5e60a26da524403bed20f13f8c6fa3c.html'" style="cursor:pointer">History</a>
+<a class="text-[#aca8c3] hover:text-[#ffe396] transition-colors duration-200" onclick="window.location.href='357e54354c1d4d5da2ce5807228297f6.html'" style="cursor:pointer">Share</a>
+<a class="text-[#aca8c3] hover:text-[#ffe396] transition-colors duration-200" onclick="window.location.href='f89d13a798274b5f825f77e99a14ea68.html'" style="cursor:pointer">Settings</a>
+</div>
+</nav>
+<!-- Main Canvas Content -->
+<main class="relative min-h-screen w-full overflow-hidden flex flex-col">
+<!-- Isometric City Hero -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center bg-no-repeat" data-alt="isometric pixel art city at dawn with glowing neon purple buildings and a vibrant golden sunrise sky casting long shadows across streets" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvqIh1wflHCl15pIEmmORv3n5BRqiA6DfxgfZ__15p30nWqVno3HU_EKuyKvyV9B5SUnAI_--t8u6h_flfAlinout_F6j0gS_69yXtXb4duetPonFo3Wy0GY_8PSEYClJGkCy33iZVa5OeIh6IeHietHhY3CCVGhYvK5SGFAdv71IEHyZ5_y6zgpmjYeODV_lBf3MMk3J073cA7x2z2ib9-E5_-amkwirJKmO264O3X1G3wPXSaAU5hpqaNKAQB8FlU8WB4aBZIbo')">
+</div>
+<!-- Vignette Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface/40"></div>
+</div>
+<!-- Hero Content Overlay -->
+<div class="relative z-10 flex-1 flex flex-col justify-end px-6 pb-32">
+<!-- Floating Data Cloud (Asymmetric Placement) -->
+<div class="self-start mb-12 ml-4">
+<div class="bg-surface-bright/20 backdrop-blur-xl p-4 border-l-4 border-primary">
+<p class="font-headline text-xs tracking-widest uppercase text-primary mb-1">City Status</p>
+<h2 class="font-headline text-3xl font-black text-on-surface">THRIVING</h2>
+</div>
+</div>
+<!-- Tap Hint -->
+<div class="absolute bottom-40 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-80">
+<span class="font-label text-[10px] tracking-[0.3em] uppercase text-on-surface-variant" onclick="window.location.href='cb69c984a785449db5609dc2c4a470bf.html'" style="cursor:pointer">View Details</span>
+<span class="material-symbols-outlined text-primary text-sm">keyboard_double_arrow_up</span>
+</div>
+<!-- Sleep Summary Bar (Glassmorphism Slabs) -->
+<div class="w-full max-w-2xl mx-auto flex flex-col md:flex-row gap-0">
+<!-- Voxel Stat Block 1 -->
+<div class="flex-1 bg-surface-container-high/80 backdrop-blur-md p-6 border-b-4 border-secondary-container">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label text-[10px] tracking-widest text-on-surface-variant uppercase mb-2">Sleep Duration</p>
+<span class="font-headline text-2xl font-bold text-on-surface">7h 30m</span>
+</div>
+<span class="material-symbols-outlined text-secondary" data-icon="bedtime">bedtime</span>
+</div>
+</div>
+<!-- Voxel Stat Block 2 -->
+<div class="flex-1 bg-surface-variant/80 backdrop-blur-md p-6 border-b-4 border-primary">
+<div class="flex justify-between items-start">
+<div>
+<p class="font-label text-[10px] tracking-widest text-on-surface-variant uppercase mb-2">Sleep Score</p>
+<span class="font-headline text-2xl font-bold text-primary">82</span>
+</div>
+<div class="flex text-tertiary text-xs">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 0;">star</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Action Button -->
+<button onclick="window.location.href='357e54354c1d4d5da2ce5807228297f6.html'" class="fixed bottom-24 right-6 z-50 w-14 h-14 bg-primary text-on-primary flex items-center justify-center voxel-shadow active:translate-y-1 active:shadow-none transition-all">
+<span class="material-symbols-outlined text-2xl" data-icon="share">share</span>
+</button>
+</main>
+<!-- Bottom Navigation Bar -->
+
+<footer class="fixed bottom-0 w-full z-50 bg-[#0e0c20]/70 backdrop-blur-xl" style="border-top: 1px solid rgba(187,158,255,0.1)">
+<div class="flex justify-around items-center w-full h-20 px-4">
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#bb9eff; background:rgba(68,51,164,0.3);"" onclick="window.location.href='a962bdd71f26467282921184180f4ef0.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1">nights_stay</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Today</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='a5e60a26da524403bed20f13f8c6fa3c.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">history</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">History</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='357e54354c1d4d5da2ce5807228297f6.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">share</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Share</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='f89d13a798274b5f825f77e99a14ea68.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">settings</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Settings</span>
+</a>
+</div>
+</footer>
+</body></html>

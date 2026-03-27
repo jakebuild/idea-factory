@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+
+<title>Share Your Dream - Dream Landscape</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#bb9eff",
+            "background": "#0e0c20",
+            "on-tertiary-fixed": "#463600",
+            "on-primary-fixed-variant": "#370085",
+            "tertiary-dim": "#eec540",
+            "primary-fixed-dim": "#a37bff",
+            "on-secondary": "#1c0071",
+            "secondary-dim": "#9c8fff",
+            "on-error-container": "#ffb2b9",
+            "surface-container-lowest": "#000000",
+            "surface": "#0e0c20",
+            "secondary-fixed": "#d3ccff",
+            "on-secondary-fixed-variant": "#4e3eaf",
+            "surface-container": "#19162f",
+            "secondary-container": "#4433a4",
+            "surface-container-low": "#131027",
+            "error-container": "#a70138",
+            "on-tertiary-container": "#5c4900",
+            "surface-tint": "#bb9eff",
+            "tertiary-fixed": "#fdd34d",
+            "inverse-primary": "#6e40cd",
+            "on-surface": "#e7e2ff",
+            "error-dim": "#d73357",
+            "primary-fixed": "#af8dff",
+            "primary-container": "#af8dff",
+            "on-surface-variant": "#aca8c3",
+            "on-tertiary-fixed-variant": "#675200",
+            "outline": "#76738c",
+            "on-background": "#e7e2ff",
+            "on-secondary-fixed": "#301a92",
+            "error": "#ff6e84",
+            "surface-variant": "#25223f",
+            "on-tertiary": "#665100",
+            "on-primary-container": "#2c006e",
+            "surface-container-highest": "#25223f",
+            "on-error": "#490013",
+            "surface-dim": "#0e0c20",
+            "on-primary": "#3a008b",
+            "tertiary-fixed-dim": "#eec540",
+            "secondary-fixed-dim": "#c4bcff",
+            "on-primary-fixed": "#000000",
+            "inverse-on-surface": "#55526a",
+            "on-secondary-container": "#d2caff",
+            "tertiary": "#ffe396",
+            "surface-container-high": "#1f1c37",
+            "primary-dim": "#ad89ff",
+            "inverse-surface": "#fcf8ff",
+            "outline-variant": "#48455c",
+            "secondary": "#9c8fff",
+            "tertiary-container": "#fdd34d",
+            "surface-bright": "#2b2848"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Plus Jakarta Sans"],
+            "label": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      background-color: #0e0c20;
+      color: #e7e2ff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .isometric-card {
+      box-shadow: 4px 4px 0px #4e3eaf;
+    }
+    .glass-effect {
+      backdrop-filter: blur(12px);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0c20]/70 backdrop-blur-md flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#bb9eff] active:scale-95 transition-transform duration-75">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<h1 class="text-[#bb9eff] font-['Space_Grotesk'] font-black text-xl tracking-tight leading-none">Share Your Dream</h1>
+<span class="text-[10px] text-[#aca8c3] font-['Plus_Jakarta_Sans'] uppercase tracking-[0.2em] mt-0.5">Your Night, Visualized</span>
+</div>
+</div>
+<button class="text-[#bb9eff] active:scale-95 transition-transform duration-75">
+<span class="material-symbols-outlined" data-icon="more_vert">more_vert</span>
+</button>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow pt-20 pb-24 px-4 flex flex-col items-center">
+<!-- Image Display Section (60% Height Focus) -->
+<div class="w-full max-w-md aspect-[3/4] relative overflow-hidden bg-surface-container-low mb-8">
+<!-- Main Isometric Visual -->
+<img alt="Nocturnal isometric pixel art city" class="w-full h-full object-cover" data-alt="A vertical portrait of a nocturnal isometric pixel art city with glowing purple windows, indigo skyscrapers, and a star-filled navy sky with floating digital clouds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNtIQ-6RrnA5D5ifBGnXZ0W3G-UQBiqzz9S8-_rlg85pbRVuiMOGQqfTnHjz_UAnTLbR-xEzdpNplmg6nCOKy-1EMnAnx085HN5OagMkGi-gr-sBW6BLu6XI2bcolUwxIfKk5E-Mpf6kCED8RpZHDKtsyLHF3Oadi_VKd3acJe-V9DRgCTD1tw9IxRlF_oaR23ZgcGUcvuSR242NDLpcGtuJm1B4YOJYyPuC-xE7NaUJ3MM3Z7115hImP5flotGaDK5YqB1iHiPa8"/>
+<!-- Overlays -->
+<div class="absolute inset-0 p-4 flex flex-col justify-between pointer-events-none">
+<div class="flex justify-between items-start">
+<div class="bg-[#131027]/80 backdrop-blur-md px-3 py-1.5 border-b-2 border-primary">
+<span class="font-headline font-bold text-sm text-primary uppercase tracking-widest">Mar 27, 2026</span>
+</div>
+<div class="bg-[#bb9eff] text-[#1c0071] px-3 py-1.5 font-headline font-black text-lg isometric-card">
+            SCORE 82
+          </div>
+</div>
+<div class="flex justify-end">
+<div class="bg-black/20 backdrop-blur-sm px-2 py-1">
+<span class="font-headline text-[10px] font-bold text-white/40 tracking-[0.3em] uppercase">Dream Landscape</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions Section -->
+<div class="w-full max-w-md space-y-4 px-2">
+<!-- Primary Share -->
+<button class="w-full bg-primary text-on-primary-container font-headline font-bold text-lg py-4 flex items-center justify-center gap-3 active:translate-y-1 transition-all" style="box-shadow: 0 4px 0 #4e3eaf;">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+        SHARE NOW
+      </button>
+<!-- Secondary Row -->
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-surface-container-highest text-primary font-headline font-bold py-3 flex items-center justify-center gap-2 border-b-2 border-primary/30 hover:bg-surface-bright active:scale-95 transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="content_copy">content_copy</span>
+          COPY IMAGE
+        </button>
+<button class="bg-surface-container-highest text-primary font-headline font-bold py-3 flex items-center justify-center gap-2 border-b-2 border-primary/30 hover:bg-surface-bright active:scale-95 transition-all">
+<span class="material-symbols-outlined text-sm" data-icon="download">download</span>
+          DOWNLOAD
+        </button>
+</div>
+<!-- Tertiary / Insight -->
+<div class="mt-8 p-4 bg-surface-container-low border-l-2 border-tertiary">
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">
+          The neon districts in your city expanded today. Your REM sleep was 15% higher than your weekly average.
+        </p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 bg-[#0e0c20]/70 backdrop-blur-md flex justify-around items-center w-full h-20 pb-safe shadow-[0_-4px_12px_rgba(187,158,255,0.08)]">
+<!-- World -->
+<a class="flex flex-col items-center justify-center text-[#aca8c3] px-4 py-1 hover:text-[#bb9eff] transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="location_city">location_city</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">World</span>
+</a>
+<!-- Sleep -->
+<a class="flex flex-col items-center justify-center text-[#aca8c3] px-4 py-1 hover:text-[#bb9eff] transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="bedtime">bedtime</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">Sleep</span>
+</a>
+<!-- Share (Active) -->
+<a class="flex flex-col items-center justify-center text-[#bb9eff] bg-[#4433a4]/30 px-4 py-1 border-b-2 border-[#bb9eff]" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">Share</span>
+</a>
+<!-- Stats -->
+<a class="flex flex-col items-center justify-center text-[#aca8c3] px-4 py-1 hover:text-[#bb9eff] transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="bar_chart">bar_chart</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">Stats</span>
+</a>
+</nav>
+<footer class="fixed bottom-0 w-full z-50 bg-[#0e0c20]/70 backdrop-blur-xl" style="border-top: 1px solid rgba(187,158,255,0.1)">
+<div class="flex justify-around items-center w-full h-20 px-4">
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='a962bdd71f26467282921184180f4ef0.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">nights_stay</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Today</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='a5e60a26da524403bed20f13f8c6fa3c.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">history</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">History</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#bb9eff; background:rgba(68,51,164,0.3);"" onclick="window.location.href='357e54354c1d4d5da2ce5807228297f6.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1">share</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Share</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 min-w-[64px] style="color:#aca8c3;"" onclick="window.location.href='f89d13a798274b5f825f77e99a14ea68.html'" style="cursor:pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 0">settings</span>
+<span style="font-family:'Plus Jakarta Sans'; font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase">Settings</span>
+</a>
+</div>
+</footer>
+</body></html>
