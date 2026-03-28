@@ -1,1 +1,3 @@
-in-review
+status: ready-for-design
+validated_at: 2026-03-28 19:07
+score: 8/10
