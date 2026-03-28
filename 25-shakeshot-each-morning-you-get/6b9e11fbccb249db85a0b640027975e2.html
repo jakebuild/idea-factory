@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>ShakeShot - Generating State</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#ff7d5c",
+                        "tertiary": "#ff7350",
+                        "on-surface-variant": "#adaaaa",
+                        "surface-variant": "#262626",
+                        "error-dim": "#d7383b",
+                        "secondary-fixed-dim": "#00edb4",
+                        "surface-container-lowest": "#000000",
+                        "error": "#ff716c",
+                        "on-primary": "#5e5f5f",
+                        "on-error-container": "#ffa8a3",
+                        "secondary-container": "#006c50",
+                        "secondary-fixed": "#00fdc1",
+                        "surface-tint": "#f9f9f9",
+                        "primary-dim": "#ebebeb",
+                        "on-primary-fixed": "#434545",
+                        "on-surface": "#ffffff",
+                        "primary": "#f9f9f9",
+                        "primary-fixed-dim": "#dddddd",
+                        "on-tertiary-container": "#000000",
+                        "on-secondary": "#005c44",
+                        "on-tertiary": "#440900",
+                        "on-tertiary-fixed": "#360600",
+                        "surface-container-low": "#131313",
+                        "primary-container": "#a0a0a1",
+                        "error-container": "#9f0519",
+                        "on-tertiary-fixed-variant": "#721600",
+                        "outline-variant": "#494847",
+                        "tertiary-dim": "#dc3300",
+                        "surface-container-highest": "#262626",
+                        "outline": "#777575",
+                        "surface-container": "#1a1919",
+                        "background": "#0e0e0e",
+                        "on-secondary-fixed-variant": "#00664c",
+                        "surface-bright": "#2c2c2c",
+                        "surface": "#0e0e0e",
+                        "secondary": "#00fdc1",
+                        "surface-dim": "#0e0e0e",
+                        "on-background": "#ffffff",
+                        "on-secondary-container": "#dfffef",
+                        "on-primary-container": "#212323",
+                        "secondary-dim": "#00edb4",
+                        "on-primary-fixed-variant": "#606161",
+                        "on-error": "#490006",
+                        "inverse-surface": "#fcf8f8",
+                        "tertiary-container": "#fc3c00",
+                        "tertiary-fixed": "#ff9479",
+                        "inverse-primary": "#5e5f5f",
+                        "inverse-on-surface": "#565554",
+                        "on-secondary-fixed": "#004734",
+                        "surface-container-high": "#201f1f",
+                        "primary-fixed": "#ebebeb"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Custom radial background for the "Fluid Noir" aesthetic */
+        .fluid-bg {
+            background: radial-gradient(circle at 50% 50%, #131313 0%, #0e0e0e 100%);
+            overflow: hidden;
+        }
+
+        .ink-bleed-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ink-texture-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.05;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        .glow-orb {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(0, 253, 193, 0.12) 0%, rgba(0, 253, 193, 0) 70%);
+            border-radius: 50%;
+            filter: blur(80px);
+        }
+
+        .progress-ring {
+            transform: rotate(-90deg);
+        }
+
+        .progress-ring-circle {
+            transition: stroke-dashoffset 0.35s;
+            transform-origin: 50% 50%;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<script>
+    // Auto-navigate to Portrait Reveal after 3 seconds
+    setTimeout(function() {
+      window.location.href = 'bb0b7fb56f8c413bbf17c97ad006473a.html';
+    }, 3000);
+  </script>
+  </head>
+<body onclick="window.location.href='bb0b7fb56f8c413bbf17c97ad006473a.html'" class="bg-background text-on-background font-body antialiased select-none overflow-hidden cursor-pointer">
+<!-- Main Canvas -->
+<main class="fluid-bg ink-bleed-container">
+<!-- Ambient Textures & Effects -->
+<div class="ink-texture-overlay"></div>
+<div class="glow-orb" style="top: 20%; left: 10%;"></div>
+<div class="glow-orb" style="bottom: 10%; right: -5%;"></div>
+<!-- Central Generative Art Focal Point -->
+<div class="relative z-10 flex flex-col items-center justify-center text-center p-8 w-full max-w-lg">
+<!-- The Focal Visual: Swirling Fluid/Ink Representation -->
+<div class="relative w-72 h-72 mb-16 flex items-center justify-center">
+<!-- Abstract "Ink Bleed" Imagery (Layered) -->
+<div class="absolute inset-0 rounded-full bg-secondary/5 blur-[60px]"></div>
+<img alt="Generative Process" class="w-full h-full object-cover rounded-full opacity-40 mix-blend-screen" data-alt="abstract macro shot of cyan ink swirling in dark water with sharp edges and organic fluid tendrils cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2OxDeRyEooIidTZ4EnMSwwGGkB0D3jdx71dmV7Xsz8vArdaTlCrZC_FAC098tvRrSDyU-P60kZlio27mQQOodKfGfTA35A9ybC9j0W5FJnE9SIndZH8mmINtfDrN2XaljPZCDOn4ANqkD9WliXwSeUbdOgf5zZCB4eNdgwcvEsPmzidhxRIuu7P5drD600m3dBHhihzdS1Sq70YbjKPaAN3qCUAvQq3T6-uzeL_3X_qYh0RQCoQRaj86TGG_W02r0YJmC8C8RIBoX"/>
+<!-- The "Ink Bleed" Progress Ring -->
+<div class="absolute inset-0 flex items-center justify-center">
+<svg class="progress-ring" height="300" width="300">
+<!-- Background Circle -->
+<circle class="text-surface-variant/30" cx="150" cy="150" fill="transparent" r="140" stroke="currentColor" stroke-width="1.5"></circle>
+<!-- Animated Progress Stroke -->
+<circle class="text-secondary progress-ring-circle" cx="150" cy="150" fill="transparent" r="140" stroke="currentColor" stroke-dasharray="879.6" stroke-dashoffset="300" stroke-linecap="round" stroke-width="2" style="filter: drop-shadow(0 0 8px rgba(0, 253, 193, 0.4));"></circle>
+</svg>
+</div>
+</div>
+<!-- Content Hierarchy -->
+<div class="space-y-2">
+<h1 class="font-headline text-6xl md:text-7xl font-bold tracking-tighter text-primary">
+                    Chaotic
+                </h1>
+<p class="font-body text-on-surface-variant text-lg tracking-wide font-light">
+                    Painting your day...
+                </p>
+</div>
+<!-- Secondary Metadata/Indicator -->
+<div class="mt-20 flex items-center space-x-4 opacity-40">
+<span class="text-[10px] font-headline uppercase tracking-[0.3em] text-secondary">Analyzing Motion</span>
+<div class="h-px w-8 bg-outline-variant"></div>
+<span class="text-[10px] font-headline uppercase tracking-[0.3em] text-on-surface-variant">Synthesizing</span>
+</div>
+</div>
+<!-- Decorative Organic Edge Bleed -->
+<div class="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-background to-transparent pointer-events-none"></div>
+<!-- Corner Detail - Visual Anchor -->
+<div class="absolute top-12 left-12 opacity-20">
+<div class="font-headline text-xs tracking-widest text-primary border-l border-secondary pl-3">
+                SHAKESHOT // CORE_ENGINE_V4
+            </div>
+</div>
+<!-- Bottom Detail - Progress Percent (Subtle) -->
+<div class="absolute bottom-12 right-12 flex flex-col items-end opacity-50">
+<span class="font-headline text-3xl font-light text-secondary">68<span class="text-xs ml-1">%</span></span>
+<div class="w-12 h-[1px] bg-secondary/30 mt-1"></div>
+</div>
+</main>
+</body></html>

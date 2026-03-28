@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>ShakeShot - Morning Focus</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#ff7350",
+              "surface-variant": "#262626",
+              "on-secondary-container": "#dfffef",
+              "on-error-container": "#ffa8a3",
+              "primary-fixed-dim": "#dddddd",
+              "on-error": "#490006",
+              "on-surface-variant": "#adaaaa",
+              "background": "#0e0e0e",
+              "on-tertiary": "#440900",
+              "tertiary-fixed-dim": "#ff7d5c",
+              "surface-tint": "#f9f9f9",
+              "primary-container": "#a0a0a1",
+              "tertiary-dim": "#dc3300",
+              "primary": "#f9f9f9",
+              "on-secondary-fixed-variant": "#00664c",
+              "inverse-on-surface": "#565554",
+              "secondary-dim": "#00edb4",
+              "error": "#ff716c",
+              "surface": "#0e0e0e",
+              "on-tertiary-fixed": "#360600",
+              "inverse-primary": "#5e5f5f",
+              "tertiary-container": "#fc3c00",
+              "surface-container-lowest": "#000000",
+              "on-background": "#ffffff",
+              "secondary-container": "#006c50",
+              "inverse-surface": "#fcf8f8",
+              "on-tertiary-container": "#000000",
+              "primary-fixed": "#ebebeb",
+              "surface-container-low": "#131313",
+              "secondary-fixed-dim": "#00edb4",
+              "secondary-fixed": "#00fdc1",
+              "on-secondary": "#005c44",
+              "primary-dim": "#ebebeb",
+              "secondary": "#00fdc1",
+              "on-surface": "#ffffff",
+              "on-primary-container": "#212323",
+              "outline-variant": "#494847",
+              "on-primary-fixed": "#434545",
+              "on-primary": "#5e5f5f",
+              "tertiary-fixed": "#ff9479",
+              "surface-container-highest": "#262626",
+              "on-primary-fixed-variant": "#606161",
+              "surface-container-high": "#201f1f",
+              "on-tertiary-fixed-variant": "#721600",
+              "error-container": "#9f0519",
+              "error-dim": "#d7383b",
+              "surface-container": "#1a1919",
+              "outline": "#777575",
+              "surface-bright": "#2c2c2c",
+              "on-secondary-fixed": "#004734",
+              "surface-dim": "#0e0e0e"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ink-bleed-bg {
+            background: radial-gradient(circle at 50% 50%, rgba(26, 25, 25, 1) 0%, rgba(14, 14, 14, 1) 100%);
+        }
+        .glow-border {
+            box-shadow: 0 0 20px rgba(0, 253, 193, 0.1);
+        }
+        .reveal-btn-ring {
+            background: conic-gradient(from 0deg, #00fdc1 0%, #006c50 60%, transparent 60%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary selection:text-on-secondary min-h-screen flex flex-col overflow-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0e0e] flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#00fdc1]" data-icon="bubble_chart">bubble_chart</span>
+<h1 class="font-['Space_Grotesk'] font-bold tracking-tight text-2xl font-black text-[#f9f9f9] tracking-tighter">ShakeShot</h1>
+</div>
+<button class="flex items-center gap-1.5 bg-surface-container-high px-3 py-1.5 rounded-full hover:text-[#00fdc1] transition-colors duration-300 active:scale-95 duration-200 ease-in-out group">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label text-xs font-bold tracking-widest uppercase text-primary">PRO</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col items-center justify-center px-8 relative overflow-hidden ink-bleed-bg pt-20 pb-24">
+<!-- Background Fluid Texture -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-secondary-container rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 -left-20 w-80 h-80 bg-tertiary-container opacity-20 rounded-full blur-[100px]"></div>
+</div>
+<!-- Date Header -->
+<section class="text-center mb-12 relative z-10">
+<p class="font-headline text-on-surface-variant text-sm tracking-[0.3em] uppercase mb-2">Monday</p>
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary">October 24</h2>
+</section>
+<!-- Chips Section -->
+<section class="w-full max-w-md mb-16 relative z-10">
+<div class="flex flex-wrap justify-center gap-3">
+<div class="relative group">
+<input class="bg-surface-container border-none text-primary placeholder:text-on-surface-variant/40 rounded-full px-6 py-3 text-sm font-label focus:ring-1 focus:ring-secondary/50 w-32 transition-all outline-none text-center" placeholder="focused" type="text"/>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-secondary group-focus-within:w-1/2 transition-all duration-500"></div>
+</div>
+<div class="relative group">
+<input class="bg-surface-container border-none text-primary placeholder:text-on-surface-variant/40 rounded-full px-6 py-3 text-sm font-label focus:ring-1 focus:ring-secondary/50 w-32 transition-all outline-none text-center" placeholder="meetings" type="text"/>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-secondary group-focus-within:w-1/2 transition-all duration-500"></div>
+</div>
+<div class="relative group">
+<input class="bg-surface-container border-none text-primary placeholder:text-on-surface-variant/40 rounded-full px-6 py-3 text-sm font-label focus:ring-1 focus:ring-secondary/50 w-32 transition-all outline-none text-center" placeholder="deadline" type="text"/>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[1px] bg-secondary group-focus-within:w-1/2 transition-all duration-500"></div>
+</div>
+</div>
+<p class="text-center text-[10px] text-on-surface-variant mt-6 uppercase tracking-widest opacity-60">Define your day in three words</p>
+</section>
+<!-- Circular Action Button -->
+<section class="relative flex items-center justify-center z-10">
+<!-- Intensity Meter Ring -->
+<div class="absolute w-[210px] h-[210px] rounded-full reveal-btn-ring opacity-40 blur-[2px]"></div>
+<!-- Main Button -->
+<button onclick="window.location.href='0620aca266d24adf9625a852ff9f756d.html'" class="relative w-48 h-48 rounded-full bg-surface-container-high border border-outline-variant/10 flex flex-col items-center justify-center gap-3 group active:scale-95 transition-transform duration-500 shadow-[0_0_50px_rgba(0,0,0,0.5)]">
+<div class="absolute inset-0 rounded-full bg-gradient-to-tr from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-secondary text-4xl group-hover:drop-shadow-[0_0_8px_rgba(0,253,193,0.5)] transition-all" data-icon="fingerprint">fingerprint</span>
+<div class="text-center">
+<span class="block font-headline text-xs font-bold tracking-[0.2em] uppercase text-primary mb-1">Hold</span>
+<span class="block font-body text-[10px] text-on-surface-variant tracking-wider">To Reveal Day</span>
+</div>
+<!-- Ambient Glow -->
+<div class="absolute -inset-4 bg-secondary/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+</button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 pb-8 pt-4 bg-[#0e0e0e]/60 backdrop-blur-xl z-50 rounded-t-[0.75rem] shadow-[0_-4px_40px_rgba(0,253,193,0.08)]">
+<!-- Home Active -->
+<button onclick="window.location.href='a300b4a31bf947f3b265de2ac01bb393.html'" class="flex flex-col items-center justify-center text-[#00fdc1] bg-[#1a1919] rounded-xl px-4 py-2 active:scale-90 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Manrope'] text-[10px] font-medium tracking-wide uppercase">Home</span>
+</button>
+<!-- History -->
+<button onclick="window.location.href='7552f31983d0487c81a8284c45898206.html'" class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#f9f9f9] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined mb-1">history</span>
+<span class="font-['Manrope'] text-[10px] font-medium tracking-wide uppercase">History</span>
+</button>
+<!-- Settings -->
+<button onclick="window.location.href='aeb3363e8f79430da3c7ec316de2a6ec.html'" class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#f9f9f9] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined mb-1">settings</span>
+<span class="font-['Manrope'] text-[10px] font-medium tracking-wide uppercase">Settings</span>
+</button>
+</nav>
+<!-- Subtle Texture Overlay -->
+<div class="fixed inset-0 pointer-events-none z-[100] mix-blend-overlay opacity-[0.03]">
+<img class="w-full h-full object-cover" data-alt="ultra-fine film grain texture with subtle organic variations and micro-noise on a dark charcoal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClkrCs8vOtnjHx3UAOJGgM0l2NtDiYGaIK1y8ftDIPraDb2IVgyi39stLTNA6WRW_lZd9Ft3ObzJIRH-YxU2BjJZhvk-e9F8KUrMFM1-ymSi_IoicooFWujHUlFSK4CHwJxMxsZ9ZE5jS8l4c9z94mnbsUkyapieCqZmUJQnepZTBUAp0WLVM9IkdzUhsHw_g4k16s5lhxgRd1jc-1pk-LSvTSV2TgDAvTlLRTKgncv6FKH_f1hABW6cgTvIQW_nr5KovSThtfqCfG"/>
+</div>
+</body></html>

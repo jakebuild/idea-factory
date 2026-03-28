@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>ShakeShot - Hold Interaction</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#f9f9f9",
+              "on-secondary-container": "#dfffef",
+              "error-container": "#9f0519",
+              "surface-container-high": "#201f1f",
+              "on-secondary-fixed": "#004734",
+              "on-primary-fixed-variant": "#606161",
+              "inverse-on-surface": "#565554",
+              "on-secondary": "#005c44",
+              "tertiary-fixed": "#ff9479",
+              "surface-container": "#1a1919",
+              "on-background": "#ffffff",
+              "inverse-primary": "#5e5f5f",
+              "surface-container-lowest": "#000000",
+              "surface": "#0e0e0e",
+              "secondary-fixed": "#00fdc1",
+              "primary-fixed-dim": "#dddddd",
+              "on-tertiary-fixed-variant": "#721600",
+              "surface-container-low": "#131313",
+              "secondary-dim": "#00edb4",
+              "outline": "#777575",
+              "primary-container": "#a0a0a1",
+              "on-error-container": "#ffa8a3",
+              "on-error": "#490006",
+              "secondary": "#00fdc1",
+              "secondary-fixed-dim": "#00edb4",
+              "on-primary-container": "#212323",
+              "error": "#ff716c",
+              "on-tertiary-fixed": "#360600",
+              "error-dim": "#d7383b",
+              "inverse-surface": "#fcf8f8",
+              "surface-dim": "#0e0e0e",
+              "outline-variant": "#494847",
+              "on-tertiary": "#440900",
+              "primary-dim": "#ebebeb",
+              "on-secondary-fixed-variant": "#00664c",
+              "on-surface-variant": "#adaaaa",
+              "tertiary-dim": "#dc3300",
+              "primary-fixed": "#ebebeb",
+              "tertiary-container": "#fc3c00",
+              "on-primary": "#5e5f5f",
+              "primary": "#f9f9f9",
+              "tertiary-fixed-dim": "#ff7d5c",
+              "surface-container-highest": "#262626",
+              "tertiary": "#ff7350",
+              "surface-variant": "#262626",
+              "on-primary-fixed": "#434545",
+              "surface-bright": "#2c2c2c",
+              "secondary-container": "#006c50",
+              "on-tertiary-container": "#000000",
+              "on-surface": "#ffffff",
+              "background": "#0e0e0e"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ink-bleed-background {
+            background: radial-gradient(circle at center, rgba(0, 253, 193, 0.05) 0%, rgba(14, 14, 14, 1) 70%);
+        }
+        /* Custom progress ring logic simulated with CSS for visual representation */
+        .intensity-ring {
+            transform: rotate(-90deg);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/30 antialiased overflow-hidden">
+<!-- Back button header -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0e0e]/60 backdrop-blur-xl flex items-center px-6 h-16">
+<button onclick="window.location.href='a300b4a31bf947f3b265de2ac01bb393.html'" class="flex items-center justify-center text-[#f9f9f9] active:scale-95 transition-transform">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+</header>
+<!-- Immersive Background Layer -->
+<div class="fixed inset-0 z-0 overflow-hidden">
+<div class="absolute inset-0 bg-surface"></div>
+<!-- Fluid Ink Texture Overlay -->
+<div class="absolute inset-0 opacity-20 mix-blend-screen" data-alt="abstract organic ink wash texture with deep charcoal and subtle emerald swirls flowing across dark canvas">
+<div class="w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-secondary/10 via-surface-container-lowest to-surface"></div>
+</div>
+</div>
+<!-- Full Screen Takeover Content -->
+<main class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 py-12 text-center">
+<!-- Status Indicator Area -->
+<div class="mb-12 space-y-2">
+<span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-secondary/20 bg-secondary/5 backdrop-blur-md text-secondary font-label text-xs tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shadow-[0_0_8px_rgba(0,253,193,0.8)]"></span>
+                Capturing Motion
+            </span>
+<h1 class="text-4xl md:text-6xl font-headline font-bold tracking-tighter text-primary">
+                Chaotic
+            </h1>
+<p class="text-on-surface-variant text-sm font-medium tracking-wide font-body">
+                Release to generate from maximum intensity
+            </p>
+</div>
+<!-- The Central Interaction Engine -->
+<div class="relative flex items-center justify-center w-80 h-80 md:w-96 md:h-96">
+<!-- Exterior Atmosphere Glow -->
+<div class="absolute inset-0 rounded-full bg-tertiary/10 blur-[80px]"></div>
+<!-- Intensity Ring (Simulating chaotic state: orange-red) -->
+<svg class="intensity-ring w-full h-full" viewbox="0 0 100 100">
+<!-- Track -->
+<circle class="text-surface-variant opacity-20" cx="50" cy="50" fill="none" r="45" stroke="currentColor" stroke-width="2"></circle>
+<!-- Filling Progress (Simulated at ~85%) -->
+<circle class="text-tertiary drop-shadow-[0_0_12px_rgba(255,115,80,0.6)]" cx="50" cy="50" fill="none" r="45" stroke="currentColor" stroke-dasharray="282.7" stroke-dashoffset="40" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<!-- Main Interactive Button (Enlarged for active hold state) -->
+<div class="absolute inset-0 flex items-center justify-center p-8">
+<div onclick="window.location.href='6b9e11fbccb249db85a0b640027975e2.html'" class="w-full h-full rounded-full bg-gradient-to-tr from-surface-container-high to-surface-bright flex flex-col items-center justify-center border border-white/5 shadow-2xl relative overflow-hidden group cursor-pointer">
+<!-- Internal Pulse/Fluid Effect -->
+<div class="absolute inset-0 bg-tertiary/5 mix-blend-overlay"></div>
+<!-- Icon and Label -->
+<div class="relative z-20 flex flex-col items-center">
+<span class="material-symbols-outlined text-tertiary text-6xl mb-4" style="font-variation-settings: 'FILL' 1;">
+                            bolt
+                        </span>
+<div class="h-1 w-24 bg-surface-variant rounded-full overflow-hidden mb-2">
+<div class="h-full bg-tertiary w-full shadow-[0_0_10px_rgba(255,115,80,0.8)]"></div>
+</div>
+<span class="text-primary font-headline font-bold text-lg tracking-tight">HOLDING</span>
+<span class="text-on-surface-variant text-xs mt-1 font-body tracking-wide">Release to generate</span>
+</div>
+<!-- Subtle haptic indicator dots at threshold points -->
+<div class="absolute inset-0 pointer-events-none">
+<div class="absolute top-4 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-secondary opacity-40"></div>
+<div class="absolute top-1/2 right-4 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-tertiary/60"></div>
+<div class="absolute bottom-4 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-error opacity-80 shadow-[0_0_8px_rgba(255,113,108,0.5)]"></div>
+</div>
+</div>
+</div>
+<!-- Threshold Indicators (Decorative) -->
+<div class="absolute -inset-4 border border-outline-variant/10 rounded-full pointer-events-none"></div>
+<div class="absolute -inset-10 border border-outline-variant/5 rounded-full pointer-events-none"></div>
+</div>
+<!-- Haptic/Timeline Feedback Bar -->
+<div class="mt-16 w-full max-w-xs flex justify-between items-end h-8 gap-1 px-4">
+<!-- Gentle Range -->
+<div class="flex-1 flex gap-1 items-end h-full">
+<div class="w-full bg-secondary/20 h-2 rounded-t-sm"></div>
+<div class="w-full bg-secondary/20 h-3 rounded-t-sm"></div>
+<div class="w-full bg-secondary/20 h-2 rounded-t-sm"></div>
+<div class="w-full bg-secondary/20 h-4 rounded-t-sm"></div>
+</div>
+<!-- Moderate Range -->
+<div class="flex-1 flex gap-1 items-end h-full">
+<div class="w-full bg-on-secondary-fixed-variant/20 h-5 rounded-t-sm"></div>
+<div class="w-full bg-on-secondary-fixed-variant/20 h-4 rounded-t-sm"></div>
+<div class="w-full bg-on-secondary-fixed-variant/20 h-6 rounded-t-sm"></div>
+<div class="w-full bg-on-secondary-fixed-variant/20 h-5 rounded-t-sm"></div>
+</div>
+<!-- Chaotic Range (Active) -->
+<div class="flex-1 flex gap-1 items-end h-full">
+<div class="w-full bg-tertiary h-7 rounded-t-sm shadow-[0_0_10px_rgba(255,115,80,0.4)]"></div>
+<div class="w-full bg-tertiary h-8 rounded-t-sm shadow-[0_0_10px_rgba(255,115,80,0.4)]"></div>
+<div class="w-full bg-tertiary h-6 rounded-t-sm shadow-[0_0_10px_rgba(255,115,80,0.4)]"></div>
+<div class="w-full bg-tertiary h-[120%] rounded-t-sm shadow-[0_0_15px_rgba(255,115,80,0.6)]"></div>
+</div>
+</div>
+<!-- Feedback Footer -->
+<div class="mt-8 flex flex-col items-center gap-4">
+<div class="flex items-center gap-4 text-on-surface-variant font-label text-[10px] tracking-[0.2em] uppercase">
+<span>0.0s</span>
+<div class="w-32 h-[1px] bg-outline-variant/20 relative">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-[85%] h-[2px] bg-tertiary"></div>
+</div>
+<span>3.0s</span>
+</div>
+<button onclick="window.location.href='a300b4a31bf947f3b265de2ac01bb393.html'" class="mt-4 flex items-center gap-2 text-on-surface-variant/60 hover:text-primary transition-colors font-label text-xs uppercase tracking-widest">
+<span class="material-symbols-outlined text-sm">close</span>
+                Cancel Hold
+            </button>
+</div>
+</main>
+<!-- Visual Texture Layers for depth -->
+<div class="fixed top-0 right-0 w-1/2 h-full pointer-events-none opacity-10 mix-blend-overlay" data-alt="soft light beam filtering through dark cinematic space with subtle dust particles">
+<div class="w-full h-full bg-gradient-to-l from-secondary/20 to-transparent"></div>
+</div>
+<!-- Bottom nav (Home tab active - parent is Morning Home) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 pb-8 pt-4 bg-[#0e0e0e]/60 backdrop-blur-xl z-50 rounded-t-[0.75rem] shadow-[0_-4px_40px_rgba(0,253,193,0.08)]">
+<button onclick="window.location.href='a300b4a31bf947f3b265de2ac01bb393.html'" class="flex flex-col items-center justify-center text-[#00fdc1] bg-[#1a1919] rounded-xl px-4 py-2 active:scale-90 duration-200">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Manrope'] text-[10px] font-medium tracking-wide uppercase">Home</span>
+</button>
+<button onclick="window.location.href='7552f31983d0487c81a8284c45898206.html'" class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#f9f9f9] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined mb-1">history</span>
+<span class="font-['Manrope'] text-[10px] font-medium tracking-wide uppercase">History</span>
+</button>
+<button onclick="window.location.href='aeb3363e8f79430da3c7ec316de2a6ec.html'" class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#f9f9f9] transition-all active:scale-90 duration-200">
+<span class="material-symbols-outlined mb-1">settings</span>
+<span class="font-['Manrope'] text-[10px] font-medium tracking-wide uppercase">Settings</span>
+</button>
+</nav>
+</body></html>

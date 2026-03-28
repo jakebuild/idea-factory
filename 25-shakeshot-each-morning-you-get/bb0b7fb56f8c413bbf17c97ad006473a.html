@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>ShakeShot - Portrait Reveal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#fcf8f8",
+              "surface-container-high": "#201f1f",
+              "surface-container": "#1a1919",
+              "tertiary-fixed-dim": "#ff7d5c",
+              "secondary-fixed": "#00fdc1",
+              "secondary-container": "#006c50",
+              "primary-fixed-dim": "#dddddd",
+              "primary": "#f9f9f9",
+              "surface-bright": "#2c2c2c",
+              "on-primary": "#5e5f5f",
+              "on-tertiary-fixed": "#360600",
+              "inverse-primary": "#5e5f5f",
+              "outline-variant": "#494847",
+              "on-surface": "#ffffff",
+              "on-surface-variant": "#adaaaa",
+              "on-primary-container": "#212323",
+              "primary-dim": "#ebebeb",
+              "tertiary-dim": "#dc3300",
+              "secondary-dim": "#00edb4",
+              "on-tertiary-container": "#000000",
+              "on-secondary-container": "#dfffef",
+              "tertiary": "#ff7350",
+              "surface-container-lowest": "#000000",
+              "on-secondary-fixed": "#004734",
+              "tertiary-container": "#fc3c00",
+              "outline": "#777575",
+              "error-container": "#9f0519",
+              "surface-dim": "#0e0e0e",
+              "on-secondary-fixed-variant": "#00664c",
+              "surface-tint": "#f9f9f9",
+              "secondary": "#00fdc1",
+              "surface-container-low": "#131313",
+              "error-dim": "#d7383b",
+              "surface-container-highest": "#262626",
+              "on-error": "#490006",
+              "inverse-on-surface": "#565554",
+              "on-secondary": "#005c44",
+              "on-tertiary": "#440900",
+              "on-primary-fixed": "#434545",
+              "primary-fixed": "#ebebeb",
+              "surface-variant": "#262626",
+              "tertiary-fixed": "#ff9479",
+              "error": "#ff716c",
+              "primary-container": "#a0a0a1",
+              "background": "#0e0e0e",
+              "on-primary-fixed-variant": "#606161",
+              "on-error-container": "#ffa8a3",
+              "on-background": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ink-bleed-gradient {
+            background: linear-gradient(135deg, #00fdc1 0%, #006c50 100%);
+        }
+        .reveal-mask {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body select-none overflow-hidden">
+<!-- Top App Bar (Shared Component Strategy) -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0e0e]/60 backdrop-blur-xl flex items-center justify-between px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button onclick="window.location.href='a300b4a31bf947f3b265de2ac01bb393.html'" class="active:scale-95 transition-transform text-[#f9f9f9]">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<span class="text-2xl font-['Space_Grotesk'] font-bold tracking-tighter text-[#f9f9f9]">SHAKESHOT</span>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#adaaaa] hover:text-[#00fdc1] transition-colors" data-icon="more_vert">more_vert</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="relative h-screen w-full flex flex-col pt-16 pb-24 px-6 overflow-hidden">
+<!-- Hero Portrait Layer -->
+<div class="absolute inset-0 z-0">
+<div class="relative w-full h-full transform scale-100 transition-transform duration-1000 ease-out">
+<img alt="Abstract Portrait" class="w-full h-full object-cover reveal-mask grayscale contrast-125 opacity-70" data-alt="cinematic close-up portrait with dramatic high-contrast lighting, digital ink wash textures, neon cyan highlights on facial features, dark noir atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZz0bYjhT8fd828vDOvujrVnzfWo2DpGT6yqoxV607UxekCKXN7fsOKeM5KwMYbVTQ3-FGVkRex1_8mHwvsiWfLVFnaUXjEg2VpuLBEvL18vB_mDueu0UGDC5XElxukK9EOj5lcWVEYQM--CLVVxiP4GGMcoDUujbZOgE8JyOTLs5YdQ5BAX6x4eocRVyUH4Ha_aNK2pidOrd0wRGH3Y2xOvrm5_n1Ou9UXtfF7GbzEoPjBu1N9fuvXkv71hq_fmZqM68sFbJ3uy7-"/>
+<!-- Ambient Glow Behind Portrait -->
+<div class="absolute inset-0 bg-radial from-secondary/5 to-transparent pointer-events-none"></div>
+</div>
+</div>
+<!-- Float Elements (Keywords) -->
+<div class="relative z-10 mt-8 flex flex-wrap gap-3">
+<div class="px-4 py-2 bg-surface-container/60 backdrop-blur-md rounded-full border border-outline-variant/15 flex items-center gap-2">
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="text-xs font-label font-medium tracking-wider uppercase text-on-surface-variant">focused</span>
+</div>
+<div class="px-4 py-2 bg-surface-container/60 backdrop-blur-md rounded-full border border-outline-variant/15 flex items-center gap-2">
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="text-xs font-label font-medium tracking-wider uppercase text-on-surface-variant">meetings</span>
+</div>
+<div class="px-4 py-2 bg-surface-container/60 backdrop-blur-md rounded-full border border-outline-variant/15 flex items-center gap-2">
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="text-xs font-label font-medium tracking-wider uppercase text-on-surface-variant">deadline</span>
+</div>
+</div>
+<!-- Middle Space (Asymmetric breathing room) -->
+<div class="flex-grow"></div>
+<!-- Lower Info Block -->
+<div class="relative z-10 flex items-end justify-between mb-8">
+<div class="flex flex-col gap-1">
+<span class="text-[10px] uppercase tracking-[0.2em] text-on-surface-variant font-bold">Intensity Profile</span>
+<div class="flex items-baseline gap-2">
+<h2 class="text-4xl font-headline font-bold text-secondary drop-shadow-[0_0_15px_rgba(0,253,193,0.3)]">Chaotic</h2>
+<span class="text-on-surface-variant/40 font-headline">05</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-full border border-outline-variant/20 flex items-center justify-center backdrop-blur-xl">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="auto_awesome">auto_awesome</span>
+</div>
+</div>
+<!-- Action Layer (CTAs) -->
+<div class="relative z-10 flex flex-col gap-4 mb-4">
+<button onclick="alert('Saved!')" class="w-full h-14 bg-secondary text-on-secondary font-bold font-headline rounded-xl flex items-center justify-center gap-2 active:scale-95 transition-all shadow-[0_0_30px_rgba(0,253,193,0.15)]">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                Save to Photos
+            </button>
+<button onclick="window.location.href='a300b4a31bf947f3b265de2ac01bb393.html'" class="w-full h-14 bg-transparent border border-secondary/20 text-secondary font-bold font-headline rounded-xl flex items-center justify-center gap-2 active:opacity-70 transition-all">
+<span class="material-symbols-outlined" data-icon="event_repeat">event_repeat</span>
+                Come back tonight
+            </button>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Shared Component) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 pb-safe px-4 bg-[#0e0e0e]/80 backdrop-blur-2xl rounded-t-[0.75rem] z-50 border-t border-[#494847]/15 shadow-[0_-4px_40px_rgba(0,253,193,0.08)]">
+<!-- Home (Active - parent is Morning Home) -->
+<button onclick="window.location.href='a300b4a31bf947f3b265de2ac01bb393.html'" class="flex flex-col items-center justify-center text-[#00fdc1] drop-shadow-[0_0_8px_rgba(0,253,193,0.4)] transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Manrope'] text-[10px] font-semibold tracking-wide uppercase mt-1">Home</span>
+</button>
+<!-- History -->
+<button onclick="window.location.href='7552f31983d0487c81a8284c45898206.html'" class="flex flex-col items-center justify-center text-[#adaaaa] hover:text-[#f9f9f9] transition-all">
+<span class="material-symbols-outlined">history</span>
+<span class="font-['Manrope'] text-[10px] font-semibold tracking-wide uppercase mt-1">History</span>
+</button>
+<!-- Settings -->
+<button onclick="window.location.href='aeb3363e8f79430da3c7ec316de2a6ec.html'" class="flex flex-col items-center justify-center text-[#adaaaa] hover:text-[#f9f9f9] transition-all">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Manrope'] text-[10px] font-semibold tracking-wide uppercase mt-1">Settings</span>
+</button>
+</nav>
+<!-- Background Atmospheric Texture Overlay -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] z-[60]">
+<svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<filter id="noiseFilter">
+<feturbulence basefrequency="0.65" numoctaves="3" stitchtiles="stitch" type="fractalNoise"></feturbulence>
+</filter>
+<rect filter="url(#noiseFilter)" height="100%" width="100%"></rect>
+</svg>
+</div>
+</body></html>

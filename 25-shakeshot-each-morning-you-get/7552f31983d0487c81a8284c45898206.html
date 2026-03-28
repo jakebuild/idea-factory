@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#2c2c2c",
+              "error-container": "#9f0519",
+              "surface-container-high": "#201f1f",
+              "inverse-on-surface": "#565554",
+              "surface-tint": "#f9f9f9",
+              "on-secondary-container": "#dfffef",
+              "error-dim": "#d7383b",
+              "surface-container-highest": "#262626",
+              "on-secondary-fixed": "#004734",
+              "on-tertiary": "#440900",
+              "on-surface-variant": "#adaaaa",
+              "on-error": "#490006",
+              "tertiary-fixed": "#ff9479",
+              "surface-variant": "#262626",
+              "secondary": "#00fdc1",
+              "primary-container": "#a0a0a1",
+              "on-surface": "#ffffff",
+              "surface-container-lowest": "#000000",
+              "on-primary": "#5e5f5f",
+              "on-secondary-fixed-variant": "#00664c",
+              "surface-dim": "#0e0e0e",
+              "tertiary-fixed-dim": "#ff7d5c",
+              "tertiary-dim": "#dc3300",
+              "tertiary-container": "#fc3c00",
+              "on-secondary": "#005c44",
+              "on-primary-fixed": "#434545",
+              "outline-variant": "#494847",
+              "on-tertiary-fixed-variant": "#721600",
+              "surface-container-low": "#131313",
+              "secondary-fixed-dim": "#00edb4",
+              "outline": "#777575",
+              "on-primary-fixed-variant": "#606161",
+              "primary-dim": "#ebebeb",
+              "secondary-container": "#006c50",
+              "surface-container": "#1a1919",
+              "on-error-container": "#ffa8a3",
+              "primary-fixed": "#ebebeb",
+              "secondary-dim": "#00edb4",
+              "inverse-primary": "#5e5f5f",
+              "on-tertiary-fixed": "#360600",
+              "surface": "#0e0e0e",
+              "inverse-surface": "#fcf8f8",
+              "secondary-fixed": "#00fdc1",
+              "primary": "#f9f9f9",
+              "on-background": "#ffffff",
+              "error": "#ff716c",
+              "on-tertiary-container": "#000000",
+              "on-primary-container": "#212323",
+              "tertiary": "#ff7350",
+              "primary-fixed-dim": "#dddddd",
+              "background": "#0e0e0e"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ink-bleed {
+            background: radial-gradient(circle at top right, rgba(0, 253, 193, 0.05), transparent 70%);
+        }
+        .glass-card {
+            background: rgba(32, 31, 31, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary selection:text-on-secondary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0e0e] dark:bg-[#0e0e0e] shadow-[0px_40px_40px_rgba(0,253,193,0.08)] flex items-center justify-between px-6 h-16 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#00fdc1]" data-icon="local_fire_department">local_fire_department</span>
+<h1 class="font-['Space_Grotesk'] font-bold tracking-tight text-[#f9f9f9]">History</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#adaaaa] hover:text-[#00fdc1] transition-colors duration-300" data-icon="search">search</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-high border border-outline-variant/15 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a woman with artistic dramatic lighting and neutral expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNZsJ1enJGQusQQvjkhikNqMUs7oAdFFuzyY8Ca2cNbVcRzMN0mqdXDvSSE5F-mqQHZdywWFG1Cr4LSt-Kl0Lx83R_qWtXCvMAfcAQUOIPjiR-fYLGvLCXSSqAiLCRMtS5NPGzI2Ad1skPaFnqDIPdDnt13g-yzumyuvs76CK72_Zc9SAlQUTTvMbcyy6yQih8-FE0MmwjRgbWAMOluCH7B-HCoUqIMMwE015Wr3RZvnfJIX6ysMXPLVZMAQ1LCyHwGMrROIKXjpUn"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 min-h-screen ink-bleed">
+<!-- Streak Counter Section -->
+<section class="mb-14">
+<div class="glass-card p-8 rounded-xl relative overflow-hidden group active:scale-95 transition-transform duration-300 border border-outline-variant/10">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 blur-[60px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+<div class="relative z-10 flex flex-col items-center">
+<span class="text-secondary text-sm font-label uppercase tracking-[0.2em] mb-2">Current Momentum</span>
+<h2 class="font-headline font-black text-5xl md:text-7xl text-primary tracking-tighter">7 day streak <span class="text-secondary">🔥</span></h2>
+<p class="text-on-surface-variant text-sm mt-4 text-center max-w-xs leading-relaxed">You're in the flow. Keep the shutter moving and the reflection deep.</p>
+</div>
+</div>
+</section>
+<!-- Section Header -->
+<div class="flex items-end justify-between mb-8">
+<div>
+<h3 class="font-headline text-3xl font-bold text-primary tracking-tight">Your Year in Days</h3>
+<p class="text-on-surface-variant text-sm font-medium mt-1">Archive of fragments and feelings</p>
+</div>
+<div class="flex gap-2">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+<div class="w-2 h-2 rounded-full bg-surface-container-highest"></div>
+</div>
+</div>
+<!-- Scrollable 2-Column Grid -->
+<div class="grid grid-cols-2 gap-x-4 gap-y-10">
+<!-- Day Card: Chaos -->
+<div class="flex flex-col gap-3">
+<div onclick="window.location.href='ef3c9818ec1c4a9c9243ae4c8514ea96.html'" class="aspect-[3/4] rounded-xl overflow-hidden relative group cursor-pointer bg-surface-container-low shadow-2xl">
+<img class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 group-hover:scale-110" data-alt="High contrast black and white street photography of busy urban intersection with motion blur and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSJE7Q9Z5S4t8RFe7B1TTjaLcM28JBboeKDEYBx0cdVMtcq5phL5rqs5TeNObPFaHrm2UMFob4ys4fsKMKfpc_zNDP7MPQpXT1PXOxu5XW_h2J_5UI5NLyUQHX_714HbwnuZdTijr8EaJYV6QUbfXonnQyj-b1lo_epYNRCOclFGF0ksxf2jFk0jzuh5IlpnyaQfycyJ2YisRSFJ7ba8amjqdQTpJShrJwlwxpVciQv1pKOD0Yt4QGtat3HMbQt5nIS4XXXUsrmwCf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center p-4">
+<span class="font-headline text-2xl font-black text-secondary tracking-widest uppercase drop-shadow-[0_0_15px_rgba(0,253,193,0.6)]">Chaos</span>
+</div>
+</div>
+<div class="px-1">
+<p class="text-primary text-xs font-bold uppercase tracking-widest">Oct 24</p>
+<p class="text-on-surface-variant text-[10px] font-medium uppercase tracking-tighter">Thursday</p>
+</div>
+</div>
+<!-- Day Card: Focused -->
+<div class="flex flex-col gap-3">
+<div onclick="window.location.href='ef3c9818ec1c4a9c9243ae4c8514ea96.html'" class="aspect-[3/4] rounded-xl overflow-hidden relative group cursor-pointer bg-surface-container-low shadow-2xl">
+<img class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 group-hover:scale-110" data-alt="High contrast black and white minimal composition of a single lightbulb in a dark room with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO54iMa1fceGgWK1YE1TnjwGOhpE9hxFtfXyZHZhaxtkbYEmxgIb85iB_otPCRzwF2GvOH2ukY57998yVGVriV0JJNOX_jwB6uQVQeV0T_A3-aBiZ64oYh9q_vZOts5Q3_8wxrB2YV6i2fY-30AQ_AqoU-LFyWRYQYPW2KvRoPalzRLtMvBy-JjD4EgFyhiar9zZu-q8IornEc9RfeW4ilateGIPadB9VQILak4uox7sLHWWwH7lo3e_MsLjvSHYw0EjkGL5HducbZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center p-4">
+<span class="font-headline text-2xl font-black text-secondary tracking-widest uppercase drop-shadow-[0_0_15px_rgba(0,253,193,0.6)]">Focused</span>
+</div>
+</div>
+<div class="px-1">
+<p class="text-primary text-xs font-bold uppercase tracking-widest">Oct 23</p>
+<p class="text-on-surface-variant text-[10px] font-medium uppercase tracking-tighter">Wednesday</p>
+</div>
+</div>
+<!-- Day Card: Incomplete -->
+<div class="flex flex-col gap-3">
+<div class="aspect-[3/4] rounded-xl overflow-hidden relative group cursor-pointer border-2 border-dashed border-outline-variant/20 bg-surface-container-low">
+<div class="absolute inset-0 bg-[#0e0e0e]/60 grayscale brightness-50">
+<img class="w-full h-full object-cover" data-alt="Desaturated blurry landscape of mountains at dusk with heavy fog and low visibility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWql_K4qMGK89LObeSD6lNJdMBiVYej2N-HzyhBdc4Itic-sVe3lsW6U92Bjw1Qrf5-TjIV7goXCwh4XzkUFNPVEl4DTklqBSwbr609Ne49hVtYkDC83UUgUxrmKkVVUJQnSNeQxu_mMbEEEt8cN6xJbnRdbB4LQ22KnrHHZGXBtDqqS4luUWOea2iBYTV0G8c7u3jEa8ovHeIz0KqTpoPjdx1HOaOOOBodfVGCcbl6aAuW9liyrFLUllwXSuAOajpQj0tn0xdTH89"/>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-4 gap-2">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="add_circle">add_circle</span>
+<span class="font-label text-[10px] font-bold text-on-surface-variant uppercase tracking-widest text-center">Tap to complete</span>
+</div>
+</div>
+<div class="px-1">
+<p class="text-on-surface-variant/40 text-xs font-bold uppercase tracking-widest">Oct 22</p>
+<p class="text-on-surface-variant/40 text-[10px] font-medium uppercase tracking-tighter">Tuesday</p>
+</div>
+</div>
+<!-- Day Card: Calm -->
+<div class="flex flex-col gap-3">
+<div onclick="window.location.href='ef3c9818ec1c4a9c9243ae4c8514ea96.html'" class="aspect-[3/4] rounded-xl overflow-hidden relative group cursor-pointer bg-surface-container-low shadow-2xl">
+<img class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 group-hover:scale-110" data-alt="High contrast black and white shot of still water ripples in a forest lake at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKlIb7KHs_mofROEpfM-DXqEUBk4WwuJhiPuhX3vQ0h9dmE7TlZz_r8C30oXMgfjvlHzGJ3RYYWOFOgN9ub_KXzOTagsPbiqP-PqIh_0ZZwQe5blZTsBTx-sWMGvRBiPoGMe1W4Pm3C_v98o0aARDvmBD03lEe_zAAgeLY23fucIVA2xEVpe22JF4cl9G40Qz2AZCYazzakQ6vHXRSHcV6Kp7Hsllzd7dajlzdMPrQ9I2k9NCBcfPyktvEaDf_jNXUZY05UsQkUnWF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center p-4">
+<span class="font-headline text-2xl font-black text-secondary tracking-widest uppercase drop-shadow-[0_0_15px_rgba(0,253,193,0.6)]">Calm</span>
+</div>
+</div>
+<div class="px-1">
+<p class="text-primary text-xs font-bold uppercase tracking-widest">Oct 21</p>
+<p class="text-on-surface-variant text-[10px] font-medium uppercase tracking-tighter">Monday</p>
+</div>
+</div>
+<!-- Day Card: Vibrant -->
+<div class="flex flex-col gap-3">
+<div onclick="window.location.href='ef3c9818ec1c4a9c9243ae4c8514ea96.html'" class="aspect-[3/4] rounded-xl overflow-hidden relative group cursor-pointer bg-surface-container-low shadow-2xl">
+<img class="w-full h-full object-cover grayscale contrast-125 transition-transform duration-700 group-hover:scale-110" data-alt="High contrast black and white photo of people laughing around a table with dramatic shadows and highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1DN3FZ4nH8rFJJWbfbolMY_K_A8CwZaXulqKMw4vxf2hagKN6W2BiVL9_4Ti5QXC-u06doVOgldUKs-UN6afammDs5baGgi_G0ssMXpImTDBUS0_BWb5pIYLfUERz4pUgc0shov2n7L-8byO2-jy7SKp_kFg4VbuqIf9bbKMSMVtsUJYlEg0lMsTkh05NwKjW9a_V7UiM-lOakn_my9UIKRYdimBD05gZeVnf_4haJO-KcMt81k-MC33M9N5gfnlI4nDdqgox-0jo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center p-4">
+<span class="font-headline text-2xl font-black text-secondary tracking-widest uppercase drop-shadow-[0_0_15px_rgba(0,253,193,0.6)]">Vibrant</span>
+</div>
+</div>
+<div class="px-1">
+<p class="text-primary text-xs font-bold uppercase tracking-widest">Oct 20</p>
+<p class="text-on-surface-variant text-[10px] font-medium uppercase tracking-tighter">Sunday</p>
+</div>
+</div>
+<!-- Day Card: Incomplete -->
+<div class="flex flex-col gap-3">
+<div class="aspect-[3/4] rounded-xl overflow-hidden relative group cursor-pointer border-2 border-dashed border-outline-variant/20 bg-surface-container-low">
+<div class="absolute inset-0 bg-[#0e0e0e]/60 grayscale brightness-50">
+<img class="w-full h-full object-cover" data-alt="Abstract blurry monochromatic textures of rain on glass at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnPmAgKsqwVMF7R6PY181fyc_d-mxt4TyzDgAVefwJXBzYvmqXQwvqcSJkr_1Md0oNe18lJfQ2EjayrNkBnl0eZRhOFkvr3iYBXvpCMcrnynhXwIQU5sA66Qf6Um8GHlp2nvyuxT6GYoOXMM34-hzXnjZLIWfzo-XTOJDRvGwMC1v2lGrzWC9uPABzUGsqQls_DcC4VSQ41tW_v5XzacaFOicT8RW1_pg2b7Kvpeqf705HuPkQce-wBwk4SWWz8sas5cmNHWHNhlU8"/>
+</div>
+<div class="absolute inset-0 flex flex-col items-center justify-center p-4 gap-2">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="add_circle">add_circle</span>
+<span class="font-label text-[10px] font-bold text-on-surface-variant uppercase tracking-widest text-center">Tap to complete</span>
+</div>
+</div>
+<div class="px-1">
+<p class="text-on-surface-variant/40 text-xs font-bold uppercase tracking-widest">Oct 19</p>
+<p class="text-on-surface-variant/40 text-[10px] font-medium uppercase tracking-tighter">Saturday</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 py-4 pb-safe bg-[#0e0e0e]/60 backdrop-blur-xl z-50 rounded-t-[0.75rem] border-t border-[#494847]/15">
+<!-- Home -->
+<button onclick="window.location.href='a300b4a31bf947f3b265de2ac01bb393.html'" class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:bg-[#1a1919] transition-all duration-300 active:scale-90">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-['Manrope'] text-[10px] font-medium uppercase tracking-widest">Home</span>
+</button>
+<!-- History (ACTIVE) -->
+<button onclick="window.location.href='7552f31983d0487c81a8284c45898206.html'" class="flex flex-col items-center justify-center text-[#00fdc1] bg-[#201f1f] rounded-[0.75rem] px-4 py-2 transition-all duration-300 active:scale-90">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">history</span>
+<span class="font-['Manrope'] text-[10px] font-medium uppercase tracking-widest">History</span>
+</button>
+<!-- Settings -->
+<button onclick="window.location.href='aeb3363e8f79430da3c7ec316de2a6ec.html'" class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:bg-[#1a1919] transition-all duration-300 active:scale-90">
+<span class="material-symbols-outlined mb-1">settings</span>
+<span class="font-['Manrope'] text-[10px] font-medium uppercase tracking-widest">Settings</span>
+</button>
+</nav>
+</body></html>

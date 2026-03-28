@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#a0a0a1",
+              "primary-fixed": "#ebebeb",
+              "tertiary": "#ff7350",
+              "primary": "#f9f9f9",
+              "on-secondary-container": "#dfffef",
+              "on-tertiary": "#440900",
+              "surface-container-low": "#131313",
+              "tertiary-fixed": "#ff9479",
+              "surface-tint": "#f9f9f9",
+              "secondary": "#00fdc1",
+              "on-secondary": "#005c44",
+              "primary-fixed-dim": "#dddddd",
+              "on-tertiary-container": "#000000",
+              "background": "#0e0e0e",
+              "surface-variant": "#262626",
+              "inverse-on-surface": "#565554",
+              "on-surface": "#ffffff",
+              "surface-dim": "#0e0e0e",
+              "secondary-container": "#006c50",
+              "primary-dim": "#ebebeb",
+              "on-secondary-fixed-variant": "#00664c",
+              "on-primary-fixed-variant": "#606161",
+              "on-primary-fixed": "#434545",
+              "inverse-primary": "#5e5f5f",
+              "error-container": "#9f0519",
+              "surface-container-high": "#201f1f",
+              "tertiary-fixed-dim": "#ff7d5c",
+              "secondary-fixed-dim": "#00edb4",
+              "surface": "#0e0e0e",
+              "on-secondary-fixed": "#004734",
+              "on-primary": "#5e5f5f",
+              "surface-bright": "#2c2c2c",
+              "secondary-dim": "#00edb4",
+              "inverse-surface": "#fcf8f8",
+              "tertiary-container": "#fc3c00",
+              "on-primary-container": "#212323",
+              "on-background": "#ffffff",
+              "surface-container-highest": "#262626",
+              "outline": "#777575",
+              "on-error-container": "#ffa8a3",
+              "secondary-fixed": "#00fdc1",
+              "surface-container": "#1a1919",
+              "on-surface-variant": "#adaaaa",
+              "on-tertiary-fixed": "#360600",
+              "error-dim": "#d7383b",
+              "on-error": "#490006",
+              "error": "#ff716c",
+              "on-tertiary-fixed-variant": "#721600",
+              "outline-variant": "#494847",
+              "tertiary-dim": "#dc3300",
+              "surface-container-lowest": "#000000"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0e0e0e;
+            color: #f9f9f9;
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ink-bleed-bg {
+            background: radial-gradient(circle at top right, rgba(0, 253, 193, 0.05), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(0, 108, 80, 0.05), transparent 40%);
+        }
+        .glass-panel {
+            background: rgba(26, 25, 25, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-32 ink-bleed-bg">
+<header class="w-full top-0 sticky bg-[#0e0e0e] flex items-center justify-between px-6 py-4 w-full z-50">
+<div class="flex items-center gap-4">
+<!-- Settings is a root screen, no back button -->
+<h1 class="font-['Space_Grotesk'] font-bold tracking-tight text-xl text-[#f9f9f9]">Settings</h1>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-high border border-outline-variant/20 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up portrait of a stylish person with modern aesthetic against a dark moody background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxkIwroXcFzZU-PCafVBsFAdgtHmCPDDXdS1uSvURRGZ2oYLwhEuFvpkXHRBPewgkSPQWTRqjfjOWDpLX8DJQVjKtcAlLVqmXpMKMYpBIHyXh2u6PDfCTwhvtpTidGhOc05DFvRv1umEj5b441TPfzS4-5XBXAY1irobTFoqdLIW3HQdeRBZavCZJNvXDEpO1jQmKTziZLJYKwENg7X-u6Z9eEpzGjb79dS8DSwSh_8DqJbNS8kzSsRKKpiu9pVyBgzr4ztobxPfXZ"/>
+</div>
+</header>
+<main class="px-6 space-y-10 mt-6 max-w-2xl mx-auto">
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<h2 class="font-headline text-primary text-xs font-bold uppercase tracking-[0.2em]">Membership</h2>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-secondary-container to-surface-container-high p-[1px]">
+<div class="bg-surface-container-high rounded-[0.7rem] p-6 flex items-center justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-headline font-bold text-lg text-primary">You're on Premium</span>
+</div>
+<p class="text-on-surface-variant text-sm">Full access to Obsidian Ink tools</p>
+</div>
+<a class="text-secondary text-xs font-bold uppercase tracking-wider hover:underline transition-all" href="#">Manage Subscription</a>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="font-headline text-primary text-xs font-bold uppercase tracking-[0.2em]">Notification Settings</h2>
+<div class="bg-surface-container rounded-xl p-5 space-y-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">notifications</span>
+</div>
+<div>
+<p class="font-medium text-primary">Push Notifications</p>
+<p class="text-xs text-on-surface-variant">Stay updated on alerts</p>
+</div>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</div>
+<div class="pt-4 border-t border-outline-variant/10">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">bedtime</span>
+</div>
+<div>
+<p class="font-medium text-primary">Evening Reminder</p>
+<p class="text-xs text-on-surface-variant">Summary of your day</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center gap-2 bg-surface-container-low rounded-xl py-6 px-4">
+<div class="text-center group">
+<div class="text-3xl font-headline font-bold text-primary tracking-tighter hover:text-secondary cursor-pointer transition-colors">09</div>
+<div class="text-[10px] uppercase text-on-surface-variant font-bold mt-1">Hour</div>
+</div>
+<div class="text-3xl font-headline font-bold text-secondary-container opacity-50">:</div>
+<div class="text-center">
+<div class="text-3xl font-headline font-bold text-primary tracking-tighter hover:text-secondary cursor-pointer transition-colors">45</div>
+<div class="text-[10px] uppercase text-on-surface-variant font-bold mt-1">Min</div>
+</div>
+<div class="ml-4 flex flex-col gap-1">
+<div class="px-3 py-1 rounded-lg bg-surface-container-high text-on-surface-variant text-[10px] font-black tracking-widest cursor-pointer hover:bg-secondary/10 hover:text-secondary transition-all">AM</div>
+<div class="px-3 py-1 rounded-lg bg-secondary/20 text-secondary text-[10px] font-black tracking-widest cursor-pointer border border-secondary/20">PM</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="font-headline text-primary text-xs font-bold uppercase tracking-[0.2em]">Integrations</h2>
+<div class="bg-surface-container rounded-xl p-5 hover:bg-surface-container-high transition-colors group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center group-hover:bg-surface-container">
+<span class="material-symbols-outlined text-on-surface-variant">calendar_month</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<p class="font-medium text-primary">Connect Apple Calendar</p>
+<span class="px-1.5 py-0.5 rounded-md bg-secondary/10 text-secondary text-[8px] font-black uppercase tracking-tighter">Coming Soon</span>
+</div>
+<p class="text-xs text-on-surface-variant">Power User Feature</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant">lock</span>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="font-headline text-primary text-xs font-bold uppercase tracking-[0.2em]">Account</h2>
+<div class="bg-surface-container rounded-xl overflow-hidden divide-y divide-outline-variant/10">
+<div class="p-5 flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">sync</span>
+</div>
+<div>
+<p class="font-medium text-primary">Sync Preferences</p>
+<p class="text-xs text-on-surface-variant">Cloud backup across devices</p>
+</div>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</div>
+</div>
+<div class="p-5 flex items-center justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant">alternate_email</span>
+</div>
+<div>
+<p class="font-medium text-primary">Email</p>
+<p class="text-xs text-on-surface-variant">alex.rivera@shakeshot.app</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-sm">edit</span>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="font-headline text-primary text-xs font-bold uppercase tracking-[0.2em]">Support</h2>
+<div class="bg-surface-container rounded-xl overflow-hidden divide-y divide-outline-variant/10">
+<div class="p-5 flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">info</span>
+<p class="font-medium text-primary">About</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<div class="p-5 flex items-center justify-between hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">rate_review</span>
+<p class="font-medium text-primary">Send Feedback</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+</div>
+</section>
+<div class="flex justify-center pt-4">
+<button class="text-error font-headline font-bold text-xs uppercase tracking-[0.2em] px-8 py-3 rounded-xl border border-error/20 bg-error/5 hover:bg-error/10 transition-all active:scale-95">Sign Out</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-6 pb-8 pt-4 bg-[#0e0e0e]/60 backdrop-blur-xl z-50 rounded-t-[0.75rem] shadow-[0_-4px_40px_rgba(0,253,193,0.08)]">
+<!-- Home -->
+<button onclick="window.location.href='a300b4a31bf947f3b265de2ac01bb393.html'" class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#f9f9f9] transition-all active:scale-90 duration-300 cursor-pointer">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-['Manrope'] text-[10px] font-medium tracking-wide">Home</span>
+</button>
+<!-- History -->
+<button onclick="window.location.href='7552f31983d0487c81a8284c45898206.html'" class="flex flex-col items-center justify-center text-[#adaaaa] px-4 py-2 hover:text-[#f9f9f9] transition-all active:scale-90 duration-300 cursor-pointer">
+<span class="material-symbols-outlined mb-1">history</span>
+<span class="font-['Manrope'] text-[10px] font-medium tracking-wide">History</span>
+</button>
+<!-- Settings (ACTIVE) -->
+<button onclick="window.location.href='aeb3363e8f79430da3c7ec316de2a6ec.html'" class="flex flex-col items-center justify-center text-[#00fdc1] bg-[#201f1f] rounded-[0.75rem] px-4 py-2 active:scale-90 duration-300 cursor-pointer">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-['Manrope'] text-[10px] font-medium tracking-wide">Settings</span>
+</button>
+</nav>
+</body></html>
