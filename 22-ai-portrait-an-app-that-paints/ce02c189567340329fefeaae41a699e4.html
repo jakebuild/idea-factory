@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>The Gallery - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#131313",
+              "surface-container-lowest": "#0e0e0e",
+              "surface": "#131313",
+              "outline": "#908fa1",
+              "primary-fixed": "#e1e0ff",
+              "surface-dim": "#131313",
+              "on-tertiary-fixed-variant": "#793100",
+              "on-tertiary-container": "#fff9f7",
+              "on-error-container": "#ffdad6",
+              "on-secondary": "#3c2f00",
+              "secondary-fixed-dim": "#e9c349",
+              "error": "#ffb4ab",
+              "on-secondary-fixed-variant": "#574500",
+              "on-secondary-container": "#342800",
+              "on-primary": "#1000a9",
+              "on-secondary-fixed": "#241a00",
+              "inverse-on-surface": "#313030",
+              "surface-container-high": "#2a2a2a",
+              "primary": "#c0c1ff",
+              "surface-container": "#201f1f",
+              "on-background": "#e5e2e1",
+              "surface-container-highest": "#353534",
+              "on-primary-fixed-variant": "#2f2ebe",
+              "on-primary-container": "#fdf9ff",
+              "primary-fixed-dim": "#c0c1ff",
+              "on-tertiary": "#552000",
+              "secondary": "#e9c349",
+              "on-surface-variant": "#c6c4d8",
+              "tertiary-fixed-dim": "#ffb691",
+              "secondary-container": "#af8d11",
+              "tertiary-fixed": "#ffdbcb",
+              "tertiary": "#ffb691",
+              "primary-container": "#5f62ec",
+              "on-tertiary-fixed": "#341100",
+              "surface-bright": "#393939",
+              "tertiary-container": "#bf5200",
+              "inverse-primary": "#494bd6",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "surface-tint": "#c0c1ff",
+              "surface-variant": "#353534",
+              "surface-container-low": "#1c1b1b",
+              "secondary-fixed": "#ffe088",
+              "outline-variant": "#464556",
+              "on-surface": "#e5e2e1",
+              "on-primary-fixed": "#07006c",
+              "inverse-surface": "#e5e2e1"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-heading {
+            font-family: 'Noto Serif', serif;
+            letter-spacing: -0.02em;
+        }
+        .glass-card {
+            background: rgba(42, 42, 42, 0.4);
+            backdrop-filter: blur(12px);
+        }
+        .primary-gradient-btn {
+            background: linear-gradient(135deg, #c0c1ff 0%, #5f62ec 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 z-40 flex justify-between items-center px-6 h-16 w-full bg-[#131313] no-border bg-gradient-to-b from-[#131313] to-transparent">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#c0c1ff]" data-icon="menu">menu</span>
+<h1 class="font-['Noto_Serif'] tracking-tighter text-on-surface text-xl font-bold text-[#e5e2e1]">The Gallery</h1>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[#c0c1ff]" data-icon="local_fire_department" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Section / Streak & CTA -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="space-y-2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/15">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="local_fire_department" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label text-[10px] uppercase tracking-[0.1rem] text-on-surface-variant">Week 7 Streak 🔥</span>
+</div>
+<h2 class="serif-heading text-4xl md:text-5xl font-bold text-on-surface leading-tight">
+                        Curate your<br/>digital essence.
+                    </h2>
+</div>
+<button class="primary-gradient-btn group relative overflow-hidden px-8 py-4 rounded-xl flex items-center justify-center gap-3 active:scale-95 transition-all" onclick="window.location.href='c4dcf47fb5954bc796edfb9441bbae8e.html'">
+<span class="font-body font-bold text-on-primary tracking-tight">This Week's Portrait</span>
+<span class="material-symbols-outlined text-on-primary text-xl group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Gallery Grid -->
+<section>
+<div class="flex items-baseline justify-between mb-8">
+<h3 class="font-label text-[10px] uppercase tracking-[0.2rem] text-on-surface-variant">Archive / Collection</h3>
+<div class="h-px flex-1 mx-6 bg-outline-variant/15"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+<!-- Card 1 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/10">
+<img alt="AI Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="abstract expressionist oil painting of a side profile of a person with swirling vibrant blues and deep purples, dramatic chiaroscuro lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs_1tDs9ivsWbMMihxf-GsMDFYx8qJGl6dvZja9tT7aHha3Kz051vBz8TFr1gwY-bT0C-vXBB477odmnySubRHipLaONmHVtNahxvqYFlFN1h0RTT3iQMixHKa1OQu3CMmkxo7Z2ReEYi0FJtqwRFiSMrqw7cDyw9Dta4DWqXMe_M5ILTe7GNK-oQH0y_eV170lpccniei9SbLKNDKCpQR6el1CDvyoiOA43tCmFGOE3IwYuo-ptGLPksqVVcEnRFiaC82xDk3rMZX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+<span class="font-body text-[10px] text-primary">View Details</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface">Week 6</span>
+<div class="px-2 py-0.5 rounded-sm bg-surface-container-high border border-outline-variant/15 text-[9px] font-body text-on-surface-variant">Oil Paint</div>
+</div>
+</div>
+</div>
+<!-- Card 2 (Offset/Bento Feel) -->
+<div class="flex flex-col gap-3 group mt-8 md:mt-0">
+<div class="relative aspect-square overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/10">
+<img alt="AI Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="ethereal watercolor portrait of a young woman with soft pastel washes of pink and gold, delicate bleeding edges, dreamy atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvd09Xy58AxljYZDN6Jsy_WaoAUUy6GD2c--CEEahtzxvVp7eM_0nVoy_t6I2PHKykcg-VW_qe-g1caQ2l_-bmMdJrn92hENGvHtbaFlxofM2sXfESjem0pozoUNPi4Gh971uxMHh2mL9BOpgfVUlYiUdAg8M_nAMssZ8tYB6MvYvLvB4ZExFhogB7jGTEeNCv23RSLYtJjCOsodf66Dm5d8yWqD-vw54g_QgP_d1IGDymHGkwCkCDYwcCmPkpCnOg_tcAj2cEYN5J"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+<span class="font-body text-[10px] text-primary">View Details</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface">Week 5</span>
+<div class="px-2 py-0.5 rounded-sm bg-surface-container-high border border-outline-variant/15 text-[9px] font-body text-on-surface-variant">Watercolor</div>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/10">
+<img alt="AI Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="high contrast anime style portrait with neon linework against a pitch black background, vibrant cyber-punk aesthetic with cyan and magenta highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoWgt3nwfb1YfwNJ7tw612aKuQ_XW5yN4PZUb0_xgEsYqB2yZrpuOAECrI7V51X0HvEZCI-8jJaRwaib7EcdlnCpBuDMKs8dEDVrFm7FrmI35OaHGPKpw1sfirFO5WAETfH_N5a1aDGnFID8VlSywzomi7hLXyIpJHq26NdsZR55dljTD_oOxrLwjpYwHudx-NTctU4OlfjQd5-iJHz7UCnTdayY73VouLyvLSMYO1wFcDfkMD7WSACMehkPrg9rOxIDLTHX1LSgRV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+<span class="font-body text-[10px] text-primary">View Details</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface">Week 4</span>
+<div class="px-2 py-0.5 rounded-sm bg-surface-container-high border border-outline-variant/15 text-[9px] font-body text-on-surface-variant">Anime</div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col gap-3 group md:mt-[-4rem]">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/10">
+<img alt="AI Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="dark moody charcoal sketch of a pensive figure, textured paper background, expressive rough strokes and heavy shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv0TqdEjM3phNwLXmIjB_3Ohzx_CpFYW5X32Id7oIhGWwpJoKUoqwvyhgc87EOlu53w8ptVWIEaMW7k4VbwGSkS2ec1ZdYjY343TC1yYaFDDemlEYMzScdwfczDM1aWMg-mRQPzYrvtfC6ptrUJOfdQKqADYrDHqp81OvoMTPb0d_cB88xwT0xQpP-xvW-dEyhkyl_I47Dh4HDZ030koIA2Gk6ZAH0kci8pJVLbBzPooKeCR9LC2-FspWlz2k6hcFEKoawjXWGPudw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+<span class="font-body text-[10px] text-primary">View Details</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface">Week 3</span>
+<div class="px-2 py-0.5 rounded-sm bg-surface-container-high border border-outline-variant/15 text-[9px] font-body text-on-surface-variant">Charcoal</div>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative aspect-square overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/10">
+<img alt="AI Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="classic renaissance style portrait painting of a man in ornate velvet clothing, soft window lighting, rich earthy color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRyV3mMNZVTZMVE_o89VCskUYdHSYsPWYPTciavoQGGAD8prvMn5iqTcYIObGru1spA_WcgwZFr71i7Xz3tE3T1K_BeXKDuUoEzk4t_cAD6kVS_2SqPXexidcX7n1Dh-Bk8LqLTB7D7Z87bNDALSRrMN8CvppBmgY466OTmG62DAA4qHkzEDLtRWCoeRNSQdu5m7O5GvDj2yO0GLUvN5CJCf0zVn3gLURztWMqDB9GpmuwRRMNnGVxpisC4ZIHfdaK78lZfSGqhwNg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+<span class="font-body text-[10px] text-primary">View Details</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface">Week 2</span>
+<div class="px-2 py-0.5 rounded-sm bg-surface-container-high border border-outline-variant/15 text-[9px] font-body text-on-surface-variant">Renaissance</div>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="flex flex-col gap-3 group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low border border-outline-variant/10">
+<img alt="AI Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="minimalist line art portrait with a single continuous gold wire line against a deep matte black background, sophisticated and sleek" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD68vEJM-wagxkBElXsocivkICiFZRvJ53q6gPIHZob5llYSzreLG5qTxrVXjeM-FQ2MJrxa2Ng8IGZqaK2oxKfEldruWU_maK3Kta4-I2AWlY5SOQb7Bjvzvru3c79FIs7oLGKMmoVuo3u7692NfdKv5FSy2VJ-YNRle6_1qCTlkb0FMhF_38GLCfkqfICWG4qmp_HXxTgVULwlH7mTYHrJRbX6h8VzewOz1WGb1ssoPhjXsMH9_CIfgUyfJ5DEeM90-BuF2XFZHmK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+<span class="font-body text-[10px] text-primary">View Details</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex justify-between items-center">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface">Week 1</span>
+<div class="px-2 py-0.5 rounded-sm bg-surface-container-high border border-outline-variant/15 text-[9px] font-body text-on-surface-variant">Minimalist</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-8 left-0 right-0 z-50 flex justify-around items-center h-16 mx-auto bg-[#2a2a2a]/80 dark:bg-[#2a2a2a]/80 backdrop-blur-xl fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-full px-4 border border-[#464556]/15 shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+<!-- Gallery - ACTIVE -->
+<a class="flex flex-col items-center justify-center text-[#c0c1ff] bg-[#c0c1ff]/10 rounded-full py-2 px-6 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="subscriptions" style="font-variation-settings: 'FILL' 1;">subscriptions</span>
+<span class="font-['Manrope'] uppercase tracking-[0.1rem] text-[10px]">Gallery</span>
+</a>
+<!-- Calendar - INACTIVE -->
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/50 py-2 px-6 hover:text-[#c0c1ff] transition-all active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-['Manrope'] uppercase tracking-[0.1rem] text-[10px]">Calendar</span>
+</a>
+<!-- Settings - INACTIVE -->
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/50 py-2 px-6 hover:text-[#c0c1ff] transition-all active:scale-90 transition-transform duration-200" href="#" onclick="window.location.href='246d97e3215e49eca4387891a89b7d38.html'; return false;">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Manrope'] uppercase tracking-[0.1rem] text-[10px]">Settings</span>
+</a>
+</nav>
+</body></html>

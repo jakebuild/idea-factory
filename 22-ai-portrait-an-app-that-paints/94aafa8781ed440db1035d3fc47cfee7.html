@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>Generating Your Portrait | Lumina Muse</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#c6c4d8",
+              "tertiary-container": "#bf5200",
+              "on-primary": "#1000a9",
+              "primary-fixed-dim": "#c0c1ff",
+              "inverse-primary": "#494bd6",
+              "surface-container": "#201f1f",
+              "on-primary-fixed-variant": "#2f2ebe",
+              "surface": "#131313",
+              "on-secondary-container": "#342800",
+              "error": "#ffb4ab",
+              "surface-container-low": "#1c1b1b",
+              "secondary": "#e9c349",
+              "outline-variant": "#464556",
+              "outline": "#908fa1",
+              "on-tertiary-fixed-variant": "#793100",
+              "surface-tint": "#c0c1ff",
+              "inverse-on-surface": "#313030",
+              "on-tertiary": "#552000",
+              "surface-variant": "#353534",
+              "surface-container-lowest": "#0e0e0e",
+              "error-container": "#93000a",
+              "surface-container-highest": "#353534",
+              "on-secondary-fixed": "#241a00",
+              "surface-dim": "#131313",
+              "on-secondary": "#3c2f00",
+              "on-tertiary-container": "#fff9f7",
+              "on-background": "#e5e2e1",
+              "surface-container-high": "#2a2a2a",
+              "secondary-fixed-dim": "#e9c349",
+              "primary-container": "#5f62ec",
+              "on-primary-container": "#fdf9ff",
+              "tertiary": "#ffb691",
+              "on-error": "#690005",
+              "background": "#131313",
+              "on-primary-fixed": "#07006c",
+              "inverse-surface": "#e5e2e1",
+              "primary": "#c0c1ff",
+              "on-secondary-fixed-variant": "#574500",
+              "tertiary-fixed-dim": "#ffb691",
+              "secondary-container": "#af8d11",
+              "surface-bright": "#393939",
+              "primary-fixed": "#e1e0ff",
+              "secondary-fixed": "#ffe088",
+              "on-tertiary-fixed": "#341100",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed": "#ffdbcb",
+              "on-surface": "#e5e2e1"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .animate-shimmer {
+            background: linear-gradient(90deg, #1c1b1b 25%, #2a2a2a 50%, #1c1b1b 75%);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite linear;
+        }
+        .glass-overlay {
+            background: rgba(53, 53, 52, 0.4);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Anchor (Manual suppression applied as per logic for focused journey) -->
+<header class="w-full fixed top-0 left-0 z-50 flex items-center px-6 py-4 justify-between">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer transition-opacity hover:opacity-80 active:scale-95">arrow_back</span>
+</div>
+<div class="font-headline italic tracking-tighter text-xl font-bold text-on-background">
+            Lumina Muse
+        </div>
+<div class="w-6"></div> <!-- Spacer for symmetry -->
+</header>
+<main class="min-h-screen flex flex-col items-center justify-center px-6 pt-20 pb-12 overflow-hidden">
+<!-- Header Section: Intentional Asymmetry -->
+<div class="w-full max-w-5xl mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+<div class="space-y-2">
+<div class="inline-flex items-center gap-2 bg-surface-container-high px-3 py-1.5 rounded-sm border border-outline-variant/15">
+<span class="material-symbols-outlined text-[14px] text-secondary" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+<span class="font-label text-[10px] uppercase tracking-[0.1rem] text-on-surface-variant">Oil Painting</span>
+</div>
+<h1 class="font-headline text-4xl md:text-5xl lg:text-6xl text-on-surface tracking-tighter italic">
+                    Painting your portrait...
+                </h1>
+<p class="font-body text-on-surface-variant/70 text-lg">
+                    ~30 seconds remaining
+                </p>
+</div>
+<!-- Progress Tracker -->
+<div class="hidden md:flex flex-col items-end gap-2">
+<span class="font-label text-[10px] uppercase tracking-[0.1rem] text-primary">Synthesis in Progress</span>
+<div class="w-48 h-[2px] bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-primary-container w-1/3"></div>
+</div>
+</div>
+</div>
+<!-- Main Canvas: Large Shimmer Placeholder -->
+<div class="relative w-full max-w-5xl aspect-[4/5] md:aspect-[16/9] lg:aspect-[21/9] rounded-xl overflow-hidden shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+<!-- The Shimmering Base -->
+<div class="absolute inset-0 animate-shimmer"></div>
+<!-- Art Interface Elements (Museum Style) -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="glass-overlay p-8 rounded-full border border-outline-variant/15 flex flex-col items-center gap-4">
+<div class="relative">
+<span class="material-symbols-outlined text-4xl text-primary/40 animate-pulse">brush</span>
+</div>
+</div>
+</div>
+<!-- Bottom Metadata Overlay -->
+<div class="absolute bottom-0 left-0 w-full p-8 flex justify-between items-end bg-gradient-to-t from-surface-container-lowest to-transparent">
+<div class="space-y-4">
+<div class="space-y-1">
+<span class="font-label text-[10px] uppercase tracking-[0.1rem] text-on-surface-variant/50">Current Step</span>
+<p class="font-body text-sm text-on-surface">Applying textural brushstrokes and depth maps</p>
+</div>
+<div class="flex gap-2">
+<div class="w-8 h-[1px] bg-primary"></div>
+<div class="w-8 h-[1px] bg-surface-variant"></div>
+<div class="w-8 h-[1px] bg-surface-variant"></div>
+<div class="w-8 h-[1px] bg-surface-variant"></div>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="text-right">
+<span class="font-label text-[10px] uppercase tracking-[0.1rem] text-on-surface-variant/50">Model</span>
+<p class="font-body text-sm text-on-surface">Atelier-v2.1</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Subtle Mobile Progress -->
+<div class="w-full max-w-5xl mt-8 md:hidden">
+<div class="w-full h-[1px] bg-surface-container-highest relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/30 animate-pulse"></div>
+<div class="h-full bg-primary w-1/4 transition-all duration-1000"></div>
+</div>
+</div>
+<!-- Footnote / Quote: Editorial Touch -->
+<div class="mt-12 w-full max-w-5xl text-center md:text-left">
+<p class="font-headline italic text-on-surface-variant/40 text-sm max-w-sm">
+                "Art challenges the technology, and the technology inspires the art."
+            </p>
+</div>
+</main>
+<!-- Navigation suppressed per task requirements for loading/transactional screens -->
+
+<script>
+setTimeout(function() {
+  window.location.href = 'ed2a3dc887a64d46840c649a950788cd.html';
+}, 3000);
+</script>
+
+</body></html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Idea Factory — Design Preview</title>
+<!-- IDEA_DATA injected here by design agent -->
+<script>
+window.IDEA_DATA = {
+  ideaNum: 22,
+  title: "AI Portrait Weekly",
+  sub: "Weekly selfie → AI painting → grow your portrait journal over time",
+  score: "7/10",
+  deviceType: "MOBILE",
+  stitchId: "11845490564960922637",
+  startScreen: 2,
+  screens: [
+    { id: "c6c650e814e84afba8e72a9e562bfbf9", label: "Onboarding" },
+    { id: "eb06a1b1cb3042bd957af0495831fbd5", label: "Selfie Setup" },
+    { id: "ce02c189567340329fefeaae41a699e4", label: "Home / Gallery" },
+    { id: "c4dcf47fb5954bc796edfb9441bbae8e", label: "Style Picker" },
+    { id: "94aafa8781ed440db1035d3fc47cfee7", label: "Generation" },
+    { id: "ed2a3dc887a64d46840c649a950788cd", label: "Portrait Result" },
+    { id: "7e566f4a131b4562a5a244e793e584ba", label: "Portrait Detail" },
+    { id: "470d9acbd4c64cf09b8456fe6bf9e7d6", label: "Milestone" },
+    { id: "aa5e9c801bcc408fb15ee29bfceedab5", label: "Paywall" },
+    { id: "246d97e3215e49eca4387891a89b7d38", label: "Settings" }
+  ],
+  timeline: [
+    {
+      status: "",
+      icon: "💡",
+      title: "Original Idea",
+      desc: "AI paints your daily selfie in different artistic styles",
+      body: '<div class="esect"><div class="esect-label">The Concept</div><p>AI Portrait — An app that paints your daily selfie with AI in different artistic styles. Take a selfie every day → AI transforms it into art → Builds a collection of your year as art.</p></div><div class="esect"><div class="esect-label">Core Loop</div><ul><li>Take a selfie every day</li><li>AI transforms it into art (oil painting, watercolor, anime, pixel art, etc.)</li><li>Build a gallery: your year rendered as art</li><li>"The app learns your face so each portrait connects to the last"</li></ul></div><div class="esect"><div class="esect-label">Tags</div><div class="tag-row"><span class="etag">AI / Image Gen</span><span class="etag">Mobile App</span><span class="etag">Daily Habit</span><span class="etag">Gallery / Journal</span></div></div>'
+    },
+    {
+      status: "critique",
+      icon: "🔍",
+      title: "Critique v1",
+      desc: "Vaporware face learning, no monetization, legal landmines",
+      verdict: "NEEDS MAJOR WORK",
+      verdictClass: "needs",
+      score: "6/10",
+      body: '<div class="esect"><div class="esect-label">What\'s Actually Good</div><ul><li>"365 portraits = year as art" hook is genuinely compelling — end-of-year gallery posts are proven viral</li><li>Daily habit loop is simple and sticky</li><li>Style variety gives users something fresh each day</li><li>Gallery-as-collection creates ownership that keeps people coming back</li></ul></div><div class="esect"><div class="esect-label">Brutal Feedback</div><ul><li>"The app learns your face" — vaporware. Consistent face embedding across styles is a hard unsolved UX problem</li><li>Lensa, Facetune, Snapchat, TikTok filters already do AI-style portraits — what\'s the real differentiator?</li><li>Per-generation API costs will destroy unit economics — 365 generations/user/year = real money</li><li>Storing facial data triggers GDPR, CCPA, BIPA — a legal landmine for solo devs</li><li>The year-end gallery payoff is 365 days away — most users churn within 2 weeks</li></ul></div><div class="esect"><div class="esect-label">Solo Dev Reality Check</div><p>MAYBE shippable in 2-4 weeks, but "face learning" as described is not shippable in that window. Core loop is fine, persistent identity modeling is not.</p></div>'
+    },
+    {
+      status: "improve",
+      icon: "✨",
+      title: "Improved v2",
+      desc: "Weekly cadence, hard paywall from day one, milestone rewards",
+      body: '<div class="esect"><div class="esect-label">What Changed and Why</div><ul><li><strong>Dropped face learning entirely</strong> — uses single reference selfie as IP-Adapter input for style transfer. No biometric storage, no GDPR liability.</li><li><strong>Weekly instead of daily</strong> — drops API costs 7× and is actually achievable as a habit</li><li><strong>Hard paywall from day one</strong> — 5 free portraits then $2.99/month. At $0.10/generation weekly, paying user costs ~$0.50/month in API costs</li><li><strong>Streak + milestone rewards</strong> — 4-week and 12-week milestones with shareable collages. Payoff is 30 days away, not 365</li></ul></div><div class="esect"><div class="esect-label">Differentiation from Lensa</div><p>Lensa\'s Magic Avatars was a one-shot batch job. This is a <strong>longitudinal portrait journal</strong> — one per week, same face over months, different styles, watching yourself change. The gallery IS the product.</p></div><div class="esect"><div class="esect-label">Solo MVP Scope</div><ul><li>Reference selfie capture (stored locally)</li><li>Weekly portrait generation via fal.ai FLUX IP-Adapter</li><li>8 artistic styles</li><li>Gallery view with streak counter</li><li>4-week and 12-week milestone screens with shareable collage</li><li>Hard paywall after 5 portraits (RevenueCat)</li></ul></div>'
+    },
+    {
+      status: "critique",
+      icon: "🔍",
+      title: "Critique v2",
+      desc: "Retention risks, face consistency concerns, missing acquisition strategy",
+      verdict: "WORTH BUILDING",
+      verdictClass: "worth",
+      score: "7/10",
+      body: '<div class="esect"><div class="esect-label">What\'s Actually Good</div><ul><li>Unit economics actually work — $0.50/month COGS vs $2.99/month revenue is real margin</li><li>"Gallery IS the product" is a defensible positioning vs Lensa</li><li>Scope is tight — 10 screens, one API dependency, one payment integration</li><li>Paywall timing (after 5th portrait) is smart UX — emotionally hooked before asking for money</li><li>IP-Adapter approach is technically honest and avoids the biometric landmine</li></ul></div><div class="esect"><div class="esect-label">Brutal Feedback</div><ul><li>Weekly cadence is a retention timebomb — apps touching users once/week have brutal drop-off</li><li>IP-Adapter face consistency is worse than implied — faces go uncanny-valley in abstract styles</li><li>5-free-portrait runway = 5 weeks of free trial; consider shortening to 3</li><li>Streak resets are a churn mechanism — one missed week destroys months of perceived progress</li><li>No acquisition strategy anywhere in this doc</li></ul></div><div class="esect"><div class="esect-label">Solo Dev Reality Check</div><p>YES — shippable in 2-4 weeks with Expo + fal.ai + RevenueCat + local storage. Week 1: camera + API + gallery. Week 2: streaks + milestones + paywall. Week 3: notifications + polish + App Store submission.</p></div>'
+    },
+    {
+      status: "validate",
+      icon: "✅",
+      title: "Validated",
+      desc: "Score 7/10 — ready for design",
+      body: '<div class="esect"><div class="esect-label">Final Score</div><p><strong>7/10</strong> — WORTH BUILDING</p></div><div class="esect"><div class="esect-label">Design Handoff Screens</div><div class="tag-row"><span class="etag blue">Onboarding</span><span class="etag blue">Selfie Setup</span><span class="etag blue">Home / Gallery</span><span class="etag blue">Style Picker</span><span class="etag blue">Generation Loading</span><span class="etag blue">Portrait Result</span><span class="etag blue">Portrait Detail</span><span class="etag blue">Milestone Screen</span><span class="etag blue">Paywall</span><span class="etag blue">Settings</span></div></div><div class="esect"><div class="esect-label">Key Interactions</div><ul><li>Home CTA → Style Picker → Loading → Result → Home</li><li>Weekly push notification deep links directly to Style Picker</li><li>Milestone screen auto-appears after 4-week / 12-week portrait completion</li><li>Paywall appears inline after 5th portrait result (not as pre-generation gate)</li></ul></div>'
+    },
+    {
+      status: "design",
+      icon: "🎨",
+      title: "Designed",
+      desc: "10 screens in Stitch — premium dark gallery aesthetic",
+      body: '<div class="esect"><div class="esect-label">Stitch Project</div><p><a class="ext-link" href="https://stitch.withgoogle.com/projects/11845490564960922637" target="_blank">Edit in Stitch →</a></p></div><div class="esect"><div class="esect-label">Design System</div><p>Lumina Muse — dark gallery aesthetic with Noto Serif headlines, Manrope body, indigo primary (#5C5CFF), gold secondary (#E9C349). "Quiet UI" where the interface recedes to let AI-generated art breathe.</p></div><div class="esect"><div class="esect-label">Device</div><div class="tag-row"><span class="etag blue">📱 Mobile (iOS)</span><span class="etag">Expo / React Native</span><span class="etag">fal.ai FLUX IP-Adapter</span></div></div>'
+    }
+  ]
+};
+</script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0f1a;
+    color: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ──────────────────────────────────────── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .idea-num {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: #3b82f6; background: #1e3a5f;
+    padding: 3px 10px; border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .idea-title { font-size: 1.1rem; font-weight: 700; color: #f9fafb; }
+  .idea-sub { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+  .header-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    border-radius: 99px; padding: 4px 12px;
+    font-size: 0.75rem; color: #9ca3af;
+  }
+  .score-pill {
+    background: #1a2e1a; border: 1px solid #2d4a2d;
+    color: #86efac; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 99px;
+  }
+  .toggle-btn {
+    display: flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    color: #9ca3af; font-size: 0.75rem;
+    padding: 4px 12px; border-radius: 99px;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .toggle-btn:hover { background: #1f2937; color: #f9fafb; border-color: #374151; }
+
+  /* ── Body ────────────────────────────────────────── */
+  .body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: stretch;
+  }
+
+  /* ── Phone column ────────────────────────────────── */
+  .phone-col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 40px;
+    gap: 16px;
+    background: #0a0f1a;
+    overflow: hidden;
+  }
+
+  /* MOBILE frame */
+  .phone-frame {
+    width: 390px;
+    height: 844px;
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 0 0 10px #0f172a,
+      0 0 0 11px rgba(255,255,255,0.06),
+      0 50px 100px rgba(0,0,0,0.7);
+    background: #000;
+    flex-shrink: 0;
+  }
+
+  /* WEB frame */
+  .web-frame {
+    width: min(900px, calc(100% - 80px));
+    height: min(640px, calc(100vh - 180px));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 24px 60px rgba(0,0,0,0.6);
+    background: #1f2937;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .web-chrome {
+    height: 36px;
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .web-chrome .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .web-chrome .dot-r { background: #ef4444; }
+  .web-chrome .dot-y { background: #f59e0b; }
+  .web-chrome .dot-g { background: #22c55e; }
+  .web-chrome .url {
+    flex: 1; background: #111827; border-radius: 4px;
+    height: 20px; margin: 0 8px;
+    display: flex; align-items: center; padding: 0 10px;
+    font-size: 0.68rem; color: #6b7280;
+  }
+
+  .device-iframe {
+    width: 100%; height: 100%;
+    border: none; display: block;
+    flex: 1;
+  }
+
+  /* Switcher */
+  .switcher {
+    display: flex; gap: 6px;
+    flex-wrap: wrap; justify-content: center;
+    max-width: 600px;
+  }
+  .switcher button {
+    height: 28px; padding: 0 10px;
+    border-radius: 6px; border: 1px solid #1f2937;
+    background: #111827; color: #6b7280;
+    font-size: 0.7rem; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .switcher button:hover { background: #1f2937; color: #d1d5db; border-color: #374151; }
+  .switcher button.active { background: #1e3a5f; color: #60a5fa; border-color: #3b82f6; }
+
+  /* ── Resize handle ───────────────────────────────── */
+  .resize-handle {
+    width: 8px;
+    flex-shrink: 0;
+    cursor: col-resize;
+    position: relative;
+    background: transparent;
+    z-index: 10;
+  }
+  .resize-handle::after {
+    content: '';
+    position: absolute;
+    left: 3px; top: 0; bottom: 0;
+    width: 2px;
+    background: #1a2235;
+    transition: background 0.15s;
+  }
+  .resize-handle:hover::after { background: #374151; }
+  .resize-handle.dragging::after { background: #3b82f6; }
+
+  /* ── Timeline column ─────────────────────────────── */
+  .timeline-col {
+    width: 460px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 0.25s ease;
+    background: #0d1424;
+  }
+  .timeline-col.collapsed { width: 0; }
+
+  .timeline-header {
+    padding: 20px 28px 14px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .timeline-header h2 {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #4b5563;
+  }
+
+  .timeline-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 28px 40px;
+  }
+  .timeline-scroll::-webkit-scrollbar { width: 4px; }
+  .timeline-scroll::-webkit-scrollbar-track { background: transparent; }
+  .timeline-scroll::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 2px; }
+
+  /* ── Timeline line + dots ────────────────────────── */
+  /* --lx: horizontal center of the line/dots from .timeline-line left edge */
+  .timeline-line {
+    --lx: 8px;
+    position: relative;
+    padding-left: 28px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+  }
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--lx) - 1px); /* 2px line centered at --lx */
+    top: 10px; bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, #1e3a5f 0%, #1f2937 100%);
+    border-radius: 2px;
+  }
+
+  .entry {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .entry::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+    top: 18px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #1f2937;
+    border: 2px solid #374151;
+    z-index: 1;
+  }
+  .entry.s-critique::before { background: #78350f; border-color: #d97706; }
+  .entry.s-improve::before  { background: #1e3a5f; border-color: #3b82f6; }
+  .entry.s-validate::before { background: #14532d; border-color: #16a34a; }
+  .entry.s-design::before   { background: #312e81; border-color: #6366f1; }
+
+  /* ── Entry cards ─────────────────────────────────── */
+  .entry-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+  .entry-card:hover { border-color: #374151; }
+
+  .entry-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer; user-select: none;
+  }
+  .entry-icon { font-size: 1.1rem; flex-shrink: 0; line-height: 1; }
+  .entry-info { flex: 1; min-width: 0; }
+  .entry-title {
+    font-size: 0.85rem; font-weight: 600; color: #f9fafb;
+    display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+    line-height: 1.3;
+  }
+  .entry-desc { font-size: 0.72rem; color: #6b7280; margin-top: 3px; }
+  .entry-chevron {
+    color: #374151; font-size: 0.6rem; flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .entry.open .entry-chevron { transform: rotate(180deg); color: #6b7280; }
+
+  .verdict {
+    font-size: 0.6rem; font-weight: 700;
+    padding: 2px 6px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .verdict-needs { background: #451a03; color: #fb923c; }
+  .verdict-worth { background: #14532d; color: #86efac; }
+  .verdict-kill  { background: #450a0a; color: #f87171; }
+  .escore { font-size: 0.7rem; font-weight: 700; color: #60a5fa; }
+
+  .entry-body {
+    display: none;
+    border-top: 1px solid #1f2937;
+    padding: 14px;
+    font-size: 0.76rem; color: #9ca3af; line-height: 1.65;
+  }
+  .entry.open .entry-body { display: block; }
+
+  .esect { margin-top: 10px; }
+  .esect:first-child { margin-top: 0; }
+  .esect-label {
+    font-size: 0.62rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: #4b5563; margin-bottom: 5px;
+  }
+  .esect ul { padding-left: 14px; }
+  .esect li { margin-bottom: 3px; color: #9ca3af; }
+  .esect p { color: #9ca3af; }
+  .esect strong { color: #d1d5db; font-weight: 600; }
+  .tag-row { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+  .etag {
+    background: #0a0f1a; border: 1px solid #1f2937;
+    border-radius: 4px; padding: 2px 7px;
+    font-size: 0.66rem; color: #6b7280;
+  }
+  .etag.green { border-color: #14532d; color: #86efac; }
+  .etag.blue  { border-color: #1e3a5f; color: #60a5fa; }
+  a.ext-link { color: #818cf8; text-decoration: none; }
+  a.ext-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <span class="idea-num" id="hNum"></span>
+    <div>
+      <div class="idea-title" id="hTitle"></div>
+      <div class="idea-sub" id="hSub"></div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="score-pill" id="hScore"></span>
+    <span class="badge" id="hBadge"></span>
+    <button class="toggle-btn" id="toggleBtn" onclick="toggleTimeline()">
+      <span id="toggleIcon">›</span>
+      <span id="toggleLabel">Hide Journey</span>
+    </button>
+  </div>
+</div>
+
+<div class="body">
+  <div class="phone-col" id="phoneCol">
+    <div id="deviceFrame"></div>
+    <div class="switcher" id="switcher"></div>
+  </div>
+
+  <div class="resize-handle" id="resizeHandle"></div>
+
+  <div class="timeline-col" id="timelineCol">
+    <div class="timeline-header"><h2>Idea Journey</h2></div>
+    <div class="timeline-scroll">
+      <div class="timeline-line" id="timeline"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Render from IDEA_DATA ────────────────────────────
+(function () {
+  const D = window.IDEA_DATA || {};
+  const isMobile = (D.deviceType || 'MOBILE').toUpperCase() !== 'WEB';
+
+  // Header
+  document.title = 'Idea #' + D.ideaNum + ' — ' + D.title;
+  document.getElementById('hNum').textContent   = '#' + D.ideaNum;
+  document.getElementById('hTitle').textContent = D.title;
+  document.getElementById('hSub').textContent   = D.sub || '';
+  document.getElementById('hScore').textContent = D.score || '';
+  document.getElementById('hBadge').textContent = isMobile ? '📱 Mobile Prototype' : '💻 Web Prototype';
+
+  // Device frame
+  const frameContainer = document.getElementById('deviceFrame');
+  if (isMobile) {
+    frameContainer.className = 'phone-frame';
+    frameContainer.innerHTML = '<iframe id="app" class="device-iframe"></iframe>';
+  } else {
+    frameContainer.className = 'web-frame';
+    frameContainer.innerHTML =
+      '<div class="web-chrome">' +
+        '<div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>' +
+        '<div class="url" id="webUrl">preview</div>' +
+      '</div>' +
+      '<iframe id="app" class="device-iframe"></iframe>';
+  }
+
+  // Screens switcher
+  const screens = D.screens || [];
+  const startIdx = D.startScreen != null ? D.startScreen : (screens.length > 1 ? 1 : 0);
+  const switcher = document.getElementById('switcher');
+  const iframe   = document.getElementById('app');
+
+  function hideIframeScrollbars() {
+    try {
+      const style = iframe.contentDocument.createElement('style');
+      style.textContent = '::-webkit-scrollbar{display:none}*{-ms-overflow-style:none!important;scrollbar-width:none!important}';
+      iframe.contentDocument.head.appendChild(style);
+    } catch(e) {}
+  }
+  iframe.addEventListener('load', hideIframeScrollbars);
+
+  function goTo(i) {
+    iframe.src = screens[i].id + '.html';
+    switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
+    const urlEl = document.getElementById('webUrl');
+    if (urlEl) urlEl.textContent = screens[i].label;
+  }
+
+  screens.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = (i + 1) + ' · ' + s.label;
+    btn.onclick = () => goTo(i);
+    switcher.appendChild(btn);
+  });
+
+  if (screens.length) goTo(startIdx);
+
+  // Timeline
+  const timeline = document.getElementById('timeline');
+  (D.timeline || []).forEach(e => {
+    const verdictHtml = e.verdict
+      ? '<span class="verdict verdict-' + (e.verdictClass || 'needs') + '">' + e.verdict + '</span>'
+      : '';
+    const scoreHtml = e.score
+      ? '<span class="escore">' + e.score + '</span>'
+      : '';
+
+    const div = document.createElement('div');
+    div.className = 'entry' + (e.status ? ' s-' + e.status : '');
+    div.innerHTML =
+      '<div class="entry-card">' +
+        '<div class="entry-head" onclick="this.closest(\'.entry\').classList.toggle(\'open\')">' +
+          '<span class="entry-icon">' + e.icon + '</span>' +
+          '<div class="entry-info">' +
+            '<div class="entry-title">' + e.title + ' ' + verdictHtml + ' ' + scoreHtml + '</div>' +
+            '<div class="entry-desc">' + e.desc + '</div>' +
+          '</div>' +
+          '<span class="entry-chevron">▼</span>' +
+        '</div>' +
+        '<div class="entry-body">' + (e.body || '') + '</div>' +
+      '</div>';
+    timeline.appendChild(div);
+  });
+
+  // Timeline toggle
+  let open = true;
+  window.toggleTimeline = function () {
+    open = !open;
+    document.getElementById('timelineCol').classList.toggle('collapsed', !open);
+    document.getElementById('resizeHandle').style.display = open ? '' : 'none';
+    document.getElementById('toggleIcon').textContent  = open ? '›' : '‹';
+    document.getElementById('toggleLabel').textContent = open ? 'Hide Journey' : 'Show Journey';
+  };
+
+  // Drag resize
+  const handle      = document.getElementById('resizeHandle');
+  const timelineCol = document.getElementById('timelineCol');
+  let resizing = false, rx = 0, rw = 0;
+
+  handle.addEventListener('mousedown', e => {
+    if (!open) return;
+    resizing = true; rx = e.clientX; rw = timelineCol.offsetWidth;
+    handle.classList.add('dragging');
+    timelineCol.style.transition = 'none';
+    document.documentElement.style.cssText += ';cursor:col-resize!important;user-select:none!important';
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', e => {
+    if (!resizing) return;
+    const w = Math.max(280, Math.min(window.innerWidth - 500, rw + (rx - e.clientX)));
+    timelineCol.style.width = w + 'px';
+  });
+  window.addEventListener('mouseup', () => {
+    if (!resizing) return;
+    resizing = false;
+    handle.classList.remove('dragging');
+    timelineCol.style.transition = '';
+    document.documentElement.style.cursor = '';
+    document.documentElement.style.userSelect = '';
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>Lumina Muse - Upgrade to Pro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-secondary-fixed": "#241a00",
+            "secondary": "#e9c349",
+            "surface-container-high": "#2a2a2a",
+            "on-primary-fixed-variant": "#2f2ebe",
+            "inverse-primary": "#494bd6",
+            "tertiary-fixed-dim": "#ffb691",
+            "outline": "#908fa1",
+            "on-surface-variant": "#c6c4d8",
+            "on-tertiary-fixed-variant": "#793100",
+            "inverse-on-surface": "#313030",
+            "surface": "#131313",
+            "surface-variant": "#353534",
+            "secondary-fixed-dim": "#e9c349",
+            "surface-container-lowest": "#0e0e0e",
+            "surface-container-low": "#1c1b1b",
+            "secondary-container": "#af8d11",
+            "error-container": "#93000a",
+            "secondary-fixed": "#ffe088",
+            "surface-tint": "#c0c1ff",
+            "on-error-container": "#ffdad6",
+            "outline-variant": "#464556",
+            "tertiary-container": "#bf5200",
+            "background": "#131313",
+            "primary": "#c0c1ff",
+            "surface-container": "#201f1f",
+            "on-primary-container": "#fdf9ff",
+            "on-secondary-fixed-variant": "#574500",
+            "on-secondary-container": "#342800",
+            "surface-container-highest": "#353534",
+            "surface-bright": "#393939",
+            "primary-container": "#5f62ec",
+            "on-tertiary": "#552000",
+            "on-secondary": "#3c2f00",
+            "on-tertiary-fixed": "#341100",
+            "tertiary-fixed": "#ffdbcb",
+            "on-primary": "#1000a9",
+            "error": "#ffb4ab",
+            "primary-fixed": "#e1e0ff",
+            "surface-dim": "#131313",
+            "inverse-surface": "#e5e2e1",
+            "on-primary-fixed": "#07006c",
+            "on-surface": "#e5e2e1",
+            "tertiary": "#ffb691",
+            "primary-fixed-dim": "#c0c1ff",
+            "on-error": "#690005",
+            "on-tertiary-container": "#fff9f7",
+            "on-background": "#e5e2e1"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    .glass-card {
+      background: rgba(53, 53, 52, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(70, 69, 86, 0.15);
+    }
+    .primary-gradient-btn {
+      background: linear-gradient(135deg, #c0c1ff 0%, #5f62ec 100%);
+    }
+    .ghost-border {
+      border: 1px solid rgba(70, 69, 86, 0.15);
+    }
+    .text-glow {
+      text-shadow: 0 0 20px rgba(192, 193, 255, 0.3);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-neutral-950 dark:bg-neutral-950 flex justify-between items-center px-6 py-4 w-full docked full-width top-0 z-50">
+<div class="flex items-center gap-4">
+<button class="text-indigo-200 dark:text-indigo-200 hover:opacity-80 transition-opacity scale-95 duration-200">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h1 class="font-headline italic tracking-tight text-indigo-200 text-lg">Upgrade to Pro</h1>
+</div>
+<button class="text-indigo-200 dark:text-indigo-200 hover:opacity-80 transition-opacity scale-95 duration-200">
+<span class="material-symbols-outlined">history</span>
+</button>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center px-6 pt-12 pb-24 max-w-5xl mx-auto w-full">
+<!-- Hero Section: Intentional Asymmetry -->
+<section class="w-full mb-16 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-7">
+<h2 class="font-headline text-5xl md:text-6xl mb-4 leading-tight tracking-tight text-glow">
+          Continue Your <br/>
+<span class="italic">Portrait Journey</span>
+</h2>
+<div class="flex items-center gap-3">
+<div class="h-[1px] w-12 bg-primary/30"></div>
+<p class="font-label uppercase tracking-widest text-xs text-on-surface-variant">5 portraits created</p>
+</div>
+</div>
+<div class="md:col-span-5 relative">
+<div class="aspect-[4/5] rounded-md overflow-hidden ghost-border rotate-2">
+<img class="w-full h-full object-cover grayscale brightness-75 contrast-125" data-alt="high-end editorial portrait of a woman with dramatic chiaroscuro lighting and soft museum-style shadows in a dark gallery setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSNmgiHqpnbTJOCUQWJvw4QRcyWU5Nat_SVHFRjeF_NlTMj6_2hm5IdzYPnCWiI01eI9M7wrNnogJxRg3yNveKQmTRhEvSP_oKFejKn0Vbg3iTs4eUc4SvnAG4_33JM8MyfaFC0Qha0lKeI2iYsUgxJcjj-kfhElPJHdV7KKgObfOgR5_h-Nh_fC59DdJo49xvxRz2ghfaEZEOBFBlO6I-Jkiy_KwxhovYbZUQ4apVfJvC1_kEVYVWF-mXnN0Najth02mPuwWo8AN4"/>
+</div>
+<div class="absolute -bottom-4 -left-4 w-32 h-32 glass-card rounded-md -rotate-6 hidden md:block">
+<img class="w-full h-full object-cover opacity-60" data-alt="dramatic black and white male portrait with focused lighting on eyes and heavy atmospheric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU-y9dFPpiRtkY9-s6Xar-VHj4AANLOnr3ShRgsdyAWd1PDs0do7RADMV7L6nA7vMCzENY9nGctG2vbGv6CFSfH9vhgvsnZEhNeDTZNPBxSUPEuC1N9rzIfi-Bj0b4TtMdcwq2p3blxGGrtmMWp9z_E8knbP6-M5U7VWjavjOSvs-aVk9ZUkN2veo47bW39jMqIEStcRrH-7ORzu8IIsgmGd3Z3iNiJlDJ8VK1KwzhazrRrO5CnasemCCnCFDEAs1fQxbFEAhKLVdB"/>
+</div>
+</div>
+</section>
+<!-- Pricing Grid -->
+<section class="w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+<!-- Monthly Plan -->
+<div class="surface-container-low rounded-xl p-8 flex flex-col border border-transparent hover:border-outline-variant/30 transition-all duration-500">
+<div class="mb-8">
+<p class="font-label uppercase tracking-widest text-xs text-on-surface-variant mb-2">Flexible</p>
+<h3 class="font-headline text-3xl mb-1">Monthly</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-light">$2.99</span>
+<span class="text-on-surface-variant text-sm">/month</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'wght' 200;">auto_awesome</span>
+<span class="text-on-surface/80 text-sm">Weekly AI Portraits</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'wght' 200;">collections</span>
+<span class="text-on-surface/80 text-sm">Full Gallery Access</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg" style="font-variation-settings: 'wght' 200;">download</span>
+<span class="text-on-surface/80 text-sm">High-Res Exports</span>
+</li>
+</ul>
+<button class="w-full py-4 px-6 ghost-border rounded-lg font-bold text-primary hover:bg-primary/5 transition-colors uppercase tracking-widest text-xs" onclick="window.location.href='ce02c189567340329fefeaae41a699e4.html'">
+          Start Monthly
+        </button>
+</div>
+<!-- Annual Plan (Featured) -->
+<div class="surface-container-low rounded-xl p-8 flex flex-col relative border border-primary/20 shadow-2xl overflow-hidden">
+<!-- Gold Badge -->
+<div class="absolute top-0 right-0 bg-secondary px-4 py-1.5 rounded-bl-lg">
+<span class="text-on-secondary-fixed font-label text-[10px] font-bold uppercase tracking-tighter">Best Value</span>
+</div>
+<div class="mb-8">
+<p class="font-label uppercase tracking-widest text-xs text-secondary mb-2">Premium Choice</p>
+<h3 class="font-headline text-3xl mb-1">Annual</h3>
+<div class="flex items-baseline gap-1">
+<span class="text-4xl font-light">$14.99</span>
+<span class="text-on-surface-variant text-sm">/year</span>
+</div>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'wght' 200;">star_border</span>
+<span class="text-on-surface/80 text-sm">Everything in Monthly</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'wght' 200;">calendar_today</span>
+<span class="text-on-surface/80 text-sm font-semibold text-secondary">2 Months Free</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'wght' 200;">bolt</span>
+<span class="text-on-surface/80 text-sm">Priority Generation</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'wght' 200;">new_releases</span>
+<span class="text-on-surface/80 text-sm">Early Access to Styles</span>
+</li>
+</ul>
+<button class="w-full py-4 px-6 primary-gradient-btn rounded-lg font-bold text-on-primary hover:opacity-90 transition-opacity uppercase tracking-widest text-xs" onclick="window.location.href='ce02c189567340329fefeaae41a699e4.html'">
+          Start Annual
+        </button>
+</div>
+</section>
+<!-- Footer Action -->
+<footer class="mt-16 text-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-label uppercase tracking-[0.2em] underline underline-offset-8" href="#" onclick="window.location.href='ce02c189567340329fefeaae41a699e4.html'; return false;">
+        Restore Purchases
+      </a>
+<p class="mt-8 text-[10px] text-on-surface-variant/40 max-w-md mx-auto leading-relaxed">
+        Subscription automatically renews unless canceled at least 24 hours before the end of the current period. View our Terms of Service and Privacy Policy for more details.
+      </p>
+</footer>
+</main>
+<!-- BottomNavBar: Floating Dock -->
+<nav class="fixed bottom-6 left-0 right-0 z-50 flex justify-around items-center px-4 md:hidden">
+<div class="bg-neutral-900/80 backdrop-blur-xl border border-neutral-800/50 shadow-[0_20px_40px_rgba(0,0,0,0.5)] w-[90%] rounded-full flex justify-around items-center py-2">
+<div class="flex flex-col items-center justify-center text-neutral-500 p-3 hover:text-indigo-100 transition-colors cursor-pointer scale-110 duration-300 ease-out">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<div class="flex flex-col items-center justify-center text-neutral-500 p-3 hover:text-indigo-100 transition-colors cursor-pointer scale-110 duration-300 ease-out">
+<span class="material-symbols-outlined">collections</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-indigo-500/20 text-indigo-200 rounded-full p-3 scale-110 duration-300 ease-out">
+<span class="material-symbols-outlined">portrait</span>
+</div>
+<div class="flex flex-col items-center justify-center text-neutral-500 p-3 hover:text-indigo-100 transition-colors cursor-pointer scale-110 duration-300 ease-out">
+<span class="material-symbols-outlined">person</span>
+</div>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed-variant": "#793100",
+            "tertiary-container": "#bf5200",
+            "surface-variant": "#353534",
+            "surface-dim": "#131313",
+            "outline": "#908fa1",
+            "on-secondary-fixed": "#241a00",
+            "on-surface-variant": "#c6c4d8",
+            "error-container": "#93000a",
+            "on-error": "#690005",
+            "on-background": "#e5e2e1",
+            "surface": "#131313",
+            "surface-container-low": "#1c1b1b",
+            "surface-tint": "#c0c1ff",
+            "secondary-container": "#af8d11",
+            "tertiary-fixed": "#ffdbcb",
+            "on-primary-fixed-variant": "#2f2ebe",
+            "surface-container-high": "#2a2a2a",
+            "secondary": "#e9c349",
+            "error": "#ffb4ab",
+            "outline-variant": "#464556",
+            "on-tertiary-container": "#fff9f7",
+            "primary-container": "#5f62ec",
+            "on-secondary-container": "#342800",
+            "on-secondary": "#3c2f00",
+            "on-primary-fixed": "#07006c",
+            "primary-fixed-dim": "#c0c1ff",
+            "secondary-fixed-dim": "#e9c349",
+            "secondary-fixed": "#ffe088",
+            "on-tertiary": "#552000",
+            "on-tertiary-fixed": "#341100",
+            "inverse-on-surface": "#313030",
+            "surface-container-lowest": "#0e0e0e",
+            "inverse-primary": "#494bd6",
+            "tertiary": "#ffb691",
+            "on-primary-container": "#fdf9ff",
+            "on-primary": "#1000a9",
+            "background": "#131313",
+            "surface-container": "#201f1f",
+            "on-surface": "#e5e2e1",
+            "on-secondary-fixed-variant": "#574500",
+            "tertiary-fixed-dim": "#ffb691",
+            "primary-fixed": "#e1e0ff",
+            "surface-container-highest": "#353534",
+            "surface-bright": "#393939",
+            "primary": "#c0c1ff",
+            "inverse-surface": "#e5e2e1",
+            "on-error-container": "#ffdad6"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-effect {
+      background: rgba(53, 53, 52, 0.4);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .primary-gradient {
+      background: linear-gradient(135deg, #c0c1ff 0%, #5f62ec 100%);
+    }
+    .ghost-border {
+      outline: 1px solid rgba(70, 69, 86, 0.15);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen">
+<!-- Shared Component: TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313] dark:bg-[#131313] transition-colors bg-[#1c1b1b] flex justify-between items-center w-full px-6 h-16">
+<div class="flex items-center gap-4">
+<button class="text-[#c0c1ff] dark:text-[#c0c1ff] hover:bg-[#2a2a2a] hover:text-[#c0c1ff] transition-all p-2 rounded-full active:scale-95 duration-200" onclick="window.location.href='ce02c189567340329fefeaae41a699e4.html'">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-headline text-2xl tracking-tight text-[#e5e2e1]">Portrait Detail</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-[#c0c1ff] dark:text-[#c0c1ff] hover:bg-[#2a2a2a] hover:text-[#c0c1ff] transition-all p-2 rounded-full active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-4xl mx-auto">
+<!-- Hero Image Section (Asymmetric) -->
+<div class="relative w-full aspect-[3/4] md:aspect-square lg:aspect-[4/5] rounded-lg overflow-hidden surface-container-low group">
+<img alt="Portrait" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dreamy watercolor portrait of a woman with soft lighting, delicate pastel brushstrokes, ethereal atmosphere, and artistic museum-grade curation style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5W5PVvsGcrx-tpS1cWjzwX1ccb_IKAs0v8h0-_eUznsOMKmgFYLPXlS5g4TxX-cXM70x9EULJhkASLEGlK7iD7b19UuxtSTs3PCSgr_mZ5hJZRcrG0aCRgz7KYabGRKYFdGs0KvxRk8RNNCKDpeReo6IuJACVyBTZQyxpZFFVbcSNG0G30HLlS2mP-33XnRZleypgNSiZWDew7cUvS04e5LVCbP5bftFPm02p6froiipUjc2PwtlRDeg4N1k0WzmbbaXTHA3HgUdh"/>
+<!-- Comparison Toggle Overlay -->
+<div class="absolute bottom-6 left-6 right-6 flex justify-center">
+<button class="glass-effect px-6 py-3 rounded-full border border-outline-variant/20 flex items-center gap-3 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="compare">compare</span>
+<span class="font-label text-xs uppercase tracking-widest text-on-surface">See Original Selfie</span>
+</button>
+</div>
+</div>
+<!-- Metadata & Details -->
+<div class="mt-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-8">
+<div class="flex flex-wrap gap-3 mb-6">
+<div class="bg-surface-container-high rounded-sm px-4 py-1.5 ghost-border">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant block">Date</span>
+<span class="font-body text-sm font-medium">Feb 28</span>
+</div>
+<div class="bg-surface-container-high rounded-sm px-4 py-1.5 ghost-border">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant block">Style</span>
+<span class="font-body text-sm font-medium">Watercolor</span>
+</div>
+<div class="bg-surface-container-high rounded-sm px-4 py-1.5 ghost-border">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant block">Week</span>
+<span class="font-body text-sm font-medium">Week 5</span>
+</div>
+</div>
+<h2 class="font-headline text-4xl mb-4 tracking-tight">Week 5 Portrait</h2>
+<p class="font-body text-on-surface-variant leading-relaxed max-w-xl">
+          An evocative exploration of light and texture, this piece was generated using the Lumiere-V4 model. The soft edges and rhythmic brushwork capture a moment of quiet introspection.
+        </p>
+</div>
+<!-- Action Column -->
+<div class="md:col-span-4 flex flex-col gap-4">
+<button class="primary-gradient text-on-primary font-bold py-4 px-6 rounded-lg flex items-center justify-center gap-3 shadow-lg hover:brightness-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+<span class="font-label uppercase tracking-widest text-sm">Download HD</span>
+</button>
+<button class="bg-transparent border border-outline-variant/30 text-on-surface font-medium py-4 px-6 rounded-lg flex items-center justify-center gap-3 hover:bg-surface-container-high transition-colors active:scale-95" onclick="window.location.href='ce02c189567340329fefeaae41a699e4.html'">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+<span class="font-label uppercase tracking-widest text-sm">Share Gallery</span>
+</button>
+<div class="mt-4 p-5 rounded-lg bg-surface-container-low ghost-border">
+<h3 class="font-label text-[10px] uppercase tracking-widest text-secondary mb-3">Featured Recognition</h3>
+<p class="font-body text-xs text-on-surface-variant italic">"This portrait was selected for the 'March Moderns' collection for its exceptional use of negative space."</p>
+</div>
+</div>
+</div>
+<!-- Related Works (Asymmetric Grid) -->
+<section class="mt-20">
+<h3 class="font-label text-xs uppercase tracking-[0.2em] mb-8 text-on-surface-variant">More from Week 5</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square bg-surface-container-low rounded-lg overflow-hidden ghost-border">
+<img alt="Art 1" class="w-full h-full object-cover" data-alt="Close up of abstract colorful oil painting with thick texture and vibrant red and blue hues in a gallery setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYza5dqPzBZhQYRhK4FRbqZw43Q_V6GwW5Rq40EKTQ-SE2Xb6bNPmx5fN7l1rqHc8LgmDGh8tFKC8mYcv_eL0chN9T8855VWBtgzaG7nHIhrzX6oRI9OH0tmL_HLkOmYJO4EWVsavGYOQPHjBGli2YctPGeqe4EVtmHTVZX6jZK5lWf-dfV4do0C5wO7bggewvJ7AFqXFH4qf7j7gjmWPo_Ef8EwuFbAv79IfCsxbnE5oa2B0O5_J9TkcAulurtVgXuZZPLbNNojH0"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden ghost-border mt-4">
+<img alt="Art 2" class="w-full h-full object-cover" data-alt="Elegant classical portrait illustration with golden highlights and sophisticated moody shadows on a dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABbl0UgDGaMgysbAopEv9Nd02J5ZEAPWWGH1QCBC9lyE-RApHT4Xbv62ccKBlXcEr6EAcPar_bdc7dxXMNg9wE-GNgTNg7Alc1O5G3NbtBqtAQnqxhq_3hEJvS8EsdZUU1xqkwoDF8ZveSyFmCFDfpz2DI7M_xkoY4gJVujiTmx-QYLAgnuhCMkTFujkiZJVr2Z0C61ryWmsau77IrrcZ9ePikf4vaQSRPxZv-yA2tzaQ5ETux-UdlSvKpPW4wFuo_SOIWaVDp51yt"/>
+</div>
+<div class="aspect-square bg-surface-container-low rounded-lg overflow-hidden ghost-border">
+<img alt="Art 3" class="w-full h-full object-cover" data-alt="Minimalist brush stroke painting on textured paper with muted earth tones and deep charcoal accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABCyhrWaU-ooMc2FU3LdwLgWQE4HQoN4xX_tWjkoe1y-p3-NCARnNDIEyqx_-PQFesH-2YEq_n7b5V4wbo_Av6bUYDJLZUR7lk6IY5RuWHRMMCVl9RYOtHWrGRSCtwNdpjGPGXVQJJvdhlENjuOwdCx24MbKZnu7ywCvHYkCrPq4atEVyswQfjsn-oDdsHoi8b5P3zwW7P5DFpztux8vtGmJSq1kcfu9qRvKhsVxsrpJ6905k68yWzjduqSsutfD8q5LvbfzoNJeIF"/>
+</div>
+<div class="aspect-[3/4] bg-surface-container-low rounded-lg overflow-hidden ghost-border mt-8">
+<img alt="Art 4" class="w-full h-full object-cover" data-alt="High-fashion artistic photography with dramatic lighting and avant-garde aesthetic styling in a studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4eWqj9Vh1osJyf64W4Ma0qWzvQ4Vp4QTY3hklfzzJKlD-gauLAo2miixEDPG8qLKxjx6JLTVAeHh0PSIf2XXBzG64ZIRtSBMfpt_L0wTz71yu8YJ5MfoI7PFKtt5b_vM6BXoNyDMo25E3BnEFgm-G1RVWqPQPdYMMw8hnJsufttUQkCJq-dxvyLYnz9nzjxrtqhFnEkeoBhSA_FGbCcqKLDcwXhE_lHVvcCc-or42CtUvbEi8LaMYntPpNv7oTy_Qe2NJAS_oigEB"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Shared Component: BottomNavBar -->
+<nav class="fixed bottom-6 left-0 right-0 z-50 flex justify-around items-center px-4 py-3 bg-[#353534]/80 backdrop-blur-xl fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-full shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+<a class="flex items-center justify-center text-[#e5e2e1]/70 w-12 h-12 hover:text-[#c0c1ff] transition-colors" href="#" onclick="window.location.href='ce02c189567340329fefeaae41a699e4.html'; return false;">
+<span class="material-symbols-outlined" data-icon="gallery_thumbnail">gallery_thumbnail</span>
+</a>
+<a class="flex items-center justify-center text-[#e5e2e1]/70 w-12 h-12 hover:text-[#c0c1ff] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+</a>
+<a class="flex items-center justify-center bg-gradient-to-tr from-[#c0c1ff] to-[#5f62ec] text-[#1000a9] rounded-full w-12 h-12 active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined" data-icon="auto_awesome" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</a>
+<a class="flex items-center justify-center text-[#e5e2e1]/70 w-12 h-12 hover:text-[#c0c1ff] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</a>
+</nav>
+</body></html>

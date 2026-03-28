@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#e5e2e1",
+              "on-secondary-fixed": "#241a00",
+              "on-secondary-container": "#342800",
+              "on-surface": "#e5e2e1",
+              "error": "#ffb4ab",
+              "on-error": "#690005",
+              "surface-variant": "#353534",
+              "secondary-fixed-dim": "#e9c349",
+              "surface-container-high": "#2a2a2a",
+              "on-tertiary-fixed-variant": "#793100",
+              "on-primary-container": "#fdf9ff",
+              "on-primary": "#1000a9",
+              "on-tertiary": "#552000",
+              "secondary-container": "#af8d11",
+              "on-error-container": "#ffdad6",
+              "inverse-primary": "#494bd6",
+              "secondary-fixed": "#ffe088",
+              "error-container": "#93000a",
+              "tertiary": "#ffb691",
+              "tertiary-container": "#bf5200",
+              "on-secondary-fixed-variant": "#574500",
+              "inverse-on-surface": "#313030",
+              "primary-container": "#5f62ec",
+              "background": "#131313",
+              "on-secondary": "#3c2f00",
+              "secondary": "#e9c349",
+              "primary-fixed": "#e1e0ff",
+              "outline": "#908fa1",
+              "on-primary-fixed": "#07006c",
+              "primary": "#c0c1ff",
+              "surface-container-lowest": "#0e0e0e",
+              "tertiary-fixed": "#ffdbcb",
+              "on-surface-variant": "#c6c4d8",
+              "outline-variant": "#464556",
+              "surface-bright": "#393939",
+              "on-tertiary-fixed": "#341100",
+              "on-primary-fixed-variant": "#2f2ebe",
+              "tertiary-fixed-dim": "#ffb691",
+              "surface-tint": "#c0c1ff",
+              "surface": "#131313",
+              "surface-container": "#201f1f",
+              "primary-fixed-dim": "#c0c1ff",
+              "on-tertiary-container": "#fff9f7",
+              "surface-container-low": "#1c1b1b",
+              "surface-container-highest": "#353534",
+              "on-background": "#e5e2e1",
+              "surface-dim": "#131313"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-card {
+            background: rgba(42, 42, 42, 0.4);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="bg-[#131313] dark:bg-[#131313] flex justify-between items-center px-10 py-6 w-full max-w-screen-2xl mx-auto fixed top-0 left-0 right-0 z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#c0c1ff] dark:text-[#c0c1ff]" style="font-size: 24px;">palette</span>
+<h1 class="text-[#c0c1ff] dark:text-[#c0c1ff] font-noto-serif display-lg italic tracking-tight text-3xl">Choose Your Style</h1>
+</div>
+<button class="text-[#e5e2e1] hover:text-[#c0c1ff] transition-colors duration-300 font-label uppercase tracking-widest text-xs border border-outline-variant/30 px-6 py-2 rounded-full scale-95 hover:scale-100 duration-200 ease-in-out" onclick="window.location.href='94aafa8781ed440db1035d3fc47cfee7.html'">
+            Surprise Me
+        </button>
+</header>
+<main class="pt-32 pb-40 px-6 md:px-10 max-w-screen-2xl mx-auto">
+<!-- Hero Section / Context -->
+<div class="mb-12 max-w-2xl">
+<p class="font-headline text-on-surface-variant text-xl leading-relaxed italic opacity-80">
+                Transform your digital essence into a masterpiece. Select a curated aesthetic from our digital atelier to begin your generation.
+            </p>
+</div>
+<!-- Style Cards - Horizontal Scroll -->
+<div class="relative group">
+<div class="flex gap-6 overflow-x-auto pb-12 hide-scrollbar snap-x snap-mandatory">
+<!-- Oil Painting -->
+<div class="flex-none w-80 snap-start">
+<div class="group/card relative aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low transition-transform duration-500 hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="dramatic oil painting portrait of a noble figure with thick impasto brushstrokes and deep chiaroscuro lighting in warm amber tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS8FJTJXCDdCw6PNl3VoriSAjqJct54WH8ISg0yW9SMlGINkF-wOKfYvxtIRhsVk3t_V8FIf2Ea2jhMaiowzXvtHEPKcG0OtlF-9vOsqu6IkiyFi9PWxT7_LEwWQCcmnjhhYeHqxdWhURkXKz_fo0aljr1Jr6yBm7KBEkHNImg0Q-rbm9T0dx01qh5rC5M7fO7F4gHpK7rqU7ZdNHLIJD765AcvtjvO01v77O-Rmanpn06Q8P4tMRHRkE4sgCQowDXBaS7L0-VMCH1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="font-label text-[10px] tracking-[0.2rem] uppercase text-primary mb-2 block">Available</span>
+<h3 class="font-headline text-2xl text-on-surface italic">Oil Painting</h3>
+</div>
+</div>
+</div>
+<!-- Watercolor -->
+<div class="flex-none w-80 snap-start">
+<div class="group/card relative aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low transition-transform duration-500 hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="ethereal watercolor portrait of a woman with soft bleeding edges and delicate pastel washes on textured cold-press paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1MdrD3XPYq98KfdWdR8DWs5-bVMKG9-t3DLtqhxLBIHSvjYnI3MvZTNEmnvxNWcgJ_6ybz3j6BFz73sr8FjwXbkUZ36ejZWvxZBradIzvgOBV50Hvb0j9UC-FZ5Xs6kjXLzk3gXVXvPWW5E4jwFm3XJRKiw7bURuL085Zy0YdoX3VUV99VmLQpELyu55UqBykgdeZjIHo2c9bW6ICK4FMdT--BoLuq8htFFHmayBPRlgrIGatWMhUmQ35yZEpsF-ZW85Wvh-Ai0Mq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="font-label text-[10px] tracking-[0.2rem] uppercase text-primary mb-2 block">Available</span>
+<h3 class="font-headline text-2xl text-on-surface italic">Watercolor</h3>
+</div>
+</div>
+</div>
+<!-- Anime -->
+<div class="flex-none w-80 snap-start">
+<div class="group/card relative aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low transition-transform duration-500 hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="vibrant anime style illustration of a character with cel-shaded highlights and sharp line art set against a cinematic city background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXpfTaSfIT-ced5LQEef3-PRrsQhMXKmfqpCffpwk9PFwd-BT8_svGpL3YN0xYZxrhfPgk8emRyLrCkdlYkEuxh6ht84zVEQC6RFBbmW6pimnfgWc8-utT5lDcNtvotRAoKoW4fOS4tF9yQAvI6ertXgUwE9Eu5Upx_z9FSrpDuml9kKSpLXhxMWD4_4glggchlwKWqaN3cIoPl2jdBYyQpuL9ktp9JPRnl7U_8jb0IDu71Gu75TOamfvk16r8ES5BdNoUFcz3XxAI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="font-label text-[10px] tracking-[0.2rem] uppercase text-primary mb-2 block">Available</span>
+<h3 class="font-headline text-2xl text-on-surface italic">Anime</h3>
+</div>
+</div>
+</div>
+<!-- Pixel Art -->
+<div class="flex-none w-80 snap-start">
+<div class="group/card relative aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low transition-transform duration-500 hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="charming pixel art character portrait with a limited 16-bit color palette and retro arcade aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGLkJ1rajMb1rBMBitZ0SBj3xgvKsFsDpjIm2mSzcejVZRMJ4U8clW2-woES9a1GYyHo3TGaimsBVC3rVNAs0YvQMIR7ANmrZLWcfxG0yezlp20Z8RFRwitm9UazlRfkWKaMSNpfVMLay0UiBMuhw6Kqn79L7AJM6i3jtyKRAr-EyeCQcWnVZNKUk7OSZ2EzVu10fevT7Gx24oXe9GZ8b9VuqEdNf3oyEtAIklt6P-Cw1EqkFJoICEDjaccYPoodyGHxOxrn1WeST3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="font-label text-[10px] tracking-[0.2rem] uppercase text-primary mb-2 block">Available</span>
+<h3 class="font-headline text-2xl text-on-surface italic">Pixel Art</h3>
+</div>
+</div>
+</div>
+<!-- Ukiyo-e -->
+<div class="flex-none w-80 snap-start">
+<div class="group/card relative aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low transition-transform duration-500 hover:scale-[1.02]">
+<img class="w-full h-full object-cover" data-alt="traditional japanese ukiyo-e woodblock print portrait with flat colors and bold black outlines in the style of Hokusai" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJqbp4blK0vloJzYBjjdXmZHdbabTLLiZvtWWABNR_8QkKU3ISBBrzuaKPhwezolnywXBEFhKLFQwGgFlQ5MJV9MlPEBokc1NtsRbmaJ50DJKE3lLOXnr9OBVQbN3AebVkDLVoBgNAzPoPjApooFHA-np4nWqane7dSL8NkTvj9IXC3rOY25Zl6YEHyllIURe6-kF28HMAXYrksw7CL2cDpcZvEQtzjKUyQ6MTLPihOErjBqyjjJnu53a6g61xP0pwyJhh0FM7jXcJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="font-label text-[10px] tracking-[0.2rem] uppercase text-primary mb-2 block">Available</span>
+<h3 class="font-headline text-2xl text-on-surface italic">Ukiyo-e</h3>
+</div>
+</div>
+</div>
+<!-- Sketch -->
+<div class="flex-none w-80 snap-start">
+<div class="group/card relative aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low transition-transform duration-500 hover:scale-[1.02]">
+<img class="w-full h-full object-cover opacity-80 grayscale" data-alt="rough charcoal pencil sketch of a human face with expressive cross-hatching and loose artistic lines on grey paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIIajIulbfEb9QuDiuubKiaaqE_QkyzMC3x9OWSwjTkObV4gDv-urexrjUjvrUWaZaLGN1lDTxHsuY-qONy8MMjHHSHEO3FR4qsPpvXh4ip8RwsmdrBHP4Hk2Em4Mo4v8fwNeNNlugd3vQWoXolJO4Hudizq9sR6YzvIhoq7Bq4XCdaWIoy2yRrelCtwWh5vTR0Kb9ShX5d1P-T33IDvEIvGB6L_tLo-GRYKK8mZ325tJz-1HJkQwlVcJzN7e9C9Ry5D4kY_jx_9TP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="font-label text-[10px] tracking-[0.2rem] uppercase text-primary mb-2 block">Available</span>
+<h3 class="font-headline text-2xl text-on-surface italic">Sketch</h3>
+</div>
+</div>
+</div>
+<!-- Renaissance (LOCKED) -->
+<div class="flex-none w-80 snap-start">
+<div class="group/card relative aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low opacity-60">
+<img class="w-full h-full object-cover filter blur-[4px]" data-alt="classical renaissance oil portrait with sfumato technique and glowing skin tones against a dark studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6w0JXlpnQ4WUbQnyAyFJ8z2TKP68H1Ws7PKLsQXqAWfCSKNVtxR5uUUuvwbPZKCr7luM1xR6AAwtUdTI1WTSK31BcS2uCzm-2EgdV64Iqg_NcKfZhTcGqWhbI9VOLuKU2qvBND6t1qrKmZURtUK6BacbY9HViJ7orwo6196RBIwr2TqPRp_KapSP1oxf9--7xr2i5swTOMrKZavsqVDoywxpzLttli8IXC-aQKtxKCd5xeeBvxyHZ8ULafmpJH0HW232u-i0qRfia"/>
+<div class="absolute inset-0 bg-background/40 backdrop-grayscale flex flex-col items-center justify-center">
+<div class="bg-secondary/10 border border-secondary/20 px-4 py-2 rounded-full mb-4">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Unlock at 4 weeks</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-4xl">lock</span>
+</div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-headline text-2xl text-on-surface/50 italic">Renaissance</h3>
+</div>
+</div>
+</div>
+<!-- Cyberpunk (LOCKED) -->
+<div class="flex-none w-80 snap-start">
+<div class="group/card relative aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low opacity-60">
+<img class="w-full h-full object-cover filter blur-[4px]" data-alt="futuristic cyberpunk portrait with neon magenta and cyan lighting effects and high-tech geometric overlays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB35DtKbFpKvC_ffiEw4ScKuXRLC5RcVC20neuImH24kkqG-X0e8copWP7WkzaA99UaymmB83xZ1ENeVaOLPqJ13Yx-Ri3CnQx0J0-pbK5IAefuPBcRMyfXdOsoESWvTNld_xkCvekynSYXZKmk5GnEcUTXPCFn1wgnJlTzf7KSOin4qUQP2SSZBDK03xaTGazX7HJrdN-APEvh4y7IZiF2gli83aIBN0TjVqFtBxFV92zEdFb58Q2e3ZlrMS4xEu1oFRiY642OJ9S1"/>
+<div class="absolute inset-0 bg-background/40 backdrop-grayscale flex flex-col items-center justify-center">
+<div class="bg-secondary/10 border border-secondary/20 px-4 py-2 rounded-full mb-4">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Unlock at 4 weeks</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-4xl">lock</span>
+</div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-headline text-2xl text-on-surface/50 italic">Cyberpunk</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Footer CTA -->
+<div class="fixed bottom-32 left-0 right-0 flex justify-center pointer-events-none">
+<div class="pointer-events-auto w-full max-w-xs md:max-w-md px-6">
+<button class="w-full py-5 rounded-xl bg-gradient-to-tr from-primary to-primary-container text-on-primary font-bold tracking-[0.2rem] uppercase text-sm shadow-2xl shadow-primary/30 transition-all hover:scale-[1.02] active:scale-95" onclick="window.location.href='94aafa8781ed440db1035d3fc47cfee7.html'">
+                    Paint My Portrait
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full flex justify-center pb-10 z-50">
+<div class="bg-[#2a2a2a]/80 backdrop-blur-xl fixed bottom-6 left-1/2 -translate-x-1/2 w-auto rounded-full px-6 py-3 flex items-center gap-10 shadow-2xl shadow-black/50 border border-[#464556]/15">
+<!-- Gallery -->
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/40 hover:text-[#c0c1ff] transition-all group tap-highlight-none active:scale-90" href="#" onclick="window.location.href='ce02c189567340329fefeaae41a699e4.html'; return false;">
+<span class="material-symbols-outlined mb-1" data-icon="grid_view">grid_view</span>
+<span class="font-manrope text-[10px] uppercase tracking-[0.1rem]">Gallery</span>
+</a>
+<!-- Styles (Active) -->
+<a class="flex flex-col items-center justify-center text-[#c0c1ff] font-bold tap-highlight-none active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="auto_fix_high" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+<span class="font-manrope text-[10px] uppercase tracking-[0.1rem]">Styles</span>
+</a>
+<!-- Settings -->
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/40 hover:text-[#c0c1ff] transition-all group tap-highlight-none active:scale-90" href="#" onclick="window.location.href='246d97e3215e49eca4387891a89b7d38.html'; return false;">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="font-manrope text-[10px] uppercase tracking-[0.1rem]">Settings</span>
+</a>
+</div>
+</nav>
+<!-- Visual Polish: Noise Overlay -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] contrast-150 brightness-150 mix-blend-overlay">
+<svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<filter id="noise">
+<feturbulence basefrequency="0.65" numoctaves="3" stitchtiles="stitch" type="fractalNoise"></feturbulence>
+</filter>
+<rect filter="url(#noise)" height="100%" width="100%"></rect>
+</svg>
+</div>
+</body></html>

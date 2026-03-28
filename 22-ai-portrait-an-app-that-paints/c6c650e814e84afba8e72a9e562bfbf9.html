@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>The AI Curator’s Gallery | Welcome</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#342800",
+              "background": "#131313",
+              "tertiary-fixed": "#ffdbcb",
+              "on-primary-fixed": "#07006c",
+              "on-error-container": "#ffdad6",
+              "surface-container-low": "#1c1b1b",
+              "on-primary-fixed-variant": "#2f2ebe",
+              "on-surface": "#e5e2e1",
+              "surface-container": "#201f1f",
+              "on-tertiary-fixed-variant": "#793100",
+              "surface-variant": "#353534",
+              "on-secondary-fixed": "#241a00",
+              "primary-fixed": "#e1e0ff",
+              "primary-container": "#5f62ec",
+              "on-tertiary-fixed": "#341100",
+              "outline-variant": "#464556",
+              "primary-fixed-dim": "#c0c1ff",
+              "outline": "#908fa1",
+              "error": "#ffb4ab",
+              "on-primary-container": "#fdf9ff",
+              "surface": "#131313",
+              "on-secondary-fixed-variant": "#574500",
+              "on-surface-variant": "#c6c4d8",
+              "inverse-primary": "#494bd6",
+              "secondary-fixed-dim": "#e9c349",
+              "secondary": "#e9c349",
+              "surface-container-highest": "#353534",
+              "tertiary-container": "#bf5200",
+              "surface-bright": "#393939",
+              "on-tertiary-container": "#fff9f7",
+              "surface-dim": "#131313",
+              "on-tertiary": "#552000",
+              "on-secondary": "#3c2f00",
+              "primary": "#c0c1ff",
+              "inverse-surface": "#e5e2e1",
+              "surface-container-high": "#2a2a2a",
+              "tertiary": "#ffb691",
+              "on-primary": "#1000a9",
+              "on-background": "#e5e2e1",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "secondary-fixed": "#ffe088",
+              "surface-tint": "#c0c1ff",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-on-surface": "#313030",
+              "tertiary-fixed-dim": "#ffb691",
+              "secondary-container": "#af8d11"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            background: rgba(53, 53, 52, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+        .ghost-border {
+            outline: 1px solid rgba(70, 69, 86, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/30 antialiased overflow-x-hidden">
+<!-- Top Navigation Anchor (Manual suppressed for Onboarding as per instructions, but kept brand element for identity) -->
+<header class="flex items-center justify-between w-full px-6 py-8 fixed top-0 z-50">
+<div class="font-headline italic tracking-tight text-xl font-bold text-on-surface">
+            The Atelier
+        </div>
+<div class="flex gap-4">
+<button class="text-on-surface-variant font-label text-[10px] tracking-widest uppercase hover:text-primary transition-colors">Sign In</button>
+</div>
+</header>
+<main class="min-h-screen flex flex-col pt-24 pb-12 px-6 lg:px-24">
+<!-- Hero Section: Intentional Asymmetry -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+<div class="lg:col-span-7 z-10">
+<div class="inline-flex items-center gap-2 mb-6 px-3 py-1 bg-surface-container-high rounded-full ghost-border">
+<span class="material-symbols-outlined text-primary text-[14px]">auto_awesome</span>
+<span class="font-label text-[10px] tracking-[0.2em] text-on-surface-variant uppercase">AI Curator v2.0</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8 tracking-tight italic">
+                    Your face as art.<br/>
+<span class="text-primary">Every week.</span>
+</h1>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-xl mb-12 leading-relaxed opacity-80">
+                    A digital atelier that transforms your identity into museum-grade masterpieces. From Renaissance oil paintings to futuristic pixel art, curated specifically for you.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="px-10 py-5 bg-gradient-to-br from-primary to-primary-container text-on-primary font-body font-extrabold rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 flex items-center justify-center gap-3" onclick="window.location.href='eb06a1b1cb3042bd957af0495831fbd5.html'">
+                        Start Your Portrait Journal
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Montage Section: Bento Grid / Gallery Style -->
+<div class="lg:col-span-5 relative">
+<div class="grid grid-cols-2 gap-4">
+<!-- Oil Painting -->
+<div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden ghost-border editorial-shadow translate-y-8">
+<img class="w-full h-full object-cover filter brightness-75 contrast-125" data-alt="dramatic oil painting portrait of a woman with deep shadows and warm highlights in the style of Rembrandt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWETEjJ_JmlJHesSVsAu-9DHz6DIseFWGtl653ChTGPms8x27qBqgv5Fq_cTo3B_46yIk_MH5VUV4RcBAnO7RyciiOEEl8yeEABYZLCCzRu63dDhEjgABtW1SItUOobrUNY5e4PnEZtGzeJhJxEpjwYsQ91XPsJwr3GaAZFHmuR8IpGKunnB8MZenUdenIh-QM0ieM9FoQoHfVkwItKW8TEXZeiFOI2Sm3RvyuFMWdxnbqtXqVMmnF8xc_6chP7KLJWr17sMXsw_VP"/>
+<div class="absolute bottom-3 left-3 px-2 py-1 glass-effect rounded text-[10px] font-label tracking-widest text-secondary uppercase">Oil Painting</div>
+</div>
+<!-- Watercolor -->
+<div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden ghost-border editorial-shadow">
+<img class="w-full h-full object-cover" data-alt="ethereal watercolor portrait with soft bleeds of blue and lavender and delicate pencil sketches" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEBH29kDHL0VCH95CwfWUODbp0DiVLbFlvXAB95S4-ZHAXgPGZgfJBqLbYfw99J8PCyMHMW9wTVQU_78VGtDLSWFOokQGehg3Z7wftkD30vPUCHoTON8ldVk5h40XNf_F9joDmPbBdxgEwZswVi2Cf4a_Ff0hsizJX8pxroqGbl5x6qhNA5VKJ-bbep-ODZVy9tK7hUm25MG9wKU0GDUi7g99Yxp5S9xIOb_CjR6D_buQCuKYXVYYIQ-8ECbiDqdNIbFvbXgfnElnM"/>
+<div class="absolute bottom-3 left-3 px-2 py-1 glass-effect rounded text-[10px] font-label tracking-widest text-on-surface-variant uppercase">Watercolor</div>
+</div>
+<!-- Anime -->
+<div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden ghost-border editorial-shadow translate-y-8">
+<img class="w-full h-full object-cover" data-alt="high-quality anime style portrait with vibrant lighting and sharp cel-shading features" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXHzf91Oz7MHhF30vHEYmUYfuNvQ561N-540UYBwHh2ipkAhfF-61Aubm2xgFxsyFwEuxw4azQBBoJGapKOPsAv6am0NatidxEAHb4v6PEqKceCL-YOYj1SWywvXxWhX6QUMP_E-X8c8O8rFDDYjwCfm-WNL2j99XcHwRe39ygKTibnlrPQn9cAVfIsCmKYbJn984qq5UZw2o5vRtEz1z19wPo1S3JEqGtkfUywkZb5FAG4M-1pfWo4x5Oc9AZxM5B1mc5xiK3V0SI"/>
+<div class="absolute bottom-3 left-3 px-2 py-1 glass-effect rounded text-[10px] font-label tracking-widest text-on-surface-variant uppercase">Anime</div>
+</div>
+<!-- Ukiyo-e -->
+<div class="aspect-[4/5] bg-surface-container-low rounded-lg overflow-hidden ghost-border editorial-shadow">
+<img class="w-full h-full object-cover" data-alt="traditional Japanese ukiyo-e woodblock print portrait with bold outlines and flat muted colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYvwKuRx9x4VSgjZ2edHdEEHuxSUYp7eHyBhYxsSPwlPKnAWXt6zPSU7RCI0o1f9ZoJR8VrQAWYgvNEhXjTR5IqkQ565Gx4jt2US2DOAFW-Q2tgQul5XR3TmboW58E_Nvd-p2HQ2QgbnkxaQBye-KJI1pV0H2segeiJhVZDQOucyLr44V0nQdiqxtZaHVOCFELk9NcqqAq2-BlQTyZajhoyEk5_rv5NyThQA_KuVDmgevgGG0sg7clF5gFB5qa89AT-ZjWU-mEqVB9"/>
+<div class="absolute bottom-3 left-3 px-2 py-1 glass-effect rounded text-[10px] font-label tracking-widest text-on-surface-variant uppercase">Ukiyo-e</div>
+</div>
+</div>
+<!-- Floating Decorative Element -->
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary/20 rounded-full blur-[80px]"></div>
+<div class="absolute -bottom-12 -left-12 w-48 h-48 bg-primary-container/10 rounded-full blur-[100px]"></div>
+</div>
+</div>
+<!-- Featured Carousel / Bottom Details -->
+<div class="mt-auto pt-16 border-t border-outline-variant/15 grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<span class="font-label text-[11px] tracking-[0.2em] text-primary mb-4 block uppercase">The Evolution</span>
+<p class="font-headline text-xl italic text-on-surface leading-tight">Observe your reflection through the lens of history.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">brush</span>
+<span class="font-body text-sm font-semibold">50+ Artistic Styles</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined">update</span>
+<span class="font-body text-sm">Weekly Generation Drop</span>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">verified</span>
+<span class="font-body text-sm font-semibold">Portrait Privacy Lock</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant opacity-60">
+<span class="material-symbols-outlined">print</span>
+<span class="font-body text-sm">High-Res Museum Export</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Style specific overlay for premium feel -->
+<div class="fixed inset-0 pointer-events-none border-[12px] border-surface-container-lowest opacity-50 z-[-1]"></div>
+<div class="fixed inset-0 pointer-events-none z-[-2] bg-[radial-gradient(circle_at_top_right,rgba(192,193,255,0.05),transparent_50%)]"></div>
+</body></html>

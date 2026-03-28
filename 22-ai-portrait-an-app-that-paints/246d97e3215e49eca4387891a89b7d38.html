@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#313030",
+              "on-secondary-fixed": "#241a00",
+              "on-primary-container": "#fdf9ff",
+              "surface-container-lowest": "#0e0e0e",
+              "on-tertiary-container": "#fff9f7",
+              "inverse-primary": "#494bd6",
+              "outline-variant": "#464556",
+              "on-surface-variant": "#c6c4d8",
+              "secondary-fixed-dim": "#e9c349",
+              "secondary": "#e9c349",
+              "on-tertiary": "#552000",
+              "on-primary-fixed": "#07006c",
+              "tertiary": "#ffb691",
+              "on-primary": "#1000a9",
+              "surface-variant": "#353534",
+              "on-background": "#e5e2e1",
+              "error-container": "#93000a",
+              "surface": "#131313",
+              "surface-container-high": "#2a2a2a",
+              "surface-bright": "#393939",
+              "tertiary-fixed": "#ffdbcb",
+              "on-surface": "#e5e2e1",
+              "on-error": "#690005",
+              "background": "#131313",
+              "tertiary-container": "#bf5200",
+              "outline": "#908fa1",
+              "on-primary-fixed-variant": "#2f2ebe",
+              "surface-container-low": "#1c1b1b",
+              "surface-container-highest": "#353534",
+              "error": "#ffb4ab",
+              "secondary-container": "#af8d11",
+              "tertiary-fixed-dim": "#ffb691",
+              "on-tertiary-fixed": "#341100",
+              "primary-fixed": "#e1e0ff",
+              "on-secondary-container": "#342800",
+              "surface-tint": "#c0c1ff",
+              "on-secondary-fixed-variant": "#574500",
+              "primary-container": "#5f62ec",
+              "surface-dim": "#131313",
+              "secondary-fixed": "#ffe088",
+              "on-tertiary-fixed-variant": "#793100",
+              "surface-container": "#201f1f",
+              "inverse-surface": "#e5e2e1",
+              "primary": "#c0c1ff",
+              "on-secondary": "#3c2f00",
+              "on-error-container": "#ffdad6",
+              "primary-fixed-dim": "#c0c1ff"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.5rem", "xl": "0.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #131313;
+        color: #e5e2e1;
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#1c1b1b] flex items-center justify-between px-6 py-4">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-[#c0c1ff]">arrow_back</span>
+</button>
+<h1 class="font-['Noto_Serif'] font-bold tracking-tight text-[#e5e2e1] text-xl">Settings</h1>
+</div>
+<div class="w-6"></div> <!-- Spacer for centering logic if needed, though layout is justify-between -->
+</header>
+<main class="mt-20 px-6 max-w-2xl mx-auto space-y-10">
+<!-- Section: Notifications -->
+<section>
+<h2 class="font-['Noto_Serif'] text-sm uppercase tracking-[0.2rem] text-primary/60 mb-6">Notifications</h2>
+<div class="space-y-1">
+<!-- Weekly Reminder -->
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-xl group hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Weekly Reminder</span>
+</div>
+<div class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</div>
+</div>
+<!-- Reminder Time -->
+<button class="w-full flex items-center justify-between p-4 bg-surface-container-low rounded-xl group hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col text-left">
+<span class="text-on-surface font-medium">Reminder Time</span>
+<span class="text-on-surface-variant text-sm">Every Sunday, 10:00 AM</span>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Section: Your Progress -->
+<section>
+<h2 class="font-['Noto_Serif'] text-sm uppercase tracking-[0.2rem] text-primary/60 mb-6">Your Progress</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/15">
+<p class="text-on-surface-variant text-xs uppercase tracking-widest mb-1">Current Streak</p>
+<p class="text-2xl font-['Noto_Serif'] text-primary">Week 7</p>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/15">
+<p class="text-on-surface-variant text-xs uppercase tracking-widest mb-1">Subscription</p>
+<p class="text-on-surface font-semibold">Annual Plan</p>
+<p class="text-on-surface-variant text-xs mt-1 italic">Renews Apr 28</p>
+</div>
+</div>
+</section>
+<!-- Section: Privacy & Data -->
+<section>
+<h2 class="font-['Noto_Serif'] text-sm uppercase tracking-[0.2rem] text-primary/60 mb-6">Privacy &amp; Data</h2>
+<div class="p-6 bg-surface-container-low rounded-xl space-y-4 border border-outline-variant/15">
+<div>
+<button class="text-[#ffb4ab] font-bold text-sm tracking-wide hover:underline transition-all" onclick="window.location.href='eb06a1b1cb3042bd957af0495831fbd5.html'">
+                        Reset Reference Selfie
+                    </button>
+<p class="text-on-surface-variant text-xs mt-2 leading-relaxed opacity-70">
+                        This will permanently remove your stored reference image and cannot be undone.
+                    </p>
+</div>
+<div class="pt-4 border-t border-outline-variant/10">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary text-sm">verified_user</span>
+<p class="text-on-surface-variant text-xs leading-relaxed italic">
+                            Privacy Note: Your selfie is stored only on this device. We never upload your biometric data to our servers.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: About -->
+<section>
+<h2 class="font-['Noto_Serif'] text-sm uppercase tracking-[0.2rem] text-primary/60 mb-6">About</h2>
+<div class="bg-surface-container-low rounded-xl overflow-hidden divide-y divide-outline-variant/10">
+<div class="flex items-center justify-between p-4">
+<span class="text-on-surface">Version</span>
+<span class="text-on-surface-variant text-sm font-mono">Atelier v2.1.4</span>
+</div>
+<button class="w-full flex items-center justify-between p-4 hover:bg-surface-container-high transition-colors">
+<span class="text-on-surface">Terms of Service</span>
+<span class="material-symbols-outlined text-outline text-sm">open_in_new</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 hover:bg-surface-container-high transition-colors">
+<span class="text-on-surface">Privacy Policy</span>
+<span class="material-symbols-outlined text-outline text-sm">open_in_new</span>
+</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-center pb-8">
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-full px-4 py-2 bg-[#2a2a2a]/80 backdrop-blur-xl border border-[#464556]/15 shadow-[0_20px_40px_rgba(0,0,0,0.5)] flex items-center justify-around">
+<!-- Gallery Tab -->
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/60 px-4 py-2 hover:text-[#e5e2e1] transition-colors active:scale-90 transition-all duration-300" href="#" onclick="window.location.href='ce02c189567340329fefeaae41a699e4.html'; return false;">
+<span class="material-symbols-outlined mb-1">grid_view</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-[0.1rem] font-bold">Gallery</span>
+</a>
+<!-- Styles Tab -->
+<a class="flex flex-col items-center justify-center text-[#e5e2e1]/60 px-4 py-2 hover:text-[#e5e2e1] transition-colors active:scale-90 transition-all duration-300" href="#" onclick="window.location.href='c4dcf47fb5954bc796edfb9441bbae8e.html'; return false;">
+<span class="material-symbols-outlined mb-1">auto_awesome</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-[0.1rem] font-bold">Styles</span>
+</a>
+<!-- Settings Tab (Active) -->
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#c0c1ff] to-[#5f62ec] text-[#1000a9] rounded-full px-6 py-2 active:scale-90 transition-all duration-300" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-[0.1rem] font-bold">Settings</span>
+</a>
+</div>
+</nav>
+</body></html>

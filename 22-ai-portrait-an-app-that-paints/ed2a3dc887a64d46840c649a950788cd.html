@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#0e0e0e",
+            "inverse-on-surface": "#313030",
+            "primary-container": "#5f62ec",
+            "secondary-container": "#af8d11",
+            "on-tertiary-fixed-variant": "#793100",
+            "on-secondary": "#3c2f00",
+            "surface-container-highest": "#353534",
+            "primary": "#c0c1ff",
+            "outline": "#908fa1",
+            "on-surface": "#e5e2e1",
+            "tertiary": "#ffb691",
+            "surface-variant": "#353534",
+            "on-error": "#690005",
+            "tertiary-fixed": "#ffdbcb",
+            "on-secondary-fixed": "#241a00",
+            "surface-container-low": "#1c1b1b",
+            "on-tertiary": "#552000",
+            "on-background": "#e5e2e1",
+            "on-secondary-fixed-variant": "#574500",
+            "on-error-container": "#ffdad6",
+            "tertiary-fixed-dim": "#ffb691",
+            "surface-tint": "#c0c1ff",
+            "surface-dim": "#131313",
+            "on-tertiary-fixed": "#341100",
+            "secondary": "#e9c349",
+            "on-primary-container": "#fdf9ff",
+            "primary-fixed": "#e1e0ff",
+            "inverse-surface": "#e5e2e1",
+            "error": "#ffb4ab",
+            "surface-bright": "#393939",
+            "surface-container-high": "#2a2a2a",
+            "on-surface-variant": "#c6c4d8",
+            "surface-container": "#201f1f",
+            "tertiary-container": "#bf5200",
+            "on-primary-fixed-variant": "#2f2ebe",
+            "on-primary-fixed": "#07006c",
+            "surface": "#131313",
+            "background": "#131313",
+            "primary-fixed-dim": "#c0c1ff",
+            "outline-variant": "#464556",
+            "secondary-fixed": "#ffe088",
+            "secondary-fixed-dim": "#e9c349",
+            "on-secondary-container": "#342800",
+            "on-tertiary-container": "#fff9f7",
+            "error-container": "#93000a",
+            "inverse-primary": "#494bd6",
+            "on-primary": "#1000a9"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-effect {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .text-shadow-sm {
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    /* Intentional Asymmetry Layout for Hero */
+    .hero-offset {
+      transform: translateX(5%);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface overflow-hidden">
+<!-- Main Canvas: Full Screen Portrait -->
+<main class="relative h-screen w-full flex flex-col items-center justify-center">
+<!-- Hero Image Container -->
+<div class="absolute inset-0 z-0">
+<img alt="Exquisite oil painting portrait" class="h-full w-full object-cover" data-alt="Stunning oil painting portrait of a mysterious woman with dramatic Caravaggio-style lighting, thick impasto brushstrokes, and deep moody shadows in a luxury gallery aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCtiNS-9fivXZJS0KHDCkzou9YHeKd-s_ZTYRWh2J6WbwNg3_E_qT9Yt-bOqI68mlDSPR0JYwaCmhD-jpkOVXuo8AhZEQG6w7PiG9i7DOwfhbpHzzbMKfhOg-64808znOo933ziRjuZZrIzAc6wsUZDu52yoyqSh9GBzZRxIAjnHJ_lAlbpzru-cTeS5SXms_sOKLRGxbKGvtdt9MEwLVY3ZPlZjSuMV3i7PO4HUvgrczUzAQOrX4oEx2_ZEHmJQP0Hoy8TBzjH5dA"/>
+<!-- Luminous Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-black/40"></div>
+</div>
+<!-- Top Navigation (Shared Component Style: TopAppBar) -->
+<nav class="fixed top-0 w-full z-50 flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center">
+<button class="text-indigo-200 dark:text-indigo-100 hover:bg-white/10 rounded-full transition-colors active:scale-95 duration-200 p-2" onclick="window.location.href='ce02c189567340329fefeaae41a699e4.html'">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+</div>
+<div class="font-headline italic tracking-tight text-indigo-200 font-bold">
+<!-- Brand identity or empty as per JSON -->
+</div>
+<div class="w-10"></div> <!-- Spacer for symmetry -->
+</nav>
+<!-- Content Overlay -->
+<div class="relative z-10 w-full h-full flex flex-col justify-end px-8 pb-32">
+<!-- Text Info Section (Asymmetric Alignment) -->
+<div class="mb-12 hero-offset">
+<div class="inline-block px-3 py-1 bg-surface-container-high/60 glass-effect rounded-lg border border-outline-variant/15 mb-4">
+<p class="font-label uppercase tracking-[0.1rem] text-[10px] text-primary">Masterpiece</p>
+</div>
+<h1 class="font-headline text-5xl md:text-6xl text-on-surface leading-tight tracking-tight mb-2 text-shadow-sm">
+          Oil Painting
+        </h1>
+<p class="font-body text-on-surface-variant/80 tracking-wide font-light text-sm">
+          Week 8 · Mar 28
+        </p>
+</div>
+<!-- Action Cluster (The Dock-style Buttons) -->
+<div class="flex items-center gap-4">
+<!-- Primary Action: Save -->
+<button class="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg hover:brightness-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+<!-- Secondary Actions -->
+<button class="flex items-center justify-center w-14 h-14 rounded-xl bg-surface-container-high/40 glass-effect border border-outline-variant/15 text-on-surface hover:bg-white/10 active:scale-95 transition-all">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="flex items-center justify-center w-14 h-14 rounded-xl bg-surface-container-high/40 glass-effect border border-outline-variant/15 text-on-surface hover:bg-white/10 active:scale-95 transition-all">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+</div>
+<!-- Bottom Navigation Shell (Mapped from Shared Component: BottomNavBar) -->
+<!-- Suppression Logic: Suppressed because it's a "Result" focused journey. 
+         Instead, we use the requested Footer hint. -->
+<footer class="fixed bottom-0 left-0 w-full z-50 flex flex-col items-center justify-center pb-8 pt-4">
+<div class="flex flex-col items-center gap-2 opacity-60">
+<span class="material-symbols-outlined animate-bounce text-indigo-200">keyboard_double_arrow_up</span>
+<p class="font-label uppercase tracking-[0.15rem] text-[10px] text-on-surface-variant">Swipe up for details</p>
+</div>
+</footer>
+<!-- Atmosphere Overlay (Vignette) -->
+<div class="pointer-events-none absolute inset-0 bg-radial-gradient from-transparent to-background/40"></div>
+</main>
+<!-- Background Layering: Ghost borders and Tonal shifts -->
+<div class="fixed inset-0 pointer-events-none z-[-1] bg-surface"></div>
+</body></html>
