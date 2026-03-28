@@ -1,1372 +1,2125 @@
 [
   {
-    "name": "Locket Widget",
-    "slug": "locket",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": 4.75987,
-    "reviews": 497421,
-    "appStoreUrl": "https://apps.apple.com/us/app/locket-widget/id1600525061?uo=4",
-    "tagline": "Social Networking app with 5 App Store screenshots"
+    "name": "Turf - Live Sports Predictions",
+    "slug": "turflivesportspredictions",
+    "category": "Sports",
+    "description": "Turf is a live sports prediction game built for fans who want to stay locked into every moment. As games unfold, Turf asks real-time questions about what will happen next.",
+    "rating": "5.0",
+    "reviews": 16,
+    "appStoreUrl": "https://apps.apple.com/us/app/turf-live-sports-predictions/id6747896331?uo=4",
+    "releaseDate": "2026-01-30T03:11:16Z",
+    "price": "Free",
+    "genres": [
+      "Sports",
+      "Trivia",
+      "Games",
+      "Sports"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Pocket",
-    "slug": "pocket",
-    "category": "Utilities",
-    "screenshots": [],
-    "rating": 4.63636,
-    "reviews": 11,
-    "appStoreUrl": "https://apps.apple.com/us/app/folio-save-now-read-later/id6746292066?uo=4",
-    "tagline": "Utilities app with 5 App Store screenshots"
-  },
-  {
-    "name": "Bump",
-    "slug": "bump",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": 4.4155,
-    "reviews": 1051500,
-    "appStoreUrl": "https://apps.apple.com/us/app/hinge-dating-app-match-date/id595287172?uo=4",
-    "tagline": "Social Networking app with 5 App Store screenshots"
-  },
-  {
-    "name": "corner",
-    "slug": "corner",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": 4.52778,
-    "reviews": 468,
-    "appStoreUrl": "https://apps.apple.com/us/app/corner-curate-share-places/id1668282277?uo=4",
-    "tagline": "Social Networking app with 5 App Store screenshots"
-  },
-  {
-    "name": "Endel",
-    "slug": "endel",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.64611,
-    "reviews": 31756,
-    "appStoreUrl": "https://apps.apple.com/us/app/endel-focus-sleep-sounds/id1346247457?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "LeanBites",
-    "slug": "leanbites",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.68719,
-    "reviews": 2452,
-    "appStoreUrl": "https://apps.apple.com/us/app/lean-ai-macro-tracker/id6741105248?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Filtru",
-    "slug": "filtru",
-    "category": "Food & Drink",
-    "screenshots": [],
-    "rating": 4.78099,
-    "reviews": 3694,
-    "appStoreUrl": "https://apps.apple.com/us/app/best-brew-guide-filtru-coffee/id1150921819?uo=4",
-    "tagline": "Food & Drink app with 5 App Store screenshots"
-  },
-  {
-    "name": "GO Club",
-    "slug": "goclub",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.8724,
-    "reviews": 10713,
-    "appStoreUrl": "https://apps.apple.com/us/app/go-taxi-app-for-japan/id1254341709?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Unwind",
-    "slug": "unwind",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.77586,
-    "reviews": 580,
-    "appStoreUrl": "https://apps.apple.com/us/app/unwind-breathing-exercises/id1470613384?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Descent",
-    "slug": "descent",
-    "category": "Travel",
-    "screenshots": [],
-    "rating": 4.25,
-    "reviews": 4,
-    "appStoreUrl": "https://apps.apple.com/us/app/descent-cheap-flight-tracker/id6758267403?uo=4",
-    "tagline": "Travel app with 5 App Store screenshots"
-  },
-  {
-    "name": "Stuff | ToDos and Lists",
-    "slug": "stuff",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": 4.50877,
-    "reviews": 57,
-    "appStoreUrl": "https://apps.apple.com/us/app/stuff-todos-and-lists/id6502721156?uo=4",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "Amie",
-    "slug": "Amie",
-    "category": "Other",
-    "screenshots": [],
-    "rating": 3.37209,
-    "reviews": 129,
-    "appStoreUrl": "https://apps.apple.com/us/app/amie-todos-calendar/id1548277133?uo=4",
-    "tagline": "Other app with 5 App Store screenshots"
-  },
-  {
-    "name": "Dudel Draw",
-    "slug": "dudeldraw",
-    "category": "Graphics & Design",
-    "screenshots": [],
-    "rating": 4.76864,
-    "reviews": 523,
-    "appStoreUrl": "https://apps.apple.com/us/app/dudel-draw/id6450056192?uo=4",
-    "tagline": "Graphics & Design app with 5 App Store screenshots"
-  },
-  {
-    "name": "REKKI",
-    "slug": "rekki",
-    "category": "Food & Drink",
-    "screenshots": [],
-    "rating": 4.08333,
-    "reviews": 36,
-    "appStoreUrl": "https://apps.apple.com/us/app/rekki-wholesale-ingredients/id1216805389?uo=4",
-    "tagline": "Food & Drink app with 5 App Store screenshots"
-  },
-  {
-    "name": "CanGoGo",
-    "slug": "cangogo",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.78688,
-    "reviews": 61,
-    "appStoreUrl": "https://apps.apple.com/us/app/cangogo-pedometer-walking/id6499481356?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Universe Website Builder",
-    "slug": "universe",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": 4.52985,
-    "reviews": 9767,
-    "appStoreUrl": "https://apps.apple.com/us/app/universe-website-builder/id1211437633?uo=4",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "Canopi",
-    "slug": "canopi",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.76923,
-    "reviews": 13,
-    "appStoreUrl": "https://apps.apple.com/us/app/canopi-memorable-moments/id6483864028?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "How We Feel",
-    "slug": "howwefeel",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.86679,
-    "reviews": 27349,
-    "appStoreUrl": "https://apps.apple.com/us/app/how-we-feel/id1562706384?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Franki | Eat. Drink. Earn.",
-    "slug": "franki",
-    "category": "Food & Drink",
-    "screenshots": [],
-    "rating": 4.57955,
-    "reviews": 1144,
-    "appStoreUrl": "https://apps.apple.com/us/app/franki-eat-drink-earn/id1504173412?uo=4",
-    "tagline": "Food & Drink app with 5 App Store screenshots"
-  },
-  {
-    "name": "Sugar",
-    "slug": "sugar",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": 4.42124,
-    "reviews": 527,
-    "appStoreUrl": "https://apps.apple.com/us/app/sugar-dating-with-sweetness/id1220911529?uo=4",
-    "tagline": "Social Networking app with 5 App Store screenshots"
-  },
-  {
-    "name": "AgBr",
-    "slug": "agbr",
-    "category": "Photo & Video",
-    "screenshots": [],
-    "rating": 4.74193,
-    "reviews": 31,
-    "appStoreUrl": "https://apps.apple.com/us/app/agbr/id6701996818?uo=4",
-    "tagline": "Photo & Video app with 5 App Store screenshots"
-  },
-  {
-    "name": "Flighty",
-    "slug": "flighty",
-    "category": "Travel",
-    "screenshots": [],
-    "rating": 4.84267,
-    "reviews": 121333,
-    "appStoreUrl": "https://apps.apple.com/us/app/flighty-live-flight-tracker/id1358823008?uo=4",
-    "tagline": "Travel app with 5 App Store screenshots"
-  },
-  {
-    "name": "stoic. journal & mental health",
-    "slug": "stoic",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.82453,
-    "reviews": 34000,
-    "appStoreUrl": "https://apps.apple.com/us/app/stoic-journal-mental-health/id1312926037?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Rumbo Fitness",
-    "slug": "rumbofitness",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.80488,
-    "reviews": 41,
-    "appStoreUrl": "https://apps.apple.com/us/app/rumbo-fitness/id6475088608?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Senses",
-    "slug": "senses",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.63933,
-    "reviews": 3524,
-    "appStoreUrl": "https://apps.apple.com/us/app/senses-kegel-sex-health/id1563697753?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Aave",
-    "slug": "aave",
-    "category": "Finance",
-    "screenshots": [],
-    "rating": 4.73672,
-    "reviews": 74382,
-    "appStoreUrl": "https://apps.apple.com/us/app/metamask-trade-crypto/id1438144202?uo=4",
-    "tagline": "Finance app with 5 App Store screenshots"
-  },
-  {
-    "name": "Claude by Anthropic",
-    "slug": "claude",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": 4.69366,
-    "reviews": 89380,
-    "appStoreUrl": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684?uo=4",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "Family",
-    "slug": "Family",
-    "category": "Other",
-    "screenshots": [],
-    "rating": 4.42832,
-    "reviews": 40201,
-    "appStoreUrl": "https://apps.apple.com/us/app/family-life/id6449919224?uo=4",
-    "tagline": "Other app with 5 App Store screenshots"
-  },
-  {
-    "name": "PURE",
-    "slug": "pure",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.29915,
-    "reviews": 77320,
-    "appStoreUrl": "https://apps.apple.com/us/app/pure-open-minded-dating-app/id690661663?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "Speak Languages",
-    "slug": "monspeak",
-    "category": "Other",
-    "screenshots": [],
-    "rating": 4.83434,
-    "reviews": 40831,
-    "appStoreUrl": "https://apps.apple.com/us/app/speak-language-learning/id1286609883?uo=4",
-    "tagline": "Other app with 5 App Store screenshots"
-  },
-  {
-    "name": "Bounty",
-    "slug": "bounty",
-    "category": "Business",
-    "screenshots": [],
-    "rating": 4.77512,
-    "reviews": 189026,
-    "appStoreUrl": "https://apps.apple.com/us/app/one-piece-bounty-rush/id1343688545?uo=4",
-    "tagline": "Business app with 5 App Store screenshots"
-  },
-  {
-    "name": "Flowie",
-    "slug": "flowie",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.94381,
-    "reviews": 267,
-    "appStoreUrl": "https://apps.apple.com/us/app/flowie-your-daily-ai-buddy/id6748905032?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "grug",
-    "slug": "grug",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.8,
-    "reviews": 45,
-    "appStoreUrl": "https://apps.apple.com/us/app/grug/id6751649802?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "Superlist",
-    "slug": "superlist",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": 4.485,
-    "reviews": 400,
-    "appStoreUrl": "https://apps.apple.com/us/app/superlist-to-do-list-tasks/id1547585270?uo=4",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "yope",
-    "slug": "yope",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.71049,
-    "reviews": 7012,
-    "appStoreUrl": "https://apps.apple.com/us/app/yope-friends-only-pics/id1600195477?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "Roam: Global eSIM & WiFi",
-    "slug": "roam",
-    "category": "Travel",
-    "screenshots": [],
-    "rating": 5,
-    "reviews": 5,
-    "appStoreUrl": "https://apps.apple.com/us/app/gotrip-esim-travel-esim-roam/id6746262163?uo=4",
-    "tagline": "Travel app with 5 App Store screenshots"
-  },
-  {
-    "name": "ClickUp",
-    "slug": "clickup",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": 4.65123,
-    "reviews": 8255,
-    "appStoreUrl": "https://apps.apple.com/us/app/clickup-tasks-chat-docs-ai/id1535098836?uo=4",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "TOPYS",
-    "slug": "topys",
-    "category": "Reference",
-    "screenshots": [],
-    "rating": 4.66667,
-    "reviews": 21,
-    "appStoreUrl": "https://apps.apple.com/us/app/topys-%E4%BD%A0%E7%9A%84%E7%81%B5%E6%84%9F%E5%BA%93/id1453559269?uo=4",
-    "tagline": "Reference app with 5 App Store screenshots"
-  },
-  {
-    "name": "Gentler Streak",
-    "slug": "gentler",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.71471,
-    "reviews": 8763,
-    "appStoreUrl": "https://apps.apple.com/us/app/gentler-streak-workout-tracker/id1576857102?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Atoms",
-    "slug": "atoms",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": 4.8303,
-    "reviews": 10159,
-    "appStoreUrl": "https://apps.apple.com/us/app/atoms-from-atomic-habits/id6474421906?uo=4",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "MD Vinyl for Music App",
-    "slug": "mdvinyl",
-    "category": "Music",
-    "screenshots": [],
-    "rating": 4.84353,
-    "reviews": 7458342,
-    "appStoreUrl": "https://apps.apple.com/us/app/mcdonalds/id922103212?uo=4",
-    "tagline": "Music app with 5 App Store screenshots"
-  },
-  {
-    "name": "Knitflow",
-    "slug": "knitflow",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.8,
-    "reviews": 5,
-    "appStoreUrl": "https://apps.apple.com/us/app/knitflow-knitting-crochet/id6740465748?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "What's going on? Friend Diary",
-    "slug": "whatsgoinon",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": 4.70203,
-    "reviews": 1386650,
-    "appStoreUrl": "https://apps.apple.com/us/app/whatsapp-business/id1386412985?uo=4",
-    "tagline": "Social Networking app with 5 App Store screenshots"
-  },
-  {
-    "name": "Oscar Stories for Children",
-    "slug": "oscarstories",
-    "category": "Education",
-    "screenshots": [],
-    "rating": 4.85397,
-    "reviews": 16606,
-    "appStoreUrl": "https://apps.apple.com/us/app/oscar-health/id781584599?uo=4",
-    "tagline": "Education app with 5 App Store screenshots"
-  },
-  {
-    "name": "Trendy Profile Tracker & Boost",
-    "slug": "trendy",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": 4.66346,
-    "reviews": 104,
-    "appStoreUrl": "https://apps.apple.com/us/app/trendy-profile-tracker-boost/id6754564423?uo=4",
-    "tagline": "Social Networking app with 5 App Store screenshots"
-  },
-  {
-    "name": "Timeleft",
-    "slug": "timeleft",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": 4.66841,
-    "reviews": 6879,
-    "appStoreUrl": "https://apps.apple.com/us/app/timeleft-make-new-friends-irl/id6466442949?uo=4",
-    "tagline": "Social Networking app with 5 App Store screenshots"
-  },
-  {
-    "name": "Pebble AI",
-    "slug": "pebbleai",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": 4.02857,
-    "reviews": 35,
-    "appStoreUrl": "https://apps.apple.com/us/app/pebble-climbing/id1453943563?uo=4",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "Placify",
-    "slug": "placify",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.4375,
-    "reviews": 48,
-    "appStoreUrl": "https://apps.apple.com/us/app/placify-map-trip-planner/id6739698007?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "Art of Flora",
-    "slug": "artofflora",
+    "name": "Swypn: Ai Photo Detection",
+    "slug": "swypnaiphotodetection",
     "category": "Games",
-    "screenshots": [],
-    "rating": 4.70526,
-    "reviews": 268379,
-    "appStoreUrl": "https://apps.apple.com/us/app/ibis-paint-x/id450722833?uo=4",
-    "tagline": "Games app with 5 App Store screenshots"
+    "description": "Real or AI? Can You Tell the Difference?",
+    "rating": "5.0",
+    "reviews": 2,
+    "appStoreUrl": "https://apps.apple.com/us/app/swypn-ai-photo-detection/id6759467546?uo=4",
+    "releaseDate": "2026-02-26T23:40:45Z",
+    "price": "Free",
+    "genres": [
+      "Games",
+      "Trivia",
+      "Entertainment",
+      "Card"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Deen Tracker",
-    "slug": "deentracker",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.92124,
-    "reviews": 927,
-    "appStoreUrl": "https://apps.apple.com/us/app/deen-islamic-app/id1617532276?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
+    "name": "Algbra",
+    "slug": "algbra",
+    "category": "Finance",
+    "description": "Algbra is the ethical finance platform designed to help you spend, save, and manage money in a way that puts people and the planet first. \n\nOpen an account with ease, manage multiple currencies, grow your savings, and support causes that matter, all from within one app.",
+    "rating": "5.0",
+    "reviews": 19,
+    "appStoreUrl": "https://apps.apple.com/us/app/algbra/id1610109395?uo=4",
+    "releaseDate": "2026-03-17T18:19:56Z",
+    "price": "Free",
+    "genres": [
+      "Finance",
+      "Shopping"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Try Your Best",
-    "slug": "tyb",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": 4.80112,
-    "reviews": 20878,
-    "appStoreUrl": "https://apps.apple.com/us/app/trycricket-by-cricket-wireless/id1616533573?uo=4",
-    "tagline": "Social Networking app with 5 App Store screenshots"
-  },
-  {
-    "name": "Voice Recorder & Audio Editor",
-    "slug": "voicetape",
+    "name": "Deen Tracker: Prayer Times +",
+    "slug": "deentrackerprayertimes",
     "category": "Utilities",
-    "screenshots": [],
-    "rating": 4.27718,
-    "reviews": 61544,
-    "appStoreUrl": "https://apps.apple.com/us/app/google-voice/id318698524?uo=4",
-    "tagline": "Utilities app with 5 App Store screenshots"
+    "description": "Deen Tracker: No ads. No data collection.",
+    "rating": "5.0",
+    "reviews": 3,
+    "appStoreUrl": "https://apps.apple.com/us/app/deen-tracker-prayer-times/id6756148134?uo=4",
+    "releaseDate": "2026-03-12T15:28:17Z",
+    "price": "Free",
+    "genres": [
+      "Utilities",
+      "Productivity"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Joi Planner",
-    "slug": "Joi",
-    "category": "Other",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/Joi",
-    "tagline": "Other app with 5 App Store screenshots"
+    "name": "Arc Search — Find it, Faster",
+    "slug": "arcsearchfinditfaster",
+    "category": "Utilities",
+    "description": "Arc Search is the modern, AI-enabled mobile browser you’ve been waiting for —focused on getting you to an answer faster, and without all the clutter of the internet.\n\nSEARCH YOUR WAY\n\nArc adapts to your needs — use traditional text search, go hands-free with VOICE SEARCH and CALL ARC, or let our features BROWSE FOR ME and PINCH TO SUMMARIZE take the heavy lifting out of your search journey.",
+    "rating": "4.9",
+    "reviews": 24005,
+    "appStoreUrl": "https://apps.apple.com/us/app/arc-search-find-it-faster/id6472513080?uo=4",
+    "releaseDate": "2026-01-20T10:47:01Z",
+    "price": "Free",
+    "genres": [
+      "Utilities",
+      "Productivity"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "StockX",
-    "slug": "stockx",
-    "category": "Shopping",
-    "screenshots": [],
-    "rating": 4.83384,
-    "reviews": 50747,
-    "appStoreUrl": "https://apps.apple.com/us/app/stadium-goods-buy-sneakers/id1288719040?uo=4",
-    "tagline": "Shopping app with 5 App Store screenshots"
+    "name": "Open: Breathwork + Meditation",
+    "slug": "openbreathworkmeditation",
+    "category": "Health & Fitness",
+    "description": "“We believe that mindfulness is more than a form of stress relief — it can be a tool for personal growth, deeper understanding, vibrancy. More than a way to disconnect — it can be a way to feel a part of something bigger.",
+    "rating": "4.9",
+    "reviews": 15580,
+    "appStoreUrl": "https://apps.apple.com/us/app/open-breathwork-meditation/id1482725254?uo=4",
+    "releaseDate": "2026-03-25T20:32:44Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Unedo: Spanish Games + Stories",
+    "slug": "unedospanishgamesstories",
+    "category": "Education",
+    "description": "FOR LEARNERS WHO ARE DONE WITH BEGINNER STUFF\n\nYou don't need another lesson on ordering coffee or asking how to go to the train station. You need a Spanish app that opens up your world: get the slang, dive deep into the cultures, plan your travels, and feel like you belong.",
+    "rating": "4.9",
+    "reviews": 175,
+    "appStoreUrl": "https://apps.apple.com/us/app/unedo-spanish-games-stories/id6503170902?uo=4",
+    "releaseDate": "2026-03-17T17:16:21Z",
+    "price": "Free",
+    "genres": [
+      "Education",
+      "Magazines & Newspapers"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Slopes: Ski & Snowboard",
+    "slug": "slopesskisnowboard",
+    "category": "Sports",
+    "description": "Take your snow days to the next level! Uncover detailed stats (and bragging rights) about your days skiing and snowboarding, ride with friends, log your memories, and replay your winter adventures together.",
+    "rating": "4.9",
+    "reviews": 87772,
+    "appStoreUrl": "https://apps.apple.com/us/app/slopes-ski-snowboard/id643351983?uo=4",
+    "releaseDate": "2026-03-20T15:26:18Z",
+    "price": "Free",
+    "genres": [
+      "Sports",
+      "Health & Fitness"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Binsoo: Photo Filters & Editor",
+    "slug": "binsoophotofilterseditor",
+    "category": "Photo & Video",
+    "description": "Binsoo: Photo Filters & Editor\nDiscover Binsoo, the powerful and easy-to-use photo editing app that transforms ordinary photos into stunning works of art. Designed exclusively for iPhone, Binsoo brings a suite of professional editing tools right to your fingertips.",
+    "rating": "4.9",
+    "reviews": 13,
+    "appStoreUrl": "https://apps.apple.com/us/app/binsoo-photo-filters-editor/id6502683720?uo=4",
+    "releaseDate": "2026-03-14T17:02:39Z",
+    "price": "Free",
+    "genres": [
+      "Photo & Video",
+      "Utilities"
+    ],
+    "screenshotCount": 5
   },
   {
     "name": "Tesla Robotaxi",
     "slug": "teslarobotaxi",
     "category": "Travel",
-    "screenshots": [],
-    "rating": 4.59981,
-    "reviews": 72870,
-    "appStoreUrl": "https://apps.apple.com/us/app/tesla/id582007913?uo=4",
-    "tagline": "Travel app with 5 App Store screenshots"
+    "description": "Robotaxi combines our automated driving technology and vehicle hardware to create a driverless experience that is safe and convenient.\n\nGetting Started\nTo get started, download the Robotaxi app and use your Tesla Account credentials to sign in.",
+    "rating": "4.9",
+    "reviews": 3649,
+    "appStoreUrl": "https://apps.apple.com/us/app/tesla-robotaxi/id6744257048?uo=4",
+    "releaseDate": "2026-03-12T21:17:43Z",
+    "price": "Free",
+    "genres": [
+      "Travel",
+      "Utilities"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Plango",
-    "slug": "plango",
-    "category": "Travel",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/us/app/plango/id1096866451?uo=4",
-    "tagline": "Travel app with 5 App Store screenshots"
-  },
-  {
-    "name": "Raycast",
-    "slug": "Raycast",
-    "category": "Other",
-    "screenshots": [],
-    "rating": 4.3875,
-    "reviews": 160,
-    "appStoreUrl": "https://apps.apple.com/us/app/raycast-ai-notes-and-more/id6503428327?uo=4",
-    "tagline": "Other app with 5 App Store screenshots"
-  },
-  {
-    "name": "PUSH Workout & Gym Tracker",
-    "slug": "push",
+    "name": "Flowie: Your Daily AI Buddy",
+    "slug": "flowieyourdailyaibuddy",
     "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 3.2,
-    "reviews": 35,
-    "appStoreUrl": "https://apps.apple.com/us/app/push-employee/id1173687779?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "ElevenLabs",
-    "slug": "elevenlabs",
-    "category": "Music",
-    "screenshots": [],
-    "rating": 4.85114,
-    "reviews": 8162,
-    "appStoreUrl": "https://apps.apple.com/us/app/elevenlabs-ai-voice-generator/id6743162587?uo=4",
-    "tagline": "Music app with 5 App Store screenshots"
-  },
-  {
-    "name": "TIDE",
-    "slug": "tide",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.91593,
-    "reviews": 6863,
-    "appStoreUrl": "https://apps.apple.com/us/app/tide-cleaners-dry-cleaning/id6446326585?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Headspace",
-    "slug": "headspace",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.84328,
-    "reviews": 974019,
-    "appStoreUrl": "https://apps.apple.com/us/app/headspace-meditation-sleep/id493145008?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Unedo",
-    "slug": "unedo",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.85714,
-    "reviews": 175,
-    "appStoreUrl": "https://apps.apple.com/us/app/unedo-spanish-games-stories/id6503170902?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "Flashfood",
-    "slug": "flashfood",
-    "category": "Food & Drink",
-    "screenshots": [],
-    "rating": 4.81663,
-    "reviews": 21875,
-    "appStoreUrl": "https://apps.apple.com/us/app/flashfood-grocery-deals/id1187314160?uo=4",
-    "tagline": "Food & Drink app with 5 App Store screenshots"
-  },
-  {
-    "name": "Trust",
-    "slug": "trust",
-    "category": "Finance",
-    "screenshots": [],
-    "rating": 4.65815,
-    "reviews": 196144,
-    "appStoreUrl": "https://apps.apple.com/us/app/trust-crypto-bitcoin-wallet/id1288339409?uo=4",
-    "tagline": "Finance app with 5 App Store screenshots"
-  },
-  {
-    "name": "Methods",
-    "slug": "methods",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": 4.82996,
-    "reviews": 25823,
-    "appStoreUrl": "https://apps.apple.com/us/app/methods-make-money-online/id6753773454?uo=4",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "Walkie Talkie",
-    "slug": "walkietalkie",
-    "category": "Utilities",
-    "screenshots": [],
-    "rating": 4.5976,
-    "reviews": 91302,
-    "appStoreUrl": "https://apps.apple.com/us/app/walkie-talkie-all-talk-app/id1438005314?uo=4",
-    "tagline": "Utilities app with 5 App Store screenshots"
-  },
-  {
-    "name": "Dropcall",
-    "slug": "dropcall",
-    "category": "Utilities",
-    "screenshots": [],
-    "rating": 4.09184,
-    "reviews": 392,
-    "appStoreUrl": "https://apps.apple.com/us/app/dropcall-ai-voicemail-phone/id6738497713?uo=4",
-    "tagline": "Utilities app with 5 App Store screenshots"
-  },
-  {
-    "name": "Planit",
-    "slug": "planit",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": 2.66667,
-    "reviews": 60,
-    "appStoreUrl": "https://apps.apple.com/us/app/planit-schedule/id1434734633?uo=4",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "Comet",
-    "slug": "comet",
-    "category": "Utilities",
-    "screenshots": [],
-    "rating": 4.78315,
-    "reviews": 2979,
-    "appStoreUrl": "https://apps.apple.com/us/app/comet-ai-browser-assistant/id6748622471?uo=4",
-    "tagline": "Utilities app with 5 App Store screenshots"
-  },
-  {
-    "name": "Numo",
-    "slug": "numo",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.34715,
-    "reviews": 1037,
-    "appStoreUrl": "https://apps.apple.com/us/app/numo-cringe-free-adhd-app/id1628994767?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "JOE & THE JUICE",
-    "slug": "joethejuice",
-    "category": "Food & Drink",
-    "screenshots": [],
-    "rating": 4.7901,
-    "reviews": 19981,
-    "appStoreUrl": "https://apps.apple.com/us/app/joe-coffee-order-ahead/id1437558382?uo=4",
-    "tagline": "Food & Drink app with 5 App Store screenshots"
-  },
-  {
-    "name": "Twitch",
-    "slug": "twitch",
-    "category": "Games",
-    "screenshots": [],
-    "rating": 4.72028,
-    "reviews": 2678111,
-    "appStoreUrl": "https://apps.apple.com/us/app/twitch-live-streaming/id460177396?uo=4",
-    "tagline": "Games app with 5 App Store screenshots"
-  },
-  {
-    "name": "Slopes",
-    "slug": "slopes",
-    "category": "Sports",
-    "screenshots": [],
-    "rating": 4.85823,
-    "reviews": 87772,
-    "appStoreUrl": "https://apps.apple.com/us/app/slopes-ski-snowboard/id643351983?uo=4",
-    "tagline": "Sports app with 5 App Store screenshots"
-  },
-  {
-    "name": "one year",
-    "slug": "oneyear",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.85844,
-    "reviews": 271134,
-    "appStoreUrl": "https://apps.apple.com/us/app/onepay-mobile-banking/id1494523953?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "Box Box Club",
-    "slug": "boxboxclub",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.76417,
-    "reviews": 189654,
-    "appStoreUrl": "https://apps.apple.com/us/app/box-the-power-of-content-ai/id290853822?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "Voiced AI: Talk, Reflect, Grow",
-    "slug": "voicedai",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.75052,
-    "reviews": 477,
-    "appStoreUrl": "https://apps.apple.com/us/app/voiced-ai-talk-reflect-grow/id6748580304?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Sona Insight",
-    "slug": "sonainsight",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.89411,
-    "reviews": 210250,
-    "appStoreUrl": "https://apps.apple.com/us/app/suno-ai-songs-music/id6480136315?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Wise",
-    "slug": "wise",
-    "category": "Finance",
-    "screenshots": [],
-    "rating": 4.65721,
-    "reviews": 101572,
-    "appStoreUrl": "https://apps.apple.com/us/app/wise-global-money/id612261027?uo=4",
-    "tagline": "Finance app with 5 App Store screenshots"
-  },
-  {
-    "name": "Turf",
-    "slug": "turf",
-    "category": "Sports",
-    "screenshots": [],
-    "rating": 5,
-    "reviews": 5,
-    "appStoreUrl": "https://apps.apple.com/us/app/turf-pr/id1548397395?uo=4",
-    "tagline": "Sports app with 5 App Store screenshots"
-  },
-  {
-    "name": "Tolan: Alien Best Friend",
-    "slug": "tolan",
-    "category": "Games",
-    "screenshots": [],
-    "rating": 4.78146,
-    "reviews": 129435,
-    "appStoreUrl": "https://apps.apple.com/us/app/tolan-alien-best-friend/id6477549878?uo=4",
-    "tagline": "Games app with 5 App Store screenshots"
-  },
-  {
-    "name": "Pool",
-    "slug": "pool",
-    "category": "Games",
-    "screenshots": [],
-    "rating": 4.75258,
-    "reviews": 4636836,
-    "appStoreUrl": "https://apps.apple.com/us/app/8-ball-pool/id543186831?uo=4",
-    "tagline": "Games app with 5 App Store screenshots"
-  },
-  {
-    "name": "Picky AI",
-    "slug": "pickyai",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.37581,
-    "reviews": 620,
-    "appStoreUrl": "https://apps.apple.com/us/app/picky-k-beauty-create-earn/id1504197356?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "Exodus",
-    "slug": "human",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.60127,
-    "reviews": 34923,
-    "appStoreUrl": "https://apps.apple.com/us/app/exodus-crypto-bitcoin-wallet/id1414384820?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Linearity Curve Graphic Design",
-    "slug": "linearity",
-    "category": "Graphics & Design",
-    "screenshots": [],
-    "rating": 4.52826,
-    "reviews": 14383,
-    "appStoreUrl": "https://apps.apple.com/us/app/linearity-curve-graphic-design/id1219074514?uo=4",
-    "tagline": "Graphics & Design app with 5 App Store screenshots"
+    "description": "“If you are going to achieve excellence in big things, you develop the habit in little matters. Excellence is not an exception, it is a prevailing attitude.",
+    "rating": "4.9",
+    "reviews": 267,
+    "appStoreUrl": "https://apps.apple.com/us/app/flowie-your-daily-ai-buddy/id6748905032?uo=4",
+    "releaseDate": "2025-10-22T14:33:58Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness"
+    ],
+    "screenshotCount": 5
   },
   {
     "name": "Water tracker Waterllama",
     "slug": "watertracker",
     "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/watertracker",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
+    "description": "** 2022 APP STORE AWARD Winner **\n** 2022 APPLE DESIGN AWARD Finalist **\nYou know you need to drink more water!\n\n• Smart Reminders during your day\n• Complete 9 fun healthy Challenges\n• Collect & fill up 100+ cute Characters\n• Track water from anything you drink: 40+ most popular beverages\n• Handy Apple Watch app\n• Cool home screen Widgets\n• Monthly hydration In-App Events\n• Reach the longest hydration Streak\n• Celebrate your day with a shareable recap illustration\n• Calculate your daily water go",
+    "rating": "4.9",
+    "reviews": 149549,
+    "appStoreUrl": "https://apps.apple.com/us/app/water-tracker-waterllama/id1454778585?uo=4",
+    "releaseDate": "2026-03-18T14:04:58Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Food & Drink"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Tiimo",
-    "slug": "tiimo",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.56852,
-    "reviews": 15141,
-    "appStoreUrl": "https://apps.apple.com/us/app/tiimo-to-do-list-ai-planner/id1480220328?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Kuku",
-    "slug": "kuku",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/kuku",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "sway ~ blur & vhs trending cam",
-    "slug": "sway",
-    "category": "Photo & Video",
-    "screenshots": [],
-    "rating": 2.14835,
-    "reviews": 182,
-    "appStoreUrl": "https://apps.apple.com/us/app/sway-medical/id657932025?uo=4",
-    "tagline": "Photo & Video app with 5 App Store screenshots"
-  },
-  {
-    "name": "Discogs",
-    "slug": "vinyl",
+    "name": "Suno - AI Songs & Music",
+    "slug": "sunoaisongsmusic",
     "category": "Music",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/vinyl",
-    "tagline": "Music app with 5 App Store screenshots"
-  },
-  {
-    "name": "Evernote",
-    "slug": "evernote",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/evernote",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "RemyAI",
-    "slug": "remyai",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 5,
-    "reviews": 2,
-    "appStoreUrl": "https://apps.apple.com/us/app/remyai/id6670169926?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Swypn",
-    "slug": "swypn",
-    "category": "Finance",
-    "screenshots": [],
-    "rating": 5,
-    "reviews": 2,
-    "appStoreUrl": "https://apps.apple.com/us/app/swypn-ai-photo-detection/id6759467546?uo=4",
-    "tagline": "Finance app with 5 App Store screenshots"
-  },
-  {
-    "name": "pliability",
-    "slug": "pliability",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.81407,
-    "reviews": 9197,
-    "appStoreUrl": "https://apps.apple.com/us/app/pliability-stretch-mobility/id1175346453?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "pushr",
-    "slug": "pushr",
-    "category": "Finance",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/pushr",
-    "tagline": "Finance app with 5 App Store screenshots"
-  },
-  {
-    "name": "Lovi",
-    "slug": "lovi",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": 4.62551,
-    "reviews": 2932,
-    "appStoreUrl": "https://apps.apple.com/us/app/lovi-ai-skin-care-scanner/id1594167292?uo=4",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Moment Pro Camera II",
-    "slug": "moment",
-    "category": "Photo & Video",
-    "screenshots": [],
-    "rating": 4.57497,
-    "reviews": 9197,
-    "appStoreUrl": "https://apps.apple.com/us/app/pro-camera-by-moment/id927098908?uo=4",
-    "tagline": "Photo & Video app with 5 App Store screenshots"
-  },
-  {
-    "name": "Video Effects Editor",
-    "slug": "riveo",
-    "category": "Photo & Video",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/riveo",
-    "tagline": "Photo & Video app with 5 App Store screenshots"
-  },
-  {
-    "name": "Suno",
-    "slug": "suno",
-    "category": "Music",
-    "screenshots": [],
-    "rating": 4.89411,
+    "description": "Amplify your imagination. Powered by the world’s most advanced AI music model, Suno transforms your ideas into songs—no instruments needed, just your creative vision.",
+    "rating": "4.9",
     "reviews": 210250,
     "appStoreUrl": "https://apps.apple.com/us/app/suno-ai-songs-music/id6480136315?uo=4",
-    "tagline": "Music app with 5 App Store screenshots"
+    "releaseDate": "2026-03-25T13:07:38Z",
+    "price": "Free",
+    "genres": [
+      "Music",
+      "Entertainment"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "(Not Boring) Weather",
-    "slug": "notboringweather",
-    "category": "Weather",
-    "screenshots": [],
-    "rating": 4.76501,
-    "reviews": 14954,
-    "appStoreUrl": "https://apps.apple.com/us/app/not-boring-weather/id1531063436?uo=4",
-    "tagline": "Weather app with 5 App Store screenshots"
-  },
-  {
-    "name": "Skillsta",
-    "slug": "skillsta",
+    "name": "Remy AI: Sleep & Health coach",
+    "slug": "remyaisleephealthcoach",
     "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/skillsta",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
+    "description": "Hey, my name is Remy! I’ve helped dozens of thousands to:\n\n1.",
+    "rating": "4.9",
+    "reviews": 141,
+    "appStoreUrl": "https://apps.apple.com/us/app/remy-ai-sleep-health-coach/id6443803441?uo=4",
+    "releaseDate": "2025-07-18T23:39:52Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Neuecast",
-    "slug": "neuecast",
-    "category": "News",
-    "screenshots": [],
-    "rating": 4.74418,
-    "reviews": 215,
-    "appStoreUrl": "https://apps.apple.com/us/app/neuecast/id6446780219?uo=4",
-    "tagline": "News app with 5 App Store screenshots"
+    "name": "Art of Flora: Cozy Puzzles",
+    "slug": "artoffloracozypuzzles",
+    "category": "Games",
+    "description": "Discover the wonders of the botanical world with \"Art of Flora”, the official successor to Art of Fauna (App Store Award Winner in 2026)! \n\nEach artwork is paired with a fascinating description about the plant it depicts, allowing you to choose your path: relax and piece together stunning vintage drawings, or challenge yourself by reconstructing the text and learn about these magnificent plants.",
+    "rating": "4.9",
+    "reviews": 172,
+    "appStoreUrl": "https://apps.apple.com/us/app/art-of-flora-cozy-puzzles/id6743834964?uo=4",
+    "releaseDate": "2026-03-22T20:25:03Z",
+    "price": "Free",
+    "genres": [
+      "Games",
+      "Puzzle",
+      "Casual",
+      "Education"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "imagi",
-    "slug": "imagi",
-    "category": "Education",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/imagi",
-    "tagline": "Education app with 5 App Store screenshots"
-  },
-  {
-    "name": "Wabi",
-    "slug": "wabi",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": 4.22316,
-    "reviews": 4378,
-    "appStoreUrl": "https://apps.apple.com/us/app/wabi-number-for-wa-business/id1454219880?uo=4",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "Polestar",
-    "slug": "polestar",
-    "category": "Utilities",
-    "screenshots": [],
-    "rating": 4.42922,
-    "reviews": 2826,
-    "appStoreUrl": "https://apps.apple.com/us/app/polestar/id1451196635?uo=4",
-    "tagline": "Utilities app with 5 App Store screenshots"
-  },
-  {
-    "name": "Yapster",
-    "slug": "yapster",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/yapster",
-    "tagline": "Social Networking app with 5 App Store screenshots"
-  },
-  {
-    "name": "Minimalist Launcher",
-    "slug": "minimalistlauncher",
-    "category": "Utilities",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/minimalistlauncher",
-    "tagline": "Utilities app with 5 App Store screenshots"
-  },
-  {
-    "name": "Hers",
-    "slug": "hers",
+    "name": "How We Feel",
+    "slug": "howwefeel",
     "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/hers",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "BurnBar",
-    "slug": "burnbar",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/burnbar",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Sunlitt Sun Position and Path",
-    "slug": "sunlitt",
-    "category": "Travel",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/sunlitt",
-    "tagline": "Travel app with 5 App Store screenshots"
-  },
-  {
-    "name": "Firefly",
-    "slug": "firefly",
-    "category": "Utilities",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/firefly",
-    "tagline": "Utilities app with 5 App Store screenshots"
-  },
-  {
-    "name": "Mate",
-    "slug": "mate",
-    "category": "Utilities",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/mate",
-    "tagline": "Utilities app with 5 App Store screenshots"
-  },
-  {
-    "name": "Chime",
-    "slug": "chime",
-    "category": "Finance",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/chime",
-    "tagline": "Finance app with 5 App Store screenshots"
-  },
-  {
-    "name": "(Not Boring) Camera",
-    "slug": "notboringcamera",
-    "category": "Photo & Video",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/notboringcamera",
-    "tagline": "Photo & Video app with 5 App Store screenshots"
-  },
-  {
-    "name": "Deepstash",
-    "slug": "deepstash",
-    "category": "Reference",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/deepstash",
-    "tagline": "Reference app with 5 App Store screenshots"
-  },
-  {
-    "name": "Tripadvisor",
-    "slug": "tripadvisor",
-    "category": "Travel",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/tripadvisor",
-    "tagline": "Travel app with 5 App Store screenshots"
-  },
-  {
-    "name": "Love8",
-    "slug": "love8",
-    "category": "Lifestyle",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/love8",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
-  },
-  {
-    "name": "Eversend",
-    "slug": "eversend",
-    "category": "Finance",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/eversend",
-    "tagline": "Finance app with 5 App Store screenshots"
+    "description": "How We Feel is a free app created by scientists, designers, engineers, and therapists to help people better understand their emotions and find strategies to help them navigate their emotions in the moment. Conceived in conjunction with Yale University's Center for Emotional Intelligence and based on the work of Dr Marc Brackett, How We Feel helps people find the right word to describe how they feel while tracking their sleep, exercise, and health trends using HealthKit in order to spot patterns ",
+    "rating": "4.9",
+    "reviews": 27349,
+    "appStoreUrl": "https://apps.apple.com/us/app/how-we-feel/id1562706384?uo=4",
+    "releaseDate": "2026-03-27T16:46:29Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Education"
+    ],
+    "screenshotCount": 5
   },
   {
     "name": "Sudoku a Day",
     "slug": "sudoku",
     "category": "Games",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/sudoku",
-    "tagline": "Games app with 5 App Store screenshots"
+    "description": "Sudoku a Day is the simplest, most elegant Sudoku app on the App Store. Designed exclusively for iPhone users who crave a quick, enjoyable daily puzzle.",
+    "rating": "4.9",
+    "reviews": 277,
+    "appStoreUrl": "https://apps.apple.com/us/app/sudoku-a-day/id6743453284?uo=4",
+    "releaseDate": "2026-03-03T17:04:00Z",
+    "price": "Free",
+    "genres": [
+      "Games",
+      "Puzzle",
+      "Education",
+      "Board"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "ElevenLabs: AI Voice Generator",
+    "slug": "elevenlabsaivoicegenerator",
+    "category": "Photo & Video",
+    "description": "Welcome to ElevenLabs, the leading AI voice generator app designed for content creators, influencers and professionals. By delivering human-like AI voices, ElevenLabs lets you bring your ideas to life on TikTok, Instagram, YouTube Shorts and more with the highest-quality AI text to voice generator available anywhere.",
+    "rating": "4.9",
+    "reviews": 8162,
+    "appStoreUrl": "https://apps.apple.com/us/app/elevenlabs-ai-voice-generator/id6743162587?uo=4",
+    "releaseDate": "2026-03-27T19:36:05Z",
+    "price": "Free",
+    "genres": [
+      "Photo & Video",
+      "Productivity"
+    ],
+    "screenshotCount": 5
   },
   {
     "name": "NEXT Insurance",
     "slug": "nextinsurance",
     "category": "Finance",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/nextinsurance",
-    "tagline": "Finance app with 5 App Store screenshots"
+    "description": "The NEXT mobile app lets you manage your business insurance from wherever you are. Create and send certificates of insurance instantly from your phone, view policy docs with a tap, and get fast notifications on claims, payments, and more.",
+    "rating": "4.9",
+    "reviews": 10288,
+    "appStoreUrl": "https://apps.apple.com/us/app/next-insurance/id1580721755?uo=4",
+    "releaseDate": "2025-12-29T00:55:16Z",
+    "price": "Free",
+    "genres": [
+      "Finance",
+      "Business"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "YLAG",
-    "slug": "ylag",
-    "category": "Music",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/ylag",
-    "tagline": "Music app with 5 App Store screenshots"
-  },
-  {
-    "name": "UGLYCASH",
-    "slug": "uglycash",
-    "category": "Finance",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/uglycash",
-    "tagline": "Finance app with 5 App Store screenshots"
-  },
-  {
-    "name": "Orb Social on Lens Protocol",
-    "slug": "orb",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/orb",
-    "tagline": "Social Networking app with 5 App Store screenshots"
-  },
-  {
-    "name": "Open",
-    "slug": "open",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/open",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
-  },
-  {
-    "name": "Linktree",
-    "slug": "linktree",
-    "category": "Social Networking",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/linktree",
-    "tagline": "Social Networking app with 5 App Store screenshots"
-  },
-  {
-    "name": "Any Distance",
-    "slug": "anydistance",
-    "category": "Sports",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/anydistance",
-    "tagline": "Sports app with 5 App Store screenshots"
-  },
-  {
-    "name": "Yukee simple todo list tracker",
-    "slug": "yukee",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/yukee",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "Deezer",
-    "slug": "deezer",
-    "category": "Music",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/deezer",
-    "tagline": "Music app with 5 App Store screenshots"
-  },
-  {
-    "name": "Soda",
-    "slug": "soda",
-    "category": "Food & Drink",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/soda",
-    "tagline": "Food & Drink app with 5 App Store screenshots"
-  },
-  {
-    "name": "Jomo",
-    "slug": "jomo",
-    "category": "Productivity",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/jomo",
-    "tagline": "Productivity app with 5 App Store screenshots"
-  },
-  {
-    "name": "Planta",
-    "slug": "planta",
+    "name": "Knitflow — Knitting & Crochet",
+    "slug": "knitflowknittingcrochet",
     "category": "Lifestyle",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/planta",
-    "tagline": "Lifestyle app with 5 App Store screenshots"
+    "description": "Knitflow is the ultimate app for knitters and crocheters.\n\n1) Craft Timer: Record the time spent on your knitting or crochet projects.",
+    "rating": "4.8",
+    "reviews": 5,
+    "appStoreUrl": "https://apps.apple.com/us/app/knitflow-knitting-crochet/id6740465748?uo=4",
+    "releaseDate": "2026-02-22T23:55:40Z",
+    "price": "Free",
+    "genres": [
+      "Lifestyle",
+      "Productivity"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "SAVO",
-    "slug": "savo",
-    "category": "Education",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/savo",
-    "tagline": "Education app with 5 App Store screenshots"
+    "name": "grug",
+    "slug": "grug",
+    "category": "Lifestyle",
+    "description": "grug know: big scary just many small rock wearing fur coat.\n\nevery sunrise, grug share one wisdom.",
+    "rating": "4.8",
+    "reviews": 45,
+    "appStoreUrl": "https://apps.apple.com/us/app/grug/id6751649802?uo=4",
+    "releaseDate": "2026-03-12T09:03:47Z",
+    "price": "Free",
+    "genres": [
+      "Lifestyle",
+      "Health & Fitness"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Canopi - Memorable Moments",
+    "slug": "canopimemorablemoments",
+    "category": "Lifestyle",
+    "description": "With Canopi you can share memorable moments with friends.\n\nIf you're going on a trip, sharing an anniversary, or planning a party.",
+    "rating": "4.8",
+    "reviews": 13,
+    "appStoreUrl": "https://apps.apple.com/us/app/canopi-memorable-moments/id6483864028?uo=4",
+    "releaseDate": "2024-08-28T18:04:07Z",
+    "price": "Free",
+    "genres": [
+      "Lifestyle",
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "YLAG: Daily Habits Tracker",
+    "slug": "ylagdailyhabitstracker",
+    "category": "Productivity",
+    "description": "Go Ghost. Build Yourself.",
+    "rating": "4.8",
+    "reviews": 1229,
+    "appStoreUrl": "https://apps.apple.com/us/app/ylag-daily-habits-tracker/id6749138494?uo=4",
+    "releaseDate": "2026-01-24T15:13:06Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Bump - hang with friends IRL",
+    "slug": "bumphangwithfriendsirl",
+    "category": "Social Networking",
+    "description": "From the Zenly team, the original location sharing app loved by 100s of millions of people around the world!\n\nOn Bump, create a personal map of your favorite people and places with precise, real-time, and battery friendly location sharing.",
+    "rating": "4.8",
+    "reviews": 4878,
+    "appStoreUrl": "https://apps.apple.com/us/app/bump-hang-with-friends-irl/id6471519217?uo=4",
+    "releaseDate": "2026-03-27T08:58:20Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Utilities"
+    ],
+    "screenshotCount": 5
   },
   {
     "name": "Runbuds",
     "slug": "runbuds",
     "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/runbuds",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
+    "description": "Runbuds is the social running app that is truly built for your friends first.\n\n\n/// THE TRACK ///\n\n・ Your avatar moves around a physical track\n・ Your friends move around the track with you\n・ Pass (or get passed oh no !!!",
+    "rating": "4.8",
+    "reviews": 66,
+    "appStoreUrl": "https://apps.apple.com/us/app/runbuds/id6744413545?uo=4",
+    "releaseDate": "2026-01-05T06:54:20Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Sports"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Fabric",
-    "slug": "fabric",
+    "name": "stoic. journal & mental health",
+    "slug": "stoic",
     "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/fabric",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
+    "description": "stoic is your mental health companion – it helps you understand your emotions and provides insights on how to be happier, more productive, and overcome obstacles.\n\nAt its heart, stoic helps you prepare for your day in the morning and reflect on your day in the evening.",
+    "rating": "4.8",
+    "reviews": 34000,
+    "appStoreUrl": "https://apps.apple.com/us/app/stoic-journal-mental-health/id1312926037?uo=4",
+    "releaseDate": "2026-03-10T21:45:22Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Tripsy",
-    "slug": "tripsy",
-    "category": "Travel",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/tripsy",
-    "tagline": "Travel app with 5 App Store screenshots"
+    "name": "Flashfood - Grocery deals",
+    "slug": "flashfoodgrocerydeals",
+    "category": "Food & Drink",
+    "description": "Real food, realer prices. Flashfood gives you unbeatable deals on groceries at peak deliciousness.",
+    "rating": "4.8",
+    "reviews": 21875,
+    "appStoreUrl": "https://apps.apple.com/us/app/flashfood-grocery-deals/id1187314160?uo=4",
+    "releaseDate": "2026-03-13T15:34:10Z",
+    "price": "Free",
+    "genres": [
+      "Food & Drink",
+      "Shopping"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Caffeine Tracker",
-    "slug": "alyx",
-    "category": "Health & Fitness",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/alyx",
-    "tagline": "Health & Fitness app with 5 App Store screenshots"
+    "name": "Comet - AI Browser & Assistant",
+    "slug": "cometaibrowserassistant",
+    "category": "Utilities",
+    "description": "Comet is an AI-powered browser that acts as a personal assistant and thinking partner. Boost your focus, streamline your workflow, and turn curiosity into momentum.",
+    "rating": "4.8",
+    "reviews": 2979,
+    "appStoreUrl": "https://apps.apple.com/us/app/comet-ai-browser-assistant/id6748622471?uo=4",
+    "releaseDate": "2026-03-25T21:43:24Z",
+    "price": "Free",
+    "genres": [
+      "Utilities",
+      "Productivity"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Moshi Kids",
-    "slug": "moshikids",
-    "category": "Education",
-    "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/moshikids",
-    "tagline": "Education app with 5 App Store screenshots"
+    "name": "(Not Boring) Weather",
+    "slug": "notboringweather",
+    "category": "Weather",
+    "description": "~ WEATHER DOESN’T HAVE TO BE BORING ~\nThe simple weather app that’s winning awards (Apple Design Award, Best Weather Apps) and impressing tastemakers (MKBHD, Fast Company).\n\n~ PLAYFUL YET FUNCTIONAL DESIGN ~\nTurn your daily weather forecast into a memorable experience with a next-generation user interface design inspired by 3D video games.",
+    "rating": "4.8",
+    "reviews": 14954,
+    "appStoreUrl": "https://apps.apple.com/us/app/not-boring-weather/id1531063436?uo=4",
+    "releaseDate": "2026-03-19T15:38:14Z",
+    "price": "Free",
+    "genres": [
+      "Weather",
+      "Utilities"
+    ],
+    "screenshotCount": 5
   },
   {
-    "name": "Supernotes",
-    "slug": "supernotes",
+    "name": "Jomo - Screen Time Blocker",
+    "slug": "jomoscreentimeblocker",
     "category": "Productivity",
-    "screenshots": [],
+    "description": "Welcome to Jomo, an app that helps you stop wasting time on your phone so you can thrive every day!\n\nWe make reducing screen time super easy and fun.",
+    "rating": "4.8",
+    "reviews": 1892,
+    "appStoreUrl": "https://apps.apple.com/us/app/jomo-screen-time-blocker/id1609960918?uo=4",
+    "releaseDate": "2026-03-11T10:04:20Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Health & Fitness"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "pliability: stretch + mobility",
+    "slug": "pliabilitystretchmobility",
+    "category": "Health & Fitness",
+    "description": "Improve mobility, flexibility, recovery + performance with pliability – your powerful mobility and stretching app designed for every body.\n\npliability (formerly ROMWOD) is your ultimate mobility, stretching, and flexibility coach, helping you move better, train smarter, and stay injury-free.",
+    "rating": "4.8",
+    "reviews": 9197,
+    "appStoreUrl": "https://apps.apple.com/us/app/pliability-stretch-mobility/id1175346453?uo=4",
+    "releaseDate": "2026-03-16T14:13:26Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Sports"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Atoms - from Atomic Habits",
+    "slug": "atomsfromatomichabits",
+    "category": "Productivity",
+    "description": "Introducing Atoms – The Official Atomic Habits App! \n\n## Tiny changes, remarkable results!",
+    "rating": "4.8",
+    "reviews": 10159,
+    "appStoreUrl": "https://apps.apple.com/us/app/atoms-from-atomic-habits/id6474421906?uo=4",
+    "releaseDate": "2026-02-16T05:16:20Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Dudel Draw",
+    "slug": "dudeldraw",
+    "category": "Graphics & Design",
+    "description": "Dudel Draw is a unique and innovative mobile app that aims to ignite your imagination and unleash your creative potential. With Dudel Draw, you'll receive a new shape every day, serving as a foundation for your creative endeavors.",
+    "rating": "4.8",
+    "reviews": 523,
+    "appStoreUrl": "https://apps.apple.com/us/app/dudel-draw/id6450056192?uo=4",
+    "releaseDate": "2023-08-23T21:29:46Z",
+    "price": "Free",
+    "genres": [
+      "Graphics & Design",
+      "Games",
+      "Casual",
+      "Family"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Planta: AI Plant & Garden Care",
+    "slug": "plantaaiplantgardencare",
+    "category": "Lifestyle",
+    "description": "*EDITORS' CHOICE & APP OF THE DAY*\n\nKeep your plants alive. Without guesswork.",
+    "rating": "4.8",
+    "reviews": 107530,
+    "appStoreUrl": "https://apps.apple.com/us/app/planta-ai-plant-garden-care/id1410126781?uo=4",
+    "releaseDate": "2026-03-16T09:59:27Z",
+    "price": "Free",
+    "genres": [
+      "Lifestyle",
+      "Reference"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Tripadvisor: Plan & Book Trips",
+    "slug": "tripadvisorplanbooktrips",
+    "category": "Travel",
+    "description": "One app, so many places to discover. Get guidance from millions of travelers and earn rewards for more trips by doing what you love: planning, booking, and sharing.",
+    "rating": "4.8",
+    "reviews": 461679,
+    "appStoreUrl": "https://apps.apple.com/us/app/tripadvisor-plan-book-trips/id284876795?uo=4",
+    "releaseDate": "2026-03-25T10:03:24Z",
+    "price": "Free",
+    "genres": [
+      "Travel",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Linktree: Link in Bio Creator",
+    "slug": "linktreelinkinbiocreator",
+    "category": "Social Networking",
+    "description": "Linktree is the largest link in bio tool used by over 70 million people and organizations around the world. Make your free Linktree in minutes to focus your fans, grow your following, and sell products with one simple link.",
+    "rating": "4.8",
+    "reviews": 56881,
+    "appStoreUrl": "https://apps.apple.com/us/app/linktree-link-in-bio-creator/id1593515263?uo=4",
+    "releaseDate": "2026-03-26T15:52:17Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Best Brew Guide: Filtru Coffee",
+    "slug": "bestbrewguidefiltrucoffee",
+    "category": "Food & Drink",
+    "description": "Coffee is more than just a way to wake up in the morning, it's a way of life. With Filtru, you'll make the perfect cup each and every time and learn as you go.",
+    "rating": "4.8",
+    "reviews": 3694,
+    "appStoreUrl": "https://apps.apple.com/us/app/best-brew-guide-filtru-coffee/id1150921819?uo=4",
+    "releaseDate": "2026-03-27T19:04:07Z",
+    "price": "Free",
+    "genres": [
+      "Food & Drink",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Flighty – Live Flight Tracker",
+    "slug": "flightyliveflighttracker",
+    "category": "Travel",
+    "description": "\"Don't Fly Without This App\" WSJ • Finalist for App of The Year • Winner of Apple Design Award\n\nThe flight tracker your pilot uses.\n\nFree trial does not required credit card.",
+    "rating": "4.8",
+    "reviews": 121333,
+    "appStoreUrl": "https://apps.apple.com/us/app/flighty-live-flight-tracker/id1358823008?uo=4",
+    "releaseDate": "2026-03-24T14:17:43Z",
+    "price": "Free",
+    "genres": [
+      "Travel",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Voiced AI: Talk, Reflect, Grow",
+    "slug": "voicedai",
+    "category": "Health & Fitness",
+    "description": "Voiced is your private space to speak freely, reflect deeply, and feel lighter in just a few minutes a day.\n\nWith one tap, you can start talking about what’s on your mind.",
+    "rating": "4.8",
+    "reviews": 477,
+    "appStoreUrl": "https://apps.apple.com/us/app/voiced-ai-talk-reflect-grow/id6748580304?uo=4",
+    "releaseDate": "2026-03-09T10:15:08Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "StockX - Sneakers and Apparel",
+    "slug": "stockxsneakersandapparel",
+    "category": "Shopping",
+    "description": "Get your hands on exclusive drops, snag the latest releases, and stay in the loop with the hottest trends from the world’s top brands! Access the latest styles and take your wardrobe or collection to the next level.",
+    "rating": "4.8",
+    "reviews": 1202197,
+    "appStoreUrl": "https://apps.apple.com/us/app/stockx-sneakers-and-apparel/id881599819?uo=4",
+    "releaseDate": "2026-03-25T17:23:06Z",
+    "price": "Free",
+    "genres": [
+      "Shopping",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Tolan: Alien Best Friend",
+    "slug": "tolan",
+    "category": "Health & Fitness",
+    "description": "Greetings! We are Tolans :-)\n\nWe’re here looking for new friends!",
+    "rating": "4.8",
+    "reviews": 129435,
+    "appStoreUrl": "https://apps.apple.com/us/app/tolan-alien-best-friend/id6477549878?uo=4",
+    "releaseDate": "2026-03-27T00:53:37Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Headspace: Meditation & Sleep",
+    "slug": "headspacemeditationsleep",
+    "category": "Health & Fitness",
+    "description": "Welcome to Headspace, your expert-led guide to mental health, mindfulness, and meditation. Whether you're navigating stress, anxiety, sleep trouble, or life’s ups and downs, Headspace is here to support you.",
+    "rating": "4.8",
+    "reviews": 974019,
+    "appStoreUrl": "https://apps.apple.com/us/app/headspace-meditation-sleep/id493145008?uo=4",
+    "releaseDate": "2026-03-25T23:34:34Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Pocket - AI Personal Assistant",
+    "slug": "pocketaipersonalassistant",
+    "category": "Utilities",
+    "description": "Pocket is your always-on AI personal assistant -- a wearable device that captures every idea, meeting, and moment without ever reaching for your phone.\n\nCAPTURE WITHOUT INTERRUPTION\nSpeak naturally and let Pocket do the rest.",
+    "rating": "4.8",
+    "reviews": 897,
+    "appStoreUrl": "https://apps.apple.com/us/app/pocket-ai-personal-assistant/id6746845735?uo=4",
+    "releaseDate": "2026-03-25T21:07:37Z",
+    "price": "Free",
+    "genres": [
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "TIDE: Sleep, Focus, Meditation",
+    "slug": "tidesleepfocusmeditation",
+    "category": "Health & Fitness",
+    "description": "TIDE aims at physical and mental care through integrating sleep, meditation, relax, and focus into an app. Inspired by traveling, nature, and meditation, we have been providing massive audios including natural soundscapes and mindfulness practices.",
+    "rating": "4.8",
+    "reviews": 8249,
+    "appStoreUrl": "https://apps.apple.com/us/app/tide-sleep-focus-meditation/id1077776989?uo=4",
+    "releaseDate": "2026-03-25T13:55:25Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Locket Widget",
+    "slug": "locket",
+    "category": "Social Networking",
+    "description": "Locket is a widget that shows live photos from your best friends, right to your Home Screen. You and your best friends will see new pictures from each other every time you unlock your phone.",
+    "rating": "4.8",
+    "reviews": 497421,
+    "appStoreUrl": "https://apps.apple.com/us/app/locket-widget/id1600525061?uo=4",
+    "releaseDate": "2026-03-27T16:23:58Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Photo & Video"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "What's going on? Friend Diary",
+    "slug": "whatsgoinon",
+    "category": "Lifestyle",
+    "description": "What's Going On? - A Social Diary for Your Friendships and Memories.",
+    "rating": "4.8",
+    "reviews": 48,
+    "appStoreUrl": "https://apps.apple.com/us/app/whats-going-on-friend-diary/id6471529194?uo=4",
+    "releaseDate": "2025-04-07T17:02:34Z",
+    "price": "Free",
+    "genres": [
+      "Lifestyle",
+      "Health & Fitness"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Unwind: Breathing Exercises",
+    "slug": "unwindbreathingexercises",
+    "category": "Health & Fitness",
+    "description": "Unwind is a refreshing, delightful, and distraction-free mindful breathing companion to help you with meditation and get you through the day. Unwind combines beautiful illustrations with background ambiances to create an atmosphere that is perfect for mindful breathing.",
+    "rating": "4.8",
+    "reviews": 580,
+    "appStoreUrl": "https://apps.apple.com/us/app/unwind-breathing-exercises/id1470613384?uo=4",
+    "releaseDate": "2025-12-27T23:39:44Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Supernotes – Notes & Journal",
+    "slug": "supernotesnotesjournal",
+    "category": "Productivity",
+    "description": "Free your thoughts with Supernotes, the fast, lightweight notes app. Write beautiful notecards that are perfect for personal, work, and educational use – all your ideas, meeting, and lecture notes at your fingertips.",
+    "rating": "4.8",
+    "reviews": 108,
+    "appStoreUrl": "https://apps.apple.com/us/app/supernotes-notes-journal/id1567815218?uo=4",
+    "releaseDate": "2026-03-10T19:38:19Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Education"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "sway ~ blur & vhs trending cam",
+    "slug": "sway",
+    "category": "Photo & Video",
+    "description": "sway's not here to waste your time ~\nget in ~ take your photo ~ mess it up ~ save ~ get out\n~ capture your moment ~\n\nwe have 7 gorgeous, curated and premium (yet somehow for FREE!?) cams - VHS, clubcam, photobooth, motion blur, fisheye, emoji lovecam and dreamy - & there’s sooo many more lined up\njoin our movement :***\n\nwe care about:\n~~~ quality over quantity ~~~\nwe craft our cams carefully and only add them when they're ready\n\n~~~ fun over friction ~~~\nminimal edit controls ~ just the right am",
+    "rating": "4.8",
+    "reviews": 500,
+    "appStoreUrl": "https://apps.apple.com/us/app/sway-blur-vhs-trending-cam/id6736604223?uo=4",
+    "releaseDate": "2025-09-12T21:42:02Z",
+    "price": "Free",
+    "genres": [
+      "Photo & Video",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "PUSH Workout & Gym Tracker",
+    "slug": "push",
+    "category": "Health & Fitness",
+    "description": "PUSH is about building muscle as fast as possible - with science. We achieve this with an algorithm built based strictly on published peer-reviewed research.",
+    "rating": "4.8",
+    "reviews": 628,
+    "appStoreUrl": "https://apps.apple.com/us/app/push-workout-gym-tracker/id1621689462?uo=4",
+    "releaseDate": "2026-03-17T11:04:00Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Rumbo Fitness",
+    "slug": "rumbofitness",
+    "category": "Health & Fitness",
+    "description": "HIIT! SLOW JOGGING!",
+    "rating": "4.8",
+    "reviews": 41,
+    "appStoreUrl": "https://apps.apple.com/us/app/rumbo-fitness/id6475088608?uo=4",
+    "releaseDate": "2026-01-13T01:43:46Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Sports"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "CanGoGo - Pedometer,Walking",
+    "slug": "cangogopedometerwalking",
+    "category": "Health & Fitness",
+    "description": "CanGoGo is a cute and easy-to-use pedometer.\nWalk 3,000 steps to unlock adorable animal friends.",
+    "rating": "4.8",
+    "reviews": 61,
+    "appStoreUrl": "https://apps.apple.com/us/app/cangogo-pedometer-walking/id6499481356?uo=4",
+    "releaseDate": "2026-03-01T13:43:47Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Family - Crypto Wallet",
+    "slug": "familycryptowallet",
+    "category": "Utilities",
+    "description": "Family is the perfect self-custody Ethereum wallet for those who want to keep their crypto close to home. With Family, you can easily send and receive tokens, as well as manage your favorite digital collectibles.",
+    "rating": "4.7",
+    "reviews": 130,
+    "appStoreUrl": "https://apps.apple.com/us/app/family-crypto-wallet/id1606779267?uo=4",
+    "releaseDate": "2026-01-07T09:28:36Z",
+    "price": "Free",
+    "genres": [
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Gentler Streak Workout Tracker",
+    "slug": "gentlerstreakworkouttracker",
+    "category": "Health & Fitness",
+    "description": "Hey, welcome the Gentler Streak - the app that keeps your active life alive! An award-winning health and fitness tracker offers personalized guidance that adapts to your daily capabilities and not the other way around.",
+    "rating": "4.7",
+    "reviews": 8763,
+    "appStoreUrl": "https://apps.apple.com/us/app/gentler-streak-workout-tracker/id1576857102?uo=4",
+    "releaseDate": "2026-02-16T19:53:41Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Any Distance Running Tracker",
+    "slug": "anydistancerunningtracker",
+    "category": "Health & Fitness",
+    "description": "2023 Apple Design Award Winner · Apple Editor's Choice\n\nAny Distance is your ultimate running, walking, hiking, and biking workout tracker.\n\n▸ Beautiful and Functional: Designed to make workout tracking not just a habit but a joy.",
+    "rating": "4.7",
+    "reviews": 2470,
+    "appStoreUrl": "https://apps.apple.com/us/app/any-distance-running-tracker/id1545233932?uo=4",
+    "releaseDate": "2024-05-14T02:47:05Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Deepstash: Smarter Every Day!",
+    "slug": "deepstashsmartereveryday",
+    "category": "Education",
+    "description": "Learn something new in just 5 minutes a day with carefully curated ideas from the world's most popular books, presented through beautiful art and a delightfully focused reading experience.\n\nStop Scrolling Social Media -> Download Deepstash -> Use it for 5 min/day -> Become the smartest in the room.",
+    "rating": "4.7",
+    "reviews": 40571,
+    "appStoreUrl": "https://apps.apple.com/us/app/deepstash-smarter-every-day/id1445023295?uo=4",
+    "releaseDate": "2026-03-27T14:10:06Z",
+    "price": "Free",
+    "genres": [
+      "Education",
+      "Social Networking"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Neuecast",
+    "slug": "neuecast",
+    "category": "News",
+    "description": "Neuecast is a beautiful, modern podcast player that combines powerful features with a simple, intuitive interface perfect for everyday use — a podcast app designed for the rest of us.\n\nFeatures:\n• A simple, clean, easy to use interface.",
+    "rating": "4.7",
+    "reviews": 215,
+    "appStoreUrl": "https://apps.apple.com/us/app/neuecast/id6446780219?uo=4",
+    "releaseDate": "2026-03-25T21:07:12Z",
+    "price": "Free",
+    "genres": [
+      "News",
+      "Entertainment"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Moshi Kids: Sleep, Relax, Play",
+    "slug": "moshikidssleeprelaxplay",
+    "category": "Books",
+    "description": "The award-winning app for kids full of 1000s of hours of bedtime stories, sleep sounds, music & white noise. With lovingly crafted original audio content for Kids set in the BAFTA-award winning world of Moshi Monsters.",
+    "rating": "4.7",
+    "reviews": 68482,
+    "appStoreUrl": "https://apps.apple.com/us/app/moshi-kids-sleep-relax-play/id1306719339?uo=4",
+    "releaseDate": "2026-01-20T10:13:41Z",
+    "price": "Free",
+    "genres": [
+      "Books",
+      "Health & Fitness"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Wise - Global Money",
+    "slug": "wiseglobalmoney",
+    "category": "Finance",
+    "description": "16 million+ customers send, receive, spend and grow their money internationally with Wise. It’s the fast, simple way to move money in 145+countries and 45+ currencies.",
+    "rating": "4.7",
+    "reviews": 101572,
+    "appStoreUrl": "https://apps.apple.com/us/app/wise-global-money/id612261027?uo=4",
+    "releaseDate": "2026-03-27T20:50:05Z",
+    "price": "Free",
+    "genres": [
+      "Finance",
+      "Business"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Orb Social on Lens Protocol",
+    "slug": "orb",
+    "category": "Social Networking",
+    "description": "Orb is your one-stop destination for discovering fun in web3.\n\nOrb is a web3 social app built with the Decentralized Lens Protocol and meticulously designed to connect, create, curate, and collect with friends.",
+    "rating": "4.7",
+    "reviews": 114,
+    "appStoreUrl": "https://apps.apple.com/us/app/orb-social-on-lens-protocol/id1638461963?uo=4",
+    "releaseDate": "2026-03-14T08:32:20Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "SAVO: All-In-One Wallet",
+    "slug": "savoallinonewallet",
+    "category": "Finance",
+    "description": "Welcome to the SAVO Wallet, where managing your wealth becomes a breeze! Say goodbye to complicated processes and hello to effortless control over your assets.",
+    "rating": "4.7",
+    "reviews": 150,
+    "appStoreUrl": "https://apps.apple.com/us/app/savo-all-in-one-wallet/id6742020669?uo=4",
+    "releaseDate": "2026-03-20T01:32:19Z",
+    "price": "Free",
+    "genres": [
+      "Finance"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "imagi - fun coding game",
+    "slug": "imagifuncodinggame",
+    "category": "Education",
+    "description": "Never tried coding before? Looking to learn with like-minded friends?",
+    "rating": "4.7",
+    "reviews": 3184,
+    "appStoreUrl": "https://apps.apple.com/us/app/imagi-fun-coding-game/id1434239482?uo=4",
+    "releaseDate": "2026-01-07T13:29:04Z",
+    "price": "Free",
+    "genres": [
+      "Education",
+      "Social Networking"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Ground News",
+    "slug": "groundnews",
+    "category": "News",
+    "description": "Get all your news in one place on an eye-opening platform that shows you the bias, reliability and ownership of every source you read. Cut through the noise and escape media echo chambers with Ground News.",
+    "rating": "4.7",
+    "reviews": 39607,
+    "appStoreUrl": "https://apps.apple.com/us/app/ground-news/id1324203419?uo=4",
+    "releaseDate": "2026-03-25T20:44:08Z",
+    "price": "Free",
+    "genres": [
+      "News",
+      "Magazines & Newspapers"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "TOPYS - 你的灵感库",
+    "slug": "topys",
+    "category": "Reference",
+    "description": "【编辑精选】\n10万+篇编辑精选文章，海量创意视频，涵盖创意、设计、艺术、文案、广告、品牌、建筑等领域，为你搜罗全球尖端优秀创意案例，汲取新鲜灵感；每日最新推荐，让你快速了解全球创意圈热点动态。\n\n【独家专栏】\n数十个原创专栏，包含行业观察、艺文探店、商业洞察、案例分析、人物专访、国际创意盛事前线报道，为你提供不同视角的优质内容。\n\n【建立属于自己的灵感库】\n你可以把喜欢的文章和或创意内容收藏到自己的灵感库中，同时可以自定义灵感库的分类和名称，更方便地积累和整理灵感。通勤的碎片时间，就可以完成脑爆、提案时的预习收集。\n\n【TOPYS创意学院】\nTOPYS邀请国内外专业创意人、创意大师共同打造的一系列线上/线下创意课程产品，为想入门创意行业的爱好者、有兴趣进阶学习的创意从业者提供知识学习通道，多维度启发创意思维。\n\n【 Minds Pro年度会员(连续包年)套餐说明】\n订阅周期：1年（连续包年产品）\n订阅价格：连续包年产品为每年258元\n付款：用户确认购买并付款后记入iTunes账户\n续订：苹果iTunes账户会在订阅到期前24小时内扣费，扣费成功后订阅顺延一个周期\n取消续订：如需取消续",
+    "rating": "4.7",
+    "reviews": 21,
+    "appStoreUrl": "https://apps.apple.com/us/app/topys-%E4%BD%A0%E7%9A%84%E7%81%B5%E6%84%9F%E5%BA%93/id1453559269?uo=4",
+    "releaseDate": "2023-11-09T02:10:22Z",
+    "price": "Free",
+    "genres": [
+      "Reference",
+      "Graphics & Design"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Monzo - Mobile Banking",
+    "slug": "monzomobilebanking",
+    "category": "Finance",
+    "description": "Monzo is the digital banking app that rewards you for being you. With one app to manage all your finances, in real time.",
+    "rating": "4.7",
+    "reviews": 5489,
+    "appStoreUrl": "https://apps.apple.com/us/app/monzo-mobile-banking/id1052238659?uo=4",
+    "releaseDate": "2026-03-26T11:04:31Z",
+    "price": "Free",
+    "genres": [
+      "Finance"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Twitch: Live Streaming",
+    "slug": "twitchlivestreaming",
+    "category": "Photo & Video",
+    "description": "Twitch is where thousands of communities come together for our favorite streamers, for the games we love, for the lulz, for each other, for whatever. Download Twitch and join millions enjoying live games, music, sports, esports, podcasts, cooking shows, IRL streams, and whatever else crosses our community’s wonderfully absurd minds.",
+    "rating": "4.7",
+    "reviews": 2678111,
+    "appStoreUrl": "https://apps.apple.com/us/app/twitch-live-streaming/id460177396?uo=4",
+    "releaseDate": "2026-03-23T19:00:16Z",
+    "price": "Free",
+    "genres": [
+      "Photo & Video",
+      "Social Networking"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Aave: Save and Earn",
+    "slug": "aavesaveandearn",
+    "category": "Finance",
+    "description": "Save smarter with Aave. Earn Up to 9% APY with up to $1 million in account protection.",
+    "rating": "4.7",
+    "reviews": 177,
+    "appStoreUrl": "https://apps.apple.com/us/app/aave-save-and-earn/id6754045087?uo=4",
+    "releaseDate": "2025-12-09T23:27:55Z",
+    "price": "Free",
+    "genres": [
+      "Finance"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Video Effects Editor: Riveo",
+    "slug": "videoeffectseditorriveo",
+    "category": "Photo & Video",
+    "description": "Try Riveo — the only special effects video editor and maker you need to create immersive, professionally edited videos that go viral.\n\nRiveo’s easy-to-use AI-driven FX composer unlocks your creativity whether you record video on your iPhone or film with professional-grade gear.",
+    "rating": "4.7",
+    "reviews": 2118,
+    "appStoreUrl": "https://apps.apple.com/us/app/video-effects-editor-riveo/id1546053158?uo=4",
+    "releaseDate": "2025-11-21T18:06:56Z",
+    "price": "Free",
+    "genres": [
+      "Photo & Video",
+      "Graphics & Design"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Minimalist Launcher",
+    "slug": "minimalistlauncher",
+    "category": "Productivity",
+    "description": "Minimalist Launcher is a Minimal Home Launcher to simplify your iOS home screen.\n\nThe current home screen with lots of apps creates a cognitive load and distraction which increases our Screen time.",
+    "rating": "4.7",
+    "reviews": 3098,
+    "appStoreUrl": "https://apps.apple.com/us/app/minimalist-launcher/id6498880303?uo=4",
+    "releaseDate": "2026-03-20T17:26:18Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Trust: Crypto & Bitcoin Wallet",
+    "slug": "trustcryptobitcoinwallet",
+    "category": "Finance",
+    "description": "A Wallet You Can Trust —  Now Lets You Earn On Your Stablecoins\nGrow your crypto securely with the newest feature from Trust Wallet: Stablecoin Earn. Start earning daily rewards on stablecoins like USDT, USDC, DAI, and USDA — directly in the wallet trusted by over 200 million users.",
+    "rating": "4.7",
+    "reviews": 196144,
+    "appStoreUrl": "https://apps.apple.com/us/app/trust-crypto-bitcoin-wallet/id1288339409?uo=4",
+    "releaseDate": "2026-03-25T20:49:18Z",
+    "price": "Free",
+    "genres": [
+      "Finance",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Tripsy: Travel Planner",
+    "slug": "tripsytravelplanner",
+    "category": "Travel",
+    "description": "Tripsy - Trip Planner & Itinerary Organizer is a free travel planner for creating detailed trip itineraries and organizing every aspect of your journey. Perfect for solo travelers, couples travel, and group travel planning, Tripsy is your all-in-one itinerary maker that keeps flights, accommodations, activities, and reservations organized in one place.",
+    "rating": "4.7",
+    "reviews": 5310,
+    "appStoreUrl": "https://apps.apple.com/us/app/tripsy-travel-planner/id1429967544?uo=4",
+    "releaseDate": "2026-03-27T13:30:40Z",
+    "price": "Free",
+    "genres": [
+      "Travel",
+      "Navigation"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Roam: Global eSIM & WiFi",
+    "slug": "roam",
+    "category": "Travel",
+    "description": "Roam is a Web3 app that revolutionizes how you connect to the internet. Users can connect to nearby WiFi hotspots on the Roam map & earn rewards for every connection.",
+    "rating": "4.7",
+    "reviews": 168,
+    "appStoreUrl": "https://apps.apple.com/us/app/roam-global-esim-wifi/id6443709000?uo=4",
+    "releaseDate": "2026-03-24T00:57:51Z",
+    "price": "Free",
+    "genres": [
+      "Travel",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "AgBr",
+    "slug": "agbr",
+    "category": "Photo & Video",
+    "description": "Introducing AgBr — a Black & White Film Emulator\n\nA hommage to the soul of analogue photography from the creators of BLACK app and 65×24.\nCarefully researched and crafted in Tokyo, based on long-term research and development using real modern and expired film stocks.",
+    "rating": "4.7",
+    "reviews": 31,
+    "appStoreUrl": "https://apps.apple.com/us/app/agbr/id6701996818?uo=4",
+    "releaseDate": "2026-01-02T09:22:24Z",
+    "price": "Free",
+    "genres": [
+      "Photo & Video",
+      "Graphics & Design"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Trendy Profile Tracker & Boost",
+    "slug": "trendy",
+    "category": "Social Networking",
+    "description": "From trends to strategy - everything you need in one app.\n\nCreating content is hard.",
+    "rating": "4.7",
+    "reviews": 104,
+    "appStoreUrl": "https://apps.apple.com/us/app/trendy-profile-tracker-boost/id6754564423?uo=4",
+    "releaseDate": "2026-03-21T20:40:26Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Reference"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Timeleft: Make New Friends IRL",
+    "slug": "timeleftmakenewfriendsirl",
+    "category": "Social Networking",
+    "description": "The friendship app 3M+ users love. Timeleft matches you for dinners, drinks, coffee, and runs with like-minded people.",
+    "rating": "4.7",
+    "reviews": 6879,
+    "appStoreUrl": "https://apps.apple.com/us/app/timeleft-make-new-friends-irl/id6466442949?uo=4",
+    "releaseDate": "2026-03-23T15:29:09Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Claude by Anthropic",
+    "slug": "claude",
+    "category": "Productivity",
+    "description": "Meet Claude, your AI problem solver and thinking partner. Claude works with you to write, research, code, and tackle complex problems with depth and precision.",
+    "rating": "4.7",
+    "reviews": 89380,
+    "appStoreUrl": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684?uo=4",
+    "releaseDate": "2026-03-26T14:13:02Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Business"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "BurnBar – Earn & Track Drinks",
+    "slug": "burnbarearntrackdrinks",
+    "category": "Health & Fitness",
+    "description": "BurnBar is a drink tracker for people who want balance — not extremes.\n\nYou don’t have to quit drinking to stay fit.",
+    "rating": "4.7",
+    "reviews": 71,
+    "appStoreUrl": "https://apps.apple.com/us/app/burnbar-earn-track-drinks/id6748422916?uo=4",
+    "releaseDate": "2026-03-27T14:47:16Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Voice Recorder & Audio Editor",
+    "slug": "voicetape",
+    "category": "Utilities",
+    "description": "Voice Recorder for the iPhone and iPad - download now for FREE!\n\nUNLIMITED RECORDINGS\nRecord for as long as you want and as many times as you want.",
+    "rating": "4.7",
+    "reviews": 446874,
+    "appStoreUrl": "https://apps.apple.com/us/app/voice-recorder-audio-editor/id685310398?uo=4",
+    "releaseDate": "2025-07-19T17:44:36Z",
+    "price": "Free",
+    "genres": [
+      "Utilities",
+      "Business"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "ClickUp: Tasks, Chat, Docs, AI",
+    "slug": "clickuptaskschatdocsai",
+    "category": "Productivity",
+    "description": "ClickUp is the world's most productive platform: all software, humans, and AI Agents - in one place. \n \nMaximize productivity by replacing all software and all AI with one app that's famously flexible and perfectly personalized for you: \n• Project Management \n• Team Communication\n• AI Super Agents™\n• Scheduling & Time Tracking\n• Brain AI Assistant \n• Docs & Wikis \n• AI Meetings & Calls\n• Sprints, CRM, and ITSM \n• Whiteboards & Dashboards\n• Files & Approvals\n+ 50 more \n \nOver 20 million from the ",
+    "rating": "4.7",
+    "reviews": 8255,
+    "appStoreUrl": "https://apps.apple.com/us/app/clickup-tasks-chat-docs-ai/id1535098836?uo=4",
+    "releaseDate": "2026-03-26T16:42:36Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Business"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Speak Languages-Monspeak",
+    "slug": "speaklanguagesmonspeak",
+    "category": "Education",
+    "description": "Foreign tutors too expensive? Introvert feeling shy?",
+    "rating": "4.7",
+    "reviews": 7,
+    "appStoreUrl": "https://apps.apple.com/us/app/speak-languages-monspeak/id6743023404?uo=4",
+    "releaseDate": "2025-10-29T01:29:57Z",
+    "price": "Free",
+    "genres": [
+      "Education",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Try Your Best",
+    "slug": "tyb",
+    "category": "Social Networking",
+    "description": "TYB is a new type of community platform, where your participation actually pays off. Every day is a new opportunity to earn.",
+    "rating": "4.7",
+    "reviews": 1953,
+    "appStoreUrl": "https://apps.apple.com/us/app/try-your-best/id6449951641?uo=4",
+    "releaseDate": "2026-03-24T14:52:26Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "yope: friends-only pics",
+    "slug": "yopefriendsonlypics",
+    "category": "Lifestyle",
+    "description": "yope is the friends-only photo sharing app\nit’s the safest, simplest way to stay close. share real photos with your closest circle — they appear instantly on friends’ lock screens and widgets.",
+    "rating": "4.7",
+    "reviews": 7012,
+    "appStoreUrl": "https://apps.apple.com/us/app/yope-friends-only-pics/id1600195477?uo=4",
+    "releaseDate": "2026-03-25T16:57:26Z",
+    "price": "Free",
+    "genres": [
+      "Lifestyle",
+      "Social Networking"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "pushr – push-up workouts",
+    "slug": "pushrpushupworkouts",
+    "category": "Health & Fitness",
+    "description": "pushr is your new favorite workout companion. use it to intelligently count your push-up repetitions using facial tracking and keep track of your progress.",
+    "rating": "4.7",
+    "reviews": 228,
+    "appStoreUrl": "https://apps.apple.com/us/app/pushr-push-up-workouts/id1587610077?uo=4",
+    "releaseDate": "2025-11-18T19:53:48Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Deezer: Music Player, Podcast",
+    "slug": "deezermusicplayerpodcast",
+    "category": "Music",
+    "description": "Deezer is more than just a music platform.\nIt’s a fully personalized listening experience that adapts to you.",
+    "rating": "4.7",
+    "reviews": 35949,
+    "appStoreUrl": "https://apps.apple.com/us/app/deezer-music-player-podcast/id292738169?uo=4",
+    "releaseDate": "2026-03-23T10:02:35Z",
+    "price": "Free",
+    "genres": [
+      "Music",
+      "Entertainment"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Sunlitt Sun Position and Path",
+    "slug": "sunlitt",
+    "category": "Weather",
+    "description": "# Apple Design Awards Finalist\n# Featured on the App Store\n# Great on iOS 26\n# App of the Day\n# \"Apps We Love\" by Apple\n\nHarness the Power of the Sun with Sunlitt:\nyour all-in-one tool for tracking the sun’s position, movements, and shadows, anywhere and anytime.\n\n→ Follow the Sun’s Path and Position\nAccess precise, up-to-the-minute sun tracking data tailored to your location, anytime—even without an internet connection.",
+    "rating": "4.7",
+    "reviews": 612,
+    "appStoreUrl": "https://apps.apple.com/us/app/sunlitt-sun-position-and-path/id1628751457?uo=4",
+    "releaseDate": "2026-02-27T18:27:35Z",
+    "price": "Free",
+    "genres": [
+      "Weather",
+      "Photo & Video"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "(Not Boring) Camera",
+    "slug": "notboringcamera",
+    "category": "Photo & Video",
+    "description": "\"The most fun camera app I've used in forever.\" — The Verge\n\"My go-to for iPhone photography\" — Washington Post\n\"It’s so fun to use.",
+    "rating": "4.6",
+    "reviews": 3265,
+    "appStoreUrl": "https://apps.apple.com/us/app/not-boring-camera/id6737783441?uo=4",
+    "releaseDate": "2026-03-24T01:53:55Z",
+    "price": "Free",
+    "genres": [
+      "Photo & Video",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "one year: daily journal",
+    "slug": "oneyeardailyjournal",
+    "category": "Health & Fitness",
+    "description": "Write one short (or long) memory + add an image each day.\nEvery entry becomes a hand-drawn plant, slowly forming a garden over the year.",
+    "rating": "4.6",
+    "reviews": 336,
+    "appStoreUrl": "https://apps.apple.com/us/app/one-year-daily-journal/id6740510762?uo=4",
+    "releaseDate": "2026-03-17T22:22:18Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Endel: Focus & Sleep Sounds",
+    "slug": "endelfocussleepsounds",
+    "category": "Health & Fitness",
+    "description": "Focus, relax, and sleep through the power of sound. Endel creates AI-powered sounds designed to support your everyday life.",
+    "rating": "4.6",
+    "reviews": 31756,
+    "appStoreUrl": "https://apps.apple.com/us/app/endel-focus-sleep-sounds/id1346247457?uo=4",
+    "releaseDate": "2026-03-25T17:27:49Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Lovi - AI Skin Care Scanner",
+    "slug": "loviaiskincarescanner",
+    "category": "Health & Fitness",
+    "description": "New! Discover our newly added series of Face Yoga videos, meticulously crafted to naturally enhance your skin's tone and firmness.",
+    "rating": "4.6",
+    "reviews": 2932,
+    "appStoreUrl": "https://apps.apple.com/us/app/lovi-ai-skin-care-scanner/id1594167292?uo=4",
+    "releaseDate": "2026-03-25T18:21:20Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Tiimo: To-Do List & AI Planner",
+    "slug": "tiimotodolistaiplanner",
+    "category": "Productivity",
+    "description": "*  iPhone App of the Year 2025\n*  Apple Design Awards Finalist 2024\n*  Best Assistive Technology 2022 (Neurodiversity Awards)\n*  3+ Million downloads worldwide\n\nMeet Tiimo: Your AI planning partner that simplifies executive function, focus and productivity.\n\nWhether you are building routines, navigating time agnosia, or just trying to make it through a busy week, Tiimo helps reduce mental load and makes it easier to follow through.",
+    "rating": "4.6",
+    "reviews": 15141,
+    "appStoreUrl": "https://apps.apple.com/us/app/tiimo-to-do-list-ai-planner/id1480220328?uo=4",
+    "releaseDate": "2026-03-27T08:31:23Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Franki | Eat. Drink. Earn.",
+    "slug": "franki",
+    "category": "Food & Drink",
+    "description": "FINDING A REWARDING EXPERIENCE JUST BECAME A REWARDING EXPERIENCE\n\nWhether you like to be on the pulse of the city, or just want to find a good spot to eat, we’re glad you’re here. Because we can help you do it - and reward you for it along the way.",
+    "rating": "4.6",
+    "reviews": 1144,
+    "appStoreUrl": "https://apps.apple.com/us/app/franki-eat-drink-earn/id1504173412?uo=4",
+    "releaseDate": "2026-03-21T16:10:59Z",
+    "price": "Free",
+    "genres": [
+      "Food & Drink",
+      "Travel"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "JOE & THE JUICE",
+    "slug": "joethejuice",
+    "category": "Food & Drink",
+    "description": "Use the JOE & THE JUICE app to order your favorite juice, coffee, sandwich, or smoothie for pick-up or delivery, and earn points on every purchase with our new Loyalty Program.\n\nIf you are a new app user, after your first app order, you'll receive a free coffee and enjoy 15% off for 30 days.",
+    "rating": "4.6",
+    "reviews": 2700,
+    "appStoreUrl": "https://apps.apple.com/us/app/joe-the-juice/id1347116229?uo=4",
+    "releaseDate": "2026-03-27T08:07:40Z",
+    "price": "Free",
+    "genres": [
+      "Food & Drink"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Love8 - App for Couples",
+    "slug": "love8appforcouples",
+    "category": "Utilities",
+    "description": "Love8 is the ultimate love app for couples, designed to strengthen your relationship. \nWith love8,Connect more deeply, communicate more effectively, and improve intimacy with your love.",
+    "rating": "4.6",
+    "reviews": 2934,
+    "appStoreUrl": "https://apps.apple.com/us/app/love8-app-for-couples/id6448163027?uo=4",
+    "releaseDate": "2026-03-13T01:25:38Z",
+    "price": "Free",
+    "genres": [
+      "Utilities",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "LeanBites - Healthy Dining",
+    "slug": "leanbiteshealthydining",
+    "category": "Health & Fitness",
+    "description": "LeanBites helps you find restaurant meals that match your macro goals. Whether you want to lose weight, gain muscle, or just choose better meals when eating out, LeanBites makes it easier to stay on track without giving up the foods you enjoy.",
+    "rating": "4.6",
+    "reviews": 954,
+    "appStoreUrl": "https://apps.apple.com/us/app/leanbites-healthy-dining/id6754943623?uo=4",
+    "releaseDate": "2026-03-21T00:14:47Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Food & Drink"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Kuku: Raise a Pet Together",
+    "slug": "kukuraiseapettogether",
+    "category": "Social Networking",
+    "description": "Ready to crush the Daily Sleep Challenge with your special one? Kuku is the viral widget that turns your sleep routine into a game you play with your partner or BFF.",
+    "rating": "4.6",
+    "reviews": 161,
+    "appStoreUrl": "https://apps.apple.com/us/app/kuku-raise-a-pet-together/id6741770611?uo=4",
+    "releaseDate": "2026-03-14T12:57:18Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Health & Fitness"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Senses: Kegel & Sex Health",
+    "slug": "senseskegelsexhealth",
+    "category": "Health & Fitness",
+    "description": "Senses gives you a safe and mindful space to explore yourself and your partner. \n\nSenses offers daily kegel exercises, physical practices, meditations and workshops from experienced coaches.",
+    "rating": "4.6",
+    "reviews": 3524,
+    "appStoreUrl": "https://apps.apple.com/us/app/senses-kegel-sex-health/id1563697753?uo=4",
+    "releaseDate": "2026-01-29T08:24:14Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Hers: Women’s Healthcare",
+    "slug": "herswomenshealthcare",
+    "category": "Medical",
+    "description": "Hers: Customized care designed for your schedule and your life with a 100% online process. Get access to best-in-class treatments and support for weight loss, hair loss, perimenopause, menopause, anxiety, depression, comprehensive lab testing, and more.",
+    "rating": "4.6",
+    "reviews": 10355,
+    "appStoreUrl": "https://apps.apple.com/us/app/hers-womens-healthcare/id1623878709?uo=4",
+    "releaseDate": "2026-03-19T19:23:54Z",
+    "price": "Free",
+    "genres": [
+      "Medical",
+      "Health & Fitness"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "MD Vinyl for Music App",
+    "slug": "mdvinyl",
+    "category": "Music",
+    "description": "Rediscover the essence of music with MD Vinyl – your digital gateway to the authentic experience of vinyl records. Immerse yourself in the sound and visuals, right from your iPhone or iPad.",
+    "rating": "4.6",
+    "reviews": 23600,
+    "appStoreUrl": "https://apps.apple.com/us/app/md-vinyl-for-music-app/id1606306441?uo=4",
+    "releaseDate": "2026-03-24T16:17:28Z",
+    "price": "Free",
+    "genres": [
+      "Music",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Exodus: Crypto Bitcoin Wallet",
+    "slug": "exoduscryptobitcoinwallet",
+    "category": "Finance",
+    "description": "Own your crypto future with Exodus, the world's leading all-in-one crypto and bitcoin wallet.\n\nExodus is self-custodial which means only YOU control your wallet.",
+    "rating": "4.6",
+    "reviews": 34923,
+    "appStoreUrl": "https://apps.apple.com/us/app/exodus-crypto-bitcoin-wallet/id1414384820?uo=4",
+    "releaseDate": "2026-03-12T11:06:36Z",
+    "price": "Free",
+    "genres": [
+      "Finance"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Lazy Weather: colder or warmer",
+    "slug": "lazyweathercolderorwarmer",
+    "category": "Lifestyle",
+    "description": "Just know how much warmer or colder it is than yesterday, so you can dress accordingly.\n\nSimple, fast, no fuzz.",
+    "rating": "4.5",
+    "reviews": 98,
+    "appStoreUrl": "https://apps.apple.com/us/app/lazy-weather-colder-or-warmer/id6467009014?uo=4",
+    "releaseDate": "2026-03-21T17:00:25Z",
+    "price": "Free",
+    "genres": [
+      "Lifestyle",
+      "Weather"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Oscar Stories for Children",
+    "slug": "oscarstories",
+    "category": "Education",
+    "description": "OSCAR STORIES PERSONALIZED BEDTIME STORIES FOR KIDS\n\nYour child can be the star of their very own personalized story, selecting unique characters and professions that make the adventure uniquely theirs. Never get bored of the same old tales.",
+    "rating": "4.5",
+    "reviews": 52,
+    "appStoreUrl": "https://apps.apple.com/us/app/oscar-stories-for-children/id1663618939?uo=4",
+    "releaseDate": "2025-12-12T20:37:11Z",
+    "price": "Free",
+    "genres": [
+      "Education",
+      "Entertainment"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Linearity Curve Graphic Design",
+    "slug": "linearity",
+    "category": "Graphics & Design",
+    "description": "Professional vector art and graphic design software on iPad and iPhone!\n\n\nLinearity Curve (formerly Vectornator) is a powerful vector graphics editor built for iPad and iPhone.",
+    "rating": "4.5",
+    "reviews": 14383,
+    "appStoreUrl": "https://apps.apple.com/us/app/linearity-curve-graphic-design/id1219074514?uo=4",
+    "releaseDate": "2026-03-13T18:49:19Z",
+    "price": "Free",
+    "genres": [
+      "Graphics & Design",
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Superlist: To-Do List & Tasks",
+    "slug": "superlisttodolisttasks",
+    "category": "Productivity",
+    "description": "From the team that created Wunderlist: Superlist is the modern to-do list and notes app that keeps your work and life beautifully organized.\n\nCreate tasks with AI voice input, capture notes, collaborate with your team in real-time, and manage everything in one simple place.",
+    "rating": "4.5",
+    "reviews": 400,
+    "appStoreUrl": "https://apps.apple.com/us/app/superlist-to-do-list-tasks/id1547585270?uo=4",
+    "releaseDate": "2026-03-27T19:05:51Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Business"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "corner: curate & share places",
+    "slug": "cornercurateshareplaces",
+    "category": "Social Networking",
+    "description": "At Corner, we are serious about exploring new places. That’s why we built an app that lets you spend less time searching and more time doing.",
+    "rating": "4.5",
+    "reviews": 468,
+    "appStoreUrl": "https://apps.apple.com/us/app/corner-curate-share-places/id1668282277?uo=4",
+    "releaseDate": "2026-03-20T06:21:30Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Travel"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Universe Website Builder",
+    "slug": "universe",
+    "category": "Productivity",
+    "description": "Universe is the fastest and easiest way to build a custom website for you, your brand, or business with everything you need built in. In minutes publish a custom domain and accept your first sale on your own website.",
+    "rating": "4.5",
+    "reviews": 9767,
+    "appStoreUrl": "https://apps.apple.com/us/app/universe-website-builder/id1211437633?uo=4",
+    "releaseDate": "2026-03-04T15:17:45Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Business"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Stuff | ToDos and Lists",
+    "slug": "stuff",
+    "category": "Productivity",
+    "description": "Stuff is built to help you organize your life and achieve your goals. Your Stuff can be as simple as a list of to-dos, or as complex as a system of interconnected lists, organized into spaces full of dependencies, deadlines, and carefully planned tasks.",
+    "rating": "4.5",
+    "reviews": 57,
+    "appStoreUrl": "https://apps.apple.com/us/app/stuff-todos-and-lists/id6502721156?uo=4",
+    "releaseDate": "2026-02-24T11:14:26Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Joi: Daily Planner & Organizer",
+    "slug": "joidailyplannerorganizer",
+    "category": "Productivity",
+    "description": "A calendar, task manager, and habit tracker in one app and on one timeline. Plan your daily routine with Joi!",
+    "rating": "4.4",
+    "reviews": 186,
+    "appStoreUrl": "https://apps.apple.com/us/app/joi-daily-planner-organizer/id6736852235?uo=4",
+    "releaseDate": "2026-01-06T19:30:17Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Education"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Raycast: AI, Notes and more",
+    "slug": "raycastainotesandmore",
+    "category": "Productivity",
+    "description": "Introducing Raycast for iOS: Your all-in-one productivity toolkit with AI, notes, and more – now on mobile as the perfect companion to the macOS app.\n\nThe app brings your favorite productivity tools from the Mac into your pocket.",
+    "rating": "4.4",
+    "reviews": 160,
+    "appStoreUrl": "https://apps.apple.com/us/app/raycast-ai-notes-and-more/id6503428327?uo=4",
+    "releaseDate": "2026-03-20T14:35:02Z",
+    "price": "Free",
+    "genres": [
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "UGLYCASH",
+    "slug": "uglycash",
+    "category": "Finance",
+    "description": "UGLYCASH offers you the global financial services that your bank won’t do: High Annual Rewards on your balance. Domestic and cross-border payments to Latin America for $0 fee and instant.",
+    "rating": "4.4",
+    "reviews": 477,
+    "appStoreUrl": "https://apps.apple.com/us/app/uglycash/id1587912468?uo=4",
+    "releaseDate": "2026-03-20T12:17:06Z",
+    "price": "Free",
+    "genres": [
+      "Finance"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Evernote - Notes Organizer",
+    "slug": "evernotenotesorganizer",
+    "category": "Productivity",
+    "description": "Capture ideas when inspiration strikes. Bring your notes, to-dos, and schedule together to tame life’s distractions and accomplish more—at work, at home, and everywhere in between.",
+    "rating": "4.4",
+    "reviews": 74215,
+    "appStoreUrl": "https://apps.apple.com/us/app/evernote-notes-organizer/id281796108?uo=4",
+    "releaseDate": "2026-03-25T16:51:14Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Replika - AI Friend",
+    "slug": "replikaaifriend",
+    "category": "Health & Fitness",
+    "description": "Meet Replika, the AI to do life with.\n\nReplika is the AI companion that’s been here since 2017 — available 24/7 for whatever’s on your mind by text, voice calls, and video.",
+    "rating": "4.4",
+    "reviews": 227841,
+    "appStoreUrl": "https://apps.apple.com/us/app/replika-ai-friend/id1158555867?uo=4",
+    "releaseDate": "2026-03-16T11:52:07Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Entertainment"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Placify - Map & Trip Planner",
+    "slug": "placifymaptripplanner",
+    "category": "Lifestyle",
+    "description": "The most beautiful things in life are not just things.\nThey’re people, places, memories, and pictures.",
+    "rating": "4.4",
+    "reviews": 48,
+    "appStoreUrl": "https://apps.apple.com/us/app/placify-map-trip-planner/id6739698007?uo=4",
+    "releaseDate": "2026-03-27T23:28:07Z",
+    "price": "Free",
+    "genres": [
+      "Lifestyle",
+      "Travel"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Polestar",
+    "slug": "polestar",
+    "category": "Lifestyle",
+    "description": "Control your car\nUse the app to control in-car climate, door locks, locate your car, see battery and charging status, and keep track of software installations.\n\nManage your car\nGet an in-depth overview of your car.",
+    "rating": "4.4",
+    "reviews": 2826,
+    "appStoreUrl": "https://apps.apple.com/us/app/polestar/id1451196635?uo=4",
+    "releaseDate": "2026-03-27T18:58:23Z",
+    "price": "Free",
+    "genres": [
+      "Lifestyle",
+      "Travel"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Travel App, Smart Trip Planner",
+    "slug": "travelappsmarttripplanner",
+    "category": "Travel",
+    "description": "Planning a trip requires a lot of time and effort. You have to keep so many things in your head: itinerary, date and time, transfers from and to an airport, travel expenses, packing lists, address of the hotel, the sights you’d like to visit, the documents you have to carry with you… Sounds quite difficult, right?",
+    "rating": "4.4",
+    "reviews": 43,
+    "appStoreUrl": "https://apps.apple.com/us/app/travel-app-smart-trip-planner/id1604607832?uo=4",
+    "releaseDate": "2025-07-17T09:11:17Z",
+    "price": "Free",
+    "genres": [
+      "Travel",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Skillsta: Skill-Building App",
+    "slug": "skillstaskillbuildingapp",
+    "category": "Education",
+    "description": "Meet Skillsta — your pocket trainer for mastering real-life skills! We've broken down complex concepts into bite-sized practical lessons that fit your busy schedule.",
+    "rating": "4.4",
+    "reviews": 3038,
+    "appStoreUrl": "https://apps.apple.com/us/app/skillsta-skill-building-app/id6504999353?uo=4",
+    "releaseDate": "2026-03-25T17:07:43Z",
+    "price": "Free",
+    "genres": [
+      "Education",
+      "Entertainment"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "GO Club: Step Counter",
+    "slug": "goclubstepcounter",
+    "category": "Health & Fitness",
+    "description": "Sometimes the tiniest habits are the most important and also the easiest to neglect. That’s where GO Club helps.",
+    "rating": "4.3",
+    "reviews": 195,
+    "appStoreUrl": "https://apps.apple.com/us/app/go-club-step-counter/id6739782103?uo=4",
+    "releaseDate": "2026-02-16T21:32:12Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Numo: Cringe-Free ADHD App",
+    "slug": "numocringefreeadhdapp",
+    "category": "Health & Fitness",
+    "description": "ADHD app for tasks gamification & support. Bite-size educational content with memes.",
+    "rating": "4.3",
+    "reviews": 1037,
+    "appStoreUrl": "https://apps.apple.com/us/app/numo-cringe-free-adhd-app/id1628994767?uo=4",
+    "releaseDate": "2026-03-09T09:27:07Z",
+    "price": "Free",
+    "genres": [
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Descent: Cheap Flight Tracker",
+    "slug": "descentcheapflighttracker",
+    "category": "Travel",
+    "description": "STOP OVERPAYING FOR FLIGHTS\n\nDescent watches flight prices for you — 24/7 — and sends you a push notification the instant a fare drops below your budget.\nNo more refreshing search engines.",
+    "rating": "4.3",
+    "reviews": 4,
+    "appStoreUrl": "https://apps.apple.com/us/app/descent-cheap-flight-tracker/id6758267403?uo=4",
+    "releaseDate": "2026-03-22T15:54:04Z",
+    "price": "Free",
+    "genres": [
+      "Travel",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Pebble AI: To-Do & Focus",
+    "slug": "pebbleaitodofocus",
+    "category": "Productivity",
+    "description": "Pebble is the simplest way to turn your mental chaos into calm, structured action. Voice-dump your thoughts, turn them into tasks, and block distractions so you can finally follow through - without burnout or guilt.",
+    "rating": "4.3",
+    "reviews": 41,
+    "appStoreUrl": "https://apps.apple.com/us/app/pebble-ai-to-do-focus/id6746818767?uo=4",
+    "releaseDate": "2026-03-20T15:29:05Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Health & Fitness"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Firefly: Web3 Everything App",
+    "slug": "fireflyweb3everythingapp",
+    "category": "Social Networking",
+    "description": "Firefly is a social app for exploring what’s happening onchain.\n\nDeveloped by Mask Network, Firefly seamlessly combines centralized social networks like X (Twitter) with Web3 social networks and NFT platforms such as Lens, Farcaster, Mirror, Gitcoin, Snapshot, and the Ethereum ecosystem.",
+    "rating": "4.2",
+    "reviews": 25,
+    "appStoreUrl": "https://apps.apple.com/us/app/firefly-web3-everything-app/id1640183078?uo=4",
+    "releaseDate": "2026-03-27T22:27:08Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Moment Pro Camera II",
+    "slug": "moment",
+    "category": "Photo & Video",
+    "description": "Your Camera, Your Looks, Your Way.\n\nMoment Pro Camera II turns your phone into your favorite camera for photography and filmmaking.",
+    "rating": "4.1",
+    "reviews": 175,
+    "appStoreUrl": "https://apps.apple.com/us/app/moment-pro-camera-ii/id6748837351?uo=4",
+    "releaseDate": "2026-03-22T08:31:05Z",
+    "price": "$9.99",
+    "genres": [
+      "Photo & Video"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Wabi",
+    "slug": "wabi",
+    "category": "Lifestyle",
+    "description": "Wabi is the first platform for personal software — where anyone can create, discover, remix, and share mini-apps - no code, no publishing, no limits.\n\nFor 50 years, software was made for people.",
+    "rating": "4.1",
+    "reviews": 32,
+    "appStoreUrl": "https://apps.apple.com/us/app/wabi/id6747768928?uo=4",
+    "releaseDate": "2026-02-02T23:28:10Z",
+    "price": "Free",
+    "genres": [
+      "Lifestyle",
+      "Social Networking"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Dropcall: AI Voicemail & Phone",
+    "slug": "dropcallaivoicemailphone",
+    "category": "Business",
+    "description": "Dropcall AI Call is your personal AI phone assistant that talks, listens, and handles calls for you - like a real AI receptionist. Whether you’re busy, unavailable, or just want help managing your calls, Dropcall lets you talk to AI that gets things done.",
+    "rating": "4.1",
+    "reviews": 392,
+    "appStoreUrl": "https://apps.apple.com/us/app/dropcall-ai-voicemail-phone/id6738497713?uo=4",
+    "releaseDate": "2026-03-20T22:52:35Z",
+    "price": "Free",
+    "genres": [
+      "Business",
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "mymind – Extend your mind",
+    "slug": "mymindextendyourmind",
+    "category": "Productivity",
+    "description": "mymind isn't another productivity app. It's a quiet, private garden for the things you care most about.",
+    "rating": "4.0",
+    "reviews": 395,
+    "appStoreUrl": "https://apps.apple.com/us/app/mymind-extend-your-mind/id1520332347?uo=4",
+    "releaseDate": "2025-11-29T01:36:09Z",
+    "price": "Free",
+    "genres": [
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Soda: Make New Friends",
+    "slug": "sodamakenewfriends",
+    "category": "Social Networking",
+    "description": "Soda is the safest and easiest place to make new friends from all around the world! Just open the app, start chatting, and discover your next potential bsf.",
+    "rating": "4.0",
+    "reviews": 5751,
+    "appStoreUrl": "https://apps.apple.com/us/app/soda-make-new-friends/id6465895427?uo=4",
+    "releaseDate": "2026-03-17T05:32:46Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Eversend - the money app",
+    "slug": "eversendthemoneyapp",
+    "category": "Finance",
+    "description": "Eversend is your go to app, offering you a full range of financial services, straight from your mobile phone. Unlike banks, we don’t have hidden fees, inconvenient operating hours and inflexible support.",
+    "rating": "3.9",
+    "reviews": 1036,
+    "appStoreUrl": "https://apps.apple.com/us/app/eversend-the-money-app/id1438341192?uo=4",
+    "releaseDate": "2026-03-23T18:17:25Z",
+    "price": "Free",
+    "genres": [
+      "Finance",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Sona Insight: Voice to Text AI",
+    "slug": "sonainsightvoicetotextai",
+    "category": "Productivity",
+    "description": "Conversations In. Insights Out.",
+    "rating": "3.5",
+    "reviews": 24,
+    "appStoreUrl": "https://apps.apple.com/us/app/sona-insight-voice-to-text-ai/id6717572715?uo=4",
+    "releaseDate": "2025-09-24T12:46:36Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Utilities"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Amie - Todos, calendar",
+    "slug": "amietodoscalendar",
+    "category": "Productivity",
+    "description": "The joyful productivity app.\nSchedule time for todos, events, and contacts.",
+    "rating": "3.4",
+    "reviews": 129,
+    "appStoreUrl": "https://apps.apple.com/us/app/amie-todos-calendar/id1548277133?uo=4",
+    "releaseDate": "2025-08-06T08:21:33Z",
+    "price": "Free",
+    "genres": [
+      "Productivity",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Bounty: Make Content, Get Paid",
+    "slug": "bountymakecontentgetpaid",
+    "category": "Business",
+    "description": "Bounty helps creators turn content into earnings.\n\nDiscover active bounties from brands, review the creative brief, and see exactly what you need to make.",
+    "rating": "3.0",
+    "reviews": 4,
+    "appStoreUrl": "https://apps.apple.com/us/app/bounty-make-content-get-paid/id6758651966?uo=4",
+    "releaseDate": "2026-03-20T00:13:02Z",
+    "price": "Free",
+    "genres": [
+      "Business",
+      "Productivity"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Sugar - chat beyond the bubble",
+    "slug": "sugarchatbeyondthebubble",
+    "category": "Social Networking",
+    "description": "Why are our messages with friends constrained to generic green and blue chat bubbles? \n\nIt’s time to add some color (and chaos) to your conversations with Sugar.",
+    "rating": "2.6",
+    "reviews": 9,
+    "appStoreUrl": "https://apps.apple.com/us/app/sugar-chat-beyond-the-bubble/id6470037899?uo=4",
+    "releaseDate": "2026-03-27T08:59:29Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Graphics & Design"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Mate - Curated Social Circle",
+    "slug": "matecuratedsocialcircle",
+    "category": "Social Networking",
+    "description": "We believe the best moments happen offline, in real life.\nWe make a strict filter so every person you meet is worth your time.",
+    "rating": "2.3",
+    "reviews": 3,
+    "appStoreUrl": "https://apps.apple.com/us/app/mate-curated-social-circle/id6669137503?uo=4",
+    "releaseDate": "2026-03-27T23:44:23Z",
+    "price": "Free",
+    "genres": [
+      "Social Networking",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Picky AI",
+    "slug": "pickyai",
+    "category": "Photo & Video",
+    "description": "Stop staring at your camera roll wondering which photo to post.\nYou took the pics.",
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/supernotes",
-    "tagline": "Productivity app with 5 App Store screenshots"
+    "appStoreUrl": "https://apps.apple.com/us/app/picky-ai/id6753793068?uo=4",
+    "releaseDate": "2026-03-22T18:03:41Z",
+    "price": "Free",
+    "genres": [
+      "Photo & Video",
+      "Lifestyle"
+    ],
+    "screenshotCount": 5
+  },
+  {
+    "name": "Yukee simple todo list tracker",
+    "slug": "yukee",
+    "category": "Productivity",
+    "description": "**Yukee –  a beautiful minimalist to-do app for humans..**\n\nYukee is a simple but powerful to-do app that focus on the user experience.",
+    "rating": "",
+    "reviews": 0,
+    "appStoreUrl": "https://apps.apple.com/us/app/yukee-simple-todo-list-tracker/id6744322847?uo=4",
+    "releaseDate": "2026-02-20T13:30:48Z",
+    "price": "Free",
+    "genres": [
+      "Productivity"
+    ],
+    "screenshotCount": 5
   }
 ]
