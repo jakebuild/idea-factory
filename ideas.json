@@ -1,0 +1,52 @@
+[
+  {
+    "num": 17,
+    "title": "Mood Tracker",
+    "sub": "Tap an emoji to log how you feel each day",
+    "score": "6/10",
+    "deviceType": "MOBILE",
+    "folder": "17-mood-tracker-emoji-daily-log",
+    "startScreenId": "c9ffff6ca10f40ba9430a7633eede0f3",
+    "status": "complete"
+  },
+  {
+    "num": 18,
+    "title": "Tip Calculator",
+    "sub": "Split the bill and let each person mark which dishes they ordered",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "18-a-tip-calculator-that-splits-t",
+    "startScreenId": "4806ce5ab578438c84d4b49f1e70f01c",
+    "status": "complete"
+  },
+  {
+    "num": 19,
+    "title": "Sleep Journal App",
+    "sub": "Manual sleep tracking with debt tally and tag-based insights for irregular sleepers",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "19-a-sleep-journal-app-where-you-",
+    "startScreenId": "f2b0f838f912489f87aa82d208546778",
+    "status": "complete"
+  },
+  {
+    "num": 21,
+    "title": "Dream Landscape",
+    "sub": "Turn your sleep log into a unique isometric pixel art city, generated every morning",
+    "score": "8/10",
+    "deviceType": "MOBILE",
+    "folder": "21-dream-landscape-an-app-that-ge",
+    "startScreenId": "242e10571b0f4d049918c3fa6973dcbc",
+    "status": "complete"
+  },
+  {
+    "num": 22,
+    "title": "AI Portrait Weekly",
+    "sub": "Weekly selfie → AI painting → grow your portrait journal over time",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "22-ai-portrait-an-app-that-paints",
+    "startScreenId": "ce02c189567340329fefeaae41a699e4",
+    "status": "complete"
+  }
+]

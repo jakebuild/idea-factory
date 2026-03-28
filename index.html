@@ -1,1 +1,169 @@
-<\!DOCTYPE html><html><head><meta charset='utf-8'><title>Idea Factory Designs</title></head><body><h1>Idea Factory Designs</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Idea Factory</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        fontFamily: { headline: ['Manrope'], body: ['Inter'] }
+      }
+    }
+  }
+</script>
+<style>
+  body { background: #0b1326; font-family: 'Inter', sans-serif; color: #dae2fd; }
+
+  .phone-clip {
+    width: 130px; height: 260px; border-radius: 20px;
+    overflow: hidden; flex-shrink: 0; background: #060e20;
+    box-shadow: 0 0 0 2px #2d3449, 0 8px 32px rgba(0,0,0,.5), 0 0 0 1px rgba(192,193,255,.08);
+  }
+  .phone-clip iframe {
+    width: 390px; height: 844px; border: none;
+    transform: scale(.3333); transform-origin: top left; pointer-events: none;
+  }
+
+  .web-clip {
+    width: 200px; height: 130px; border-radius: 8px;
+    overflow: hidden; flex-shrink: 0; background: #060e20;
+    box-shadow: 0 0 0 2px #2d3449, 0 8px 32px rgba(0,0,0,.5);
+  }
+  .web-browser-bar {
+    height: 20px; background: #1a2035; display: flex; align-items: center;
+    gap: 4px; padding: 0 8px; border-bottom: 1px solid #2d3449;
+  }
+  .web-browser-bar span { width: 5px; height: 5px; border-radius: 50%; background: #464554; }
+  .web-clip iframe {
+    width: 1280px; height: 800px; border: none;
+    transform: scale(.1484); transform-origin: top left; pointer-events: none;
+  }
+
+  .no-design {
+    width: 130px; height: 260px; border-radius: 20px; flex-shrink: 0;
+    background: #0f1728; border: 1px dashed #2d3449;
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 8px; color: #464554; font-size: 11px;
+  }
+
+  .idea-card {
+    background: #171f33; border: 1px solid #2d3449; border-radius: 16px;
+    padding: 20px; display: flex; gap: 20px; align-items: flex-start;
+    text-decoration: none; color: inherit;
+    transition: border-color .2s, transform .15s, box-shadow .2s;
+  }
+  a.idea-card:hover {
+    border-color: rgba(192,193,255,.3); transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0,0,0,.3), 0 0 0 1px rgba(192,193,255,.08);
+  }
+
+  .score-badge {
+    font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px;
+    background: rgba(192,193,255,.12); color: #c0c1ff; border: 1px solid rgba(192,193,255,.2);
+  }
+  .status-badge {
+    font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 999px;
+    text-transform: uppercase; letter-spacing: .05em;
+  }
+  .s-complete  { background: rgba(255,183,131,.12); color: #ffb783; border: 1px solid rgba(255,183,131,.2); }
+  .s-designing { background: rgba(192,193,255,.12); color: #c0c1ff; border: 1px solid rgba(192,193,255,.2); }
+  .s-ready     { background: rgba(125,206,130,.12); color: #7dce82; border: 1px solid rgba(125,206,130,.2); }
+  .s-default   { background: rgba(199,196,215,.10); color: #c7c4d7; border: 1px solid rgba(199,196,215,.15); }
+
+  .glass-gradient { background: linear-gradient(135deg, #c0c1ff 0%, #8083ff 100%); }
+</style>
+</head>
+<body class="dark min-h-screen">
+
+<header class="sticky top-0 z-10 border-b border-[#464554]/40 bg-[#0b1326]/80 backdrop-blur-xl">
+  <div class="max-w-3xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div>
+      <h1 class="font-headline font-extrabold text-xl tracking-tight">Idea Factory</h1>
+      <p class="text-[#c7c4d7] text-xs mt-0.5">AI-powered product pipeline &middot; <span id="idea-count">–</span> ideas</p>
+    </div>
+    <span class="glass-gradient text-[#1000a9] text-xs font-bold px-4 py-2 rounded-full font-headline">jakebuild</span>
+  </div>
+</header>
+
+<main class="max-w-3xl mx-auto px-6 py-8">
+  <p id="loading" class="text-center text-[#c7c4d7] text-sm py-24">Loading ideas…</p>
+  <div id="ideas-grid" class="flex flex-col gap-4" style="display:none"></div>
+</main>
+
+<script>
+function statusBadge(s) {
+  const m = {
+    'complete':         ['s-complete',  '● Complete'],
+    'designing':        ['s-designing', '◌ Designing'],
+    'ready-for-design': ['s-ready',     '◎ Ready for Design'],
+  };
+  const [cls, label] = m[s] || ['s-default', s];
+  return `<span class="status-badge ${cls}">${label}</span>`;
+}
+
+function preview(idea) {
+  if (!idea.startScreenId) {
+    return `<div class="no-design">
+      <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1"/>
+      </svg>
+      <span>No design</span>
+    </div>`;
+  }
+  if (idea.deviceType === 'WEB') {
+    return `<div class="web-clip">
+      <div class="web-browser-bar"><span></span><span></span><span></span></div>
+      <iframe src="${idea.folder}/${idea.startScreenId}.html" loading="lazy" scrolling="no"></iframe>
+    </div>`;
+  }
+  return `<div class="phone-clip">
+    <iframe src="${idea.folder}/${idea.startScreenId}.html" loading="lazy" scrolling="no"></iframe>
+  </div>`;
+}
+
+function card(idea) {
+  const hasDesign = !!idea.startScreenId;
+  const tag  = hasDesign ? 'a' : 'div';
+  const href = hasDesign ? `href="${idea.folder}/index.html"` : '';
+  return `<${tag} class="idea-card" ${href}>
+    ${preview(idea)}
+    <div style="display:flex;flex-direction:column;gap:8px;flex:1;min-width:0;padding:4px 0">
+      <span style="font-family:Manrope;font-size:11px;font-weight:700;color:#8083ff;letter-spacing:.08em;text-transform:uppercase">Idea #${idea.num}</span>
+      <h2 style="font-family:Manrope;font-weight:700;font-size:1.1rem;color:#dae2fd;line-height:1.3;margin:0">${idea.title}</h2>
+      <p style="color:#c7c4d7;font-size:.85rem;line-height:1.6;margin:0">${idea.sub}</p>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:4px">
+        <span class="score-badge">&#9733; ${idea.score}</span>
+        ${statusBadge(idea.status)}
+      </div>
+      ${hasDesign ? `<div style="color:#c0c1ff;font-size:12px;font-weight:600;margin-top:4px;display:flex;align-items:center;gap:4px">
+        View Design
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </div>` : ''}
+    </div>
+  </${tag}>`;
+}
+
+async function load() {
+  try {
+    const res = await fetch('ideas.json?t=' + Date.now());
+    const ideas = await res.json();
+    document.getElementById('idea-count').textContent = ideas.length;
+    ideas.sort((a, b) => b.num - a.num);
+    const grid = document.getElementById('ideas-grid');
+    grid.innerHTML = ideas.map(card).join('');
+    grid.style.display = 'flex';
+    document.getElementById('loading').remove();
+  } catch(e) {
+    document.getElementById('loading').textContent = 'Failed to load: ' + e.message;
+  }
+}
+
+load();
+</script>
+</body>
+</html>
