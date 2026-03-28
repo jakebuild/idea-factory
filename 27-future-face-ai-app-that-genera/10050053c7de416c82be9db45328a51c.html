@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-dim": "#005863",
+              "surface-container-lowest": "#ffffff",
+              "error-dim": "#a70138",
+              "on-error": "#ffefef",
+              "error": "#b41340",
+              "on-tertiary-fixed-variant": "#005762",
+              "outline-variant": "#abadb2",
+              "surface-container-highest": "#dadde4",
+              "outline": "#75777b",
+              "on-error-container": "#510017",
+              "secondary-fixed": "#d8caff",
+              "surface-container": "#e6e8ee",
+              "on-surface-variant": "#595c60",
+              "on-tertiary-fixed": "#003840",
+              "surface": "#f5f6fb",
+              "on-secondary-fixed": "#3b00a0",
+              "surface-bright": "#f5f6fb",
+              "on-primary": "#f5f0ff",
+              "secondary-dim": "#5819db",
+              "inverse-surface": "#0c0e12",
+              "tertiary-container": "#00e3fd",
+              "on-primary-container": "#1f0078",
+              "on-background": "#2c2f33",
+              "surface-dim": "#d1d4dc",
+              "secondary-container": "#d8caff",
+              "primary-dim": "#4d3dae",
+              "on-secondary-fixed-variant": "#591bdc",
+              "on-primary-fixed-variant": "#280b8a",
+              "inverse-primary": "#9284f8",
+              "error-container": "#f74b6d",
+              "on-primary-fixed": "#000000",
+              "tertiary-fixed-dim": "#00d4ec",
+              "secondary-fixed-dim": "#cabaff",
+              "surface-container-high": "#e0e2e9",
+              "background": "#f5f6fb",
+              "surface-variant": "#dadde4",
+              "inverse-on-surface": "#9b9da1",
+              "on-surface": "#2c2f33",
+              "surface-container-low": "#eff1f6",
+              "tertiary-fixed": "#00e3fd",
+              "surface-tint": "#594aba",
+              "secondary": "#652fe7",
+              "on-secondary": "#f7f0ff",
+              "primary-fixed-dim": "#9284f8",
+              "on-tertiary-container": "#004d57",
+              "primary-container": "#9f92ff",
+              "primary-fixed": "#9f92ff",
+              "tertiary": "#006571",
+              "primary": "#594aba",
+              "on-secondary-container": "#5000d2",
+              "on-tertiary": "#d8f8ff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .electric-pulse {
+        background: linear-gradient(135deg, #594aba 0%, #652fe7 100%);
+      }
+      .asymmetric-glow {
+        background: radial-gradient(circle at 70% 20%, rgba(101, 47, 231, 0.08) 0%, transparent 50%);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl shadow-sm shadow-indigo-500/5">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent font-['Plus_Jakarta_Sans'] tracking-tight">
+                Future Face AI
+            </div>
+<div class="flex items-center gap-4">
+<button class="text-slate-500 dark:text-slate-400 hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+</button>
+<button class="text-slate-500 dark:text-slate-400 hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow flex items-center justify-center pt-20 pb-12 px-6 asymmetric-glow">
+<div class="w-full max-w-5xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column: Visual Error State -->
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="relative">
+<!-- Decorative Background Blobs -->
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-12 -right-12 w-48 h-48 bg-secondary/5 rounded-full blur-3xl"></div>
+<!-- Main Error Card -->
+<div class="relative bg-surface-container-lowest rounded-[2rem] p-8 shadow-2xl shadow-on-surface/5 border border-outline-variant/10 overflow-hidden">
+<div class="aspect-square w-full rounded-2xl bg-surface-container-low flex flex-col items-center justify-center relative overflow-hidden group">
+<!-- Image Container -->
+<img class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale" data-alt="Abstract aesthetic gradient texture with soft indigo and violet tones with subtle grain for background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeDdV_8F-YSqCly_iR4nV1CZ4BZTJwVabiWIauckKN5isOk6oLL33w6oLhRzD4U8Yu4m2H811anAhg-MdPqpqhtWy3T2-rwvrccnQqDXdMiXUIZ7BME34BbBYHkblPBHz33qMpmPRm8cHwFxOWIKG6w3jgGrYCVy5vq2pTHagznc-Gg0FSzoObtxqgH4AmTtKH9kvYl8yBnvXAkWicjojxjMQxdhBkfTvTUPzxao-FWJTCX-ov5CyINCY4VHrnMRMuNkz4iKugWlg"/>
+<!-- Scanner Effect -->
+<div class="absolute inset-x-0 top-1/4 h-[2px] bg-error/40 shadow-[0_0_15px_rgba(180,19,64,0.5)] z-10"></div>
+<div class="z-20 flex flex-col items-center text-center px-6">
+<div class="w-20 h-20 rounded-full bg-error-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-error text-4xl" data-icon="face_retouching_off">face_retouching_off</span>
+</div>
+<p class="text-on-surface-variant font-medium text-sm max-w-[200px]">Scanning failed. No facial features identified in this image.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Content and Actions -->
+<div class="lg:col-span-7 order-1 lg:order-2 space-y-8">
+<div class="space-y-4">
+<span class="inline-flex items-center px-4 py-1.5 rounded-full bg-error-container/10 text-error text-xs font-bold tracking-widest uppercase font-label">
+                        Analysis Error
+                    </span>
+<h1 class="text-5xl lg:text-7xl font-headline font-extrabold tracking-tighter text-on-surface leading-[1.1]">
+                        No Face <span class="text-transparent bg-clip-text electric-pulse">Detected</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-xl font-body leading-relaxed">
+                        We couldn't find a face in the photo you uploaded. To ensure our AI accurately enhances your features, please follow these guidelines.
+                    </p>
+</div>
+<!-- Tips Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container-lowest transition-colors duration-300 border border-transparent hover:border-outline-variant/15">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="photo_camera_front">photo_camera_front</span>
+<h4 class="font-bold text-on-surface mb-1">Front-Facing</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">Look directly into the camera for best results.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container-lowest transition-colors duration-300 border border-transparent hover:border-outline-variant/15">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="light_mode">light_mode</span>
+<h4 class="font-bold text-on-surface mb-1">Good Lighting</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">Avoid harsh shadows or extremely dark environments.</p>
+</div>
+<div class="p-6 rounded-2xl bg-surface-container-low hover:bg-surface-container-lowest transition-colors duration-300 border border-transparent hover:border-outline-variant/15">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="block">block</span>
+<h4 class="font-bold text-on-surface mb-1">No Obstruction</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">Avoid hats, large sunglasses, or hair covering features.</p>
+</div>
+</div>
+<!-- Action Section -->
+<div class="flex flex-col sm:flex-row items-center gap-6 pt-4">
+<button class="electric-pulse text-on-primary px-10 py-5 rounded-2xl font-bold text-lg shadow-xl shadow-primary/25 hover:opacity-90 transition-all active:scale-95 flex items-center gap-3 w-full sm:w-auto justify-center" onclick="window.location.href='fa26d9dd09a544ff961e70486e600b88.html'">
+<span class="material-symbols-outlined" data-icon="add_a_photo">add_a_photo</span>
+                        Try Another Photo
+                    </button>
+<a class="text-on-surface-variant font-semibold hover:text-primary transition-colors flex items-center gap-2 group" href="fa26d9dd09a544ff961e70486e600b88.html" onclick="window.location.href='fa26d9dd09a544ff961e70486e600b88.html'">
+                        Cancel
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="lg:hidden fixed bottom-0 w-full z-50 flex justify-around items-end pb-6 px-8 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg shadow-[0_-10px_40px_rgba(0,0,0,0.05)] rounded-t-[2rem]">
+<div class="flex flex-col items-center justify-center text-slate-400 p-2 hover:text-indigo-500 transition-transform active:scale-90">
+<span class="material-symbols-outlined" data-icon="auto_awesome_motion">auto_awesome_motion</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Gallery</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-gradient-to-br from-indigo-600 to-violet-600 text-white rounded-2xl p-3 -mt-4 shadow-lg shadow-indigo-500/40 active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="add_a_photo">add_a_photo</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Generate</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 p-2 hover:text-indigo-500 transition-transform active:scale-90">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Inter'] text-[10px] uppercase tracking-widest font-bold mt-1">Profile</span>
+</div>
+</nav>
+<!-- Decorative Corner Element -->
+<div class="fixed bottom-12 right-12 hidden lg:block opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[120px] text-primary" style="font-variation-settings: 'FILL' 1;">face</span>
+</div>
+</body></html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Future Face AI - Your Results</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#d1d4dc",
+                        "on-secondary-container": "#5000d2",
+                        "primary-container": "#9f92ff",
+                        "on-primary": "#f5f0ff",
+                        "tertiary-fixed-dim": "#00d4ec",
+                        "on-secondary": "#f7f0ff",
+                        "primary-fixed": "#9f92ff",
+                        "on-tertiary-fixed-variant": "#005762",
+                        "on-secondary-fixed-variant": "#591bdc",
+                        "outline-variant": "#abadb2",
+                        "surface-container-highest": "#dadde4",
+                        "primary-dim": "#4d3dae",
+                        "primary": "#594aba",
+                        "error-dim": "#a70138",
+                        "error": "#b41340",
+                        "tertiary-dim": "#005863",
+                        "inverse-surface": "#0c0e12",
+                        "background": "#f5f6fb",
+                        "inverse-on-surface": "#9b9da1",
+                        "on-surface-variant": "#595c60",
+                        "on-primary-container": "#1f0078",
+                        "on-secondary-fixed": "#3b00a0",
+                        "surface-variant": "#dadde4",
+                        "surface-tint": "#594aba",
+                        "on-error-container": "#510017",
+                        "secondary-dim": "#5819db",
+                        "on-tertiary-fixed": "#003840",
+                        "on-primary-fixed": "#000000",
+                        "on-background": "#2c2f33",
+                        "on-tertiary": "#d8f8ff",
+                        "secondary-container": "#d8caff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#004d57",
+                        "tertiary-fixed": "#00e3fd",
+                        "surface-container": "#e6e8ee",
+                        "primary-fixed-dim": "#9284f8",
+                        "surface-container-low": "#eff1f6",
+                        "surface-bright": "#f5f6fb",
+                        "on-primary-fixed-variant": "#280b8a",
+                        "tertiary": "#006571",
+                        "surface-container-high": "#e0e2e9",
+                        "secondary": "#652fe7",
+                        "on-surface": "#2c2f33",
+                        "secondary-fixed-dim": "#cabaff",
+                        "tertiary-container": "#00e3fd",
+                        "on-error": "#ffefef",
+                        "secondary-fixed": "#d8caff",
+                        "error-container": "#f74b6d",
+                        "surface": "#f5f6fb",
+                        "outline": "#75777b",
+                        "inverse-primary": "#9284f8"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .electric-pulse {
+            background: linear-gradient(135deg, #594aba 0%, #652fe7 100%);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .tonal-shift-low {
+            background-color: rgba(245, 246, 251, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm shadow-indigo-500/5">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<div class="text-xl font-black text-indigo-700 tracking-tighter font-headline">Future Face AI</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-500 font-medium hover:text-indigo-500 transition-all duration-300 font-headline text-sm" href="#">Gallery</a>
+<a class="text-indigo-600 border-b-2 border-indigo-600 pb-1 font-headline text-sm" href="#">Creations</a>
+<a class="text-slate-500 font-medium hover:text-indigo-500 transition-all duration-300 font-headline text-sm" href="#">Community</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-white px-4 py-2 rounded-xl text-indigo-600 font-bold text-sm shadow-sm border border-indigo-50 hover:bg-indigo-50 transition-all active:scale-95">Upgrade Pro</button>
+<span class="material-symbols-outlined text-on-surface-variant text-2xl cursor-pointer hover:opacity-80 transition-all">account_circle</span>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Success Banner -->
+<div class="mb-12 text-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-container/20 text-on-primary-container mb-4">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-xs font-bold tracking-wide uppercase font-label">Success! Your high-resolution files are ready.</span>
+</div>
+<h1 class="text-5xl md:text-6xl font-extrabold font-headline tracking-tight text-on-surface mb-4">
+                Behold Your <span class="text-transparent bg-clip-text electric-pulse">Future Self</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl mx-auto leading-relaxed">
+                Our Luminous Architect AI has refined your portrait with cinematic detail. Download and share your evolution across the digital landscape.
+            </p>
+</div>
+<!-- Asymmetric Result Display -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left: High Res Preview (The Feature) -->
+<div class="lg:col-span-7 group">
+<div class="relative overflow-hidden rounded-[2rem] bg-surface-container-lowest shadow-2xl shadow-indigo-500/10 border border-white/20 transition-all duration-500 hover:shadow-indigo-500/20">
+<img alt="Hyper-realistic AI generated portrait of an elderly person with dignified features, cinematic soft lighting, and high-end photographic texture" class="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Hyper-realistic AI generated portrait of an elderly person with dignified features, cinematic soft lighting, and high-end photographic texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArrYY6ZhveIqcBTdRSsZx1-JarJ4oBnLOGZnCvWVbrP_DVRLmqAsrN1q1a_zIRzuLFXmpqyjwMc4TgLR8GsdW3UaD4vO81cU55xVpPRtVDFt3RMy8eY4U51n8Jw7W6SHRe-B197_mv6CvsKVNnLsTsVQZ4GP3WaPRyknv_aLM5YkaHNgAsqX8t-oWd0_dJH1mJLUilGobZYyT0-SEkVV624TRtfydg29jSaNu2gFmKsN2Lgm2xFW9lH67InqB4KENIuyNi2wVP55o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined">zoom_in</span>
+<span class="font-label text-sm font-medium tracking-wide">8K RESOLUTION PREVIEW</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Secondary Content & Actions -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Video Reveal Preview -->
+<div class="bg-surface-container-low rounded-[2rem] p-6 relative overflow-hidden group">
+<div class="mb-4 flex justify-between items-center">
+<h3 class="font-headline font-bold text-lg text-on-surface">The Transformation</h3>
+<span class="px-3 py-1 bg-white/50 backdrop-blur-md rounded-full text-[10px] font-bold text-indigo-600 uppercase tracking-widest">Video Loop</span>
+</div>
+<div class="relative rounded-2xl overflow-hidden aspect-video bg-black shadow-inner">
+<img alt="Dynamic time-lapse video preview showing a smooth facial transition from youth to old age with ethereal light particles" class="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-1000" data-alt="Dynamic time-lapse video preview showing a smooth facial transition from youth to old age with ethereal light particles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_8lfuqUUk9dj4XqhKkFDEkjVSnA65zgm8CCrA1sbOl9IYWSna4HaD6iBCAyG9pP3ZesTS5Wb0qB9cEGgLJKzZgiWwAgWjeY7S2bx66eEE8hQhyIBtK09Bf-6segueifueQ4xvX5s3Tr--PCYh2vouJlMIlXIei9ZS11zv9InB613ZYMBL4r8VmmaTsREwESjaEF-FfNo4sX1vyMXenBFMh7jrsh7I3IlOAnYYQydMmpooKgF4-MOkRxfmouhnzs1E06fYsRhEftw"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full electric-pulse flex items-center justify-center shadow-lg shadow-indigo-500/40">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Download Actions Card -->
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-sm border border-slate-200/50">
+<h3 class="font-headline font-bold text-xl mb-6">Master Files</h3>
+<div class="flex flex-col gap-4">
+<button class="electric-pulse w-full py-5 rounded-2xl text-on-primary font-bold flex items-center justify-center gap-3 shadow-lg shadow-indigo-500/30 hover:opacity-90 transition-all active:scale-95 group">
+<span class="material-symbols-outlined group-hover:translate-y-0.5 transition-transform">download</span>
+                            Download Image
+                        </button>
+<button class="bg-surface-container-highest w-full py-5 rounded-2xl text-on-surface font-bold flex items-center justify-center gap-3 hover:bg-surface-dim transition-all active:scale-95 group">
+<span class="material-symbols-outlined group-hover:translate-y-0.5 transition-transform">movie</span>
+                            Download Video
+                        </button>
+</div>
+</div>
+<!-- Social Share -->
+<div class="bg-surface-container-low/50 rounded-[2rem] p-8">
+<h4 class="text-sm font-bold text-on-surface-variant uppercase tracking-widest mb-6 text-center">Share the future</h4>
+<div class="flex justify-center gap-6">
+<button class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined text-pink-600" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</button>
+<button class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined text-black" style="font-variation-settings: 'FILL' 1;">music_note</span>
+</button>
+<button class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined text-blue-500" style="font-variation-settings: 'FILL' 1;">chat</span>
+</button>
+<button class="w-14 h-14 rounded-2xl bg-white flex items-center justify-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined text-green-500" style="font-variation-settings: 'FILL' 1;">call</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom CTA -->
+<div class="mt-20 text-center pb-12" onclick="window.location.href='fa26d9dd09a544ff961e70486e600b88.html'">
+<button class="inline-flex items-center gap-3 px-12 py-6 rounded-full bg-on-surface text-white font-bold text-lg shadow-2xl hover:bg-slate-800 transition-all active:scale-95 group" onclick="window.location.href='fa26d9dd09a544ff961e70486e600b88.html'">
+                Try another photo
+                <span class="material-symbols-outlined group-hover:rotate-180 transition-transform duration-500">autorenew</span>
+</button>
+<p class="mt-6 text-on-surface-variant text-sm font-medium">Credits remaining: 12 Creations</p>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white py-12 border-t border-slate-100">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<span class="text-xs font-semibold text-on-surface uppercase tracking-widest">Future Face AI</span>
+<div class="flex gap-6">
+<a class="font-body text-xs text-slate-400 hover:text-indigo-500 transition-colors" href="#">Privacy Policy</a>
+<a class="font-body text-xs text-slate-400 hover:text-indigo-500 transition-colors" href="#">Terms of Service</a>
+<a class="font-body text-xs text-slate-400 hover:text-indigo-500 transition-colors" href="#">API Status</a>
+</div>
+</div>
+<p class="font-body text-xs text-slate-400 text-center md:text-right">
+                © 2024 Future Face AI. Powered by Luminous Architect.
+            </p>
+</div>
+</footer>
+</body></html>

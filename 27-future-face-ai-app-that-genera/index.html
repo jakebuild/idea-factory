@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Idea Factory — Design Preview</title>
+<!-- IDEA_DATA injected here by design agent -->
+<script>
+window.IDEA_DATA = {
+  ideaNum:     27,
+  title:       "Future Face AI",
+  sub:         "Upload a photo, see yourself decades from now — pay $1.99 to download",
+  score:       "7/10",
+  deviceType:  "WEB",
+  stitchId:    "8574937849294769080",
+  startScreen: 0,
+  screens: [
+    { id: "716fed8c15b945a99ee6dfc35928da9e", label: "Landing / Hero" },
+    { id: "fa26d9dd09a544ff961e70486e600b88", label: "Upload Photo" },
+    { id: "5f74f97e0010424e9513b2effbe11013", label: "Age Target Select" },
+    { id: "7ad3319bffef4ec990f4273cf1401262", label: "Processing" },
+    { id: "aa6412a1ad1c4252beb29b2e200c82c2", label: "Result / Reveal" },
+    { id: "92275401c2824df0898c8d5088f2c311", label: "Paywall / Unlock" },
+    { id: "2534380ea388424489845bef05af3ade", label: "Download / Share" },
+    { id: "10050053c7de416c82be9db45328a51c", label: "Error / Retry" }
+  ],
+  timeline: [
+    {
+      status: "",
+      icon: "💡",
+      title: "Original Idea",
+      desc: "AI face aging app — one selfie → 4-panel collage across decades",
+      body: `<div class="esect"><div class="esect-label">Concept</div><p>Upload a selfie → AI generates photorealistic aging progression showing you at current age, +15-20yr, +30-35yr, and +55-60yr. Identical bone structure preserved — only natural aging applied. No beautification, raw biological aging. The emotional hook: see what you and family might look like decades from now.</p></div><div class="esect"><div class="esect-label">Core Flow</div><ul><li>Camera / selfie capture</li><li>AI face aging via diffusion/IP-Adapter</li><li>4-panel collage output</li><li>Share with friends</li></ul></div><div class="esect"><div class="esect-label">Tags</div><div class="tag-row"><span class="etag">AI</span><span class="etag">Face Aging</span><span class="etag">Social Sharing</span><span class="etag">One-shot</span></div></div>`
+    },
+    {
+      status: "critique",
+      icon: "🔍",
+      title: "Critique v1",
+      desc: "WORTH BUILDING — viral hook is real, but FaceApp overlap and model quality are concerns",
+      verdict: "WORTH BUILDING",
+      verdictClass: "worth",
+      score: "7/10",
+      body: `<div class="esect"><div class="esect-label">What's Good</div><ul><li>Viral loop is real — FaceApp proved "see your face in 30 years" is crack</li><li>Dead-simple UX: one selfie in, one result out</li><li>Clear monetization: free watermarked + $1.99 full-res unlock</li><li>Technically achievable: face aging via Replicate/fal.ai is a solved problem</li></ul></div><div class="esect"><div class="esect-label">Brutal Feedback</div><ul><li>"Scientifically accurate" is a lie — no diffusion model does biologically accurate aging</li><li>FaceApp already exists with 500M+ downloads — needs clear differentiator</li><li>4-panel collage is not novel — every FaceApp clone does this</li><li>Zero retention: monetize on first use or make nothing</li><li>Privacy/biometric concerns (GDPR, BIPA, App Store rules)</li></ul></div><div class="esect"><div class="esect-label">Solo Dev Check</div><p>YES with caveats — web-first Next.js + Replicate is 2 weeks. Model quality and identity preservation across 60 years is the real risk.</p></div>`
+    },
+    {
+      status: "improve",
+      icon: "✨",
+      title: "Improved v2",
+      desc: "Pivoted to 'kids grown up' hero use case, web-first, zero-retention as feature",
+      body: `<div class="esect"><div class="esect-label">What Changed</div><ul><li>Pivoted hero use case to "see your kids grown up" — more emotionally differentiated from FaceApp</li><li>Web-first (Next.js) instead of native mobile — eliminates App Store friction</li><li>Zero-retention architecture as a marketing feature: "photo deleted immediately after delivery"</li><li>Drag-reveal before/after slider instead of static 4-panel collage</li><li>Monetize-on-first-use: $1.99 one-time to download full-res, free preview</li></ul></div><div class="esect"><div class="esect-label">MVP Scope</div><p>Upload → age select (+20/+40/+60) → processing → drag-reveal result → $1.99 paywall for download. No auth, no retention. Linear happy path.</p></div>`
+    },
+    {
+      status: "critique",
+      icon: "🔍",
+      title: "Critique v2",
+      desc: "WORTH BUILDING — model validation is go/no-go gate, kids angle has legal risk",
+      verdict: "WORTH BUILDING",
+      verdictClass: "worth",
+      score: "7/10",
+      body: `<div class="esect"><div class="esect-label">What's Good</div><ul><li>Web-first is the correct call — eliminates App Store review hell</li><li>Zero-retention as marketing feature is clever positioning</li><li>Monetize-on-first-use ($1.99) is exactly right for zero-retention product</li><li>Drag-to-reveal is better shareable format than static collage</li></ul></div><div class="esect"><div class="esect-label">Brutal Feedback</div><ul><li>Model quality IS the product — if IP-Adapter produces muddy results, there's nothing. Validate FIRST.</li><li>"Kids grown up" raises legal/ethical issues: EU AI Act, COPPA, biometric data laws, Stripe content policies</li><li>Replicate cold-start latency frequently exceeds 30-60s — async job queue is not optional</li><li>Drag-reveal sharing assumes users screen-record — Instagram/TikTok need actual video export</li></ul></div><div class="esect"><div class="esect-label">Solo Dev Check</div><p>MAYBE — core flow is 10-14 days with AI tools, but hinges entirely on model latency &lt;20s and output quality good enough to charge for.</p></div>`
+    },
+    {
+      status: "improve",
+      icon: "✨",
+      title: "Improved v3",
+      desc: "Adults-only v1, model validation as Step 0, native GIF/video export, async email fallback",
+      body: `<div class="esect"><div class="esect-label">What Changed</div><ul><li><strong>Adults-only in v1</strong> — cuts kids angle entirely to eliminate legal/Stripe risk</li><li><strong>Model validation is Step 0</strong> — run 20 real photos through pipeline before writing product code</li><li><strong>Native GIF/video export</strong> — server-side 3-second looping reveal video, natively shareable to Instagram/TikTok</li><li><strong>Async email fallback</strong> — if p95 latency &gt;20s, collect email and deliver result link; designed from day one</li><li><strong>Paywall at download, not result view</strong> — show full aged result free, charge for download+video</li></ul></div><div class="esect"><div class="esect-label">MVP Scope</div><p>12-14 day build: photo upload (18+ consent) → age bracket select → processing → free drag-reveal result → $1.99 to download full-res + shareable GIF/video. Zero-retention architecture enforced server-side.</p></div><div class="esect"><div class="esect-label">Tech Stack</div><div class="tag-row"><span class="etag blue">Next.js</span><span class="etag blue">Replicate/fal.ai</span><span class="etag blue">Stripe</span><span class="etag blue">Vercel</span><span class="etag blue">Resend</span><span class="etag blue">ffmpeg/canvas</span></div></div>`
+    },
+    {
+      status: "validate",
+      icon: "✅",
+      title: "Validated",
+      desc: "Score 7/10 — ready for design",
+      body: `<div class="esect"><div class="esect-label">Score</div><p><strong>7/10</strong> — Validated 2026-03-28</p></div><div class="esect"><div class="esect-label">Design Handoff — 8 Screens</div><ul><li>Landing / Hero — upload CTA, sample reveals, pricing callout</li><li>Upload / Photo Select — drag-and-drop, consent checkbox, trust signals</li><li>Age Target Select — +20/+40/+60yr toggle, face detected preview</li><li>Processing / Loading — animated loader, rotating copy, email fallback</li><li>Result / Reveal — drag-to-reveal slider, free result, download CTA</li><li>Paywall / Unlock — $1.99 one-time, Stripe element, no subscription</li><li>Download / Share — full-res + GIF/video download, social share buttons</li><li>Error / Retry — face-not-detected, API failure, format error states</li></ul></div>`
+    },
+    {
+      status: "design",
+      icon: "🎨",
+      title: "Designed",
+      desc: "Stitch project created — 8 screens, WEB prototype",
+      body: `<div class="esect"><div class="esect-label">Stitch Project</div><p><a class="ext-link" href="https://stitch.withgoogle.com/projects/8574937849294769080" target="_blank">Open in Stitch ↗</a></p></div><div class="esect"><div class="esect-label">Device Type</div><p>WEB — desktop browser prototype with browser chrome frame</p></div><div class="esect"><div class="esect-label">Design System</div><p>Aetheris Prime — indigo/violet palette, Plus Jakarta Sans headlines, clean editorial aesthetic</p></div>`
+    }
+  ]
+};
+</script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0f1a;
+    color: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ──────────────────────────────────────── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .idea-num {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: #3b82f6; background: #1e3a5f;
+    padding: 3px 10px; border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .idea-title { font-size: 1.1rem; font-weight: 700; color: #f9fafb; }
+  .idea-sub { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+  .header-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    border-radius: 99px; padding: 4px 12px;
+    font-size: 0.75rem; color: #9ca3af;
+  }
+  .score-pill {
+    background: #1a2e1a; border: 1px solid #2d4a2d;
+    color: #86efac; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 99px;
+  }
+  .toggle-btn {
+    display: flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    color: #9ca3af; font-size: 0.75rem;
+    padding: 4px 12px; border-radius: 99px;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .toggle-btn:hover { background: #1f2937; color: #f9fafb; border-color: #374151; }
+
+  /* ── Body ────────────────────────────────────────── */
+  .body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: stretch;
+  }
+
+  /* ── Phone column ────────────────────────────────── */
+  .phone-col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 40px;
+    gap: 16px;
+    background: #0a0f1a;
+    overflow: hidden;
+  }
+
+  /* MOBILE frame */
+  .phone-frame {
+    width: 390px;
+    height: 844px;
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 0 0 10px #0f172a,
+      0 0 0 11px rgba(255,255,255,0.06),
+      0 50px 100px rgba(0,0,0,0.7);
+    background: #000;
+    flex-shrink: 0;
+  }
+
+  /* WEB frame */
+  .web-frame {
+    width: min(900px, calc(100% - 80px));
+    height: min(640px, calc(100vh - 180px));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 24px 60px rgba(0,0,0,0.6);
+    background: #1f2937;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .web-chrome {
+    height: 36px;
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .web-chrome .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .web-chrome .dot-r { background: #ef4444; }
+  .web-chrome .dot-y { background: #f59e0b; }
+  .web-chrome .dot-g { background: #22c55e; }
+  .web-chrome .url {
+    flex: 1; background: #111827; border-radius: 4px;
+    height: 20px; margin: 0 8px;
+    display: flex; align-items: center; padding: 0 10px;
+    font-size: 0.68rem; color: #6b7280;
+  }
+
+  .device-iframe {
+    width: 100%; height: 100%;
+    border: none; display: block;
+    flex: 1;
+  }
+
+  /* Switcher */
+  .switcher {
+    display: flex; gap: 6px;
+    flex-wrap: wrap; justify-content: center;
+    max-width: 600px;
+  }
+  .switcher button {
+    height: 28px; padding: 0 10px;
+    border-radius: 6px; border: 1px solid #1f2937;
+    background: #111827; color: #6b7280;
+    font-size: 0.7rem; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .switcher button:hover { background: #1f2937; color: #d1d5db; border-color: #374151; }
+  .switcher button.active { background: #1e3a5f; color: #60a5fa; border-color: #3b82f6; }
+
+  /* ── Resize handle ───────────────────────────────── */
+  .resize-handle {
+    width: 8px;
+    flex-shrink: 0;
+    cursor: col-resize;
+    position: relative;
+    background: transparent;
+    z-index: 10;
+  }
+  .resize-handle::after {
+    content: '';
+    position: absolute;
+    left: 3px; top: 0; bottom: 0;
+    width: 2px;
+    background: #1a2235;
+    transition: background 0.15s;
+  }
+  .resize-handle:hover::after { background: #374151; }
+  .resize-handle.dragging::after { background: #3b82f6; }
+
+  /* ── Timeline column ─────────────────────────────── */
+  .timeline-col {
+    width: 460px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 0.25s ease;
+    background: #0d1424;
+  }
+  .timeline-col.collapsed { width: 0; }
+
+  .timeline-header {
+    padding: 20px 28px 14px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .timeline-header h2 {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #4b5563;
+  }
+
+  .timeline-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 28px 40px;
+  }
+  .timeline-scroll::-webkit-scrollbar { width: 4px; }
+  .timeline-scroll::-webkit-scrollbar-track { background: transparent; }
+  .timeline-scroll::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 2px; }
+
+  /* ── Timeline line + dots ────────────────────────── */
+  /* --lx: horizontal center of the line/dots from .timeline-line left edge */
+  .timeline-line {
+    --lx: 8px;
+    position: relative;
+    padding-left: 28px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+  }
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--lx) - 1px); /* 2px line centered at --lx */
+    top: 10px; bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, #1e3a5f 0%, #1f2937 100%);
+    border-radius: 2px;
+  }
+
+  .entry {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .entry::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+    top: 18px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #1f2937;
+    border: 2px solid #374151;
+    z-index: 1;
+  }
+  .entry.s-critique::before { background: #78350f; border-color: #d97706; }
+  .entry.s-improve::before  { background: #1e3a5f; border-color: #3b82f6; }
+  .entry.s-validate::before { background: #14532d; border-color: #16a34a; }
+  .entry.s-design::before   { background: #312e81; border-color: #6366f1; }
+
+  /* ── Entry cards ─────────────────────────────────── */
+  .entry-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+  .entry-card:hover { border-color: #374151; }
+
+  .entry-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer; user-select: none;
+  }
+  .entry-icon { font-size: 1.1rem; flex-shrink: 0; line-height: 1; }
+  .entry-info { flex: 1; min-width: 0; }
+  .entry-title {
+    font-size: 0.85rem; font-weight: 600; color: #f9fafb;
+    display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+    line-height: 1.3;
+  }
+  .entry-desc { font-size: 0.72rem; color: #6b7280; margin-top: 3px; }
+  .entry-chevron {
+    color: #374151; font-size: 0.6rem; flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .entry.open .entry-chevron { transform: rotate(180deg); color: #6b7280; }
+
+  .verdict {
+    font-size: 0.6rem; font-weight: 700;
+    padding: 2px 6px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .verdict-needs { background: #451a03; color: #fb923c; }
+  .verdict-worth { background: #14532d; color: #86efac; }
+  .verdict-kill  { background: #450a0a; color: #f87171; }
+  .escore { font-size: 0.7rem; font-weight: 700; color: #60a5fa; }
+
+  .entry-body {
+    display: none;
+    border-top: 1px solid #1f2937;
+    padding: 14px;
+    font-size: 0.76rem; color: #9ca3af; line-height: 1.65;
+  }
+  .entry.open .entry-body { display: block; }
+
+  .esect { margin-top: 10px; }
+  .esect:first-child { margin-top: 0; }
+  .esect-label {
+    font-size: 0.62rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: #4b5563; margin-bottom: 5px;
+  }
+  .esect ul { padding-left: 14px; }
+  .esect li { margin-bottom: 3px; color: #9ca3af; }
+  .esect p { color: #9ca3af; }
+  .esect strong { color: #d1d5db; font-weight: 600; }
+  .tag-row { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+  .etag {
+    background: #0a0f1a; border: 1px solid #1f2937;
+    border-radius: 4px; padding: 2px 7px;
+    font-size: 0.66rem; color: #6b7280;
+  }
+  .etag.green { border-color: #14532d; color: #86efac; }
+  .etag.blue  { border-color: #1e3a5f; color: #60a5fa; }
+  a.ext-link { color: #818cf8; text-decoration: none; }
+  a.ext-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <span class="idea-num" id="hNum"></span>
+    <div>
+      <div class="idea-title" id="hTitle"></div>
+      <div class="idea-sub" id="hSub"></div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="score-pill" id="hScore"></span>
+    <span class="badge" id="hBadge"></span>
+    <button class="toggle-btn" id="toggleBtn" onclick="toggleTimeline()">
+      <span id="toggleIcon">›</span>
+      <span id="toggleLabel">Hide Journey</span>
+    </button>
+  </div>
+</div>
+
+<div class="body">
+  <div class="phone-col" id="phoneCol">
+    <div id="deviceFrame"></div>
+    <div class="switcher" id="switcher"></div>
+  </div>
+
+  <div class="resize-handle" id="resizeHandle"></div>
+
+  <div class="timeline-col" id="timelineCol">
+    <div class="timeline-header"><h2>Idea Journey</h2></div>
+    <div class="timeline-scroll">
+      <div class="timeline-line" id="timeline"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Render from IDEA_DATA ────────────────────────────
+(function () {
+  const D = window.IDEA_DATA || {};
+  const isMobile = (D.deviceType || 'MOBILE').toUpperCase() !== 'WEB';
+
+  // Header
+  document.title = 'Idea #' + D.ideaNum + ' — ' + D.title;
+  document.getElementById('hNum').textContent   = '#' + D.ideaNum;
+  document.getElementById('hTitle').textContent = D.title;
+  document.getElementById('hSub').textContent   = D.sub || '';
+  document.getElementById('hScore').textContent = D.score || '';
+  document.getElementById('hBadge').textContent = isMobile ? '📱 Mobile Prototype' : '💻 Web Prototype';
+
+  // Device frame
+  const frameContainer = document.getElementById('deviceFrame');
+  if (isMobile) {
+    frameContainer.className = 'phone-frame';
+    frameContainer.innerHTML = '<iframe id="app" class="device-iframe"></iframe>';
+  } else {
+    frameContainer.className = 'web-frame';
+    frameContainer.innerHTML =
+      '<div class="web-chrome">' +
+        '<div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>' +
+        '<div class="url" id="webUrl">preview</div>' +
+      '</div>' +
+      '<iframe id="app" class="device-iframe"></iframe>';
+  }
+
+  // Screens switcher
+  const screens = D.screens || [];
+  const startIdx = D.startScreen != null ? D.startScreen : (screens.length > 1 ? 1 : 0);
+  const switcher = document.getElementById('switcher');
+  const iframe   = document.getElementById('app');
+
+  function hideIframeScrollbars() {
+    try {
+      const style = iframe.contentDocument.createElement('style');
+      style.textContent = '::-webkit-scrollbar{display:none}*{-ms-overflow-style:none!important;scrollbar-width:none!important}';
+      iframe.contentDocument.head.appendChild(style);
+    } catch(e) {}
+  }
+  iframe.addEventListener('load', hideIframeScrollbars);
+
+  function goTo(i) {
+    iframe.src = screens[i].id + '.html';
+    switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
+    const urlEl = document.getElementById('webUrl');
+    if (urlEl) urlEl.textContent = screens[i].label;
+  }
+
+  screens.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = (i + 1) + ' · ' + s.label;
+    btn.onclick = () => goTo(i);
+    switcher.appendChild(btn);
+  });
+
+  if (screens.length) goTo(startIdx);
+
+  // Timeline
+  const timeline = document.getElementById('timeline');
+  (D.timeline || []).forEach(e => {
+    const verdictHtml = e.verdict
+      ? '<span class="verdict verdict-' + (e.verdictClass || 'needs') + '">' + e.verdict + '</span>'
+      : '';
+    const scoreHtml = e.score
+      ? '<span class="escore">' + e.score + '</span>'
+      : '';
+
+    const div = document.createElement('div');
+    div.className = 'entry' + (e.status ? ' s-' + e.status : '');
+    div.innerHTML =
+      '<div class="entry-card">' +
+        '<div class="entry-head" onclick="this.closest(\'.entry\').classList.toggle(\'open\')">' +
+          '<span class="entry-icon">' + e.icon + '</span>' +
+          '<div class="entry-info">' +
+            '<div class="entry-title">' + e.title + ' ' + verdictHtml + ' ' + scoreHtml + '</div>' +
+            '<div class="entry-desc">' + e.desc + '</div>' +
+          '</div>' +
+          '<span class="entry-chevron">▼</span>' +
+        '</div>' +
+        '<div class="entry-body">' + (e.body || '') + '</div>' +
+      '</div>';
+    timeline.appendChild(div);
+  });
+
+  // Timeline toggle
+  let open = true;
+  window.toggleTimeline = function () {
+    open = !open;
+    document.getElementById('timelineCol').classList.toggle('collapsed', !open);
+    document.getElementById('resizeHandle').style.display = open ? '' : 'none';
+    document.getElementById('toggleIcon').textContent  = open ? '›' : '‹';
+    document.getElementById('toggleLabel').textContent = open ? 'Hide Journey' : 'Show Journey';
+  };
+
+  // Drag resize
+  const handle      = document.getElementById('resizeHandle');
+  const timelineCol = document.getElementById('timelineCol');
+  let resizing = false, rx = 0, rw = 0;
+
+  handle.addEventListener('mousedown', e => {
+    if (!open) return;
+    resizing = true; rx = e.clientX; rw = timelineCol.offsetWidth;
+    handle.classList.add('dragging');
+    timelineCol.style.transition = 'none';
+    document.documentElement.style.cssText += ';cursor:col-resize!important;user-select:none!important';
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', e => {
+    if (!resizing) return;
+    const w = Math.max(280, Math.min(window.innerWidth - 500, rw + (rx - e.clientX)));
+    timelineCol.style.width = w + 'px';
+  });
+  window.addEventListener('mouseup', () => {
+    if (!resizing) return;
+    resizing = false;
+    handle.classList.remove('dragging');
+    timelineCol.style.transition = '';
+    document.documentElement.style.cursor = '';
+    document.documentElement.style.userSelect = '';
+  });
+})();
+</script>
+</body>
+</html>

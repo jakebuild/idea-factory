@@ -88,5 +88,15 @@
     "folder": "26-ai-study-buddy-an-app-that-use",
     "startScreenId": "e74f1ccd401d445cb6f4dd5ca9cb0251",
     "status": "complete"
+  },
+  {
+    "num": 27,
+    "title": "Future Face AI",
+    "sub": "Upload a photo, see yourself decades from now \u2014 pay $1.99 to download",
+    "score": "7/10",
+    "deviceType": "WEB",
+    "folder": "27-future-face-ai-app-that-genera",
+    "startScreenId": "716fed8c15b945a99ee6dfc35928da9e",
+    "status": "complete"
   }
 ]

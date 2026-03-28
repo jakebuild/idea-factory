@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#9b9da1",
+              "on-primary-fixed": "#000000",
+              "primary-fixed-dim": "#9284f8",
+              "on-surface": "#2c2f33",
+              "surface-tint": "#594aba",
+              "error": "#b41340",
+              "background": "#f5f6fb",
+              "outline": "#75777b",
+              "on-surface-variant": "#595c60",
+              "primary-container": "#9f92ff",
+              "on-tertiary-fixed": "#003840",
+              "secondary": "#652fe7",
+              "inverse-primary": "#9284f8",
+              "surface-container-highest": "#dadde4",
+              "tertiary": "#006571",
+              "surface-variant": "#dadde4",
+              "on-error": "#ffefef",
+              "surface-container": "#e6e8ee",
+              "on-tertiary": "#d8f8ff",
+              "tertiary-fixed": "#00e3fd",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#005762",
+              "secondary-fixed": "#d8caff",
+              "secondary-dim": "#5819db",
+              "error-container": "#f74b6d",
+              "on-secondary-container": "#5000d2",
+              "tertiary-container": "#00e3fd",
+              "surface-dim": "#d1d4dc",
+              "on-background": "#2c2f33",
+              "primary": "#594aba",
+              "tertiary-dim": "#005863",
+              "on-secondary": "#f7f0ff",
+              "surface-container-high": "#e0e2e9",
+              "surface-container-low": "#eff1f6",
+              "secondary-container": "#d8caff",
+              "primary-fixed": "#9f92ff",
+              "on-primary-fixed-variant": "#280b8a",
+              "on-tertiary-container": "#004d57",
+              "on-secondary-fixed": "#3b00a0",
+              "surface-bright": "#f5f6fb",
+              "inverse-surface": "#0c0e12",
+              "surface": "#f5f6fb",
+              "on-primary-container": "#1f0078",
+              "error-dim": "#a70138",
+              "tertiary-fixed-dim": "#00d4ec",
+              "primary-dim": "#4d3dae",
+              "on-secondary-fixed-variant": "#591bdc",
+              "on-error-container": "#510017",
+              "secondary-fixed-dim": "#cabaff",
+              "outline-variant": "#abadb2",
+              "on-primary": "#f5f0ff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body { font-family: 'Inter', sans-serif; background-color: #f5f6fb; }
+      .font-plus-jakarta-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+      .bg-electric-pulse { background: linear-gradient(135deg, #594aba 0%, #652fe7 100%); }
+      .tonal-shift { background-color: rgba(245, 246, 251, 0.5); }
+    </style>
+</head>
+<body class="text-on-surface antialiased overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(44,47,51,0.04)] h-20">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-full">
+<div class="flex items-center gap-8">
+<span class="text-2xl font-black text-indigo-700 dark:text-indigo-400 tracking-tighter font-plus-jakarta-sans">Future Face AI</span>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors font-medium" href="#">Gallery</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors font-medium" href="#">Technology</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors font-medium" href="#">Safety</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<a class="hidden md:block text-slate-500 dark:text-slate-400 hover:text-indigo-600 transition-colors font-semibold" href="#">Sign In</a>
+<button class="bg-electric-pulse text-on-primary px-6 py-2.5 rounded-2xl font-bold tracking-tight scale-98 active:opacity-80 transition-transform shadow-lg shadow-primary/20">
+                    Try AI Magic
+                </button>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:bg-slate-50 p-2 rounded-full transition-all">account_circle</span>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Content: Instructions & Reassurance -->
+<div class="lg:col-span-5 space-y-8 pt-8">
+<div class="space-y-4">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase">Start Journey</span>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold text-on-surface tracking-tighter leading-[1.1]">
+                        Meet Your <span class="text-transparent bg-clip-text bg-electric-pulse">Future Self.</span>
+</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-md">
+                        Our advanced neural networks analyze 1,200 unique facial markers to project your appearance through time.
+                    </p>
+</div>
+<!-- Reassurance Section -->
+<div class="grid grid-cols-1 gap-4">
+<div class="flex items-start gap-4 p-5 rounded-2xl bg-surface-container-low transition-all">
+<div class="mt-1 bg-primary/10 p-2 rounded-xl">
+<span class="material-symbols-outlined text-primary text-xl">encrypted</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface">Privacy First</h3>
+<p class="text-sm text-on-surface-variant">No account needed. Your photo is never stored after processing and is instantly purged from our buffers.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-5 rounded-2xl bg-surface-container-low transition-all">
+<div class="mt-1 bg-secondary/10 p-2 rounded-xl">
+<span class="material-symbols-outlined text-secondary text-xl">high_quality</span>
+</div>
+<div>
+<h3 class="font-bold text-on-surface">Pro Resolution</h3>
+<p class="text-sm text-on-surface-variant">We support high-fidelity JPG, PNG, and WebP up to 10MB for crystal clear AI generation.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Content: Upload Zone -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-2 rounded-[2.5rem] shadow-2xl shadow-on-surface/5 relative overflow-hidden group">
+<!-- Glassmorphism Background Accent -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary/10 blur-[80px] rounded-full"></div>
+<div class="relative z-10 p-8 md:p-12 border-2 border-dashed border-outline-variant/30 rounded-[2rem] bg-surface-container-lowest flex flex-col items-center text-center transition-all hover:border-primary/40 group-hover:bg-slate-50/50">
+<!-- Visual Guidance Images (Mini Bento) -->
+<div class="grid grid-cols-3 gap-3 mb-10 max-w-sm">
+<div class="relative rounded-xl overflow-hidden aspect-square ring-4 ring-white shadow-md">
+<img class="w-full h-full object-cover" data-alt="close up front facing portrait of a person with neutral expression and clear studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxaFIzL9DGefZ5x8EKOgXqR2tW21j6quxFilKipwowsFt22-IG1QDRTiVkm1A4rWPxizY0WBCyFld1hcOSuSMY3waZs6nIyaFI1-4vE9iQf0EoJ2wzof5nBxwUY9Mid16oz6xpWGbFiTCjbX008k7C02EvugAIXTlCLLsJiofWzR3JL0o-q7LdbVmpU0lAX5sDssBoxiyh_wpu2VVCFPcL5EtBaq3oYVHf1A0FZPRR9VoE5IW2RWqoxzBGoY1l94j8f2CZbdTxYtE"/>
+<div class="absolute bottom-1 right-1 bg-green-500 rounded-full p-0.5">
+<span class="material-symbols-outlined text-white text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden aspect-square ring-4 ring-white shadow-md opacity-60">
+<img class="w-full h-full object-cover grayscale" data-alt="portrait of a man in deep shadow where half the face is not visible" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY10H4t75SF1xZbOIOtK-z7CrU_eM4zyqu9tP9k1ZGqqT4LT1Yq2YyrD4oPcbG4IiDb1RBxtCtzkb0gNP63eqNW_xlsUUlL67AfGWS3yzoTcUVcLSdI4p7XKbgMsfGJsZ9MWAmVUZ04wxKsgV5dmoZ65SNwng-rUM1_qtgENkwdqH1SnbJVrZDaS5B0i4gN_T4Z1hKuThtifxqhhYcKzRiUV-uAxWxM1YXE0bKxDeJ51UAjlGqxujgkrZh6t3nCnHDuon_Fnc7w7g"/>
+<div class="absolute bottom-1 right-1 bg-error rounded-full p-0.5">
+<span class="material-symbols-outlined text-white text-[10px]" style="font-variation-settings: 'FILL' 1;">close</span>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden aspect-square ring-4 ring-white shadow-md opacity-60">
+<img class="w-full h-full object-cover grayscale" data-alt="person wearing large dark sunglasses and a wide brimmed hat obscuring their face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYmsVQpUB2bCU47o43r0oPgkWhrClGqANSHbIar5l4mwq2nk2lBfMJUOAaQpdQTaqxY1Sxny04TBHEE7asccmQrT-JKeDJxzRYFgbGNSRhl_gcjTUdQQ93wDJrY5I0yJmjVHvx2SpvqYIa-rBHvw7pq-sBtU3d3tk0E9YXs0snFCg6YRLxKGKsGAOigxA9wZk459ulqa7cAGmLnxHyJYNfPGw_3beR1Q69vUaufAXU37eo9QU5IJbVWWqtvt4zCMg7Af5QUaKMxk4"/>
+<div class="absolute bottom-1 right-1 bg-error rounded-full p-0.5">
+<span class="material-symbols-outlined text-white text-[10px]" style="font-variation-settings: 'FILL' 1;">close</span>
+</div>
+</div>
+</div>
+<div class="w-20 h-20 bg-primary/5 rounded-full flex items-center justify-center mb-6 ring-8 ring-primary/5">
+<span class="material-symbols-outlined text-4xl text-primary animate-pulse" style="font-variation-settings: 'FILL' 1;">add_a_photo</span>
+</div>
+<h2 class="text-2xl font-headline font-bold mb-3">Drop your photo here</h2>
+<p class="text-on-surface-variant max-w-sm mb-8">
+                            Ensure your photo is <span class="text-on-surface font-semibold">clear, front-facing</span>, and has <span class="text-on-surface font-semibold">good lighting</span> for the best result.
+                        </p>
+<button class="bg-electric-pulse text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 transition-transform mb-6" onclick="window.location.href='5f74f97e0010424e9513b2effbe11013.html'">
+                            Choose File
+                        </button>
+<p class="text-xs text-on-surface-variant/70 uppercase tracking-widest font-semibold mb-10">
+                            JPG, PNG, or WebP • Max 10MB
+                        </p>
+<!-- Consent & Agreement -->
+<div class="w-full max-w-md pt-8 border-t border-outline-variant/10">
+<label class="flex items-center gap-3 cursor-pointer justify-center mb-4">
+<div class="relative flex items-center justify-center">
+<input class="peer appearance-none w-6 h-6 border-2 border-outline-variant rounded-lg checked:bg-primary checked:border-primary transition-all" type="checkbox"/>
+<span class="material-symbols-outlined absolute text-white text-sm opacity-0 peer-checked:opacity-100 pointer-events-none" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="text-sm font-medium text-on-surface text-left">I am 18+ and have rights to this photo</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Section: Process Bento -->
+<section class="mt-32 space-y-12">
+<div class="text-center max-w-2xl mx-auto">
+<h2 class="text-4xl font-headline font-extrabold tracking-tight mb-4">How it works</h2>
+<p class="text-on-surface-variant">The most sophisticated aging engine ever built, now available in your browser.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-8 rounded-2xl border border-white/50 transition-all hover:bg-white hover:shadow-xl hover:shadow-on-surface/5">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">face_retouching_natural</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Facial Analysis</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">We identify bone structure, skin elasticity, and genetic traits from your current photo.</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-white/50 transition-all hover:bg-white hover:shadow-xl hover:shadow-on-surface/5">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary">model_training</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Temporal Projection</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Our AI simulates decade-by-decade transitions using millions of reference points.</p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-2xl border border-white/50 transition-all hover:bg-white hover:shadow-xl hover:shadow-on-surface/5">
+<div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary">magic_button</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Magic Generation</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Receive high-resolution renderings of your future self in under 60 seconds.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/15 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto py-12 px-8">
+<div class="flex flex-col items-center md:items-start gap-4 mb-8 md:mb-0">
+<span class="text-lg font-bold text-indigo-700 font-plus-jakarta-sans">Future Face AI</span>
+<p class="font-inter text-sm text-slate-500 dark:text-slate-400">© 2024 Future Face AI. Encrypted &amp; Secure.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-inter text-sm text-slate-500 hover:text-indigo-500 transition-colors" href="#">Terms of Service</a>
+<a class="font-inter text-sm text-slate-500 hover:text-indigo-500 transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-sm text-slate-500 hover:text-indigo-500 transition-colors" href="#">Contact Support</a>
+</div>
+</div>
+</footer>
+</body></html>

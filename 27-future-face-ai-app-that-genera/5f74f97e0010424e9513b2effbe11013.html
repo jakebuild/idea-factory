@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Future Face AI - Select Age Target</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#280b8a",
+              "on-secondary-fixed-variant": "#591bdc",
+              "tertiary-container": "#00e3fd",
+              "secondary-dim": "#5819db",
+              "outline-variant": "#abadb2",
+              "surface": "#f5f6fb",
+              "secondary-fixed": "#d8caff",
+              "primary-container": "#9f92ff",
+              "inverse-on-surface": "#9b9da1",
+              "inverse-surface": "#0c0e12",
+              "surface-container-low": "#eff1f6",
+              "primary-fixed": "#9f92ff",
+              "primary-fixed-dim": "#9284f8",
+              "surface-container": "#e6e8ee",
+              "on-secondary-fixed": "#3b00a0",
+              "on-primary-fixed": "#000000",
+              "surface-container-high": "#e0e2e9",
+              "on-primary-container": "#1f0078",
+              "on-background": "#2c2f33",
+              "surface-bright": "#f5f6fb",
+              "error": "#b41340",
+              "primary": "#594aba",
+              "secondary": "#652fe7",
+              "primary-dim": "#4d3dae",
+              "on-tertiary-fixed": "#003840",
+              "on-secondary-container": "#5000d2",
+              "secondary-fixed-dim": "#cabaff",
+              "tertiary-fixed": "#00e3fd",
+              "on-primary": "#f5f0ff",
+              "tertiary-dim": "#005863",
+              "on-error": "#ffefef",
+              "on-error-container": "#510017",
+              "inverse-primary": "#9284f8",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#dadde4",
+              "on-tertiary-container": "#004d57",
+              "tertiary-fixed-dim": "#00d4ec",
+              "background": "#f5f6fb",
+              "error-container": "#f74b6d",
+              "surface-container-highest": "#dadde4",
+              "on-surface-variant": "#595c60",
+              "error-dim": "#a70138",
+              "surface-dim": "#d1d4dc",
+              "on-secondary": "#f7f0ff",
+              "tertiary": "#006571",
+              "surface-tint": "#594aba",
+              "outline": "#75777b",
+              "on-tertiary-fixed-variant": "#005762",
+              "on-tertiary": "#d8f8ff",
+              "secondary-container": "#d8caff",
+              "on-surface": "#2c2f33"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-electric-pulse {
+        background: linear-gradient(135deg, #594aba 0%, #652fe7 100%);
+      }
+      .text-editorial {
+        letter-spacing: -0.02em;
+      }
+      .glass-nav {
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 glass-nav shadow-xl shadow-indigo-500/5">
+<nav class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto">
+<div class="text-xl font-extrabold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent font-headline">
+                Future Face AI
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm text-slate-500 hover:text-indigo-500 transition-all duration-300" href="#">Gallery</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm text-slate-500 hover:text-indigo-500 transition-all duration-300" href="#">Technology</a>
+<a class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-sm text-slate-500 hover:text-indigo-500 transition-all duration-300" href="#">Safety</a>
+</div>
+<button class="bg-electric-pulse text-on-primary px-6 py-2.5 rounded-xl font-headline font-bold text-sm transition-transform active:scale-95 shadow-lg shadow-primary/20">
+                Get Started
+            </button>
+</nav>
+</header>
+<!-- Main Content: Age Target Selection -->
+<main class="flex-grow flex items-center justify-center px-6 py-12 lg:py-20 relative overflow-hidden">
+<!-- Decorative background elements (AI Glow) -->
+<div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/10 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="w-full max-w-xl flex flex-col items-center">
+<!-- Face Preview Card (Surface Container Lowest on Surface) -->
+<div class="relative w-64 h-80 md:w-72 md:h-96 rounded-3xl overflow-hidden shadow-2xl shadow-indigo-500/10 mb-12 bg-surface-container-lowest group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="front-facing portrait of a young man with clear skin and neutral expression, studio lighting, high resolution, soft indigo background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIHpXgChRaOyR8tm2x322tsIkFJH_eeVP4ewgRlMWUZ3tC6abSj2rik-LF2Jh-NJQ-Rb5m88bn1BHbQy_TMEdf2_oSlXK0Uc96CHQ7cpQ7Bvrex9JQlHa6NSx9l-HS92XbJp7qsI5l5vbEmzBbLZHn4fO3pTSWj8cPrmi8ZoT3esz2gxGke9gBKXZV2p-PFacntnG86PsRiw1UM17snW1_TuHBLPQuKe45WihxxzAHSE68HNgXcTS2CZ7GhfSe6hUUK_A-562WOlk"/>
+<!-- Face Detected Badge -->
+<div class="absolute top-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-2 border border-white/50">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-[10px] font-bold uppercase tracking-wider text-slate-700">Face Detected</span>
+</div>
+<!-- AI Scanning Overlay Effect -->
+<div class="absolute inset-0 pointer-events-none border-[1.5px] border-white/20 rounded-3xl m-3"></div>
+</div>
+<!-- Content Hierarchy -->
+<div class="text-center space-y-4 mb-10">
+<h1 class="text-4xl md:text-5xl font-headline font-extrabold text-on-surface text-editorial tracking-tight">
+                    Meet Your Future
+                </h1>
+<p class="text-on-surface-variant text-lg font-medium max-w-sm mx-auto">
+                    AI applies realistic aging — <span class="text-primary font-semibold">same face</span>, more years.
+                </p>
+</div>
+<!-- Age Selector Toggle Group -->
+<div class="w-full bg-surface-container-low p-1.5 rounded-2xl flex gap-1 mb-10">
+<button class="flex-1 py-3 px-4 rounded-xl text-sm font-bold font-headline transition-all duration-300 text-slate-500 hover:text-primary">
+                    +20 years
+                </button>
+<!-- Active State -->
+<button class="flex-1 py-3 px-4 rounded-xl text-sm font-bold font-headline transition-all duration-300 bg-surface-container-lowest text-primary shadow-sm border border-primary/5">
+                    +40 years
+                </button>
+<button class="flex-1 py-3 px-4 rounded-xl text-sm font-bold font-headline transition-all duration-300 text-slate-500 hover:text-primary">
+                    +60 years
+                </button>
+</div>
+<!-- Primary Actions -->
+<div class="w-full flex flex-col gap-4">
+<button class="w-full bg-electric-pulse text-on-primary py-5 rounded-2xl font-headline font-extrabold text-lg tracking-wide shadow-xl shadow-primary/25 hover:shadow-secondary/30 transition-all duration-300 active:scale-95" onclick="window.location.href='7ad3319bffef4ec990f4273cf1401262.html'">
+                    Generate
+                </button>
+<button class="w-full py-4 text-on-surface-variant font-headline font-bold text-sm flex items-center justify-center gap-2 hover:text-primary transition-colors" onclick="window.location.href='fa26d9dd09a544ff961e70486e600b88.html'">
+<span class="material-symbols-outlined text-lg" data-icon="refresh">refresh</span>
+                    Change photo
+                </button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 mt-20 bg-slate-50">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 max-w-7xl mx-auto gap-8">
+<div class="text-slate-500 font-['Inter'] text-xs uppercase tracking-widest font-semibold text-center md:text-left">
+                © 2024 Future Face AI. Shaping the ethical future of synthetic media.
+            </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-slate-500 hover:text-indigo-600 transition-colors font-['Inter'] text-xs uppercase tracking-widest font-semibold" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-indigo-600 transition-colors font-['Inter'] text-xs uppercase tracking-widest font-semibold" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-indigo-600 transition-colors font-['Inter'] text-xs uppercase tracking-widest font-semibold" href="#">AI Ethics</a>
+<a class="text-slate-500 hover:text-indigo-600 transition-colors font-['Inter'] text-xs uppercase tracking-widest font-semibold" href="#">Legal</a>
+</div>
+</div>
+</footer>
+</body></html>

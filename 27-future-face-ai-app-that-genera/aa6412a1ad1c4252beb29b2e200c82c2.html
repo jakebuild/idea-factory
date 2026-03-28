@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FutureFace AI - Your Future Revealed</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#9284f8",
+              "on-tertiary-fixed": "#003840",
+              "secondary-container": "#d8caff",
+              "on-background": "#2c2f33",
+              "tertiary-container": "#00e3fd",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-dim": "#005863",
+              "primary-container": "#9f92ff",
+              "inverse-on-surface": "#9b9da1",
+              "on-secondary-fixed-variant": "#591bdc",
+              "primary": "#594aba",
+              "surface": "#f5f6fb",
+              "secondary-dim": "#5819db",
+              "error": "#b41340",
+              "on-surface-variant": "#595c60",
+              "background": "#f5f6fb",
+              "tertiary-fixed-dim": "#00d4ec",
+              "surface-tint": "#594aba",
+              "on-tertiary": "#d8f8ff",
+              "surface-variant": "#dadde4",
+              "tertiary": "#006571",
+              "primary-fixed-dim": "#9284f8",
+              "on-error": "#ffefef",
+              "on-error-container": "#510017",
+              "on-secondary-container": "#5000d2",
+              "surface-container": "#e6e8ee",
+              "error-dim": "#a70138",
+              "outline": "#75777b",
+              "surface-bright": "#f5f6fb",
+              "surface-dim": "#d1d4dc",
+              "on-secondary-fixed": "#3b00a0",
+              "on-primary": "#f5f0ff",
+              "outline-variant": "#abadb2",
+              "on-primary-fixed": "#000000",
+              "tertiary-fixed": "#00e3fd",
+              "error-container": "#f74b6d",
+              "surface-container-high": "#e0e2e9",
+              "on-tertiary-fixed-variant": "#005762",
+              "surface-container-highest": "#dadde4",
+              "on-primary-fixed-variant": "#280b8a",
+              "surface-container-low": "#eff1f6",
+              "secondary-fixed-dim": "#cabaff",
+              "secondary-fixed": "#d8caff",
+              "on-secondary": "#f7f0ff",
+              "secondary": "#652fe7",
+              "on-surface": "#2c2f33",
+              "primary-dim": "#4d3dae",
+              "on-primary-container": "#1f0078",
+              "on-tertiary-container": "#004d57",
+              "inverse-surface": "#0c0e12",
+              "primary-fixed": "#9f92ff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .ethereal-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .electric-pulse {
+            background: linear-gradient(135deg, #594aba 0%, #652fe7 100%);
+        }
+        .ghost-border {
+            border: 1px solid rgba(171, 173, 178, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-2xl shadow-[0_20px_40px_rgba(0,0,0,0.04)] h-20">
+<div class="flex justify-between items-center px-8 h-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-indigo-900 tracking-tighter font-headline">
+                FutureFace AI
+            </div>
+<nav class="hidden md:flex items-center gap-8 font-headline tracking-tight font-semibold">
+<a class="text-slate-500 hover:text-indigo-500 transition-colors duration-300" href="#">Generate</a>
+<a class="text-indigo-600 border-b-2 border-indigo-600 py-1" href="#">Gallery</a>
+<a class="text-slate-500 hover:text-indigo-500 transition-colors duration-300" href="#">History</a>
+<a class="text-slate-500 hover:text-indigo-500 transition-colors duration-300" href="#">Pricing</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="p-2 text-on-surface-variant hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+<button class="hidden lg:flex electric-pulse text-on-primary px-6 py-2.5 rounded-xl font-semibold shadow-lg hover:opacity-90 transition-all active:scale-95">
+                    Create New
+                </button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-20 px-6 max-w-screen-xl mx-auto">
+<!-- Result Header -->
+<section class="mb-12 text-center">
+<h1 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tight text-on-surface mb-4">
+                Your future, <span class="text-transparent bg-clip-text electric-pulse">visualized.</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl mx-auto font-body">
+                Our neural engine has projected your appearance 40 years into the future. Precise, detailed, and undeniably you.
+            </p>
+</section>
+<!-- Comparison Module -->
+<div class="relative w-full aspect-[4/3] md:aspect-[16/9] rounded-[2rem] overflow-hidden shadow-2xl bg-surface-container-high group">
+<!-- Background Base (The Future Side) -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" data-alt="Close up high-detail portrait of a dignified woman in her late 60s with subtle wrinkles and expressive silver hair, soft cinematic lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOf6lHha2QWIkC-udb8aI1cJLFe3l2hY-TnKbjpg6iHhb7DNpkqzGNmCKeYFKJKHq4Ejc3IZsJSjc90sKHWMow43hMYr-VzGZC7hvHuXoZi7Yyu9NC5NOoAecx7NtSO-0h1U5eD-WojXG0VVlu1ikdqNpagoOVgMHnJxelFFhh69w2N69LQgtIEEXlsgeQVyceWcxjfpKQ0cOvvqf_XbQw0tDPVImeCjKMJ1HHEm0RTjKdmb741mq-yYQGoPu-hToirHTJr3I4ntE')">
+<!-- Overlay Label Right -->
+<div class="absolute bottom-8 right-8 px-6 py-3 bg-white/20 ethereal-blur border border-white/30 rounded-full text-white font-headline font-bold text-sm tracking-widest uppercase">
+                    +40 Years
+                </div>
+</div>
+<!-- Foreground Clip (The Current Side) -->
+<div class="absolute inset-0 w-1/2 h-full overflow-hidden border-r-2 border-white/50 z-10" data-alt="Close up high-detail portrait of a young woman in her 20s with clear skin and vibrant dark hair, soft natural lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANv4_pfHbrfjJPwzfNkAMzzA8GPNN9k5FsvLJiO7nATqbkX45GFAu9d3uMGe17a-a-8Ak5XMDkg-AeRJCX8ssn5-FhDztQJLLOc9BhI0VWIyRVB9g4fU_eG8zjROHgzY_Tc-DWkDw7EwBKQ7mDoKJW3ZK7655HjIhnL6_QGS2nzW0CjpgxiWObk_w-T4-WDsxVtlB9OWHsRimLKU8hprLi57NNPgXzDBnx_FskqC1cAIZ5W2NnBNGINTXAMwITa1OkOaHOUln97RA')">
+<!-- Overlay Label Left -->
+<div class="absolute bottom-8 left-8 px-6 py-3 bg-black/20 ethereal-blur border border-white/10 rounded-full text-white font-headline font-bold text-sm tracking-widest uppercase">
+                    Current
+                </div>
+</div>
+<!-- Draggable Divider Control -->
+<div class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-1 bg-white shadow-[0_0_15px_rgba(0,0,0,0.2)] z-20 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full electric-pulse shadow-xl flex items-center justify-center text-white cursor-ew-resize border-4 border-white/20">
+<span class="material-symbols-outlined text-2xl" data-icon="unfold_more">unfold_more</span>
+</div>
+</div>
+<!-- High-Res Detail Badge -->
+<div class="absolute top-8 left-8 flex items-center gap-2 px-4 py-2 bg-surface-container-lowest/80 ethereal-blur rounded-xl text-primary font-semibold text-xs uppercase tracking-tighter">
+<span class="material-symbols-outlined text-sm" data-icon="hd" style="font-variation-settings: 'FILL' 1;">hd</span>
+                Lossless Neural Render
+            </div>
+</div>
+<!-- Action Controls -->
+<div class="mt-16 flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="w-full md:w-auto flex items-center justify-center gap-3 electric-pulse text-on-primary px-10 py-5 rounded-2xl font-headline font-bold text-lg shadow-[0_10px_30px_rgba(89,74,186,0.3)] hover:scale-105 transition-all" onclick="window.location.href='92275401c2824df0898c8d5088f2c311.html'">
+<span class="material-symbols-outlined" data-icon="ios_share">ios_share</span>
+                Download &amp; Share
+            </button>
+<button class="w-full md:w-auto flex items-center justify-center gap-3 bg-surface-container-lowest border-2 border-transparent hover:border-primary/20 text-on-surface px-10 py-5 rounded-2xl font-headline font-bold text-lg shadow-sm hover:shadow-md transition-all" onclick="window.location.href='5f74f97e0010424e9513b2effbe11013.html'">
+<span class="material-symbols-outlined" data-icon="refresh">refresh</span>
+                Try another age
+            </button>
+</div>
+<div class="mt-8 text-center" onclick="window.location.href='fa26d9dd09a544ff961e70486e600b88.html'">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors flex items-center justify-center gap-1 group underline decoration-primary/20 underline-offset-8" href="fa26d9dd09a544ff961e70486e600b88.html" onclick="window.location.href='fa26d9dd09a544ff961e70486e600b88.html'">
+<span class="material-symbols-outlined text-sm" data-icon="photo_camera">photo_camera</span>
+                Try another photo
+            </a>
+</div>
+<!-- Bento Stats / Contextual Data -->
+<section class="mt-32 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-low p-8 rounded-[2rem] flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-headline font-bold text-xl mb-2">Neural Accuracy</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Generated using our proprietary Luminous Architect model v4.2 with 98.4% feature retention.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest ghost-border p-8 rounded-[2rem] shadow-sm flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-3xl mb-4" data-icon="biotech">biotech</span>
+<h3 class="font-headline font-bold text-xl mb-2">Aging Factor</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Simulated variables include dermal elasticity shift, pigment redistribution, and bone density structure.</p>
+</div>
+</div>
+<div class="bg-primary/5 p-8 rounded-[2rem] flex flex-col justify-between border border-primary/10">
+<div>
+<span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="lock">lock</span>
+<h3 class="font-headline font-bold text-xl mb-2">Privacy Lock</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">This render is temporary and strictly private. Your biometric data is purged after 24 hours.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-100 bg-white py-12 px-8">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-bold text-slate-900 font-headline">FutureFace AI</div>
+<div class="flex gap-8 text-sm font-body text-slate-400">
+<a class="hover:text-slate-600 hover:underline decoration-indigo-500 underline-offset-4 transition-all" href="#">Privacy</a>
+<a class="hover:text-slate-600 hover:underline decoration-indigo-500 underline-offset-4 transition-all" href="#">Terms</a>
+<a class="hover:text-slate-600 hover:underline decoration-indigo-500 underline-offset-4 transition-all" href="#">Discord</a>
+<a class="hover:text-slate-600 hover:underline decoration-indigo-500 underline-offset-4 transition-all" href="#">Contact</a>
+</div>
+<div class="text-slate-400 text-sm font-body">
+                © 2024 FutureFace AI. Crafted with Ethereal Depth.
+            </div>
+</div>
+</footer>
+</body></html>

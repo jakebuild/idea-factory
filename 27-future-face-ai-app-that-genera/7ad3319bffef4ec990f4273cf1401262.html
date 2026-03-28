@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Future Face AI - Processing</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#00e3fd",
+              "surface-variant": "#dadde4",
+              "on-error": "#ffefef",
+              "on-secondary-fixed-variant": "#591bdc",
+              "on-error-container": "#510017",
+              "error-dim": "#a70138",
+              "on-secondary-fixed": "#3b00a0",
+              "surface-container-low": "#eff1f6",
+              "tertiary-fixed-dim": "#00d4ec",
+              "surface-tint": "#594aba",
+              "on-tertiary-fixed": "#003840",
+              "inverse-on-surface": "#9b9da1",
+              "secondary-container": "#d8caff",
+              "on-tertiary-fixed-variant": "#005762",
+              "primary-container": "#9f92ff",
+              "primary": "#594aba",
+              "surface-container-highest": "#dadde4",
+              "secondary-dim": "#5819db",
+              "outline": "#75777b",
+              "on-surface": "#2c2f33",
+              "outline-variant": "#abadb2",
+              "inverse-primary": "#9284f8",
+              "inverse-surface": "#0c0e12",
+              "surface-container": "#e6e8ee",
+              "surface-container-high": "#e0e2e9",
+              "surface": "#f5f6fb",
+              "tertiary-container": "#00e3fd",
+              "tertiary": "#006571",
+              "on-tertiary": "#d8f8ff",
+              "on-background": "#2c2f33",
+              "primary-dim": "#4d3dae",
+              "surface-dim": "#d1d4dc",
+              "secondary": "#652fe7",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#f7f0ff",
+              "secondary-fixed": "#d8caff",
+              "primary-fixed-dim": "#9284f8",
+              "on-secondary-container": "#5000d2",
+              "secondary-fixed-dim": "#cabaff",
+              "on-tertiary-container": "#004d57",
+              "on-primary": "#f5f0ff",
+              "error-container": "#f74b6d",
+              "on-primary-container": "#1f0078",
+              "primary-fixed": "#9f92ff",
+              "error": "#b41340",
+              "surface-bright": "#f5f6fb",
+              "tertiary-dim": "#005863",
+              "on-surface-variant": "#595c60",
+              "background": "#f5f6fb",
+              "on-primary-fixed-variant": "#280b8a",
+              "on-primary-fixed": "#000000"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .electric-pulse {
+        background: linear-gradient(135deg, #594aba 0%, #652fe7 100%);
+      }
+      .orb-glow {
+        box-shadow: 0 0 60px 10px rgba(89, 74, 186, 0.3);
+      }
+      .text-glow {
+        text-shadow: 0 0 20px rgba(89, 74, 186, 0.2);
+      }
+    </style>
+<script>setTimeout(function(){ window.location.href='aa6412a1ad1c4252beb29b2e200c82c2.html'; }, 4000);</script></head>
+<body class="bg-surface font-body text-on-surface antialiased min-h-screen flex flex-col overflow-x-hidden">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm shadow-indigo-500/5">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tight text-indigo-700 font-headline">Ageless AI</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-500 hover:text-indigo-500 transition-colors font-headline font-medium" href="#">Gallery</a>
+<a class="text-slate-500 hover:text-indigo-500 transition-colors font-headline font-medium" href="#">How it Works</a>
+<a class="text-slate-500 hover:text-indigo-500 transition-colors font-headline font-medium" href="#">Pricing</a>
+<button class="bg-surface-container-highest px-5 py-2 rounded-full text-indigo-600 font-headline font-semibold hover:bg-surface-dim transition-colors">Sign In</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32 pb-20 px-6 flex flex-col items-center justify-center relative">
+<!-- Ambient Background Glows -->
+<div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<!-- Central Loading Block -->
+<div class="w-full max-w-2xl text-center space-y-12">
+<!-- Sophisticated Loading Animation (The Orb) -->
+<div class="relative flex justify-center items-center">
+<div class="w-48 h-48 rounded-full border-2 border-primary/20 flex items-center justify-center">
+<div class="w-40 h-40 rounded-full border-4 border-dashed border-secondary/30 flex items-center justify-center">
+<!-- Pulsing Core -->
+<div class="electric-pulse w-32 h-32 rounded-full orb-glow relative overflow-hidden">
+<div class="absolute inset-0 bg-white/20 blur-xl translate-x-1/2 -translate-y-1/2"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-5xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Orbiting Particle Decoration -->
+<div class="absolute w-64 h-64 border border-primary/5 rounded-full"></div>
+</div>
+<!-- Status Text Container -->
+<div class="space-y-4">
+<h1 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tight text-on-surface text-glow">
+                    Aging your face...
+                </h1>
+<p class="text-on-surface-variant font-medium text-lg">
+                    Estimated wait: <span class="text-primary font-bold">~15 seconds</span>
+</p>
+</div>
+<!-- Cancel Link -->
+<div onclick="window.location.href='fa26d9dd09a544ff961e70486e600b88.html'">
+<button class="text-on-surface-variant hover:text-error transition-colors text-sm font-semibold tracking-wide uppercase" onclick="window.location.href='fa26d9dd09a544ff961e70486e600b88.html'">
+                    Cancel and start over
+                </button>
+</div>
+</div>
+<!-- Async Notification Section (Bento Grid Style) -->
+<div class="mt-24 w-full max-w-4xl">
+<div class="grid md:grid-cols-12 gap-6 items-stretch">
+<!-- Visual Decoration Card -->
+<div class="md:col-span-4 bg-surface-container-low rounded-2xl overflow-hidden relative min-h-[200px] flex items-end p-6">
+<img alt="Future Face Visualization" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-40 grayscale" data-alt="Modern close-up portrait of a woman with subtle digital overlay patterns signifying futuristic facial mapping technology in cool tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeTbJSeAoQZ22s_oTy5_2skuEFRETlRBYpwny2FsQAatQO1lD8HrfSoCFMMaP_mbFtgNQZmralDdrHxeRGakVzWY6WVM2pFFAag2VA0b-XI-i7VRoPVmRVeIG88_nZ1PkGlSvwucKvO0_gHxNv8f76BoLYLThupn-BA1fNknTLfPBc0UXDAkPy0zioJZtr9nXbhZz6FUZsXkAlmDUr7_8lkaeToW63xgsNu1Yp-o3aWdKACFlhbp6ajAzsDs5eI5lvLWUS3HnOjKc"/>
+<div class="relative z-10">
+<div class="text-primary font-headline font-bold text-2xl">Don't want to wait?</div>
+</div>
+</div>
+<!-- Email Form Card -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-2xl p-8 shadow-sm shadow-indigo-500/5 flex flex-col justify-center">
+<div class="space-y-6">
+<p class="text-on-surface-variant leading-relaxed font-medium">
+                            We'll email you a secure link to your high-resolution results as soon as they're ready. You can safely close this tab.
+                        </p>
+<form class="flex flex-col sm:flex-row gap-3">
+<div class="relative flex-grow">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">mail</span>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container rounded-2xl border-none focus:ring-2 focus:ring-primary/20 font-body text-on-surface transition-all placeholder:text-on-surface-variant/50" placeholder="your@email.com" type="email"/>
+</div>
+<button class="electric-pulse text-on-primary font-headline font-bold px-8 py-4 rounded-2xl hover:opacity-90 transition-opacity whitespace-nowrap" onclick="window.location.href='aa6412a1ad1c4252beb29b2e200c82c2.html'" type="button">
+                                Send when ready
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-transparent">
+<div class="max-w-7xl mx-auto py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-bold text-slate-900 font-headline">Ageless AI</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:underline text-sm font-body" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:underline text-sm font-body" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:underline text-sm font-body" href="#">Support</a>
+</div>
+<div class="text-slate-400 text-sm font-body">© 2024 Ethereal Intelligence. All rights reserved.</div>
+</div>
+</footer>
+</body></html>
