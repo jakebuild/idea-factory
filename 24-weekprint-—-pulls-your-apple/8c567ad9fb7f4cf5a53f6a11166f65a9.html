@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Export Art - Mathematical Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary-container": "#0b238b",
+                "on-primary": "#ffffff",
+                "surface": "#faf9f8",
+                "primary-fixed": "#dee0ff",
+                "inverse-on-surface": "#f1f0f0",
+                "surface-container-high": "#e9e8e7",
+                "outline": "#7d7483",
+                "on-tertiary-fixed-variant": "#802918",
+                "on-tertiary-container": "#ea7861",
+                "secondary-fixed": "#e4e2e1",
+                "on-primary-container": "#8092fa",
+                "surface-container-low": "#f4f3f2",
+                "secondary-container": "#e4e2e1",
+                "tertiary-fixed-dim": "#ffb4a5",
+                "error": "#ba1a1a",
+                "surface-tint": "#4355b9",
+                "surface-bright": "#faf9f8",
+                "on-surface-variant": "#4c4451",
+                "secondary-fixed-dim": "#c8c6c5",
+                "on-tertiary": "#ffffff",
+                "on-secondary-fixed-variant": "#474747",
+                "on-secondary-fixed": "#1b1c1c",
+                "on-primary-fixed": "#00105c",
+                "on-error-container": "#93000a",
+                "primary-fixed-dim": "#bac3ff",
+                "on-tertiary-fixed": "#3e0500",
+                "error-container": "#ffdad6",
+                "on-error": "#ffffff",
+                "inverse-primary": "#bac3ff",
+                "surface-container": "#eeeeed",
+                "on-surface": "#1a1c1c",
+                "surface-container-highest": "#e3e2e1",
+                "tertiary-fixed": "#ffdad3",
+                "tertiary": "#3f0500",
+                "tertiary-container": "#621305",
+                "surface-variant": "#e3e2e1",
+                "surface-dim": "#dadad9",
+                "background": "#faf9f8",
+                "surface-container-lowest": "#ffffff",
+                "primary": "#00105e",
+                "outline-variant": "#cec3d3",
+                "on-secondary": "#ffffff",
+                "secondary": "#5f5e5e",
+                "on-secondary-container": "#656464",
+                "on-primary-fixed-variant": "#293ca0",
+                "inverse-surface": "#2f3130",
+                "on-background": "#1a1c1c"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Work Sans"],
+                "label": ["Work Sans"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background-color: #faf9f8;
+        }
+        .art-plinth {
+            position: relative;
+            overflow: hidden;
+            background: #ffffff;
+            transition: all 0.3s ease;
+        }
+        .art-plinth::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border: 1px solid rgba(206, 195, 211, 0.15);
+            pointer-events: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-background selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-[#faf9f8] dark:bg-[#1a1c1c]">
+<div class="flex items-center justify-between px-8 py-6 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-6">
+<button onclick="window.location.href='3d76bb0c46454080b765e8f7d6c17558.html'" style="background:none;border:none;cursor:pointer;padding:8px;font-size:20px;">←</button>
+<h1 class="font-['Manrope'] font-bold text-2xl tracking-tight text-[#4B0082] dark:text-[#a580ff]">Export</h1>
+</div>
+<div class="hidden md:flex gap-8">
+<span class="text-[#4B0082] dark:text-[#a580ff] font-bold cursor-pointer">Preview</span>
+<span class="text-[#1a1c1c]/60 dark:text-[#faf9f8]/60 hover:text-[#4B0082] transition-colors cursor-pointer">History</span>
+</div>
+</div>
+<!-- Separation Logic -->
+<div class="bg-[#f4f3f2] dark:bg-[#252727] h-[1px] w-full"></div>
+</header>
+<main class="max-w-7xl mx-auto px-8 pt-12 pb-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Preview Art Plinth -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="label-md uppercase tracking-widest text-secondary font-semibold text-xs mb-2">Visual Preview</div>
+<div class="art-plinth aspect-square w-full flex items-center justify-center p-12 bg-surface-container-low shadow-[0_32px_64px_-12px_rgba(26,28,28,0.04)]">
+<!-- Mathematical Gallery Art Piece -->
+<div class="relative w-full h-full bg-white overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover opacity-90" data-alt="Abstract geometric art with clean lines and overlapping circles in deep indigo and soft stone colors with subtle grain texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJhv9_QQYPEKmbiNSGQC7me_jWeGpLZc-Ou_dOsqgGD5_gIoqFX205Oc_O_CdGT6k8FMEsMDVJQgm8ZLegtfw-X9fPaGO-XRGcrGmvrmUo2XHZ-XnpbRq2-PQs4PtyTxiBh0rwlW8JWgnpk0xbWX_xl3DaBu0Kk8cv34f1zmee_MrVhxrTbNnf7WC6rk88p9nFzHJ1BwCBgV75NdgwAXcSg-HulaBX8PBIJmpQRgV5E9aGWQIryME5spZLcWAbicN5YVbjxbNC934"/>
+<!-- Format Overlay Simulation (Square selected) -->
+<div class="absolute inset-0 border-[24px] border-white/40 backdrop-blur-[2px] pointer-events-none"></div>
+</div>
+</div>
+<div class="flex flex-col gap-4 mt-4">
+<label class="label-md uppercase tracking-widest text-secondary font-semibold text-xs">Share Caption</label>
+<div class="bg-surface-container-lowest p-6 rounded-md shadow-sm">
+<p class="font-body text-on-surface text-lg leading-relaxed">Week of Mar 24 — #weekprint</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Controls -->
+<div class="lg:col-span-5 flex flex-col gap-10">
+<!-- Format Section -->
+<section class="flex flex-col gap-6">
+<h2 class="font-headline font-bold text-xl text-on-surface tracking-tight">Format Options</h2>
+<div class="grid grid-cols-1 gap-4">
+<!-- Option 1: Instagram -->
+<button class="group flex items-center gap-6 p-6 bg-surface-container-low hover:bg-surface-container transition-all duration-300 rounded-lg text-left">
+<div class="w-12 h-16 border-2 border-outline-variant rounded-sm flex items-center justify-center group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-outline group-hover:text-primary">smartphone</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-on-surface">Instagram Stories</span>
+<span class="text-secondary text-sm">9:16 vertical optimized</span>
+</div>
+</button>
+<!-- Option 2: Square (Selected) -->
+<button class="group flex items-center gap-6 p-6 bg-surface-container-lowest border-2 border-primary-container ring-4 ring-primary-container/5 transition-all duration-300 rounded-lg text-left">
+<div class="w-12 h-12 border-2 border-primary-container rounded-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">square</span>
+</div>
+<div class="flex-1 flex flex-col">
+<span class="font-headline font-bold text-primary">Square</span>
+<span class="text-secondary text-sm">1:1 standard gallery crop</span>
+</div>
+<span class="material-symbols-outlined text-primary-container">check_circle</span>
+</button>
+<!-- Option 3: Wallpaper -->
+<button class="group flex items-center gap-6 p-6 bg-surface-container-low hover:bg-surface-container transition-all duration-300 rounded-lg text-left">
+<div class="w-16 h-12 border-2 border-outline-variant rounded-sm flex items-center justify-center group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-outline group-hover:text-primary">desktop_windows</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline font-bold text-on-surface">Wallpaper</span>
+<span class="text-secondary text-sm">Full device resolution</span>
+</div>
+</button>
+</div>
+</section>
+<!-- Actions Section -->
+<section class="flex flex-col gap-4 mt-auto">
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary font-headline font-bold py-5 px-8 rounded-lg flex items-center justify-center gap-3 transition-colors shadow-lg shadow-primary/10 scale-100 active:scale-[0.98] transition-transform duration-200">
+<span class="material-symbols-outlined">download</span>
+                    Download Image
+                </button>
+<button class="w-full bg-surface-container-highest hover:bg-surface-container-high text-on-surface font-headline font-bold py-5 px-8 rounded-lg flex items-center justify-center gap-3 transition-colors scale-100 active:scale-[0.98] transition-transform duration-200">
+<span class="material-symbols-outlined">content_copy</span>
+                    Copy to Clipboard
+                </button>
+<p class="text-center text-outline text-xs mt-4 font-label tracking-wide">
+                    Files are exported as high-fidelity PNG with lossless compression.
+                </p>
+</section>
+</div>
+</main>
+<!-- Subtle Background Texture -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] z-[-1]" style="background-image: radial-gradient(#1a1c1c 1px, transparent 1px); background-size: 40px 40px;"></div>
+</body></html>

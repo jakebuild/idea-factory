@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Mathematical Gallery - Legend Overlay</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#ffb4a5",
+              "primary": "#00105e",
+              "surface-container": "#eeeeed",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#f1f0f0",
+              "on-surface": "#1a1c1c",
+              "primary-fixed-dim": "#bac3ff",
+              "on-tertiary": "#ffffff",
+              "surface": "#faf9f8",
+              "on-secondary-fixed": "#1b1c1c",
+              "background": "#faf9f8",
+              "secondary": "#5f5e5e",
+              "surface-variant": "#e3e2e1",
+              "surface-tint": "#4355b9",
+              "on-error": "#ffffff",
+              "secondary-fixed-dim": "#c8c6c5",
+              "surface-container-lowest": "#ffffff",
+              "outline-variant": "#cec3d3",
+              "outline": "#7d7483",
+              "surface-container-highest": "#e3e2e1",
+              "on-primary": "#ffffff",
+              "secondary-fixed": "#e4e2e1",
+              "on-tertiary-fixed": "#3e0500",
+              "on-primary-container": "#8092fa",
+              "error-container": "#ffdad6",
+              "tertiary-fixed": "#ffdad3",
+              "tertiary": "#3f0500",
+              "primary-fixed": "#dee0ff",
+              "on-primary-fixed-variant": "#293ca0",
+              "on-tertiary-container": "#ea7861",
+              "on-secondary-fixed-variant": "#474747",
+              "tertiary-container": "#621305",
+              "inverse-primary": "#bac3ff",
+              "surface-container-low": "#f4f3f2",
+              "surface-bright": "#faf9f8",
+              "on-tertiary-fixed-variant": "#802918",
+              "inverse-surface": "#2f3130",
+              "surface-container-high": "#e9e8e7",
+              "on-primary-fixed": "#00105c",
+              "on-error-container": "#93000a",
+              "error": "#ba1a1a",
+              "on-surface-variant": "#4c4451",
+              "secondary-container": "#e4e2e1",
+              "surface-dim": "#dadad9",
+              "on-background": "#1a1c1c",
+              "primary-container": "#0b238b",
+              "on-secondary-container": "#656464"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Work Sans"],
+              "label": ["Work Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .art-plinth-frame {
+            box-shadow: inset 0 0 0 1px rgba(206, 195, 211, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body antialiased overflow-hidden">
+<!-- Background Poster Content (Simulated Background) -->
+<main class="relative h-screen w-full flex flex-col items-center justify-center p-8">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl flex justify-between items-center px-8 h-20 w-full">
+<div class="flex items-center gap-4">
+<button onclick="window.location.href='5205e97f15a44075acdba2e029306cb0.html'" style="background:none;border:none;cursor:pointer;padding:8px;font-size:20px;">←</button>
+<h1 class="text-xl font-bold tracking-tighter text-indigo-950 font-headline">Legend</h1>
+</div>
+</header>
+<!-- Art Canvas Backdrop -->
+<div class="w-full max-w-2xl aspect-[3/4] bg-surface-container-lowest art-plinth-frame rounded-xl overflow-hidden relative group">
+<img alt="Geometric abstract art" class="w-full h-full object-cover opacity-50 grayscale" data-alt="Abstract geometric composition of interlocking deep indigo and muted terracotta shapes with architectural precision and high-end gallery aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyZzQWKfK9Hg6pegKx3rs6IPb5GYgFzjHo05u5ChunnEDZoGfT91C8k0CSgYBSHbIVUg5oCej4HQd0XLfHzfrStIsW0BphjU4Lzhy8IhoyYvuT8D0kZ73DgRIokpMwDfYI1N_ydPZFyoS5eDndxYqjmgOq1DJ84FyRoU2DvE_XPisfq10C4LTMuuxRQDlc6LB70dZoSmL8OfkVwstaTFEBv0--0L2zf4UN97oEHYBpMpEtt6tV4S-4Z6nc3hvq1iUfYcGmskW_ksc"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px]"></div>
+</div>
+</main>
+<!-- Modal Overlay Backdrop -->
+<div class="fixed inset-0 bg-on-background/40 backdrop-blur-sm z-[60]"></div>
+<!-- Bottom Sheet Modal (Legend Overlay) -->
+<div class="fixed bottom-0 left-0 right-0 z-[70] flex justify-center">
+<div class="w-full max-w-xl bg-surface-container-lowest rounded-t-[2.5rem] shadow-[0_-12px_64px_rgba(26,28,28,0.12)] p-8 pb-12 transition-transform transform translate-y-0">
+<!-- Dismiss Handle -->
+<div class="flex justify-center mb-10">
+<div class="w-12 h-1.5 bg-surface-container-highest rounded-full"></div>
+</div>
+<!-- Content Hierarchy -->
+<div class="space-y-12">
+<!-- 1. Top Stats Section -->
+<section>
+<div class="inline-block px-4 py-1 bg-surface-container-low text-on-surface-variant font-label text-[10px] uppercase tracking-[0.2em] font-bold mb-4 rounded-full">
+                        Summary
+                    </div>
+<div class="flex flex-col gap-2">
+<h2 class="text-4xl font-headline font-extrabold text-primary leading-tight tracking-tight">
+                            32 hours of events
+                        </h2>
+<p class="text-xl font-body text-secondary tracking-tight">
+                            136 free hours.
+                        </p>
+</div>
+</section>
+<!-- 2. Color Legend List -->
+<section class="space-y-6">
+<div class="h-px bg-surface-container-low w-full"></div>
+<div class="grid gap-6">
+<!-- Work Item -->
+<div class="flex items-center justify-between group">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center">
+<div class="w-4 h-4 bg-on-primary-container rounded-sm rotate-45"></div>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-on-surface">Work</h3>
+<p class="font-label text-sm text-secondary uppercase tracking-widest">Category</p>
+</div>
+</div>
+<span class="font-headline font-extrabold text-xl text-primary">24 hours</span>
+</div>
+<!-- Personal Item -->
+<div class="flex items-center justify-between group">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-tertiary-container rounded-lg flex items-center justify-center">
+<div class="w-4 h-4 bg-on-tertiary-container rounded-sm"></div>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-on-surface">Personal</h3>
+<p class="font-label text-sm text-secondary uppercase tracking-widest">Category</p>
+</div>
+</div>
+<span class="font-headline font-extrabold text-xl text-primary">8 hours</span>
+</div>
+<!-- Family Item -->
+<div class="flex items-center justify-between group">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center">
+<div class="w-4 h-4 bg-[#80a58e] rounded-full"></div>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-on-surface">Family</h3>
+<p class="font-label text-sm text-secondary uppercase tracking-widest">Category</p>
+</div>
+</div>
+<span class="font-headline font-extrabold text-xl text-primary">3 hours</span>
+</div>
+</div>
+</section>
+<!-- Footer Action -->
+<button onclick="window.location.href='5205e97f15a44075acdba2e029306cb0.html'" class="w-full py-5 bg-primary text-on-primary font-headline font-bold text-lg rounded-full hover:bg-primary-container transition-colors duration-300">
+                    Done
+                </button>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#3f0500",
+              "primary-fixed": "#dee0ff",
+              "surface-variant": "#e3e2e1",
+              "inverse-surface": "#2f3130",
+              "on-tertiary-container": "#ea7861",
+              "on-secondary-container": "#656464",
+              "on-error-container": "#93000a",
+              "primary-fixed-dim": "#bac3ff",
+              "on-error": "#ffffff",
+              "on-secondary": "#ffffff",
+              "on-surface-variant": "#4c4451",
+              "surface-container-low": "#f4f3f2",
+              "secondary-fixed-dim": "#c8c6c5",
+              "secondary-fixed": "#e4e2e1",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#ffb4a5",
+              "surface-tint": "#4355b9",
+              "on-primary-container": "#8092fa",
+              "background": "#faf9f8",
+              "secondary": "#5f5e5e",
+              "on-surface": "#1a1c1c",
+              "primary": "#00105e",
+              "on-secondary-fixed-variant": "#474747",
+              "tertiary-fixed": "#ffdad3",
+              "inverse-on-surface": "#f1f0f0",
+              "primary-container": "#0b238b",
+              "outline-variant": "#cec3d3",
+              "on-primary-fixed": "#00105c",
+              "on-primary": "#ffffff",
+              "surface-container-highest": "#e3e2e1",
+              "on-primary-fixed-variant": "#293ca0",
+              "surface-container-high": "#e9e8e7",
+              "on-tertiary-fixed-variant": "#802918",
+              "error-container": "#ffdad6",
+              "error": "#ba1a1a",
+              "surface": "#faf9f8",
+              "on-tertiary-fixed": "#3e0500",
+              "outline": "#7d7483",
+              "inverse-primary": "#bac3ff",
+              "surface-container": "#eeeeed",
+              "on-secondary-fixed": "#1b1c1c",
+              "surface-dim": "#dadad9",
+              "tertiary-container": "#621305",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#1a1c1c",
+              "secondary-container": "#e4e2e1",
+              "surface-bright": "#faf9f8"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Work Sans"],
+              "label": ["Work Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .canvas-bg {
+            background-image: radial-gradient(#cec3d3 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopAppBar -->
+<header class="bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-xl fixed top-0 w-full z-50">
+<div class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-indigo-900 dark:text-indigo-300" data-icon="grid_view">grid_view</span>
+<h1 class="font-['Manrope'] tracking-tight font-bold text-2xl text-indigo-950 dark:text-stone-50 tracking-tighter">WeekPrint</h1>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<span class="text-indigo-900 dark:text-indigo-200 font-bold font-label uppercase text-[10px] tracking-widest">Setup</span>
+</div>
+</div>
+</header>
+<main class="min-h-screen pt-32 pb-40 px-6 max-w-4xl mx-auto canvas-bg">
+<!-- Header Section -->
+<section class="mb-16 text-center md:text-left">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-4">Step 02 — Calibration</p>
+<h2 class="font-headline font-extrabold text-5xl md:text-7xl text-primary leading-[0.9] tracking-tighter mb-6">
+                Map your <span class="text-tertiary-container italic">spectrum</span>.
+            </h2>
+<p class="text-on-surface-variant max-w-xl text-lg leading-relaxed font-light">
+                Assign a signature color to each calendar. These hues will form the geometric DNA of your weekly art prints.
+            </p>
+</section>
+<!-- Calendar List (The Art Plinth Concept) -->
+<div class="space-y-4">
+<!-- Calendar Item: Work -->
+<div class="group flex items-center justify-between p-8 bg-surface-container-lowest rounded-xl transition-all hover:bg-surface-container duration-300">
+<div class="flex items-center gap-8">
+<button aria-label="Pick color for Work" class="w-14 h-14 rounded-full bg-primary ring-offset-4 ring-2 ring-transparent group-hover:ring-outline-variant transition-all cursor-pointer shadow-sm relative overflow-hidden">
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</button>
+<div>
+<h3 class="font-headline font-bold text-2xl tracking-tight text-on-surface">Work</h3>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant/60">Google Workspace</p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-sm" data-icon="palette">palette</span>
+<span class="font-label text-[10px] uppercase tracking-widest">#00105E</span>
+</div>
+</div>
+<!-- Calendar Item: Personal -->
+<div class="group flex items-center justify-between p-8 bg-surface-container rounded-xl transition-all hover:bg-surface-container-high duration-300">
+<div class="flex items-center gap-8">
+<button aria-label="Pick color for Personal" class="w-14 h-14 rounded-full bg-tertiary-container ring-offset-4 ring-2 ring-transparent group-hover:ring-outline-variant transition-all cursor-pointer shadow-sm"></button>
+<div>
+<h3 class="font-headline font-bold text-2xl tracking-tight text-on-surface">Personal</h3>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant/60">user@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-sm" data-icon="palette">palette</span>
+<span class="font-label text-[10px] uppercase tracking-widest">#621305</span>
+</div>
+</div>
+<!-- Calendar Item: Family -->
+<div class="group flex items-center justify-between p-8 bg-surface-container-lowest rounded-xl transition-all hover:bg-surface-container duration-300">
+<div class="flex items-center gap-8">
+<button aria-label="Pick color for Family" class="w-14 h-14 rounded-full bg-surface-tint ring-offset-4 ring-2 ring-transparent group-hover:ring-outline-variant transition-all cursor-pointer shadow-sm"></button>
+<div>
+<h3 class="font-headline font-bold text-2xl tracking-tight text-on-surface">Family</h3>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant/60">Shared Calendar</p>
+</div>
+</div>
+<div class="flex items-center gap-2 text-outline">
+<span class="material-symbols-outlined text-sm" data-icon="palette">palette</span>
+<span class="font-label text-[10px] uppercase tracking-widest">#4355B9</span>
+</div>
+</div>
+</div>
+<!-- Action Section -->
+<div class="mt-20 flex flex-col items-center gap-8">
+<button onclick="window.location.href='3d76bb0c46454080b765e8f7d6c17558.html'" class="w-full md:w-auto px-16 py-6 bg-primary text-on-primary font-headline font-bold text-xl rounded-xl transition-all hover:bg-primary-container active:scale-95 shadow-xl shadow-primary/10">
+                Done — Generate First Print
+            </button>
+<button onclick="window.location.href='3d76bb0c46454080b765e8f7d6c17558.html'" class="group flex items-center gap-3 transition-colors hover:text-primary">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant group-hover:text-primary transition-colors">Skip with default colors</span>
+<span class="material-symbols-outlined text-sm text-outline group-hover:text-primary transition-colors" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Art Preview Sidebar (Asymmetric Context) -->
+<aside class="hidden lg:block fixed right-12 top-1/2 -translate-y-1/2 w-64 space-y-8">
+<div class="bg-surface-container-lowest p-4 rounded-lg outline-variant/15 border border-outline-variant/20 shadow-sm rotate-2">
+<img class="w-full aspect-[3/4] object-cover rounded shadow-inner mb-4" data-alt="minimalist geometric abstract art featuring indigo and terracotta circles overlapping on a light stone background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPJnCgBD0kROlI6xLnFQ-jJe0CMfRiAJQnRGG4SiJSq9mdS7IABLF-qcMwY66w8tE7UTD3SwKbGge3tDRU1Bg2Ft-Ahqx7xZwzDXY84JvekqmO_lPp7OwvzdNmznM5fbmy5boSdP56Is1qUBQ9xtDbc4eayRAUvACzj_iElZfTLOWOWJ_Q_LtDU9GnORk4uORUMWJEgJo51cRSSZzoXyhNvxjZWCJ1T4yIe0ou0BCdXvwmNkPATPiQvdN-vtscgRPEXr5-zkr-Z0Y"/>
+<p class="font-label text-[8px] uppercase tracking-[0.3em] text-center text-outline">Live Composition Preview</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-full border border-outline-variant/10 flex items-center justify-center -translate-x-12 opacity-50">
+<span class="material-symbols-outlined text-4xl text-outline-variant" data-icon="auto_awesome">auto_awesome</span>
+</div>
+</aside>
+</main>
+<!-- Visual Layering Element -->
+<div class="fixed bottom-0 left-0 w-full h-32 bg-gradient-to-t from-background to-transparent pointer-events-none z-40"></div>
+</body></html>

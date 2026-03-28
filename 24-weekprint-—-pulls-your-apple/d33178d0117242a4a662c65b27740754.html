@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Work+Sans:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#ffb4a5",
+              "on-primary": "#ffffff",
+              "inverse-on-surface": "#f1f0f0",
+              "surface-container-low": "#f4f3f2",
+              "on-secondary-container": "#656464",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              "surface-bright": "#faf9f8",
+              "surface": "#faf9f8",
+              "on-surface": "#1a1c1c",
+              "on-tertiary-fixed-variant": "#802918",
+              "on-primary-fixed": "#00105c",
+              "error-container": "#ffdad6",
+              "primary": "#00105e",
+              "on-tertiary-fixed": "#3e0500",
+              "error": "#ba1a1a",
+              "on-surface-variant": "#4c4451",
+              "on-secondary-fixed-variant": "#474747",
+              "surface-variant": "#e3e2e1",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#2f3130",
+              "on-background": "#1a1c1c",
+              "on-secondary": "#ffffff",
+              "outline-variant": "#cec3d3",
+              "on-primary-container": "#8092fa",
+              "on-secondary-fixed": "#1b1c1c",
+              "secondary": "#5f5e5e",
+              "surface-dim": "#dadad9",
+              "surface-container-highest": "#e3e2e1",
+              "surface-container-high": "#e9e8e7",
+              "secondary-fixed-dim": "#c8c6c5",
+              "outline": "#7d7483",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#eeeeed",
+              "primary-container": "#0b238b",
+              "primary-fixed": "#dee0ff",
+              "on-tertiary-container": "#ea7861",
+              "secondary-container": "#e4e2e1",
+              "inverse-primary": "#bac3ff",
+              "tertiary-fixed": "#ffdad3",
+              "background": "#faf9f8",
+              "surface-tint": "#4355b9",
+              "secondary-fixed": "#e4e2e1",
+              "on-primary-fixed-variant": "#293ca0",
+              "primary-fixed-dim": "#bac3ff",
+              "tertiary": "#3f0500",
+              "tertiary-container": "#621305"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Work Sans"],
+              "label": ["Work Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #faf9f8;
+            color: #1a1c1c;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-nav {
+            backdrop-filter: blur(40px);
+        }
+        .art-plinth {
+            position: relative;
+            overflow: hidden;
+        }
+        .art-plinth::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(circle at 2px 2px, rgba(125, 116, 131, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+            pointer-events: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-container selection:text-white">
+<!-- TopAppBar Shell -->
+<header class="w-full top-0 sticky z-40 bg-[#faf9f8] dark:bg-[#1a1c1c] transition-colors duration-300">
+<div class="flex items-center justify-between px-8 py-6 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<h1 class="font-['Manrope'] font-bold text-2xl tracking-tight text-[#4B0082] dark:text-[#a580ff]">Settings</h1>
+</div>
+<div class="hidden md:flex items-center space-x-8 font-label text-sm font-bold tracking-widest">
+<a class="text-[#1a1c1c]/60 dark:text-[#faf9f8]/60 hover:text-[#4B0082] transition-colors" href="#">HOME</a>
+<a class="text-[#1a1c1c]/60 dark:text-[#faf9f8]/60 hover:text-[#4B0082] transition-colors" href="#">ARCHIVE</a>
+<a class="text-[#4B0082] dark:text-[#a580ff]" href="#">SETTINGS</a>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-8 pt-12 pb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Sidebar / Info Section (Gallery Aesthetic) -->
+<div class="lg:col-span-4 space-y-6">
+<div class="p-1 border-l-2 border-primary/20 pl-6">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-secondary mb-2">Workspace</p>
+<h2 class="font-headline text-4xl font-extrabold text-on-background leading-tight">Your Digital Gallery</h2>
+<p class="mt-4 text-on-surface-variant leading-relaxed font-light">
+                        Configure how your time is translated into geometry. Connect your calendars to begin the synthesis.
+                    </p>
+</div>
+<div class="art-plinth h-48 rounded-xl bg-surface-container-low flex items-center justify-center p-8">
+<div class="w-full h-full border border-outline-variant/20 rounded-lg flex flex-col items-center justify-center space-y-2">
+<span class="material-symbols-outlined text-primary/30 text-4xl" data-icon="architecture">architecture</span>
+<span class="text-[10px] font-label tracking-widest text-secondary uppercase">Visual Identity Engine</span>
+</div>
+</div>
+</div>
+<!-- Content Section -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Connected Calendars Section -->
+<section>
+<div class="mb-8 flex items-baseline justify-between">
+<h3 class="font-headline text-2xl font-bold text-on-background">Connected Calendars</h3>
+<span class="font-label text-[10px] tracking-widest uppercase text-primary font-bold">3 ACTIVE</span>
+</div>
+<div class="space-y-4">
+<!-- Calendar Item: Work -->
+<div class="group flex items-center justify-between p-6 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-colors duration-300">
+<div class="flex items-center gap-6">
+<button aria-label="Change Work color" class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-lg shadow-primary/10 active:scale-90 transition-transform">
+<div class="w-6 h-6 border-2 border-white/20 rounded-full"></div>
+</button>
+<div>
+<p class="font-headline font-bold text-lg text-on-background">Work</p>
+<p class="font-label text-xs text-on-surface-variant/70">google_calendar / primary_dna</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Calendar Item: Personal -->
+<div class="group flex items-center justify-between p-6 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-colors duration-300">
+<div class="flex items-center gap-6">
+<button aria-label="Change Personal color" class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center shadow-lg shadow-tertiary-container/10 active:scale-90 transition-transform">
+<div class="w-6 h-6 border-2 border-white/10 rounded-full"></div>
+</button>
+<div>
+<p class="font-headline font-bold text-lg text-on-background">Personal</p>
+<p class="font-label text-xs text-on-surface-variant/70">google_calendar / tertiary_dna</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+<!-- Calendar Item: Family -->
+<div class="group flex items-center justify-between p-6 bg-surface-container-lowest rounded-xl hover:bg-surface-container-low transition-colors duration-300">
+<div class="flex items-center gap-6">
+<button aria-label="Change Family color" class="w-12 h-12 rounded-full bg-outline flex items-center justify-center shadow-lg shadow-outline/10 active:scale-90 transition-transform">
+<div class="w-6 h-6 border-2 border-white/20 rounded-full"></div>
+</button>
+<div>
+<p class="font-headline font-bold text-lg text-on-background">Family</p>
+<p class="font-label text-xs text-on-surface-variant/70">google_calendar / neutral_dna</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-outline-variant/10">
+<button class="flex items-center gap-3 px-6 py-4 rounded-xl text-error font-headline font-bold text-sm hover:bg-error-container/20 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="link_off">link_off</span>
+                            Disconnect Google Calendar
+                        </button>
+</div>
+</section>
+<!-- Notifications Section Placeholder -->
+<section class="opacity-60">
+<div class="mb-8">
+<h3 class="font-headline text-2xl font-bold text-on-background">Notifications</h3>
+</div>
+<div class="bg-surface-container rounded-2xl p-12 border-2 border-dashed border-outline-variant/30 flex flex-col items-center justify-center text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="notifications_paused">notifications_paused</span>
+</div>
+<p class="font-headline font-bold text-on-background">No active alerts</p>
+<p class="text-sm text-on-surface-variant max-w-xs mt-2 font-light">Notification preferences are being synchronized with your device settings.</p>
+</div>
+</section>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-safe pt-2 bg-[#faf9f8]/80 backdrop-blur-2xl shadow-[0_-4px_20px_0_rgba(0,0,0,0.05)] border-t border-slate-100">
+<!-- Home (Inactive) -->
+<div onclick="window.location.href='3d76bb0c46454080b765e8f7d6c17558.html'" class="flex flex-col items-center justify-center text-[#5a5c5c] px-6 py-2 hover:text-[#00105e] transition-all duration-300 cursor-pointer active:scale-90">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-widest font-semibold">Home</span>
+</div>
+<!-- Archive (Inactive) -->
+<div onclick="window.location.href='f266e90aa502482da0f9495d4cb71dcd.html'" class="flex flex-col items-center justify-center text-[#5a5c5c] px-6 py-2 hover:text-[#00105e] transition-all duration-300 cursor-pointer active:scale-90">
+<span class="material-symbols-outlined mb-1">archive</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-widest font-semibold">Archive</span>
+</div>
+<!-- Settings (Active) -->
+<div onclick="window.location.href='d33178d0117242a4a662c65b27740754.html'" class="flex flex-col items-center justify-center text-[#00105e] bg-[#eeeeed] rounded-xl px-6 py-2 transition-all duration-300 cursor-pointer active:scale-90">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-['Work_Sans'] text-[10px] uppercase tracking-widest font-semibold">Settings</span>
+</div>
+</nav>
+</body></html>
