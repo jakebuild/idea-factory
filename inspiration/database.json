@@ -6,25 +6,28 @@
     "screenshots": [],
     "rating": 4.75987,
     "reviews": 497421,
-    "appStoreUrl": "https://apps.apple.com/us/app/locket-widget/id1600525061?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/locket-widget/id1600525061?uo=4",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "Pocket",
     "slug": "pocket",
     "category": "Utilities",
     "screenshots": [],
-    "rating": 5,
-    "reviews": 1,
-    "appStoreUrl": "https://apps.apple.com/us/app/pocket-reader-read-later/id6474945380?uo=4"
+    "rating": 4.63636,
+    "reviews": 11,
+    "appStoreUrl": "https://apps.apple.com/us/app/folio-save-now-read-later/id6746292066?uo=4",
+    "tagline": "Utilities app with 5 App Store screenshots"
   },
   {
     "name": "Bump",
     "slug": "bump",
     "category": "Social Networking",
     "screenshots": [],
-    "rating": 4.7868,
-    "reviews": 4878,
-    "appStoreUrl": "https://apps.apple.com/us/app/bump-hang-with-friends-irl/id6471519217?uo=4"
+    "rating": 4.4155,
+    "reviews": 1051500,
+    "appStoreUrl": "https://apps.apple.com/us/app/hinge-dating-app-match-date/id595287172?uo=4",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "corner",
@@ -33,7 +36,8 @@
     "screenshots": [],
     "rating": 4.52778,
     "reviews": 468,
-    "appStoreUrl": "https://apps.apple.com/us/app/corner-curate-share-places/id1668282277?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/corner-curate-share-places/id1668282277?uo=4",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "Endel",
@@ -42,16 +46,18 @@
     "screenshots": [],
     "rating": 4.64611,
     "reviews": 31756,
-    "appStoreUrl": "https://apps.apple.com/us/app/endel-focus-sleep-sounds/id1346247457?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/endel-focus-sleep-sounds/id1346247457?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "LeanBites",
     "slug": "leanbites",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": 4.61111,
-    "reviews": 954,
-    "appStoreUrl": "https://apps.apple.com/us/app/leanbites-healthy-dining/id6754943623?uo=4"
+    "rating": 4.68719,
+    "reviews": 2452,
+    "appStoreUrl": "https://apps.apple.com/us/app/lean-ai-macro-tracker/id6741105248?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Filtru",
@@ -60,7 +66,8 @@
     "screenshots": [],
     "rating": 4.78099,
     "reviews": 3694,
-    "appStoreUrl": "https://apps.apple.com/us/app/best-brew-guide-filtru-coffee/id1150921819?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/best-brew-guide-filtru-coffee/id1150921819?uo=4",
+    "tagline": "Food & Drink app with 5 App Store screenshots"
   },
   {
     "name": "GO Club",
@@ -69,7 +76,8 @@
     "screenshots": [],
     "rating": 4.8724,
     "reviews": 10713,
-    "appStoreUrl": "https://apps.apple.com/us/app/go-taxi-app-for-japan/id1254341709?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/go-taxi-app-for-japan/id1254341709?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Unwind",
@@ -78,7 +86,8 @@
     "screenshots": [],
     "rating": 4.77586,
     "reviews": 580,
-    "appStoreUrl": "https://apps.apple.com/us/app/unwind-breathing-exercises/id1470613384?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/unwind-breathing-exercises/id1470613384?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Descent",
@@ -87,7 +96,8 @@
     "screenshots": [],
     "rating": 4.25,
     "reviews": 4,
-    "appStoreUrl": "https://apps.apple.com/us/app/descent-cheap-flight-tracker/id6758267403?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/descent-cheap-flight-tracker/id6758267403?uo=4",
+    "tagline": "Travel app with 5 App Store screenshots"
   },
   {
     "name": "Stuff | ToDos and Lists",
@@ -96,7 +106,8 @@
     "screenshots": [],
     "rating": 4.50877,
     "reviews": 57,
-    "appStoreUrl": "https://apps.apple.com/us/app/stuff-todos-and-lists/id6502721156?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/stuff-todos-and-lists/id6502721156?uo=4",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "Amie",
@@ -105,7 +116,8 @@
     "screenshots": [],
     "rating": 3.37209,
     "reviews": 129,
-    "appStoreUrl": "https://apps.apple.com/us/app/amie-todos-calendar/id1548277133?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/amie-todos-calendar/id1548277133?uo=4",
+    "tagline": "Other app with 5 App Store screenshots"
   },
   {
     "name": "Dudel Draw",
@@ -114,7 +126,8 @@
     "screenshots": [],
     "rating": 4.76864,
     "reviews": 523,
-    "appStoreUrl": "https://apps.apple.com/us/app/dudel-draw/id6450056192?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/dudel-draw/id6450056192?uo=4",
+    "tagline": "Graphics & Design app with 5 App Store screenshots"
   },
   {
     "name": "REKKI",
@@ -123,7 +136,8 @@
     "screenshots": [],
     "rating": 4.08333,
     "reviews": 36,
-    "appStoreUrl": "https://apps.apple.com/us/app/rekki-wholesale-ingredients/id1216805389?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/rekki-wholesale-ingredients/id1216805389?uo=4",
+    "tagline": "Food & Drink app with 5 App Store screenshots"
   },
   {
     "name": "CanGoGo",
@@ -132,7 +146,8 @@
     "screenshots": [],
     "rating": 4.78688,
     "reviews": 61,
-    "appStoreUrl": "https://apps.apple.com/us/app/cangogo-pedometer-walking/id6499481356?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/cangogo-pedometer-walking/id6499481356?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Universe Website Builder",
@@ -141,7 +156,8 @@
     "screenshots": [],
     "rating": 4.52985,
     "reviews": 9767,
-    "appStoreUrl": "https://apps.apple.com/us/app/universe-website-builder/id1211437633?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/universe-website-builder/id1211437633?uo=4",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "Canopi",
@@ -150,16 +166,18 @@
     "screenshots": [],
     "rating": 4.76923,
     "reviews": 13,
-    "appStoreUrl": "https://apps.apple.com/us/app/canopi-memorable-moments/id6483864028?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/canopi-memorable-moments/id6483864028?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "How We Feel",
     "slug": "howwefeel",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": 4.32007,
-    "reviews": 44997,
-    "appStoreUrl": "https://apps.apple.com/us/app/the-baby-in-yellow/id1570525877?uo=4"
+    "rating": 4.86679,
+    "reviews": 27349,
+    "appStoreUrl": "https://apps.apple.com/us/app/how-we-feel/id1562706384?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Franki | Eat. Drink. Earn.",
@@ -168,7 +186,8 @@
     "screenshots": [],
     "rating": 4.57955,
     "reviews": 1144,
-    "appStoreUrl": "https://apps.apple.com/us/app/franki-eat-drink-earn/id1504173412?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/franki-eat-drink-earn/id1504173412?uo=4",
+    "tagline": "Food & Drink app with 5 App Store screenshots"
   },
   {
     "name": "Sugar",
@@ -177,7 +196,8 @@
     "screenshots": [],
     "rating": 4.42124,
     "reviews": 527,
-    "appStoreUrl": "https://apps.apple.com/us/app/sugar-dating-with-sweetness/id1220911529?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/sugar-dating-with-sweetness/id1220911529?uo=4",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "AgBr",
@@ -186,7 +206,8 @@
     "screenshots": [],
     "rating": 4.74193,
     "reviews": 31,
-    "appStoreUrl": "https://apps.apple.com/us/app/agbr/id6701996818?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/agbr/id6701996818?uo=4",
+    "tagline": "Photo & Video app with 5 App Store screenshots"
   },
   {
     "name": "Flighty",
@@ -195,7 +216,8 @@
     "screenshots": [],
     "rating": 4.84267,
     "reviews": 121333,
-    "appStoreUrl": "https://apps.apple.com/us/app/flighty-live-flight-tracker/id1358823008?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/flighty-live-flight-tracker/id1358823008?uo=4",
+    "tagline": "Travel app with 5 App Store screenshots"
   },
   {
     "name": "stoic. journal & mental health",
@@ -204,7 +226,8 @@
     "screenshots": [],
     "rating": 4.82453,
     "reviews": 34000,
-    "appStoreUrl": "https://apps.apple.com/us/app/stoic-journal-mental-health/id1312926037?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/stoic-journal-mental-health/id1312926037?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Rumbo Fitness",
@@ -213,7 +236,8 @@
     "screenshots": [],
     "rating": 4.80488,
     "reviews": 41,
-    "appStoreUrl": "https://apps.apple.com/us/app/rumbo-fitness/id6475088608?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/rumbo-fitness/id6475088608?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Senses",
@@ -222,16 +246,18 @@
     "screenshots": [],
     "rating": 4.63933,
     "reviews": 3524,
-    "appStoreUrl": "https://apps.apple.com/us/app/senses-kegel-sex-health/id1563697753?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/senses-kegel-sex-health/id1563697753?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Aave",
     "slug": "aave",
     "category": "Finance",
     "screenshots": [],
-    "rating": 4.68362,
-    "reviews": 177,
-    "appStoreUrl": "https://apps.apple.com/us/app/aave-save-and-earn/id6754045087?uo=4"
+    "rating": 4.73672,
+    "reviews": 74382,
+    "appStoreUrl": "https://apps.apple.com/us/app/metamask-trade-crypto/id1438144202?uo=4",
+    "tagline": "Finance app with 5 App Store screenshots"
   },
   {
     "name": "Claude by Anthropic",
@@ -240,7 +266,8 @@
     "screenshots": [],
     "rating": 4.69366,
     "reviews": 89380,
-    "appStoreUrl": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684?uo=4",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "Family",
@@ -249,7 +276,8 @@
     "screenshots": [],
     "rating": 4.42832,
     "reviews": 40201,
-    "appStoreUrl": "https://apps.apple.com/us/app/family-life/id6449919224?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/family-life/id6449919224?uo=4",
+    "tagline": "Other app with 5 App Store screenshots"
   },
   {
     "name": "PURE",
@@ -258,7 +286,8 @@
     "screenshots": [],
     "rating": 4.29915,
     "reviews": 77320,
-    "appStoreUrl": "https://apps.apple.com/us/app/pure-open-minded-dating-app/id690661663?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/pure-open-minded-dating-app/id690661663?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Speak Languages",
@@ -267,7 +296,8 @@
     "screenshots": [],
     "rating": 4.83434,
     "reviews": 40831,
-    "appStoreUrl": "https://apps.apple.com/us/app/speak-language-learning/id1286609883?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/speak-language-learning/id1286609883?uo=4",
+    "tagline": "Other app with 5 App Store screenshots"
   },
   {
     "name": "Bounty",
@@ -276,7 +306,8 @@
     "screenshots": [],
     "rating": 4.77512,
     "reviews": 189026,
-    "appStoreUrl": "https://apps.apple.com/us/app/one-piece-bounty-rush/id1343688545?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/one-piece-bounty-rush/id1343688545?uo=4",
+    "tagline": "Business app with 5 App Store screenshots"
   },
   {
     "name": "Flowie",
@@ -285,7 +316,8 @@
     "screenshots": [],
     "rating": 4.94381,
     "reviews": 267,
-    "appStoreUrl": "https://apps.apple.com/us/app/flowie-your-daily-ai-buddy/id6748905032?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/flowie-your-daily-ai-buddy/id6748905032?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "grug",
@@ -294,7 +326,8 @@
     "screenshots": [],
     "rating": 4.8,
     "reviews": 45,
-    "appStoreUrl": "https://apps.apple.com/us/app/grug/id6751649802?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/grug/id6751649802?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Superlist",
@@ -303,7 +336,8 @@
     "screenshots": [],
     "rating": 4.485,
     "reviews": 400,
-    "appStoreUrl": "https://apps.apple.com/us/app/superlist-to-do-list-tasks/id1547585270?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/superlist-to-do-list-tasks/id1547585270?uo=4",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "yope",
@@ -312,16 +346,18 @@
     "screenshots": [],
     "rating": 4.71049,
     "reviews": 7012,
-    "appStoreUrl": "https://apps.apple.com/us/app/yope-friends-only-pics/id1600195477?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/yope-friends-only-pics/id1600195477?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Roam: Global eSIM & WiFi",
     "slug": "roam",
     "category": "Travel",
     "screenshots": [],
-    "rating": 4.73684,
-    "reviews": 38,
-    "appStoreUrl": "https://apps.apple.com/us/app/roam-virtual-office/id1609461652?uo=4"
+    "rating": 5,
+    "reviews": 5,
+    "appStoreUrl": "https://apps.apple.com/us/app/gotrip-esim-travel-esim-roam/id6746262163?uo=4",
+    "tagline": "Travel app with 5 App Store screenshots"
   },
   {
     "name": "ClickUp",
@@ -330,7 +366,8 @@
     "screenshots": [],
     "rating": 4.65123,
     "reviews": 8255,
-    "appStoreUrl": "https://apps.apple.com/us/app/clickup-tasks-chat-docs-ai/id1535098836?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/clickup-tasks-chat-docs-ai/id1535098836?uo=4",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "TOPYS",
@@ -339,7 +376,8 @@
     "screenshots": [],
     "rating": 4.66667,
     "reviews": 21,
-    "appStoreUrl": "https://apps.apple.com/us/app/topys-%E4%BD%A0%E7%9A%84%E7%81%B5%E6%84%9F%E5%BA%93/id1453559269?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/topys-%E4%BD%A0%E7%9A%84%E7%81%B5%E6%84%9F%E5%BA%93/id1453559269?uo=4",
+    "tagline": "Reference app with 5 App Store screenshots"
   },
   {
     "name": "Gentler Streak",
@@ -348,7 +386,8 @@
     "screenshots": [],
     "rating": 4.71471,
     "reviews": 8763,
-    "appStoreUrl": "https://apps.apple.com/us/app/gentler-streak-workout-tracker/id1576857102?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/gentler-streak-workout-tracker/id1576857102?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Atoms",
@@ -357,7 +396,8 @@
     "screenshots": [],
     "rating": 4.8303,
     "reviews": 10159,
-    "appStoreUrl": "https://apps.apple.com/us/app/atoms-from-atomic-habits/id6474421906?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/atoms-from-atomic-habits/id6474421906?uo=4",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "MD Vinyl for Music App",
@@ -366,7 +406,8 @@
     "screenshots": [],
     "rating": 4.84353,
     "reviews": 7458342,
-    "appStoreUrl": "https://apps.apple.com/us/app/mcdonalds/id922103212?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/mcdonalds/id922103212?uo=4",
+    "tagline": "Music app with 5 App Store screenshots"
   },
   {
     "name": "Knitflow",
@@ -375,16 +416,18 @@
     "screenshots": [],
     "rating": 4.8,
     "reviews": 5,
-    "appStoreUrl": "https://apps.apple.com/us/app/knitflow-knitting-crochet/id6740465748?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/knitflow-knitting-crochet/id6740465748?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "What's going on? Friend Diary",
     "slug": "whatsgoinon",
     "category": "Social Networking",
     "screenshots": [],
-    "rating": 4.68893,
-    "reviews": 17660633,
-    "appStoreUrl": "https://apps.apple.com/us/app/whatsapp-messenger/id310633997?uo=4"
+    "rating": 4.70203,
+    "reviews": 1386650,
+    "appStoreUrl": "https://apps.apple.com/us/app/whatsapp-business/id1386412985?uo=4",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "Oscar Stories for Children",
@@ -393,16 +436,18 @@
     "screenshots": [],
     "rating": 4.85397,
     "reviews": 16606,
-    "appStoreUrl": "https://apps.apple.com/us/app/oscar-health/id781584599?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/oscar-health/id781584599?uo=4",
+    "tagline": "Education app with 5 App Store screenshots"
   },
   {
     "name": "Trendy Profile Tracker & Boost",
     "slug": "trendy",
     "category": "Social Networking",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/trendy"
+    "rating": 4.66346,
+    "reviews": 104,
+    "appStoreUrl": "https://apps.apple.com/us/app/trendy-profile-tracker-boost/id6754564423?uo=4",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "Timeleft",
@@ -411,7 +456,8 @@
     "screenshots": [],
     "rating": 4.66841,
     "reviews": 6879,
-    "appStoreUrl": "https://apps.apple.com/us/app/timeleft-make-new-friends-irl/id6466442949?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/timeleft-make-new-friends-irl/id6466442949?uo=4",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "Pebble AI",
@@ -420,7 +466,8 @@
     "screenshots": [],
     "rating": 4.02857,
     "reviews": 35,
-    "appStoreUrl": "https://apps.apple.com/us/app/pebble-climbing/id1453943563?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/pebble-climbing/id1453943563?uo=4",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "Placify",
@@ -429,43 +476,48 @@
     "screenshots": [],
     "rating": 4.4375,
     "reviews": 48,
-    "appStoreUrl": "https://apps.apple.com/us/app/placify-map-trip-planner/id6739698007?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/placify-map-trip-planner/id6739698007?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Art of Flora",
     "slug": "artofflora",
     "category": "Games",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/artofflora"
+    "rating": 4.70526,
+    "reviews": 268379,
+    "appStoreUrl": "https://apps.apple.com/us/app/ibis-paint-x/id450722833?uo=4",
+    "tagline": "Games app with 5 App Store screenshots"
   },
   {
     "name": "Deen Tracker",
     "slug": "deentracker",
     "category": "Lifestyle",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/deentracker"
+    "rating": 4.92124,
+    "reviews": 927,
+    "appStoreUrl": "https://apps.apple.com/us/app/deen-islamic-app/id1617532276?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Try Your Best",
     "slug": "tyb",
     "category": "Social Networking",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/tyb"
+    "rating": 4.80112,
+    "reviews": 20878,
+    "appStoreUrl": "https://apps.apple.com/us/app/trycricket-by-cricket-wireless/id1616533573?uo=4",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "Voice Recorder & Audio Editor",
     "slug": "voicetape",
     "category": "Utilities",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/voicetape"
+    "rating": 4.27718,
+    "reviews": 61544,
+    "appStoreUrl": "https://apps.apple.com/us/app/google-voice/id318698524?uo=4",
+    "tagline": "Utilities app with 5 App Store screenshots"
   },
   {
     "name": "Joi Planner",
@@ -474,25 +526,28 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/Joi"
+    "appStoreUrl": "https://apps.apple.com/app/Joi",
+    "tagline": "Other app with 5 App Store screenshots"
   },
   {
     "name": "StockX",
     "slug": "stockx",
     "category": "Shopping",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/stockx"
+    "rating": 4.83384,
+    "reviews": 50747,
+    "appStoreUrl": "https://apps.apple.com/us/app/stadium-goods-buy-sneakers/id1288719040?uo=4",
+    "tagline": "Shopping app with 5 App Store screenshots"
   },
   {
     "name": "Tesla Robotaxi",
     "slug": "teslarobotaxi",
     "category": "Travel",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/teslarobotaxi"
+    "rating": 4.59981,
+    "reviews": 72870,
+    "appStoreUrl": "https://apps.apple.com/us/app/tesla/id582007913?uo=4",
+    "tagline": "Travel app with 5 App Store screenshots"
   },
   {
     "name": "Plango",
@@ -501,34 +556,38 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/plango"
+    "appStoreUrl": "https://apps.apple.com/us/app/plango/id1096866451?uo=4",
+    "tagline": "Travel app with 5 App Store screenshots"
   },
   {
     "name": "Raycast",
     "slug": "Raycast",
     "category": "Other",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/Raycast"
+    "rating": 4.3875,
+    "reviews": 160,
+    "appStoreUrl": "https://apps.apple.com/us/app/raycast-ai-notes-and-more/id6503428327?uo=4",
+    "tagline": "Other app with 5 App Store screenshots"
   },
   {
     "name": "PUSH Workout & Gym Tracker",
     "slug": "push",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/push"
+    "rating": 3.2,
+    "reviews": 35,
+    "appStoreUrl": "https://apps.apple.com/us/app/push-employee/id1173687779?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "ElevenLabs",
     "slug": "elevenlabs",
     "category": "Music",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/elevenlabs"
+    "rating": 4.85114,
+    "reviews": 8162,
+    "appStoreUrl": "https://apps.apple.com/us/app/elevenlabs-ai-voice-generator/id6743162587?uo=4",
+    "tagline": "Music app with 5 App Store screenshots"
   },
   {
     "name": "TIDE",
@@ -537,61 +596,68 @@
     "screenshots": [],
     "rating": 4.91593,
     "reviews": 6863,
-    "appStoreUrl": "https://apps.apple.com/us/app/tide-cleaners-dry-cleaning/id6446326585?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/tide-cleaners-dry-cleaning/id6446326585?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Headspace",
     "slug": "headspace",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/headspace"
+    "rating": 4.84328,
+    "reviews": 974019,
+    "appStoreUrl": "https://apps.apple.com/us/app/headspace-meditation-sleep/id493145008?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Unedo",
     "slug": "unedo",
     "category": "Lifestyle",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/unedo"
+    "rating": 4.85714,
+    "reviews": 175,
+    "appStoreUrl": "https://apps.apple.com/us/app/unedo-spanish-games-stories/id6503170902?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Flashfood",
     "slug": "flashfood",
     "category": "Food & Drink",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/flashfood"
+    "rating": 4.81663,
+    "reviews": 21875,
+    "appStoreUrl": "https://apps.apple.com/us/app/flashfood-grocery-deals/id1187314160?uo=4",
+    "tagline": "Food & Drink app with 5 App Store screenshots"
   },
   {
     "name": "Trust",
     "slug": "trust",
     "category": "Finance",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/trust"
+    "rating": 4.65815,
+    "reviews": 196144,
+    "appStoreUrl": "https://apps.apple.com/us/app/trust-crypto-bitcoin-wallet/id1288339409?uo=4",
+    "tagline": "Finance app with 5 App Store screenshots"
   },
   {
     "name": "Methods",
     "slug": "methods",
     "category": "Productivity",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/methods"
+    "rating": 4.82996,
+    "reviews": 25823,
+    "appStoreUrl": "https://apps.apple.com/us/app/methods-make-money-online/id6753773454?uo=4",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "Walkie Talkie",
     "slug": "walkietalkie",
     "category": "Utilities",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/walkietalkie"
+    "rating": 4.5976,
+    "reviews": 91302,
+    "appStoreUrl": "https://apps.apple.com/us/app/walkie-talkie-all-talk-app/id1438005314?uo=4",
+    "tagline": "Utilities app with 5 App Store screenshots"
   },
   {
     "name": "Dropcall",
@@ -600,34 +666,38 @@
     "screenshots": [],
     "rating": 4.09184,
     "reviews": 392,
-    "appStoreUrl": "https://apps.apple.com/us/app/dropcall-ai-voicemail-phone/id6738497713?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/dropcall-ai-voicemail-phone/id6738497713?uo=4",
+    "tagline": "Utilities app with 5 App Store screenshots"
   },
   {
     "name": "Planit",
     "slug": "planit",
     "category": "Productivity",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/planit"
+    "rating": 2.66667,
+    "reviews": 60,
+    "appStoreUrl": "https://apps.apple.com/us/app/planit-schedule/id1434734633?uo=4",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "Comet",
     "slug": "comet",
     "category": "Utilities",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/comet"
+    "rating": 4.78315,
+    "reviews": 2979,
+    "appStoreUrl": "https://apps.apple.com/us/app/comet-ai-browser-assistant/id6748622471?uo=4",
+    "tagline": "Utilities app with 5 App Store screenshots"
   },
   {
     "name": "Numo",
     "slug": "numo",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/numo"
+    "rating": 4.34715,
+    "reviews": 1037,
+    "appStoreUrl": "https://apps.apple.com/us/app/numo-cringe-free-adhd-app/id1628994767?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "JOE & THE JUICE",
@@ -636,79 +706,88 @@
     "screenshots": [],
     "rating": 4.7901,
     "reviews": 19981,
-    "appStoreUrl": "https://apps.apple.com/us/app/joe-coffee-order-ahead/id1437558382?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/joe-coffee-order-ahead/id1437558382?uo=4",
+    "tagline": "Food & Drink app with 5 App Store screenshots"
   },
   {
     "name": "Twitch",
     "slug": "twitch",
     "category": "Games",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/twitch"
+    "rating": 4.72028,
+    "reviews": 2678111,
+    "appStoreUrl": "https://apps.apple.com/us/app/twitch-live-streaming/id460177396?uo=4",
+    "tagline": "Games app with 5 App Store screenshots"
   },
   {
     "name": "Slopes",
     "slug": "slopes",
     "category": "Sports",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/slopes"
+    "rating": 4.85823,
+    "reviews": 87772,
+    "appStoreUrl": "https://apps.apple.com/us/app/slopes-ski-snowboard/id643351983?uo=4",
+    "tagline": "Sports app with 5 App Store screenshots"
   },
   {
     "name": "one year",
     "slug": "oneyear",
     "category": "Lifestyle",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/oneyear"
+    "rating": 4.85844,
+    "reviews": 271134,
+    "appStoreUrl": "https://apps.apple.com/us/app/onepay-mobile-banking/id1494523953?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Box Box Club",
     "slug": "boxboxclub",
     "category": "Lifestyle",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/boxboxclub"
+    "rating": 4.76417,
+    "reviews": 189654,
+    "appStoreUrl": "https://apps.apple.com/us/app/box-the-power-of-content-ai/id290853822?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Voiced AI: Talk, Reflect, Grow",
     "slug": "voicedai",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/voicedai"
+    "rating": 4.75052,
+    "reviews": 477,
+    "appStoreUrl": "https://apps.apple.com/us/app/voiced-ai-talk-reflect-grow/id6748580304?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Sona Insight",
     "slug": "sonainsight",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/sonainsight"
+    "rating": 4.89411,
+    "reviews": 210250,
+    "appStoreUrl": "https://apps.apple.com/us/app/suno-ai-songs-music/id6480136315?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Wise",
     "slug": "wise",
     "category": "Finance",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/wise"
+    "rating": 4.65721,
+    "reviews": 101572,
+    "appStoreUrl": "https://apps.apple.com/us/app/wise-global-money/id612261027?uo=4",
+    "tagline": "Finance app with 5 App Store screenshots"
   },
   {
     "name": "Turf",
     "slug": "turf",
     "category": "Sports",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/turf"
+    "rating": 5,
+    "reviews": 5,
+    "appStoreUrl": "https://apps.apple.com/us/app/turf-pr/id1548397395?uo=4",
+    "tagline": "Sports app with 5 App Store screenshots"
   },
   {
     "name": "Tolan: Alien Best Friend",
@@ -717,43 +796,48 @@
     "screenshots": [],
     "rating": 4.78146,
     "reviews": 129435,
-    "appStoreUrl": "https://apps.apple.com/us/app/tolan-alien-best-friend/id6477549878?uo=4"
+    "appStoreUrl": "https://apps.apple.com/us/app/tolan-alien-best-friend/id6477549878?uo=4",
+    "tagline": "Games app with 5 App Store screenshots"
   },
   {
     "name": "Pool",
     "slug": "pool",
     "category": "Games",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/pool"
+    "rating": 4.75258,
+    "reviews": 4636836,
+    "appStoreUrl": "https://apps.apple.com/us/app/8-ball-pool/id543186831?uo=4",
+    "tagline": "Games app with 5 App Store screenshots"
   },
   {
     "name": "Picky AI",
     "slug": "pickyai",
     "category": "Lifestyle",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/pickyai"
+    "rating": 4.37581,
+    "reviews": 620,
+    "appStoreUrl": "https://apps.apple.com/us/app/picky-k-beauty-create-earn/id1504197356?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Exodus",
     "slug": "human",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/human"
+    "rating": 4.60127,
+    "reviews": 34923,
+    "appStoreUrl": "https://apps.apple.com/us/app/exodus-crypto-bitcoin-wallet/id1414384820?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Linearity Curve Graphic Design",
     "slug": "linearity",
     "category": "Graphics & Design",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/linearity"
+    "rating": 4.52826,
+    "reviews": 14383,
+    "appStoreUrl": "https://apps.apple.com/us/app/linearity-curve-graphic-design/id1219074514?uo=4",
+    "tagline": "Graphics & Design app with 5 App Store screenshots"
   },
   {
     "name": "Water tracker Waterllama",
@@ -762,16 +846,18 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/watertracker"
+    "appStoreUrl": "https://apps.apple.com/app/watertracker",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Tiimo",
     "slug": "tiimo",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/tiimo"
+    "rating": 4.56852,
+    "reviews": 15141,
+    "appStoreUrl": "https://apps.apple.com/us/app/tiimo-to-do-list-ai-planner/id1480220328?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Kuku",
@@ -780,16 +866,18 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/kuku"
+    "appStoreUrl": "https://apps.apple.com/app/kuku",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "sway ~ blur & vhs trending cam",
     "slug": "sway",
     "category": "Photo & Video",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/sway"
+    "rating": 2.14835,
+    "reviews": 182,
+    "appStoreUrl": "https://apps.apple.com/us/app/sway-medical/id657932025?uo=4",
+    "tagline": "Photo & Video app with 5 App Store screenshots"
   },
   {
     "name": "Discogs",
@@ -798,7 +886,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/vinyl"
+    "appStoreUrl": "https://apps.apple.com/app/vinyl",
+    "tagline": "Music app with 5 App Store screenshots"
   },
   {
     "name": "Evernote",
@@ -807,34 +896,38 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/evernote"
+    "appStoreUrl": "https://apps.apple.com/app/evernote",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "RemyAI",
     "slug": "remyai",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/remyai"
+    "rating": 5,
+    "reviews": 2,
+    "appStoreUrl": "https://apps.apple.com/us/app/remyai/id6670169926?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Swypn",
     "slug": "swypn",
     "category": "Finance",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/swypn"
+    "rating": 5,
+    "reviews": 2,
+    "appStoreUrl": "https://apps.apple.com/us/app/swypn-ai-photo-detection/id6759467546?uo=4",
+    "tagline": "Finance app with 5 App Store screenshots"
   },
   {
     "name": "pliability",
     "slug": "pliability",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/pliability"
+    "rating": 4.81407,
+    "reviews": 9197,
+    "appStoreUrl": "https://apps.apple.com/us/app/pliability-stretch-mobility/id1175346453?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "pushr",
@@ -843,25 +936,28 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/pushr"
+    "appStoreUrl": "https://apps.apple.com/app/pushr",
+    "tagline": "Finance app with 5 App Store screenshots"
   },
   {
     "name": "Lovi",
     "slug": "lovi",
     "category": "Health & Fitness",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/lovi"
+    "rating": 4.62551,
+    "reviews": 2932,
+    "appStoreUrl": "https://apps.apple.com/us/app/lovi-ai-skin-care-scanner/id1594167292?uo=4",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Moment Pro Camera II",
     "slug": "moment",
     "category": "Photo & Video",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/moment"
+    "rating": 4.57497,
+    "reviews": 9197,
+    "appStoreUrl": "https://apps.apple.com/us/app/pro-camera-by-moment/id927098908?uo=4",
+    "tagline": "Photo & Video app with 5 App Store screenshots"
   },
   {
     "name": "Video Effects Editor",
@@ -870,25 +966,28 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/riveo"
+    "appStoreUrl": "https://apps.apple.com/app/riveo",
+    "tagline": "Photo & Video app with 5 App Store screenshots"
   },
   {
     "name": "Suno",
     "slug": "suno",
     "category": "Music",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/suno"
+    "rating": 4.89411,
+    "reviews": 210250,
+    "appStoreUrl": "https://apps.apple.com/us/app/suno-ai-songs-music/id6480136315?uo=4",
+    "tagline": "Music app with 5 App Store screenshots"
   },
   {
     "name": "(Not Boring) Weather",
     "slug": "notboringweather",
     "category": "Weather",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/notboringweather"
+    "rating": 4.76501,
+    "reviews": 14954,
+    "appStoreUrl": "https://apps.apple.com/us/app/not-boring-weather/id1531063436?uo=4",
+    "tagline": "Weather app with 5 App Store screenshots"
   },
   {
     "name": "Skillsta",
@@ -897,16 +996,18 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/skillsta"
+    "appStoreUrl": "https://apps.apple.com/app/skillsta",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Neuecast",
     "slug": "neuecast",
     "category": "News",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/neuecast"
+    "rating": 4.74418,
+    "reviews": 215,
+    "appStoreUrl": "https://apps.apple.com/us/app/neuecast/id6446780219?uo=4",
+    "tagline": "News app with 5 App Store screenshots"
   },
   {
     "name": "imagi",
@@ -915,25 +1016,28 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/imagi"
+    "appStoreUrl": "https://apps.apple.com/app/imagi",
+    "tagline": "Education app with 5 App Store screenshots"
   },
   {
     "name": "Wabi",
     "slug": "wabi",
     "category": "Lifestyle",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/wabi"
+    "rating": 4.22316,
+    "reviews": 4378,
+    "appStoreUrl": "https://apps.apple.com/us/app/wabi-number-for-wa-business/id1454219880?uo=4",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Polestar",
     "slug": "polestar",
     "category": "Utilities",
     "screenshots": [],
-    "rating": "",
-    "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/polestar"
+    "rating": 4.42922,
+    "reviews": 2826,
+    "appStoreUrl": "https://apps.apple.com/us/app/polestar/id1451196635?uo=4",
+    "tagline": "Utilities app with 5 App Store screenshots"
   },
   {
     "name": "Yapster",
@@ -942,7 +1046,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/yapster"
+    "appStoreUrl": "https://apps.apple.com/app/yapster",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "Minimalist Launcher",
@@ -951,7 +1056,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/minimalistlauncher"
+    "appStoreUrl": "https://apps.apple.com/app/minimalistlauncher",
+    "tagline": "Utilities app with 5 App Store screenshots"
   },
   {
     "name": "Hers",
@@ -960,7 +1066,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/hers"
+    "appStoreUrl": "https://apps.apple.com/app/hers",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "BurnBar",
@@ -969,7 +1076,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/burnbar"
+    "appStoreUrl": "https://apps.apple.com/app/burnbar",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Sunlitt Sun Position and Path",
@@ -978,7 +1086,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/sunlitt"
+    "appStoreUrl": "https://apps.apple.com/app/sunlitt",
+    "tagline": "Travel app with 5 App Store screenshots"
   },
   {
     "name": "Firefly",
@@ -987,7 +1096,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/firefly"
+    "appStoreUrl": "https://apps.apple.com/app/firefly",
+    "tagline": "Utilities app with 5 App Store screenshots"
   },
   {
     "name": "Mate",
@@ -996,7 +1106,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/mate"
+    "appStoreUrl": "https://apps.apple.com/app/mate",
+    "tagline": "Utilities app with 5 App Store screenshots"
   },
   {
     "name": "Chime",
@@ -1005,7 +1116,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/chime"
+    "appStoreUrl": "https://apps.apple.com/app/chime",
+    "tagline": "Finance app with 5 App Store screenshots"
   },
   {
     "name": "(Not Boring) Camera",
@@ -1014,7 +1126,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/notboringcamera"
+    "appStoreUrl": "https://apps.apple.com/app/notboringcamera",
+    "tagline": "Photo & Video app with 5 App Store screenshots"
   },
   {
     "name": "Deepstash",
@@ -1023,7 +1136,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/deepstash"
+    "appStoreUrl": "https://apps.apple.com/app/deepstash",
+    "tagline": "Reference app with 5 App Store screenshots"
   },
   {
     "name": "Tripadvisor",
@@ -1032,7 +1146,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/tripadvisor"
+    "appStoreUrl": "https://apps.apple.com/app/tripadvisor",
+    "tagline": "Travel app with 5 App Store screenshots"
   },
   {
     "name": "Love8",
@@ -1041,7 +1156,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/love8"
+    "appStoreUrl": "https://apps.apple.com/app/love8",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "Eversend",
@@ -1050,7 +1166,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/eversend"
+    "appStoreUrl": "https://apps.apple.com/app/eversend",
+    "tagline": "Finance app with 5 App Store screenshots"
   },
   {
     "name": "Sudoku a Day",
@@ -1059,7 +1176,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/sudoku"
+    "appStoreUrl": "https://apps.apple.com/app/sudoku",
+    "tagline": "Games app with 5 App Store screenshots"
   },
   {
     "name": "NEXT Insurance",
@@ -1068,7 +1186,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/nextinsurance"
+    "appStoreUrl": "https://apps.apple.com/app/nextinsurance",
+    "tagline": "Finance app with 5 App Store screenshots"
   },
   {
     "name": "YLAG",
@@ -1077,7 +1196,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/ylag"
+    "appStoreUrl": "https://apps.apple.com/app/ylag",
+    "tagline": "Music app with 5 App Store screenshots"
   },
   {
     "name": "UGLYCASH",
@@ -1086,7 +1206,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/uglycash"
+    "appStoreUrl": "https://apps.apple.com/app/uglycash",
+    "tagline": "Finance app with 5 App Store screenshots"
   },
   {
     "name": "Orb Social on Lens Protocol",
@@ -1095,7 +1216,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/orb"
+    "appStoreUrl": "https://apps.apple.com/app/orb",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "Open",
@@ -1104,7 +1226,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/open"
+    "appStoreUrl": "https://apps.apple.com/app/open",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Linktree",
@@ -1113,7 +1236,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/linktree"
+    "appStoreUrl": "https://apps.apple.com/app/linktree",
+    "tagline": "Social Networking app with 5 App Store screenshots"
   },
   {
     "name": "Any Distance",
@@ -1122,7 +1246,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/anydistance"
+    "appStoreUrl": "https://apps.apple.com/app/anydistance",
+    "tagline": "Sports app with 5 App Store screenshots"
   },
   {
     "name": "Yukee simple todo list tracker",
@@ -1131,7 +1256,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/yukee"
+    "appStoreUrl": "https://apps.apple.com/app/yukee",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "Deezer",
@@ -1140,7 +1266,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/deezer"
+    "appStoreUrl": "https://apps.apple.com/app/deezer",
+    "tagline": "Music app with 5 App Store screenshots"
   },
   {
     "name": "Soda",
@@ -1149,7 +1276,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/soda"
+    "appStoreUrl": "https://apps.apple.com/app/soda",
+    "tagline": "Food & Drink app with 5 App Store screenshots"
   },
   {
     "name": "Jomo",
@@ -1158,7 +1286,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/jomo"
+    "appStoreUrl": "https://apps.apple.com/app/jomo",
+    "tagline": "Productivity app with 5 App Store screenshots"
   },
   {
     "name": "Planta",
@@ -1167,7 +1296,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/planta"
+    "appStoreUrl": "https://apps.apple.com/app/planta",
+    "tagline": "Lifestyle app with 5 App Store screenshots"
   },
   {
     "name": "SAVO",
@@ -1176,7 +1306,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/savo"
+    "appStoreUrl": "https://apps.apple.com/app/savo",
+    "tagline": "Education app with 5 App Store screenshots"
   },
   {
     "name": "Runbuds",
@@ -1185,7 +1316,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/runbuds"
+    "appStoreUrl": "https://apps.apple.com/app/runbuds",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Fabric",
@@ -1194,7 +1326,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/fabric"
+    "appStoreUrl": "https://apps.apple.com/app/fabric",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Tripsy",
@@ -1203,7 +1336,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/tripsy"
+    "appStoreUrl": "https://apps.apple.com/app/tripsy",
+    "tagline": "Travel app with 5 App Store screenshots"
   },
   {
     "name": "Caffeine Tracker",
@@ -1212,7 +1346,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/alyx"
+    "appStoreUrl": "https://apps.apple.com/app/alyx",
+    "tagline": "Health & Fitness app with 5 App Store screenshots"
   },
   {
     "name": "Moshi Kids",
@@ -1221,7 +1356,8 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/moshikids"
+    "appStoreUrl": "https://apps.apple.com/app/moshikids",
+    "tagline": "Education app with 5 App Store screenshots"
   },
   {
     "name": "Supernotes",
@@ -1230,6 +1366,7 @@
     "screenshots": [],
     "rating": "",
     "reviews": 0,
-    "appStoreUrl": "https://apps.apple.com/app/supernotes"
+    "appStoreUrl": "https://apps.apple.com/app/supernotes",
+    "tagline": "Productivity app with 5 App Store screenshots"
   }
 ]
