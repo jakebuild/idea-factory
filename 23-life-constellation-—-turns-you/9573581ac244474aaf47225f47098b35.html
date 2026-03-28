@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Demo Constellation - Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesque:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;family=Epilogue:ital,wght@0,300;0,400;1,300;1,400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed": "#d2e6ef",
+              "surface-container-highest": "#323539",
+              "on-error": "#690005",
+              "tertiary-fixed": "#e2e2e2",
+              "on-tertiary-container": "#7b7d7d",
+              "on-secondary-fixed": "#0b1e24",
+              "on-tertiary": "#2f3131",
+              "on-primary-fixed": "#001f29",
+              "surface-bright": "#37393d",
+              "on-background": "#e1e2e7",
+              "primary-container": "#00131b",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "on-primary-fixed-variant": "#154d5f",
+              "on-surface-variant": "#c6c6cb",
+              "surface-container-lowest": "#0c0e12",
+              "surface-container-low": "#191c1f",
+              "surface-container-high": "#282a2e",
+              "surface-container": "#1d2023",
+              "primary": "#9ccee4",
+              "inverse-surface": "#e1e2e7",
+              "surface-tint": "#9ccee4",
+              "surface-variant": "#323539",
+              "tertiary-container": "#0f1112",
+              "inverse-on-surface": "#2e3134",
+              "primary-fixed": "#bbe9ff",
+              "secondary": "#b6cad2",
+              "on-secondary": "#21333a",
+              "on-primary-container": "#528398",
+              "error-container": "#93000a",
+              "on-primary": "#003545",
+              "secondary-fixed-dim": "#b6cad2",
+              "on-surface": "#e1e2e7",
+              "on-tertiary-fixed": "#1a1c1c",
+              "tertiary": "#c6c6c7",
+              "background": "#111417",
+              "on-secondary-container": "#a5b8c1",
+              "on-error-container": "#ffdad6",
+              "error": "#ffb4ab",
+              "surface": "#111417",
+              "inverse-primary": "#326578",
+              "surface-dim": "#111417",
+              "on-tertiary-fixed-variant": "#454747",
+              "outline": "#8f9095",
+              "on-secondary-fixed-variant": "#374951",
+              "outline-variant": "#45474b",
+              "secondary-container": "#374951",
+              "primary-fixed-dim": "#9ccee4"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Epilogue"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .celestial-bg {
+            background: radial-gradient(circle at center, #1d2023 0%, #111417 100%);
+        }
+        .star-glow {
+            box-shadow: 0 0 15px 2px rgba(156, 206, 228, 0.4);
+        }
+        .constellation-line {
+            background: linear-gradient(90deg, transparent, rgba(156, 206, 228, 0.2), transparent);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30 overflow-hidden">
+<!-- Main Canvas -->
+<main class="relative h-screen w-full flex flex-col items-center justify-between celestial-bg px-8 py-16">
+<!-- Header Annotation -->
+<header class="z-10 text-center">
+<span class="font-label text-sm italic text-on-surface-variant tracking-widest opacity-80">
+                An example week
+            </span>
+</header>
+<!-- Star Map Visualization -->
+<div class="relative w-full max-w-md aspect-square flex items-center justify-center">
+<!-- Decorative Subtle Noise/Grain -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCzVcgiG3ImCL96xloE3Rh0bXac_LFlwG5Yzh-oMoHfIXsaDSE-NsUmjBj6YA5N1GiEA-F8Eyk4JMXE5-moqWeP2-uvZCXuyiVfcckM-w8hjQswVHqlYPer_VKnBuWsc1Mb02peD5SYHiM0yLlhEcoo2Uq4xxI-KpPHVVxRXN09b9oNRU3fEt6TeyBfmcEm69riuiYv5e2Vu7MFFJpgPqSeulnN1Rd1XmRHAcbrjQCETx8yto_gBj6I_rMymqjlzRtb1XEbomUO2MY');"></div>
+<!-- Constellation Container -->
+<div class="relative w-72 h-72">
+<!-- SVG for Connecting Lines -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" viewbox="0 0 300 300">
+<defs>
+<lineargradient id="lineGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#9ccee4" stop-opacity="0"></stop>
+<stop offset="50%" stop-color="#9ccee4" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#9ccee4" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Path connecting stars -->
+<path d="M 50 80 L 120 40 L 220 70 L 260 150 L 180 220 L 100 240 L 40 180 Z" fill="none" stroke="url(#lineGrad)" stroke-width="1"></path>
+<line stroke="url(#lineGrad)" stroke-dasharray="4 4" stroke-width="0.5" x1="120" x2="180" y1="40" y2="220"></line>
+</svg>
+<!-- Individual Stars (The "Celestial Observer" Star Markers) -->
+<!-- Star 1 -->
+<div class="absolute top-[80px] left-[50px] group">
+<div class="absolute -inset-4 rounded-full bg-primary/5 animate-pulse"></div>
+<div class="w-2 h-2 rounded-full bg-on-background star-glow relative z-10"></div>
+</div>
+<!-- Star 2 -->
+<div class="absolute top-[40px] left-[120px]">
+<div class="absolute -inset-6 rounded-full bg-primary/10"></div>
+<div class="w-3 h-3 rounded-full bg-primary-fixed star-glow relative z-10"></div>
+</div>
+<!-- Star 3 -->
+<div class="absolute top-[70px] left-[220px]">
+<div class="w-1.5 h-1.5 rounded-full bg-on-background opacity-80 relative z-10"></div>
+</div>
+<!-- Star 4 -->
+<div class="absolute top-[150px] left-[260px]">
+<div class="absolute -inset-3 rounded-full bg-primary/5"></div>
+<div class="w-2 h-2 rounded-full bg-on-background star-glow relative z-10"></div>
+</div>
+<!-- Star 5 -->
+<div class="absolute top-[220px] left-[180px]">
+<div class="absolute -inset-5 rounded-full bg-primary/10 animate-pulse"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-primary star-glow relative z-10"></div>
+</div>
+<!-- Star 6 -->
+<div class="absolute top-[240px] left-[100px]">
+<div class="w-2 h-2 rounded-full bg-on-background opacity-60 relative z-10"></div>
+</div>
+<!-- Star 7 -->
+<div class="absolute top-[180px] left-[40px]">
+<div class="absolute -inset-2 rounded-full bg-primary/5"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-primary star-glow relative z-10"></div>
+</div>
+</div>
+</div>
+<!-- Content & CTAs -->
+<section class="w-full max-w-sm flex flex-col items-center text-center space-y-12 z-20">
+<!-- Text Block -->
+<div class="space-y-4">
+<h1 class="font-headline text-4xl font-bold tracking-tight text-on-background">
+                    Your life, mapped as stars.
+                </h1>
+<p class="font-body text-on-surface-variant leading-relaxed px-4">
+                    Places you visit become stars. Your constellation forms quietly in the background. Everything stays on your phone.
+                </p>
+</div>
+<!-- Buttons Block -->
+<div class="w-full flex flex-col space-y-6">
+<!-- Primary CTA -->
+<button onclick="window.location.href='48847a72ad964c94afb468572cf64b7d.html'" class="w-full py-4 px-8 rounded-full bg-primary text-on-primary font-headline font-bold tracking-wider uppercase text-sm shadow-[0_0_20px_rgba(156,206,228,0.3)] transition-all active:scale-95 active:shadow-none">
+                    Start mapping
+                </button>
+<!-- Secondary CTA -->
+<button class="w-full py-2 font-body text-sm text-primary tracking-wide transition-opacity hover:opacity-80">
+<span class="border-b border-outline-variant/40 pb-1">How does tracking work?</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Background Atmospheric Touches -->
+<div class="fixed top-1/4 -left-20 w-64 h-64 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="fixed bottom-1/4 -right-20 w-80 h-80 bg-on-primary-container/5 rounded-full blur-[120px] pointer-events-none"></div>
+</body></html>

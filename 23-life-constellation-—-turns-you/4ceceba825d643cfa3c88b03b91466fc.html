@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@200;300;400;500;600;700&amp;family=Epilogue:ital,wght@1,300;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary": "#21333a",
+              "surface-container": "#1d2023",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "primary": "#9ccee4",
+              "on-tertiary": "#2f3131",
+              "primary-fixed-dim": "#9ccee4",
+              "on-surface": "#e1e2e7",
+              "inverse-on-surface": "#2e3134",
+              "secondary": "#b6cad2",
+              "on-secondary-fixed": "#0b1e24",
+              "background": "#111417",
+              "surface": "#111417",
+              "outline": "#8f9095",
+              "surface-container-lowest": "#0c0e12",
+              "outline-variant": "#45474b",
+              "secondary-fixed-dim": "#b6cad2",
+              "surface-variant": "#323539",
+              "surface-tint": "#9ccee4",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "on-primary-container": "#528398",
+              "secondary-fixed": "#d2e6ef",
+              "on-tertiary-fixed": "#1a1c1c",
+              "surface-container-highest": "#323539",
+              "on-primary": "#003545",
+              "surface-container-low": "#191f1f",
+              "tertiary-container": "#0f1112",
+              "inverse-primary": "#326578",
+              "on-tertiary-container": "#7b7d7d",
+              "on-secondary-fixed-variant": "#374951",
+              "on-primary-fixed-variant": "#154d5f",
+              "tertiary-fixed": "#e2e2e2",
+              "tertiary": "#c6c6c7",
+              "primary-fixed": "#bbe9ff",
+              "secondary-container": "#374951",
+              "on-surface-variant": "#c6c6cb",
+              "error": "#ffb4ab",
+              "on-error-container": "#ffdad6",
+              "surface-container-high": "#282a2e",
+              "on-primary-fixed": "#001f29",
+              "surface-bright": "#37393d",
+              "on-tertiary-fixed-variant": "#454747",
+              "inverse-surface": "#e1e2e7",
+              "primary-container": "#00131b",
+              "on-secondary-container": "#a5b8c1",
+              "on-background": "#e1e2e7",
+              "surface-dim": "#111417"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Epilogue"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift { background-color: #191c1f; }
+        .tonal-shift-above { background-color: rgba(40, 42, 46, 0.6); }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .luminous-divider {
+            height: 1px;
+            width: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgba(156, 206, 228, 0.2) 50%, transparent 100%);
+        }
+        body {
+            background-color: #111417;
+            color: #e1e2e7;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary/30">
+<!-- Top Navigation Anchor -->
+<header class="fixed top-0 w-full z-50 bg-[#111417]/60 backdrop-blur-xl flex items-center justify-between px-6 h-16 w-full">
+<button onclick="window.location.href='e5b8363685554944b246be9f5cc4b920.html'" class="text-[#9ccee4] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<h1 class="font-['Space_Grotesque'] text-lg tracking-tight text-[#9ccee4] font-bold">Settings</h1>
+<div class="w-6"></div> <!-- Spacer for centering -->
+</header>
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto space-y-16">
+<!-- Section 1: Location -->
+<section class="space-y-6">
+<h2 class="font-headline text-xs uppercase tracking-[0.2em] text-primary/50 px-2 italic">Location</h2>
+<div class="bg-surface-container-low rounded-xl p-6 flex items-center justify-between group hover:bg-surface-container transition-colors duration-300">
+<div class="space-y-1">
+<p class="font-medium text-on-surface">Permission status</p>
+<p class="text-xs text-outline font-label italic">Always Allow enabled</p>
+</div>
+<span class="bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-500/20">
+                    Automatic
+                </span>
+</div>
+</section>
+<!-- Section 2: Tracking Mode -->
+<section class="space-y-6">
+<h2 class="font-headline text-xs uppercase tracking-[0.2em] text-primary/50 px-2 italic">Tracking Mode</h2>
+<div class="space-y-4">
+<!-- Row 1 -->
+<div class="bg-surface-container-low rounded-xl p-6 flex items-center justify-between hover:bg-surface-container transition-colors duration-300">
+<div class="space-y-1">
+<p class="font-medium text-on-surface">City Mode (50m)</p>
+<p class="text-xs text-outline font-label italic">For dense urban areas</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Row 2 -->
+<div class="bg-surface-container-low rounded-xl p-6 flex items-center justify-between hover:bg-surface-container transition-colors duration-300">
+<div class="space-y-1">
+<p class="font-medium text-on-surface">Default (150m)</p>
+<p class="text-xs text-outline font-label italic">For suburban and rural areas</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Section 3: Data -->
+<section class="space-y-6">
+<h2 class="font-headline text-xs uppercase tracking-[0.2em] text-primary/50 px-2 italic">Data</h2>
+<div class="bg-surface-container-low rounded-xl overflow-hidden">
+<div class="p-6 flex items-center justify-between border-b border-white/5 hover:bg-surface-container transition-colors">
+<p class="font-medium text-on-surface">All data stored on this device</p>
+<span class="material-symbols-outlined text-primary/60 text-xl" data-icon="info">info</span>
+</div>
+<div class="p-6 flex items-center justify-between border-b border-white/5 hover:bg-surface-container transition-colors">
+<p class="font-medium text-on-surface">Local database: 2.4 MB</p>
+</div>
+<div class="p-6 flex items-center justify-between hover:bg-surface-container transition-colors cursor-pointer group">
+<p class="font-medium text-on-surface group-hover:text-primary transition-colors">Export my data</p>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Section 4: Danger Zone -->
+<section class="space-y-6 pb-12">
+<h2 class="font-headline text-xs uppercase tracking-[0.2em] text-error/50 px-2 italic">Danger Zone</h2>
+<button class="w-full bg-error-container/10 border border-error/10 rounded-xl p-6 flex items-center space-x-4 hover:bg-error-container/20 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-error" data-icon="warning">warning</span>
+<p class="font-bold text-error tracking-tight">Delete all my data</p>
+</button>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-[#282a2e]/60 backdrop-blur-xl border-t border-transparent">
+<div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#9ccee4]/20 to-transparent"></div>
+<!-- Tab: Constellation (Active) -->
+<a onclick="window.location.href='e5b8363685554944b246be9f5cc4b920.html'" class="flex flex-col items-center justify-center text-[#e1e2e7] shadow-[0_0_15px_rgba(156,206,228,0.3)] bg-[#9ccee4]/10 rounded-xl px-6 py-2 transition-all scale-110 cursor-pointer" href="#">
+<span class="material-symbols-outlined text-[#9ccee4] mb-1" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label italic text-[10px] tracking-wider">Constellation</span>
+</a>
+<!-- Tab: Archive -->
+<a onclick="window.location.href='18cb0f173ca54198861b84c1dc012f1d.html'" class="flex flex-col items-center justify-center text-[#e1e2e7]/40 px-6 py-2 hover:text-[#9ccee4] transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="grid_view">grid_view</span>
+<span class="font-label italic text-[10px] tracking-wider">Archive</span>
+</a>
+</nav>
+<!-- Visual Atmosphere: Subtle Grain & Glows -->
+<div class="fixed inset-0 pointer-events-none z-[-1] opacity-20">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/5 blur-[100px] rounded-full"></div>
+</div>
+</body></html>

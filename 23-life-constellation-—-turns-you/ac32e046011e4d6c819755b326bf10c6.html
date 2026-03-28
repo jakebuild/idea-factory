@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Sharing - CELESTIAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesque:wght@300;400;700&amp;family=Manrope:wght@300;400;600&amp;family=Epilogue:ital,wght@1,300;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed-dim": "#9ccee4",
+              "secondary-container": "#374951",
+              "surface-dim": "#111417",
+              "on-surface-variant": "#c6c6cb",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "tertiary-fixed": "#e2e2e2",
+              "on-surface": "#e1e2e7",
+              "on-error-container": "#ffdad6",
+              "on-primary-container": "#528398",
+              "on-background": "#e1e2e7",
+              "on-secondary-fixed-variant": "#374951",
+              "surface": "#111417",
+              "error": "#ffb4ab",
+              "primary": "#9ccee4",
+              "on-primary-fixed-variant": "#154d5f",
+              "background": "#111417",
+              "secondary": "#b6cad2",
+              "on-secondary-container": "#a5b8c1",
+              "outline": "#8f9095",
+              "surface-container": "#1d2023",
+              "on-secondary-fixed": "#0b1e24",
+              "surface-container-highest": "#323539",
+              "on-primary-fixed": "#001f29",
+              "secondary-fixed-dim": "#b6cad2",
+              "surface-container-low": "#191c1f",
+              "on-tertiary-container": "#7b7d7d",
+              "on-secondary": "#21333a",
+              "inverse-surface": "#e1e2e7",
+              "on-error": "#690005",
+              "on-tertiary-fixed-variant": "#454747",
+              "error-container": "#93000a",
+              "primary-fixed": "#bbe9ff",
+              "tertiary-container": "#0f1112",
+              "primary-container": "#00131b",
+              "surface-tint": "#9ccee4",
+              "surface-container-high": "#282a2e",
+              "secondary-fixed": "#d2e6ef",
+              "outline-variant": "#45474b",
+              "surface-bright": "#37393d",
+              "surface-container-lowest": "#0c0e12",
+              "inverse-primary": "#326578",
+              "tertiary": "#c6c6c7",
+              "on-primary": "#003545",
+              "on-tertiary-fixed": "#1a1c1c",
+              "inverse-on-surface": "#2e3134",
+              "surface-variant": "#323539",
+              "on-tertiary": "#2f3131"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Epilogue"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .celestial-bg {
+            background-color: #111417;
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(156, 206, 228, 0.03) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(156, 206, 228, 0.03) 0%, transparent 40%);
+        }
+        .constellation-overlay {
+            mask-image: radial-gradient(circle, black, transparent 80%);
+            opacity: 0.15;
+        }
+        .glow-ring {
+            box-shadow: 0 0 40px rgba(156, 206, 228, 0.15), inset 0 0 20px rgba(156, 206, 228, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body onclick="window.location.href='e5b8363685554944b246be9f5cc4b920.html'" class="bg-background text-on-background font-body selection:bg-primary/30 antialiased overflow-hidden cursor-pointer">
+<!-- Transition Screen Canvas -->
+<main class="relative h-screen w-full celestial-bg flex flex-col items-center justify-center p-8">
+<!-- Faint Constellation Pattern -->
+<div class="absolute inset-0 constellation-overlay pointer-events-none overflow-hidden">
+<!-- Simulated background texture -->
+<div class="absolute top-1/4 left-1/4 w-[2px] h-[2px] bg-on-background rounded-full"></div>
+<div class="absolute top-1/3 left-1/2 w-[1px] h-[1px] bg-on-background rounded-full"></div>
+<div class="absolute top-1/2 left-1/3 w-[2px] h-[2px] bg-on-background rounded-full"></div>
+<div class="absolute top-2/3 left-2/3 w-[1px] h-[1px] bg-on-background rounded-full"></div>
+<div class="absolute top-3/4 left-1/4 w-[1px] h-[1px] bg-on-background rounded-full"></div>
+<div class="absolute top-1/2 left-[80%] w-[1px] h-[1px] bg-on-background rounded-full"></div>
+<div class="absolute top-10 left-10 w-full h-full" style="background-image: radial-gradient(circle, rgba(156,206,228,0.2) 1px, transparent 1px); background-size: 120px 120px; transform: rotate(15deg);">
+</div>
+</div>
+<!-- Central Content Core -->
+<div class="relative z-10 flex flex-col items-center max-w-xs w-full">
+<!-- Checkmark with Glow Ring -->
+<div class="mb-12 flex items-center justify-center">
+<div class="w-24 h-24 rounded-full border border-primary/20 flex items-center justify-center glow-ring bg-surface-container-low/30 backdrop-blur-md">
+<span class="material-symbols-outlined text-on-background text-5xl" style="font-variation-settings: 'wght' 200;">
+                        check
+                    </span>
+</div>
+</div>
+<!-- Primary Message -->
+<h1 class="font-body text-on-background text-center text-lg leading-relaxed mb-4 font-light tracking-wide px-4">
+                No location data in this image — just your constellation pattern.
+            </h1>
+<!-- Subtitle/Status Hint -->
+<p class="font-label text-on-surface-variant italic text-xs tracking-widest opacity-60">
+                Sharing in a moment...
+            </p>
+<!-- Tap hint -->
+<p class="font-label text-on-surface-variant/40 italic text-[10px] tracking-widest mt-8 uppercase">
+                Tap anywhere to return
+            </p>
+</div>
+<!-- Decorative Luminous Divider (Bottom Accent) -->
+<div class="absolute bottom-16 w-32 h-[1px] bg-gradient-to-r from-transparent via-primary/20 to-transparent"></div>
+</main>
+<!-- Invisible Image Asset for Metadata consistency (not displayed) -->
+<div class="hidden">
+<img data-alt="deep space background with tiny scattered stars and a very soft cyan nebula glow in one corner, cinematic dark minimalist style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb37FgugeeB565mxvEBUr28EzVm_MU4DnZzGMS50ToFZXOkWNyQBAM9VEgGFViSMRnlmAqL56lQxEIeayvv4qd885NNG_f9uihAqX7OJ7LRkXwMiExw6KwM5tKEC9HC1dxooOuYVB07Z1t754-snovzO4KpdbhQe2Ck2DpHuSEgTLkepZtKl7zYE5eIOBM0aGDdJjNPpGHcUPHI9pKRZXL65_KAOB_EdRUztL8a8VZkmkvn0r2PaKiFzvNZwT_9vsc-BrB-J43dTQ"/>
+</div>
+</body></html>

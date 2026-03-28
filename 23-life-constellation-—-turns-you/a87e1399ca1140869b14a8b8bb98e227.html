@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Year View — Locked State</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600&amp;family=Epilogue:ital,wght@0,300;0,400;1,300&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .celestial-blur {
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+        }
+        .star-glow {
+            box-shadow: 0 0 15px 2px rgba(156, 206, 228, 0.3);
+        }
+        .cta-gradient {
+            background: radial-gradient(circle at center, #9ccee4 0%, #528398 100%);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#37393d",
+                        "secondary": "#b6cad2",
+                        "on-secondary-fixed-variant": "#374951",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "primary-fixed": "#bbe9ff",
+                        "on-error": "#690005",
+                        "surface-container-lowest": "#0c0e12",
+                        "surface-container-low": "#191c1f",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "secondary-fixed-dim": "#b6cad2",
+                        "secondary-fixed": "#d2e6ef",
+                        "surface-container-highest": "#323539",
+                        "on-surface": "#e1e2e7",
+                        "outline": "#8f9095",
+                        "error-container": "#93000a",
+                        "inverse-surface": "#e1e2e7",
+                        "on-tertiary-container": "#7b7d7d",
+                        "surface": "#111417",
+                        "on-primary-container": "#528398",
+                        "tertiary-container": "#0f1112",
+                        "primary-fixed-dim": "#9ccee4",
+                        "on-secondary-container": "#a5b8c1",
+                        "surface-dim": "#111417",
+                        "primary": "#9ccee4",
+                        "outline-variant": "#45474b",
+                        "background": "#111417",
+                        "tertiary-fixed": "#e2e2e2",
+                        "primary-container": "#00131b",
+                        "surface-container-high": "#282a2e",
+                        "on-primary-fixed-variant": "#154d5f",
+                        "inverse-on-surface": "#2e3134",
+                        "on-secondary": "#21333a",
+                        "on-primary": "#003545",
+                        "surface-tint": "#9ccee4",
+                        "surface-container": "#1d2023",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-secondary-fixed": "#0b1e24",
+                        "on-background": "#e1e2e7",
+                        "secondary-container": "#374951",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary": "#2f3131",
+                        "error": "#ffb4ab",
+                        "surface-variant": "#323539",
+                        "tertiary": "#c6c6c7",
+                        "on-primary-fixed": "#001f29",
+                        "on-surface-variant": "#c6c6cb",
+                        "inverse-primary": "#326578"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Epilogue"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30 min-h-screen overflow-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex items-center justify-between px-6 h-16 w-full bg-[#111417]/60 backdrop-blur-xl border-b border-transparent">
+<div class="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#9ccee4]/20 to-transparent"></div>
+<div class="flex items-center gap-4">
+<button onclick="window.location.href='18cb0f173ca54198861b84c1dc012f1d.html'" class="text-[#9ccee4] hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="font-headline text-xl font-bold tracking-tight text-[#9ccee4]">Year View</h1>
+</div>
+<div class="w-8"></div> <!-- Spacer for symmetry -->
+</header>
+<!-- Celestial Background Canvas -->
+<main class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<!-- Deep Space Base -->
+<div class="absolute inset-0 bg-gradient-to-b from-[#111417] via-[#0D1117] to-[#050608]"></div>
+<!-- Blurred Constellations Overlay -->
+<div class="absolute inset-0 opacity-40">
+<!-- Simulated Constellation 1 -->
+<div class="absolute top-[20%] left-[15%] w-1 h-1 bg-white rounded-full star-glow"></div>
+<div class="absolute top-[25%] left-[25%] w-1.5 h-1.5 bg-primary rounded-full star-glow"></div>
+<div class="absolute top-[18%] left-[40%] w-0.5 h-0.5 bg-white rounded-full"></div>
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" stroke="white" stroke-width="0.5">
+<line x1="15%" x2="25%" y1="20%" y2="25%"></line>
+<line x1="25%" x2="40%" y2="18%"></line>
+</svg>
+<!-- Simulated Constellation 2 -->
+<div class="absolute bottom-[30%] right-[10%] w-2 h-2 bg-primary rounded-full star-glow"></div>
+<div class="absolute bottom-[40%] right-[25%] w-1 h-1 bg-white rounded-full star-glow"></div>
+<div class="absolute bottom-[20%] right-[20%] w-1 h-1 bg-white rounded-full"></div>
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" stroke="#9ccee4" stroke-width="0.5">
+<line x1="90%" x2="75%" y1="70%" y2="60%"></line>
+<line x1="75%" x2="80%" y1="60%" y2="80%"></line>
+</svg>
+</div>
+<!-- Atmospheric Perspective Overlay -->
+<div class="absolute inset-0 bg-[#111417]/40 backdrop-blur-2xl celestial-blur"></div>
+<!-- Main Content (Centered Overlay) -->
+<section class="relative z-10 px-8 text-center max-w-md w-full flex flex-col items-center">
+<!-- Unlock Illustration/Icon Container -->
+<div class="mb-12 relative">
+<div class="absolute -inset-10 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="w-24 h-24 rounded-full border border-primary/20 flex items-center justify-center bg-surface-container-low shadow-[0_0_30px_rgba(156,206,228,0.1)]">
+<span class="material-symbols-outlined text-5xl text-primary" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+</div>
+<!-- Typography Cluster -->
+<h2 class="font-headline text-4xl font-semibold text-on-background tracking-tight mb-3">
+                Your year is ready.
+            </h2>
+<p class="font-label italic text-sm text-outline mb-8 px-4 leading-relaxed">
+                Four weeks of constellations, ready to be overlaid.
+            </p>
+<!-- Pricing & Action Cluster -->
+<div class="w-full flex flex-col items-center gap-6">
+<!-- Price Badge -->
+<div class="inline-flex items-center px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 shadow-[0_0_15px_rgba(156,206,228,0.2)]">
+<span class="text-xs font-headline font-bold text-primary tracking-widest">$2.99</span>
+</div>
+<!-- Primary CTA -->
+<button onclick="window.location.href='4e67f47e98b244bba5ab0b2b197b35a2.html'" class="cta-gradient w-full py-5 rounded-xl font-headline font-bold text-on-primary tracking-wide shadow-[0_0_25px_rgba(156,206,228,0.3)] hover:opacity-90 active:scale-[0.98] transition-all">
+                    Unlock Year View
+                </button>
+<!-- Secondary Link -->
+<button class="text-outline text-xs font-label uppercase tracking-widest hover:text-primary transition-colors py-2">
+                    Restore purchase
+                </button>
+</div>
+</section>
+<!-- Aesthetic Grounding Element -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 w-32 h-[1px] bg-gradient-to-r from-transparent via-outline-variant/30 to-transparent"></div>
+</main>
+<!-- Decorative Corner Elements (The "Instrument" look) -->
+<div class="fixed bottom-6 left-6 pointer-events-none opacity-40">
+<div class="font-headline text-[10px] text-outline flex flex-col gap-1">
+<span>COORD // 42.3601 N</span>
+<span>DATA // REQ_PENDING</span>
+</div>
+</div>
+<div class="fixed bottom-6 right-6 pointer-events-none opacity-40">
+<div class="font-headline text-[10px] text-outline text-right flex flex-col gap-1">
+<span>LENS // YEAR_OVERLAY</span>
+<span>STATUS // ENCRYPTED</span>
+</div>
+</div>
+</body></html>

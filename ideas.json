@@ -42,11 +42,21 @@
   {
     "num": 22,
     "title": "AI Portrait Weekly",
-    "sub": "Weekly selfie → AI painting → grow your portrait journal over time",
+    "sub": "Weekly selfie \u2192 AI painting \u2192 grow your portrait journal over time",
     "score": "7/10",
     "deviceType": "MOBILE",
     "folder": "22-ai-portrait-an-app-that-paints",
     "startScreenId": "ce02c189567340329fefeaae41a699e4",
+    "status": "complete"
+  },
+  {
+    "num": 23,
+    "title": "Life Constellation",
+    "sub": "Turns your weekly movement into a personal star map",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "23-life-constellation-\u2014-turns-you",
+    "startScreenId": "e5b8363685554944b246be9f5cc4b920",
     "status": "complete"
   }
 ]

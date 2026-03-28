@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Constellation Archive</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600&amp;family=Epilogue:ital,wght@1,300;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#282a2e",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "secondary-fixed-dim": "#b6cad2",
+              "surface-container-lowest": "#0c0e12",
+              "on-secondary-fixed-variant": "#374951",
+              "on-primary-fixed-variant": "#154d5f",
+              "on-primary-fixed": "#001f29",
+              "inverse-primary": "#326578",
+              "error-container": "#93000a",
+              "surface-dim": "#111417",
+              "secondary-container": "#374951",
+              "on-surface": "#e1e2e7",
+              "outline-variant": "#45474b",
+              "on-error": "#690005",
+              "error": "#ffb4ab",
+              "on-tertiary-fixed-variant": "#454747",
+              "inverse-on-surface": "#2e3134",
+              "background": "#111417",
+              "surface-variant": "#323539",
+              "secondary": "#b6cad2",
+              "on-tertiary-fixed": "#1a1c1c",
+              "on-secondary": "#21333a",
+              "primary-fixed-dim": "#9ccee4",
+              "on-tertiary-container": "#7b7d7d",
+              "surface-tint": "#9ccee4",
+              "on-surface-variant": "#c6c6cb",
+              "tertiary-fixed": "#e2e2e2",
+              "secondary-fixed": "#d2e6ef",
+              "surface-container": "#1d2023",
+              "surface-container-highest": "#323539",
+              "surface-container-low": "#191c1f",
+              "outline": "#8f9095",
+              "on-error-container": "#ffdad6",
+              "tertiary-container": "#0f1112",
+              "on-primary-container": "#528398",
+              "on-background": "#e1e2e7",
+              "on-tertiary": "#2f3131",
+              "primary-fixed": "#bbe9ff",
+              "tertiary": "#c6c6c7",
+              "primary": "#9ccee4",
+              "on-secondary-container": "#a5b8c1",
+              "inverse-surface": "#e1e2e7",
+              "primary-container": "#00131b",
+              "surface": "#111417",
+              "on-secondary-fixed": "#0b1e24",
+              "on-primary": "#003545",
+              "surface-bright": "#37393d"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Epilogue"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .star-glow {
+        box-shadow: 0 0 15px rgba(156, 206, 228, 0.3);
+      }
+      .celestial-mesh {
+        background-image: radial-gradient(circle at 50% 50%, rgba(156, 206, 228, 0.05) 0%, transparent 70%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#111417]/60 backdrop-blur-xl border-b border-[#9ccee4]/20 shadow-[0_0_15px_rgba(156,206,228,0.1)] flex items-center justify-between px-6 h-16 w-full">
+<button class="active:scale-95 duration-200 text-[#9ccee4] hover:text-[#9ccee4] transition-colors">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-['Space_Grotesque'] text-2xl tracking-tight text-[#9ccee4]">Archive</h1>
+<div class="w-6"></div> <!-- Spacer for centering -->
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto celestial-mesh">
+<!-- Pinned Year View Card -->
+<section class="mb-12">
+<div class="relative w-full aspect-[16/9] rounded-xl overflow-hidden surface-container-highest group">
+<img alt="Celestial Background" class="absolute inset-0 w-full h-full object-cover blur-sm opacity-60 transition-transform duration-700 group-hover:scale-105" data-alt="abstract deep space visualization with overlapping glowing constellation patterns and nebula clouds in soft teal and charcoal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQqczIF2cjHsMPvCCOTHDqX7CG_IFR4U86vSQ5A9Wiuj7wOb2Cu4Zjm7zVXKsHIq4Ny8sELOAdFCUMaPw7BY7-RDA6LgJAsW6zd79PMz-HorJWyyDlbg3sn4OU43CrTWcYB4haKhvsiLLra0ZMJStWGefyTcf--BJ7Gyz6Y48VxzA8okuY4kOshl4cEjx08Uo_OxiA4dp-F9zwccvP9-wsyoSl-xDHfyUu4eNBwU9a1BLgBdUeDUwQin-z2Eojzhxa_woWrCYEZeU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+<h2 class="font-headline text-2xl font-bold mb-4 text-on-surface">Unlock your yearly story.</h2>
+<button onclick="window.location.href='feb7315230004783b5419cb0cc7978b1.html'" class="bg-primary text-on-primary font-bold px-8 py-3 rounded-full star-glow active:scale-95 transition-all mb-3 bg-gradient-to-r from-primary to-on-primary-container">
+                        Reserve Year View
+                    </button>
+<p class="font-label italic text-[10px] uppercase tracking-wider text-on-surface-variant">
+                        Unlock now, use it when you have data.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Section Header -->
+<div class="flex items-center justify-between mb-8">
+<h3 class="font-headline text-lg uppercase tracking-[0.2em] text-outline">Weekly Cycles</h3>
+<div class="h-px flex-1 ml-6 bg-gradient-to-r from-outline-variant/20 to-transparent"></div>
+</div>
+<!-- Weekly Grid -->
+<div class="grid grid-cols-2 gap-6">
+<!-- Card 1 -->
+<div onclick="window.location.href='9260443072e24196a22881cd797477f7.html'" class="flex flex-col cursor-pointer">
+<div class="relative aspect-square rounded-xl bg-surface-container border border-outline-variant/10 overflow-hidden hover:border-primary/30 transition-colors group">
+<img alt="Star Map" class="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity" data-alt="minimalist night sky star map with thin glowing lines connecting nodes over a dark cosmic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzg__1R-1z4kAEiyu5u7DBzRYD1bUt_iJo8YdIm6Vzz5ONT8nqwKmJly--gESqq1Nb9Z1WE9f65lFQLyJhh9QOd6Ng7LCynoVDxrCGAIzkAlm0k-2eifvcaFewku9c_YAPF2418Vqmw04hZidPemHhOgrqtyK70vx3RYE40kaH0dF4wvhEKiGqIpQXsSXeFrsgcxeWznLP2AmUoQMZvvmONFtAwlzH_whYTAA2Cmuznfv_g7pU6FPFdZ58wJnMBjGbZsC40wSLg3Q"/>
+<div class="absolute top-3 right-3 bg-surface-container-high/80 backdrop-blur-md px-2 py-1 rounded-lg border border-outline-variant/20">
+<span class="font-label italic text-[9px] text-primary">6 PLACES</span>
+</div>
+</div>
+<span class="mt-3 font-label italic text-[11px] uppercase tracking-widest text-on-surface-variant px-1">Mar 17–23</span>
+</div>
+<!-- Card 2 -->
+<div onclick="window.location.href='9260443072e24196a22881cd797477f7.html'" class="flex flex-col cursor-pointer">
+<div class="relative aspect-square rounded-xl bg-surface-container border border-outline-variant/10 overflow-hidden hover:border-primary/30 transition-colors group">
+<img alt="Star Map" class="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity" data-alt="abstract astronomical chart with glowing nodes and cosmic dust patterns in deep blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ6R6ZJGYXhmt_Xlhq1kywdAW6gfpfJH6sg23acRgKMyL2MzAPaaS_lK9dUoGYwK1cYPZimuZ8DUJZpvf9JkqHGISiHIkGIeh6yMfmfM69XmG9rGYhkaALwprXzrZ41-nObc9sw5tS3POcpvyA0wm3nPTpUBHUZBaB1etVSvgniiPnwEzCVAnGnUAjlwgdm-AZWPJGWsTbmNva53DIMMxTyEWxttH-qp8jWkVkV1KQJEWPDNjO51uH3U0-avZ5HPCjToaOREU8dkY"/>
+<div class="absolute top-3 right-3 bg-surface-container-high/80 backdrop-blur-md px-2 py-1 rounded-lg border border-outline-variant/20">
+<span class="font-label italic text-[9px] text-primary">5 PLACES</span>
+</div>
+</div>
+<span class="mt-3 font-label italic text-[11px] uppercase tracking-widest text-on-surface-variant px-1">Mar 10–16</span>
+</div>
+<!-- Card 3 -->
+<div onclick="window.location.href='9260443072e24196a22881cd797477f7.html'" class="flex flex-col cursor-pointer">
+<div class="relative aspect-square rounded-xl bg-surface-container border border-outline-variant/10 overflow-hidden hover:border-primary/30 transition-colors group">
+<img alt="Star Map" class="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity" data-alt="geometric constellation pattern with bright focal points over a hazy violet nebula" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZPwzqCFkveGPL2QkErhMP9Z2a0LLS6B8N16d61LL6Is4pYtVYjtSRRc-88lKeB_PJaNYg35oSG8J5wMrjmOsHkrVoCDXNG17ZyRp8sGw-J2b3FvvCrJOcGFo_x1lmEFkvteZhGhBJmv2Z5-4sJSntRoDmtkb0cotNAf6wkPv7wuUz0TDOcjstALQSCyUWiwTn3uyj0U96fv7HqSAyU8pyw7HF7K-fmG4BXCOPIJKTmTTFqRlYoYWclKwNK8KheGJ50UnxZ3wEoiE"/>
+<div class="absolute top-3 right-3 bg-surface-container-high/80 backdrop-blur-md px-2 py-1 rounded-lg border border-outline-variant/20">
+<span class="font-label italic text-[9px] text-primary">8 PLACES</span>
+</div>
+</div>
+<span class="mt-3 font-label italic text-[11px] uppercase tracking-widest text-on-surface-variant px-1">Mar 03–09</span>
+</div>
+<!-- Card 4 -->
+<div onclick="window.location.href='9260443072e24196a22881cd797477f7.html'" class="flex flex-col cursor-pointer">
+<div class="relative aspect-square rounded-xl bg-surface-container border border-outline-variant/10 overflow-hidden hover:border-primary/30 transition-colors group">
+<img alt="Star Map" class="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity" data-alt="fine white lines mapping a zodiac constellation against a pure black star-filled sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABoXnFek4Y4Imin9Ty6_SHCzeDkWF712RvfpX7elU_0RfTy0jGDm134aDuLCKxzMQHUzjCwDyjfoCm1F2mwycRG9-x5xJLt23kaqdMZGKVNc9ZRMQmEQX9CBBblBSZvbGUDf5a3ctp1QUB-peQFmIXXWk0S3D5lcj6V3Y98wOD17a0ISTXYs0763VZGQbcIHHzbcrswVsRuo0Mv51DBWy5omrRxnsahY_RDxWMkPV6izA27Wl4IzkjFmexUbd4oxlYPU6fQtEb8w0"/>
+<div class="absolute top-3 right-3 bg-surface-container-high/80 backdrop-blur-md px-2 py-1 rounded-lg border border-outline-variant/20">
+<span class="font-label italic text-[9px] text-primary">4 PLACES</span>
+</div>
+</div>
+<span class="mt-3 font-label italic text-[11px] uppercase tracking-widest text-on-surface-variant px-1">Feb 24–02</span>
+</div>
+</div>
+<!-- Decorative spacer -->
+<div class="h-16"></div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-[#282a2e]/60 backdrop-blur-xl border-t border-transparent rounded-t-xl">
+<div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#9ccee4]/20 to-transparent"></div>
+<!-- Tab: Constellation -->
+<a onclick="window.location.href='e5b8363685554944b246be9f5cc4b920.html'" class="flex flex-col items-center justify-center text-[#e1e2e7]/40 px-6 py-2 hover:text-[#9ccee4] transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="star">star</span>
+<span class="font-label italic text-[10px] tracking-wider">Constellation</span>
+</a>
+<!-- Tab: Archive (Active) -->
+<a onclick="window.location.href='18cb0f173ca54198861b84c1dc012f1d.html'" class="flex flex-col items-center justify-center text-[#e1e2e7] shadow-[0_0_15px_rgba(156,206,228,0.3)] bg-[#9ccee4]/10 rounded-xl px-6 py-2 transition-all scale-110 cursor-pointer" href="#">
+<span class="material-symbols-outlined text-[#9ccee4] mb-1" data-icon="grid_view" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="font-label italic text-[10px] tracking-wider">Archive</span>
+</a>
+</nav>
+</body></html>

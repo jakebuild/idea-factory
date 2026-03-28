@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Aetheris Noir — Celestial Observer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600&amp;family=Epilogue:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #111417;
+            color: #e1e2e7;
+            font-family: 'Manrope', sans-serif;
+            overflow: hidden; /* Constellation is a full-screen canvas experience */
+        }
+        .celestial-gradient {
+            background: radial-gradient(circle at center, #1d2023 0%, #111417 100%);
+        }
+        .star-glow {
+            box-shadow: 0 0 15px rgba(156, 206, 228, 0.4);
+        }
+        .constellation-line {
+            background: linear-gradient(90deg, transparent 0%, rgba(156, 206, 228, 0.2) 50%, transparent 100%);
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#b6cad2",
+              "surface": "#111417",
+              "on-secondary-fixed": "#0b1e24",
+              "background": "#111417",
+              "surface-variant": "#323539",
+              "surface-tint": "#9ccee4",
+              "on-error": "#690005",
+              "secondary-fixed-dim": "#b6cad2",
+              "surface-container-lowest": "#0c0e12",
+              "outline-variant": "#45474b",
+              "outline": "#8f9095",
+              "surface-container": "#1d2023",
+              "on-secondary": "#21333a",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "primary": "#9ccee4",
+              "on-surface": "#e1e2e7",
+              "primary-fixed-dim": "#9ccee4",
+              "on-tertiary": "#2f3131",
+              "inverse-on-surface": "#2e3134",
+              "on-surface-variant": "#c6c6cb",
+              "secondary-container": "#374951",
+              "surface-bright": "#37393d",
+              "on-tertiary-fixed-variant": "#454747",
+              "inverse-surface": "#e1e2e7",
+              "surface-container-high": "#282a2e",
+              "on-primary-fixed": "#001f29",
+              "on-error-container": "#ffdad6",
+              "error": "#ffb4ab",
+              "on-background": "#e1e2e7",
+              "primary-container": "#00131b",
+              "on-secondary-container": "#a5b8c1",
+              "surface-dim": "#111417",
+              "on-primary-container": "#528398",
+              "error-container": "#93000a",
+              "surface-container-highest": "#323539",
+              "on-primary": "#003545",
+              "secondary-fixed": "#d2e6ef",
+              "on-tertiary-fixed": "#1a1c1c",
+              "surface-container-low": "#191c1f",
+              "tertiary-fixed": "#e2e2e2",
+              "tertiary": "#c6c6c7",
+              "primary-fixed": "#bbe9ff",
+              "on-primary-fixed-variant": "#154d5f",
+              "on-tertiary-container": "#7b7d7d",
+              "on-secondary-fixed-variant": "#374951",
+              "tertiary-container": "#0f1112",
+              "inverse-primary": "#326578"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Epilogue"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background selection:bg-primary/30 min-h-screen flex flex-col">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#111417]/60 backdrop-blur-xl border-b border-transparent">
+<div class="flex flex-col">
+<h1 class="font-headline text-2xl tracking-tight text-[#9ccee4]">Mar 24–30</h1>
+<span class="font-label italic text-xs text-[#e1e2e7]/50">The Celestial Observer</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="font-label italic text-xs text-[#9ccee4]">Day 4 of 7</span>
+<span onclick="window.location.href='4ceceba825d643cfa3c88b03b91466fc.html'" class="material-symbols-outlined text-[#9ccee4] cursor-pointer" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<!-- Luminous Divider -->
+<div class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#9ccee4]/20 to-transparent"></div>
+</header>
+<!-- Main Interactive Canvas -->
+<main class="relative flex-1 celestial-gradient overflow-hidden flex flex-col items-center justify-center">
+<!-- Constellation Visual Layer -->
+<div class="absolute inset-0 z-0">
+<!-- Decorative Star Dust -->
+<div class="absolute inset-0 opacity-20" data-alt="subtle grainy texture with tiny white and blue specks resembling distant star dust on a black background"></div>
+<!-- SVG Constellation Lines -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none">
+<line opacity="0.3" stroke="#9ccee4" stroke-dasharray="4" stroke-width="0.5" x1="20%" x2="50%" y1="30%" y2="50%"></line>
+<line opacity="0.3" stroke="#9ccee4" stroke-dasharray="4" stroke-width="0.5" x1="50%" x2="80%" y1="50%" y2="40%"></line>
+<line opacity="0.3" stroke="#9ccee4" stroke-dasharray="4" stroke-width="0.5" x1="50%" x2="40%" y1="50%" y2="75%"></line>
+<line opacity="0.3" stroke="#9ccee4" stroke-dasharray="4" stroke-width="0.5" x1="40%" x2="15%" y1="75%" y2="85%"></line>
+</svg>
+<!-- Star: North Node (Large Visit Count) -->
+<div class="absolute top-[30%] left-[20%] group cursor-pointer">
+<div class="w-4 h-4 rounded-full bg-on-background star-glow relative">
+<div class="absolute -inset-2 rounded-full border border-primary/10 animate-pulse"></div>
+<div class="absolute -inset-4 rounded-full border border-primary/5"></div>
+</div>
+<div class="mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label italic text-[10px] text-primary block text-center">Work</span>
+</div>
+</div>
+<!-- Star: Home (Bright Center) -->
+<div class="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 group cursor-pointer">
+<div class="w-8 h-8 rounded-full bg-on-background shadow-[0_0_30px_rgba(156,206,228,0.6)] relative flex items-center justify-center">
+<div class="absolute -inset-4 rounded-full border border-primary/20"></div>
+<div class="absolute -inset-8 rounded-full border border-primary/10"></div>
+<div class="w-2 h-2 rounded-full bg-primary animate-ping"></div>
+</div>
+<div class="mt-4">
+<span class="font-headline font-bold text-sm tracking-widest text-[#9ccee4] block text-center uppercase">Home</span>
+<span class="font-label italic text-[10px] text-on-surface-variant block text-center mt-1">42 Visits</span>
+</div>
+</div>
+<!-- Star: East Point -->
+<div class="absolute top-[40%] left-[80%] group cursor-pointer">
+<div class="w-3 h-3 rounded-full bg-on-background/80 star-glow relative">
+<div class="absolute -inset-2 rounded-full border border-primary/5"></div>
+</div>
+<div class="mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label italic text-[10px] text-primary block text-center">Cafe Luna</span>
+</div>
+</div>
+<!-- Star: Southern Marker -->
+<div class="absolute top-[75%] left-[40%] group cursor-pointer">
+<div class="w-5 h-5 rounded-full bg-on-background star-glow relative">
+<div class="absolute -inset-3 rounded-full border border-primary/15"></div>
+</div>
+<div class="mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label italic text-[10px] text-primary block text-center">The Park</span>
+</div>
+</div>
+</div>
+<!-- UI Overlays -->
+<div class="absolute bottom-32 left-0 w-full px-6 z-10 space-y-4">
+<!-- Share Action -->
+<div class="flex justify-end">
+<button onclick="window.location.href='ac32e046011e4d6c819755b326bf10c6.html'" class="w-12 h-12 rounded-full bg-surface-container/80 backdrop-blur-lg flex items-center justify-center border border-outline-variant/20 hover:bg-surface-bright transition-all active:scale-95 shadow-xl">
+<span class="material-symbols-outlined text-primary" data-icon="share">share</span>
+</button>
+</div>
+<!-- Status Banner -->
+<div class="w-full bg-[#374951]/40 backdrop-blur-md rounded-xl p-4 flex items-center gap-3 border border-primary/10">
+<div class="w-2 h-2 rounded-full bg-[#9ccee4] animate-pulse"></div>
+<p class="font-body text-xs text-on-secondary-container tracking-wide">
+                    Check-in mode — constellation updates when you open the app.
+                </p>
+<span class="material-symbols-outlined text-primary text-sm ml-auto" data-icon="info">info</span>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-8 pb-8 pt-4 bg-[#282a2e]/60 backdrop-blur-xl border-t border-transparent">
+<!-- Luminous Divider -->
+<div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#9ccee4]/20 to-transparent"></div>
+<!-- Tab: Constellation (Active) -->
+<a onclick="window.location.href='e5b8363685554944b246be9f5cc4b920.html'" class="flex flex-col items-center justify-center text-[#e1e2e7] shadow-[0_0_15px_rgba(156,206,228,0.3)] bg-[#9ccee4]/10 rounded-xl px-6 py-2 transition-all scale-110 cursor-pointer" href="#">
+<span class="material-symbols-outlined text-[#9ccee4] mb-1" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label italic text-[10px] tracking-wider">Constellation</span>
+</a>
+<!-- Tab: Archive -->
+<a onclick="window.location.href='18cb0f173ca54198861b84c1dc012f1d.html'" class="flex flex-col items-center justify-center text-[#e1e2e7]/40 px-6 py-2 hover:text-[#9ccee4] transition-all cursor-pointer" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="grid_view">grid_view</span>
+<span class="font-label italic text-[10px] tracking-wider">Archive</span>
+</a>
+</nav>
+<!-- Atmospheric Overlay (Vignette) -->
+<div class="fixed inset-0 pointer-events-none shadow-[inset_0_0_150px_rgba(0,0,0,0.8)] z-40"></div>
+</body></html>
