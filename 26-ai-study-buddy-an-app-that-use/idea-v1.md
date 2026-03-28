@@ -1,0 +1,8 @@
+# Idea #26: AI Study Buddy An app that uses AI to listen and track if a kid is studying or eating. The phone's microphone listens to detect if the child is still working (keyboard typing, page turning, chewing sounds). If the AI detects the child has stopped for too long, it speaks aloud to remind them: 'Hey! You're supposed to be studying!' or 'Keep eating!' The AI learns patterns — it knows the child usually takes a break after 20 minutes, so it waits appropriately before nudging. Parents can set study/eat sessions with timers. The AI is patient, encouraging, and never angry — just a gentle voice that keeps kids on track when parents aren't in the room. Blocks: Microphone (sensor) + AI voice detection + Voice synthesis (AI talks to child) + Timer/mechanism + Parent dashboard.
+
+## Version: v1 (Original)
+**Date:** 2026-03-28 18:52
+**Status:** submitted
+
+## Description
+AI Study Buddy An app that uses AI to listen and track if a kid is studying or eating. The phone's microphone listens to detect if the child is still working (keyboard typing, page turning, chewing sounds). If the AI detects the child has stopped for too long, it speaks aloud to remind them: 'Hey! You're supposed to be studying!' or 'Keep eating!' The AI learns patterns — it knows the child usually takes a break after 20 minutes, so it waits appropriately before nudging. Parents can set study/eat sessions with timers. The AI is patient, encouraging, and never angry — just a gentle voice that keeps kids on track when parents aren't in the room. Blocks: Microphone (sensor) + AI voice detection + Voice synthesis (AI talks to child) + Timer/mechanism + Parent dashboard.
