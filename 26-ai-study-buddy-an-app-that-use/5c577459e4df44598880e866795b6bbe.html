@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>Welcome to Kinetic Scholar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary-container": "#f98c49",
+                "surface-container-low": "#ffede3",
+                "surface-container-lowest": "#ffffff",
+                "surface-bright": "#fff4ef",
+                "on-background": "#492604",
+                "tertiary-container": "#fad538",
+                "surface-container-highest": "#ffd5b6",
+                "on-secondary-fixed-variant": "#00548a",
+                "inverse-surface": "#1b0a00",
+                "surface-tint": "#974300",
+                "on-primary-fixed-variant": "#572400",
+                "on-tertiary-fixed": "#443700",
+                "on-error-container": "#520c00",
+                "on-primary-fixed": "#1a0600",
+                "surface-container-high": "#ffdcc3",
+                "surface-container": "#ffe3d0",
+                "outline": "#9d6c44",
+                "on-primary": "#fff0e9",
+                "on-tertiary": "#fff2ce",
+                "error-dim": "#b92902",
+                "tertiary-fixed": "#fad538",
+                "outline-variant": "#d9a175",
+                "inverse-primary": "#f98c49",
+                "secondary-fixed-dim": "#96c8ff",
+                "on-tertiary-container": "#5a4a00",
+                "secondary-container": "#b1d5ff",
+                "primary-fixed-dim": "#e87f3d",
+                "secondary": "#005f9c",
+                "secondary-fixed": "#b1d5ff",
+                "surface-dim": "#ffcaa1",
+                "primary-fixed": "#f98c49",
+                "on-error": "#ffefec",
+                "secondary-dim": "#005389",
+                "primary-dim": "#843a00",
+                "error": "#b02500",
+                "tertiary": "#6d5a00",
+                "error-container": "#f95630",
+                "on-secondary": "#ecf3ff",
+                "on-primary-container": "#491d00",
+                "surface": "#fff4ef",
+                "on-secondary-fixed": "#00365c",
+                "on-secondary-container": "#004a7b",
+                "on-surface": "#492604",
+                "on-surface-variant": "#7e522c",
+                "background": "#fff4ef",
+                "tertiary-fixed-dim": "#ebc729",
+                "tertiary-dim": "#5f4e00",
+                "on-tertiary-fixed-variant": "#655300",
+                "inverse-on-surface": "#c79266",
+                "surface-variant": "#ffd5b6",
+                "primary": "#974300"
+              },
+              fontFamily: {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Be Vietnam Pro"],
+                "label": ["Be Vietnam Pro"]
+              },
+              borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fff4ef;
+            background-image: radial-gradient(#97430010 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-surface min-h-screen flex flex-col">
+<header class="w-full top-0 sticky no-border bg-[#fff4ef] dark:bg-stone-900 z-50">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#974300] dark:text-[#f98c49]" data-icon="menu_book">menu_book</span>
+<h1 class="font-['Plus_Jakarta_Sans'] font-black italic tracking-tight text-display-sm text-[#974300] dark:text-[#f98c49]">Kinetic Scholar</h1>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center px-6 py-10 max-w-4xl mx-auto w-full">
+<div class="text-center mb-12">
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-on-surface tracking-tight mb-4">Choose Your Buddy</h2>
+<p class="text-on-surface-variant text-lg max-w-md mx-auto">Pick the energy that helps you focus best. You can always switch later!</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mb-16">
+<div class="group relative bg-secondary-container rounded-xl p-8 pt-16 transition-all duration-300 hover:scale-[1.02] cursor-pointer ring-4 ring-transparent hover:ring-secondary-fixed-dim">
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-40 h-40 bg-secondary-fixed-dim rounded-full overflow-hidden border-8 border-surface shadow-xl group-hover:-translate-y-2 transition-transform">
+<img alt="Max character" class="w-full h-full object-cover" data-alt="A friendly, relaxed animated male character with messy hair wearing an oversized hoodie and glasses, looking calm and supportive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE55l0ogfMDaAac4ICqzFRX0OUlFZLtHXRCZbi7ENMbpDcCgc9DxY_AAwT68usktGCvruakw4Ruvr9oMYSMP14rB7fxc0w_n8OXGe97Ownw23iRXLpdVcwyXN9t9au6uNdV5oljUfgZgffjEfjtfVNS0L2wUvtOAt0PzQQu3o4qUxzwMDp__TjcXDA5EvyAvHBABJ7KypWYCtZDTrk--W-xSRBtJ_QGHMX6g4raN8CBu0MgV2JCFgHAAGfav8wjPKUN29t-xfet_w"/>
+</div>
+<div class="text-center mt-12">
+<span class="bg-white/40 text-on-secondary-fixed-variant px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-3 inline-block">THE MENTOR</span>
+<h3 class="font-headline font-extrabold text-3xl text-on-secondary-fixed mb-2">Max</h3>
+<p class="text-on-secondary-container leading-relaxed">"The cool, calm voice for when you're feeling overwhelmed."</p>
+</div>
+</div>
+<div class="group relative bg-tertiary-container rounded-xl p-8 pt-16 transition-all duration-300 hover:scale-[1.02] cursor-pointer ring-4 ring-transparent hover:ring-tertiary-fixed-dim">
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 w-40 h-40 bg-tertiary-fixed-dim rounded-full overflow-hidden border-8 border-surface shadow-xl group-hover:-translate-y-2 transition-transform">
+<img alt="Spark character" class="w-full h-full object-cover" data-alt="A bright, high-energy animated female character with vibrant yellow-streaked hair and a huge smile, wearing a sporty jacket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGDTyxP4-RFJRlRWesO8f9NTWnLqqEBXuBTI14BXGrhW0d2Xyd0EbFZEdCJYF_yQbcJ-Dnumeib5t8BvERHnI2UUpmXxRrn3UWOykaVlcrFcjkFKsJy6vbTSOEMSXDCwwd6GSuaruag5Q7xEN0GQRyI0dHQotuBEsX1NVS-GD7CjFLRvz5_zbU6fNTG5X1mTW1q4x_vw6JkJOYHMxpJRdAieDelE9OVT2XHzaW4yePMvdeUj6MyXX-9ZTSjGopTfsF3gnMK4osvFo"/>
+</div>
+<div class="text-center mt-12">
+<span class="bg-white/40 text-on-tertiary-fixed px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-3 inline-block">THE HYPE COACH</span>
+<h3 class="font-headline font-extrabold text-3xl text-on-tertiary-fixed mb-2">Spark</h3>
+<p class="text-on-tertiary-container leading-relaxed">"Your high-energy cheerleader to power through those study sessions!"</p>
+</div>
+</div>
+</div>
+<section class="w-full bg-surface-container-low rounded-lg p-8 mb-10 border-b-4 border-surface-container-highest">
+<div class="max-w-md mx-auto">
+<div class="flex items-center gap-3 mb-8 p-4 bg-white/50 rounded-lg">
+<input class="w-6 h-6 rounded border-outline-variant text-primary focus:ring-primary" id="age-gate" type="checkbox"/>
+<label class="text-on-surface font-medium select-none" for="age-gate">I confirm I'm 13 years or older.</label>
+</div>
+<div class="space-y-4">
+<label class="block text-center text-on-surface-variant font-bold text-sm tracking-wide uppercase">Setup Parent PIN</label>
+<div class="flex justify-center gap-4">
+<input class="w-14 h-18 text-center text-3xl font-black bg-surface-container-highest border-0 rounded-lg focus:ring-b-4 focus:ring-primary text-primary transition-all" maxlength="1" placeholder="•" type="password"/>
+<input class="w-14 h-18 text-center text-3xl font-black bg-surface-container-highest border-0 rounded-lg focus:ring-b-4 focus:ring-primary text-primary transition-all" maxlength="1" placeholder="•" type="password"/>
+<input class="w-14 h-18 text-center text-3xl font-black bg-surface-container-highest border-0 rounded-lg focus:ring-b-4 focus:ring-primary text-primary transition-all" maxlength="1" placeholder="•" type="password"/>
+<input class="w-14 h-18 text-center text-3xl font-black bg-surface-container-highest border-0 rounded-lg focus:ring-b-4 focus:ring-primary text-primary transition-all" maxlength="1" placeholder="•" type="password"/>
+</div>
+<p class="text-center text-on-surface-variant text-xs mt-4">Keep your settings secure and study time focused.</p>
+</div>
+</div>
+</section>
+<button onclick="window.location.href='e74f1ccd401d445cb6f4dd5ca9cb0251.html'" class="w-full max-w-sm py-5 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-headline font-bold text-xl shadow-xl hover:scale-95 active:scale-90 transition-all duration-200">
+            Get Started
+        </button>
+</main>
+<footer class="pb-10 pt-4 px-6 text-center text-on-surface-variant opacity-60 text-sm">
+<p>© 2024 Kinetic Scholar. Empowering students everywhere.</p>
+</footer>
+
+</body></html>

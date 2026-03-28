@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#974300",
+              "error-container": "#f95630",
+              "on-tertiary-fixed-variant": "#655300",
+              "inverse-surface": "#1b0a00",
+              "surface-container-low": "#ffede3",
+              "on-secondary-container": "#004a7b",
+              "on-primary": "#fff0e9",
+              "inverse-on-surface": "#c79266",
+              "surface-bright": "#fff4ef",
+              "on-tertiary-container": "#5a4a00",
+              "secondary-dim": "#005389",
+              "tertiary": "#6d5a00",
+              "tertiary-container": "#fad538",
+              "primary-fixed-dim": "#e87f3d",
+              "surface-tint": "#974300",
+              "secondary-container": "#b1d5ff",
+              "secondary": "#005f9c",
+              "on-secondary-fixed": "#00365c",
+              "surface-dim": "#ffcaa1",
+              "surface-container-high": "#ffdcc3",
+              "on-tertiary-fixed": "#443700",
+              "error": "#b02500",
+              "tertiary-dim": "#5f4e00",
+              "on-primary-fixed": "#1a0600",
+              "surface": "#fff4ef",
+              "on-surface": "#492604",
+              "on-background": "#492604",
+              "error-dim": "#b92902",
+              "on-tertiary": "#fff2ce",
+              "on-surface-variant": "#7e522c",
+              "on-secondary-fixed-variant": "#00548a",
+              "surface-variant": "#ffd5b6",
+              "on-error": "#ffefec",
+              "on-error-container": "#520c00",
+              "tertiary-fixed-dim": "#ebc729",
+              "primary-dim": "#843a00",
+              "surface-container": "#ffe3d0",
+              "primary-container": "#f98c49",
+              "primary-fixed": "#f98c49",
+              "surface-container-lowest": "#ffffff",
+              "outline": "#9d6c44",
+              "secondary-fixed": "#b1d5ff",
+              "on-primary-fixed-variant": "#572400",
+              "inverse-primary": "#f98c49",
+              "tertiary-fixed": "#fad538",
+              "background": "#fff4ef",
+              "outline-variant": "#d9a175",
+              "on-primary-container": "#491d00",
+              "on-secondary": "#ecf3ff",
+              "surface-container-highest": "#ffd5b6",
+              "secondary-fixed-dim": "#96c8ff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .paper-grain {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        opacity: 0.05;
+        pointer-events: none;
+      }
+      .soft-glow {
+        box-shadow: 0 0 40px -10px rgba(249, 140, 73, 0.4);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface min-h-screen pb-32 overflow-x-hidden">
+<div class="fixed inset-0 paper-grain z-0"></div>
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 backdrop-blur-xl bg-[#fff4ef]/80 dark:bg-orange-950/20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center overflow-hidden border-2 border-primary-container">
+<img class="w-full h-full object-cover" data-alt="A friendly, stylized orange AI character named Spark with expressive digital eyes and a floating metallic halo, vibrant 3D animation style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_oTgfN3rMRHoG6yp2pO_H_kShe_tm_3eB28B5d1MElMzLoPvoJJn8xdBKsyraY9rFmA8xRsezPAWdoz6aR7XPgxECaJI5ZyYgd5mLSSR38HcMQf8t70q7aOvgzRU_BVLMQSy2Nqyr5TIswsiBcElSqtOGA42qrQeZZ-g7yy9ROp-ErfpHeT4NGXjx8_hb1uzrrNjI7WGiVSVQU_oG8HJWputOreHhNI_YSIe6sDY5ncYSxWGfnAoF2d2xO9-VIzLy-xDlIC5WZBM"/>
+</div>
+<span class="font-headline font-bold tracking-tight text-2xl text-orange-700 dark:text-orange-400">Kinetic Scholar</span>
+</div>
+<div class="text-orange-700 dark:text-orange-400">
+<span class="material-symbols-outlined text-3xl" data-icon="local_fire_department"><a onclick="window.location.href='c70c9098b72441e9bc77b460ec403779.html'" class="cursor-pointer">local_fire_department</span>
+</div></a>
+</header>
+<main class="relative z-10 pt-24 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Stats Section: Organic Layering -->
+<section class="grid grid-cols-2 gap-4">
+<div class="col-span-2 bg-surface-container-low p-6 rounded-xl flex items-center justify-between">
+<div>
+<h2 class="font-headline font-bold text-3xl text-primary tracking-tight">5 day streak! 🔥</h2>
+<p class="text-on-surface-variant font-medium">You're on fire today, keep it up!</p>
+</div>
+</div>
+<div class="bg-surface-container-high p-5 rounded-xl flex flex-col justify-between aspect-square md:aspect-auto md:h-32">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="auto_stories">auto_stories</span>
+<div>
+<div class="text-2xl font-bold text-primary">2 sessions</div>
+<div class="text-sm text-on-surface-variant font-medium">Done today</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-5 rounded-xl flex flex-col justify-between aspect-square md:aspect-auto md:h-32">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="history">history</span>
+<div>
+<div class="text-xl font-bold text-on-surface">Last: Bio</div>
+<div class="text-sm text-on-surface-variant font-medium">45m session</div>
+</div>
+</div>
+</section>
+<!-- Hero Action & Buddy -->
+<section class="relative bg-gradient-to-br from-surface-container to-surface-container-low rounded-xl p-8 overflow-visible mt-12">
+<div class="w-2/3 space-y-6">
+<h1 class="font-headline font-extrabold text-4xl text-on-surface leading-tight">Ready for a <span class="text-primary">breakthrough?</span></h1>
+<button onclick="window.location.href='ae4f210c7f2d43ce912e5ef8620498ca.html'" class="bg-gradient-to-r from-primary to-primary-fixed text-on-primary px-8 py-5 rounded-xl font-bold text-xl soft-glow flex items-center gap-3 transition-transform active:scale-95">Start Session <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span><span class="material-symbols-outlined" data-icon="bolt" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</button>
+</div>
+<!-- Character "Spark" Breaking Container -->
+<div class="absolute -right-4 -top-12 w-48 h-64 pointer-events-none">
+<img class="w-full h-full object-contain" data-alt="Cute orange robotic AI buddy named Spark floating in a welcoming pose, soft 3D rendering with glowing orange accents and friendly digital eyes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_R1FvBwYNrST5bTnEjIA588neCW_NMPsVHoZlOKt2pHrSnlM6BJ_fwsyAY6S4zPtG0c6v5_aRHa4LsSJZktDrnzjklnt8aMVKtk9TZ0p5L2OYFKDe4kaYbuTJDprYEND_-xS_fMkK-3NUxfuwuSll9YO_2MgS0fhvOFti33VcEDmGneuJBzH-cMyGmDaiZEf7y9bVAEC4H3C91ZsHfEIiPAJO3XRbm3IF7Unt8YdeLkyAp_xXfFoRvzcH13zLXd1L5UvFnNp50zM"/>
+</div>
+</section>
+<!-- Input Section: Semantic Shells -->
+<section class="bg-surface-container-lowest rounded-xl p-6 space-y-8 shadow-sm">
+<!-- Subject Input -->
+<div class="space-y-3">
+<label class="text-on-surface-variant font-bold text-sm tracking-widest uppercase px-1">What are we studying?</label>
+<div class="relative group">
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-5 text-lg font-medium text-on-surface placeholder:text-on-surface-variant/50 focus:ring-0 focus:outline-none transition-all" placeholder="e.g. Molecular Biology" type="text"/>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[3px] bg-primary rounded-full transition-all duration-300 group-within:w-[96%]"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Duration Picker -->
+<div class="space-y-3">
+<label class="text-on-surface-variant font-bold text-sm tracking-widest uppercase px-1">Duration</label>
+<div class="flex flex-wrap gap-2">
+<button class="bg-surface-container-high px-5 py-3 rounded-full font-bold text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors">15 min</button>
+<button class="bg-primary-container px-6 py-3 rounded-full font-bold text-on-primary-container soft-glow">25 min</button>
+<button class="bg-surface-container-high px-5 py-3 rounded-full font-bold text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors">45 min</button>
+</div>
+</div>
+<!-- Break Picker -->
+<div class="space-y-3">
+<label class="text-on-surface-variant font-bold text-sm tracking-widest uppercase px-1">Break</label>
+<div class="flex flex-wrap gap-2">
+<button class="bg-surface-container-high px-6 py-3 rounded-full font-bold text-on-surface-variant hover:bg-tertiary-container hover:text-on-tertiary-container transition-colors">5 min</button>
+<button class="bg-surface-container-high px-6 py-3 rounded-full font-bold text-on-surface-variant hover:bg-tertiary-container hover:text-on-tertiary-container transition-colors">10 min</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Tips / Contextual Info -->
+<section class="bg-tertiary-container/30 border-2 border-dashed border-tertiary-container rounded-xl p-5 flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary mt-1" data-icon="lightbulb" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<p class="text-on-tertiary-container font-medium text-sm leading-relaxed">
+                Spark says: "25 minutes is the sweet spot for memorizing vocabulary. Let's crush those Bio terms!"
+            </p>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-4 bg-[#fff4ef]/90 backdrop-blur-2xl shadow-[0_-10px_40px_rgba(0,0,0,0.04)] rounded-t-[3rem]">
+<a class="flex flex-col items-center justify-center bg-[#f98c49] text-white rounded-full px-6 py-2 transition-all active:scale-[0.96]" onclick="window.location.href='e74f1ccd401d445cb6f4dd5ca9cb0251.html'">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Be_Vietnam_Pro'] font-medium text-[12px]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 px-6 py-2 hover:text-[#974300] transition-all active:scale-[0.96]" onclick="window.location.href='e74f1ccd401d445cb6f4dd5ca9cb0251.html'">
+<span class="material-symbols-outlined">history</span>
+<span class="font-['Be_Vietnam_Pro'] font-medium text-[12px]">History</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 px-6 py-2 hover:text-[#974300] transition-all active:scale-[0.96]" onclick="window.location.href='c6a9ddfddf6647d6bbd6d161320f2286.html'">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Be_Vietnam_Pro'] font-medium text-[12px]">Settings</span>
+</a>
+</nav>
+</body></html>

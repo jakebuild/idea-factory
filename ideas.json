@@ -78,5 +78,15 @@
     "folder": "25-shakeshot-each-morning-you-get",
     "startScreenId": "a300b4a31bf947f3b265de2ac01bb393",
     "status": "complete"
+  },
+  {
+    "num": 26,
+    "title": "AI Study Buddy",
+    "sub": "Voice-based Pomodoro companion with AI check-ins for teens",
+    "score": "8/10",
+    "deviceType": "MOBILE",
+    "folder": "26-ai-study-buddy-an-app-that-use",
+    "startScreenId": "e74f1ccd401d445cb6f4dd5ca9cb0251",
+    "status": "complete"
   }
 ]

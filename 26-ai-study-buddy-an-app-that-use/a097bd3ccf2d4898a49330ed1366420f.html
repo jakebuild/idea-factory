@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be_Vietnam_Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-dim": "#005389",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-highest": "#ffd5b6",
+              "surface-variant": "#ffd5b6",
+              "error-dim": "#b92902",
+              "on-primary-container": "#491d00",
+              "surface-tint": "#974300",
+              "secondary": "#005f9c",
+              "surface-bright": "#fff4ef",
+              "on-background": "#492604",
+              "tertiary": "#6d5a00",
+              "on-tertiary-container": "#5a4a00",
+              "outline-variant": "#d9a175",
+              "on-tertiary-fixed": "#443700",
+              "on-secondary-fixed": "#00365c",
+              "on-secondary-fixed-variant": "#00548a",
+              "on-tertiary": "#fff2ce",
+              "surface-dim": "#ffcaa1",
+              "primary-fixed-dim": "#e87f3d",
+              "inverse-primary": "#f98c49",
+              "surface-container": "#ffe3d0",
+              "on-surface-variant": "#7e522c",
+              "on-primary-fixed-variant": "#572400",
+              "primary-fixed": "#f98c49",
+              "tertiary-fixed-dim": "#ebc729",
+              "secondary-fixed": "#b1d5ff",
+              "surface-container-high": "#ffdcc3",
+              "on-surface": "#492604",
+              "surface-container-low": "#ffede3",
+              "error-container": "#f95630",
+              "on-primary": "#fff0e9",
+              "primary-dim": "#843a00",
+              "on-tertiary-fixed-variant": "#655300",
+              "tertiary-dim": "#5f4e00",
+              "on-error-container": "#520c00",
+              "tertiary-fixed": "#fad538",
+              "on-secondary-container": "#004a7b",
+              "on-primary-fixed": "#1a0600",
+              "error": "#b02500",
+              "primary-container": "#f98c49",
+              "secondary-container": "#b1d5ff",
+              "background": "#fff4ef",
+              "outline": "#9d6c44",
+              "secondary-fixed-dim": "#96c8ff",
+              "on-secondary": "#ecf3ff",
+              "on-error": "#ffefec",
+              "inverse-surface": "#1b0a00",
+              "surface": "#fff4ef",
+              "inverse-on-surface": "#c79266",
+              "primary": "#974300",
+              "tertiary-container": "#fad538"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="bg-[#fff4ef] dark:bg-stone-950 flex items-center justify-between px-6 py-4 w-full docked full-width top-0 z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-orange-600 dark:text-orange-400 text-2xl" data-icon="coffee">coffee</span>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-display-sm text-[#974300] dark:text-[#f98c49]">Break Time</h1>
+</div>
+<div class="flex gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-orange-50 dark:hover:bg-stone-800 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-stone-500 dark:text-stone-400" data-icon="settings">settings</span>
+</button>
+</div>
+</nav>
+<main class="relative px-6 pt-8 pb-32 max-w-2xl mx-auto overflow-hidden">
+<!-- Progress Indicator -->
+<div class="flex justify-center mb-8">
+<div class="bg-surface-container-low px-6 py-2 rounded-full flex items-center gap-3 border border-outline-variant/10">
+<div class="flex gap-1.5">
+<div class="w-6 h-2 rounded-full bg-tertiary"></div>
+<div class="w-6 h-2 rounded-full bg-surface-dim"></div>
+<div class="w-6 h-2 rounded-full bg-surface-dim"></div>
+</div>
+<span class="text-label text-on-surface-variant font-medium text-xs tracking-wider">Block 1 of 3</span>
+</div>
+</div>
+<!-- Timer Section -->
+<div class="relative flex flex-col items-center justify-center mb-12">
+<!-- Decorative Glow -->
+<div class="absolute w-72 h-72 bg-primary-container/20 rounded-full blur-[60px] -z-10"></div>
+<!-- Countdown Circle -->
+<div class="relative w-64 h-64 rounded-full bg-surface-container-lowest flex flex-col items-center justify-center shadow-lg border-8 border-surface-container-high overflow-hidden">
+<!-- Inner Progress Ring (Simplified CSS Representation) -->
+<svg class="absolute inset-0 w-full h-full -rotate-90">
+<circle class="text-primary-container/30" cx="50%" cy="50%" fill="none" r="46%" stroke="currentColor" stroke-dasharray="100 100" stroke-width="8"></circle>
+<circle class="text-primary" cx="50%" cy="50%" fill="none" r="46%" stroke="currentColor" stroke-dasharray="85 100" stroke-width="8"></circle>
+</svg>
+<span class="font-headline font-extrabold text-7xl text-on-background tracking-tighter">4:35</span>
+<span class="text-on-surface-variant font-medium mt-1">minutes left</span>
+</div>
+</div>
+<!-- Buddy Section -->
+<div class="relative mt-16 mb-24">
+<!-- Character Card (Asymmetric Layout) -->
+<div class="bg-gradient-to-br from-secondary-container to-secondary-fixed-dim rounded-xl p-8 pt-16 relative shadow-sm max-w-md mx-auto">
+<!-- Character Illustration (Breaking the container edge) -->
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-48 h-48 drop-shadow-xl">
+<img alt="Spark Buddy Relaxing" class="w-full h-full object-contain" data-alt="A cute friendly yellow rounded robot character lounging in a small beach chair wearing sunglasses holding a colorful juice box with a straw" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRY-xUyf9DVfLXVIvLLzaSUJEEwofpmAi6H2oItHxfkX9o_nwBeTCYTyAuTE6g0jSHa1VspqnL7I5XfymIAqB6-HqDkb8drpIhCoLL72hferaemvBWHKM0dzyIZNL3QmuLj76D3dg99vYskhzNn42jm0XhOsXZ6Wn-FF2_ZZjsEYJY9TaBLedoWAHGOBkWb0hga4p9aaEnTd2EyrSqBo__jfqr3qe5jTEKapAeVEKH2PoWw2geVxg-QNw6Bg8ltaZWahzpasrwB6A"/>
+</div>
+<!-- Speech Bubble -->
+<div class="bg-surface-container-lowest rounded-2xl rounded-tl-none p-5 relative shadow-sm border border-outline-variant/10">
+<p class="font-body text-on-surface text-lg font-medium leading-relaxed italic">
+                        "You crushed that block! Take a breather."
+                    </p>
+<!-- Speech bubble tail -->
+<div class="absolute -top-3 left-0 w-6 h-6 bg-surface-container-lowest rotate-45 border-l border-t border-outline-variant/10"></div>
+</div>
+<!-- Subtle Decorative Elements -->
+<div class="flex justify-center gap-4 mt-6">
+<div class="flex items-center gap-2 bg-white/40 px-3 py-1.5 rounded-full text-sm font-medium text-secondary-dim">
+<span class="material-symbols-outlined text-sm" data-icon="energy_savings_leaf">energy_savings_leaf</span>
+                        Recharge Mode
+                    </div>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="flex justify-center px-6">
+<button onclick="window.location.href='ae4f210c7f2d43ce912e5ef8620498ca.html'" class="group w-full max-w-xs py-4 px-8 border-2 border-outline-variant/30 rounded-xl font-headline font-bold text-on-surface-variant hover:bg-surface-container transition-all active:scale-95 duration-200 flex items-center justify-center gap-2"><span class="material-symbols-outlined group-hover:rotate-12 transition-transform" data-icon="play_arrow">play_arrow</span> Skip Break </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-4 bg-[#fff4ef]/90 backdrop-blur-2xl shadow-[0_-10px_40px_rgba(0,0,0,0.04)] rounded-t-[3rem]">
+<a class="flex flex-col items-center justify-center bg-[#f98c49] text-white rounded-full px-6 py-2 transition-all active:scale-[0.96]" onclick="window.location.href='e74f1ccd401d445cb6f4dd5ca9cb0251.html'">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Be_Vietnam_Pro'] font-medium text-[12px]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 px-6 py-2 hover:text-[#974300] transition-all active:scale-[0.96]" onclick="window.location.href='e74f1ccd401d445cb6f4dd5ca9cb0251.html'">
+<span class="material-symbols-outlined">history</span>
+<span class="font-['Be_Vietnam_Pro'] font-medium text-[12px]">History</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-500 px-6 py-2 hover:text-[#974300] transition-all active:scale-[0.96]" onclick="window.location.href='c6a9ddfddf6647d6bbd6d161320f2286.html'">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Be_Vietnam_Pro'] font-medium text-[12px]">Settings</span>
+</a>
+</nav>
+</body></html>

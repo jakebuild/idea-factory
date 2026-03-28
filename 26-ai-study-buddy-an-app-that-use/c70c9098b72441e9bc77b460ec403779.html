@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<title>Parent View - Kinetic Scholar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be_Vietnam_Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#004a7b",
+              "primary": "#974300",
+              "on-tertiary-fixed": "#443700",
+              "error-dim": "#b92902",
+              "tertiary-fixed": "#fad538",
+              "tertiary": "#6d5a00",
+              "on-surface": "#492604",
+              "on-secondary-fixed": "#00365c",
+              "primary-fixed-dim": "#e87f3d",
+              "surface-tint": "#974300",
+              "error": "#b02500",
+              "outline": "#9d6c44",
+              "on-surface-variant": "#7e522c",
+              "error-container": "#f95630",
+              "inverse-primary": "#f98c49",
+              "primary-dim": "#843a00",
+              "on-background": "#492604",
+              "on-secondary-fixed-variant": "#00548a",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#96c8ff",
+              "inverse-on-surface": "#c79266",
+              "secondary-container": "#b1d5ff",
+              "outline-variant": "#d9a175",
+              "on-tertiary-container": "#5a4a00",
+              "surface-bright": "#fff4ef",
+              "secondary": "#005f9c",
+              "surface-dim": "#ffcaa1",
+              "primary-fixed": "#f98c49",
+              "background": "#fff4ef",
+              "surface-container-highest": "#ffd5b6",
+              "surface-container": "#ffe3d0",
+              "tertiary-dim": "#5f4e00",
+              "primary-container": "#f98c49",
+              "on-primary": "#fff0e9",
+              "on-error": "#ffefec",
+              "on-tertiary-fixed-variant": "#655300",
+              "on-primary-fixed": "#1a0600",
+              "secondary-fixed": "#b1d5ff",
+              "surface-container-high": "#ffdcc3",
+              "surface-container-low": "#ffede3",
+              "on-tertiary": "#fff2ce",
+              "on-secondary": "#ecf3ff",
+              "on-primary-fixed-variant": "#572400",
+              "tertiary-fixed-dim": "#ebc729",
+              "surface-variant": "#ffd5b6",
+              "surface": "#fff4ef",
+              "tertiary-container": "#fad538",
+              "secondary-dim": "#005389",
+              "on-error-container": "#520c00",
+              "inverse-surface": "#1b0a00",
+              "on-primary-container": "#491d00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #fff4ef;
+        }
+        h1, h2, h3, .font-headline {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fff4ef] dark:bg-stone-950/80 backdrop-blur-xl flex items-center justify-between px-6 py-4 w-full max-w-none">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-orange-600 dark:text-orange-400" data-icon="lock">lock</span>
+<h1 class="text-xl font-bold text-stone-900 dark:text-stone-100 font-['Plus_Jakarta_Sans'] font-bold tracking-tight">Parent View</h1>
+</div>
+<button onclick="window.location.href='e74f1ccd401d445cb6f4dd5ca9cb0251.html'" class="text-sm font-bold text-primary px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container active:scale-95 transition-all">Exit</button>
+<div class="absolute bottom-0 left-0 bg-stone-200/50 dark:bg-stone-800/50 h-px w-full"></div>
+</header>
+<main class="pt-24 pb-12 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column: Navigation Drawer Shell (As a Sidebar) -->
+<aside class="hidden lg:block lg:col-span-3">
+<nav class="bg-stone-50 dark:bg-stone-900 rounded-r-3xl h-full p-6 shadow-2xl shadow-stone-200/50 dark:shadow-none space-y-2">
+<div class="mb-8 left_align">
+<div class="flex items-center gap-3 mb-2">
+<img alt="Parent Profile Avatar" class="w-12 h-12 rounded-full object-cover border-2 border-primary-container" data-alt="Close-up portrait of a professional woman with a kind expression, soft natural indoor lighting, warm tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlf8t0pvfIG21XZy3Ua3FOzywrwtmS6IKjI45Up9rp4ARUpRWJNbxOWrV60PdXe7L9PuyWwTVALX-WiYeHNvUxBAEYlNGltXeLPYLYeqlmrMk5PBhE-6RfhF47A8o-0n_TFqWeuD_FKAWYgE9HhqTuZoiwZ-AVP444Ht_wR3NLEMtaqjymWNutgW6drIvgVN4rHJ8397Ifnhhoi5_BNc9LQ9z_wo8udPsebfkVj9SG4eM3z1I7wDytsC5fT4CubTcIlY0axGeVyC8"/>
+<div>
+<p class="font-['Plus_Jakarta_Sans'] font-extrabold text-orange-600 text-sm">Guardian Portal</p>
+<p class="text-xs text-stone-500 font-medium">Secure Mode Active</p>
+</div>
+</div>
+<span class="inline-block bg-orange-100 text-orange-700 text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">Verified</span>
+</div>
+<a class="flex items-center gap-3 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-100 rounded-full px-4 py-3 active:scale-[0.98] transition-transform font-['Be_Vietnam_Pro'] text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span>Overview</span>
+</a>
+<a class="flex items-center gap-3 text-stone-600 dark:text-stone-400 px-4 py-3 hover:bg-stone-200/50 dark:hover:bg-stone-800/50 rounded-full active:scale-[0.98] transition-transform font-['Be_Vietnam_Pro'] text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span>Student Activity</span>
+</a>
+<a class="flex items-center gap-3 text-stone-600 dark:text-stone-400 px-4 py-3 hover:bg-stone-200/50 dark:hover:bg-stone-800/50 rounded-full active:scale-[0.98] transition-transform font-['Be_Vietnam_Pro'] text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="security">security</span>
+<span>Safety Controls</span>
+</a>
+<a class="flex items-center gap-3 text-stone-600 dark:text-stone-400 px-4 py-3 hover:bg-stone-200/50 dark:hover:bg-stone-800/50 rounded-full active:scale-[0.98] transition-transform font-['Be_Vietnam_Pro'] text-sm" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span>Subscription</span>
+</a>
+</nav>
+</aside>
+<!-- Right Column: Main Content -->
+<div class="lg:col-span-9 space-y-8">
+<!-- Hero Stats / Bento Grid Start -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Weekly Subject Breakdown -->
+<section class="bg-surface-container-low rounded-xl p-8 flex flex-col justify-between">
+<div>
+<h2 class="text-xl font-bold mb-6 text-on-surface">Weekly Subject Breakdown</h2>
+<div class="flex items-end justify-around h-48 gap-4 mb-4">
+<div class="flex flex-col items-center w-full max-w-[40px] gap-2">
+<span class="text-xs font-bold text-stone-500">10h</span>
+<div class="w-full bg-primary rounded-t-full" style="height: 100%"></div>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-stone-400">Bio</span>
+</div>
+<div class="flex flex-col items-center w-full max-w-[40px] gap-2">
+<span class="text-xs font-bold text-stone-500">5h</span>
+<div class="w-full bg-secondary rounded-t-full" style="height: 50%"></div>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-stone-400">Hist</span>
+</div>
+<div class="flex flex-col items-center w-full max-w-[40px] gap-2">
+<span class="text-xs font-bold text-stone-500">3h</span>
+<div class="w-full bg-tertiary rounded-t-full" style="height: 30%"></div>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-stone-400">Math</span>
+</div>
+<div class="flex flex-col items-center w-full max-w-[40px] gap-2">
+<span class="text-xs font-bold text-stone-500">2h</span>
+<div class="w-full bg-outline-variant rounded-t-full" style="height: 20%"></div>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-stone-400">Lit</span>
+</div>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant italic">Biology remains the primary focus this week.</p>
+</section>
+<!-- Monthly Activity Streak -->
+<section class="bg-surface-container-highest rounded-xl p-8">
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-xl font-bold text-on-surface">Monthly Activity</h2>
+<span class="text-sm font-bold text-primary">12 Day Streak!</span>
+</div>
+<div class="grid grid-cols-7 gap-2">
+<!-- Simplified Calendar Visualization -->
+<div class="h-8 w-8 rounded-full bg-stone-200/40"></div>
+<div class="h-8 w-8 rounded-full bg-stone-200/40"></div>
+<div class="h-8 w-8 rounded-full bg-stone-200/40"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary shadow-sm flex items-center justify-center"><span class="material-symbols-outlined text-[14px] text-on-tertiary-fixed" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-stone-200/40"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-stone-200/40"></div>
+<div class="h-8 w-8 rounded-full bg-stone-200/40"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-tertiary"></div>
+<div class="h-8 w-8 rounded-full bg-primary-container animate-pulse border-2 border-white"></div>
+<div class="h-8 w-8 rounded-full bg-stone-100"></div>
+<div class="h-8 w-8 rounded-full bg-stone-100"></div>
+</div>
+<div class="mt-8 pt-6 border-t border-on-surface/5">
+<div class="flex items-center gap-4">
+<div class="flex-1 bg-surface-container rounded-full h-3 overflow-hidden">
+<div class="bg-primary h-full w-[78%]"></div>
+</div>
+<span class="text-xs font-bold">22/28 Days</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Recent Sessions List -->
+<section class="bg-surface-container-low rounded-xl p-8">
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-xl font-bold text-on-surface">Recent Sessions</h2>
+<button class="text-sm font-semibold text-primary flex items-center gap-1">
+                        View Full History <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="space-y-4">
+<!-- Session Item 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-5 flex items-start gap-4 transition-transform active:scale-[0.99] border-l-4 border-primary">
+<div class="h-12 w-12 rounded-full bg-primary-container/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="description">description</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<h3 class="font-bold text-on-surface">Biology Essay</h3>
+<span class="text-xs font-bold text-on-surface-variant">Today</span>
+</div>
+<div class="flex items-center gap-4 text-xs text-stone-500 mb-3 font-medium">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" data-icon="schedule">schedule</span> 45 min</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" data-icon="notifications_active">notifications_active</span> 2 check-ins</span>
+</div>
+<div class="bg-stone-50 rounded-lg p-3 border border-stone-100">
+<p class="text-sm text-on-surface leading-relaxed">
+<span class="font-bold text-primary">Summary:</span> Making progress on the introduction, almost done with the first draft. Focus was high.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Session Item 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-5 flex items-start gap-4 transition-transform active:scale-[0.99] border-l-4 border-secondary">
+<div class="h-12 w-12 rounded-full bg-secondary-container/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary" data-icon="menu_book">menu_book</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<h3 class="font-bold text-on-surface">World History Quiz Prep</h3>
+<span class="text-xs font-bold text-on-surface-variant">Yesterday</span>
+</div>
+<div class="flex items-center gap-4 text-xs text-stone-500 mb-3 font-medium">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" data-icon="schedule">schedule</span> 1h 20min</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" data-icon="notifications_active">notifications_active</span> 4 check-ins</span>
+</div>
+<div class="bg-stone-50 rounded-lg p-3 border border-stone-100">
+<p class="text-sm text-on-surface leading-relaxed">
+<span class="font-bold text-secondary">Summary:</span> Student struggled initially with French Revolution dates but corrected themselves during active recall session.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Session Item 3 -->
+<div class="bg-surface-container-lowest rounded-lg p-5 flex items-start gap-4 transition-transform active:scale-[0.99] border-l-4 border-tertiary">
+<div class="h-12 w-12 rounded-full bg-tertiary-container/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-tertiary" data-icon="calculate">calculate</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<h3 class="font-bold text-on-surface">Calculus Homework</h3>
+<span class="text-xs font-bold text-on-surface-variant">2 days ago</span>
+</div>
+<div class="flex items-center gap-4 text-xs text-stone-500 mb-3 font-medium">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" data-icon="schedule">schedule</span> 30 min</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]" data-icon="notifications_active">notifications_active</span> 1 check-in</span>
+</div>
+<div class="bg-stone-50 rounded-lg p-3 border border-stone-100">
+<p class="text-sm text-on-surface leading-relaxed">
+<span class="font-bold text-tertiary">Summary:</span> Completed 5 integration problems. Asked for help with complex trigonometry substitutions.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Bottom Margin for scroll clearance -->
+<div class="h-12"></div>
+</body></html>
