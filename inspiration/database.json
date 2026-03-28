@@ -1,0 +1,2674 @@
+{
+  "generated": "2026-03-28T02:02:32.141Z",
+  "totalApps": 137,
+  "totalScreenshots": 822,
+  "categories": [
+    "Social Networking",
+    "Utilities",
+    "Health & Fitness",
+    "Food & Drink",
+    "Travel",
+    "Productivity",
+    "Other",
+    "Graphics & Design",
+    "Lifestyle",
+    "Photo & Video",
+    "Finance",
+    "Business",
+    "Reference",
+    "Music",
+    "Education",
+    "Games",
+    "Shopping",
+    "Sports",
+    "Weather",
+    "News"
+  ],
+  "appsByCategory": {
+    "Social Networking": [
+      {
+        "name": "Locket Widget",
+        "slug": "locket",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Bump",
+        "slug": "bump",
+        "screenshotCount": 6
+      },
+      {
+        "name": "corner",
+        "slug": "corner",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Sugar",
+        "slug": "sugar",
+        "screenshotCount": 6
+      },
+      {
+        "name": "What's going on? Friend Diary",
+        "slug": "whatsgoinon",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Trendy Profile Tracker & Boost",
+        "slug": "trendy",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Timeleft",
+        "slug": "timeleft",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Try Your Best",
+        "slug": "tyb",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Yapster",
+        "slug": "yapster",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Orb Social on Lens Protocol",
+        "slug": "orb",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Linktree",
+        "slug": "linktree",
+        "screenshotCount": 6
+      }
+    ],
+    "Utilities": [
+      {
+        "name": "Pocket",
+        "slug": "pocket",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Voice Recorder & Audio Editor",
+        "slug": "voicetape",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Walkie Talkie",
+        "slug": "walkietalkie",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Dropcall",
+        "slug": "dropcall",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Comet",
+        "slug": "comet",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Polestar",
+        "slug": "polestar",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Minimalist Launcher",
+        "slug": "minimalistlauncher",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Firefly",
+        "slug": "firefly",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Mate",
+        "slug": "mate",
+        "screenshotCount": 6
+      }
+    ],
+    "Health & Fitness": [
+      {
+        "name": "Endel",
+        "slug": "endel",
+        "screenshotCount": 6
+      },
+      {
+        "name": "LeanBites",
+        "slug": "leanbites",
+        "screenshotCount": 6
+      },
+      {
+        "name": "GO Club",
+        "slug": "goclub",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Unwind",
+        "slug": "unwind",
+        "screenshotCount": 6
+      },
+      {
+        "name": "CanGoGo",
+        "slug": "cangogo",
+        "screenshotCount": 6
+      },
+      {
+        "name": "How We Feel",
+        "slug": "howwefeel",
+        "screenshotCount": 6
+      },
+      {
+        "name": "stoic. journal & mental health",
+        "slug": "stoic",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Rumbo Fitness",
+        "slug": "rumbofitness",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Senses",
+        "slug": "senses",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Flowie",
+        "slug": "flowie",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Gentler Streak",
+        "slug": "gentler",
+        "screenshotCount": 6
+      },
+      {
+        "name": "PUSH Workout & Gym Tracker",
+        "slug": "push",
+        "screenshotCount": 6
+      },
+      {
+        "name": "TIDE",
+        "slug": "tide",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Headspace",
+        "slug": "headspace",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Numo",
+        "slug": "numo",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Voiced AI: Talk, Reflect, Grow",
+        "slug": "voicedai",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Sona Insight",
+        "slug": "sonainsight",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Exodus",
+        "slug": "human",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Water tracker Waterllama",
+        "slug": "watertracker",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Tiimo",
+        "slug": "tiimo",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Kuku",
+        "slug": "kuku",
+        "screenshotCount": 6
+      },
+      {
+        "name": "RemyAI",
+        "slug": "remyai",
+        "screenshotCount": 6
+      },
+      {
+        "name": "pliability",
+        "slug": "pliability",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Lovi",
+        "slug": "lovi",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Skillsta",
+        "slug": "skillsta",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Hers",
+        "slug": "hers",
+        "screenshotCount": 6
+      },
+      {
+        "name": "BurnBar",
+        "slug": "burnbar",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Open",
+        "slug": "open",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Runbuds",
+        "slug": "runbuds",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Fabric",
+        "slug": "fabric",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Caffeine Tracker",
+        "slug": "alyx",
+        "screenshotCount": 6
+      }
+    ],
+    "Food & Drink": [
+      {
+        "name": "Filtru",
+        "slug": "filtru",
+        "screenshotCount": 6
+      },
+      {
+        "name": "REKKI",
+        "slug": "rekki",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Franki | Eat. Drink. Earn.",
+        "slug": "franki",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Flashfood",
+        "slug": "flashfood",
+        "screenshotCount": 6
+      },
+      {
+        "name": "JOE & THE JUICE",
+        "slug": "joethejuice",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Soda",
+        "slug": "soda",
+        "screenshotCount": 6
+      }
+    ],
+    "Travel": [
+      {
+        "name": "Descent",
+        "slug": "descent",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Flighty",
+        "slug": "flighty",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Roam: Global eSIM & WiFi",
+        "slug": "roam",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Tesla Robotaxi",
+        "slug": "teslarobotaxi",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Plango",
+        "slug": "plango",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Sunlitt Sun Position and Path",
+        "slug": "sunlitt",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Tripadvisor",
+        "slug": "tripadvisor",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Tripsy",
+        "slug": "tripsy",
+        "screenshotCount": 6
+      }
+    ],
+    "Productivity": [
+      {
+        "name": "Stuff | ToDos and Lists",
+        "slug": "stuff",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Universe Website Builder",
+        "slug": "universe",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Claude by Anthropic",
+        "slug": "claude",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Superlist",
+        "slug": "superlist",
+        "screenshotCount": 6
+      },
+      {
+        "name": "ClickUp",
+        "slug": "clickup",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Atoms",
+        "slug": "atoms",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Pebble AI",
+        "slug": "pebbleai",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Methods",
+        "slug": "methods",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Planit",
+        "slug": "planit",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Evernote",
+        "slug": "evernote",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Yukee simple todo list tracker",
+        "slug": "yukee",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Jomo",
+        "slug": "jomo",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Supernotes",
+        "slug": "supernotes",
+        "screenshotCount": 6
+      }
+    ],
+    "Other": [
+      {
+        "name": "Amie",
+        "slug": "Amie",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Family",
+        "slug": "Family",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Speak Languages",
+        "slug": "monspeak",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Joi Planner",
+        "slug": "Joi",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Raycast",
+        "slug": "Raycast",
+        "screenshotCount": 6
+      }
+    ],
+    "Graphics & Design": [
+      {
+        "name": "Dudel Draw",
+        "slug": "dudeldraw",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Linearity Curve Graphic Design",
+        "slug": "linearity",
+        "screenshotCount": 6
+      }
+    ],
+    "Lifestyle": [
+      {
+        "name": "Canopi",
+        "slug": "canopi",
+        "screenshotCount": 6
+      },
+      {
+        "name": "PURE",
+        "slug": "pure",
+        "screenshotCount": 6
+      },
+      {
+        "name": "grug",
+        "slug": "grug",
+        "screenshotCount": 6
+      },
+      {
+        "name": "yope",
+        "slug": "yope",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Knitflow",
+        "slug": "knitflow",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Placify",
+        "slug": "placify",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Deen Tracker",
+        "slug": "deentracker",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Unedo",
+        "slug": "unedo",
+        "screenshotCount": 6
+      },
+      {
+        "name": "one year",
+        "slug": "oneyear",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Box Box Club",
+        "slug": "boxboxclub",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Picky AI",
+        "slug": "pickyai",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Wabi",
+        "slug": "wabi",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Love8",
+        "slug": "love8",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Planta",
+        "slug": "planta",
+        "screenshotCount": 6
+      }
+    ],
+    "Photo & Video": [
+      {
+        "name": "AgBr",
+        "slug": "agbr",
+        "screenshotCount": 6
+      },
+      {
+        "name": "sway ~ blur & vhs trending cam",
+        "slug": "sway",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Moment Pro Camera II",
+        "slug": "moment",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Video Effects Editor",
+        "slug": "riveo",
+        "screenshotCount": 6
+      },
+      {
+        "name": "(Not Boring) Camera",
+        "slug": "notboringcamera",
+        "screenshotCount": 6
+      }
+    ],
+    "Finance": [
+      {
+        "name": "Aave",
+        "slug": "aave",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Trust",
+        "slug": "trust",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Wise",
+        "slug": "wise",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Swypn",
+        "slug": "swypn",
+        "screenshotCount": 6
+      },
+      {
+        "name": "pushr",
+        "slug": "pushr",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Chime",
+        "slug": "chime",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Eversend",
+        "slug": "eversend",
+        "screenshotCount": 6
+      },
+      {
+        "name": "NEXT Insurance",
+        "slug": "nextinsurance",
+        "screenshotCount": 6
+      },
+      {
+        "name": "UGLYCASH",
+        "slug": "uglycash",
+        "screenshotCount": 6
+      }
+    ],
+    "Business": [
+      {
+        "name": "Bounty",
+        "slug": "bounty",
+        "screenshotCount": 6
+      }
+    ],
+    "Reference": [
+      {
+        "name": "TOPYS",
+        "slug": "topys",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Deepstash",
+        "slug": "deepstash",
+        "screenshotCount": 6
+      }
+    ],
+    "Music": [
+      {
+        "name": "MD Vinyl for Music App",
+        "slug": "mdvinyl",
+        "screenshotCount": 6
+      },
+      {
+        "name": "ElevenLabs",
+        "slug": "elevenlabs",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Discogs",
+        "slug": "vinyl",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Suno",
+        "slug": "suno",
+        "screenshotCount": 6
+      },
+      {
+        "name": "YLAG",
+        "slug": "ylag",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Deezer",
+        "slug": "deezer",
+        "screenshotCount": 6
+      }
+    ],
+    "Education": [
+      {
+        "name": "Oscar Stories for Children",
+        "slug": "oscarstories",
+        "screenshotCount": 6
+      },
+      {
+        "name": "imagi",
+        "slug": "imagi",
+        "screenshotCount": 6
+      },
+      {
+        "name": "SAVO",
+        "slug": "savo",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Moshi Kids",
+        "slug": "moshikids",
+        "screenshotCount": 6
+      }
+    ],
+    "Games": [
+      {
+        "name": "Art of Flora",
+        "slug": "artofflora",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Twitch",
+        "slug": "twitch",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Tolan: Alien Best Friend",
+        "slug": "tolan",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Pool",
+        "slug": "pool",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Sudoku a Day",
+        "slug": "sudoku",
+        "screenshotCount": 6
+      }
+    ],
+    "Shopping": [
+      {
+        "name": "StockX",
+        "slug": "stockx",
+        "screenshotCount": 6
+      }
+    ],
+    "Sports": [
+      {
+        "name": "Slopes",
+        "slug": "slopes",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Turf",
+        "slug": "turf",
+        "screenshotCount": 6
+      },
+      {
+        "name": "Any Distance",
+        "slug": "anydistance",
+        "screenshotCount": 6
+      }
+    ],
+    "Weather": [
+      {
+        "name": "(Not Boring) Weather",
+        "slug": "notboringweather",
+        "screenshotCount": 6
+      }
+    ],
+    "News": [
+      {
+        "name": "Neuecast",
+        "slug": "neuecast",
+        "screenshotCount": 6
+      }
+    ]
+  },
+  "apps": [
+    {
+      "name": "Locket Widget",
+      "slug": "locket",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/locket/1.webp",
+        "screenshots/locket/2.webp",
+        "screenshots/locket/3.webp",
+        "screenshots/locket/4.webp",
+        "screenshots/locket/5.webp",
+        "screenshots/locket/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Pocket",
+      "slug": "pocket",
+      "category": "Utilities",
+      "screenshots": [
+        "screenshots/pocket/1.webp",
+        "screenshots/pocket/2.webp",
+        "screenshots/pocket/3.webp",
+        "screenshots/pocket/4.webp",
+        "screenshots/pocket/5.webp",
+        "screenshots/pocket/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Bump",
+      "slug": "bump",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/bump/1.webp",
+        "screenshots/bump/2.webp",
+        "screenshots/bump/3.webp",
+        "screenshots/bump/4.webp",
+        "screenshots/bump/5.webp",
+        "screenshots/bump/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "corner",
+      "slug": "corner",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/corner/1.webp",
+        "screenshots/corner/2.webp",
+        "screenshots/corner/3.webp",
+        "screenshots/corner/4.webp",
+        "screenshots/corner/5.webp",
+        "screenshots/corner/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Endel",
+      "slug": "endel",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/endel/1.webp",
+        "screenshots/endel/2.webp",
+        "screenshots/endel/3.webp",
+        "screenshots/endel/4.webp",
+        "screenshots/endel/5.webp",
+        "screenshots/endel/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "LeanBites",
+      "slug": "leanbites",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/leanbites/1.webp",
+        "screenshots/leanbites/2.webp",
+        "screenshots/leanbites/3.webp",
+        "screenshots/leanbites/4.webp",
+        "screenshots/leanbites/5.webp",
+        "screenshots/leanbites/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Filtru",
+      "slug": "filtru",
+      "category": "Food & Drink",
+      "screenshots": [
+        "screenshots/filtru/1.webp",
+        "screenshots/filtru/2.webp",
+        "screenshots/filtru/3.webp",
+        "screenshots/filtru/4.webp",
+        "screenshots/filtru/5.webp",
+        "screenshots/filtru/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "GO Club",
+      "slug": "goclub",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/goclub/1.webp",
+        "screenshots/goclub/2.webp",
+        "screenshots/goclub/3.webp",
+        "screenshots/goclub/4.webp",
+        "screenshots/goclub/5.webp",
+        "screenshots/goclub/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Unwind",
+      "slug": "unwind",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/unwind/1.webp",
+        "screenshots/unwind/2.webp",
+        "screenshots/unwind/3.webp",
+        "screenshots/unwind/4.webp",
+        "screenshots/unwind/5.webp",
+        "screenshots/unwind/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Descent",
+      "slug": "descent",
+      "category": "Travel",
+      "screenshots": [
+        "screenshots/descent/1.webp",
+        "screenshots/descent/2.webp",
+        "screenshots/descent/3.webp",
+        "screenshots/descent/4.webp",
+        "screenshots/descent/5.webp",
+        "screenshots/descent/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Stuff | ToDos and Lists",
+      "slug": "stuff",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/stuff/1.webp",
+        "screenshots/stuff/2.webp",
+        "screenshots/stuff/3.webp",
+        "screenshots/stuff/4.webp",
+        "screenshots/stuff/5.webp",
+        "screenshots/stuff/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Amie",
+      "slug": "Amie",
+      "category": "Other",
+      "screenshots": [
+        "screenshots/Amie/1.webp",
+        "screenshots/Amie/2.webp",
+        "screenshots/Amie/3.webp",
+        "screenshots/Amie/4.webp",
+        "screenshots/Amie/5.webp",
+        "screenshots/Amie/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Dudel Draw",
+      "slug": "dudeldraw",
+      "category": "Graphics & Design",
+      "screenshots": [
+        "screenshots/dudeldraw/1.webp",
+        "screenshots/dudeldraw/2.webp",
+        "screenshots/dudeldraw/3.webp",
+        "screenshots/dudeldraw/4.webp",
+        "screenshots/dudeldraw/5.webp",
+        "screenshots/dudeldraw/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "REKKI",
+      "slug": "rekki",
+      "category": "Food & Drink",
+      "screenshots": [
+        "screenshots/rekki/1.webp",
+        "screenshots/rekki/2.webp",
+        "screenshots/rekki/3.webp",
+        "screenshots/rekki/4.webp",
+        "screenshots/rekki/5.webp",
+        "screenshots/rekki/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "CanGoGo",
+      "slug": "cangogo",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/cangogo/1.webp",
+        "screenshots/cangogo/2.webp",
+        "screenshots/cangogo/3.webp",
+        "screenshots/cangogo/4.webp",
+        "screenshots/cangogo/5.webp",
+        "screenshots/cangogo/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Universe Website Builder",
+      "slug": "universe",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/universe/1.webp",
+        "screenshots/universe/2.webp",
+        "screenshots/universe/3.webp",
+        "screenshots/universe/4.webp",
+        "screenshots/universe/5.webp",
+        "screenshots/universe/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Canopi",
+      "slug": "canopi",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/canopi/1.webp",
+        "screenshots/canopi/2.webp",
+        "screenshots/canopi/3.webp",
+        "screenshots/canopi/4.webp",
+        "screenshots/canopi/5.webp",
+        "screenshots/canopi/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "How We Feel",
+      "slug": "howwefeel",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/howwefeel/1.webp",
+        "screenshots/howwefeel/2.webp",
+        "screenshots/howwefeel/3.webp",
+        "screenshots/howwefeel/4.webp",
+        "screenshots/howwefeel/5.webp",
+        "screenshots/howwefeel/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Franki | Eat. Drink. Earn.",
+      "slug": "franki",
+      "category": "Food & Drink",
+      "screenshots": [
+        "screenshots/franki/1.webp",
+        "screenshots/franki/2.webp",
+        "screenshots/franki/3.webp",
+        "screenshots/franki/4.webp",
+        "screenshots/franki/5.webp",
+        "screenshots/franki/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Sugar",
+      "slug": "sugar",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/sugar/1.webp",
+        "screenshots/sugar/2.webp",
+        "screenshots/sugar/3.webp",
+        "screenshots/sugar/4.webp",
+        "screenshots/sugar/5.webp",
+        "screenshots/sugar/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "AgBr",
+      "slug": "agbr",
+      "category": "Photo & Video",
+      "screenshots": [
+        "screenshots/agbr/1.webp",
+        "screenshots/agbr/2.webp",
+        "screenshots/agbr/3.webp",
+        "screenshots/agbr/4.webp",
+        "screenshots/agbr/5.webp",
+        "screenshots/agbr/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Flighty",
+      "slug": "flighty",
+      "category": "Travel",
+      "screenshots": [
+        "screenshots/flighty/1.webp",
+        "screenshots/flighty/2.webp",
+        "screenshots/flighty/3.webp",
+        "screenshots/flighty/4.webp",
+        "screenshots/flighty/5.webp",
+        "screenshots/flighty/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "stoic. journal & mental health",
+      "slug": "stoic",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/stoic/1.webp",
+        "screenshots/stoic/2.webp",
+        "screenshots/stoic/3.webp",
+        "screenshots/stoic/4.webp",
+        "screenshots/stoic/5.webp",
+        "screenshots/stoic/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Rumbo Fitness",
+      "slug": "rumbofitness",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/rumbofitness/1.webp",
+        "screenshots/rumbofitness/2.webp",
+        "screenshots/rumbofitness/3.webp",
+        "screenshots/rumbofitness/4.webp",
+        "screenshots/rumbofitness/5.webp",
+        "screenshots/rumbofitness/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Senses",
+      "slug": "senses",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/senses/1.webp",
+        "screenshots/senses/2.webp",
+        "screenshots/senses/3.webp",
+        "screenshots/senses/4.webp",
+        "screenshots/senses/5.webp",
+        "screenshots/senses/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Aave",
+      "slug": "aave",
+      "category": "Finance",
+      "screenshots": [
+        "screenshots/aave/1.webp",
+        "screenshots/aave/2.webp",
+        "screenshots/aave/3.webp",
+        "screenshots/aave/4.webp",
+        "screenshots/aave/5.webp",
+        "screenshots/aave/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Claude by Anthropic",
+      "slug": "claude",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/claude/1.webp",
+        "screenshots/claude/2.webp",
+        "screenshots/claude/3.webp",
+        "screenshots/claude/4.webp",
+        "screenshots/claude/5.webp",
+        "screenshots/claude/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Family",
+      "slug": "Family",
+      "category": "Other",
+      "screenshots": [
+        "screenshots/Family/1.webp",
+        "screenshots/Family/2.webp",
+        "screenshots/Family/3.webp",
+        "screenshots/Family/4.webp",
+        "screenshots/Family/5.webp",
+        "screenshots/Family/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "PURE",
+      "slug": "pure",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/pure/1.webp",
+        "screenshots/pure/2.webp",
+        "screenshots/pure/3.webp",
+        "screenshots/pure/4.webp",
+        "screenshots/pure/5.webp",
+        "screenshots/pure/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Speak Languages",
+      "slug": "monspeak",
+      "category": "Other",
+      "screenshots": [
+        "screenshots/monspeak/1.webp",
+        "screenshots/monspeak/2.webp",
+        "screenshots/monspeak/3.webp",
+        "screenshots/monspeak/4.webp",
+        "screenshots/monspeak/5.webp",
+        "screenshots/monspeak/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Bounty",
+      "slug": "bounty",
+      "category": "Business",
+      "screenshots": [
+        "screenshots/bounty/1.webp",
+        "screenshots/bounty/2.webp",
+        "screenshots/bounty/3.webp",
+        "screenshots/bounty/4.webp",
+        "screenshots/bounty/5.webp",
+        "screenshots/bounty/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Flowie",
+      "slug": "flowie",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/flowie/1.webp",
+        "screenshots/flowie/2.webp",
+        "screenshots/flowie/3.webp",
+        "screenshots/flowie/4.webp",
+        "screenshots/flowie/5.webp",
+        "screenshots/flowie/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "grug",
+      "slug": "grug",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/grug/1.webp",
+        "screenshots/grug/2.webp",
+        "screenshots/grug/3.webp",
+        "screenshots/grug/4.webp",
+        "screenshots/grug/5.webp",
+        "screenshots/grug/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Superlist",
+      "slug": "superlist",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/superlist/1.webp",
+        "screenshots/superlist/2.webp",
+        "screenshots/superlist/3.webp",
+        "screenshots/superlist/4.webp",
+        "screenshots/superlist/5.webp",
+        "screenshots/superlist/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "yope",
+      "slug": "yope",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/yope/1.webp",
+        "screenshots/yope/2.webp",
+        "screenshots/yope/3.webp",
+        "screenshots/yope/4.webp",
+        "screenshots/yope/5.webp",
+        "screenshots/yope/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Roam: Global eSIM & WiFi",
+      "slug": "roam",
+      "category": "Travel",
+      "screenshots": [
+        "screenshots/roam/1.webp",
+        "screenshots/roam/2.webp",
+        "screenshots/roam/3.webp",
+        "screenshots/roam/4.webp",
+        "screenshots/roam/5.webp",
+        "screenshots/roam/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "ClickUp",
+      "slug": "clickup",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/clickup/1.webp",
+        "screenshots/clickup/2.webp",
+        "screenshots/clickup/3.webp",
+        "screenshots/clickup/4.webp",
+        "screenshots/clickup/5.webp",
+        "screenshots/clickup/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "TOPYS",
+      "slug": "topys",
+      "category": "Reference",
+      "screenshots": [
+        "screenshots/topys/1.webp",
+        "screenshots/topys/2.webp",
+        "screenshots/topys/3.webp",
+        "screenshots/topys/4.webp",
+        "screenshots/topys/5.webp",
+        "screenshots/topys/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Gentler Streak",
+      "slug": "gentler",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/gentler/1.webp",
+        "screenshots/gentler/2.webp",
+        "screenshots/gentler/3.webp",
+        "screenshots/gentler/4.webp",
+        "screenshots/gentler/5.webp",
+        "screenshots/gentler/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Atoms",
+      "slug": "atoms",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/atoms/1.webp",
+        "screenshots/atoms/2.webp",
+        "screenshots/atoms/3.webp",
+        "screenshots/atoms/4.webp",
+        "screenshots/atoms/5.webp",
+        "screenshots/atoms/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "MD Vinyl for Music App",
+      "slug": "mdvinyl",
+      "category": "Music",
+      "screenshots": [
+        "screenshots/mdvinyl/1.webp",
+        "screenshots/mdvinyl/2.webp",
+        "screenshots/mdvinyl/3.webp",
+        "screenshots/mdvinyl/4.webp",
+        "screenshots/mdvinyl/5.webp",
+        "screenshots/mdvinyl/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Knitflow",
+      "slug": "knitflow",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/knitflow/1.webp",
+        "screenshots/knitflow/2.webp",
+        "screenshots/knitflow/3.webp",
+        "screenshots/knitflow/4.webp",
+        "screenshots/knitflow/5.webp",
+        "screenshots/knitflow/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "What's going on? Friend Diary",
+      "slug": "whatsgoinon",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/whatsgoinon/1.webp",
+        "screenshots/whatsgoinon/2.webp",
+        "screenshots/whatsgoinon/3.webp",
+        "screenshots/whatsgoinon/4.webp",
+        "screenshots/whatsgoinon/5.webp",
+        "screenshots/whatsgoinon/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Oscar Stories for Children",
+      "slug": "oscarstories",
+      "category": "Education",
+      "screenshots": [
+        "screenshots/oscarstories/1.webp",
+        "screenshots/oscarstories/2.webp",
+        "screenshots/oscarstories/3.webp",
+        "screenshots/oscarstories/4.webp",
+        "screenshots/oscarstories/5.webp",
+        "screenshots/oscarstories/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Trendy Profile Tracker & Boost",
+      "slug": "trendy",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/trendy/1.webp",
+        "screenshots/trendy/2.webp",
+        "screenshots/trendy/3.webp",
+        "screenshots/trendy/4.webp",
+        "screenshots/trendy/5.webp",
+        "screenshots/trendy/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Timeleft",
+      "slug": "timeleft",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/timeleft/1.webp",
+        "screenshots/timeleft/2.webp",
+        "screenshots/timeleft/3.webp",
+        "screenshots/timeleft/4.webp",
+        "screenshots/timeleft/5.webp",
+        "screenshots/timeleft/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Pebble AI",
+      "slug": "pebbleai",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/pebbleai/1.webp",
+        "screenshots/pebbleai/2.webp",
+        "screenshots/pebbleai/3.webp",
+        "screenshots/pebbleai/4.webp",
+        "screenshots/pebbleai/5.webp",
+        "screenshots/pebbleai/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Placify",
+      "slug": "placify",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/placify/1.webp",
+        "screenshots/placify/2.webp",
+        "screenshots/placify/3.webp",
+        "screenshots/placify/4.webp",
+        "screenshots/placify/5.webp",
+        "screenshots/placify/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Art of Flora",
+      "slug": "artofflora",
+      "category": "Games",
+      "screenshots": [
+        "screenshots/artofflora/1.webp",
+        "screenshots/artofflora/2.webp",
+        "screenshots/artofflora/3.webp",
+        "screenshots/artofflora/4.webp",
+        "screenshots/artofflora/5.webp",
+        "screenshots/artofflora/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Deen Tracker",
+      "slug": "deentracker",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/deentracker/1.webp",
+        "screenshots/deentracker/2.webp",
+        "screenshots/deentracker/3.webp",
+        "screenshots/deentracker/4.webp",
+        "screenshots/deentracker/5.webp",
+        "screenshots/deentracker/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Try Your Best",
+      "slug": "tyb",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/tyb/1.webp",
+        "screenshots/tyb/2.webp",
+        "screenshots/tyb/3.webp",
+        "screenshots/tyb/4.webp",
+        "screenshots/tyb/5.webp",
+        "screenshots/tyb/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Voice Recorder & Audio Editor",
+      "slug": "voicetape",
+      "category": "Utilities",
+      "screenshots": [
+        "screenshots/voicetape/1.webp",
+        "screenshots/voicetape/2.webp",
+        "screenshots/voicetape/3.webp",
+        "screenshots/voicetape/4.webp",
+        "screenshots/voicetape/5.webp",
+        "screenshots/voicetape/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Joi Planner",
+      "slug": "Joi",
+      "category": "Other",
+      "screenshots": [
+        "screenshots/Joi/1.webp",
+        "screenshots/Joi/2.webp",
+        "screenshots/Joi/3.webp",
+        "screenshots/Joi/4.webp",
+        "screenshots/Joi/5.webp",
+        "screenshots/Joi/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "StockX",
+      "slug": "stockx",
+      "category": "Shopping",
+      "screenshots": [
+        "screenshots/stockx/1.webp",
+        "screenshots/stockx/2.webp",
+        "screenshots/stockx/3.webp",
+        "screenshots/stockx/4.webp",
+        "screenshots/stockx/5.webp",
+        "screenshots/stockx/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Tesla Robotaxi",
+      "slug": "teslarobotaxi",
+      "category": "Travel",
+      "screenshots": [
+        "screenshots/teslarobotaxi/1.webp",
+        "screenshots/teslarobotaxi/2.webp",
+        "screenshots/teslarobotaxi/3.webp",
+        "screenshots/teslarobotaxi/4.webp",
+        "screenshots/teslarobotaxi/5.webp",
+        "screenshots/teslarobotaxi/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Plango",
+      "slug": "plango",
+      "category": "Travel",
+      "screenshots": [
+        "screenshots/plango/1.webp",
+        "screenshots/plango/2.webp",
+        "screenshots/plango/3.webp",
+        "screenshots/plango/4.webp",
+        "screenshots/plango/5.webp",
+        "screenshots/plango/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Raycast",
+      "slug": "Raycast",
+      "category": "Other",
+      "screenshots": [
+        "screenshots/Raycast/1.webp",
+        "screenshots/Raycast/2.webp",
+        "screenshots/Raycast/3.webp",
+        "screenshots/Raycast/4.webp",
+        "screenshots/Raycast/5.webp",
+        "screenshots/Raycast/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "PUSH Workout & Gym Tracker",
+      "slug": "push",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/push/1.webp",
+        "screenshots/push/2.webp",
+        "screenshots/push/3.webp",
+        "screenshots/push/4.webp",
+        "screenshots/push/5.webp",
+        "screenshots/push/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "ElevenLabs",
+      "slug": "elevenlabs",
+      "category": "Music",
+      "screenshots": [
+        "screenshots/elevenlabs/1.webp",
+        "screenshots/elevenlabs/2.webp",
+        "screenshots/elevenlabs/3.webp",
+        "screenshots/elevenlabs/4.webp",
+        "screenshots/elevenlabs/5.webp",
+        "screenshots/elevenlabs/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "TIDE",
+      "slug": "tide",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/tide/1.webp",
+        "screenshots/tide/2.webp",
+        "screenshots/tide/3.webp",
+        "screenshots/tide/4.webp",
+        "screenshots/tide/5.webp",
+        "screenshots/tide/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Headspace",
+      "slug": "headspace",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/headspace/1.webp",
+        "screenshots/headspace/2.webp",
+        "screenshots/headspace/3.webp",
+        "screenshots/headspace/4.webp",
+        "screenshots/headspace/5.webp",
+        "screenshots/headspace/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Unedo",
+      "slug": "unedo",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/unedo/1.webp",
+        "screenshots/unedo/2.webp",
+        "screenshots/unedo/3.webp",
+        "screenshots/unedo/4.webp",
+        "screenshots/unedo/5.webp",
+        "screenshots/unedo/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Flashfood",
+      "slug": "flashfood",
+      "category": "Food & Drink",
+      "screenshots": [
+        "screenshots/flashfood/1.webp",
+        "screenshots/flashfood/2.webp",
+        "screenshots/flashfood/3.webp",
+        "screenshots/flashfood/4.webp",
+        "screenshots/flashfood/5.webp",
+        "screenshots/flashfood/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Trust",
+      "slug": "trust",
+      "category": "Finance",
+      "screenshots": [
+        "screenshots/trust/1.webp",
+        "screenshots/trust/2.webp",
+        "screenshots/trust/3.webp",
+        "screenshots/trust/4.webp",
+        "screenshots/trust/5.webp",
+        "screenshots/trust/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Methods",
+      "slug": "methods",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/methods/1.webp",
+        "screenshots/methods/2.webp",
+        "screenshots/methods/3.webp",
+        "screenshots/methods/4.webp",
+        "screenshots/methods/5.webp",
+        "screenshots/methods/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Walkie Talkie",
+      "slug": "walkietalkie",
+      "category": "Utilities",
+      "screenshots": [
+        "screenshots/walkietalkie/1.webp",
+        "screenshots/walkietalkie/2.webp",
+        "screenshots/walkietalkie/3.webp",
+        "screenshots/walkietalkie/4.webp",
+        "screenshots/walkietalkie/5.webp",
+        "screenshots/walkietalkie/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Dropcall",
+      "slug": "dropcall",
+      "category": "Utilities",
+      "screenshots": [
+        "screenshots/dropcall/1.webp",
+        "screenshots/dropcall/2.webp",
+        "screenshots/dropcall/3.webp",
+        "screenshots/dropcall/4.webp",
+        "screenshots/dropcall/5.webp",
+        "screenshots/dropcall/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Planit",
+      "slug": "planit",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/planit/1.webp",
+        "screenshots/planit/2.webp",
+        "screenshots/planit/3.webp",
+        "screenshots/planit/4.webp",
+        "screenshots/planit/5.webp",
+        "screenshots/planit/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Comet",
+      "slug": "comet",
+      "category": "Utilities",
+      "screenshots": [
+        "screenshots/comet/1.webp",
+        "screenshots/comet/2.webp",
+        "screenshots/comet/3.webp",
+        "screenshots/comet/4.webp",
+        "screenshots/comet/5.webp",
+        "screenshots/comet/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Numo",
+      "slug": "numo",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/numo/1.webp",
+        "screenshots/numo/2.webp",
+        "screenshots/numo/3.webp",
+        "screenshots/numo/4.webp",
+        "screenshots/numo/5.webp",
+        "screenshots/numo/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "JOE & THE JUICE",
+      "slug": "joethejuice",
+      "category": "Food & Drink",
+      "screenshots": [
+        "screenshots/joethejuice/1.webp",
+        "screenshots/joethejuice/2.webp",
+        "screenshots/joethejuice/3.webp",
+        "screenshots/joethejuice/4.webp",
+        "screenshots/joethejuice/5.webp",
+        "screenshots/joethejuice/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Twitch",
+      "slug": "twitch",
+      "category": "Games",
+      "screenshots": [
+        "screenshots/twitch/1.webp",
+        "screenshots/twitch/2.webp",
+        "screenshots/twitch/3.webp",
+        "screenshots/twitch/4.webp",
+        "screenshots/twitch/5.webp",
+        "screenshots/twitch/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Slopes",
+      "slug": "slopes",
+      "category": "Sports",
+      "screenshots": [
+        "screenshots/slopes/1.webp",
+        "screenshots/slopes/2.webp",
+        "screenshots/slopes/3.webp",
+        "screenshots/slopes/4.webp",
+        "screenshots/slopes/5.webp",
+        "screenshots/slopes/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "one year",
+      "slug": "oneyear",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/oneyear/1.webp",
+        "screenshots/oneyear/2.webp",
+        "screenshots/oneyear/3.webp",
+        "screenshots/oneyear/4.webp",
+        "screenshots/oneyear/5.webp",
+        "screenshots/oneyear/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Box Box Club",
+      "slug": "boxboxclub",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/boxboxclub/1.webp",
+        "screenshots/boxboxclub/2.webp",
+        "screenshots/boxboxclub/3.webp",
+        "screenshots/boxboxclub/4.webp",
+        "screenshots/boxboxclub/5.webp",
+        "screenshots/boxboxclub/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Voiced AI: Talk, Reflect, Grow",
+      "slug": "voicedai",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/voicedai/1.webp",
+        "screenshots/voicedai/2.webp",
+        "screenshots/voicedai/3.webp",
+        "screenshots/voicedai/4.webp",
+        "screenshots/voicedai/5.webp",
+        "screenshots/voicedai/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Sona Insight",
+      "slug": "sonainsight",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/sonainsight/1.webp",
+        "screenshots/sonainsight/2.webp",
+        "screenshots/sonainsight/3.webp",
+        "screenshots/sonainsight/4.webp",
+        "screenshots/sonainsight/5.webp",
+        "screenshots/sonainsight/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Wise",
+      "slug": "wise",
+      "category": "Finance",
+      "screenshots": [
+        "screenshots/wise/1.webp",
+        "screenshots/wise/2.webp",
+        "screenshots/wise/3.webp",
+        "screenshots/wise/4.webp",
+        "screenshots/wise/5.webp",
+        "screenshots/wise/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Turf",
+      "slug": "turf",
+      "category": "Sports",
+      "screenshots": [
+        "screenshots/turf/1.webp",
+        "screenshots/turf/2.webp",
+        "screenshots/turf/3.webp",
+        "screenshots/turf/4.webp",
+        "screenshots/turf/5.webp",
+        "screenshots/turf/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Tolan: Alien Best Friend",
+      "slug": "tolan",
+      "category": "Games",
+      "screenshots": [
+        "screenshots/tolan/1.webp",
+        "screenshots/tolan/2.webp",
+        "screenshots/tolan/3.webp",
+        "screenshots/tolan/4.webp",
+        "screenshots/tolan/5.webp",
+        "screenshots/tolan/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Pool",
+      "slug": "pool",
+      "category": "Games",
+      "screenshots": [
+        "screenshots/pool/1.webp",
+        "screenshots/pool/2.webp",
+        "screenshots/pool/3.webp",
+        "screenshots/pool/4.webp",
+        "screenshots/pool/5.webp",
+        "screenshots/pool/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Picky AI",
+      "slug": "pickyai",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/pickyai/1.webp",
+        "screenshots/pickyai/2.webp",
+        "screenshots/pickyai/3.webp",
+        "screenshots/pickyai/4.webp",
+        "screenshots/pickyai/5.webp",
+        "screenshots/pickyai/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Exodus",
+      "slug": "human",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/human/1.webp",
+        "screenshots/human/2.webp",
+        "screenshots/human/3.webp",
+        "screenshots/human/4.webp",
+        "screenshots/human/5.webp",
+        "screenshots/human/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Linearity Curve Graphic Design",
+      "slug": "linearity",
+      "category": "Graphics & Design",
+      "screenshots": [
+        "screenshots/linearity/1.webp",
+        "screenshots/linearity/2.webp",
+        "screenshots/linearity/3.webp",
+        "screenshots/linearity/4.webp",
+        "screenshots/linearity/5.webp",
+        "screenshots/linearity/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Water tracker Waterllama",
+      "slug": "watertracker",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/watertracker/1.webp",
+        "screenshots/watertracker/2.webp",
+        "screenshots/watertracker/3.webp",
+        "screenshots/watertracker/4.webp",
+        "screenshots/watertracker/5.webp",
+        "screenshots/watertracker/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Tiimo",
+      "slug": "tiimo",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/tiimo/1.webp",
+        "screenshots/tiimo/2.webp",
+        "screenshots/tiimo/3.webp",
+        "screenshots/tiimo/4.webp",
+        "screenshots/tiimo/5.webp",
+        "screenshots/tiimo/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Kuku",
+      "slug": "kuku",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/kuku/1.webp",
+        "screenshots/kuku/2.webp",
+        "screenshots/kuku/3.webp",
+        "screenshots/kuku/4.webp",
+        "screenshots/kuku/5.webp",
+        "screenshots/kuku/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "sway ~ blur & vhs trending cam",
+      "slug": "sway",
+      "category": "Photo & Video",
+      "screenshots": [
+        "screenshots/sway/1.webp",
+        "screenshots/sway/2.webp",
+        "screenshots/sway/3.webp",
+        "screenshots/sway/4.webp",
+        "screenshots/sway/5.webp",
+        "screenshots/sway/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Discogs",
+      "slug": "vinyl",
+      "category": "Music",
+      "screenshots": [
+        "screenshots/vinyl/1.webp",
+        "screenshots/vinyl/2.webp",
+        "screenshots/vinyl/3.webp",
+        "screenshots/vinyl/4.webp",
+        "screenshots/vinyl/5.webp",
+        "screenshots/vinyl/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Evernote",
+      "slug": "evernote",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/evernote/1.webp",
+        "screenshots/evernote/2.webp",
+        "screenshots/evernote/3.webp",
+        "screenshots/evernote/4.webp",
+        "screenshots/evernote/5.webp",
+        "screenshots/evernote/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "RemyAI",
+      "slug": "remyai",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/remyai/1.webp",
+        "screenshots/remyai/2.webp",
+        "screenshots/remyai/3.webp",
+        "screenshots/remyai/4.webp",
+        "screenshots/remyai/5.webp",
+        "screenshots/remyai/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Swypn",
+      "slug": "swypn",
+      "category": "Finance",
+      "screenshots": [
+        "screenshots/swypn/1.webp",
+        "screenshots/swypn/2.webp",
+        "screenshots/swypn/3.webp",
+        "screenshots/swypn/4.webp",
+        "screenshots/swypn/5.webp",
+        "screenshots/swypn/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "pliability",
+      "slug": "pliability",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/pliability/1.webp",
+        "screenshots/pliability/2.webp",
+        "screenshots/pliability/3.webp",
+        "screenshots/pliability/4.webp",
+        "screenshots/pliability/5.webp",
+        "screenshots/pliability/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "pushr",
+      "slug": "pushr",
+      "category": "Finance",
+      "screenshots": [
+        "screenshots/pushr/1.webp",
+        "screenshots/pushr/2.webp",
+        "screenshots/pushr/3.webp",
+        "screenshots/pushr/4.webp",
+        "screenshots/pushr/5.webp",
+        "screenshots/pushr/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Lovi",
+      "slug": "lovi",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/lovi/1.webp",
+        "screenshots/lovi/2.webp",
+        "screenshots/lovi/3.webp",
+        "screenshots/lovi/4.webp",
+        "screenshots/lovi/5.webp",
+        "screenshots/lovi/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Moment Pro Camera II",
+      "slug": "moment",
+      "category": "Photo & Video",
+      "screenshots": [
+        "screenshots/moment/1.webp",
+        "screenshots/moment/2.webp",
+        "screenshots/moment/3.webp",
+        "screenshots/moment/4.webp",
+        "screenshots/moment/5.webp",
+        "screenshots/moment/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Video Effects Editor",
+      "slug": "riveo",
+      "category": "Photo & Video",
+      "screenshots": [
+        "screenshots/riveo/1.webp",
+        "screenshots/riveo/2.webp",
+        "screenshots/riveo/3.webp",
+        "screenshots/riveo/4.webp",
+        "screenshots/riveo/5.webp",
+        "screenshots/riveo/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Suno",
+      "slug": "suno",
+      "category": "Music",
+      "screenshots": [
+        "screenshots/suno/1.webp",
+        "screenshots/suno/2.webp",
+        "screenshots/suno/3.webp",
+        "screenshots/suno/4.webp",
+        "screenshots/suno/5.webp",
+        "screenshots/suno/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "(Not Boring) Weather",
+      "slug": "notboringweather",
+      "category": "Weather",
+      "screenshots": [
+        "screenshots/notboringweather/1.webp",
+        "screenshots/notboringweather/2.webp",
+        "screenshots/notboringweather/3.webp",
+        "screenshots/notboringweather/4.webp",
+        "screenshots/notboringweather/5.webp",
+        "screenshots/notboringweather/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Skillsta",
+      "slug": "skillsta",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/skillsta/1.webp",
+        "screenshots/skillsta/2.webp",
+        "screenshots/skillsta/3.webp",
+        "screenshots/skillsta/4.webp",
+        "screenshots/skillsta/5.webp",
+        "screenshots/skillsta/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Neuecast",
+      "slug": "neuecast",
+      "category": "News",
+      "screenshots": [
+        "screenshots/neuecast/1.webp",
+        "screenshots/neuecast/2.webp",
+        "screenshots/neuecast/3.webp",
+        "screenshots/neuecast/4.webp",
+        "screenshots/neuecast/5.webp",
+        "screenshots/neuecast/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "imagi",
+      "slug": "imagi",
+      "category": "Education",
+      "screenshots": [
+        "screenshots/imagi/1.webp",
+        "screenshots/imagi/2.webp",
+        "screenshots/imagi/3.webp",
+        "screenshots/imagi/4.webp",
+        "screenshots/imagi/5.webp",
+        "screenshots/imagi/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Wabi",
+      "slug": "wabi",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/wabi/1.webp",
+        "screenshots/wabi/2.webp",
+        "screenshots/wabi/3.webp",
+        "screenshots/wabi/4.webp",
+        "screenshots/wabi/5.webp",
+        "screenshots/wabi/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Polestar",
+      "slug": "polestar",
+      "category": "Utilities",
+      "screenshots": [
+        "screenshots/polestar/1.webp",
+        "screenshots/polestar/2.webp",
+        "screenshots/polestar/3.webp",
+        "screenshots/polestar/4.webp",
+        "screenshots/polestar/5.webp",
+        "screenshots/polestar/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Yapster",
+      "slug": "yapster",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/yapster/1.webp",
+        "screenshots/yapster/2.webp",
+        "screenshots/yapster/3.webp",
+        "screenshots/yapster/4.webp",
+        "screenshots/yapster/5.webp",
+        "screenshots/yapster/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Minimalist Launcher",
+      "slug": "minimalistlauncher",
+      "category": "Utilities",
+      "screenshots": [
+        "screenshots/minimalistlauncher/1.webp",
+        "screenshots/minimalistlauncher/2.webp",
+        "screenshots/minimalistlauncher/3.webp",
+        "screenshots/minimalistlauncher/4.webp",
+        "screenshots/minimalistlauncher/5.webp",
+        "screenshots/minimalistlauncher/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Hers",
+      "slug": "hers",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/hers/1.webp",
+        "screenshots/hers/2.webp",
+        "screenshots/hers/3.webp",
+        "screenshots/hers/4.webp",
+        "screenshots/hers/5.webp",
+        "screenshots/hers/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "BurnBar",
+      "slug": "burnbar",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/burnbar/1.webp",
+        "screenshots/burnbar/2.webp",
+        "screenshots/burnbar/3.webp",
+        "screenshots/burnbar/4.webp",
+        "screenshots/burnbar/5.webp",
+        "screenshots/burnbar/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Sunlitt Sun Position and Path",
+      "slug": "sunlitt",
+      "category": "Travel",
+      "screenshots": [
+        "screenshots/sunlitt/1.webp",
+        "screenshots/sunlitt/2.webp",
+        "screenshots/sunlitt/3.webp",
+        "screenshots/sunlitt/4.webp",
+        "screenshots/sunlitt/5.webp",
+        "screenshots/sunlitt/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Firefly",
+      "slug": "firefly",
+      "category": "Utilities",
+      "screenshots": [
+        "screenshots/firefly/1.webp",
+        "screenshots/firefly/2.webp",
+        "screenshots/firefly/3.webp",
+        "screenshots/firefly/4.webp",
+        "screenshots/firefly/5.webp",
+        "screenshots/firefly/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Mate",
+      "slug": "mate",
+      "category": "Utilities",
+      "screenshots": [
+        "screenshots/mate/1.webp",
+        "screenshots/mate/2.webp",
+        "screenshots/mate/3.webp",
+        "screenshots/mate/4.webp",
+        "screenshots/mate/5.webp",
+        "screenshots/mate/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Chime",
+      "slug": "chime",
+      "category": "Finance",
+      "screenshots": [
+        "screenshots/chime/1.webp",
+        "screenshots/chime/2.webp",
+        "screenshots/chime/3.webp",
+        "screenshots/chime/4.webp",
+        "screenshots/chime/5.webp",
+        "screenshots/chime/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "(Not Boring) Camera",
+      "slug": "notboringcamera",
+      "category": "Photo & Video",
+      "screenshots": [
+        "screenshots/notboringcamera/1.webp",
+        "screenshots/notboringcamera/2.webp",
+        "screenshots/notboringcamera/3.webp",
+        "screenshots/notboringcamera/4.webp",
+        "screenshots/notboringcamera/5.webp",
+        "screenshots/notboringcamera/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Deepstash",
+      "slug": "deepstash",
+      "category": "Reference",
+      "screenshots": [
+        "screenshots/deepstash/1.webp",
+        "screenshots/deepstash/2.webp",
+        "screenshots/deepstash/3.webp",
+        "screenshots/deepstash/4.webp",
+        "screenshots/deepstash/5.webp",
+        "screenshots/deepstash/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Tripadvisor",
+      "slug": "tripadvisor",
+      "category": "Travel",
+      "screenshots": [
+        "screenshots/tripadvisor/1.webp",
+        "screenshots/tripadvisor/2.webp",
+        "screenshots/tripadvisor/3.webp",
+        "screenshots/tripadvisor/4.webp",
+        "screenshots/tripadvisor/5.webp",
+        "screenshots/tripadvisor/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Love8",
+      "slug": "love8",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/love8/1.webp",
+        "screenshots/love8/2.webp",
+        "screenshots/love8/3.webp",
+        "screenshots/love8/4.webp",
+        "screenshots/love8/5.webp",
+        "screenshots/love8/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Eversend",
+      "slug": "eversend",
+      "category": "Finance",
+      "screenshots": [
+        "screenshots/eversend/1.webp",
+        "screenshots/eversend/2.webp",
+        "screenshots/eversend/3.webp",
+        "screenshots/eversend/4.webp",
+        "screenshots/eversend/5.webp",
+        "screenshots/eversend/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Sudoku a Day",
+      "slug": "sudoku",
+      "category": "Games",
+      "screenshots": [
+        "screenshots/sudoku/1.webp",
+        "screenshots/sudoku/2.webp",
+        "screenshots/sudoku/3.webp",
+        "screenshots/sudoku/4.webp",
+        "screenshots/sudoku/5.webp",
+        "screenshots/sudoku/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "NEXT Insurance",
+      "slug": "nextinsurance",
+      "category": "Finance",
+      "screenshots": [
+        "screenshots/nextinsurance/1.webp",
+        "screenshots/nextinsurance/2.webp",
+        "screenshots/nextinsurance/3.webp",
+        "screenshots/nextinsurance/4.webp",
+        "screenshots/nextinsurance/5.webp",
+        "screenshots/nextinsurance/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "YLAG",
+      "slug": "ylag",
+      "category": "Music",
+      "screenshots": [
+        "screenshots/ylag/1.webp",
+        "screenshots/ylag/2.webp",
+        "screenshots/ylag/3.webp",
+        "screenshots/ylag/4.webp",
+        "screenshots/ylag/5.webp",
+        "screenshots/ylag/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "UGLYCASH",
+      "slug": "uglycash",
+      "category": "Finance",
+      "screenshots": [
+        "screenshots/uglycash/1.webp",
+        "screenshots/uglycash/2.webp",
+        "screenshots/uglycash/3.webp",
+        "screenshots/uglycash/4.webp",
+        "screenshots/uglycash/5.webp",
+        "screenshots/uglycash/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Orb Social on Lens Protocol",
+      "slug": "orb",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/orb/1.webp",
+        "screenshots/orb/2.webp",
+        "screenshots/orb/3.webp",
+        "screenshots/orb/4.webp",
+        "screenshots/orb/5.webp",
+        "screenshots/orb/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Open",
+      "slug": "open",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/open/1.webp",
+        "screenshots/open/2.webp",
+        "screenshots/open/3.webp",
+        "screenshots/open/4.webp",
+        "screenshots/open/5.webp",
+        "screenshots/open/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Linktree",
+      "slug": "linktree",
+      "category": "Social Networking",
+      "screenshots": [
+        "screenshots/linktree/1.webp",
+        "screenshots/linktree/2.webp",
+        "screenshots/linktree/3.webp",
+        "screenshots/linktree/4.webp",
+        "screenshots/linktree/5.webp",
+        "screenshots/linktree/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Any Distance",
+      "slug": "anydistance",
+      "category": "Sports",
+      "screenshots": [
+        "screenshots/anydistance/1.webp",
+        "screenshots/anydistance/2.webp",
+        "screenshots/anydistance/3.webp",
+        "screenshots/anydistance/4.webp",
+        "screenshots/anydistance/5.webp",
+        "screenshots/anydistance/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Yukee simple todo list tracker",
+      "slug": "yukee",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/yukee/1.webp",
+        "screenshots/yukee/2.webp",
+        "screenshots/yukee/3.webp",
+        "screenshots/yukee/4.webp",
+        "screenshots/yukee/5.webp",
+        "screenshots/yukee/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Deezer",
+      "slug": "deezer",
+      "category": "Music",
+      "screenshots": [
+        "screenshots/deezer/1.webp",
+        "screenshots/deezer/2.webp",
+        "screenshots/deezer/3.webp",
+        "screenshots/deezer/4.webp",
+        "screenshots/deezer/5.webp",
+        "screenshots/deezer/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Soda",
+      "slug": "soda",
+      "category": "Food & Drink",
+      "screenshots": [
+        "screenshots/soda/1.webp",
+        "screenshots/soda/2.webp",
+        "screenshots/soda/3.webp",
+        "screenshots/soda/4.webp",
+        "screenshots/soda/5.webp",
+        "screenshots/soda/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Jomo",
+      "slug": "jomo",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/jomo/1.webp",
+        "screenshots/jomo/2.webp",
+        "screenshots/jomo/3.webp",
+        "screenshots/jomo/4.webp",
+        "screenshots/jomo/5.webp",
+        "screenshots/jomo/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Planta",
+      "slug": "planta",
+      "category": "Lifestyle",
+      "screenshots": [
+        "screenshots/planta/1.webp",
+        "screenshots/planta/2.webp",
+        "screenshots/planta/3.webp",
+        "screenshots/planta/4.webp",
+        "screenshots/planta/5.webp",
+        "screenshots/planta/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "SAVO",
+      "slug": "savo",
+      "category": "Education",
+      "screenshots": [
+        "screenshots/savo/1.webp",
+        "screenshots/savo/2.webp",
+        "screenshots/savo/3.webp",
+        "screenshots/savo/4.webp",
+        "screenshots/savo/5.webp",
+        "screenshots/savo/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Runbuds",
+      "slug": "runbuds",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/runbuds/1.webp",
+        "screenshots/runbuds/2.webp",
+        "screenshots/runbuds/3.webp",
+        "screenshots/runbuds/4.webp",
+        "screenshots/runbuds/5.webp",
+        "screenshots/runbuds/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Fabric",
+      "slug": "fabric",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/fabric/1.webp",
+        "screenshots/fabric/2.webp",
+        "screenshots/fabric/3.webp",
+        "screenshots/fabric/4.webp",
+        "screenshots/fabric/5.webp",
+        "screenshots/fabric/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Tripsy",
+      "slug": "tripsy",
+      "category": "Travel",
+      "screenshots": [
+        "screenshots/tripsy/1.webp",
+        "screenshots/tripsy/2.webp",
+        "screenshots/tripsy/3.webp",
+        "screenshots/tripsy/4.webp",
+        "screenshots/tripsy/5.webp",
+        "screenshots/tripsy/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Caffeine Tracker",
+      "slug": "alyx",
+      "category": "Health & Fitness",
+      "screenshots": [
+        "screenshots/alyx/1.webp",
+        "screenshots/alyx/2.webp",
+        "screenshots/alyx/3.webp",
+        "screenshots/alyx/4.webp",
+        "screenshots/alyx/5.webp",
+        "screenshots/alyx/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Moshi Kids",
+      "slug": "moshikids",
+      "category": "Education",
+      "screenshots": [
+        "screenshots/moshikids/1.webp",
+        "screenshots/moshikids/2.webp",
+        "screenshots/moshikids/3.webp",
+        "screenshots/moshikids/4.webp",
+        "screenshots/moshikids/5.webp",
+        "screenshots/moshikids/logo.webp"
+      ],
+      "screenshotCount": 6
+    },
+    {
+      "name": "Supernotes",
+      "slug": "supernotes",
+      "category": "Productivity",
+      "screenshots": [
+        "screenshots/supernotes/1.webp",
+        "screenshots/supernotes/2.webp",
+        "screenshots/supernotes/3.webp",
+        "screenshots/supernotes/4.webp",
+        "screenshots/supernotes/5.webp",
+        "screenshots/supernotes/logo.webp"
+      ],
+      "screenshotCount": 6
+    }
+  ]
+}
