@@ -1,0 +1,8 @@
+# Idea #27: Future Face AI app that generates scientifically accurate age progression of YOUR exact face. Take one selfie → AI estimates your current age, then creates 4 panels showing you at current age, 15-20 years older, 30-35 years older, and 55-60 years older. Identical bone structure, skull shape, all facial features stay the same — only natural aging applied. No beautification, no idealization — raw biological aging only. Photorealistic with detailed skin texture, pores, wrinkles, age spots, hair changes. The emotional hook: see what you and your family members might look like decades from now. Share the collage with friends. Parents use it to see their kids grown up. The creepy/real factor drives sharing. Blocks: Camera (selfie) + AI face aging (future prediction) + 4-panel collage output + Share.
+
+## Version: v1 (Original)
+**Date:** 2026-03-28 22:33
+**Status:** submitted
+
+## Description
+Future Face AI app that generates scientifically accurate age progression of YOUR exact face. Take one selfie → AI estimates your current age, then creates 4 panels showing you at current age, 15-20 years older, 30-35 years older, and 55-60 years older. Identical bone structure, skull shape, all facial features stay the same — only natural aging applied. No beautification, no idealization — raw biological aging only. Photorealistic with detailed skin texture, pores, wrinkles, age spots, hair changes. The emotional hook: see what you and your family members might look like decades from now. Share the collage with friends. Parents use it to see their kids grown up. The creepy/real factor drives sharing. Blocks: Camera (selfie) + AI face aging (future prediction) + 4-panel collage output + Share.
