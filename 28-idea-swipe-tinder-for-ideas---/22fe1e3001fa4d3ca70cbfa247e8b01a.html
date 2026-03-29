@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Idea Swipe | Select Domains</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;family=Space_Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-fixed": "#e5e2e1",
+                        "on-tertiary-fixed-variant": "#ecf0ff",
+                        "on-primary-fixed": "#3e4040",
+                        "on-primary": "#3f4041",
+                        "on-error": "#490013",
+                        "primary-container": "#454747",
+                        "surface-container-highest": "#252626",
+                        "surface-container": "#191a1a",
+                        "tertiary-dim": "#006ff0",
+                        "primary-fixed": "#e2e2e2",
+                        "background": "#0e0e0e",
+                        "surface-dim": "#0e0e0e",
+                        "secondary": "#9f9d9d",
+                        "surface-bright": "#2c2c2c",
+                        "on-primary-container": "#d0d0d0",
+                        "on-error-container": "#ff97a3",
+                        "inverse-surface": "#fcf8f8",
+                        "secondary-dim": "#9f9d9d",
+                        "tertiary-container": "#1074f7",
+                        "surface": "#0e0e0e",
+                        "tertiary-fixed-dim": "#0068e2",
+                        "surface-variant": "#252626",
+                        "on-secondary": "#202020",
+                        "on-primary-fixed-variant": "#5a5c5c",
+                        "on-tertiary": "#001e4b",
+                        "surface-container-high": "#1f2020",
+                        "surface-container-low": "#131313",
+                        "surface-tint": "#c6c6c7",
+                        "primary-fixed-dim": "#d4d4d4",
+                        "on-secondary-fixed": "#403f3f",
+                        "tertiary": "#6a9cff",
+                        "on-surface": "#e7e5e4",
+                        "tertiary-fixed": "#1074f7",
+                        "primary": "#c6c6c7",
+                        "on-tertiary-fixed": "#ffffff",
+                        "error-dim": "#b95463",
+                        "on-secondary-container": "#c1bfbe",
+                        "outline-variant": "#484848",
+                        "on-tertiary-container": "#000000",
+                        "inverse-on-surface": "#565554",
+                        "secondary-container": "#3c3b3b",
+                        "secondary-fixed-dim": "#d6d4d3",
+                        "surface-container-lowest": "#000000",
+                        "on-secondary-fixed-variant": "#5c5b5b",
+                        "on-background": "#e7e5e4",
+                        "primary-dim": "#b8b9b9",
+                        "inverse-primary": "#5e5f60",
+                        "error-container": "#7f2737",
+                        "on-surface-variant": "#acabaa",
+                        "outline": "#767575",
+                        "error": "#ec7c8a"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            transition: background-color 0.2s ease-in-out;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            background-color: rgba(37, 38, 38, 0.85);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-tertiary selection:text-on-tertiary min-h-screen flex flex-col">
+<!-- TopNavBar Suppression: Onboarding is transactional/linear -->
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col items-center justify-center px-6 py-24 md:py-32">
+<!-- Onboarding Progress Hub -->
+<div class="w-full max-w-2xl flex flex-col items-center">
+<!-- Progress Bar Section -->
+<div class="w-full mb-16">
+<div class="flex justify-between items-end mb-4">
+<span class="font-label text-sm uppercase tracking-widest text-on-surface-variant">Step 02</span>
+<span class="font-label text-sm font-bold text-tertiary">66% Complete</span>
+</div>
+<div class="h-1 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-2/3 shadow-[0_0_15px_rgba(106,156,255,0.4)]"></div>
+</div>
+</div>
+<!-- Header Editorial Layout -->
+<div class="text-center mb-12">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-6">
+                    Select your <span class="text-tertiary">domains</span>.
+                </h1>
+<p class="font-body text-lg text-on-surface-variant max-w-lg mx-auto leading-relaxed">
+                    Personalize your curation feed by choosing the industries and technologies that ignite your cognitive flow.
+                </p>
+</div>
+<!-- Multi-select Bento/Chip Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full mb-16">
+<!-- SaaS Chip -->
+<button class="group relative flex items-center justify-center p-6 bg-surface-container-low rounded-lg border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-200">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-secondary group-hover:text-tertiary transition-colors" data-icon="cloud">cloud</span>
+<span class="font-label text-xs uppercase tracking-widest font-semibold text-on-surface-variant group-hover:text-on-surface">SaaS</span>
+</div>
+</button>
+<!-- Mobile Chip (Active State Example) -->
+<button class="relative flex items-center justify-center p-6 bg-surface-container-high rounded-lg border border-tertiary/50 shadow-[0_0_20px_rgba(106,156,255,0.1)] transition-all duration-200">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="smartphone" style="font-variation-settings: 'FILL' 1;">smartphone</span>
+<span class="font-label text-xs uppercase tracking-widest font-semibold text-on-surface">Mobile</span>
+</div>
+<div class="absolute top-2 right-2">
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+<!-- Dev Tools Chip -->
+<button class="group relative flex items-center justify-center p-6 bg-surface-container-low rounded-lg border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-200">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-secondary group-hover:text-tertiary transition-colors" data-icon="terminal">terminal</span>
+<span class="font-label text-xs uppercase tracking-widest font-semibold text-on-surface-variant group-hover:text-on-surface">Dev Tools</span>
+</div>
+</button>
+<!-- Games Chip -->
+<button class="group relative flex items-center justify-center p-6 bg-surface-container-low rounded-lg border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-200">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-secondary group-hover:text-tertiary transition-colors" data-icon="sports_esports">sports_esports</span>
+<span class="font-label text-xs uppercase tracking-widest font-semibold text-on-surface-variant group-hover:text-on-surface">Games</span>
+</div>
+</button>
+<!-- Consumer Chip -->
+<button class="group relative flex items-center justify-center p-6 bg-surface-container-low rounded-lg border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-200">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-secondary group-hover:text-tertiary transition-colors" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-label text-xs uppercase tracking-widest font-semibold text-on-surface-variant group-hover:text-on-surface">Consumer</span>
+</div>
+</button>
+<!-- AI Chip (Active State Example) -->
+<button class="relative flex items-center justify-center p-6 bg-surface-container-high rounded-lg border border-tertiary/50 shadow-[0_0_20px_rgba(106,156,255,0.1)] transition-all duration-200">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="memory" style="font-variation-settings: 'FILL' 1;">memory</span>
+<span class="font-label text-xs uppercase tracking-widest font-semibold text-on-surface">AI</span>
+</div>
+<div class="absolute top-2 right-2">
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+<!-- Hardware Chip -->
+<button class="group relative flex items-center justify-center p-6 bg-surface-container-low rounded-lg border border-transparent hover:border-tertiary/30 hover:bg-surface-container-high transition-all duration-200">
+<div class="flex flex-col items-center gap-3">
+<span class="material-symbols-outlined text-secondary group-hover:text-tertiary transition-colors" data-icon="developer_board">developer_board</span>
+<span class="font-label text-xs uppercase tracking-widest font-semibold text-on-surface-variant group-hover:text-on-surface">Hardware</span>
+</div>
+</button>
+<!-- Placeholder / Search More -->
+<button class="group relative flex items-center justify-center p-6 bg-surface-container-lowest/50 border border-dashed border-outline-variant/30 rounded-lg hover:border-tertiary/50 transition-all duration-200">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-tertiary" data-icon="add">add</span>
+<span class="font-label text-[10px] uppercase tracking-tighter text-on-surface-variant group-hover:text-on-surface">Other</span>
+</div>
+</button>
+</div>
+<!-- Footer Navigation Actions -->
+<div class="flex items-center justify-between w-full max-w-sm">
+<button class="group flex items-center gap-2 px-6 py-3 font-label text-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-lg group-hover:-translate-x-1 transition-transform" data-icon="arrow_back">arrow_back</span>
+                    Back
+                </button>
+<button class="group flex items-center gap-3 px-10 py-4 bg-tertiary text-on-tertiary rounded-sm font-label text-sm font-bold uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-tertiary/20" onclick="window.location.href='beea0c97a22d4ccd96abcd13bf3b5512.html'">
+                    Next
+                    <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Decorative Canvas Elements -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-10 overflow-hidden">
+<!-- Ambient Gloom -->
+<div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-tertiary/5 blur-[120px] rounded-full"></div>
+<div class="absolute -bottom-[10%] -right-[10%] w-[40%] h-[40%] bg-tertiary/5 blur-[120px] rounded-full"></div>
+<!-- Texture Overlay -->
+<div class="absolute inset-0 opacity-[0.03] mix-blend-overlay" data-alt="subtle dark carbon fiber texture for background depth" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvxVukyFQeUJXUHoJEUndhln539bz0pjVJcGf2WnCQZntoaPisfH6a3P7OPd1aN8VT0NFz2gxJsxxeVUffmTYhH5Vai-zTfXXdTXnyrLVISdOIO0dAOufV1TPtw77b8KDz6NXEZC8NM0tS142_Rq53RkKEEkqiEi6AaV9kXjeFtwHMWnZ-Zbxh2dFL6T9PhPFqoD-nRmUwtCWb8imM_ilzun65ufNijByg5fkMjguXdx2vVMRvv55HCPLrlf-rHFNKhwSeIl0as7s');"></div>
+</div>
+<!-- User Profile Anchor (Suppressed in linear flow, using a placeholder for branding) -->
+<div class="fixed bottom-8 right-8 flex items-center gap-4 bg-surface-container-high/80 backdrop-blur-md px-4 py-2 rounded-full border border-outline-variant/10">
+<div class="flex flex-col items-end">
+<span class="font-label text-[10px] uppercase tracking-tighter text-on-surface">The Curator</span>
+<span class="font-label text-[8px] uppercase tracking-tighter text-on-surface-variant">Level 1 Builder</span>
+</div>
+<div class="h-8 w-8 rounded-full bg-surface-bright flex items-center justify-center overflow-hidden border border-outline-variant/20">
+<img alt="Curator Profile" class="h-full w-full object-cover" data-alt="close-up portrait of a tech professional with neutral expression in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9JIUoft9YIR6mrceWNHF3lJ_6Em_Sy2-xdTL2_CibvCWLZGLDBX25pCtV3bx-dyF74H0dTWRnCbrRs3EmwTyoqWjEAR29FOCd7Pk52-UMm-dEZUJO7ZqRPAwaJQmbfpfBlIfFwMI36Q0jdC456j-PZiDuLiXjOMaHt91kta7oZwe7M3PDFrkKE39fZQuPYIIwxu552tOuiX2BqD-uK942rH0xsjgi2_ZO0IwK_Y6Q_02wGRyrIiwpo57GDHTIIRj7TZvEs9HCms8"/>
+</div>
+</div>
+</body></html>

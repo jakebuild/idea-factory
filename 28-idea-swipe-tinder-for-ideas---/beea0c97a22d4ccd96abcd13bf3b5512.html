@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Idea Swipe - Master the Flow</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed": "#e5e2e1",
+              "on-tertiary-fixed-variant": "#ecf0ff",
+              "on-primary-fixed": "#3e4040",
+              "on-primary": "#3f4041",
+              "on-error": "#490013",
+              "primary-container": "#454747",
+              "surface-container-highest": "#252626",
+              "surface-container": "#191a1a",
+              "tertiary-dim": "#006ff0",
+              "primary-fixed": "#e2e2e2",
+              "background": "#0e0e0e",
+              "surface-dim": "#0e0e0e",
+              "secondary": "#9f9d9d",
+              "surface-bright": "#2c2c2c",
+              "on-primary-container": "#d0d0d0",
+              "on-error-container": "#ff97a3",
+              "inverse-surface": "#fcf8f8",
+              "secondary-dim": "#9f9d9d",
+              "tertiary-container": "#1074f7",
+              "surface": "#0e0e0e",
+              "tertiary-fixed-dim": "#0068e2",
+              "surface-variant": "#252626",
+              "on-secondary": "#202020",
+              "on-primary-fixed-variant": "#5a5c5c",
+              "on-tertiary": "#001e4b",
+              "surface-container-high": "#1f2020",
+              "surface-container-low": "#131313",
+              "surface-tint": "#c6c6c7",
+              "primary-fixed-dim": "#d4d4d4",
+              "on-secondary-fixed": "#403f3f",
+              "tertiary": "#6a9cff",
+              "on-surface": "#e7e5e4",
+              "tertiary-fixed": "#1074f7",
+              "primary": "#c6c6c7",
+              "on-tertiary-fixed": "#ffffff",
+              "error-dim": "#b95463",
+              "on-secondary-container": "#c1bfbe",
+              "outline-variant": "#484848",
+              "on-tertiary-container": "#000000",
+              "inverse-on-surface": "#565554",
+              "secondary-container": "#3c3b3b",
+              "secondary-fixed-dim": "#d6d4d3",
+              "surface-container-lowest": "#000000",
+              "on-secondary-fixed-variant": "#5c5b5b",
+              "on-background": "#e7e5e4",
+              "primary-dim": "#b8b9b9",
+              "inverse-primary": "#5e5f60",
+              "error-container": "#7f2737",
+              "on-surface-variant": "#acabaa",
+              "outline": "#767575",
+              "error": "#ec7c8a"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(31, 32, 32, 0.85);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-tertiary/30">
+<!-- TopNavBar Implementation -->
+<header class="fixed top-0 w-full z-50 bg-[#131313] font-['Inter'] antialiased shadow-none">
+<div class="flex justify-between items-center px-8 py-4 w-full max-w-[1440px] mx-auto">
+<div class="text-xl font-bold tracking-tighter text-[#e7e5e4]">
+                Idea Swipe
+            </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#acabaa] hover:text-[#e7e5e4] transition-colors" href="#">Docs</a>
+<a class="text-[#acabaa] hover:text-[#e7e5e4] transition-colors" href="#">Community</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 text-[#acabaa] hover:bg-[#1f2020] transition-all duration-150 rounded-lg active:scale-95">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="p-2 text-[#acabaa] hover:bg-[#1f2020] transition-all duration-150 rounded-lg active:scale-95">
+<span class="material-symbols-outlined">help</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-high border border-outline-variant/20 overflow-hidden">
+<img alt="User Avatar" class="w-full h-full object-cover" data-alt="professional headshot of a developer in high-contrast cinematic lighting with a dark minimalist background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK6yT-DbY-sQhDhOF4uphRQ-zdYrRqUupuq9R_0pR7yWYxMVRh8VMde0sqL6JCJTtFnn2J4-adx9zhjthYZqQd85dG-QKkRxCklKqpKMueRfziVc7dtRNpNWKUPmfpOMbbZcqT2AVQWiLulJsJfKPO4Q_r2YCX28kB7wQUuPFh7rRl9HesAIhJsSQEtnHy3sk6CN34crMTKVCupctEdd0DBLykbYJt5HdVoNwWKB8KYSvMskES5hOhLcMokU7NoL5dTBBZANp9f68"/>
+</div>
+</div>
+</div>
+</header>
+<main class="min-h-screen pt-24 pb-12 px-6 flex flex-col items-center justify-center max-w-5xl mx-auto relative">
+<!-- Background Ambient Glows -->
+<div class="absolute top-1/2 left-0 -translate-y-1/2 w-[300px] h-[300px] bg-error-dim/5 blur-[120px] pointer-events-none"></div>
+<div class="absolute top-1/2 right-0 -translate-y-1/2 w-[300px] h-[300px] bg-tertiary-dim/5 blur-[120px] pointer-events-none"></div>
+<!-- Onboarding Header -->
+<div class="w-full mb-12 text-center md:text-left">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<p class="font-label text-sm uppercase tracking-[0.2em] text-tertiary mb-3">Step 3 of 3</p>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tight text-on-surface leading-none">
+                        Master the Flow.
+                    </h1>
+</div>
+<div class="flex flex-col items-center md:items-end gap-2">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Setup Complete</span>
+<div class="w-48 h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="w-full h-full bg-tertiary"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Card Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 w-full items-center">
+<!-- Keyboard Legend (Asymmetric offset as per DS) -->
+<div class="lg:col-span-3 order-2 lg:order-1">
+<div class="space-y-6">
+<div class="group">
+<div class="flex items-center gap-4 mb-2">
+<span class="w-10 h-10 flex items-center justify-center bg-secondary-container rounded text-on-surface font-label border border-outline-variant/10">Z</span>
+<span class="font-label text-sm uppercase tracking-wider text-on-surface-variant">Undo Action</span>
+</div>
+<p class="text-xs text-secondary/60 ml-14">Mistakes happen. Reverse your last swipe instantly.</p>
+</div>
+<div class="group">
+<div class="flex items-center gap-4 mb-2">
+<span class="w-10 h-10 flex items-center justify-center bg-secondary-container rounded text-on-surface font-label border border-outline-variant/10">
+<span class="material-symbols-outlined text-sm">arrow_upward</span>
+</span>
+<span class="font-label text-sm uppercase tracking-wider text-on-surface-variant">Maybe</span>
+</div>
+<p class="text-xs text-secondary/60 ml-14">Not sure? Send it to the temporary vault for later.</p>
+</div>
+</div>
+</div>
+<!-- Central Hero Card -->
+<div class="lg:col-span-6 order-1 lg:order-2">
+<div class="relative group">
+<!-- Glow effect behind card -->
+<div class="absolute -inset-1 bg-gradient-to-r from-tertiary/20 to-error-dim/20 blur-xl opacity-50 transition duration-1000 group-hover:opacity-75"></div>
+<div class="relative bg-surface-container-low p-8 rounded-lg aspect-[4/5] flex flex-col justify-between overflow-hidden border border-outline-variant/5">
+<div class="space-y-4">
+<div class="flex justify-between items-start">
+<div class="px-3 py-1 bg-tertiary/10 rounded-sm">
+<span class="font-label text-[10px] uppercase tracking-widest text-tertiary">Training Active</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">more_vert</span>
+</div>
+<h2 class="text-3xl font-bold text-on-surface leading-tight">Neural interface for high-velocity cognitive architecture.</h2>
+<p class="text-on-surface-variant text-lg">What if we could map ideas directly to a low-latency terminal interface? Focus on the signal, discard the noise.</p>
+</div>
+<!-- Interactive Hints Overlays -->
+<div class="flex justify-between items-center pt-8">
+<div class="flex flex-col items-center gap-2 group/drop">
+<div class="w-12 h-12 flex items-center justify-center border border-outline-variant rounded-md group-hover/drop:border-error-dim group-hover/drop:bg-error-dim/5 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant group-hover/drop:text-error">arrow_back</span>
+</div>
+<span class="font-label text-[10px] uppercase tracking-tighter text-on-surface-variant">Drop</span>
+</div>
+<div class="flex flex-col items-center gap-2 group/keep">
+<div class="w-12 h-12 flex items-center justify-center border border-outline-variant rounded-md group-hover/keep:border-tertiary group-hover/keep:bg-tertiary/5 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant group-hover/keep:text-tertiary">arrow_forward</span>
+</div>
+<span class="font-label text-[10px] uppercase tracking-tighter text-on-surface-variant">Keep</span>
+</div>
+</div>
+<!-- Swipe visual cues -->
+<div class="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-error-dim/10 to-transparent pointer-events-none opacity-40"></div>
+<div class="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-tertiary-dim/10 to-transparent pointer-events-none opacity-40"></div>
+</div>
+</div>
+</div>
+<!-- Right Column Metadata -->
+<div class="lg:col-span-3 order-3 flex flex-col gap-8">
+<div class="p-6 bg-surface-container-high rounded border border-outline-variant/5">
+<h3 class="font-label text-xs uppercase tracking-widest text-on-surface mb-4">Current Progress</h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant">Ideas Sorted</span>
+<span class="font-label text-tertiary">142</span>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="text-on-surface-variant">Vault Status</span>
+<span class="font-label text-on-surface">Optimized</span>
+</div>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full py-4 bg-tertiary text-on-tertiary font-label font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-tertiary-container transition-all active:scale-[0.98] shadow-[0_0_30px_rgba(106,156,255,0.2)]" onclick="window.location.href='564064fcf47543b7bb154902ba9e496d.html'">
+                        Get Started
+                    </button>
+<p class="text-[10px] text-center mt-4 text-on-surface-variant uppercase tracking-tighter">
+                        By entering, you agree to our <a class="underline hover:text-on-surface" href="#">Curation Protocol</a>
+</p>
+</div>
+</div>
+</div>
+<!-- Footer Decoration -->
+<div class="mt-24 w-full max-w-sm border-t border-outline-variant/10 pt-8 text-center">
+<p class="font-label text-xs text-on-surface-variant leading-relaxed">
+                "The interface should be a silent, invisible curator. Treat every idea as a gallery piece."
+            </p>
+</div>
+</main>
+<!-- SideNavBar (Contextual check: Hidden for onboarding focus, but logic implies it exists in shell) -->
+<!-- Prohibited by "The Filter" rule for transactional/onboarding flows -->
+</body></html>

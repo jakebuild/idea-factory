@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Idea Swipe | Insights</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#252626",
+              "tertiary-container": "#1074f7",
+              "error-container": "#7f2737",
+              "on-primary-container": "#d0d0d0",
+              "secondary": "#9f9d9d",
+              "on-error-container": "#ff97a3",
+              "on-tertiary": "#001e4b",
+              "on-background": "#e7e5e4",
+              "inverse-surface": "#fcf8f8",
+              "surface-container": "#191a1a",
+              "surface-tint": "#c6c6c7",
+              "outline": "#767575",
+              "on-error": "#490013",
+              "secondary-fixed": "#e5e2e1",
+              "on-secondary-fixed": "#403f3f",
+              "error-dim": "#b95463",
+              "on-primary-fixed-variant": "#5a5c5c",
+              "tertiary-fixed-dim": "#0068e2",
+              "on-secondary-fixed-variant": "#5c5b5b",
+              "primary-fixed": "#e2e2e2",
+              "on-primary": "#3f4041",
+              "surface-container-highest": "#252626",
+              "tertiary-fixed": "#1074f7",
+              "primary": "#c6c6c7",
+              "on-tertiary-container": "#000000",
+              "primary-dim": "#b8b9b9",
+              "surface-container-high": "#1f2020",
+              "on-secondary-container": "#c1bfbe",
+              "on-surface-variant": "#acabaa",
+              "inverse-primary": "#5e5f60",
+              "error": "#ec7c8a",
+              "on-secondary": "#202020",
+              "surface": "#0e0e0e",
+              "primary-fixed-dim": "#d4d4d4",
+              "inverse-on-surface": "#565554",
+              "surface-container-lowest": "#000000",
+              "on-tertiary-fixed": "#ffffff",
+              "secondary-container": "#3c3b3b",
+              "on-tertiary-fixed-variant": "#ecf0ff",
+              "surface-container-low": "#131313",
+              "tertiary-dim": "#006ff0",
+              "background": "#0e0e0e",
+              "on-surface": "#e7e5e4",
+              "primary-container": "#454747",
+              "outline-variant": "#484848",
+              "tertiary": "#6a9cff",
+              "surface-dim": "#0e0e0e",
+              "secondary-dim": "#9f9d9d",
+              "surface-bright": "#2c2c2c",
+              "secondary-fixed-dim": "#d6d4d3",
+              "on-primary-fixed": "#3e4040"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #e7e5e4;
+        }
+        .glass-panel {
+            background: rgba(37, 38, 38, 0.85);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-tertiary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0e0e0e] flex justify-between items-center h-16 px-8 w-full border-b border-[#484848]/15 font-sans Inter tracking-tight">
+<div class="flex items-center gap-8">
+<span class="text-xl font-bold tracking-tighter text-[#e7e5e4]">Idea Swipe</span>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-[#acabaa] hover:text-[#e7e5e4] transition-colors" href="#">Feed</a>
+<a class="text-[#acabaa] hover:text-[#e7e5e4] transition-colors" href="#">Build Queue</a>
+<a class="text-[#acabaa] hover:text-[#e7e5e4] transition-colors" href="#">Archives</a>
+<a class="text-[#e7e5e4] border-b-2 border-[#6a9cff] pb-1" href="#">Insights</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center bg-surface-container-low px-3 py-1.5 rounded-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-sm text-secondary mr-2" data-icon="search">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm p-0 w-48 text-on-surface" placeholder="Search ideas..." type="text"/>
+</div>
+<button class="p-2 text-secondary hover:bg-[#1f2020] transition-all duration-150 rounded-sm active:scale-95">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+</button>
+<button class="p-2 text-secondary hover:bg-[#1f2020] transition-all duration-150 rounded-sm active:scale-95">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant/20 overflow-hidden">
+<img alt="Developer Profile" class="w-full h-full object-cover" data-alt="close-up professional portrait of a software developer with soft studio lighting and dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs1_KdMrE4af04nh6qye-jdUoxj-LqXJYKDKr-46uViphiPK9UPtIiFgJbbf9yw4IAiuhFcM8Q-lPhgaE1q7-nShuzyu8brjewYGAj8KIU-GTtUqm3hJDUbZtMode-9RCqUDjj04OeuKyvbxN_Hjs2hGJsZYZ2VAr6CU66vgwKtsfMSJ3NC_7cJfrF7x7IXhiJSZrEtlOrB1pSuKdddXXE4T6cFb7QAAin1d8Al526Zp-1bjrPp07d0PuX6nbFWVEyE8O9Aj8uAfM"/>
+</div>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="fixed left-0 top-16 h-[calc(100vh-64px)] w-64 flex flex-col border-r border-[#484848]/15 py-6 px-4 bg-[#0e0e0e] font-mono Space Grotesk text-sm">
+<div class="mb-8 px-2">
+<div class="flex items-center gap-3 mb-1">
+<div class="w-10 h-10 rounded-sm bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined" data-icon="architecture" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+<div>
+<h3 class="text-on-surface font-bold text-base leading-none">The Curator</h3>
+<p class="text-[10px] uppercase tracking-widest text-secondary mt-1">Level 4 Architect</p>
+</div>
+</div>
+</div>
+<div class="space-y-1 flex-grow">
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#acabaa] hover:bg-[#131313] hover:text-[#e7e5e4] transition-all duration-200 ease-in-out rounded-sm cursor-pointer" href="#" onclick="window.location.href='564064fcf47543b7bb154902ba9e496d.html'">
+<span class="material-symbols-outlined" data-icon="swipe_vertical">swipe_vertical</span>
+                Swipe Feed
+            </a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#acabaa] hover:bg-[#131313] hover:text-[#e7e5e4] transition-all duration-200 ease-in-out rounded-sm cursor-pointer" href="#" onclick="window.location.href='666458dd6f104dc086c242bfc6a16102.html'">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+                BUILD Queue
+            </a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#acabaa] hover:bg-[#131313] hover:text-[#e7e5e4] transition-all duration-200 ease-in-out rounded-sm cursor-pointer" href="#" onclick="window.location.href='771ab198bd2d40a5a547e05cad0ab385.html'">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+                MAYBE Pile
+            </a>
+<a class="flex items-center gap-3 px-3 py-2.5 text-[#acabaa] hover:bg-[#131313] hover:text-[#e7e5e4] transition-all duration-200 ease-in-out rounded-sm cursor-pointer" href="#" onclick="window.location.href='2bf7d5c46524410da63f865efd0824c4.html'">
+<span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+                Filter
+            </a>
+</div>
+<button class="mt-4 mx-2 bg-tertiary text-on-tertiary py-3 px-4 rounded-sm font-bold flex items-center justify-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+            New Idea
+        </button>
+<div class="mt-8 pt-6 border-t border-outline-variant/10 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 text-[#acabaa] hover:bg-[#131313] hover:text-[#e7e5e4] transition-all" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="menu_book">menu_book</span>
+                Documentation
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 text-[#acabaa] hover:bg-[#131313] hover:text-[#e7e5e4] transition-all" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="help_outline">help_outline</span>
+                Support
+            </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-64 pt-16 min-h-screen bg-surface">
+<div class="max-w-7xl mx-auto px-8 py-24">
+<!-- Header Section -->
+<header class="mb-20">
+<h1 class="font-headline text-5xl font-extrabold tracking-tighter mb-4 text-on-surface">Queue States</h1>
+<p class="text-on-surface-variant font-label text-lg max-w-2xl">The digital void where potential rests. Monitor your exhausted feed and inactive builds.</p>
+</header>
+<!-- Bento Grid Empty States -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+<!-- Variant A: Feed Exhausted -->
+<section class="group relative flex flex-col items-center justify-center bg-surface-container-low min-h-[500px] p-12 transition-all duration-300 hover:bg-surface-container-high">
+<!-- Subtle Corner Accents -->
+<div class="absolute top-0 left-0 w-8 h-8 border-t border-l border-outline-variant/30 group-hover:border-tertiary/30 transition-colors"></div>
+<div class="absolute bottom-0 right-0 w-8 h-8 border-b border-r border-outline-variant/30 group-hover:border-tertiary/30 transition-colors"></div>
+<div class="relative mb-10">
+<div class="absolute inset-0 bg-tertiary/10 blur-2xl rounded-full scale-150 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative w-24 h-24 bg-surface-container flex items-center justify-center border border-outline-variant/20 rounded-sm overflow-hidden">
+<span class="material-symbols-outlined text-4xl text-tertiary animate-pulse" data-icon="done_all">done_all</span>
+</div>
+</div>
+<div class="text-center space-y-4 max-w-sm">
+<h2 class="font-headline text-2xl font-bold text-on-surface">You've seen everything for today.</h2>
+<p class="text-on-surface-variant font-label tracking-tight text-base">Our algorithms have curated the best for your current stack. 15 new ideas tomorrow.</p>
+</div>
+<div class="mt-12 flex flex-col items-center gap-4 w-full">
+<button class="w-full max-w-[200px] py-4 bg-tertiary text-on-tertiary font-bold text-sm tracking-widest uppercase rounded-sm active:scale-95 transition-all" onclick="window.location.href='666458dd6f104dc086c242bfc6a16102.html'">
+                            View BUILD Queue
+                        </button>
+<div class="flex items-center gap-2 text-[10px] font-label text-secondary uppercase tracking-[0.2em]">
+<span>Press</span>
+<span class="px-1.5 py-0.5 bg-secondary-container rounded-md text-on-secondary-container">CMD</span>
+<span class="px-1.5 py-0.5 bg-secondary-container rounded-md text-on-secondary-container">Q</span>
+</div>
+</div>
+</section>
+<!-- Variant B: Empty BUILD Queue -->
+<section class="group relative flex flex-col items-center justify-center bg-surface-container-low min-h-[500px] p-12 transition-all duration-300 hover:bg-surface-container-high overflow-hidden">
+<!-- Tech Grid Background Pattern (Decorative) -->
+<div class="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none" style="background-image: radial-gradient(#6a9cff 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="relative mb-10">
+<div class="w-24 h-24 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-secondary-dim group-hover:text-on-surface transition-colors" data-icon="layers">layers</span>
+<!-- Asymmetrical decorative dot -->
+<div class="absolute -top-1 -right-1 w-3 h-3 bg-tertiary rounded-full"></div>
+</div>
+</div>
+<div class="text-center space-y-4 max-w-sm">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Nothing saved yet.</h2>
+<p class="text-on-surface-variant font-label tracking-tight text-base">Your engineering backlog is currently a clean slate. Start swiping to populate.</p>
+</div>
+<div class="mt-12 flex flex-col items-center gap-4 w-full">
+<button class="w-full max-w-[200px] py-4 border border-outline-variant hover:bg-surface-container-highest text-on-surface font-bold text-sm tracking-widest uppercase rounded-sm active:scale-95 transition-all" onclick="window.location.href='564064fcf47543b7bb154902ba9e496d.html'">
+                            Open Feed
+                        </button>
+<div class="flex items-center gap-2 text-[10px] font-label text-secondary uppercase tracking-[0.2em]">
+<span>Press</span>
+<span class="px-1.5 py-0.5 bg-secondary-container rounded-md text-on-secondary-container">SPACE</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer Meta -->
+<footer class="mt-32 border-t border-outline-variant/10 pt-8 flex justify-between items-end">
+<div class="space-y-2">
+<p class="text-[10px] font-label text-secondary uppercase tracking-widest">System Status</p>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-tertiary rounded-full"></span>
+<span class="text-xs text-on-surface">API 2.4ms</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 bg-tertiary rounded-full"></span>
+<span class="text-xs text-on-surface">Storage 92%</span>
+</div>
+</div>
+</div>
+<div class="text-right">
+<p class="text-xs text-secondary-dim font-label">IDEASWIPE_OS v1.0.4-STABLE</p>
+</div>
+</footer>
+</div>
+</main>
+<!-- Bottom Notification (Glassmorphic) -->
+<div class="fixed bottom-8 right-8 glass-panel border border-outline-variant/20 p-4 rounded-lg shadow-2xl flex items-center gap-4 max-w-sm z-50">
+<div class="w-10 h-10 rounded-sm bg-tertiary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="info">info</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface uppercase tracking-wider">Sync Complete</p>
+<p class="text-[11px] text-on-surface-variant">Your archive has been updated with 4 new tags.</p>
+</div>
+<button class="ml-4 p-1 hover:bg-surface-container-highest rounded-sm transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="close">close</span>
+</button>
+</div>
+</body></html>

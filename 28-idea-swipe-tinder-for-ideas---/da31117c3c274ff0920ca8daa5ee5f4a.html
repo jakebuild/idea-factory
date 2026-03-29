@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Idea Swipe - Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&amp;family=Space_Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed": "#e5e2e1",
+              "on-tertiary-fixed-variant": "#ecf0ff",
+              "on-primary-fixed": "#3e4040",
+              "on-primary": "#3f4041",
+              "on-error": "#490013",
+              "primary-container": "#454747",
+              "surface-container-highest": "#252626",
+              "surface-container": "#191a1a",
+              "tertiary-dim": "#006ff0",
+              "primary-fixed": "#e2e2e2",
+              "background": "#0e0e0e",
+              "surface-dim": "#0e0e0e",
+              "secondary": "#9f9d9d",
+              "surface-bright": "#2c2c2c",
+              "on-primary-container": "#d0d0d0",
+              "on-error-container": "#ff97a3",
+              "inverse-surface": "#fcf8f8",
+              "secondary-dim": "#9f9d9d",
+              "tertiary-container": "#1074f7",
+              "surface": "#0e0e0e",
+              "tertiary-fixed-dim": "#0068e2",
+              "surface-variant": "#252626",
+              "on-secondary": "#202020",
+              "on-primary-fixed-variant": "#5a5c5c",
+              "on-tertiary": "#001e4b",
+              "surface-container-high": "#1f2020",
+              "surface-container-low": "#131313",
+              "surface-tint": "#c6c6c7",
+              "primary-fixed-dim": "#d4d4d4",
+              "on-secondary-fixed": "#403f3f",
+              "tertiary": "#6a9cff",
+              "on-surface": "#e7e5e4",
+              "tertiary-fixed": "#1074f7",
+              "primary": "#c6c6c7",
+              "on-tertiary-fixed": "#ffffff",
+              "error-dim": "#b95463",
+              "on-secondary-container": "#c1bfbe",
+              "outline-variant": "#484848",
+              "on-tertiary-container": "#000000",
+              "inverse-on-surface": "#565554",
+              "secondary-container": "#3c3b3b",
+              "secondary-fixed-dim": "#d6d4d3",
+              "surface-container-lowest": "#000000",
+              "on-secondary-fixed-variant": "#5c5b5b",
+              "on-background": "#e7e5e4",
+              "primary-dim": "#b8b9b9",
+              "inverse-primary": "#5e5f60",
+              "error-container": "#7f2737",
+              "on-surface-variant": "#acabaa",
+              "outline": "#767575",
+              "error": "#ec7c8a"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift {
+            transition: background-color 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-tertiary/30 selection:text-tertiary">
+<!-- Progress Bar (Top) -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-background">
+<div class="w-full h-1 bg-surface-container-high">
+<div class="h-full bg-tertiary w-1/3 transition-all duration-500 shadow-[0_0_15px_rgba(106,156,255,0.4)]"></div>
+</div>
+<div class="px-8 py-6 flex justify-between items-center max-w-[1440px] mx-auto">
+<span class="font-headline font-extrabold tracking-tighter text-xl text-on-surface">Idea Swipe</span>
+<span class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant">Step 01 / 03</span>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-12">
+<div class="w-full max-w-4xl">
+<!-- Hero Heading -->
+<div class="mb-16 text-center md:text-left">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-4 text-on-surface">
+                    Who are you <br/><span class="text-tertiary">building for?</span>
+</h1>
+<p class="font-label text-on-surface-variant max-w-md uppercase tracking-wider text-sm">
+                    Select your primary focus to tailor the curation engine to your workflow.
+                </p>
+</div>
+<!-- Bento Selection Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+<!-- Indie Dev Card -->
+<button class="group relative flex flex-col p-8 bg-surface-container-low text-left tonal-shift hover:bg-surface-container-high focus:outline-none focus:ring-1 focus:ring-tertiary rounded-sm">
+<div class="mb-12">
+<span class="material-symbols-outlined text-tertiary text-4xl" data-icon="terminal">terminal</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold mb-2 text-on-surface">Indie Dev</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Solo shipping machines focused on MVP speed and technical sovereignty.</p>
+</div>
+<div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-label text-[10px] bg-secondary-container text-on-secondary-container px-2 py-1 rounded-sm uppercase tracking-tighter">Selected</span>
+</div>
+</button>
+<!-- Startup Founder Card -->
+<button class="group relative flex flex-col p-8 bg-surface-container-low text-left tonal-shift hover:bg-surface-container-high focus:outline-none focus:ring-1 focus:ring-tertiary rounded-sm border-l border-tertiary/20">
+<div class="mb-12">
+<span class="material-symbols-outlined text-tertiary text-4xl" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold mb-2 text-on-surface">Startup Founder</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Scale-oriented visionaries building for product-market fit and growth.</p>
+</div>
+</button>
+<!-- Hobbyist Card -->
+<button class="group relative flex flex-col p-8 bg-surface-container-low text-left tonal-shift hover:bg-surface-container-high focus:outline-none focus:ring-1 focus:ring-tertiary rounded-sm">
+<div class="mb-12">
+<span class="material-symbols-outlined text-tertiary text-4xl" data-icon="palette">palette</span>
+</div>
+<div>
+<h3 class="font-headline text-xl font-bold mb-2 text-on-surface">Hobbyist</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Creative explorers building for the joy of the craft and personal utility.</p>
+</div>
+</button>
+</div>
+<!-- Action Footer -->
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 pt-8 border-t border-outline-variant/10">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-sm" data-icon="keyboard">keyboard</span>
+</div>
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-widest">
+                        Press <span class="text-on-surface font-bold">1-3</span> to select, <span class="text-on-surface font-bold">Enter</span> to proceed
+                    </p>
+</div>
+<button class="w-full md:w-auto px-12 py-4 bg-tertiary text-on-tertiary font-headline font-bold text-sm rounded-sm hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-tertiary/10 flex items-center justify-center gap-2 group" onclick="window.location.href='22fe1e3001fa4d3ca70cbfa247e8b01a.html'">
+                    Next
+                    <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Background Decorative Elements -->
+<div class="fixed top-0 right-0 -z-10 w-[500px] h-[500px] bg-tertiary/5 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="fixed bottom-0 left-0 -z-10 w-[300px] h-[300px] bg-error-dim/5 blur-[100px] rounded-full pointer-events-none"></div>
+</body></html>

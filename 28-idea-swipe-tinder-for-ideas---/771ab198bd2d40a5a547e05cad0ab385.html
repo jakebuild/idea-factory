@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Idea Swipe - MAYBE Pile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed": "#3e4040",
+              "on-error-container": "#ff97a3",
+              "on-secondary": "#202020",
+              "inverse-on-surface": "#565554",
+              "secondary-fixed": "#e5e2e1",
+              "surface-container": "#191a1a",
+              "surface-container-low": "#131313",
+              "on-surface-variant": "#acabaa",
+              "on-primary-fixed-variant": "#5a5c5c",
+              "primary-container": "#454747",
+              "surface-tint": "#c6c6c7",
+              "on-primary-container": "#d0d0d0",
+              "inverse-surface": "#fcf8f8",
+              "on-error": "#490013",
+              "secondary-fixed-dim": "#d6d4d3",
+              "error-dim": "#b95463",
+              "outline": "#767575",
+              "on-secondary-container": "#c1bfbe",
+              "error-container": "#7f2737",
+              "surface-variant": "#252626",
+              "error": "#ec7c8a",
+              "surface-container-high": "#1f2020",
+              "primary-fixed": "#e2e2e2",
+              "on-tertiary-container": "#000000",
+              "secondary": "#9f9d9d",
+              "on-secondary-fixed-variant": "#5c5b5b",
+              "primary-dim": "#b8b9b9",
+              "secondary-dim": "#9f9d9d",
+              "tertiary-container": "#1074f7",
+              "tertiary": "#6a9cff",
+              "surface-container-lowest": "#000000",
+              "on-tertiary-fixed-variant": "#ecf0ff",
+              "background": "#0e0e0e",
+              "primary-fixed-dim": "#d4d4d4",
+              "outline-variant": "#484848",
+              "on-primary": "#3f4041",
+              "on-surface": "#e7e5e4",
+              "surface-container-highest": "#252626",
+              "tertiary-fixed-dim": "#0068e2",
+              "on-tertiary-fixed": "#ffffff",
+              "primary": "#c6c6c7",
+              "tertiary-dim": "#006ff0",
+              "on-background": "#e7e5e4",
+              "surface-bright": "#2c2c2c",
+              "surface-dim": "#0e0e0e",
+              "on-secondary-fixed": "#403f3f",
+              "on-tertiary": "#001e4b",
+              "secondary-container": "#3c3b3b",
+              "tertiary-fixed": "#1074f7",
+              "surface": "#0e0e0e",
+              "inverse-primary": "#5e5f60"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #0e0e0e;
+        color: #e7e5e4;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #0e0e0e;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #1f2020;
+      }
+    </style>
+</head>
+<body class="font-body selection:bg-tertiary/30 overflow-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#0e0e0e] flex items-center justify-between px-8 h-16 w-full shadow-[0_0_60px_rgba(231,229,228,0.06)]">
+<div class="flex items-center gap-4">
+<span class="text-xl font-bold tracking-tighter text-[#e7e5e4]">Idea Swipe</span>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden md:flex items-center gap-8 font-mono text-xs tracking-widest uppercase">
+<button class="text-[#acabaa] hover:bg-[#1f2020] hover:text-[#e7e5e4] transition-all duration-150 px-3 py-2">Documentation</button>
+<button class="text-[#acabaa] hover:bg-[#1f2020] hover:text-[#e7e5e4] transition-all duration-150 px-3 py-2">API</button>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#acabaa] hover:text-[#e7e5e4] active:scale-95 transition-transform" data-icon="help">help</button>
+<button class="material-symbols-outlined text-[#acabaa] hover:text-[#e7e5e4] active:scale-95 transition-transform" data-icon="settings">settings</button>
+</div>
+</div>
+</header>
+<div class="flex h-screen pt-16">
+<!-- SideNavBar -->
+<nav class="fixed left-0 top-16 h-[calc(100vh-64px)] w-64 bg-[#0e0e0e] border-r border-outline-variant/10 flex flex-col py-8 gap-2 z-40">
+<div class="px-6 mb-8">
+<h2 class="text-[#e7e5e4] font-black text-sm tracking-tight">The Curator</h2>
+<p class="font-mono text-[10px] tracking-[0.2em] uppercase text-[#acabaa]">Developer Mode</p>
+</div>
+<a class="flex items-center gap-3 px-6 py-3 font-mono text-xs tracking-widest uppercase transition-colors text-[#acabaa] hover:bg-[#131313] hover:text-[#e7e5e4] cursor-pointer" href="#" onclick="window.location.href='564064fcf47543b7bb154902ba9e496d.html'">
+<span class="material-symbols-outlined text-lg" data-icon="Style">style</span>
+<span>Swipe Feed</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-3 font-mono text-xs tracking-widest uppercase transition-colors text-[#acabaa] hover:bg-[#131313] hover:text-[#e7e5e4] cursor-pointer" href="#" onclick="window.location.href='666458dd6f104dc086c242bfc6a16102.html'">
+<span class="material-symbols-outlined text-lg" data-icon="Queue_Play_Next">queue_play_next</span>
+<span>BUILD Queue</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-3 font-mono text-xs tracking-widest uppercase transition-colors text-[#e7e5e4] bg-[#1f2020] border-r-2 border-[#6a9cff] cursor-pointer" href="#" onclick="window.location.href='771ab198bd2d40a5a547e05cad0ab385.html'">
+<span class="material-symbols-outlined text-lg" data-icon="Inventory_2">inventory_2</span>
+<span>MAYBE Pile</span>
+</a>
+<a class="flex items-center gap-3 px-6 py-3 font-mono text-xs tracking-widest uppercase transition-colors text-[#acabaa] hover:bg-[#131313] hover:text-[#e7e5e4] cursor-pointer" href="#" onclick="window.location.href='2bf7d5c46524410da63f865efd0824c4.html'">
+<span class="material-symbols-outlined text-lg" data-icon="Filter_List">filter_list</span>
+<span>Filter</span>
+</a>
+<div class="mt-auto px-6 pb-4">
+<div class="p-4 bg-surface-container-low rounded-lg border border-outline-variant/5">
+<p class="text-[10px] font-mono text-on-surface-variant uppercase mb-2">System Load</p>
+<div class="h-1 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-tertiary w-1/3"></div>
+</div>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="ml-64 flex-1 overflow-y-auto custom-scrollbar bg-background">
+<div class="max-w-6xl mx-auto px-12 py-16">
+<!-- Header Section -->
+<header class="mb-16">
+<h1 class="font-headline text-5xl font-extrabold tracking-tighter text-on-surface mb-2">MAYBE Pile</h1>
+<p class="text-on-surface-variant text-lg font-light tracking-tight max-w-2xl">
+                        Ideas on hold for later evaluation. These are preserved in the void until you're ready to decide their fate.
+                    </p>
+</header>
+<!-- Stats Bar (Editorial Feel) -->
+<div class="flex gap-12 mb-12 border-b border-outline-variant/10 pb-8">
+<div>
+<p class="font-mono text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Items Shelved</p>
+<p class="text-2xl font-bold font-headline">14</p>
+</div>
+<div>
+<p class="font-mono text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Oldest Idea</p>
+<p class="text-2xl font-bold font-headline">12D</p>
+</div>
+<div>
+<p class="font-mono text-[10px] tracking-widest uppercase text-on-surface-variant mb-1">Action Required</p>
+<p class="text-2xl font-bold font-headline text-tertiary">3</p>
+</div>
+</div>
+<!-- Idea Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Idea Card 1 -->
+<div class="group relative bg-surface-container-low p-8 rounded-lg hover:bg-surface-container-high transition-all duration-300 border border-transparent hover:border-outline-variant/10">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[10px] font-mono tracking-widest uppercase rounded-sm">SAAS</span>
+<span class="text-on-surface-variant text-[10px] font-mono uppercase">Shelved 2d ago</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-on-surface mb-4 group-hover:text-tertiary transition-colors">Headless CMS for Local-First Apps</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 line-clamp-2">
+                            A sync engine that prioritizes SQLite local storage with a headless dashboard for managing schema updates across edge deployments.
+                        </p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/10">
+<button class="flex items-center gap-2 text-tertiary font-mono text-[10px] tracking-widest uppercase hover:underline" onclick="window.location.href='564064fcf47543b7bb154902ba9e496d.html'">
+<span class="material-symbols-outlined text-sm" data-icon="undo">undo</span>
+                                Revisit
+                            </button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-error transition-colors" data-icon="delete_outline">delete_outline</button>
+</div>
+</div>
+<!-- Idea Card 2 -->
+<div class="group relative bg-surface-container-low p-8 rounded-lg hover:bg-surface-container-high transition-all duration-300 border border-transparent hover:border-outline-variant/10">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[10px] font-mono tracking-widest uppercase rounded-sm">WEB3</span>
+<span class="text-on-surface-variant text-[10px] font-mono uppercase">Shelved 5d ago</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-on-surface mb-4 group-hover:text-tertiary transition-colors">ZKP Proof Aggregator for DAO Voting</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 line-clamp-2">
+                            Infrastructure for verifiable private voting that aggregates proofs to reduce gas costs on Ethereum L1/L2 networks.
+                        </p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/10">
+<button class="flex items-center gap-2 text-tertiary font-mono text-[10px] tracking-widest uppercase hover:underline" onclick="window.location.href='564064fcf47543b7bb154902ba9e496d.html'">
+<span class="material-symbols-outlined text-sm" data-icon="undo">undo</span>
+                                Revisit
+                            </button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-error transition-colors" data-icon="delete_outline">delete_outline</button>
+</div>
+</div>
+<!-- Idea Card 3 -->
+<div class="group relative bg-surface-container-low p-8 rounded-lg hover:bg-surface-container-high transition-all duration-300 border border-transparent hover:border-outline-variant/10">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[10px] font-mono tracking-widest uppercase rounded-sm">TOOLING</span>
+<span class="text-on-surface-variant text-[10px] font-mono uppercase">Shelved 8d ago</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-on-surface mb-4 group-hover:text-tertiary transition-colors">Visual LLM Workflow Orchestrator</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 line-clamp-2">
+                            Node-based editor for chaining LLM prompts, vector DB lookups, and external API calls with built-in versioning.
+                        </p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/10">
+<button class="flex items-center gap-2 text-tertiary font-mono text-[10px] tracking-widest uppercase hover:underline" onclick="window.location.href='564064fcf47543b7bb154902ba9e496d.html'">
+<span class="material-symbols-outlined text-sm" data-icon="undo">undo</span>
+                                Revisit
+                            </button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-error transition-colors" data-icon="delete_outline">delete_outline</button>
+</div>
+</div>
+<!-- Idea Card 4 -->
+<div class="group relative bg-surface-container-low p-8 rounded-lg hover:bg-surface-container-high transition-all duration-300 border border-transparent hover:border-outline-variant/10">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[10px] font-mono tracking-widest uppercase rounded-sm">AI</span>
+<span class="text-on-surface-variant text-[10px] font-mono uppercase">Shelved 12d ago</span>
+</div>
+<h3 class="text-xl font-bold font-headline text-on-surface mb-4 group-hover:text-tertiary transition-colors">Semantic Code Search for Monorepos</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-8 line-clamp-2">
+                            Index massive codebases using embeddings to allow natural language queries like "where do we handle credit card refunds?".
+                        </p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/10">
+<button class="flex items-center gap-2 text-tertiary font-mono text-[10px] tracking-widest uppercase hover:underline" onclick="window.location.href='564064fcf47543b7bb154902ba9e496d.html'">
+<span class="material-symbols-outlined text-sm" data-icon="undo">undo</span>
+                                Revisit
+                            </button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-error transition-colors" data-icon="delete_outline">delete_outline</button>
+</div>
+</div>
+</div>
+<!-- Visual Texture (Asymmetric Accent) -->
+<div class="mt-24 relative overflow-hidden h-32 w-full rounded-lg bg-surface-container-low flex items-center justify-center">
+<div class="absolute inset-0 opacity-10">
+<img class="w-full h-full object-cover" data-alt="abstract tech texture with flowing digital lines and subtle grain on deep black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCow-Paf3SYzT8hVwoTNwjj8l0YdXSHUHbnLPR3-T4Mxejex_qL-OAjKEAr6GykdZe8sooCBVcoT2Nw4bjnaJd_lwbt3C0kKyvbXKP3V6qIUb4JqlsTAolKW066ZvxKSHFWHUGbsXyWSzt98p-m5-2qcYG9vHfzN7k7bpzTF623M6mf1VnfRPiZhGI29gYuKBDWHWeWLRvbWO9PsOiuiNIDI1JcGmgfXOWzvdJs2llCW08EeKqTvKVdc6Vp6syOAINc7wCRPUz0xdY"/>
+</div>
+<div class="relative z-10 flex flex-col items-center">
+<p class="font-mono text-[10px] tracking-[0.4em] uppercase text-on-surface-variant mb-2">End of Stack</p>
+<div class="flex gap-2">
+<span class="w-1 h-1 bg-tertiary rounded-full"></span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+<span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Empty State Template (Hidden by default, shown if no items) -->
+<div class="hidden fixed inset-0 z-20 flex flex-col items-center justify-center bg-background p-8">
+<div class="text-center max-w-md">
+<span class="material-symbols-outlined text-surface-container-highest text-8xl mb-6" data-icon="inventory_2">inventory_2</span>
+<h2 class="text-3xl font-headline font-bold text-on-surface mb-4">Your MAYBE Pile is empty.</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                Go back to the feed to find more inspiration and curate your future projects.
+            </p>
+<button class="bg-tertiary text-on-tertiary px-8 py-3 rounded-sm font-mono text-xs tracking-widest uppercase font-bold hover:bg-tertiary-fixed transition-colors">
+                Back to Feed
+            </button>
+</div>
+</div>
+<!-- Keyboard Shortcut Legend (The Curator Polish) -->
+<div class="fixed bottom-8 right-8 flex items-center gap-4 bg-surface-container-highest/80 backdrop-blur-xl border border-outline-variant/10 px-4 py-2 rounded-md">
+<div class="flex items-center gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded text-[10px] font-mono">R</span>
+<span class="text-on-surface-variant font-mono text-[10px] uppercase tracking-tighter">Revisit</span>
+</div>
+<div class="w-px h-3 bg-outline-variant/30"></div>
+<div class="flex items-center gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded text-[10px] font-mono">DEL</span>
+<span class="text-on-surface-variant font-mono text-[10px] uppercase tracking-tighter">Discard</span>
+</div>
+</div>
+</body></html>

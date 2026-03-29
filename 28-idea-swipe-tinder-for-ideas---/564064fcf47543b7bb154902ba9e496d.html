@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Idea Swipe | The Digital Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#9f9d9d",
+              "on-surface": "#e7e5e4",
+              "surface-container-lowest": "#000000",
+              "surface-container": "#191a1a",
+              "primary-fixed": "#e2e2e2",
+              "tertiary-container": "#1074f7",
+              "on-tertiary-fixed-variant": "#ecf0ff",
+              "tertiary": "#6a9cff",
+              "surface-container-highest": "#252626",
+              "inverse-primary": "#5e5f60",
+              "inverse-on-surface": "#565554",
+              "on-error-container": "#ff97a3",
+              "secondary-fixed-dim": "#d6d4d3",
+              "primary": "#c6c6c7",
+              "surface-bright": "#2c2c2c",
+              "secondary-container": "#3c3b3b",
+              "on-secondary-fixed": "#403f3f",
+              "on-primary-fixed": "#3e4040",
+              "surface-container-high": "#1f2020",
+              "surface": "#0e0e0e",
+              "on-secondary-fixed-variant": "#5c5b5b",
+              "on-surface-variant": "#acabaa",
+              "primary-dim": "#b8b9b9",
+              "on-primary-fixed-variant": "#5a5c5c",
+              "on-secondary": "#202020",
+              "on-error": "#490013",
+              "tertiary-fixed": "#1074f7",
+              "tertiary-fixed-dim": "#0068e2",
+              "surface-container-low": "#131313",
+              "secondary-dim": "#9f9d9d",
+              "on-background": "#e7e5e4",
+              "tertiary-dim": "#006ff0",
+              "inverse-surface": "#fcf8f8",
+              "on-primary-container": "#d0d0d0",
+              "primary-container": "#454747",
+              "on-secondary-container": "#c1bfbe",
+              "surface-variant": "#252626",
+              "on-primary": "#3f4041",
+              "secondary-fixed": "#e5e2e1",
+              "error-container": "#7f2737",
+              "outline-variant": "#484848",
+              "error-dim": "#b95463",
+              "error": "#ec7c8a",
+              "on-tertiary-fixed": "#ffffff",
+              "background": "#0e0e0e",
+              "outline": "#767575",
+              "on-tertiary-container": "#000000",
+              "surface-tint": "#c6c6c7",
+              "surface-dim": "#0e0e0e",
+              "primary-fixed-dim": "#d4d4d4",
+              "on-tertiary": "#001e4b"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #e7e5e4;
+        }
+        .swipe-gradient-left {
+            background: radial-gradient(circle at left, rgba(185, 84, 99, 0.15) 0%, transparent 70%);
+        }
+        .swipe-gradient-right {
+            background: radial-gradient(circle at right, rgba(0, 111, 240, 0.15) 0%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-tertiary/30 overflow-hidden h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="bg-[#0e0e0e] text-[#e7e5e4] flex justify-between items-center w-full px-8 py-4 max-w-[1440px] mx-auto z-50">
+<div class="flex items-center gap-12">
+<span class="text-xl font-bold tracking-tighter text-[#e7e5e4]">Idea Swipe</span>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-[#6a9cff] font-medium border-b-2 border-[#6a9cff] pb-1" href="#">All</a>
+<a class="text-[#acabaa] hover:text-[#e7e5e4] transition-colors" href="#">Code</a>
+<a class="text-[#acabaa] hover:text-[#e7e5e4] transition-colors" href="#">Design</a>
+<a class="text-[#acabaa] hover:text-[#e7e5e4] transition-colors" href="#">Product</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 text-[#acabaa] hover:bg-[#1f2020] transition-all duration-150 scale-95 active:scale-90">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-[#acabaa] hover:bg-[#1f2020] transition-all duration-150 scale-95 active:scale-90">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<div class="w-8 h-8 rounded-sm bg-surface-container-highest overflow-hidden ml-2 border border-outline-variant/20">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a developer in a dark room with cool blue ambient light on their face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn0PXdLcHDxsZiQQsyY2xHj8MvIkprOKb6CaRojrnpAh3EJrpJyD-J_iI2hl-a_22sqcNouwlXlHP6m6fz3VaYYZPc64DNGGiqFQ_Aa_nrRQuE_6csv9MFqJCmBGLDdkUoCFn895A9aDDQhbp6fM_Ny5m1L84d9squpGMFMwWnmfanP1X0WLqRnEUJ7__b6pu8xaOYXiCinMRz54mNopzfDunZNRNW0ME7fa906fTqNK90ojN2kNkVDKO3M9EcliaE974cpjHsvLY"/>
+</div>
+</div>
+</header>
+<!-- SideNavBar (Desktop Command Center) -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-[#131313]/85 backdrop-blur-xl flex flex-col p-6 z-40 shadow-[60px_0_60px_-15px_rgba(231,229,228,0.06)] hidden lg:flex">
+<div class="mt-20 flex flex-col gap-8 flex-grow">
+<div class="space-y-1">
+<h3 class="font-mono text-sm tracking-tight text-[#e7e5e4] font-black uppercase">15 NEW TODAY</h3>
+<p class="font-mono text-[10px] text-[#acabaa] uppercase tracking-wider">65% Daily Progress</p>
+<div class="w-full h-1 bg-surface-container-high mt-3">
+<div class="h-full bg-tertiary w-[65%]"></div>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 text-[#6a9cff] bg-[#1f2020] transition-all duration-200 font-mono text-sm tracking-tight cursor-pointer" href="#" onclick="window.location.href='564064fcf47543b7bb154902ba9e496d.html'">
+<span class="material-symbols-outlined text-lg">swipe_vertical</span> Swipe Feed
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 text-[#acabaa] hover:bg-[#1f2020]/50 hover:text-[#e7e5e4] transition-all duration-200 font-mono text-sm tracking-tight cursor-pointer" href="#" onclick="window.location.href='666458dd6f104dc086c242bfc6a16102.html'">
+<span class="material-symbols-outlined text-lg">layers</span> BUILD Queue
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 text-[#acabaa] hover:bg-[#1f2020]/50 hover:text-[#e7e5e4] transition-all duration-200 font-mono text-sm tracking-tight cursor-pointer" href="#" onclick="window.location.href='771ab198bd2d40a5a547e05cad0ab385.html'">
+<span class="material-symbols-outlined text-lg">archive</span> MAYBE Pile
+                </a>
+<a class="flex items-center gap-3 px-3 py-2 text-[#acabaa] hover:bg-[#1f2020]/50 hover:text-[#e7e5e4] transition-all duration-200 font-mono text-sm tracking-tight cursor-pointer" href="#" onclick="window.location.href='2bf7d5c46524410da63f865efd0824c4.html'">
+<span class="material-symbols-outlined text-lg">filter_list</span> Filter
+                </a>
+</nav>
+<button class="mt-4 bg-tertiary text-on-tertiary font-label font-bold py-2 px-4 rounded-sm scale-95 active:scale-90 transition-transform">
+                New Idea
+            </button>
+</div>
+<div class="flex flex-col gap-2 pb-4">
+<a class="flex items-center gap-3 px-3 py-2 text-[#acabaa] hover:text-[#e7e5e4] transition-all duration-200 font-mono text-sm tracking-tight" href="#">
+<span class="material-symbols-outlined text-lg">keyboard</span> Shortcuts
+            </a>
+<a class="flex items-center gap-3 px-3 py-2 text-[#acabaa] hover:text-[#e7e5e4] transition-all duration-200 font-mono text-sm tracking-tight" href="#">
+<span class="material-symbols-outlined text-lg">help_outline</span> Support
+            </a>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="relative flex-grow flex items-center justify-center p-8 lg:ml-64 overflow-hidden">
+<!-- Background Indicators -->
+<div class="absolute inset-y-0 left-0 w-32 swipe-gradient-left pointer-events-none opacity-50"></div>
+<div class="absolute inset-y-0 right-0 w-32 swipe-gradient-right pointer-events-none opacity-50"></div>
+<!-- Idea Card Container -->
+<div class="relative w-full max-w-2xl group">
+<!-- Background Layer for "Depth" -->
+<div class="absolute -inset-4 bg-surface-container-low/30 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<!-- Primary Idea Card -->
+<div class="relative bg-surface-container-low p-12 transition-all duration-300 ease-in-out hover:bg-surface-container-high hover:scale-[1.01] shadow-2xl border-l-4 border-tertiary cursor-pointer" onclick="window.location.href='be1908a9d24349c3b990d78f3d81e3fc.html'">
+<div class="flex justify-between items-start mb-8">
+<span class="font-label text-[10px] tracking-[0.2em] uppercase text-tertiary font-bold bg-tertiary/10 px-3 py-1 rounded-sm">CODE ARCHITECTURE</span>
+<span class="font-mono text-xs text-on-surface-variant/50">ID-7729</span>
+</div>
+<h1 class="text-4xl font-headline font-extrabold text-on-surface mb-6 leading-tight tracking-tight">
+                    Real-time Diff Sync for Distributed Markdown Editors
+                </h1>
+<p class="text-xl text-on-surface-variant font-light mb-10 leading-relaxed max-w-lg">
+                    A peer-to-peer synchronization engine that treats markdown syntax as a transactional graph, allowing sub-millisecond conflict resolution without a central server.
+                </p>
+<div class="flex flex-wrap gap-4 mt-12">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-secondary-container rounded-sm border border-outline-variant/10">
+<span class="font-label text-xs text-on-secondary-container uppercase">CRDT</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-secondary-container rounded-sm border border-outline-variant/10">
+<span class="font-label text-xs text-on-secondary-container uppercase">WASM</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 bg-secondary-container rounded-sm border border-outline-variant/10">
+<span class="font-label text-xs text-on-secondary-container uppercase">Rust</span>
+</div>
+</div>
+</div>
+<!-- Contextual Metadata / Stats -->
+<div class="absolute -right-24 top-1/2 -translate-y-1/2 flex flex-col gap-6 opacity-40 hover:opacity-100 transition-opacity hidden xl:flex">
+<div class="text-center">
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-1">Impact</p>
+<p class="text-2xl font-black text-on-surface">8.4</p>
+</div>
+<div class="text-center">
+<p class="font-label text-[10px] text-on-surface-variant uppercase mb-1">Effort</p>
+<p class="text-2xl font-black text-on-surface">Med</p>
+</div>
+<div class="text-center">
+<button class="p-3 bg-surface-container-high hover:bg-surface-bright transition-colors rounded-sm">
+<span class="material-symbols-outlined text-tertiary">share</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Interaction Shell) -->
+<footer class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex gap-12 items-center bg-[#1f2020]/90 backdrop-blur-2xl rounded-md px-10 py-4 shadow-2xl border border-[#484848]/15">
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="flex items-center justify-center w-8 h-8 rounded-sm bg-error-container/20 text-error-dim group-hover:bg-error-container/40 transition-all duration-200">
+<span class="material-symbols-outlined text-sm">close</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-[10px] uppercase tracking-widest text-[#acabaa] group-hover:text-[#e7e5e4]">← DROP</span>
+</div>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="flex items-center justify-center w-8 h-8 rounded-sm bg-tertiary/10 text-tertiary group-hover:bg-tertiary/20 transition-all duration-200">
+<span class="material-symbols-outlined text-sm">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-[10px] uppercase tracking-widest text-[#6a9cff]">→ KEEP</span>
+</div>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="flex items-center justify-center w-8 h-8 rounded-sm bg-secondary-container/50 text-[#acabaa] group-hover:text-[#e7e5e4] transition-all duration-200">
+<span class="material-symbols-outlined text-sm">help</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-[10px] uppercase tracking-widest text-[#acabaa]">↑ MAYBE</span>
+</div>
+</div>
+<div class="h-6 w-[1px] bg-outline-variant/30"></div>
+<div class="flex items-center gap-4 group cursor-pointer opacity-60 hover:opacity-100">
+<div class="flex items-center justify-center w-8 h-8 rounded-sm bg-surface-container-highest text-[#acabaa] group-hover:text-[#e7e5e4] transition-all duration-200">
+<span class="material-symbols-outlined text-sm">undo</span>
+</div>
+<div class="flex flex-col">
+<span class="font-mono text-[10px] uppercase tracking-widest text-[#acabaa]">Z UNDO</span>
+</div>
+</div>
+</footer>
+<!-- Overlay Visuals for the "Void" -->
+<div class="fixed top-0 right-0 p-8 z-10 opacity-20 pointer-events-none">
+<div class="font-mono text-[8rem] font-black leading-none text-outline-variant select-none tracking-tighter">01</div>
+</div>
+</body></html>

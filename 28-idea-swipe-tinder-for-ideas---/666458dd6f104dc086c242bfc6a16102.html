@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Idea Swipe - BUILD Queue</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#252626",
+              "background": "#0e0e0e",
+              "on-secondary-fixed-variant": "#5c5b5b",
+              "outline": "#767575",
+              "secondary-container": "#3c3b3b",
+              "surface": "#0e0e0e",
+              "on-secondary-container": "#c1bfbe",
+              "surface-container-highest": "#252626",
+              "secondary": "#9f9d9d",
+              "tertiary-dim": "#006ff0",
+              "outline-variant": "#484848",
+              "surface-container-lowest": "#000000",
+              "inverse-on-surface": "#565554",
+              "on-tertiary": "#001e4b",
+              "tertiary-fixed-dim": "#0068e2",
+              "surface-container-low": "#131313",
+              "tertiary": "#6a9cff",
+              "on-primary-fixed": "#3e4040",
+              "on-tertiary-container": "#000000",
+              "on-surface": "#e7e5e4",
+              "on-tertiary-fixed": "#ffffff",
+              "tertiary-fixed": "#1074f7",
+              "surface-tint": "#c6c6c7",
+              "secondary-fixed": "#e5e2e1",
+              "error": "#ec7c8a",
+              "secondary-dim": "#9f9d9d",
+              "error-container": "#7f2737",
+              "primary-fixed-dim": "#d4d4d4",
+              "primary-dim": "#b8b9b9",
+              "surface-container-high": "#1f2020",
+              "inverse-surface": "#fcf8f8",
+              "surface-container": "#191a1a",
+              "tertiary-container": "#1074f7",
+              "on-secondary-fixed": "#403f3f",
+              "on-secondary": "#202020",
+              "on-error-container": "#ff97a3",
+              "surface-dim": "#0e0e0e",
+              "primary-fixed": "#e2e2e2",
+              "on-background": "#e7e5e4",
+              "secondary-fixed-dim": "#d6d4d3",
+              "primary": "#c6c6c7",
+              "error-dim": "#b95463",
+              "on-surface-variant": "#acabaa",
+              "on-primary": "#3f4041",
+              "on-primary-fixed-variant": "#5a5c5c",
+              "inverse-primary": "#5e5f60",
+              "primary-container": "#454747",
+              "surface-bright": "#2c2c2c",
+              "on-error": "#490013",
+              "on-tertiary-fixed-variant": "#ecf0ff",
+              "on-primary-container": "#d0d0d0"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0e0e0e;
+            color: #e7e5e4;
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0e0e0e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #252626;
+        }
+        .glass-panel {
+            background: rgba(37, 38, 38, 0.85);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="flex min-h-screen">
+<!-- SideNavBar (Authority: JSON & Design System) -->
+<aside class="h-screen w-64 fixed left-0 top-0 border-r border-transparent bg-[#0e0e0e] flex flex-col h-full py-10 z-40">
+<div class="px-8 mb-12">
+<h1 class="text-lg font-black text-[#e7e5e4] font-headline">The Curator</h1>
+<p class="font-mono text-[10px] uppercase tracking-widest text-[#acabaa] mt-1">Developer Workspace</p>
+</div>
+<nav class="flex-1 space-y-2">
+<!-- Inactive Tab -->
+<a class="text-[#acabaa] py-3 px-6 flex items-center gap-3 hover:text-[#e7e5e4] hover:bg-[#1f2020] transition-all duration-200 cursor-pointer active:opacity-80" href="#" onclick="window.location.href='564064fcf47543b7bb154902ba9e496d.html'">
+<span class="material-symbols-outlined text-lg">swipe_vertical</span>
+<span class="font-mono text-sm uppercase tracking-widest">Swipe Feed</span>
+</a>
+<!-- Active Tab: BUILD Queue -->
+<a class="text-[#6a9cff] border-r-2 border-[#6a9cff] bg-[#131313] py-3 px-6 flex items-center gap-3 hover:bg-[#1f2020] transition-all duration-200 cursor-pointer active:opacity-80" href="#" onclick="window.location.href='666458dd6f104dc086c242bfc6a16102.html'">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">layers</span>
+<span class="font-mono text-sm uppercase tracking-widest">BUILD Queue</span>
+</a>
+<!-- Inactive Tab -->
+<a class="text-[#acabaa] py-3 px-6 flex items-center gap-3 hover:text-[#e7e5e4] hover:bg-[#1f2020] transition-all duration-200 cursor-pointer active:opacity-80" href="#" onclick="window.location.href='771ab198bd2d40a5a547e05cad0ab385.html'">
+<span class="material-symbols-outlined text-lg">archive</span>
+<span class="font-mono text-sm uppercase tracking-widest">MAYBE Pile</span>
+</a>
+<!-- Inactive Tab -->
+<a class="text-[#acabaa] py-3 px-6 flex items-center gap-3 hover:text-[#e7e5e4] hover:bg-[#1f2020] transition-all duration-200 cursor-pointer active:opacity-80" href="#" onclick="window.location.href='2bf7d5c46524410da63f865efd0824c4.html'">
+<span class="material-symbols-outlined text-lg">filter_list</span>
+<span class="font-mono text-sm uppercase tracking-widest">Filter</span>
+</a>
+</nav>
+<div class="px-6 mt-auto">
+<div class="p-4 rounded bg-[#131313] flex items-center gap-3 group cursor-pointer hover:bg-[#1f2020] transition-colors">
+<div class="w-8 h-8 rounded bg-tertiary-container flex items-center justify-center text-on-tertiary font-bold text-xs">JD</div>
+<div class="flex-1 overflow-hidden">
+<p class="text-xs font-bold text-[#e7e5e4] truncate">John Dev</p>
+<p class="text-[10px] text-[#acabaa] font-label">Pro Plan</p>
+</div>
+<span class="material-symbols-outlined text-sm text-[#acabaa] group-hover:text-[#e7e5e4]">settings</span>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 ml-64 flex flex-col min-h-screen bg-surface">
+<!-- TopAppBar (Authority: JSON) -->
+<header class="w-full sticky top-0 z-50 bg-[#0e0e0e] flex items-center justify-between px-8 py-4 w-full bg-[#131313]">
+<div class="flex items-center gap-4">
+<span class="text-xl font-bold tracking-tighter text-[#e7e5e4] font-headline">Idea Swipe</span>
+<span class="w-px h-6 bg-outline-variant opacity-20"></span>
+<h2 class="font-sans text-[#e7e5e4] tracking-tight font-medium">BUILD Queue</h2>
+</div>
+<div class="flex items-center gap-6">
+<!-- Search bar on right as per JSON -->
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
+<input class="bg-surface-container-high border-none text-sm rounded-sm pl-10 pr-4 py-2 w-64 focus:ring-1 focus:ring-tertiary text-on-surface placeholder:text-on-secondary-fixed-variant transition-all" placeholder="Search queue..." type="text"/>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded hover:bg-[#1f2020] transition-colors duration-150 active:scale-95 transition-transform text-[#acabaa]">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="p-2 rounded hover:bg-[#1f2020] transition-colors duration-150 active:scale-95 transition-transform text-[#acabaa]">
+<span class="material-symbols-outlined">help</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Content Area -->
+<div class="px-24 py-16 max-w-7xl mx-auto w-full">
+<!-- Header Actions -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+<div>
+<h3 class="text-5xl font-extrabold tracking-tighter text-on-surface mb-2 font-headline">Your Roadmap.</h3>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest">12 ideas staged for development</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-sm border-b border-outline-variant/30">
+<span class="text-[10px] font-label text-on-secondary-fixed-variant uppercase">Sort By</span>
+<select class="bg-transparent border-none text-sm font-medium text-on-surface focus:ring-0 cursor-pointer p-0 pr-8">
+<option>Date Saved</option>
+<option>Category</option>
+<option>Complexity</option>
+</select>
+</div>
+<button class="bg-tertiary text-on-tertiary px-6 py-2.5 rounded-sm font-bold text-sm flex items-center gap-2 hover:opacity-90 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+                        Bulk Archive
+                    </button>
+</div>
+</div>
+<!-- Bento Grid of Idea Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group bg-surface-container-low p-8 rounded-sm hover:bg-surface-container-high transition-all duration-150 cursor-pointer relative overflow-hidden flex flex-col justify-between min-h-[280px]" onclick="window.location.href='be1908a9d24349c3b990d78f3d81e3fc.html'">
+<div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-tertiary">open_in_new</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-label rounded-md uppercase tracking-wider">Infrastructure</span>
+<span class="flex items-center gap-1 text-[10px] font-label text-tertiary uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> High Priority
+                            </span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface group-hover:text-tertiary transition-colors leading-tight">Real-time Diff Sync Protocol</h4>
+<p class="mt-4 text-on-surface-variant text-sm line-clamp-2 leading-relaxed font-body">Implementing a CRDT-based synchronization engine for multi-user code editing environments.</p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/10 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[9px] uppercase font-label text-on-secondary-fixed-variant tracking-tighter">Complexity</span>
+<div class="flex gap-0.5 mt-0.5">
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+<div class="w-3 h-1 bg-outline-variant rounded-full"></div>
+</div>
+</div>
+</div>
+<span class="text-[10px] font-label text-on-secondary-fixed-variant">OCT 24, 2023</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-low p-8 rounded-sm hover:bg-surface-container-high transition-all duration-150 cursor-pointer relative overflow-hidden flex flex-col justify-between min-h-[280px]" onclick="window.location.href='be1908a9d24349c3b990d78f3d81e3fc.html'">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-label rounded-md uppercase tracking-wider">SaaS</span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface group-hover:text-tertiary transition-colors leading-tight">Zero-Config API Mocking</h4>
+<p class="mt-4 text-on-surface-variant text-sm line-clamp-2 leading-relaxed font-body">A proxy-based tool that automatically generates mock schemas from observed traffic in dev environments.</p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/10 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[9px] uppercase font-label text-on-secondary-fixed-variant tracking-tighter">Complexity</span>
+<div class="flex gap-0.5 mt-0.5">
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+<div class="w-3 h-1 bg-outline-variant rounded-full"></div>
+<div class="w-3 h-1 bg-outline-variant rounded-full"></div>
+<div class="w-3 h-1 bg-outline-variant rounded-full"></div>
+</div>
+</div>
+</div>
+<span class="text-[10px] font-label text-on-secondary-fixed-variant">OCT 22, 2023</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-low p-8 rounded-sm hover:bg-surface-container-high transition-all duration-150 cursor-pointer relative overflow-hidden flex flex-col justify-between min-h-[280px]" onclick="window.location.href='be1908a9d24349c3b990d78f3d81e3fc.html'">
+<div class="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-tertiary">open_in_new</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-label rounded-md uppercase tracking-wider">Mobile</span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface group-hover:text-tertiary transition-colors leading-tight">Gesture-First Code Review</h4>
+<p class="mt-4 text-on-surface-variant text-sm line-clamp-2 leading-relaxed font-body">Tinder-style swipe interface for quickly approving minor PRs on the go. Focus on speed and focus.</p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/10 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[9px] uppercase font-label text-on-secondary-fixed-variant tracking-tighter">Complexity</span>
+<div class="flex gap-0.5 mt-0.5">
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+<div class="w-3 h-1 bg-outline-variant rounded-full"></div>
+<div class="w-3 h-1 bg-outline-variant rounded-full"></div>
+</div>
+</div>
+</div>
+<span class="text-[10px] font-label text-on-secondary-fixed-variant">OCT 19, 2023</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-low p-8 rounded-sm hover:bg-surface-container-high transition-all duration-150 cursor-pointer relative overflow-hidden flex flex-col justify-between min-h-[280px]" onclick="window.location.href='be1908a9d24349c3b990d78f3d81e3fc.html'">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-label rounded-md uppercase tracking-wider">DevTools</span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface group-hover:text-tertiary transition-colors leading-tight">Tailwind Palette Auditor</h4>
+<p class="mt-4 text-on-surface-variant text-sm line-clamp-2 leading-relaxed font-body">CLI tool that scans your codebase for arbitrary hex codes and suggests the closest design system token.</p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/10 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[9px] uppercase font-label text-on-secondary-fixed-variant tracking-tighter">Complexity</span>
+<div class="flex gap-0.5 mt-0.5">
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+<div class="w-3 h-1 bg-outline-variant rounded-full"></div>
+<div class="w-3 h-1 bg-outline-variant rounded-full"></div>
+<div class="w-3 h-1 bg-outline-variant rounded-full"></div>
+</div>
+</div>
+</div>
+<span class="text-[10px] font-label text-on-secondary-fixed-variant">OCT 15, 2023</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group bg-surface-container-low p-8 rounded-sm hover:bg-surface-container-high transition-all duration-150 cursor-pointer relative overflow-hidden flex flex-col justify-between min-h-[280px]" onclick="window.location.href='be1908a9d24349c3b990d78f3d81e3fc.html'">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-label rounded-md uppercase tracking-wider">Web3</span>
+</div>
+<h4 class="text-2xl font-bold text-on-surface group-hover:text-tertiary transition-colors leading-tight">Decentralized Bug Bounty</h4>
+<p class="mt-4 text-on-surface-variant text-sm line-clamp-2 leading-relaxed font-body">Smart contract powered platform where developers stake tokens to guarantee their bug fixes.</p>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/10 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="flex flex-col">
+<span class="text-[9px] uppercase font-label text-on-secondary-fixed-variant tracking-tighter">Complexity</span>
+<div class="flex gap-0.5 mt-0.5">
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+<div class="w-3 h-1 bg-tertiary rounded-full"></div>
+</div>
+</div>
+</div>
+<span class="text-[10px] font-label text-on-secondary-fixed-variant">OCT 10, 2023</span>
+</div>
+</div>
+<!-- Placeholder / Empty State trigger card -->
+<div class="group border-2 border-dashed border-outline-variant/30 p-8 rounded-sm hover:border-tertiary/50 transition-all duration-150 cursor-pointer flex flex-col items-center justify-center min-h-[280px] bg-transparent">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary">add</span>
+</div>
+<p class="text-on-surface font-bold">New Build Goal</p>
+<p class="text-on-surface-variant text-xs mt-1 font-label">Manually add an item to queue</p>
+</div>
+</div>
+<!-- Empty State Section (Hidden by default but structured here) -->
+<div class="hidden mt-32 flex flex-col items-center text-center">
+<div class="w-64 h-64 mb-12 opacity-40">
+<div class="relative w-full h-full flex items-center justify-center">
+<div class="absolute w-48 h-48 bg-tertiary/10 rounded-full blur-3xl"></div>
+<span class="material-symbols-outlined text-9xl text-outline-variant/20 select-none" style="font-variation-settings: 'wght' 100;">layers_clear</span>
+</div>
+</div>
+<h3 class="text-4xl font-bold text-on-surface tracking-tight font-headline">The queue is silent.</h3>
+<p class="text-on-surface-variant mt-4 max-w-md mx-auto leading-relaxed">You haven't committed to any ideas yet. Start swiping through your feed to find your next weekend project.</p>
+<button class="mt-10 bg-transparent border border-tertiary text-tertiary px-8 py-3 rounded-sm font-bold tracking-widest uppercase text-xs hover:bg-tertiary hover:text-on-tertiary transition-all">
+                    Start Swiping
+                </button>
+</div>
+</div>
+<!-- Bottom Floating Controls (Command Badges) -->
+<div class="fixed bottom-10 right-10 flex flex-col gap-3">
+<div class="glass-panel flex items-center gap-4 px-6 py-3 rounded-md shadow-2xl border border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded text-[10px] font-label">G</span>
+<span class="text-xs text-on-surface-variant font-medium">Go to Feed</span>
+</div>
+<div class="w-px h-4 bg-outline-variant/30"></div>
+<div class="flex items-center gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded text-[10px] font-label">A</span>
+<span class="text-xs text-on-surface-variant font-medium">Archive All</span>
+</div>
+<div class="w-px h-4 bg-outline-variant/30"></div>
+<div class="flex items-center gap-2">
+<span class="bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded text-[10px] font-label">⌘K</span>
+<span class="text-xs text-on-surface-variant font-medium">Command</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Side Decoration Gradient (Visual Indicator for "The Void") -->
+<div class="fixed top-0 left-0 w-1 h-screen bg-gradient-to-b from-tertiary/20 to-transparent pointer-events-none"></div>
+</body></html>
