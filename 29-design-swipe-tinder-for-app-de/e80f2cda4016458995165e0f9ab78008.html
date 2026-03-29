@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>BUILD Queue - The Curated Gallery</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#e1d8ff",
+              "primary": "#4647d3",
+              "outline": "#79719d",
+              "on-surface": "#302950",
+              "secondary-dim": "#484f65",
+              "inverse-on-surface": "#a097c5",
+              "primary-container": "#9396ff",
+              "secondary-container": "#dae2fd",
+              "on-tertiary-fixed-variant": "#6e1354",
+              "surface-container-low": "#f4eeff",
+              "on-secondary-fixed": "#373f54",
+              "error-dim": "#a70138",
+              "on-secondary-fixed-variant": "#535b71",
+              "on-error-container": "#510017",
+              "tertiary-fixed-dim": "#ef81c4",
+              "surface-tint": "#4647d3",
+              "on-tertiary-fixed": "#3b002b",
+              "on-error": "#ffefef",
+              "surface-variant": "#e1d8ff",
+              "tertiary-fixed": "#ff8ed2",
+              "surface-container-high": "#e6deff",
+              "surface-container": "#ece4ff",
+              "tertiary-container": "#ff8ed2",
+              "surface": "#faf4ff",
+              "inverse-surface": "#0f072e",
+              "inverse-primary": "#8083ff",
+              "outline-variant": "#b0a7d6",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#f0f2ff",
+              "on-tertiary": "#ffeef4",
+              "on-background": "#302950",
+              "secondary": "#535b71",
+              "surface-dim": "#d8ceff",
+              "primary-dim": "#3939c7",
+              "tertiary": "#963776",
+              "on-surface-variant": "#5e5680",
+              "tertiary-dim": "#882a69",
+              "on-primary-fixed-variant": "#0e009d",
+              "on-primary-fixed": "#000000",
+              "background": "#faf4ff",
+              "primary-fixed": "#9396ff",
+              "on-primary-container": "#0a0081",
+              "surface-bright": "#faf4ff",
+              "error": "#b41340",
+              "on-tertiary-container": "#63054a",
+              "error-container": "#f74b6d",
+              "on-primary": "#f4f1ff",
+              "primary-fixed-dim": "#8387ff",
+              "secondary-fixed": "#dae2fd",
+              "secondary-fixed-dim": "#ccd4ee",
+              "on-secondary-container": "#4a5167"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-header {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .premium-gradient {
+        background: linear-gradient(135deg, #4647d3 0%, #9396ff 100%);
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #faf4ff;
+        color: #302950;
+      }
+      h1, h2, h3 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-6 h-16 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-indigo-600 dark:text-indigo-400" data-icon="menu">menu</span>
+</div>
+<h1 class="text-xl font-extrabold text-slate-900 dark:text-slate-50 font-plus-jakarta-sans tracking-tight">BUILD Queue</h1>
+<div class="w-6"></div> <!-- Spacer for centering -->
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 mt-16 mb-24 px-6 pt-6 max-w-2xl mx-auto w-full">
+<!-- Header Section (Editorial Voice) -->
+<div class="mb-8">
+<p class="text-sm font-bold text-primary tracking-widest uppercase mb-1">Curation</p>
+<h2 class="text-3xl font-extrabold tracking-tight text-on-surface">Ready to Ship</h2>
+<p class="text-on-surface-variant mt-2 leading-relaxed">You have 3 visionary concepts waiting for implementation. Each piece has been selected for its unique design language.</p>
+</div>
+<!-- Scrollable Card List -->
+<div class="space-y-6">
+<!-- Card 1: EcoTrack -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(48,41,80,0.06)] group">
+<div class="relative h-56 overflow-hidden">
+<img alt="EcoTrack App Preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Modern mobile app interface for sustainability tracking with clean green accents, minimalist typography, and organic leaf icons on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsnNwMJzpQdYps-AGxQ4Z_CCXI7Oi6EsQYYRn6XCMG_KEBFqaJy2z2JO2Oj5a2nn4hBntdYLJAXvKvdaeLa0GFRgkoe4o_BZQSByCmrcJXwh1yJaiq9VlNho77SvLI3UCg3CrWBeC8_jzTSWUuAMypDWN619EAlo4RBPpCS3YlFRq7fLDEhFde3gvbWQ8gNdPwmmwToTZCOE-oNK2y9bP0qYyW237VH6hfq4uyGVSsWfC7C-71DmoBEChMmVZZHyJje30uxutFucZ0"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">Sustainability</span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="bg-white/90 text-on-surface text-[10px] font-bold px-3 py-1 rounded-full shadow-sm backdrop-blur-sm">Saved 2 days ago</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-on-surface">EcoTrack</h3>
+<div class="flex items-center mt-1 text-on-surface-variant gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-xs font-semibold uppercase tracking-wide">Saved</span>
+</div>
+</div>
+<button class="premium-gradient text-on-primary px-5 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg" data-icon="rocket_launch">rocket_launch</span>
+                            Mark as Built
+                        </button>
+</div>
+</div>
+</div>
+<!-- Card 2: LumiBank -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(48,41,80,0.06)] group">
+<div class="relative h-56 overflow-hidden">
+<img alt="LumiBank App Preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Futuristic fintech mobile dashboard with neon blue and indigo glowing graphs, translucent cards, and high-end digital currency visualizations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB3y6Ijt0NIzw1P9wqh-PAX5dn360mo28ZwcWleyzNzIl0pPloVWe5NPuEOfcM1OkAA9Z2hH4BrIe87t5GbyucJqc6wSNVye6R8XcicUAVW3uOmcX0K1Sx8dHP8QjUaWGlo5pq4EFhu4oN9ExJbMIX2wrXGR95bfYEU_CK0P_78CiZKwRtL01-JhnhuHDCTmL4Cgi-AZTP27hfvnEOOYJiQqSyZXske_x1j-lZ9WVVdkX419GuzyyJPd9Jla07i-_BFaplLpbnubEE"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">FinTech</span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="bg-white/90 text-on-surface text-[10px] font-bold px-3 py-1 rounded-full shadow-sm backdrop-blur-sm">Saved 5 days ago</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-on-surface">LumiBank</h3>
+<div class="flex items-center mt-1 text-tertiary gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="integration_instructions" style="font-variation-settings: 'FILL' 1;">integration_instructions</span>
+<span class="text-xs font-semibold uppercase tracking-wide">Opened in Stitch</span>
+</div>
+</div>
+<button class="premium-gradient text-on-primary px-5 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg" data-icon="rocket_launch">rocket_launch</span>
+                            Mark as Built
+                        </button>
+</div>
+</div>
+</div>
+<!-- Card 3: ZenSpace -->
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-[0px_20px_40px_rgba(48,41,80,0.06)] group opacity-90">
+<div class="relative h-56 overflow-hidden">
+<img alt="ZenSpace App Preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale-[20%]" data-alt="Minimalist meditation app interface featuring soft lavender gradients, ethereal light shadows, and a central circular breathing animation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUDobETQHoiX3dEOphfQ7afDgPjpgIeX9LldxqpLLD1tmHMWYnnC-dTVbXTOtOPe1ZlQGyyHPITi_AQXgtcA4XNKZOyJby_laW70BxfIeZ_qzDTbySzU-lcY1jkHfei2YYUfwyr8MXHhLPxFWkIJ1jb752TvOQqruyzfgXNwJ9WO_PFArqdexzROJNJ1Ot9ahrHr7p-plzkgechuNpJCi5vm2Kgw2bedPmVYI07xtxlSUC5TXIYIFyTAWRF_eh0VNDACb4olRfGHQR"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">Health</span>
+</div>
+<div class="absolute bottom-4 right-4">
+<span class="bg-white/90 text-on-surface text-[10px] font-bold px-3 py-1 rounded-full shadow-sm backdrop-blur-sm">Saved 1 week ago</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-on-surface">ZenSpace</h3>
+<div class="flex items-center mt-1 text-on-surface-variant gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-xs font-semibold uppercase tracking-wide">Saved</span>
+</div>
+</div>
+<button class="premium-gradient text-on-primary px-5 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-lg" data-icon="rocket_launch">rocket_launch</span>
+                            Mark as Built
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Modal: Mark as Built (Implicit Interaction) -->
+<div class="hidden fixed inset-0 z-[60] flex items-center justify-center p-6">
+<!-- Backdrop -->
+<div class="absolute inset-0 bg-on-surface/40 backdrop-blur-sm"></div>
+<!-- Modal Surface -->
+<div class="relative bg-surface rounded-[2rem] w-full max-w-md overflow-hidden shadow-2xl">
+<div class="p-8">
+<h3 class="text-2xl font-extrabold text-on-surface mb-2">Publish Success</h3>
+<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Add a reference to your live build to inspire the community.</p>
+<div class="space-y-4">
+<div class="bg-surface-container-low rounded-2xl p-4 border border-outline-variant/10">
+<label class="text-[10px] font-bold text-primary uppercase tracking-widest mb-2 block">Project URL</label>
+<input class="bg-transparent border-none w-full p-0 focus:ring-0 text-on-surface placeholder:text-outline-variant font-medium" placeholder="https://your-site.com" type="text"/>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-6 border border-dashed border-outline-variant flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-3xl text-primary mb-2" data-icon="add_a_photo">add_a_photo</span>
+<p class="text-xs font-bold text-on-surface">Upload Screenshot</p>
+<p class="text-[10px] text-on-surface-variant mt-1">PNG or JPG up to 10MB</p>
+</div>
+</div>
+<div class="flex gap-3 mt-8">
+<button class="flex-1 bg-surface-container-high text-on-surface-variant py-4 rounded-full font-bold text-sm">Cancel</button>
+<button class="flex-[2] premium-gradient text-on-primary py-4 rounded-full font-bold text-sm shadow-lg shadow-primary/20">Submit Build</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="fixed bottom-6 left-0 w-full flex justify-center px-4 z-50">
+  <nav class="bg-[#faf4ff]/90 backdrop-blur-xl w-[90%] max-w-sm rounded-full shadow-[0px_20px_40px_rgba(48,41,80,0.15)] px-4 py-2 flex justify-around items-center">
+    <a onclick="window.location.href='1173587dc29e4c959563e317e13c3ba5.html'" style="cursor:pointer" class="flex flex-col items-center justify-center text-[#5e5680] rounded-full px-4 py-2 gap-0.5 hover:bg-[#ece4ff] transition-colors">
+      <span class="material-symbols-outlined text-[20px]">style</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;font-family:Manrope,sans-serif">Feed</span>
+    </a>
+    <a onclick="window.location.href='e80f2cda4016458995165e0f9ab78008.html'" style="cursor:pointer" class="flex flex-col items-center justify-center bg-gradient-to-br from-[#4647d3] to-[#9396ff] text-white rounded-full px-4 py-2 gap-0.5 shadow-md">
+      <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1">layers</span>
+      <span style="font-size:10px;font-weight:700;letter-spacing:0.05em;font-family:Manrope,sans-serif">Queue</span>
+    </a>
+    <a onclick="window.location.href='3e1ead01c4d84f56b6e46589c832e507.html'" style="cursor:pointer" class="flex flex-col items-center justify-center text-[#5e5680] rounded-full px-4 py-2 gap-0.5 hover:bg-[#ece4ff] transition-colors">
+      <span class="material-symbols-outlined text-[20px]">person</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;font-family:Manrope,sans-serif">Profile</span>
+    </a>
+  </nav>
+</div>
+</body></html>

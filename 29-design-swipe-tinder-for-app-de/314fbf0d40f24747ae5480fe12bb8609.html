@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>BUILD | Inspiration Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#ef81c4",
+              "surface-container-highest": "#e1d8ff",
+              "tertiary": "#963776",
+              "surface-variant": "#e1d8ff",
+              "on-primary-fixed": "#000000",
+              "primary": "#4647d3",
+              "on-surface": "#302950",
+              "background": "#faf4ff",
+              "surface-bright": "#faf4ff",
+              "secondary-container": "#dae2fd",
+              "on-tertiary-container": "#63054a",
+              "on-secondary-fixed-variant": "#535b71",
+              "inverse-surface": "#0f072e",
+              "surface-dim": "#d8ceff",
+              "outline-variant": "#b0a7d6",
+              "on-tertiary": "#ffeef4",
+              "primary-dim": "#3939c7",
+              "tertiary-dim": "#882a69",
+              "primary-fixed": "#9396ff",
+              "tertiary-container": "#ff8ed2",
+              "on-primary": "#f4f1ff",
+              "on-surface-variant": "#5e5680",
+              "outline": "#79719d",
+              "primary-container": "#9396ff",
+              "on-error-container": "#510017",
+              "on-error": "#ffefef",
+              "secondary-fixed": "#dae2fd",
+              "primary-fixed-dim": "#8387ff",
+              "on-tertiary-fixed-variant": "#6e1354",
+              "surface-container-low": "#f4eeff",
+              "secondary-dim": "#484f65",
+              "secondary-fixed-dim": "#ccd4ee",
+              "on-primary-container": "#0a0081",
+              "error": "#b41340",
+              "on-tertiary-fixed": "#3b002b",
+              "error-container": "#f74b6d",
+              "surface-container-high": "#e6deff",
+              "on-secondary-fixed": "#373f54",
+              "surface-tint": "#4647d3",
+              "on-secondary-container": "#4a5167",
+              "surface-container": "#ece4ff",
+              "on-background": "#302950",
+              "inverse-primary": "#8083ff",
+              "surface-container-lowest": "#ffffff",
+              "surface": "#faf4ff",
+              "on-primary-fixed-variant": "#0e009d",
+              "inverse-on-surface": "#a097c5",
+              "on-secondary": "#f0f2ff",
+              "tertiary-fixed": "#ff8ed2"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+        background-color: #faf4ff;
+      }
+      h1, h2, h3 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      .glass-nav {
+        background: rgba(250, 244, 255, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .editorial-shadow {
+        box-shadow: 0px 20px 40px rgba(48, 41, 80, 0.06);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="hover:bg-[#ece4ff]/50 transition-colors p-2 rounded-full scale-95 active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined text-primary">menu</span>
+</button>
+<h1 class="text-xl font-bold tracking-tighter text-[#302950]">BUILD</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-surface-container-high shadow-sm">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a stylish young professional woman with a minimalist aesthetic, soft studio lighting, high-end editorial feel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwwfOCJkP-LCGFmwgu-LKaHlWWe8O32gmgMTNPGKLWqgymek7aOaxw_oEWq2pMNme7NhusJZTNhghHVrTwOXgCInL1U1BscHpUjKEIGWlBGSTKoJOHz6R_sP9cFs47vv5JX1IS57OjkoKAvTWzyqKJlQOfn2Mg4Uysk_1VGQSVcPzRz0J-i7wzUDvy14-ReA68Nhsy8dQ05dB3kBAddnTyCzwNomBWqLtizPu38yOatTc35xCX6JW8Wyg4Vf5ua_eulkyIfbxxbcEF"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-lg mx-auto space-y-24">
+<!-- Section 1: Empty BUILD Queue -->
+<section class="flex flex-col items-center text-center py-12">
+<div class="w-64 h-64 mb-10 bg-surface-container-low rounded-3xl flex items-center justify-center relative overflow-hidden editorial-shadow">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
+<div class="relative flex flex-col items-center">
+<span class="material-symbols-outlined text-8xl text-primary/20" style="font-variation-settings: 'FILL' 1;">layers</span>
+<div class="absolute -bottom-4 -right-4 w-24 h-24 bg-surface-container-high rounded-full blur-2xl opacity-50"></div>
+</div>
+</div>
+<h2 class="text-3xl font-extrabold tracking-tight text-on-surface mb-3 px-4">Your BUILD queue is empty</h2>
+<p class="text-on-surface-variant font-medium text-lg leading-relaxed mb-10 px-6">Start swiping to save designs you love</p>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg shadow-primary/20 scale-100 active:scale-95 transition-all duration-200" onclick="window.location.href='1173587dc29e4c959563e317e13c3ba5.html'">
+                Start Swiping
+            </button>
+</section>
+<!-- Section 2: No Filter Results -->
+<section class="flex flex-col items-center text-center py-12 bg-surface-container-low rounded-[2.5rem] p-8 editorial-shadow">
+<div class="w-20 h-20 mb-8 bg-surface-container-lowest rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-outline">search_off</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight text-on-surface mb-2">No designs match your filters</h2>
+<p class="text-on-surface-variant font-medium mb-8">Try clearing some filters to see more inspiration</p>
+<button class="bg-surface-container-high text-primary px-8 py-3 rounded-full font-bold border border-transparent hover:border-primary/10 transition-all active:scale-95" onclick="window.location.href='8a42d35c74d44905a3760f1126b66115.html'">
+                Clear Filters
+            </button>
+</section>
+<!-- Section 3: Feed Exhausted -->
+<section class="flex flex-col items-center text-center py-12">
+<div class="relative mb-12">
+<div class="w-48 h-48 bg-tertiary-container/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<!-- Decorative elements for "Celebration" feel -->
+<div class="absolute top-0 right-0 w-4 h-4 rounded-full bg-primary animate-pulse"></div>
+<div class="absolute bottom-4 left-0 w-3 h-3 rounded-full bg-tertiary-fixed-dim"></div>
+</div>
+<h2 class="text-4xl font-extrabold tracking-tighter text-on-surface mb-4">You've seen everything!</h2>
+<p class="text-on-surface-variant font-medium text-lg mb-10">Here's your BUILD queue to get started on your projects.</p>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-10 py-4 rounded-full font-bold text-lg shadow-xl shadow-primary/20 active:scale-95 transition-all" onclick="window.location.href='e80f2cda4016458995165e0f9ab78008.html'">
+                View BUILD Queue
+            </button>
+<!-- Contextual Card Glimpse -->
+<div class="mt-16 w-full grid grid-cols-2 gap-4 opacity-40">
+<div class="aspect-[3/4] rounded-2xl bg-surface-container-high"></div>
+<div class="aspect-[3/4] rounded-2xl bg-surface-container-high"></div>
+</div>
+</section>
+</main>
+
+<div class="fixed bottom-6 left-0 w-full flex justify-center px-4 z-50">
+  <nav class="bg-[#faf4ff]/90 backdrop-blur-xl w-[90%] max-w-sm rounded-full shadow-[0px_20px_40px_rgba(48,41,80,0.15)] px-4 py-2 flex justify-around items-center">
+    <a onclick="window.location.href='1173587dc29e4c959563e317e13c3ba5.html'" style="cursor:pointer" class="flex flex-col items-center justify-center bg-gradient-to-br from-[#4647d3] to-[#9396ff] text-white rounded-full px-4 py-2 gap-0.5 shadow-md">
+      <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1">style</span>
+      <span style="font-size:10px;font-weight:700;letter-spacing:0.05em;font-family:Manrope,sans-serif">Feed</span>
+    </a>
+    <a onclick="window.location.href='e80f2cda4016458995165e0f9ab78008.html'" style="cursor:pointer" class="flex flex-col items-center justify-center text-[#5e5680] rounded-full px-4 py-2 gap-0.5 hover:bg-[#ece4ff] transition-colors">
+      <span class="material-symbols-outlined text-[20px]">layers</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;font-family:Manrope,sans-serif">Queue</span>
+    </a>
+    <a onclick="window.location.href='3e1ead01c4d84f56b6e46589c832e507.html'" style="cursor:pointer" class="flex flex-col items-center justify-center text-[#5e5680] rounded-full px-4 py-2 gap-0.5 hover:bg-[#ece4ff] transition-colors">
+      <span class="material-symbols-outlined text-[20px]">person</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;font-family:Manrope,sans-serif">Profile</span>
+    </a>
+  </nav>
+</div>
+</body></html>

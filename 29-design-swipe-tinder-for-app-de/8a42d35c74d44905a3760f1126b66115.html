@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>Browse &amp; Filter - Design Swipe</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#e6deff",
+              "error-dim": "#a70138",
+              "error-container": "#f74b6d",
+              "secondary-container": "#dae2fd",
+              "tertiary-dim": "#882a69",
+              "surface-dim": "#d8ceff",
+              "secondary-fixed-dim": "#ccd4ee",
+              "on-error-container": "#510017",
+              "secondary-dim": "#484f65",
+              "on-surface-variant": "#5e5680",
+              "surface-container": "#ece4ff",
+              "surface-bright": "#faf4ff",
+              "on-primary-fixed-variant": "#0e009d",
+              "on-background": "#302950",
+              "secondary": "#535b71",
+              "on-primary-container": "#0a0081",
+              "on-primary-fixed": "#000000",
+              "on-tertiary-fixed": "#3b002b",
+              "primary-dim": "#3939c7",
+              "on-secondary-fixed-variant": "#535b71",
+              "tertiary-fixed-dim": "#ef81c4",
+              "secondary-fixed": "#dae2fd",
+              "on-error": "#ffefef",
+              "on-tertiary-container": "#63054a",
+              "on-secondary-container": "#4a5167",
+              "background": "#faf4ff",
+              "on-tertiary-fixed-variant": "#6e1354",
+              "surface": "#faf4ff",
+              "on-tertiary": "#ffeef4",
+              "tertiary-container": "#ff8ed2",
+              "primary-fixed": "#9396ff",
+              "surface-container-highest": "#e1d8ff",
+              "on-primary": "#f4f1ff",
+              "inverse-on-surface": "#a097c5",
+              "primary": "#4647d3",
+              "surface-container-low": "#f4eeff",
+              "tertiary-fixed": "#ff8ed2",
+              "primary-fixed-dim": "#8387ff",
+              "tertiary": "#963776",
+              "on-secondary-fixed": "#373f54",
+              "outline-variant": "#b0a7d6",
+              "inverse-surface": "#0f072e",
+              "primary-container": "#9396ff",
+              "outline": "#79719d",
+              "on-secondary": "#f0f2ff",
+              "surface-tint": "#4647d3",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#302950",
+              "inverse-primary": "#8083ff",
+              "surface-variant": "#e1d8ff",
+              "error": "#b41340"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#faf4ff]/80 dark:bg-[#1a1625]/80 backdrop-blur-xl shadow-sm dark:shadow-none flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-[#ece4ff]/50 dark:hover:bg-[#302950]/50 transition-colors scale-95 active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined text-[#6366F1] dark:text-[#818cf8]">menu</span>
+</button>
+</div>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-[#302950] dark:text-[#ece4ff] text-lg lg:text-xl">Browse &amp; Filter</h1>
+<div class="w-10"></div> <!-- Spacer for center alignment -->
+</header>
+<main class="pt-24 pb-40 px-6 max-w-2xl mx-auto space-y-12">
+<!-- Hero Visual Section (Editorial Feel) -->
+<section class="relative overflow-hidden rounded-[2rem] h-48 bg-surface-container flex items-center px-8">
+<div class="relative z-10">
+<p class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Curated Gallery</p>
+<h2 class="font-headline text-3xl text-on-surface leading-tight">Refine Your<br/>Inspiration</h2>
+</div>
+<div class="absolute right-[-20px] top-[-20px] w-64 h-64 opacity-20">
+<svg class="fill-primary" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-46.2C87.4,-33.4,90,-16.7,89.1,-0.5C88.2,15.7,83.8,31.3,75.4,44.9C67,58.4,54.6,69.8,40.4,77.3C26.1,84.7,10.1,88.1,-5.5,85.6C-21.1,83.1,-36.2,74.7,-49.2,64.2C-62.2,53.8,-73.1,41.2,-79.3,26.7C-85.5,12.2,-87,-4.3,-83.4,-19.4C-79.8,-34.5,-71.1,-48.3,-59.1,-56.3C-47.1,-64.3,-31.8,-66.6,-18.3,-74.1C-4.8,-81.6,6.9,-94.3,21.5,-93.2C36.1,-92.1,41.7,-76.4,44.7,-76.4Z" transform="translate(100 100)"></path>
+</svg>
+</div>
+</section>
+<!-- Categories -->
+<section class="space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-xl text-on-surface">Categories</h3>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Select multiple</span>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-3 rounded-full bg-primary text-on-primary font-semibold text-sm transition-all shadow-md">Social</button>
+<button class="px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-all">Productivity</button>
+<button class="px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-all">Finance</button>
+<button class="px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-all">Health</button>
+<button class="px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-all">E-commerce</button>
+<button class="px-6 py-3 rounded-full bg-surface-container-low text-on-surface-variant font-semibold text-sm hover:bg-surface-container transition-all">Entertainment</button>
+</div>
+</section>
+<!-- Platforms -->
+<section class="space-y-6">
+<h3 class="font-headline text-xl text-on-surface">Platforms</h3>
+<div class="grid grid-cols-3 gap-4">
+<button class="flex flex-col items-center justify-center p-6 rounded-3xl bg-surface-container-lowest shadow-[0px_20px_40px_rgba(48,41,80,0.06)] group hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl">phone_iphone</span>
+<span class="font-bold text-xs uppercase tracking-widest">iOS</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 rounded-3xl bg-primary text-on-primary shadow-xl scale-105">
+<span class="material-symbols-outlined mb-2 text-3xl" style="font-variation-settings: 'FILL' 1;">phone_android</span>
+<span class="font-bold text-xs uppercase tracking-widest">Android</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 rounded-3xl bg-surface-container-lowest shadow-[0px_20px_40px_rgba(48,41,80,0.06)] group hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-primary mb-2 text-3xl">laptop_mac</span>
+<span class="font-bold text-xs uppercase tracking-widest">Web</span>
+</button>
+</div>
+</section>
+<!-- Sort Options -->
+<section class="space-y-6">
+<h3 class="font-headline text-xl text-on-surface">Sort By</h3>
+<div class="flex p-1.5 bg-surface-container-low rounded-2xl">
+<button class="flex-1 py-3 text-sm font-bold rounded-xl bg-surface-container-lowest text-primary shadow-sm">Most Swiped</button>
+<button class="flex-1 py-3 text-sm font-bold text-on-surface-variant">Newest</button>
+<button class="flex-1 py-3 text-sm font-bold text-on-surface-variant">Most Built</button>
+</div>
+</section>
+</main>
+<!-- Bottom Sticky Action Section -->
+<div class="fixed bottom-[104px] left-0 w-full px-6 flex flex-col items-center pointer-events-none">
+<p class="mb-4 text-sm font-bold text-on-surface-variant bg-surface/80 backdrop-blur-md px-4 py-1.5 rounded-full pointer-events-auto">124 matching designs found</p>
+<button class="w-full max-w-md py-5 rounded-full bg-gradient-to-tr from-[#4647d3] to-[#9396ff] text-white font-headline text-lg font-extrabold shadow-2xl pointer-events-auto transform active:scale-95 transition-all" onclick="window.location.href='1173587dc29e4c959563e317e13c3ba5.html'">
+            Start Swiping
+        </button>
+</div>
+
+<div class="fixed bottom-6 left-0 w-full flex justify-center px-4 z-50">
+  <nav class="bg-[#faf4ff]/90 backdrop-blur-xl w-[90%] max-w-sm rounded-full shadow-[0px_20px_40px_rgba(48,41,80,0.15)] px-4 py-2 flex justify-around items-center">
+    <a onclick="window.location.href='1173587dc29e4c959563e317e13c3ba5.html'" style="cursor:pointer" class="flex flex-col items-center justify-center bg-gradient-to-br from-[#4647d3] to-[#9396ff] text-white rounded-full px-4 py-2 gap-0.5 shadow-md">
+      <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1">style</span>
+      <span style="font-size:10px;font-weight:700;letter-spacing:0.05em;font-family:Manrope,sans-serif">Feed</span>
+    </a>
+    <a onclick="window.location.href='e80f2cda4016458995165e0f9ab78008.html'" style="cursor:pointer" class="flex flex-col items-center justify-center text-[#5e5680] rounded-full px-4 py-2 gap-0.5 hover:bg-[#ece4ff] transition-colors">
+      <span class="material-symbols-outlined text-[20px]">layers</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;font-family:Manrope,sans-serif">Queue</span>
+    </a>
+    <a onclick="window.location.href='3e1ead01c4d84f56b6e46589c832e507.html'" style="cursor:pointer" class="flex flex-col items-center justify-center text-[#5e5680] rounded-full px-4 py-2 gap-0.5 hover:bg-[#ece4ff] transition-colors">
+      <span class="material-symbols-outlined text-[20px]">person</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;font-family:Manrope,sans-serif">Profile</span>
+    </a>
+  </nav>
+</div>
+</body></html>

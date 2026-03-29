@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>DesignSwipe - Discover Inspiration</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#a097c5",
+              "inverse-primary": "#8083ff",
+              "tertiary-container": "#ff8ed2",
+              "primary-fixed": "#9396ff",
+              "surface-container": "#ece4ff",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#302950",
+              "secondary": "#535b71",
+              "surface-container-highest": "#e1d8ff",
+              "tertiary": "#963776",
+              "on-tertiary-fixed-variant": "#6e1354",
+              "on-primary-fixed": "#000000",
+              "surface-container-high": "#e6deff",
+              "on-secondary-fixed": "#373f54",
+              "on-secondary-fixed-variant": "#535b71",
+              "surface": "#faf4ff",
+              "secondary-fixed-dim": "#ccd4ee",
+              "on-error-container": "#510017",
+              "secondary-container": "#dae2fd",
+              "surface-bright": "#faf4ff",
+              "primary": "#4647d3",
+              "tertiary-dim": "#882a69",
+              "on-background": "#302950",
+              "secondary-dim": "#484f65",
+              "on-secondary-container": "#4a5167",
+              "primary-container": "#9396ff",
+              "on-primary-container": "#0a0081",
+              "inverse-surface": "#0f072e",
+              "on-secondary": "#f0f2ff",
+              "on-error": "#ffefef",
+              "on-primary-fixed-variant": "#0e009d",
+              "primary-dim": "#3939c7",
+              "on-surface-variant": "#5e5680",
+              "surface-container-low": "#f4eeff",
+              "tertiary-fixed-dim": "#ef81c4",
+              "tertiary-fixed": "#ff8ed2",
+              "error": "#b41340",
+              "on-tertiary-fixed": "#3b002b",
+              "outline-variant": "#b0a7d6",
+              "error-dim": "#a70138",
+              "error-container": "#f74b6d",
+              "on-tertiary": "#ffeef4",
+              "primary-fixed-dim": "#8387ff",
+              "surface-dim": "#d8ceff",
+              "surface-tint": "#4647d3",
+              "background": "#faf4ff",
+              "outline": "#79719d",
+              "on-tertiary-container": "#63054a",
+              "on-primary": "#f4f1ff",
+              "surface-variant": "#e1d8ff",
+              "secondary-fixed": "#dae2fd"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .card-stack-shadow {
+            box-shadow: 0px 20px 40px rgba(48, 41, 80, 0.06);
+        }
+        .glass-header {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#faf4ff]/80 dark:bg-indigo-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 h-16 w-full max-w-7xl mx-auto">
+<button class="text-[#4647d3] dark:text-[#9396ff] hover:bg-[#ece4ff] dark:hover:bg-indigo-900/50 transition-colors p-2 rounded-full scale-95 active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+</button>
+<h1 class="text-xl font-bold tracking-tighter text-[#302950] dark:text-[#ece4ff] font-headline">DesignSwipe</h1>
+<button class="text-[#4647d3] dark:text-[#9396ff] hover:bg-[#ece4ff] dark:hover:bg-indigo-900/50 transition-colors p-2 rounded-full scale-95 active:scale-90 transition-transform duration-200">
+<span class="material-symbols-outlined" data-icon="tune">tune</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-20 pb-36 px-4 flex flex-col items-center justify-center min-h-screen max-w-lg mx-auto relative overflow-hidden">
+<!-- Background Stack Decoration (Visual Depth) -->
+<div class="absolute top-[22%] w-[85%] h-[60%] bg-surface-container-low rounded-3xl -rotate-2 opacity-40 translate-y-4"></div>
+<div class="absolute top-[21%] w-[88%] h-[60%] bg-surface-container rounded-3xl rotate-1 opacity-60 translate-y-2"></div>
+<!-- Primary Swipable Card -->
+<div class="relative w-full aspect-[3/4] max-h-[600px] bg-surface-container-lowest rounded-3xl card-stack-shadow overflow-hidden flex flex-col group z-10 border border-outline-variant/10">
+<!-- Hero Image Section -->
+<div class="relative flex-grow overflow-hidden">
+<img alt="EcoTrack App Preview" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern mobile app interface for tracking environmental impact with clean typography, lush green plant background, and elegant data visualizations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBR8YhKLpTDDkgCdU1eGl_3wY7HujXXRd47wJsKO4eZSpNRmPBL-KpujPLuuKQWVafVsQLRknblrwLP6VrULug1oNkhV_iSrTyI4KybYJ_nOzrqhJPOMQd0O1g5oCQqxhNUPk3qcpxTIgnPnGeuViv0vV4fFQQzqEsG-LeQtJPEZopGwB46pkMMdVs9hoLVjfc0RwTb2EBHSglZFSvZudwgqtF8JYIK-MJ-l8Fyw2-Jv1HxNe3aRRb4jKtyQI0YWSuYzPJnvUC2nqEI"/>
+<!-- Floating Info Badges -->
+<div class="absolute top-4 left-4 flex flex-wrap gap-2">
+<span class="bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold tracking-wider text-primary uppercase font-label">Sustainability</span>
+<span class="bg-primary/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold tracking-wider text-on-primary uppercase font-label">iOS/Web</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-on-surface/80 backdrop-blur-md px-3 py-1.5 rounded-xl flex items-center gap-2">
+<span class="material-symbols-outlined text-white text-sm" data-icon="layers">layers</span>
+<span class="text-white text-[11px] font-bold font-label">12 screens</span>
+</div>
+</div>
+<!-- Card Content Section -->
+<div class="p-6 bg-surface-container-lowest">
+<div class="flex justify-between items-start mb-2">
+<h2 class="text-2xl font-extrabold font-headline tracking-tight text-on-surface">EcoTrack</h2>
+<div class="flex items-center gap-1 text-on-surface-variant opacity-60">
+<span class="text-[10px] font-bold font-label uppercase">Inspiration</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm font-medium leading-relaxed">
+                    A carbon footprint tracker designed for mindful living with an emphasis on serene data storytelling and community challenges.
+                </p>
+</div>
+</div>
+<!-- Action Controls -->
+<div class="mt-8 flex items-center justify-between w-full max-w-xs gap-6 relative z-20">
+<!-- Drop Button -->
+<div class="flex flex-col items-center gap-2">
+<button class="w-16 h-16 rounded-full bg-surface-container-lowest shadow-lg flex items-center justify-center text-error border border-error/10 hover:bg-error hover:text-white transition-all duration-300 active:scale-90 group">
+<span class="material-symbols-outlined text-3xl group-hover:scale-110 transition-transform" data-icon="close">close</span>
+</button>
+<div class="flex items-center gap-1 text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest">
+<span class="material-symbols-outlined text-[12px]" data-icon="keyboard_arrow_left">keyboard_arrow_left</span>
+<span>Drop</span>
+</div>
+</div>
+<!-- Build Button -->
+<div class="flex flex-col items-center gap-2">
+<button class="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary-container shadow-xl flex items-center justify-center text-white hover:shadow-primary/30 transition-all duration-300 active:scale-90 group">
+<span class="material-symbols-outlined text-4xl group-hover:scale-110 transition-transform" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<div class="flex items-center gap-1 text-[10px] font-black text-primary uppercase tracking-widest">
+<span>Build</span>
+<span class="material-symbols-outlined text-[12px]" data-icon="keyboard_arrow_right">keyboard_arrow_right</span>
+</div>
+</div>
+<!-- More Button (Small Accent) -->
+<div class="flex flex-col items-center gap-2">
+<button class="w-16 h-16 rounded-full bg-surface-container-lowest shadow-lg flex items-center justify-center text-secondary border border-outline-variant/20 hover:bg-secondary hover:text-white transition-all duration-300 active:scale-90 group">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-90 transition-transform" data-icon="add">add</span>
+</button>
+<div class="text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest">More</div>
+</div>
+</div>
+</main>
+
+<div class="fixed bottom-6 left-0 w-full flex justify-center px-4 z-50">
+  <nav class="bg-[#faf4ff]/90 backdrop-blur-xl w-[90%] max-w-sm rounded-full shadow-[0px_20px_40px_rgba(48,41,80,0.15)] px-4 py-2 flex justify-around items-center">
+    <a onclick="window.location.href='1173587dc29e4c959563e317e13c3ba5.html'" style="cursor:pointer" class="flex flex-col items-center justify-center bg-gradient-to-br from-[#4647d3] to-[#9396ff] text-white rounded-full px-4 py-2 gap-0.5 shadow-md">
+      <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1">style</span>
+      <span style="font-size:10px;font-weight:700;letter-spacing:0.05em;font-family:Manrope,sans-serif">Feed</span>
+    </a>
+    <a onclick="window.location.href='e80f2cda4016458995165e0f9ab78008.html'" style="cursor:pointer" class="flex flex-col items-center justify-center text-[#5e5680] rounded-full px-4 py-2 gap-0.5 hover:bg-[#ece4ff] transition-colors">
+      <span class="material-symbols-outlined text-[20px]">layers</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;font-family:Manrope,sans-serif">Queue</span>
+    </a>
+    <a onclick="window.location.href='3e1ead01c4d84f56b6e46589c832e507.html'" style="cursor:pointer" class="flex flex-col items-center justify-center text-[#5e5680] rounded-full px-4 py-2 gap-0.5 hover:bg-[#ece4ff] transition-colors">
+      <span class="material-symbols-outlined text-[20px]">person</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;font-family:Manrope,sans-serif">Profile</span>
+    </a>
+  </nav>
+</div>
+</body></html>

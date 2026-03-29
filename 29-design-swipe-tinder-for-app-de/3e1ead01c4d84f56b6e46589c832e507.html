@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>Studio Velocity - Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary": "#963776",
+                        "on-secondary": "#f0f2ff",
+                        "secondary-dim": "#484f65",
+                        "tertiary-dim": "#882a69",
+                        "secondary-fixed-dim": "#ccd4ee",
+                        "outline": "#79719d",
+                        "on-tertiary-fixed-variant": "#6e1354",
+                        "error": "#b41340",
+                        "surface": "#faf4ff",
+                        "inverse-primary": "#8083ff",
+                        "surface-dim": "#d8ceff",
+                        "on-tertiary": "#ffeef4",
+                        "secondary-fixed": "#dae2fd",
+                        "surface-container-highest": "#e1d8ff",
+                        "inverse-surface": "#0f072e",
+                        "surface-container": "#ece4ff",
+                        "surface-tint": "#4647d3",
+                        "surface-variant": "#e1d8ff",
+                        "secondary": "#535b71",
+                        "primary-fixed": "#9396ff",
+                        "tertiary-fixed-dim": "#ef81c4",
+                        "primary-container": "#9396ff",
+                        "on-surface-variant": "#5e5680",
+                        "on-primary-fixed-variant": "#0e009d",
+                        "surface-container-low": "#f4eeff",
+                        "on-surface": "#302950",
+                        "on-tertiary-fixed": "#3b002b",
+                        "on-secondary-container": "#4a5167",
+                        "on-error-container": "#510017",
+                        "error-dim": "#a70138",
+                        "background": "#faf4ff",
+                        "on-primary-container": "#0a0081",
+                        "error-container": "#f74b6d",
+                        "on-primary": "#f4f1ff",
+                        "outline-variant": "#b0a7d6",
+                        "on-secondary-fixed-variant": "#535b71",
+                        "primary-fixed-dim": "#8387ff",
+                        "secondary-container": "#dae2fd",
+                        "primary-dim": "#3939c7",
+                        "on-secondary-fixed": "#373f54",
+                        "on-primary-fixed": "#000000",
+                        "surface-bright": "#faf4ff",
+                        "on-background": "#302950",
+                        "tertiary-fixed": "#ff8ed2",
+                        "on-error": "#ffefef",
+                        "on-tertiary-container": "#63054a",
+                        "primary": "#4647d3",
+                        "tertiary-container": "#ff8ed2",
+                        "inverse-on-surface": "#a097c5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#e6deff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .font-plus-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#faf4ff]/80 dark:bg-[#1a1625]/80 backdrop-blur-xl shadow-sm dark:shadow-none h-16 flex items-center justify-between px-6">
+<div class="flex items-center gap-4">
+<button class="text-[#5e5680] dark:text-[#b0a7d6] hover:bg-[#ece4ff]/50 dark:hover:bg-[#302950]/50 transition-colors p-2 rounded-xl active:scale-95 duration-200">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<h1 class="font-plus-jakarta text-lg font-bold tracking-tight text-[#302950] dark:text-[#ece4ff]">Profile</h1>
+<div class="w-10"></div> <!-- Spacer for center alignment -->
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-10">
+<!-- Hero Profile Section -->
+<section class="flex flex-col items-center text-center space-y-6">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-tr from-primary to-primary-container rounded-full blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
+<img alt="Jordan Smith" class="relative w-32 h-32 rounded-full object-cover border-4 border-surface-container-lowest shadow-xl" data-alt="Professional studio headshot of a creative man with stylish glasses and a warm expression, soft editorial lighting, neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Tov7ihuXgqEPzdliX_Uk0DCScCCb7SzGkzNRfIAKTe9e62miK9wUJjuKFGXkoZVXDPKJ5UX36Z8EsK-7Lxen2cThVcM10I9QTifNKdVxmmDxIQyzavCafckQd5HNrhJkzDTp_EmDd4iPTrZb0LcB1ByuqF3bjA3To08HneRvCEXGN2IMOMNKiRV4HSZRYQfyqZWrqyUh-WRO7kJp2ZnOdTfyT_apwkEoKksXTEVeYbPzC8Pk85oHPMRr-M-yTNgIuZgBiPQ5Ieau"/>
+</div>
+<div class="space-y-1">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight text-on-surface">Jordan Smith</h2>
+<p class="font-body text-on-surface-variant font-medium">Senior Design Curator</p>
+</div>
+<!-- Stats Row: Bento Style -->
+<div class="grid grid-cols-2 gap-4 w-full">
+<div class="bg-surface-container-lowest p-6 rounded-3xl shadow-[0px_20px_40px_rgba(48,41,80,0.04)] text-left flex flex-col justify-between">
+<span class="text-primary font-bold text-2xl font-headline">12</span>
+<p class="text-on-surface-variant text-sm font-semibold tracking-wide uppercase mt-1">in BUILD Queue</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-3xl shadow-[0px_20px_40px_rgba(48,41,80,0.04)] text-left flex flex-col justify-between">
+<span class="text-tertiary font-bold text-2xl font-headline">8</span>
+<p class="text-on-surface-variant text-sm font-semibold tracking-wide uppercase mt-1">Built</p>
+</div>
+</div>
+</section>
+<!-- Preferences Section -->
+<section class="space-y-4">
+<h3 class="font-headline text-sm font-extrabold text-on-surface-variant tracking-[0.1em] uppercase px-2">Preferences</h3>
+<div class="bg-surface-container-low rounded-3xl overflow-hidden">
+<!-- Push Notifications -->
+<div class="flex items-center justify-between p-5 hover:bg-surface-container transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<span class="font-body font-semibold text-on-surface">Push Notifications</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-outline-variant/30 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Email Updates -->
+<div class="flex items-center justify-between p-5 hover:bg-surface-container transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<span class="font-body font-semibold text-on-surface">Email Updates</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-12 h-6 bg-outline-variant/30 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Appearance -->
+<div class="flex items-center justify-between p-5 hover:bg-surface-container transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">dark_mode</span>
+</div>
+<span class="font-body font-semibold text-on-surface">Appearance</span>
+</div>
+<span class="text-on-surface-variant font-medium text-sm flex items-center gap-1">
+                        Light Mode
+                        <span class="material-symbols-outlined text-sm">chevron_right</span>
+</span>
+</div>
+</div>
+</section>
+<!-- Actions Section -->
+<section class="space-y-4 pt-4">
+<button class="w-full bg-error-container/10 hover:bg-error-container/20 text-error font-headline font-bold py-5 rounded-3xl transition-all active:scale-[0.98] flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-xl">delete_sweep</span>
+                Clear BUILD Queue
+            </button>
+<button class="w-full border-2 border-outline-variant/20 hover:border-primary/30 text-on-surface-variant font-headline font-bold py-5 rounded-3xl transition-all active:scale-[0.98] flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-xl">logout</span>
+                Sign Out
+            </button>
+</section>
+<!-- Aesthetic Footer Placeholder -->
+<div class="py-12 flex flex-col items-center opacity-30">
+<div class="h-px w-12 bg-on-surface mb-6"></div>
+<p class="font-headline text-[10px] tracking-[0.3em] uppercase">Studio Velocity v2.4.0</p>
+</div>
+</main>
+
+<div class="fixed bottom-6 left-0 w-full flex justify-center px-4 z-50">
+  <nav class="bg-[#faf4ff]/90 backdrop-blur-xl w-[90%] max-w-sm rounded-full shadow-[0px_20px_40px_rgba(48,41,80,0.15)] px-4 py-2 flex justify-around items-center">
+    <a onclick="window.location.href='1173587dc29e4c959563e317e13c3ba5.html'" style="cursor:pointer" class="flex flex-col items-center justify-center text-[#5e5680] rounded-full px-4 py-2 gap-0.5 hover:bg-[#ece4ff] transition-colors">
+      <span class="material-symbols-outlined text-[20px]">style</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;font-family:Manrope,sans-serif">Feed</span>
+    </a>
+    <a onclick="window.location.href='e80f2cda4016458995165e0f9ab78008.html'" style="cursor:pointer" class="flex flex-col items-center justify-center text-[#5e5680] rounded-full px-4 py-2 gap-0.5 hover:bg-[#ece4ff] transition-colors">
+      <span class="material-symbols-outlined text-[20px]">layers</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:0.05em;font-family:Manrope,sans-serif">Queue</span>
+    </a>
+    <a onclick="window.location.href='3e1ead01c4d84f56b6e46589c832e507.html'" style="cursor:pointer" class="flex flex-col items-center justify-center bg-gradient-to-br from-[#4647d3] to-[#9396ff] text-white rounded-full px-4 py-2 gap-0.5 shadow-md">
+      <span class="material-symbols-outlined text-[20px]" style="font-variation-settings:'FILL' 1">person</span>
+      <span style="font-size:10px;font-weight:700;letter-spacing:0.05em;font-family:Manrope,sans-serif">Profile</span>
+    </a>
+  </nav>
+</div>
+</body></html>

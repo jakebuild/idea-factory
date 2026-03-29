@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>DesignSwipe Onboarding - Step 3</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#0e009d",
+                        "on-tertiary-fixed-variant": "#6e1354",
+                        "on-secondary-fixed": "#373f54",
+                        "inverse-surface": "#0f072e",
+                        "tertiary-container": "#ff8ed2",
+                        "tertiary": "#963776",
+                        "surface-container-lowest": "#ffffff",
+                        "error-dim": "#a70138",
+                        "error-container": "#f74b6d",
+                        "on-primary-container": "#0a0081",
+                        "on-error": "#ffefef",
+                        "secondary-dim": "#484f65",
+                        "surface-bright": "#faf4ff",
+                        "on-secondary-container": "#4a5167",
+                        "background": "#faf4ff",
+                        "on-surface": "#302950",
+                        "tertiary-fixed": "#ff8ed2",
+                        "on-secondary": "#f0f2ff",
+                        "on-tertiary-fixed": "#3b002b",
+                        "on-error-container": "#510017",
+                        "secondary-fixed": "#dae2fd",
+                        "primary": "#4647d3",
+                        "secondary-container": "#dae2fd",
+                        "surface-container-high": "#e6deff",
+                        "on-tertiary-container": "#63054a",
+                        "primary-dim": "#3939c7",
+                        "primary-container": "#9396ff",
+                        "error": "#b41340",
+                        "tertiary-dim": "#882a69",
+                        "primary-fixed": "#9396ff",
+                        "surface-variant": "#e1d8ff",
+                        "on-background": "#302950",
+                        "surface-container": "#ece4ff",
+                        "inverse-primary": "#8083ff",
+                        "on-tertiary": "#ffeef4",
+                        "primary-fixed-dim": "#8387ff",
+                        "tertiary-fixed-dim": "#ef81c4",
+                        "secondary-fixed-dim": "#ccd4ee",
+                        "surface-dim": "#d8ceff",
+                        "surface-container-low": "#f4eeff",
+                        "outline": "#79719d",
+                        "surface": "#faf4ff",
+                        "on-primary-fixed": "#000000",
+                        "inverse-on-surface": "#a097c5",
+                        "secondary": "#535b71",
+                        "surface-tint": "#4647d3",
+                        "on-surface-variant": "#5e5680",
+                        "on-secondary-fixed-variant": "#535b71",
+                        "surface-container-highest": "#e1d8ff",
+                        "outline-variant": "#b0a7d6",
+                        "on-primary": "#f4f1ff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #faf4ff;
+        }
+        .headline-font {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .bento-card-shadow {
+            box-shadow: 0px 20px 40px rgba(48, 41, 80, 0.06);
+        }
+        .glass-header {
+            background-color: rgba(250, 244, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #4647d3 0%, #9396ff 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface antialiased overflow-hidden">
+<!-- Top Navigation Bar (Shared Component Strategy) -->
+<header class="fixed top-0 w-full z-50 flex justify-end items-center px-6 py-4 w-full bg-transparent">
+<button class="text-indigo-600 dark:text-indigo-400 font-bold plus-jakarta-sans tracking-tight hover:opacity-80 transition-opacity active:scale-95 duration-200" onclick="window.location.href='1173587dc29e4c959563e317e13c3ba5.html'">
+            Skip
+        </button>
+</header>
+<main class="relative h-screen flex flex-col items-center justify-between pt-20 pb-12 px-6">
+<!-- Illustration Area (The Build Queue) -->
+<div class="relative w-full max-w-md flex-1 flex flex-col items-center justify-center">
+<div class="relative w-full aspect-[4/5] flex items-center justify-center">
+<!-- Decorative Background Blobs -->
+<div class="absolute inset-0 flex items-center justify-center -z-10">
+<div class="w-72 h-72 bg-surface-container rounded-full blur-3xl opacity-60"></div>
+</div>
+<!-- Asymmetric "Build Queue" Stack -->
+<div class="relative w-full h-full flex flex-col items-center justify-center">
+<!-- Top Card (Most Recent/Active) -->
+<div class="absolute z-30 w-56 h-80 bg-surface-container-lowest rounded-xl bento-card-shadow flex flex-col p-4 transform -rotate-6 -translate-x-12 -translate-y-8">
+<div class="w-full h-32 bg-surface-container-low rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern mobile app interface mockup with sleek purple UI elements and creative minimalist graphics on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDshhhTlZ2x6N8QWPieYXUNWcdJBDmCixXzKYAqYRVIUqkbyKcK5Z5ictDF046vZBhwhDQqn72CEy9HxxxXj_SHfhKYb870Q5kvMKSXmeKWlasH5M2v53rZGcIsj8zm-I9coK7tItM12kOqwdBWj_Btx8UQWb-mGLC0OTEEalY7dp2sVFrmTrhCbnBmbaDDhZBy-bYdAA2UzcHDBVktQL05mMnJcT3FBQCX-rIG0W05vckKV5vt-zeUrVzC4uZgfr_BbVZzRDeY4UVa"/>
+</div>
+<div class="h-3 w-3/4 bg-surface-container-high rounded-full mb-2"></div>
+<div class="h-2 w-1/2 bg-surface-container rounded-full mb-6"></div>
+<div class="mt-auto h-8 w-full bg-primary rounded-lg opacity-20"></div>
+</div>
+<!-- Middle Card -->
+<div class="absolute z-20 w-56 h-80 bg-surface-container-lowest rounded-xl bento-card-shadow flex flex-col p-4 transform rotate-3 translate-x-8 translate-y-4">
+<div class="w-full h-32 bg-surface-container-low rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Smartphone screen showing professional architectural portfolio with high-contrast imagery and elegant typography layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4G0dGB02dJQ931Kj1eWPl_LKm59SMr0J_NFQbIfbQ7ta5pKEgUFmqXurwwIMJoxaUFEJdF_FNxY2hDaRFDUNbCdE9cI_JoR-8PulGgohiIDVSyZJ9OoETFylmD4ISyAfjZV-_KwVTiRweXeRyx5TJwMgOfE2e9uJcxto5QpdRlPVOua-b1lsL0vW-jUoVZJtieyHJWeKP4UOccP1rz5W1YuhZ20susNc12ycUPudCdgXmTw6o0RtKOKBU3gRynDKtK90zbHuvnheB"/>
+</div>
+<div class="h-3 w-3/4 bg-surface-container-high rounded-full mb-2"></div>
+<div class="h-2 w-1/2 bg-surface-container rounded-full mb-6"></div>
+<div class="mt-auto h-8 w-full bg-primary rounded-lg opacity-10"></div>
+</div>
+<!-- Bottom Card -->
+<div class="absolute z-10 w-56 h-80 bg-surface-container rounded-xl opacity-40 transform rotate-12 translate-x-16 translate-y-12"></div>
+<!-- Floating Accent Icons -->
+<div class="absolute top-1/4 right-0 z-40 bg-tertiary-container text-on-tertiary-container p-3 rounded-xl bento-card-shadow transform rotate-12">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">layers</span>
+</div>
+<div class="absolute bottom-1/4 left-4 z-40 bg-surface-container-lowest p-3 rounded-full bento-card-shadow transform -rotate-12 border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Content Section -->
+<div class="w-full max-w-lg text-center mt-8 space-y-4">
+<h2 class="headline-font text-primary font-bold text-lg tracking-tight uppercase">
+                Your Blueprint for Success
+            </h2>
+<h1 class="headline-font text-on-surface font-extrabold text-4xl leading-tight tracking-tighter">
+                A Library of Apps <br/>to Build
+            </h1>
+<p class="text-on-surface-variant text-base font-medium max-w-xs mx-auto">
+                Turn your saved inspirations into actual production-ready components and full-scale layouts.
+            </p>
+</div>
+<!-- Bottom Actions Area -->
+<div class="w-full max-w-md flex flex-col items-center gap-10">
+<!-- CTA Button -->
+<button class="primary-gradient w-full py-5 rounded-full text-on-primary font-bold text-lg shadow-lg shadow-primary/20 hover:opacity-90 active:scale-95 transition-all duration-200" onclick="window.location.href='1173587dc29e4c959563e317e13c3ba5.html'">
+                Get Started
+            </button>
+<!-- Onboarding Dots -->
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></div>
+<div class="w-8 h-2.5 rounded-full bg-primary transition-all duration-300"></div>
+</div>
+</div>
+</main>
+<!-- Visual Polish: Subtle Texture Layer -->
+<div class="fixed inset-0 pointer-events-none opacity-5 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+</body></html>
