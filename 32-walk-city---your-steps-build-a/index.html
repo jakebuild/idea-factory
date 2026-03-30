@@ -6,7 +6,82 @@
 <title>Idea Factory — Design Preview</title>
 <!-- IDEA_DATA injected here by design agent -->
 <script>
-window.IDEA_DATA = {"ideaNum":32,"title":"Walk City","sub":"Every day you walk grows a collectible city that shifts with your movement and time of day.","score":"?/10","deviceType":"MOBILE","stitchId":"17641449747237848920","startScreen":0,"screens":[{"id":"1dd2553d3dc34179836e41c3bb9a8c65","label":"City Home"},{"id":"e4d7e7e39356455aa932911851b3d9ec","label":"Daily Archive"},{"id":"db393f1b7dcf46fdab17254977fe8bc2","label":"Settings"}],"timeline":[{"status":"","icon":"💡","title":"Original Idea","desc":"A walking tracker where each day of movement becomes a unique city you can revisit later.","body":"<div class=\"esect\"><div class=\"esect-label\">Idea</div><p>Walk City turns daily steps into a procedural skyline. Lower-step days create modest towns, bigger days grow into dense metropolises, and the scene lighting changes with the time you revisit it.</p></div><div class=\"esect\"><div class=\"esect-label\">Source</div><p>Walk City - your steps build a city that grows with you - Every day your steps generate a unique cityscape - Walk 5000 steps modest town, 15000 steps towering metropolis - different times create different lighting - miss a day city sleeps - AI procedurally generates based on your data - collection grows daily - revisit at night to see where you walked</p></div>"},{"status":"validate","icon":"✅","title":"Validated","desc":"Ready for design with a compact three-screen mobile handoff synthesized from the available repo files.","score":"?/10","body":"<div class=\"esect\"><div class=\"esect-label\">Validation</div><p>Marked ready for design on 2026-03-30 19:34.</p></div><div class=\"esect\"><div class=\"esect-label\">Design Handoff</div><ul><li>City Home: today's skyline, steps, growth meter, and night revisit CTA.</li><li>Daily Archive: past city cards with filters for active, sleeping, and favorite days.</li><li>Settings: sync, reminders, privacy, and lighting preferences.</li></ul></div>"},{"status":"design","icon":"🎨","title":"Designed","desc":"Stitch screens were generated, normalized, and wired into a clickable mobile prototype.","body":"<div class=\"esect\"><div class=\"esect-label\">Prototype</div><div class=\"tag-row\"><span class=\"etag\">MOBILE</span><span class=\"etag\">3 screens</span><span class=\"etag\">Clickable nav</span></div></div><div class=\"esect\"><div class=\"esect-label\">Links</div><p><a class=\"ext-link\" href=\"https://stitch.withgoogle.com/projects/17641449747237848920\" target=\"_blank\" rel=\"noreferrer\">Open in Stitch</a></p></div>"}]};
+window.IDEA_DATA = {
+  ideaNum: 32,
+  title: "Walk City",
+  sub: "Build one civic project each week by completing 5 meaningful walk days.",
+  score: "7/10",
+  deviceType: "MOBILE",
+  stitchId: "13821090931298548551",
+  startScreen: 0,
+  screens: [
+    { id: "27f671e3512642cd9524e423b52033cd", label: "Onboarding" },
+    { id: "9003bc679b2242c2a8f5c83db839e856", label: "Data Setup" },
+    { id: "dd84a02c17484df78f3ba23fcda1b02d", label: "Home / Active Project" },
+    { id: "1c7ccd73c90c4277a39fb932bd2dedb5", label: "Add Steps / Sync Result" },
+    { id: "a6bac7096dc24460afba53881eba7153", label: "City Map" },
+    { id: "choose-next-project", label: "Choose Next Project" },
+    { id: "3f68def9d1a1472db6dd7bbd2e99dfce", label: "Weekly Recap / Project Complete" },
+    { id: "143603a41c3b4b56bc7b0a8fbcd2b3f5", label: "Settings" }
+  ],
+  timeline: [
+    {
+      status: "",
+      icon: "💡",
+      title: "Original Idea",
+      desc: "A poetic step-to-city concept with no durable retention loop.",
+      body: "<div class='esect'><div class='esect-label'>Description</div><p>Walk City started as a daily city reveal where each day's steps produced a skyline postcard.</p></div><div class='esect'><div class='esect-label'>Core promise</div><div class='tag-row'><span class='etag'>step-driven city</span><span class='etag'>daily reveal</span><span class='etag'>generative mood</span></div></div>"
+    },
+    {
+      status: "critique",
+      icon: "🔍",
+      title: "Critique v1",
+      desc: "The fantasy was clear, but the product was mostly a mood board.",
+      verdict: "NEEDS MAJOR WORK",
+      verdictClass: "needs",
+      score: "5/10",
+      body: "<div class='esect'><div class='esect-label'>What's Good</div><ul><li>The city metaphor is instantly legible.</li><li>The visual identity could stand out in screenshots.</li></ul></div><div class='esect'><div class='esect-label'>Brutal Feedback</div><ul><li>No strong reason to return after day 1.</li><li>Health data, AI generation, and location ideas added major solo-dev risk.</li><li>The output risked becoming gimmicky wallpaper.</li></ul></div><div class='esect'><div class='esect-label'>Solo Dev Check</div><p>Possible only with heavy scope cuts and deterministic rendering.</p></div>"
+    },
+    {
+      status: "improve",
+      icon: "✨",
+      title: "Improved v2",
+      desc: "The concept shifted to one persistent city with deterministic growth.",
+      body: "<div class='esect'><div class='esect-label'>What Changed</div><ul><li>Removed GPS, fake AI complexity, and punishment loops.</li><li>Focused on one explainable city builder with daily block placement.</li><li>Narrowed the product to an iPhone-first prototype.</li></ul></div><div class='esect'><div class='esect-label'>MVP Scope</div><div class='tag-row'><span class='etag blue'>persistent city</span><span class='etag blue'>14-day archive</span><span class='etag blue'>deterministic renderer</span></div></div>"
+    },
+    {
+      status: "critique",
+      icon: "🔍",
+      title: "Critique v2",
+      desc: "Buildability improved, but the retention loop still looked decorative.",
+      verdict: "NEEDS MAJOR WORK",
+      verdictClass: "needs",
+      score: "6/10",
+      body: "<div class='esect'><div class='esect-label'>What's Good</div><ul><li>The app finally sounded buildable by one person.</li><li>Scope grenades like GPS and social fluff were removed.</li></ul></div><div class='esect'><div class='esect-label'>Brutal Feedback</div><ul><li>The city reward system still felt thin and arbitrary.</li><li>HealthKit remained a hard delivery risk.</li><li>The archive was not a real retention engine.</li></ul></div><div class='esect'><div class='esect-label'>Solo Dev Check</div><p>Still viable only if the loop became more goal-driven and content stayed tight.</p></div>"
+    },
+    {
+      status: "improve",
+      icon: "✨",
+      title: "Improved v3",
+      desc: "The app became a weekly civic-project loop with a clearer reason to return.",
+      body: "<div class='esect'><div class='esect-label'>What Changed</div><ul><li>Reframed the app around one active weekly civic project.</li><li>Used 5 counted walk days in 7 days as the core success rule.</li><li>Added manual fallback and demo mode to keep the prototype testable.</li></ul></div><div class='esect'><div class='esect-label'>MVP Scope</div><div class='tag-row'><span class='etag green'>weekly project choice</span><span class='etag green'>city map</span><span class='etag green'>simple recap</span><span class='etag green'>settings + reminders</span></div></div>"
+    },
+    {
+      status: "validate",
+      icon: "✅",
+      title: "Validated",
+      desc: "This version reached ready-for-design status on March 30, 2026.",
+      body: "<div class='esect'><div class='esect-label'>Validation</div><p><strong>Score:</strong> 7/10<br/><strong>Date:</strong> 2026-03-30 20:51</p></div><div class='esect'><div class='esect-label'>Design Handoff</div><ul><li>Onboarding</li><li>Data Setup</li><li>Home / Active Project</li><li>Add Steps / Sync Result</li><li>City Map</li><li>Choose Next Project</li><li>Weekly Recap / Project Complete</li><li>Settings</li></ul></div>"
+    },
+    {
+      status: "design",
+      icon: "🎨",
+      title: "Designed",
+      desc: "A Stitch-backed mobile preview was generated and deployed as a clickable prototype.",
+      body: "<div class='esect'><div class='esect-label'>Prototype</div><p><a class='ext-link' href='https://stitch.withgoogle.com/projects/13821090931298548551'>Open Stitch project</a></p></div><div class='esect'><div class='esect-label'>Device</div><p>MOBILE preview rendered inside a 390px phone frame with normalized navigation between all handoff screens.</p></div>"
+    }
+  ]
+};
 </script>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
