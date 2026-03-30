@@ -1,64 +1,93 @@
-# Idea #33: (Improved)
+# Idea #33: Walk Garden (Improved)
 ## Version: v3
-**Date:** 2026-03-30 22:43
+**Date:** 2026-03-31 00:43
 **Status:** improved
+
 ## Original Idea
 Walk Garden - each step equals 1 gallon water - water trees in your garden - watch your garden bloom as you walk - trees need 500-2000 gallons to grow - unlock new tree species as you grow more - bonsai, cherry blossom, oak - watch tree grow visually - no streak penalty - build your forest
+
 ## What Changed and Why
-- Replaced the six-plot weekly-resolution game with a 21-day garden page that updates every day. This fixes the dead-air problem from the critique: users now see a concrete visual change each day instead of waiting for week-end payoff.
-- Removed the seed-rule layer from MVP, including the confusing comeback mechanic, and replaced it with four simple daily step bands that map directly to four plant outcomes. This is better because users can understand the system in seconds, and the app no longer depends on thin strategy pretending to be depth.
-- Made the product an explicit retention experiment around a private archive of finished garden pages, not a “business” with fake moat language. This is more viable for a solo builder because the content set is small, the art can be modular, and the key question becomes measurable: do people start a second page after finishing the first?
+
+- **Added a seasonal collection system to fix the day-21 cliff.** The critique's single most damaging observation was: "Why does the user come back after day 21? Right now the honest answer is: maybe they do not." v2 had no answer. v3 introduces four seasonal garden themes — Spring, Summer, Fall, Winter — each with its own visual palette and seed pack. Each 21-day run produces one seasonal garden. The user builds a set of four over time. The motivation is now "finish your seasonal collection," not "watch the same garden again." The architecture supports this from day 1; the MVP ships Spring only, with Summer visually teased on the History screen. This adds bounded art scope (one extra palette per season, not 4x content upfront) and answers repeat-run motivation without requiring any network effects, UGC, or social infrastructure.
+
+- **Replaced Comeback Clover with Peak Day Poppy.** The critique flagged Comeback Clover as a rule that "normal users misread" and that risks teaching users to intentionally game failure. It is cognitively unlike every other seed. v3 replaces it with Peak Day Poppy: bloom by walking 10,000+ steps on at least 1 day this week. One condition, one sentence, no failure edge cases. The four seeds now all follow the same "hit X steps on Y days" grammar, making the strategy layer legible at a glance rather than requiring an explanation.
+
+- **Added daily micro-feedback to fix midweek dead air.** The critique identified that midweek usage felt like: "open app, see number, nothing dramatic changes, close app." v3 adds a daily sync reaction to each active seed — a one-line status blurb that updates whenever Apple Health data comes in. "Your Steady Fern soaked up 6,400 steps today. 3 of 5 days done." This is zero extra logic (the data is already computed) and costs only one label component per seed card. It gives users a small reward for checking in midweek without adding any new state machine complexity.
+
+- **Made art validation a pre-build gate.** The critique said "if the illustrations are mediocre, the whole thing collapses." v3 makes the Spring palette postcard a build prerequisite, not a build output. Before writing a line of SwiftUI, the solo dev produces one finished garden postcard at full resolution and validates it with 5 people. If it does not look beautiful, the app does not get built. This replaces the optimistic assumption that art will be "good enough" with an explicit kill switch.
+
 ## Improved Description
-Walk Garden v3 is a 21-day walking scrapbook for iPhone. Each day, Apple Health reads the user’s step total and fills one tile on a 21-tile garden page. The tile outcome is immediate and legible:
 
-- under 4,000 steps: pebble / dormant tile
-- 4,000-6,999 steps: sprout tile
-- 7,000-9,999 steps: bloom tile
-- 10,000+ steps: flourish tile
+Walk Garden v3 is a calm 21-day walking challenge for iPhone that produces a finished seasonal garden — a personal artifact that reflects exactly how you walked. Each run is themed to the season you start it in: Spring brings cherry blossoms and ferns, Summer brings sunflowers and tall grasses, Fall brings maples and late blooms, Winter brings pine and frost-tolerant moss. The visual palette changes between runs, so each garden in your archive looks and feels distinct.
 
-Instead of managing seed rules, the user chooses one of two garden templates at the start of a run: Courtyard or Wild Patch. The template changes the layout, border art, and final postcard framing, but not the underlying step logic. Over 21 days, the page becomes a visual record of how the user actually moved, with each row representing one week. Weekly row completion adds a simple structural flourish such as a path segment, bench, or stone border so week 2 and week 3 feel like progression rather than more of the same.
+Apple Health provides the daily step count automatically. Each week, the user chooses 2 seeds from a pack of 4 and plants them in 2 newly unlocked plots. Each seed has a legible walking rule:
 
-This solves the critique’s pacing problem because the app has both daily and weekly feedback. Open the app midweek and today’s tile has changed. Finish a week and the page structure grows. Miss a day and the page still records it cleanly with a pebble tile instead of inventing a failure mini-game.
+- **Calm Moss** — bloom by walking 5,000+ steps on 3 days this week
+- **Steady Fern** — bloom by walking 5,000+ steps on 5 days this week
+- **Long Walk Lily** — bloom by walking 8,000+ steps on at least 2 days this week
+- **Peak Day Poppy** — bloom by walking 10,000+ steps on at least 1 day this week
 
-Why would users come back in week 2? Because the page is unfinished, daily tiles keep changing, and the second row visibly opens after day 7. The user is not waiting for a distant postcard; they are filling a page that already looks different every day.
+The strategy is choosing the right seed for your week, not grinding a single optimal path. Seeds that miss their goal turn into neutral stone planters — the garden records reality, not a fantasy version of your week.
 
-Why would users come back after day 21? The honest answer is still unproven, so v1 treats this as a test. The app stores each finished 21-day page in a private Garden Archive, and the completion screen invites the user to start a second page with the other template. If users do not start a second run, the concept has failed the retention test and should not be expanded.
+Every day, the Home screen shows a short status update per active seed: how far along each is based on today's synced steps. This makes midweek check-ins feel rewarding rather than empty.
 
-What makes the artifact more distinctive now is that it reflects daily variation, not just six resolved plot outcomes. Two users with similar totals can still end up with visibly different pages because their high-step and low-step days land in different positions across the 21-day grid. The share/export feature remains optional frosting, not the product promise.
+On day 21 the user gets a finished postcard of their garden. The History screen shows all completed seasonal gardens. After Spring, the Summer garden is teased with a lock icon, giving users an explicit next thing to earn. The collection arc is: four seasons, four gardens, one archive. That is the retention loop.
+
+**Why would users come back in week 2?** Because the garden is visibly incomplete — 4 plots are filled, 2 remain, and week 2 seed choices will change the final composition. **Why would users start a second run?** Because Summer is already waiting, it looks visually different from Spring, and the archive now has a gap to fill.
+
 ## Why This Is Worth Building (Solo + AI)
-This is worth building because it is now a sharp product test: can a simple, beautiful 21-day step artifact make users complete one page and start another. A solo developer can ship it with AI coding tools because the system is mostly straightforward SwiftUI state, one HealthKit read-only integration, a small modular art kit, and a bounded archive/export flow rather than a rule-heavy game.
+
+A solo dev can ship this because the scope is narrow, the content set is bounded, and the architecture is additive: one seasonal palette at launch, three more as post-MVP drops. The art-first validation step protects the investment — if the Spring postcard does not look good enough to share, the builder stops before sinking 5 weeks into a broken premise. The seasonal collection arc solves the core retention problem the critique identified without adding servers, social graphs, or moderation.
+
 ## Solo MVP Scope
-- What's in v1: iPhone-only app, Apple Health read-only step sync, one active 21-day run at a time, 21 daily tiles, 4 fixed step bands, 2 garden templates, 1 modular art kit for tiles and weekly row flourishes, daily auto-sync on app open, final postcard export, private Garden Archive of completed pages, and analytics for permission success, day-7 return, run completion, and second-run starts.
-- What's out of v1: seed packs, plot placement, Comeback Clover or any miss-a-day mechanic, species unlock ladders, endless forest mode, social sharing loops beyond native export sheet, friends, community galleries, user-generated gardens, moderation, Android, web, widgets, Apple Watch app, monetization, payments, dynamic seasons, AI-generated art, and any feature that requires more content to fake retention.
-- Estimated build time with AI coding tools: 3.5 to 4 weeks total, including 3 days for product rules, data model, and archive logic; 3-4 days to create and test the modular art kit plus template metadata; 3 days for HealthKit integration, permission states, and sync edge cases; 5-6 days for SwiftUI screens and tile/rendering logic; 2 days for archive and postcard export; 1 day for analytics setup; and 5-6 days for onboarding polish, device testing, permission-denial paths, delayed-sync handling, and one round of design iteration after seeing the artifact on device.
+
+- **What's in v1:** iPhone-only app, Apple Health read-only step sync, one 21-day run at a time, Spring seasonal theme only (Summer teased on History), 4 seed types with single-condition rules (Calm Moss / Steady Fern / Long Walk Lily / Peak Day Poppy), 6 total plots, 3 plant states per seed (seedling → growing → bloom), neutral stone-planter for failed seeds, daily seed status blurb on Home screen, garden map view, end-of-run postcard export, History archive of completed runs, lightweight analytics for permission rate / day-7 return / day-14 return / run-2 start rate.
+- **What's out of v1:** Summer / Fall / Winter seasonal themes (architecture supports, content ships later), Android, manual step entry, endless forest mode, species unlock ladders, animation-heavy plant growth, Comeback Clover or any rule with a "miss a day" condition, social feed, friends, UGC gardens, moderation, monetization, payments, widgets, watch app, AI-generated art.
+- **Estimated build time with AI coding tools:** 4.5–5 weeks total, broken down as: 2 days art validation (produce one finished Spring postcard, show 5 people, go/no-go decision), 3 days Spring content prep (4 seed definitions, 6-plot layout, 3-state plant art per seed = 12 plant illustrations + 4 stone planter states + background), 1 day seasonal palette architecture (content-addressed so future seasons are a data drop), 3 days Apple Health integration and permission/error states, 6–7 days SwiftUI screens and garden-state machine (seed selection, plot placement, daily sync, week resolution, postcard, history), 2 days daily micro-feedback logic and Home screen polish, 2 days postcard export and share flow, 1 day analytics setup, 5–6 days device testing, HealthKit sync edge cases, onboarding polish, and TestFlight packaging.
+
+## Critical Assumptions Check
+
+1. **VERIFIED:** Apple HealthKit exposes `stepCount` as a readable quantity and supports per-day queries for rolling 7-day windows. The integration is a real implementation risk (edge cases around permission denial, background sync timing, first-session data availability) but is not vaporware.
+
+2. **UNVERIFIED:** The Spring garden postcard looks beautiful and distinctive enough that users want to share it and start Summer to complete the collection. This is the entire product bet. It cannot be assumed before the art is made. **Fallback:** art validation is a pre-build gate in this plan. If the postcard fails the "would I share this?" test with 5 real people, the idea is shelved rather than built.
+
+3. **UNVERIFIED:** Users will start a second run after completing Spring. The seasonal tease and archive gap are the proposed mechanic, but this remains unproven. **Fallback:** treat run-2 start rate as the primary success metric in the first release. If it is near zero after 4 weeks of data, do not build Summer content — retire the app and document the learning.
+
 ## Open Questions
-- 3 biggest assumptions that could kill the product:
-- VERIFIED: Apple HealthKit can provide read-only step-count data for an iPhone app, and Apple documents both authorization flow and step-count query support. This technical dependency is real, though still an implementation risk.
-- UNVERIFIED: Users will care enough about a finished 21-day garden page to start a second run. This cannot be presented as the moat. Fallback plan: measure second-run starts in the first tester cohort; if they are weak, stop expanding templates and reposition the app as a one-shot seasonal experiment rather than a product.
-- UNVERIFIED: A small modular art system can make the final page feel beautiful and personal enough without a large illustration budget. Because this is unverified, the first prototype should focus on the final page aesthetic before any extra feature work.
-- Does the daily tile system feel motivating enough without any seed-choice layer, or does it become too passive in user testing?
-- Are two templates enough to create a real second-run impulse, or do testers perceive them as cosmetic only?
-- How often do Health permission denial or delayed step updates break the first-session experience?
+
+- Does the seasonal tease (Summer locked on History) land as motivating or frustrating? Test with the Spring postcard prototype before committing to the full flow.
+- Are 4 seed types enough variety across 3 weeks of the same run, or does week 3 feel like a re-selection of the same two good seeds? Consider whether a fifth rule is needed for v1 or is truly post-MVP.
+- What is the right threshold for Peak Day Poppy for a casual audience — 10,000 steps may be too high for some users. Should this be user-adjustable or fixed?
+- If Apple Health permission is denied, what is the fallback? Manual daily step entry for beta/TestFlight only, with no public fallback, is the correct call — but confirm this before building the denied state screens.
+- Does the stone-planter failure state need copy explaining why (seed didn't meet its rule) or is the visual sufficient? Decide before designing Seed Detail.
+
 ## Design Handoff
+
 List every screen/view the app needs so a designer or AI design tool can start immediately:
-- Screen 1: Welcome / 21-Day Pitch — explain the product in one screen, show a sample finished 21-tile garden page, and frame the app as a 21-day walking scrapbook powered by Apple Health.
-- Screen 2: Apple Health Access — request read access for step count, explain privacy boundaries, and show success, denied, retry, and “not available” states.
-- Screen 3: Choose Template / Start Run — let the user pick Courtyard or Wild Patch, preview the empty 21-day page for each, show start date and end date, and start the run.
-- Screen 4: Home / Current Page — primary dashboard with today’s step total, current day number, current week row, 21-tile garden page, legend for the 4 tile outcomes, and sync status.
-- Screen 5: Daily Tile Detail — tap a tile to see date, synced step count, resulting tile state, short explanation of the threshold it hit, and whether that week row is complete.
-- Screen 6: Weekly Row Complete — lightweight transition state shown on day 7 and day 14, revealing the new row flourish, summarizing that week’s tile mix, and returning the user to Home.
-- Screen 7: Final Garden / Completion — show the finished 21-day page, completion stats, title field, “start next page” CTA, and save/share postcard action.
-- Screen 8: Garden Archive — list past completed pages with thumbnail, template used, completion date, and tap-through into a finished-page detail view.
-- Screen 9: Archived Page Detail — full-screen view of one completed page with title, date range, tile breakdown, and export action.
-- Screen 10: Settings / Help — Health permission status, reminder toggle, privacy copy, FAQ for sync timing, reset current run, and support contact.
-Key interactions:
-- User reads the pitch, grants Apple Health access, chooses a template, and starts a 21-day run.
-- Each day the app syncs steps, converts that total into one tile outcome, and updates the current garden page on Home.
-- User taps any tile to inspect the day’s result and understand the thresholds.
-- On day 7 and day 14, the app shows a weekly row-complete moment before returning the user to the growing page.
-- On day 21, the user lands on the finished page, saves or shares it, and can immediately start a second run with the other template.
-- After at least one completed run, the user can browse the Garden Archive and reopen any finished page.
+
+- **Screen 1: Welcome / Seasonal Pitch** — introduce the concept with a sample finished Spring garden postcard, explain that Apple Health steps grow real plant illustrations over 21 days, and show the four seasonal garden icons (Spring / Summer locked / Fall locked / Winter locked) as a collection preview. CTA: Get Started.
+- **Screen 2: Apple Health Access** — full-screen permission request explaining exactly what is read (step count, nothing else), with three states: default ask, permission granted (with brief success animation), permission denied (with fallback instructions to enable in Settings). No manual entry offered.
+- **Screen 3: Start Run / Empty Garden Preview** — show the 6-plot garden layout for the Spring theme with all slots empty, explain the 3-week structure (2 new plots unlock each Monday), highlight the two active week-1 plots, and show the CTA to pick this week's seeds.
+- **Screen 4: Weekly Seed Pack** — show the 4 seed cards for the current week. Each card: plant illustration in seedling state, seed name, rule text in one sentence, difficulty indicator (low / medium / high), and bloom preview. User selects 2. Deselected 2 fade but remain visible. CTA: Plant These.
+- **Screen 5: Plot Placement** — show the current garden map with this week's 2 newly unlocked plots highlighted. User drags or taps to assign each chosen seed to a plot. Confirmation state shows the two placements before committing.
+- **Screen 6: Home / Current Garden** — primary daily screen. Top: today's synced step count and a one-line sync status ("Updated 12 minutes ago"). Middle: current garden illustration with all active and resolved plots visible. Bottom: cards for each active seed showing name, rule, progress bar, and daily status blurb ("Your Steady Fern soaked up 6,400 steps today — 3 of 5 days done"). Tap any seed card to go to Seed Detail.
+- **Screen 7: Seed Detail** — focused view for one seed. Full-size plant illustration in current state, rule text, 7-day step history for the current week (bar chart, each day colored if it counted toward the rule), current progress (e.g., 3 of 5 days), and projected outcome copy if the week ended now. Read-only — no actions except Back.
+- **Screen 8: Week Resolution** — end-of-week summary triggered when the week closes. Show each resolved seed with its final state (bloom or stone planter), one line of copy per outcome ("Your Calm Moss bloomed." / "Your Long Walk Lily became a stone planter — you hit 8,000 on 1 of 2 needed days."), animated transition of the garden updating, and CTA to begin next week's seed pack. Week 3 resolution flows directly to Final Garden.
+- **Screen 9: Final Garden / Postcard** — full-screen finished Spring garden with all 6 plots resolved. Garden title (auto-generated from season + completion date, editable). Summary stats: total steps walked, plots bloomed vs stone planters. Save to Photos and Share Sheet buttons. Postcard framing (fixed aspect ratio, clean border, season watermark).
+- **Screen 10: History / Seasonal Archive** — grid of all completed gardens as postcard thumbnails. Spring (completed, tappable), Summer (locked, greyed, "Start after Spring"), Fall (locked), Winter (locked). Tapping a completed garden opens its final postcard full-screen. Tapping a locked season shows a preview of its color palette and a prompt to finish the current run.
+- **Screen 11: Settings** — Apple Health connection status and re-request button, optional daily reminder time picker, current run reset (with explicit confirmation), privacy / analytics copy, app version.
+
+**Key interactions:**
+
+- **Onboarding to first seed pick:** Welcome → Health permission → empty garden preview → weekly seed pack → plot placement → Home. This is the first-session critical path and must be completable in under 3 minutes.
+- **Daily check-in loop:** Open app → Home shows updated step count and per-seed status blurb → optionally tap seed card for detail → close. Designed to be satisfying in 30 seconds.
+- **Week resolution:** Triggered the first time the user opens the app after the 7-day window closes (not a push notification forced flow). Week Resolution screen → garden updates visually → CTA to next week's seed pack.
+- **Run completion:** Week 3 resolution → Final Garden postcard → save/share → History shows Spring as completed → Summer teased.
+- **Second run start:** User taps locked Summer on History → sees palette preview and "Start Summer Garden" CTA → begins a new 21-day run with Summer theme and a new seed pack variant.
+
 ## Version History
 - v1: Original idea
-- v2.1: Critique - retention after day 21 was unproven, the seed strategy was too thin, Comeback Clover added confusion, and the app still leaned too hard on art quality
-- v3: Improved - reframed as a daily-updating 21-day garden scrapbook with simpler rules, stronger midweek feedback, and an explicit second-run retention test
+- v1.1: Critique — pleasant metaphor but not a product, no week-2 retention, no decisions, art/content burden too high, Health integration risk ignored
+- v2: Improved — reframed as a finite 21-day iPhone challenge with weekly seed choices, 6-plot garden, bounded assets, and a clear week-2 return reason
+- v2.1: Critique — retention after day 21 still unanswered, Comeback Clover rule is confusing, midweek dead air, art dependency unresolved, build estimate optimistic
+- v3: Improved — seasonal collection arc answers day-21 cliff, Comeback Clover replaced with simpler Peak Day Poppy rule, daily micro-feedback added, art-first pre-build gate added, honest 4.5–5 week estimate
