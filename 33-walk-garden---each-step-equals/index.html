@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Idea Factory — Design Preview</title>
+<!-- IDEA_DATA injected here by design agent -->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0f1a;
+    color: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ──────────────────────────────────────── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .idea-num {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: #3b82f6; background: #1e3a5f;
+    padding: 3px 10px; border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .idea-title { font-size: 1.1rem; font-weight: 700; color: #f9fafb; }
+  .idea-sub { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+  .header-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    border-radius: 99px; padding: 4px 12px;
+    font-size: 0.75rem; color: #9ca3af;
+  }
+  .score-pill {
+    background: #1a2e1a; border: 1px solid #2d4a2d;
+    color: #86efac; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 99px;
+  }
+  .toggle-btn {
+    display: flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    color: #9ca3af; font-size: 0.75rem;
+    padding: 4px 12px; border-radius: 99px;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .toggle-btn:hover { background: #1f2937; color: #f9fafb; border-color: #374151; }
+
+  /* ── Body ────────────────────────────────────────── */
+  .body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: stretch;
+  }
+
+  /* ── Phone column ────────────────────────────────── */
+  .phone-col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 40px;
+    gap: 16px;
+    background: #0a0f1a;
+    overflow: hidden;
+  }
+
+  /* MOBILE frame */
+  .phone-frame {
+    width: 390px;
+    height: 844px;
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 0 0 10px #0f172a,
+      0 0 0 11px rgba(255,255,255,0.06),
+      0 50px 100px rgba(0,0,0,0.7);
+    background: #000;
+    flex-shrink: 0;
+  }
+
+  /* WEB frame */
+  .web-frame {
+    width: min(900px, calc(100% - 80px));
+    height: min(640px, calc(100vh - 180px));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 24px 60px rgba(0,0,0,0.6);
+    background: #1f2937;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .web-chrome {
+    height: 36px;
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .web-chrome .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .web-chrome .dot-r { background: #ef4444; }
+  .web-chrome .dot-y { background: #f59e0b; }
+  .web-chrome .dot-g { background: #22c55e; }
+  .web-chrome .url {
+    flex: 1; background: #111827; border-radius: 4px;
+    height: 20px; margin: 0 8px;
+    display: flex; align-items: center; padding: 0 10px;
+    font-size: 0.68rem; color: #6b7280;
+  }
+
+  .device-iframe {
+    width: 100%; height: 100%;
+    border: none; display: block;
+    flex: 1;
+  }
+
+  /* Switcher */
+  .switcher {
+    display: flex; gap: 6px;
+    flex-wrap: wrap; justify-content: center;
+    max-width: 600px;
+  }
+  .switcher button {
+    height: 28px; padding: 0 10px;
+    border-radius: 6px; border: 1px solid #1f2937;
+    background: #111827; color: #6b7280;
+    font-size: 0.7rem; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .switcher button:hover { background: #1f2937; color: #d1d5db; border-color: #374151; }
+  .switcher button.active { background: #1e3a5f; color: #60a5fa; border-color: #3b82f6; }
+
+  /* ── Resize handle ───────────────────────────────── */
+  .resize-handle {
+    width: 8px;
+    flex-shrink: 0;
+    cursor: col-resize;
+    position: relative;
+    background: transparent;
+    z-index: 10;
+  }
+  .resize-handle::after {
+    content: '';
+    position: absolute;
+    left: 3px; top: 0; bottom: 0;
+    width: 2px;
+    background: #1a2235;
+    transition: background 0.15s;
+  }
+  .resize-handle:hover::after { background: #374151; }
+  .resize-handle.dragging::after { background: #3b82f6; }
+
+  /* ── Timeline column ─────────────────────────────── */
+  .timeline-col {
+    width: 460px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 0.25s ease;
+    background: #0d1424;
+  }
+  .timeline-col.collapsed { width: 0; }
+
+  .timeline-header {
+    padding: 20px 28px 14px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .timeline-header h2 {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #4b5563;
+  }
+
+  .timeline-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 28px 40px;
+  }
+  .timeline-scroll::-webkit-scrollbar { width: 4px; }
+  .timeline-scroll::-webkit-scrollbar-track { background: transparent; }
+  .timeline-scroll::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 2px; }
+
+  /* ── Timeline line + dots ────────────────────────── */
+  /* --lx: horizontal center of the line/dots from .timeline-line left edge */
+  .timeline-line {
+    --lx: 8px;
+    position: relative;
+    padding-left: 28px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+  }
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--lx) - 1px); /* 2px line centered at --lx */
+    top: 10px; bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, #1e3a5f 0%, #1f2937 100%);
+    border-radius: 2px;
+  }
+
+  .entry {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .entry::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+    top: 18px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #1f2937;
+    border: 2px solid #374151;
+    z-index: 1;
+  }
+  .entry.s-critique::before { background: #78350f; border-color: #d97706; }
+  .entry.s-improve::before  { background: #1e3a5f; border-color: #3b82f6; }
+  .entry.s-validate::before { background: #14532d; border-color: #16a34a; }
+  .entry.s-design::before   { background: #312e81; border-color: #6366f1; }
+
+  /* ── Entry cards ─────────────────────────────────── */
+  .entry-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+  .entry-card:hover { border-color: #374151; }
+
+  .entry-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer; user-select: none;
+  }
+  .entry-icon { font-size: 1.1rem; flex-shrink: 0; line-height: 1; }
+  .entry-info { flex: 1; min-width: 0; }
+  .entry-title {
+    font-size: 0.85rem; font-weight: 600; color: #f9fafb;
+    display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+    line-height: 1.3;
+  }
+  .entry-desc { font-size: 0.72rem; color: #6b7280; margin-top: 3px; }
+  .entry-chevron {
+    color: #374151; font-size: 0.6rem; flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .entry.open .entry-chevron { transform: rotate(180deg); color: #6b7280; }
+
+  .verdict {
+    font-size: 0.6rem; font-weight: 700;
+    padding: 2px 6px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .verdict-needs { background: #451a03; color: #fb923c; }
+  .verdict-worth { background: #14532d; color: #86efac; }
+  .verdict-kill  { background: #450a0a; color: #f87171; }
+  .escore { font-size: 0.7rem; font-weight: 700; color: #60a5fa; }
+
+  .entry-body {
+    display: none;
+    border-top: 1px solid #1f2937;
+    padding: 14px;
+    font-size: 0.76rem; color: #9ca3af; line-height: 1.65;
+  }
+  .entry.open .entry-body { display: block; }
+
+  .esect { margin-top: 10px; }
+  .esect:first-child { margin-top: 0; }
+  .esect-label {
+    font-size: 0.62rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: #4b5563; margin-bottom: 5px;
+  }
+  .esect ul { padding-left: 14px; }
+  .esect li { margin-bottom: 3px; color: #9ca3af; }
+  .esect p { color: #9ca3af; }
+  .esect strong { color: #d1d5db; font-weight: 600; }
+  .tag-row { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+  .etag {
+    background: #0a0f1a; border: 1px solid #1f2937;
+    border-radius: 4px; padding: 2px 7px;
+    font-size: 0.66rem; color: #6b7280;
+  }
+  .etag.green { border-color: #14532d; color: #86efac; }
+  .etag.blue  { border-color: #1e3a5f; color: #60a5fa; }
+  a.ext-link { color: #818cf8; text-decoration: none; }
+  a.ext-link:hover { text-decoration: underline; }
+</style>
+<script>window.IDEA_DATA = {"ideaNum":33,"title":"Walk Garden","sub":"A 21-day iPhone walking scrapbook that turns daily steps into a blooming garden page.","score":"6/10","deviceType":"MOBILE","stitchId":"15350151223045240250","startScreen":0,"screens":[{"id":"local-welcome-33","label":"Welcome / 21-Day Pitch"},{"id":"0b6b9f493d4a43e1bb5f2e55662b3d8e","label":"Apple Health Access"},{"id":"e43d34a6be574c519579ebe081d76583","label":"Choose Template / Start Run"},{"id":"d4cca8e27c734fe997bdedf41d2dad06","label":"Home / Current Page"},{"id":"c7b3631463a84253a8f0335ef9e7406b","label":"Daily Tile Detail"},{"id":"6f300a0acfdb413380580175ccf1d421","label":"Weekly Row Complete"},{"id":"94bc4596d8494a03a40ec717cc02058d","label":"Final Garden / Completion"},{"id":"local-archive-33","label":"Garden Archive"},{"id":"4d196edb867847fdb9a541f6ca189387","label":"Archived Page Detail"},{"id":"0d3e44f6ae204b73aaafaa6bf153282c","label":"Settings / Help"}],"timeline":[{"status":"","icon":"💡","title":"Original Idea","desc":"A calm walking-to-tree-growth concept before the retention loop was defined.","body":"<div class=\"esect\"><div class=\"esect-label\">Description</div><p>Walk Garden - each step equals 1 gallon water - water trees in your garden - watch your garden bloom as you walk - trees need 500-2000 gallons to grow - unlock new tree species as you grow more - bonsai, cherry blossom, oak - watch tree grow visually - no streak penalty - build your forest</p></div>"},{"status":"critique","icon":"🔍","title":"Critique v1","desc":"The first critique called out weak retention, light mechanics, and art dependency.","verdict":"NEEDS MAJOR WORK","verdictClass":"needs","score":"4/10","body":"<div class=\"esect\"><div class=\"esect-label\">What's Good</div><ul><li>The core metaphor is instantly understandable: walk more, water more, trees grow.</li><li>The emotional tone is gentler than typical fitness apps, and \"no streak penalty\" is a real positioning choice for people who hate guilt mechanics.</li><li>A simple visual growth loop could make an MVP feel satisfying fast if the art is good.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>This is not a product yet. It is one pleasant sentence and a wallpaper. \"Your tree grows when you walk\" is cute for five minutes, then what? Why does the user come back after day 1?</li><li>The mechanic is too thin. Step equals water equals growth. That is one loop with no meaningful decisions, no surprise, no social pressure, no real progression depth, and no reason to care once the novelty burns off.</li><li>The numbers are arbitrary and probably bad. If trees need 500-2000 gallons and each step is one gallon, you are basically saying \"walk a bit and wait.\" If growth is too fast, it feels fake. If growth is too slow, it feels dead. Right now it is balanced by vibes, not design.</li><li>\"Unlock new tree species\" is weak retention bait. Most users do not care enough about bonsai versus oak to build a habit around it. This is collector logic without collector intensity.</li><li>You are assuming the visual growth will carry the app. That means the product quality depends heavily on art, animation, and polish, not just code. For a solo vibe-coded app, that is dangerous because mediocre visuals make the whole concept feel like a toy.</li><li>The idea has no clear wedge against existing step trackers, Tamagotchi-style apps, habit builders, or wellness games. If Apple Health already tracks steps, why should anyone open your app instead of ignoring yet another dashboard pet?</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev Check</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — a stripped-down MVP is possible, but only if you cut it to a tiny garden, basic step sync, minimal art states, and no elaborate ecosystem simulation.</li><li>Biggest solo complexity traps: health-data permissions and sync edge cases; building enough visual assets to make growth feel rewarding; balancing growth pacing without real user data; adding enough progression to avoid instant boredom; cross-platform differences if you try to support both iOS and Android too early</li></ul></div>"},{"status":"improve","icon":"✨","title":"Improved v2","desc":"The idea became a 21-day challenge with a tighter solo-dev scope and clearer loop.","body":"<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Replaced the endless passive \"forest grows as you walk\" loop with a finite 21-day garden challenge made of 6 plots. This fixes the biggest product problem in the critique: users now have a clear finish line, a visible artifact to complete, and a real reason to return after the novelty of day 1 wears off.</li><li>Added actual decisions by turning plants into seed cards with different walking rules and by letting users choose which seeds to plant in which plots each week. This fixes the \"wallpaper with a progress bar\" problem because users are no longer just waiting for steps to fill a meter; they are shaping the garden through tradeoffs.</li><li>Cut the art and platform risk down to something a solo developer can ship: iPhone-only, Apple Health step read only, 4 seed types, 3 plant states each, static layered illustrations instead of animation-heavy tree growth. This fixes the biggest solo-dev traps the critique identified: sync friction, arbitrary balancing, and an asset treadmill that would make the app feel cheap if under-produced.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>What's in v1: iPhone-only app, Apple Health read-only step sync, one 21-day run at a time, fixed thresholds of 5,000 and 8,000 steps, 6 total plots, 4 seed types, 3 plant states per seed (seedling, growing, bloom), neutral stone-planter outcome for failed seeds, garden map view, end-of-run postcard export, and lightweight analytics for permission success, day-7 return, and day-14 return.</li><li>What's out of v1: Android, web, manual step entry for public users, endless forest mode, species unlock ladders, dozens of tree types, weather systems, seasons, animation-heavy growth, social feed, friends, UGC gardens, moderation, monetization, payments, widgets, watch apps, AI-generated art, and any marketplace/community loop.</li></ul></div>"},{"status":"critique","icon":"🔍","title":"Critique v2","desc":"The second critique said the concept was testable, but still unproven after day 21.","verdict":"WORTH BUILDING","verdictClass":"worth","score":"6/10","body":"<div class=\"esect\"><div class=\"esect-label\">What's Good</div><ul><li>This is a real product shape now, not a greeting-card mechanic pretending to be a startup. The 21-day frame, 6 plots, and weekly unlocks finally give the thing boundaries.</li><li>The scope discipline is unusually good. iPhone-only, HealthKit read-only, fixed seed set, static art, no social sludge, no monetization fantasy. That is how a solo dev avoids drowning.</li><li>The stone-planter failure state is smart. It preserves the artifact without turning the app into another guilt treadmill.</li><li>The weekly seed choice adds just enough agency to make the app feel designed instead of auto-filling wallpaper.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>The biggest problem is still retention, just wearing nicer clothes. You answered \"Why does the user come back after day 1?\" with \"to finish the 21-day thing.\" Fine. Why does the user come back after day 21? Right now the honest answer is: maybe they do not.</li><li>This is still dangerously close to being a beautifully packaged one-shot novelty. A user might complete one garden, think \"cute,\" share it once, and never open it again. That is not a product loop. That is a seasonal prompt.</li><li>The strategic layer is thinner than you think. Four seed cards with obvious rules is not deep strategy; it is mild scheduling flavor. After one run, most users will have seen the whole toy.</li><li>Comeback Clover is the kind of idea product people love and normal users misread. \"Miss a day, then do X\" is cognitively weirder than the rest of the system and risks teaching the user that failure is a mechanic they should intentionally game.</li><li>The app depends heavily on the garden looking good enough to feel worth finishing. You cut the art scope, but you did not remove the art dependency. If the illustrations are mediocre, the whole thing collapses into a glorified habit tracker skin.</li><li>The share promise is still soft. A six-plot postcard is only social currency if it looks exceptional or reveals something personal. Otherwise it is just another image the user saves and nobody cares about.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev Check</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the scoped iPhone MVP is realistic, but only if the art stays simple, the rules stay legible, and the builder accepts that testing and polish will probably eat more time than the optimistic estimate admits.</li><li>Biggest solo complexity traps: HealthKit permission and sync edge cases; making the garden output attractive enough to justify the concept; overbuilding state logic around weekly resolution and failed-seed outcomes; wasting time on share/export polish before validating repeat runs; adding more seed rules to patch retention and accidentally recreating content treadmill scope</li></ul></div>"},{"status":"improve","icon":"✨","title":"Improved v3","desc":"The final version simplified the rules into daily tile bands and a private archive loop.","body":"<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Replaced the six-plot weekly-resolution game with a 21-day garden page that updates every day. This fixes the dead-air problem from the critique: users now see a concrete visual change each day instead of waiting for week-end payoff.</li><li>Removed the seed-rule layer from MVP, including the confusing comeback mechanic, and replaced it with four simple daily step bands that map directly to four plant outcomes. This is better because users can understand the system in seconds, and the app no longer depends on thin strategy pretending to be depth.</li><li>Made the product an explicit retention experiment around a private archive of finished garden pages, not a “business” with fake moat language. This is more viable for a solo builder because the content set is small, the art can be modular, and the key question becomes measurable: do people start a second page after finishing the first?</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>What's in v1: iPhone-only app, Apple Health read-only step sync, one active 21-day run at a time, 21 daily tiles, 4 fixed step bands, 2 garden templates, 1 modular art kit for tiles and weekly row flourishes, daily auto-sync on app open, final postcard export, private Garden Archive of completed pages, and analytics for permission success, day-7 return, run completion, and second-run starts.</li><li>What's out of v1: seed packs, plot placement, Comeback Clover or any miss-a-day mechanic, species unlock ladders, endless forest mode, social sharing loops beyond native export sheet, friends, community galleries, user-generated gardens, moderation, Android, web, widgets, Apple Watch app, monetization, payments, dynamic seasons, AI-generated art, and any feature that requires more content to fake retention.</li></ul></div>"},{"status":"validate","icon":"✅","title":"Validated","desc":"The latest improved concept passed critique and produced a concrete design handoff.","body":"<div class=\"esect\"><div class=\"esect-label\">Status</div><div class=\"tag-row\"><span class=\"etag green\">Score 6/10</span><span class=\"etag blue\">2026-03-30</span></div></div><div class=\"esect\"><div class=\"esect-label\">Design Handoff</div><ul><li>Welcome / 21-Day Pitch — explain the product in one screen, show a sample finished 21-tile garden page, and frame the app as a 21-day walking scrapbook powered by Apple Health.</li><li>Apple Health Access — request read access for step count, explain privacy boundaries, and show success, denied, retry, and “not available” states.</li><li>Choose Template / Start Run — let the user pick Courtyard or Wild Patch, preview the empty 21-day page for each, show start date and end date, and start the run.</li><li>Home / Current Page — primary dashboard with today’s step total, current day number, current week row, 21-tile garden page, legend for the 4 tile outcomes, and sync status.</li><li>Daily Tile Detail — tap a tile to see date, synced step count, resulting tile state, short explanation of the threshold it hit, and whether that week row is complete.</li><li>Weekly Row Complete — lightweight transition state shown on day 7 and day 14, revealing the new row flourish, summarizing that week’s tile mix, and returning the user to Home.</li><li>Final Garden / Completion — show the finished 21-day page, completion stats, title field, “start next page” CTA, and save/share postcard action.</li><li>Garden Archive — list past completed pages with thumbnail, template used, completion date, and tap-through into a finished-page detail view.</li><li>Archived Page Detail — full-screen view of one completed page with title, date range, tile breakdown, and export action.</li><li>Settings / Help — Health permission status, reminder toggle, privacy copy, FAQ for sync timing, reset current run, and support contact.</li></ul></div>"},{"status":"design","icon":"🎨","title":"Designed","desc":"A clickable mobile prototype was assembled and linked back to the Stitch project.","body":"<div class=\"esect\"><div class=\"esect-label\">Prototype</div><p><a class=\"ext-link\" href=\"https://stitch.withgoogle.com/projects/15350151223045240250\">Open Stitch project</a></p></div><div class=\"esect\"><div class=\"esect-label\">Device</div><div class=\"tag-row\"><span class=\"etag blue\">MOBILE</span><span class=\"etag\">390px mobile viewport</span></div></div>"}]};</script>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <span class="idea-num" id="hNum"></span>
+    <div>
+      <div class="idea-title" id="hTitle"></div>
+      <div class="idea-sub" id="hSub"></div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="score-pill" id="hScore"></span>
+    <span class="badge" id="hBadge"></span>
+    <button class="toggle-btn" id="toggleBtn" onclick="toggleTimeline()">
+      <span id="toggleIcon">›</span>
+      <span id="toggleLabel">Hide Journey</span>
+    </button>
+  </div>
+</div>
+
+<div class="body">
+  <div class="phone-col" id="phoneCol">
+    <div id="deviceFrame"></div>
+    <div class="switcher" id="switcher"></div>
+  </div>
+
+  <div class="resize-handle" id="resizeHandle"></div>
+
+  <div class="timeline-col" id="timelineCol">
+    <div class="timeline-header"><h2>Idea Journey</h2></div>
+    <div class="timeline-scroll">
+      <div class="timeline-line" id="timeline"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Render from IDEA_DATA ────────────────────────────
+(function () {
+  const D = window.IDEA_DATA || {};
+  const isMobile = (D.deviceType || 'MOBILE').toUpperCase() !== 'WEB';
+
+  // Header
+  document.title = 'Idea #' + D.ideaNum + ' — ' + D.title;
+  document.getElementById('hNum').textContent   = '#' + D.ideaNum;
+  document.getElementById('hTitle').textContent = D.title;
+  document.getElementById('hSub').textContent   = D.sub || '';
+  document.getElementById('hScore').textContent = D.score || '';
+  document.getElementById('hBadge').textContent = isMobile ? '📱 Mobile Prototype' : '💻 Web Prototype';
+
+  // Device frame
+  const frameContainer = document.getElementById('deviceFrame');
+  if (isMobile) {
+    frameContainer.className = 'phone-frame';
+    frameContainer.innerHTML = '<iframe id="app" class="device-iframe"></iframe>';
+  } else {
+    frameContainer.className = 'web-frame';
+    frameContainer.innerHTML =
+      '<div class="web-chrome">' +
+        '<div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>' +
+        '<div class="url" id="webUrl">preview</div>' +
+      '</div>' +
+      '<iframe id="app" class="device-iframe"></iframe>';
+  }
+
+  // Screens switcher
+  const screens = D.screens || [];
+  const startIdx = D.startScreen != null ? D.startScreen : (screens.length > 1 ? 1 : 0);
+  const switcher = document.getElementById('switcher');
+  const iframe   = document.getElementById('app');
+
+  function hideIframeScrollbars() {
+    try {
+      const style = iframe.contentDocument.createElement('style');
+      style.textContent = '::-webkit-scrollbar{display:none}*{-ms-overflow-style:none!important;scrollbar-width:none!important}';
+      iframe.contentDocument.head.appendChild(style);
+    } catch(e) {}
+  }
+  iframe.addEventListener('load', hideIframeScrollbars);
+
+  function goTo(i) {
+    iframe.src = screens[i].id + '.html';
+    switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
+    const urlEl = document.getElementById('webUrl');
+    if (urlEl) urlEl.textContent = screens[i].label;
+  }
+
+  screens.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = (i + 1) + ' · ' + s.label;
+    btn.onclick = () => goTo(i);
+    switcher.appendChild(btn);
+  });
+
+  if (screens.length) goTo(startIdx);
+
+  // Timeline
+  const timeline = document.getElementById('timeline');
+  (D.timeline || []).forEach(e => {
+    const verdictHtml = e.verdict
+      ? '<span class="verdict verdict-' + (e.verdictClass || 'needs') + '">' + e.verdict + '</span>'
+      : '';
+    const scoreHtml = e.score
+      ? '<span class="escore">' + e.score + '</span>'
+      : '';
+
+    const div = document.createElement('div');
+    div.className = 'entry' + (e.status ? ' s-' + e.status : '');
+    div.innerHTML =
+      '<div class="entry-card">' +
+        '<div class="entry-head" onclick="this.closest(\'.entry\').classList.toggle(\'open\')">' +
+          '<span class="entry-icon">' + e.icon + '</span>' +
+          '<div class="entry-info">' +
+            '<div class="entry-title">' + e.title + ' ' + verdictHtml + ' ' + scoreHtml + '</div>' +
+            '<div class="entry-desc">' + e.desc + '</div>' +
+          '</div>' +
+          '<span class="entry-chevron">▼</span>' +
+        '</div>' +
+        '<div class="entry-body">' + (e.body || '') + '</div>' +
+      '</div>';
+    timeline.appendChild(div);
+  });
+
+  // Timeline toggle
+  let open = true;
+  window.toggleTimeline = function () {
+    open = !open;
+    document.getElementById('timelineCol').classList.toggle('collapsed', !open);
+    document.getElementById('resizeHandle').style.display = open ? '' : 'none';
+    document.getElementById('toggleIcon').textContent  = open ? '›' : '‹';
+    document.getElementById('toggleLabel').textContent = open ? 'Hide Journey' : 'Show Journey';
+  };
+
+  // Drag resize
+  const handle      = document.getElementById('resizeHandle');
+  const timelineCol = document.getElementById('timelineCol');
+  let resizing = false, rx = 0, rw = 0;
+
+  handle.addEventListener('mousedown', e => {
+    if (!open) return;
+    resizing = true; rx = e.clientX; rw = timelineCol.offsetWidth;
+    handle.classList.add('dragging');
+    timelineCol.style.transition = 'none';
+    document.documentElement.style.cssText += ';cursor:col-resize!important;user-select:none!important';
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', e => {
+    if (!resizing) return;
+    const w = Math.max(280, Math.min(window.innerWidth - 500, rw + (rx - e.clientX)));
+    timelineCol.style.width = w + 'px';
+  });
+  window.addEventListener('mouseup', () => {
+    if (!resizing) return;
+    resizing = false;
+    handle.classList.remove('dragging');
+    timelineCol.style.transition = '';
+    document.documentElement.style.cursor = '';
+    document.documentElement.style.userSelect = '';
+  });
+})();
+</script>
+</body>
+</html>

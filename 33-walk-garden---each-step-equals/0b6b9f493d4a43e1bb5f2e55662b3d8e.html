@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>Connect Apple Health - Botanical Journal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be_Vietnam_Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#e7edb1",
+              "tertiary": "#984d63",
+              "inverse-primary": "#c2f3af",
+              "secondary": "#8a592a",
+              "primary-container": "#c0f0ad",
+              "on-tertiary-fixed": "#460b22",
+              "on-error": "#ffffff",
+              "surface-variant": "#e7edb1",
+              "tertiary-fixed": "#fda1ba",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "surface-container": "#f4f7ce",
+              "secondary-dim": "#7c4e20",
+              "secondary-fixed": "#ffdcc1",
+              "on-tertiary-fixed-variant": "#6d2b41",
+              "primary-fixed-dim": "#b2e1a0",
+              "on-surface": "#363b10",
+              "surface-tint": "#456e39",
+              "error": "#b23d21",
+              "background": "#fefee5",
+              "on-primary-fixed": "#204817",
+              "inverse-on-surface": "#9e9e88",
+              "outline": "#7f8452",
+              "on-surface-variant": "#626838",
+              "primary-fixed": "#c0f0ad",
+              "on-primary-fixed-variant": "#3c6531",
+              "secondary-container": "#ffdcc1",
+              "surface": "#fefee5",
+              "on-primary-container": "#335b28",
+              "surface-bright": "#fefee5",
+              "inverse-surface": "#0e0f03",
+              "on-secondary-fixed": "#5f3508",
+              "on-tertiary-container": "#622238",
+              "outline-variant": "#b8be86",
+              "on-primary": "#ffffff",
+              "on-error-container": "#671200",
+              "secondary-fixed-dim": "#ffca9e",
+              "on-secondary-fixed-variant": "#805123",
+              "error-dim": "#821a01",
+              "tertiary-fixed-dim": "#ed94ad",
+              "primary-dim": "#39622e",
+              "on-secondary-container": "#75471a",
+              "error-container": "#fa7150",
+              "tertiary-container": "#fda1ba",
+              "tertiary-dim": "#894157",
+              "on-secondary": "#ffffff",
+              "surface-dim": "#e1e8a2",
+              "on-background": "#363b10",
+              "primary": "#456e39",
+              "surface-container-low": "#fafcda",
+              "surface-container-high": "#eef2bf"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .botanical-glow {
+            box-shadow: 0 24px 32px rgba(54, 59, 16, 0.06);
+        }
+        .organic-pebble {
+            border-radius: 60% 40% 70% 30% / 40% 50% 60% 40%;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  
+<style id="proto-shell-css">
+  :root {
+    --proto-bg: #fefee5;
+    --proto-surface: rgba(254,254,229,0.94);
+    --proto-ink: #363b10;
+    --proto-muted: #626838;
+    --proto-line: rgba(127,132,82,0.18);
+    --proto-primary: #456e39;
+    --proto-primary-soft: #c0f0ad;
+    --proto-card: #fafcda;
+  }
+  body { background: var(--proto-bg) !important; color: var(--proto-ink); padding-top: 92px !important; }
+  body.proto-has-nav { padding-bottom: 92px !important; }
+  body.proto-no-nav { padding-bottom: 28px !important; }
+  .proto-statusbar {
+    position: fixed; inset: 0 0 auto 0; height: 24px; z-index: 90;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 18px; font: 700 11px/1 'Be Vietnam Pro', sans-serif;
+    background: rgba(254,254,229,0.96); color: var(--proto-ink);
+  }
+  .proto-header {
+    position: fixed; top: 24px; left: 0; right: 0; height: 68px; z-index: 90;
+    display: grid; grid-template-columns: 48px 1fr 48px; align-items: center;
+    padding: 0 14px; background: rgba(254,254,229,0.96);
+    border-bottom: 1px solid var(--proto-line); backdrop-filter: blur(12px);
+  }
+  .proto-header-title {
+    text-align: center; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px; font-weight: 700; color: var(--proto-ink); letter-spacing: -0.02em;
+  }
+  .proto-icon-btn {
+    width: 40px; height: 40px; border: 0; border-radius: 999px;
+    background: transparent; color: var(--proto-primary); font-size: 20px; cursor: pointer;
+  }
+  .proto-icon-btn:active { transform: scale(0.98); }
+  .proto-bottom-nav {
+    position: fixed; left: 14px; right: 14px; bottom: 12px; height: 68px; z-index: 90;
+    border-radius: 28px; background: rgba(244,247,206,0.92); border: 1px solid var(--proto-line);
+    backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(3,1fr); padding: 8px;
+    box-shadow: 0 -4px 24px rgba(54,59,16,0.06);
+  }
+  .proto-tab {
+    border: 0; background: transparent; border-radius: 22px; color: var(--proto-muted);
+    font: 600 11px/1 'Be Vietnam Pro', sans-serif; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 4px; cursor: pointer;
+  }
+  .proto-tab.active { background: var(--proto-primary); color: #fff; }
+  .proto-tab .mi { font-size: 20px; }
+  .proto-clickable { cursor: pointer !important; }
+  .proto-card {
+    background: var(--proto-card); border: 1px solid var(--proto-line); border-radius: 28px;
+    box-shadow: 0 24px 32px rgba(54,59,16,0.06);
+  }
+  .proto-hero-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 34px; font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; }
+  .proto-copy { font: 500 15px/1.6 'Be Vietnam Pro', sans-serif; color: var(--proto-muted); }
+  .proto-pill { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:#f4f7ce; color:var(--proto-primary); font:700 11px/1 'Be Vietnam Pro', sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+  .proto-cta { display:inline-flex; width:100%; align-items:center; justify-content:center; border:0; border-radius:999px; background:var(--proto-primary); color:#fff; padding:16px 20px; font:700 15px/1 'Be Vietnam Pro', sans-serif; cursor:pointer; }
+  .proto-secondary { background:#eef2bf; color:var(--proto-ink); }
+  .proto-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .proto-tile { aspect-ratio:1; border-radius:24px; }
+</style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container proto-no-nav">
+<div class="proto-statusbar"><span>9:41</span><span>5G &#183; 100%</span></div>
+<div class="proto-header"><button class="proto-icon-btn" aria-label="Back" onclick="window.location.href='local-welcome-33.html'">&#8592;</button><div class="proto-header-title">Apple Health Access</div><div></div></div>
+<!-- Top Navigation (Shell suppressed for focused task flow) -->
+
+<main class="min-h-screen pt-24 pb-12 px-6 max-w-lg mx-auto flex flex-col items-center">
+<!-- Visual Anchor: Asymmetric Scrapbook Element -->
+<div class="relative w-full mb-12 flex justify-center">
+<div class="organic-pebble w-48 h-48 bg-primary-container/30 absolute -rotate-12 translate-x-4 translate-y-2"></div>
+<div class="w-44 h-44 rounded-2xl overflow-hidden botanical-glow rotate-3 bg-surface-container-highest relative z-10">
+<img class="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" data-alt="Close-up of vibrant green fern leaves with soft natural morning light filtering through a garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSJwvATxM_EHoKEv6hn-1p9QYNcDbigCiaRtqdrOsJNS8PAwPajSfobNobEO33AHsaYNOHfWdMP15CU90zD68Beg_CIJyXzvWmOPdeZbb7vmJ5H4xFt71ostu0HNI2-e_Mt_q33NGhrYMZ___-0dOgHwrrPhjyc3Zm2iIa1G10DVPWLzTH8J8FMEvOv7Zl5UafpbZ0bWxC31xk79oXxEwCIzCU_BAZBSCesHx1x7abKn9ow0m7hojoLN7R7HgLjz9XGRc_W41btGJx"/>
+</div>
+<div class="absolute -bottom-4 -right-2 z-20 bg-white p-3 rounded-xl shadow-lg -rotate-6">
+<span class="material-symbols-outlined text-tertiary text-3xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+<!-- Messaging -->
+<div class="text-center mb-10">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight text-on-surface mb-4 leading-tight">
+                Nurture your journal with movement
+            </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed px-2">
+                Your steps act as the water and sunlight for your digital garden. Syncing with Health allows us to track your growth milestones automatically.
+            </p>
+</div>
+<!-- Feature Bento Grid (Simplified for focused intent) -->
+<div class="grid grid-cols-1 gap-4 w-full mb-10">
+<div class="bg-surface-container rounded-[1.5rem] p-5 flex items-start gap-4">
+<div class="w-12 h-12 shrink-0 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">directions_walk</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-on-secondary-container">Automated Growth</h3>
+<p class="text-on-surface-variant text-sm mt-1">We only read your daily step count to progress your 21-day botanical journey.</p>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-[1.5rem] p-5 flex items-start gap-4">
+<div class="w-12 h-12 shrink-0 bg-tertiary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">lock</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-on-secondary-container">Local &amp; Private</h3>
+<p class="text-on-surface-variant text-sm mt-1">Your health data is processed entirely on-device. It never leaves your Botanical Journal.</p>
+</div>
+</div>
+</div>
+<!-- Privacy Section -->
+<div class="bg-surface-container-highest/40 rounded-2xl p-6 w-full mb-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-6xl">security</span>
+</div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-sm">verified_user</span>
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Privacy Guarantee</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed italic">
+                "We believe your well-being journey is personal. We do not sell, share, or upload your biometric data to any external servers. Your steps stay in your garden."
+            </p>
+</div>
+<!-- CTA Action Area -->
+<div class="w-full mt-auto space-y-4">
+<button class="w-full py-5 rounded-full bg-primary text-white font-headline font-bold text-lg flex items-center justify-center gap-3 transition-transform active:scale-95 hover:shadow-lg botanical-glow" cursor-pointer onclick="window.location.href='e43d34a6be574c519579ebe081d76583.html'">
+                Connect Apple Health
+                <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full py-4 rounded-full bg-transparent text-on-surface-variant font-medium text-sm hover:bg-surface-container-high transition-colors">
+                Maybe later
+            </button>
+</div>
+<!-- Footer Accent -->
+<div class="mt-12 opacity-30 flex items-center gap-4">
+<div class="h-[1px] w-12 bg-outline-variant"></div>
+<span class="material-symbols-outlined text-primary text-xs" style="font-variation-settings: 'FILL' 1;">eco</span>
+<div class="h-[1px] w-12 bg-outline-variant"></div>
+</div>
+</main>
+<!-- Bottom Navigation Suppressed for focused modal-style view -->
+</body></html>

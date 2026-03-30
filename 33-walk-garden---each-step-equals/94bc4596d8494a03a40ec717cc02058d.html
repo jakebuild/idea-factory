@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .botanical-glow {
+            box-shadow: 0 24px 32px -12px rgba(54, 59, 16, 0.06);
+        }
+        .pebble-shape-1 { border-radius: 60% 40% 70% 30% / 40% 50% 60% 40%; }
+        .pebble-shape-2 { border-radius: 30% 70% 40% 60% / 50% 30% 70% 50%; }
+        .pebble-shape-3 { border-radius: 50% 50% 30% 70% / 60% 40% 60% 40%; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-fixed-dim": "#ffca9e",
+                        "on-background": "#363b10",
+                        "tertiary-dim": "#894157",
+                        "inverse-primary": "#c2f3af",
+                        "primary-fixed": "#c0f0ad",
+                        "tertiary-fixed-dim": "#ed94ad",
+                        "on-tertiary-container": "#622238",
+                        "surface-container": "#f4f7ce",
+                        "secondary-fixed": "#ffdcc1",
+                        "on-tertiary-fixed-variant": "#6d2b41",
+                        "outline-variant": "#b8be86",
+                        "surface-dim": "#e1e8a2",
+                        "background": "#fefee5",
+                        "secondary-dim": "#7c4e20",
+                        "primary-dim": "#39622e",
+                        "on-secondary-fixed": "#5f3508",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#335b28",
+                        "on-primary-fixed-variant": "#3c6531",
+                        "secondary": "#8a592a",
+                        "inverse-on-surface": "#9e9e88",
+                        "primary": "#456e39",
+                        "tertiary-container": "#fda1ba",
+                        "error-container": "#fa7150",
+                        "surface-container-low": "#fafcda",
+                        "on-surface": "#363b10",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#0e0f03",
+                        "error-dim": "#821a01",
+                        "surface-bright": "#fefee5",
+                        "tertiary": "#984d63",
+                        "primary-container": "#c0f0ad",
+                        "surface-container-highest": "#e7edb1",
+                        "secondary-container": "#ffdcc1",
+                        "outline": "#7f8452",
+                        "on-secondary-fixed-variant": "#805123",
+                        "surface-variant": "#e7edb1",
+                        "primary-fixed-dim": "#b2e1a0",
+                        "on-secondary-container": "#75471a",
+                        "on-primary-fixed": "#204817",
+                        "on-primary": "#ffffff",
+                        "error": "#b23d21",
+                        "tertiary-fixed": "#fda1ba",
+                        "surface": "#fefee5",
+                        "on-tertiary-fixed": "#460b22",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-high": "#eef2bf",
+                        "on-surface-variant": "#626838",
+                        "surface-tint": "#456e39",
+                        "on-error-container": "#671200"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  
+<style id="proto-shell-css">
+  :root {
+    --proto-bg: #fefee5;
+    --proto-surface: rgba(254,254,229,0.94);
+    --proto-ink: #363b10;
+    --proto-muted: #626838;
+    --proto-line: rgba(127,132,82,0.18);
+    --proto-primary: #456e39;
+    --proto-primary-soft: #c0f0ad;
+    --proto-card: #fafcda;
+  }
+  body { background: var(--proto-bg) !important; color: var(--proto-ink); padding-top: 92px !important; }
+  body.proto-has-nav { padding-bottom: 92px !important; }
+  body.proto-no-nav { padding-bottom: 28px !important; }
+  .proto-statusbar {
+    position: fixed; inset: 0 0 auto 0; height: 24px; z-index: 90;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 18px; font: 700 11px/1 'Be Vietnam Pro', sans-serif;
+    background: rgba(254,254,229,0.96); color: var(--proto-ink);
+  }
+  .proto-header {
+    position: fixed; top: 24px; left: 0; right: 0; height: 68px; z-index: 90;
+    display: grid; grid-template-columns: 48px 1fr 48px; align-items: center;
+    padding: 0 14px; background: rgba(254,254,229,0.96);
+    border-bottom: 1px solid var(--proto-line); backdrop-filter: blur(12px);
+  }
+  .proto-header-title {
+    text-align: center; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px; font-weight: 700; color: var(--proto-ink); letter-spacing: -0.02em;
+  }
+  .proto-icon-btn {
+    width: 40px; height: 40px; border: 0; border-radius: 999px;
+    background: transparent; color: var(--proto-primary); font-size: 20px; cursor: pointer;
+  }
+  .proto-icon-btn:active { transform: scale(0.98); }
+  .proto-bottom-nav {
+    position: fixed; left: 14px; right: 14px; bottom: 12px; height: 68px; z-index: 90;
+    border-radius: 28px; background: rgba(244,247,206,0.92); border: 1px solid var(--proto-line);
+    backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(3,1fr); padding: 8px;
+    box-shadow: 0 -4px 24px rgba(54,59,16,0.06);
+  }
+  .proto-tab {
+    border: 0; background: transparent; border-radius: 22px; color: var(--proto-muted);
+    font: 600 11px/1 'Be Vietnam Pro', sans-serif; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 4px; cursor: pointer;
+  }
+  .proto-tab.active { background: var(--proto-primary); color: #fff; }
+  .proto-tab .mi { font-size: 20px; }
+  .proto-clickable { cursor: pointer !important; }
+  .proto-card {
+    background: var(--proto-card); border: 1px solid var(--proto-line); border-radius: 28px;
+    box-shadow: 0 24px 32px rgba(54,59,16,0.06);
+  }
+  .proto-hero-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 34px; font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; }
+  .proto-copy { font: 500 15px/1.6 'Be Vietnam Pro', sans-serif; color: var(--proto-muted); }
+  .proto-pill { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:#f4f7ce; color:var(--proto-primary); font:700 11px/1 'Be Vietnam Pro', sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+  .proto-cta { display:inline-flex; width:100%; align-items:center; justify-content:center; border:0; border-radius:999px; background:var(--proto-primary); color:#fff; padding:16px 20px; font:700 15px/1 'Be Vietnam Pro', sans-serif; cursor:pointer; }
+  .proto-secondary { background:#eef2bf; color:var(--proto-ink); }
+  .proto-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .proto-tile { aspect-ratio:1; border-radius:24px; }
+</style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container proto-has-nav">
+<div class="proto-statusbar"><span>9:41</span><span>5G &#183; 100%</span></div>
+<div class="proto-header"><button class="proto-icon-btn" aria-label="Back" onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'">&#8592;</button><div class="proto-header-title">Final Garden</div><div></div></div>
+<!-- TopAppBar -->
+
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Hero Title -->
+<section class="text-center mb-10">
+<span class="font-label text-sm uppercase tracking-[0.2em] text-primary font-bold mb-3 block">Milestone Reached</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight">The 21st Leaf Unfurls</h2>
+</section>
+<!-- Garden Visualization (Asymmetric Scrapbook Style) -->
+<section class="relative mb-16 px-4">
+<div class="relative z-10 w-full aspect-square max-w-md mx-auto">
+<!-- Decorative Pebble Layers -->
+<div class="absolute top-0 -left-4 w-64 h-64 bg-surface-container-highest pebble-shape-1 opacity-40"></div>
+<div class="absolute bottom-4 -right-4 w-72 h-72 bg-primary-container pebble-shape-2 opacity-30"></div>
+<!-- Main Featured "Garden" Image -->
+<div class="relative z-20 w-full h-full rounded-[2.5rem] overflow-hidden botanical-glow border-[12px] border-surface-container-lowest">
+<img class="w-full h-full object-cover" data-alt="A lush, sun-drenched cottage garden with blooming foxgloves, ferns, and soft morning mist filtering through old oak trees" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH1ivziz967GJWCrY5J7EDIjHb2E_QfWC1wWvqeGCirFBRurKqM7Ap0gAUMQT_WZ6BowA7mCv5Hy4MoLDXkCCMakK0WhZ-G1-NSK83WVm8wgaHfEY0JxVWxICul_HHy74V4CFTpC1-9u_gqPK_y40eCMMCqBmruWq6Fdq39QXQMMXUTvszWLp0XUJEEbJR54nokgG2LFvp7JPnKlIcEB6Z2rkHqKCV5k7zba-YcY6hd0bLAqfRGv6LRgaRztEC46CXJx6a7weUfQUV"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/40 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-tertiary text-on-tertiary rounded-full text-xs font-bold mb-2">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                            FULL BLOOM
+                        </div>
+<p class="text-surface font-headline font-bold text-lg">Your 21-Day Sanctuary</p>
+</div>
+</div>
+<!-- Overlapping Decorative Element -->
+<div class="absolute -bottom-6 -left-2 z-30 w-32 h-32 pebble-shape-3 bg-secondary-container p-4 botanical-glow flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">psychology_alt</span>
+<span class="text-[10px] font-bold text-on-secondary-container leading-tight mt-1">INNER<br/>PEACE</span>
+</div>
+</div>
+</section>
+<!-- Journal Title Input -->
+<section class="mb-12">
+<label class="block font-label text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-3 ml-2">Title your Journal</label>
+<div class="relative group">
+<input class="w-full bg-surface-container-lowest border-none rounded-xl px-6 py-4 text-xl font-headline font-semibold text-on-primary-container focus:ring-2 focus:ring-primary/20 transition-all placeholder:opacity-50" placeholder="Give your journey a name..." type="text" value="Spring Solstice Reflection"/>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 text-outline-variant">
+<span class="material-symbols-outlined">edit</span>
+</div>
+</div>
+</section>
+<!-- Stats Grid (Bento Style) -->
+<section class="grid grid-cols-2 gap-4 mb-16">
+<div class="col-span-2 md:col-span-1 bg-surface-container-low p-6 rounded-3xl flex flex-col justify-between min-h-[140px]">
+<span class="material-symbols-outlined text-primary text-3xl">calendar_today</span>
+<div>
+<div class="text-3xl font-headline font-extrabold text-on-surface">21</div>
+<div class="text-sm font-medium text-on-surface-variant">Days Tracked</div>
+</div>
+</div>
+<div class="bg-surface-container-highest p-6 rounded-3xl flex flex-col justify-between min-h-[140px]">
+<span class="material-symbols-outlined text-secondary text-3xl">directions_walk</span>
+<div>
+<div class="text-2xl font-headline font-extrabold text-on-surface">184,202</div>
+<div class="text-sm font-medium text-on-surface-variant">Total Steps</div>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-3xl flex flex-col justify-between min-h-[140px]">
+<span class="material-symbols-outlined text-primary text-3xl">map</span>
+<div>
+<div class="text-2xl font-headline font-extrabold text-on-surface">42.8 mi</div>
+<div class="text-sm font-medium text-on-surface-variant">Total Distance</div>
+</div>
+</div>
+<div class="col-span-2 bg-gradient-to-br from-primary to-primary-dim p-8 rounded-3xl flex items-center justify-between">
+<div>
+<div class="text-3xl font-headline font-extrabold text-surface">21</div>
+<div class="text-sm font-medium text-primary-container/80">Reflections Written</div>
+</div>
+<span class="material-symbols-outlined text-primary-container text-5xl opacity-40">edit_note</span>
+</div>
+</section>
+<!-- Actions -->
+<section class="flex flex-col gap-4 mb-20">
+<button class="w-full bg-primary text-on-primary rounded-full py-5 px-8 font-headline font-bold text-lg hover:bg-primary-dim transition-colors scale-98 active:scale-95 duration-200" cursor-pointer onclick="window.location.href='e43d34a6be574c519579ebe081d76583.html'">
+                Begin New Cycle
+            </button>
+<button class="w-full bg-surface-container-highest text-on-surface rounded-full py-5 px-8 font-headline font-semibold flex items-center justify-center gap-2 hover:bg-outline-variant/20 transition-colors" cursor-pointer onclick="window.location.href='local-archive-33.html'">
+<span class="material-symbols-outlined">share</span>
+                Share Your Garden
+            </button>
+<p class="text-center text-on-surface-variant text-xs font-medium px-8 leading-relaxed opacity-60">
+                Your journey results have been archived in your Journal. You can revisit this garden anytime from your profile.
+            </p>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="proto-bottom-nav"><button class="proto-tab active" onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'"><span class="material-symbols-outlined mi">home</span><span>Home</span></button><button class="proto-tab " onclick="window.location.href='local-archive-33.html'"><span class="material-symbols-outlined mi">inventory_2</span><span>Archive</span></button><button class="proto-tab " onclick="window.location.href='0d3e44f6ae204b73aaafaa6bf153282c.html'"><span class="material-symbols-outlined mi">settings</span><span>Settings</span></button></nav>
+</body></html>

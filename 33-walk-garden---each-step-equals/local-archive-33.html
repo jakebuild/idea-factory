@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=390, initial-scale=1.0"><title>Garden Archive</title><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<style id="proto-shell-css">
+  :root {
+    --proto-bg: #fefee5;
+    --proto-surface: rgba(254,254,229,0.94);
+    --proto-ink: #363b10;
+    --proto-muted: #626838;
+    --proto-line: rgba(127,132,82,0.18);
+    --proto-primary: #456e39;
+    --proto-primary-soft: #c0f0ad;
+    --proto-card: #fafcda;
+  }
+  body { background: var(--proto-bg) !important; color: var(--proto-ink); padding-top: 92px !important; }
+  body.proto-has-nav { padding-bottom: 92px !important; }
+  body.proto-no-nav { padding-bottom: 28px !important; }
+  .proto-statusbar {
+    position: fixed; inset: 0 0 auto 0; height: 24px; z-index: 90;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 18px; font: 700 11px/1 'Be Vietnam Pro', sans-serif;
+    background: rgba(254,254,229,0.96); color: var(--proto-ink);
+  }
+  .proto-header {
+    position: fixed; top: 24px; left: 0; right: 0; height: 68px; z-index: 90;
+    display: grid; grid-template-columns: 48px 1fr 48px; align-items: center;
+    padding: 0 14px; background: rgba(254,254,229,0.96);
+    border-bottom: 1px solid var(--proto-line); backdrop-filter: blur(12px);
+  }
+  .proto-header-title {
+    text-align: center; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px; font-weight: 700; color: var(--proto-ink); letter-spacing: -0.02em;
+  }
+  .proto-icon-btn {
+    width: 40px; height: 40px; border: 0; border-radius: 999px;
+    background: transparent; color: var(--proto-primary); font-size: 20px; cursor: pointer;
+  }
+  .proto-icon-btn:active { transform: scale(0.98); }
+  .proto-bottom-nav {
+    position: fixed; left: 14px; right: 14px; bottom: 12px; height: 68px; z-index: 90;
+    border-radius: 28px; background: rgba(244,247,206,0.92); border: 1px solid var(--proto-line);
+    backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(3,1fr); padding: 8px;
+    box-shadow: 0 -4px 24px rgba(54,59,16,0.06);
+  }
+  .proto-tab {
+    border: 0; background: transparent; border-radius: 22px; color: var(--proto-muted);
+    font: 600 11px/1 'Be Vietnam Pro', sans-serif; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 4px; cursor: pointer;
+  }
+  .proto-tab.active { background: var(--proto-primary); color: #fff; }
+  .proto-tab .mi { font-size: 20px; }
+  .proto-clickable { cursor: pointer !important; }
+  .proto-card {
+    background: var(--proto-card); border: 1px solid var(--proto-line); border-radius: 28px;
+    box-shadow: 0 24px 32px rgba(54,59,16,0.06);
+  }
+  .proto-hero-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 34px; font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; }
+  .proto-copy { font: 500 15px/1.6 'Be Vietnam Pro', sans-serif; color: var(--proto-muted); }
+  .proto-pill { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:#f4f7ce; color:var(--proto-primary); font:700 11px/1 'Be Vietnam Pro', sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+  .proto-cta { display:inline-flex; width:100%; align-items:center; justify-content:center; border:0; border-radius:999px; background:var(--proto-primary); color:#fff; padding:16px 20px; font:700 15px/1 'Be Vietnam Pro', sans-serif; cursor:pointer; }
+  .proto-secondary { background:#eef2bf; color:var(--proto-ink); }
+  .proto-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .proto-tile { aspect-ratio:1; border-radius:24px; }
+</style></head><body class="proto-has-nav">
+
+<div class="proto-statusbar"><span>9:41</span><span>5G &#183; 100%</span></div>
+<div class="proto-header"><div></div><div class="proto-header-title">Garden Archive</div><div></div></div>
+<main class="px-6">
+  <section class="proto-card p-6 mt-4">
+    <div class="flex items-center justify-between">
+      <div>
+        <p class="proto-pill">Private archive</p>
+        <h1 class="font-['Plus_Jakarta_Sans'] text-[28px] leading-[1.05] font-extrabold tracking-[-0.03em] text-[#363b10] mt-4">Finished gardens, saved as 21-day keepsakes.</h1>
+      </div>
+      <span class="material-symbols-outlined text-[34px] text-[#456e39]">inventory_2</span>
+    </div>
+  </section>
+  <section class="mt-5 space-y-4">
+    <button class="proto-card w-full text-left p-5 proto-clickable" onclick="window.location.href='4d196edb867847fdb9a541f6ca189387.html'">
+      <div class="flex gap-4 items-start">
+        <div class="w-20 h-20 rounded-[24px] bg-[linear-gradient(135deg,#456e39,#c0f0ad)]"></div>
+        <div class="flex-1">
+          <div class="flex items-center justify-between gap-3">
+            <h2 class="font-['Plus_Jakarta_Sans'] text-lg font-bold text-[#363b10]">Spring Courtyard</h2>
+            <span class="proto-pill">Courtyard</span>
+          </div>
+          <p class="proto-copy mt-2">Completed Mar 30, 2026</p>
+          <p class="proto-copy mt-2">21 tiles, 184,202 steps, postcard saved.</p>
+        </div>
+      </div>
+    </button>
+    <button class="proto-card w-full text-left p-5 proto-clickable" onclick="window.location.href='4d196edb867847fdb9a541f6ca189387.html'">
+      <div class="flex gap-4 items-start">
+        <div class="w-20 h-20 rounded-[24px] bg-[linear-gradient(135deg,#8a592a,#ffdcc1)]"></div>
+        <div class="flex-1">
+          <div class="flex items-center justify-between gap-3">
+            <h2 class="font-['Plus_Jakarta_Sans'] text-lg font-bold text-[#363b10]">Wild Patch Weekend</h2>
+            <span class="proto-pill">Wild Patch</span>
+          </div>
+          <p class="proto-copy mt-2">Completed Apr 12, 2026</p>
+          <p class="proto-copy mt-2">One tap opens the full finished-page detail and export actions.</p>
+        </div>
+      </div>
+    </button>
+  </section>
+</main>
+<nav class="proto-bottom-nav"><button class="proto-tab " onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'"><span class="material-symbols-outlined mi">home</span><span>Home</span></button><button class="proto-tab active" onclick="window.location.href='local-archive-33.html'"><span class="material-symbols-outlined mi">inventory_2</span><span>Archive</span></button><button class="proto-tab " onclick="window.location.href='0d3e44f6ae204b73aaafaa6bf153282c.html'"><span class="material-symbols-outlined mi">settings</span><span>Settings</span></button></nav></body></html>

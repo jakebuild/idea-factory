@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>Archived Journey - The Botanical Journal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#ffffff",
+              "surface": "#fefee5",
+              "on-secondary-fixed": "#5f3508",
+              "outline-variant": "#b8be86",
+              "on-secondary-container": "#75471a",
+              "on-tertiary-fixed-variant": "#6d2b41",
+              "inverse-surface": "#0e0f03",
+              "primary-fixed-dim": "#b2e1a0",
+              "error-dim": "#821a01",
+              "on-error": "#ffffff",
+              "tertiary-fixed": "#fda1ba",
+              "tertiary-container": "#fda1ba",
+              "on-primary-fixed-variant": "#3c6531",
+              "secondary-container": "#ffdcc1",
+              "surface-container-low": "#fafcda",
+              "surface-container-highest": "#e7edb1",
+              "tertiary-fixed-dim": "#ed94ad",
+              "primary-fixed": "#c0f0ad",
+              "primary-dim": "#39622e",
+              "secondary-fixed-dim": "#ffca9e",
+              "secondary": "#8a592a",
+              "on-primary-fixed": "#204817",
+              "tertiary": "#984d63",
+              "on-primary": "#ffffff",
+              "surface-variant": "#e7edb1",
+              "on-background": "#363b10",
+              "error-container": "#fa7150",
+              "tertiary-dim": "#894157",
+              "surface-container-high": "#eef2bf",
+              "inverse-on-surface": "#9e9e88",
+              "on-primary-container": "#335b28",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-container": "#622238",
+              "inverse-primary": "#c2f3af",
+              "on-surface-variant": "#626838",
+              "surface-tint": "#456e39",
+              "on-secondary-fixed-variant": "#805123",
+              "primary-container": "#c0f0ad",
+              "surface-dim": "#e1e8a2",
+              "secondary-dim": "#7c4e20",
+              "surface-container": "#f4f7ce",
+              "secondary-fixed": "#ffdcc1",
+              "primary": "#456e39",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#671200",
+              "surface-bright": "#fefee5",
+              "on-surface": "#363b10",
+              "background": "#fefee5",
+              "outline": "#7f8452",
+              "error": "#b23d21",
+              "on-tertiary-fixed": "#460b22"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.scrapbook-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuD8UavEF4wGSertld1f33AEdYnJiLYzzt4YVmYIwg9RHpi7fTRn1eytlPMN44Sgd7Vq0AzSpIarMAE5B4n6CmgeKh_obTqqUusMlc5ZmMswDhDDV2RgqepPiPDuHft1sUIiXNdp4c7L9PRET798pDngkK1nnc0O_6DyG-4ox4LgHxeWrutZYebmDRraECKwKrh8pj01A9vKWJfxIiohb4Q4P6brLkkRKDIGKqVTgoUI0nvNPoOIjvBNZTQg45d0UvKeXfr-zuit-NzI)
+    }
+.botanical-shadow {
+    box-shadow: 0 24px 32px rgba(54, 59, 16, 0.06)
+    }
+.pebble-1 {
+    border-radius: 60% 40% 70% 30%/40% 50% 60% 40%
+    }
+.pebble-2 {
+    border-radius: 40% 60% 30% 70%/50% 40% 40% 60%
+    }
+.pebble-3 {
+    border-radius: 50% 50% 40% 60%/60% 40% 60% 40%
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  
+<style id="proto-shell-css">
+  :root {
+    --proto-bg: #fefee5;
+    --proto-surface: rgba(254,254,229,0.94);
+    --proto-ink: #363b10;
+    --proto-muted: #626838;
+    --proto-line: rgba(127,132,82,0.18);
+    --proto-primary: #456e39;
+    --proto-primary-soft: #c0f0ad;
+    --proto-card: #fafcda;
+  }
+  body { background: var(--proto-bg) !important; color: var(--proto-ink); padding-top: 92px !important; }
+  body.proto-has-nav { padding-bottom: 92px !important; }
+  body.proto-no-nav { padding-bottom: 28px !important; }
+  .proto-statusbar {
+    position: fixed; inset: 0 0 auto 0; height: 24px; z-index: 90;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 18px; font: 700 11px/1 'Be Vietnam Pro', sans-serif;
+    background: rgba(254,254,229,0.96); color: var(--proto-ink);
+  }
+  .proto-header {
+    position: fixed; top: 24px; left: 0; right: 0; height: 68px; z-index: 90;
+    display: grid; grid-template-columns: 48px 1fr 48px; align-items: center;
+    padding: 0 14px; background: rgba(254,254,229,0.96);
+    border-bottom: 1px solid var(--proto-line); backdrop-filter: blur(12px);
+  }
+  .proto-header-title {
+    text-align: center; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px; font-weight: 700; color: var(--proto-ink); letter-spacing: -0.02em;
+  }
+  .proto-icon-btn {
+    width: 40px; height: 40px; border: 0; border-radius: 999px;
+    background: transparent; color: var(--proto-primary); font-size: 20px; cursor: pointer;
+  }
+  .proto-icon-btn:active { transform: scale(0.98); }
+  .proto-bottom-nav {
+    position: fixed; left: 14px; right: 14px; bottom: 12px; height: 68px; z-index: 90;
+    border-radius: 28px; background: rgba(244,247,206,0.92); border: 1px solid var(--proto-line);
+    backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(3,1fr); padding: 8px;
+    box-shadow: 0 -4px 24px rgba(54,59,16,0.06);
+  }
+  .proto-tab {
+    border: 0; background: transparent; border-radius: 22px; color: var(--proto-muted);
+    font: 600 11px/1 'Be Vietnam Pro', sans-serif; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 4px; cursor: pointer;
+  }
+  .proto-tab.active { background: var(--proto-primary); color: #fff; }
+  .proto-tab .mi { font-size: 20px; }
+  .proto-clickable { cursor: pointer !important; }
+  .proto-card {
+    background: var(--proto-card); border: 1px solid var(--proto-line); border-radius: 28px;
+    box-shadow: 0 24px 32px rgba(54,59,16,0.06);
+  }
+  .proto-hero-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 34px; font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; }
+  .proto-copy { font: 500 15px/1.6 'Be Vietnam Pro', sans-serif; color: var(--proto-muted); }
+  .proto-pill { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:#f4f7ce; color:var(--proto-primary); font:700 11px/1 'Be Vietnam Pro', sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+  .proto-cta { display:inline-flex; width:100%; align-items:center; justify-content:center; border:0; border-radius:999px; background:var(--proto-primary); color:#fff; padding:16px 20px; font:700 15px/1 'Be Vietnam Pro', sans-serif; cursor:pointer; }
+  .proto-secondary { background:#eef2bf; color:var(--proto-ink); }
+  .proto-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .proto-tile { aspect-ratio:1; border-radius:24px; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container min-h-screen scrapbook-texture proto-has-nav">
+<div class="proto-statusbar"><span>9:41</span><span>5G &#183; 100%</span></div>
+<div class="proto-header"><button class="proto-icon-btn" aria-label="Back" onclick="window.location.href='local-archive-33.html'">&#8592;</button><div class="proto-header-title">Archived Page Detail</div><div></div></div>
+<!-- TopAppBar -->
+
+<main class="max-w-4xl mx-auto px-6 pt-16 pb-32">
+<!-- Hero Section -->
+<section class="relative mb-16">
+<div class="absolute -top-12 -left-8 w-32 h-32 opacity-20 pointer-events-none">
+<img alt="" data-alt="minimalist botanical line art of a fern leaf in soft olive green with organic hand-drawn aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD7aUMzhn8fsrvEIgyckSlYzdCuOqEYlJdfu6fKT6joruuzgJX3U8vj19e0IWOHD9ZXi3bC_lPyvIrpcBnmlubi5eDvJ8xloYeaYJNsrcuOEB0sY6OpgZHXFYMuahRyHDzpaQkC10fMWw6c7qoNcQSi2IcNPqirS6-Gcz3ArTAv0RqiCAIU5nzjh1qiZG2dMii6VRjdbAKDeMQfzgDA_lhpZ9QrNjAxkoj28D93nSFP8QnrL235RWOLQAe2FDBN79fY_GlQ54VVaie"/>
+</div>
+<div class="space-y-2 relative z-10">
+<p class="font-label text-secondary font-medium tracking-widest uppercase text-xs">Completed Ledger</p>
+<h2 class="font-headline text-5xl font-extrabold tracking-tight text-on-background">Spring Equinox 2024</h2>
+<p class="font-body text-on-surface-variant text-lg">March 20 — April 10</p>
+</div>
+<div class="mt-8 flex flex-wrap gap-4">
+<div class="bg-surface-container-low px-6 py-4 rounded-2xl flex flex-col gap-1 botanical-shadow">
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant/70">Total Steps</span>
+<span class="text-2xl font-headline font-bold text-primary">184,202</span>
+</div>
+<div class="bg-surface-container-low px-6 py-4 rounded-2xl flex flex-col gap-1 botanical-shadow">
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant/70">Distance</span>
+<span class="text-2xl font-headline font-bold text-primary">42.8 mi</span>
+</div>
+<div class="bg-surface-container-low px-6 py-4 rounded-2xl flex flex-col gap-1 botanical-shadow">
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant/70">Reflections</span>
+<span class="text-2xl font-headline font-bold text-primary">21</span>
+</div>
+</div>
+</section>
+<!-- The 21-Day Stepping Stone Path -->
+<section class="mb-16">
+<div class="flex items-center justify-between mb-8">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Growth Timeline</h3>
+<div class="flex gap-4 text-xs font-label">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-gradient-to-br from-primary to-primary-container"></div> Completed</div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-tertiary/20 border border-tertiary-dim/20"></div> Missed</div>
+</div>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-7 gap-6">
+<!-- Row 1 -->
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-1 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="potted_plant" style="font-variation-settings: 'FILL' 1;">potted_plant</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 01</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2 mt-4">
+<div class="w-16 h-16 pebble-2 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="eco" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 02</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-3 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="psychology" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 03</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2 mt-6">
+<div class="w-16 h-16 pebble-1 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="nature" style="font-variation-settings: 'FILL' 1;">nature</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 04</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-2 bg-tertiary/10 border border-tertiary/20 flex items-center justify-center text-tertiary-dim/40 transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="cloud" style="font-variation-settings: 'FILL' 0;">cloud</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 05</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2 mt-2">
+<div class="w-16 h-16 pebble-3 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="yard" style="font-variation-settings: 'FILL' 1;">yard</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 06</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-1 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="spa" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 07</span>
+</div>
+<!-- Row 2 -->
+<div class="group relative flex flex-col items-center gap-2 mt-4">
+<div class="w-16 h-16 pebble-2 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="forest" style="font-variation-settings: 'FILL' 1;">forest</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 08</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-3 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="filter_vintage" style="font-variation-settings: 'FILL' 1;">filter_vintage</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 09</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2 mt-8">
+<div class="w-16 h-16 pebble-1 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="water_drop" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 10</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-2 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="local_florist" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 11</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2 mt-4">
+<div class="w-16 h-16 pebble-3 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="grass" style="font-variation-settings: 'FILL' 1;">grass</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 12</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-1 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="compost" style="font-variation-settings: 'FILL' 1;">compost</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 13</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2 mt-6">
+<div class="w-16 h-16 pebble-2 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="sunny" style="font-variation-settings: 'FILL' 1;">sunny</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 14</span>
+</div>
+<!-- Row 3 -->
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-3 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="grain" style="font-variation-settings: 'FILL' 1;">grain</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 15</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2 mt-2">
+<div class="w-16 h-16 pebble-1 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="meditation" style="font-variation-settings: 'FILL' 1;">self_improvement</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 16</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-2 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="hiking" style="font-variation-settings: 'FILL' 1;">hiking</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 17</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2 mt-10">
+<div class="w-16 h-16 pebble-3 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="park" style="font-variation-settings: 'FILL' 1;">park</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 18</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-1 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="bedtime" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 19</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2 mt-4">
+<div class="w-16 h-16 pebble-2 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform hover:scale-105">
+<span class="material-symbols-outlined" data-icon="volunteer_activism" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">DAY 20</span>
+</div>
+<div class="group relative flex flex-col items-center gap-2">
+<div class="w-16 h-16 pebble-3 bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-shadow transition-transform ring-4 ring-tertiary ring-offset-4 ring-offset-surface hover:scale-105">
+<span class="material-symbols-outlined" data-icon="workspace_premium" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<span class="text-[10px] font-label font-bold text-tertiary">DAY 21</span>
+</div>
+</div>
+</section>
+<!-- Scrapbook Snippets -->
+<section class="mb-16">
+<h3 class="font-headline text-2xl font-bold text-on-surface mb-8">Memories Captured</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest p-2 rounded-lg botanical-shadow rotate-[-1deg] hover:rotate-0 transition-transform duration-500">
+<div class="aspect-square bg-surface-container-high rounded-sm overflow-hidden mb-3">
+<img alt="" class="w-full h-full object-cover" data-alt="close up of morning dew on a lush green fern leaf with soft cinematic sunlight and bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABypGTSjm1RN5SAkEzdngdKFBi51nyzh9jZpQU78KejfQHmIJU8wShMk7hufpVDmg000vpQ9AyAikcBxBI9Dsfd61x31hU1lcEP0WAQk-N0mHPhZ9AnnSbb7JRCR_iTlay-CFmkdImpBj2uWE03AfRBC-OdRd0kcN-8HEXo7CsOu6N1lwpeSZlJkkrT-aKdN91UFA7awIZPLE3gLPfcrsvOAgY7TwoO9f05uhfFKGUvJD0fhFohSRZeAaoScury2A6EYeHSKKTzRxq"/>
+</div>
+<p class="font-body italic text-sm text-secondary px-2 pb-2">"The morning air smelled like damp earth and pine. Finally hit 10k steps before noon."</p>
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg botanical-shadow rotate-[2deg] hover:rotate-0 transition-transform duration-500">
+<div class="aspect-square bg-surface-container-high rounded-sm overflow-hidden mb-3">
+<img alt="" class="w-full h-full object-cover" data-alt="vibrant wildflowers in a sun-drenched meadow during golden hour with warm orange and purple hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOVsTgclpLQ_M9z_1ts2ar2Vbl42erH25s9BatJ7yarHIay5sj0Lj_INRQ9rGJyTwXf5HRNsqYgCIZBfKUbxlUr1J24cOzKKBVik5QgNSdLk3onC-EcHD7J10cseUypd8p0YyTADudJ4wNJ54E_gEfoOiaKDVxIA059sEQRIjsYR31JhIs-zSPeM8h4XdDfEVkd99fZRGCmbeuZzU7uz__WmNardFNShR0xIoPpL_6rqu_Y1GJVXsdPyGGg64hLtV9p7-lyn85p9tJ"/>
+</div>
+<p class="font-body italic text-sm text-secondary px-2 pb-2">"Found these blooming near the creek. Day 14 felt like a turning point."</p>
+</div>
+</div>
+</section>
+<!-- Primary Action -->
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<button class="w-full sm:w-auto bg-primary text-on-primary px-10 py-4 rounded-full font-headline font-bold text-lg botanical-shadow active:scale-95 transition-all hover:bg-primary-dim" cursor-pointer onclick="window.location.href='local-archive-33.html'">
+                Export as PDF
+            </button>
+<button class="w-full sm:w-auto bg-surface-container-highest text-on-primary-container px-10 py-4 rounded-full font-headline font-bold text-lg active:scale-95 transition-all hover:bg-primary-container" cursor-pointer onclick="window.location.href='local-archive-33.html'">
+                Share Scrapbook
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="proto-bottom-nav"><button class="proto-tab " onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'"><span class="material-symbols-outlined mi">home</span><span>Home</span></button><button class="proto-tab active" onclick="window.location.href='local-archive-33.html'"><span class="material-symbols-outlined mi">inventory_2</span><span>Archive</span></button><button class="proto-tab " onclick="window.location.href='0d3e44f6ae204b73aaafaa6bf153282c.html'"><span class="material-symbols-outlined mi">settings</span><span>Settings</span></button></nav>
+</body></html>

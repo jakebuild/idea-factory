@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>Daily Growth - Day 12 Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#671200",
+              "outline": "#7f8452",
+              "error-container": "#fa7150",
+              "tertiary-fixed": "#fda1ba",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#ed94ad",
+              "surface-container-highest": "#e7edb1",
+              "tertiary-container": "#fda1ba",
+              "surface-variant": "#e7edb1",
+              "on-secondary-fixed-variant": "#805123",
+              "on-background": "#363b10",
+              "surface-tint": "#456e39",
+              "primary": "#456e39",
+              "error": "#b23d21",
+              "surface-container": "#f4f7ce",
+              "on-tertiary-fixed": "#460b22",
+              "on-surface-variant": "#626838",
+              "on-tertiary-container": "#622238",
+              "secondary-fixed": "#ffdcc1",
+              "surface-bright": "#fefee5",
+              "inverse-surface": "#0e0f03",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#eef2bf",
+              "inverse-primary": "#c2f3af",
+              "outline-variant": "#b8be86",
+              "on-primary": "#ffffff",
+              "error-dim": "#821a01",
+              "surface": "#fefee5",
+              "secondary-dim": "#7c4e20",
+              "secondary": "#8a592a",
+              "on-error": "#ffffff",
+              "primary-fixed": "#c0f0ad",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#fafcda",
+              "background": "#fefee5",
+              "on-secondary-fixed": "#5f3508",
+              "tertiary-dim": "#894157",
+              "surface-dim": "#e1e8a2",
+              "primary-container": "#c0f0ad",
+              "on-primary-fixed-variant": "#3c6531",
+              "on-surface": "#363b10",
+              "secondary-fixed-dim": "#ffca9e",
+              "on-primary-fixed": "#204817",
+              "tertiary": "#984d63",
+              "on-secondary-container": "#75471a",
+              "on-primary-container": "#335b28",
+              "secondary-container": "#ffdcc1",
+              "primary-fixed-dim": "#b2e1a0",
+              "on-tertiary-fixed-variant": "#6d2b41",
+              "inverse-on-surface": "#9e9e88",
+              "primary-dim": "#39622e"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .botanical-glow {
+        box-shadow: 0 24px 32px -12px rgba(54, 59, 16, 0.06);
+      }
+      .pebble-shape {
+        border-radius: 60% 40% 70% 30% / 40% 50% 60% 40%;
+      }
+      .glass-effect {
+        backdrop-filter: blur(12px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  
+<style id="proto-shell-css">
+  :root {
+    --proto-bg: #fefee5;
+    --proto-surface: rgba(254,254,229,0.94);
+    --proto-ink: #363b10;
+    --proto-muted: #626838;
+    --proto-line: rgba(127,132,82,0.18);
+    --proto-primary: #456e39;
+    --proto-primary-soft: #c0f0ad;
+    --proto-card: #fafcda;
+  }
+  body { background: var(--proto-bg) !important; color: var(--proto-ink); padding-top: 92px !important; }
+  body.proto-has-nav { padding-bottom: 92px !important; }
+  body.proto-no-nav { padding-bottom: 28px !important; }
+  .proto-statusbar {
+    position: fixed; inset: 0 0 auto 0; height: 24px; z-index: 90;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 18px; font: 700 11px/1 'Be Vietnam Pro', sans-serif;
+    background: rgba(254,254,229,0.96); color: var(--proto-ink);
+  }
+  .proto-header {
+    position: fixed; top: 24px; left: 0; right: 0; height: 68px; z-index: 90;
+    display: grid; grid-template-columns: 48px 1fr 48px; align-items: center;
+    padding: 0 14px; background: rgba(254,254,229,0.96);
+    border-bottom: 1px solid var(--proto-line); backdrop-filter: blur(12px);
+  }
+  .proto-header-title {
+    text-align: center; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px; font-weight: 700; color: var(--proto-ink); letter-spacing: -0.02em;
+  }
+  .proto-icon-btn {
+    width: 40px; height: 40px; border: 0; border-radius: 999px;
+    background: transparent; color: var(--proto-primary); font-size: 20px; cursor: pointer;
+  }
+  .proto-icon-btn:active { transform: scale(0.98); }
+  .proto-bottom-nav {
+    position: fixed; left: 14px; right: 14px; bottom: 12px; height: 68px; z-index: 90;
+    border-radius: 28px; background: rgba(244,247,206,0.92); border: 1px solid var(--proto-line);
+    backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(3,1fr); padding: 8px;
+    box-shadow: 0 -4px 24px rgba(54,59,16,0.06);
+  }
+  .proto-tab {
+    border: 0; background: transparent; border-radius: 22px; color: var(--proto-muted);
+    font: 600 11px/1 'Be Vietnam Pro', sans-serif; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 4px; cursor: pointer;
+  }
+  .proto-tab.active { background: var(--proto-primary); color: #fff; }
+  .proto-tab .mi { font-size: 20px; }
+  .proto-clickable { cursor: pointer !important; }
+  .proto-card {
+    background: var(--proto-card); border: 1px solid var(--proto-line); border-radius: 28px;
+    box-shadow: 0 24px 32px rgba(54,59,16,0.06);
+  }
+  .proto-hero-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 34px; font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; }
+  .proto-copy { font: 500 15px/1.6 'Be Vietnam Pro', sans-serif; color: var(--proto-muted); }
+  .proto-pill { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:#f4f7ce; color:var(--proto-primary); font:700 11px/1 'Be Vietnam Pro', sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+  .proto-cta { display:inline-flex; width:100%; align-items:center; justify-content:center; border:0; border-radius:999px; background:var(--proto-primary); color:#fff; padding:16px 20px; font:700 15px/1 'Be Vietnam Pro', sans-serif; cursor:pointer; }
+  .proto-secondary { background:#eef2bf; color:var(--proto-ink); }
+  .proto-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .proto-tile { aspect-ratio:1; border-radius:24px; }
+</style>
+</head>
+<body class="bg-surface font-body text-on-surface min-h-screen pb-32 proto-has-nav">
+<div class="proto-statusbar"><span>9:41</span><span>5G &#183; 100%</span></div>
+<div class="proto-header"><button class="proto-icon-btn" aria-label="Back" onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'">&#8592;</button><div class="proto-header-title">Daily Tile Detail</div><div></div></div>
+<!-- Top App Bar -->
+
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-12">
+<!-- Hero Section: The Flourishing Result -->
+<section class="flex flex-col items-center text-center space-y-8 mt-8">
+<div class="relative group">
+<div class="absolute inset-0 bg-primary-container/30 blur-3xl rounded-full scale-125"></div>
+<!-- Large Botanical Illustration -->
+<div class="relative w-64 h-64 bg-gradient-to-br from-primary to-primary-container pebble-shape flex items-center justify-center p-8 botanical-glow">
+<span class="material-symbols-outlined text-[120px] text-white" data-icon="energy_savings_leaf" style="font-variation-settings: 'FILL' 1;">energy_savings_leaf</span>
+</div>
+<div class="absolute -bottom-4 -right-4 bg-tertiary text-white w-16 h-16 rounded-full flex items-center justify-center botanical-glow border-4 border-surface">
+<span class="material-symbols-outlined" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="space-y-2">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight text-on-background">Day 12: May 23rd</h2>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-surface-container rounded-full border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="footprint">footprint</span>
+<span class="font-label font-bold text-on-surface-variant uppercase tracking-widest text-xs">8,432 Steps Achieved</span>
+</div>
+</div>
+</section>
+<!-- Poetic Explanation -->
+<section class="bg-surface-container-low p-8 rounded-[2rem] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-full -mr-16 -mt-16"></div>
+<p class="font-headline text-lg italic leading-relaxed text-on-secondary-container/90 relative z-10">
+                "Your steady pace today provided the perfect amount of 'sunlight' for this leaf to unfurl completely. You've exceeded your 8k step goal, allowing your inner garden to flourish with newfound strength."
+            </p>
+</section>
+<!-- Stats Bento Grid -->
+<section class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-highest p-6 rounded-3xl space-y-3">
+<span class="material-symbols-outlined text-primary" data-icon="timer">timer</span>
+<div>
+<p class="text-[11px] font-label font-bold uppercase tracking-wider text-on-surface-variant/70">Activity Time</p>
+<p class="text-2xl font-headline font-bold text-on-background">72m</p>
+</div>
+</div>
+<div class="bg-surface-container-highest p-6 rounded-3xl space-y-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="local_fire_department">local_fire_department</span>
+<div>
+<p class="text-[11px] font-label font-bold uppercase tracking-wider text-on-surface-variant/70">Energy Burn</p>
+<p class="text-2xl font-headline font-bold text-on-background">342 kcal</p>
+</div>
+</div>
+</section>
+<!-- Week Progress Track -->
+<section class="space-y-6">
+<div class="flex justify-between items-end">
+<div class="space-y-1">
+<h3 class="font-headline font-bold text-xl text-on-background">Week Progress</h3>
+<p class="text-on-surface-variant text-sm">6 of 7 days complete for this row</p>
+</div>
+<div class="text-primary font-bold text-sm bg-primary-container px-3 py-1 rounded-full">
+                    Row 2 Complete soon
+                </div>
+</div>
+<div class="flex justify-between items-center gap-2 py-4">
+<!-- Day 8 -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm" data-icon="check">check</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">MON</span>
+</div>
+<!-- Day 9 -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm" data-icon="check">check</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">TUE</span>
+</div>
+<!-- Day 10 -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm" data-icon="check">check</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">WED</span>
+</div>
+<!-- Day 11 -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm" data-icon="check">check</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">THU</span>
+</div>
+<!-- Day 12 (Active) -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-12 h-12 rounded-full border-2 border-primary p-0.5">
+<div class="w-full h-full rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center text-white botanical-glow">
+<span class="material-symbols-outlined text-sm" data-icon="check">check</span>
+</div>
+</div>
+<span class="text-[10px] font-label font-bold text-primary">FRI</span>
+</div>
+<!-- Day 13 (Incomplete) -->
+<div class="flex flex-col items-center gap-3">
+<div class="w-10 h-10 rounded-full border-2 border-outline-variant/30 flex items-center justify-center text-outline-variant/50">
+<span class="material-symbols-outlined text-sm" data-icon="close">close</span>
+</div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant/40">SAT</span>
+</div>
+<!-- Day 14 (Pending) -->
+<div class="flex flex-col items-center gap-3 opacity-30">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest border border-outline-variant/10"></div>
+<span class="text-[10px] font-label font-bold text-on-surface-variant">SUN</span>
+</div>
+</div>
+</section>
+<!-- CTA Action -->
+<section class="flex flex-col gap-4 py-8">
+<button class="bg-primary text-white rounded-full py-5 px-8 font-headline font-bold text-lg active:scale-95 duration-200 transition-all flex items-center justify-center gap-3 botanical-glow" cursor-pointer onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'">
+<span class="material-symbols-outlined" data-icon="book_2">book_2</span>
+                Back to Journal
+            </button>
+<button class="bg-surface-variant text-on-secondary-container rounded-full py-4 px-8 font-label font-semibold text-sm hover:opacity-80 transition-opacity">
+                Share this Milestone
+            </button>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+
+<nav class="proto-bottom-nav"><button class="proto-tab active" onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'"><span class="material-symbols-outlined mi">home</span><span>Home</span></button><button class="proto-tab " onclick="window.location.href='local-archive-33.html'"><span class="material-symbols-outlined mi">inventory_2</span><span>Archive</span></button><button class="proto-tab " onclick="window.location.href='0d3e44f6ae204b73aaafaa6bf153282c.html'"><span class="material-symbols-outlined mi">settings</span><span>Settings</span></button></nav>
+</body></html>

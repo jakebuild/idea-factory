@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>Settings &amp; Help - The Botanical Journal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container": "#f4f7ce",
+              "surface-container-high": "#eef2bf",
+              "on-secondary-fixed-variant": "#805123",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#5f3508",
+              "on-secondary": "#ffffff",
+              "on-secondary-container": "#75471a",
+              "error": "#b23d21",
+              "on-error-container": "#671200",
+              "primary-fixed": "#c0f0ad",
+              "surface-bright": "#fefee5",
+              "on-primary-fixed": "#204817",
+              "on-background": "#363b10",
+              "error-container": "#fa7150",
+              "surface-container-highest": "#e7edb1",
+              "on-primary-fixed-variant": "#3c6531",
+              "on-surface": "#363b10",
+              "tertiary-fixed": "#fda1ba",
+              "tertiary-container": "#fda1ba",
+              "on-tertiary-fixed-variant": "#6d2b41",
+              "tertiary": "#984d63",
+              "on-tertiary": "#ffffff",
+              "secondary-dim": "#7c4e20",
+              "inverse-surface": "#0e0f03",
+              "secondary-container": "#ffdcc1",
+              "inverse-on-surface": "#9e9e88",
+              "primary-container": "#c0f0ad",
+              "tertiary-dim": "#894157",
+              "surface-container-low": "#fafcda",
+              "secondary-fixed": "#ffdcc1",
+              "inverse-primary": "#c2f3af",
+              "background": "#fefee5",
+              "on-surface-variant": "#626838",
+              "secondary": "#8a592a",
+              "error-dim": "#821a01",
+              "surface-dim": "#e1e8a2",
+              "surface": "#fefee5",
+              "on-primary-container": "#335b28",
+              "primary-dim": "#39622e",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed": "#460b22",
+              "surface-tint": "#456e39",
+              "outline-variant": "#b8be86",
+              "on-tertiary-container": "#622238",
+              "primary-fixed-dim": "#b2e1a0",
+              "secondary-fixed-dim": "#ffca9e",
+              "primary": "#456e39",
+              "tertiary-fixed-dim": "#ed94ad",
+              "surface-variant": "#e7edb1",
+              "on-primary": "#ffffff",
+              "outline": "#7f8452"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .organic-shape-1 {
+            border-radius: 60% 40% 70% 30% / 40% 50% 60% 40%;
+        }
+        .organic-shape-2 {
+            border-radius: 40% 60% 30% 70% / 50% 40% 40% 60%;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  
+<style id="proto-shell-css">
+  :root {
+    --proto-bg: #fefee5;
+    --proto-surface: rgba(254,254,229,0.94);
+    --proto-ink: #363b10;
+    --proto-muted: #626838;
+    --proto-line: rgba(127,132,82,0.18);
+    --proto-primary: #456e39;
+    --proto-primary-soft: #c0f0ad;
+    --proto-card: #fafcda;
+  }
+  body { background: var(--proto-bg) !important; color: var(--proto-ink); padding-top: 92px !important; }
+  body.proto-has-nav { padding-bottom: 92px !important; }
+  body.proto-no-nav { padding-bottom: 28px !important; }
+  .proto-statusbar {
+    position: fixed; inset: 0 0 auto 0; height: 24px; z-index: 90;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 18px; font: 700 11px/1 'Be Vietnam Pro', sans-serif;
+    background: rgba(254,254,229,0.96); color: var(--proto-ink);
+  }
+  .proto-header {
+    position: fixed; top: 24px; left: 0; right: 0; height: 68px; z-index: 90;
+    display: grid; grid-template-columns: 48px 1fr 48px; align-items: center;
+    padding: 0 14px; background: rgba(254,254,229,0.96);
+    border-bottom: 1px solid var(--proto-line); backdrop-filter: blur(12px);
+  }
+  .proto-header-title {
+    text-align: center; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px; font-weight: 700; color: var(--proto-ink); letter-spacing: -0.02em;
+  }
+  .proto-icon-btn {
+    width: 40px; height: 40px; border: 0; border-radius: 999px;
+    background: transparent; color: var(--proto-primary); font-size: 20px; cursor: pointer;
+  }
+  .proto-icon-btn:active { transform: scale(0.98); }
+  .proto-bottom-nav {
+    position: fixed; left: 14px; right: 14px; bottom: 12px; height: 68px; z-index: 90;
+    border-radius: 28px; background: rgba(244,247,206,0.92); border: 1px solid var(--proto-line);
+    backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(3,1fr); padding: 8px;
+    box-shadow: 0 -4px 24px rgba(54,59,16,0.06);
+  }
+  .proto-tab {
+    border: 0; background: transparent; border-radius: 22px; color: var(--proto-muted);
+    font: 600 11px/1 'Be Vietnam Pro', sans-serif; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 4px; cursor: pointer;
+  }
+  .proto-tab.active { background: var(--proto-primary); color: #fff; }
+  .proto-tab .mi { font-size: 20px; }
+  .proto-clickable { cursor: pointer !important; }
+  .proto-card {
+    background: var(--proto-card); border: 1px solid var(--proto-line); border-radius: 28px;
+    box-shadow: 0 24px 32px rgba(54,59,16,0.06);
+  }
+  .proto-hero-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 34px; font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; }
+  .proto-copy { font: 500 15px/1.6 'Be Vietnam Pro', sans-serif; color: var(--proto-muted); }
+  .proto-pill { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:#f4f7ce; color:var(--proto-primary); font:700 11px/1 'Be Vietnam Pro', sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+  .proto-cta { display:inline-flex; width:100%; align-items:center; justify-content:center; border:0; border-radius:999px; background:var(--proto-primary); color:#fff; padding:16px 20px; font:700 15px/1 'Be Vietnam Pro', sans-serif; cursor:pointer; }
+  .proto-secondary { background:#eef2bf; color:var(--proto-ink); }
+  .proto-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .proto-tile { aspect-ratio:1; border-radius:24px; }
+</style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container proto-has-nav">
+<div class="proto-statusbar"><span>9:41</span><span>5G &#183; 100%</span></div>
+<div class="proto-header"><div></div><div class="proto-header-title">Settings</div><div></div></div>
+<!-- TopAppBar -->
+
+<main class="max-w-2xl mx-auto px-6 pt-8 pb-32 space-y-10">
+<!-- Hero Header -->
+<section class="space-y-2">
+<h2 class="font-headline text-4xl font-extrabold text-on-surface tracking-tight">Settings &amp; Help</h2>
+<p class="text-on-surface-variant font-medium">Nurturing your digital sanctuary and personal growth journey.</p>
+</section>
+<!-- Bento Grid Layout for Primary Settings -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Health Permissions Card -->
+<div class="bg-surface-container p-6 rounded-[2rem] flex flex-col justify-between space-y-4 hover:shadow-lg transition-shadow duration-300">
+<div class="space-y-3">
+<div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-error">
+<span class="material-symbols-outlined" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface">Health Permissions</h3>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Sync your daily steps to water your digital garden.</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="text-xs font-bold uppercase tracking-wider text-primary bg-primary-container/30 px-3 py-1 rounded-full">Connected</span>
+<button class="text-primary font-semibold text-sm hover:underline" cursor-pointer onclick="window.location.href='0b6b9f493d4a43e1bb5f2e55662b3d8e.html'">Manage</button>
+</div>
+</div>
+<!-- Reminders Card -->
+<div class="bg-surface-container-high p-6 rounded-[2rem] flex flex-col justify-between space-y-4">
+<div class="space-y-3">
+<div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="notifications" style="font-variation-settings: 'FILL' 1;">notifications</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface">Daily Growth</h3>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Gentle nudges to check in with your journal and plants.</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="text-sm font-medium text-on-surface">Reminders</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-outline-variant/30 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Privacy Section (Paper Texture Style) -->
+<section class="bg-surface-container-low p-8 rounded-[2.5rem] relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-primary/5 organic-shape-1"></div>
+<div class="relative z-10 space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="shield_person">shield_person</span>
+<h3 class="font-headline font-bold text-2xl text-on-surface">Nature-First Privacy</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed font-body">
+                    Your thoughts are yours alone. Like roots in the soil, your data stays firmly on your device. We don't track your location or sell your entries. The Botanical Journal is a closed ecosystem built on trust and serenity.
+                </p>
+</div>
+</section>
+<!-- FAQ & Sync Info -->
+<section class="space-y-6">
+<h3 class="font-headline font-bold text-2xl text-on-surface px-2">Garden FAQ</h3>
+<div class="space-y-4">
+<div class="bg-surface-container-lowest border border-outline-variant/10 p-6 rounded-3xl group transition-all">
+<div class="flex justify-between items-start gap-4">
+<div>
+<h4 class="font-bold text-on-surface group-hover:text-primary transition-colors">When does my garden sync?</h4>
+<p class="text-on-surface-variant mt-2 text-sm leading-relaxed italic">"Your garden blossoms every time you open the app."</p>
+<p class="text-on-surface-variant mt-2 text-sm leading-relaxed">We poll for new activity only when active to preserve your battery life and maintain focus.</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="sync">sync</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/10 p-6 rounded-3xl group transition-all">
+<div class="flex justify-between items-start gap-4">
+<div>
+<h4 class="font-bold text-on-surface group-hover:text-primary transition-colors">Can I export my journal?</h4>
+<p class="text-on-surface-variant mt-2 text-sm leading-relaxed">Yes, you can export your entire growth history as a beautifully formatted PDF from the Archive section.</p>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="file_download">file_download</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Support & Assistance -->
+<section class="bg-surface-container-highest/50 border-2 border-dashed border-outline-variant/30 p-8 rounded-[2.5rem] text-center space-y-4">
+<h3 class="font-headline font-bold text-xl text-on-surface">Need a Hand?</h3>
+<p class="text-sm text-on-surface-variant max-w-sm mx-auto">Our botanical experts are here to help you navigate your journey.</p>
+<button class="bg-primary text-on-primary font-bold py-3 px-10 rounded-full hover:shadow-xl active:scale-95 transition-all duration-200">
+                Contact Support
+            </button>
+</section>
+<!-- Dangerous Actions -->
+<section class="pt-8 border-t border-outline-variant/10 space-y-4">
+<div class="flex items-center gap-2 px-2 text-on-secondary-container">
+<span class="material-symbols-outlined text-lg" data-icon="warning">warning</span>
+<span class="font-bold text-sm tracking-widest uppercase">Careful Ground</span>
+</div>
+<div class="bg-error-container/5 p-6 rounded-3xl flex items-center justify-between border border-error/10">
+<div>
+<h4 class="font-bold text-on-surface">Reset Current Run</h4>
+<p class="text-xs text-on-surface-variant mt-1">This will clear your 21-day progress but keep your journal entries.</p>
+</div>
+<button class="text-error font-bold text-sm px-4 py-2 rounded-xl border border-error/20 hover:bg-error/5 transition-colors" cursor-pointer onclick="window.location.href='e43d34a6be574c519579ebe081d76583.html'">
+                    Reset Run
+                </button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="proto-bottom-nav"><button class="proto-tab " onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'"><span class="material-symbols-outlined mi">home</span><span>Home</span></button><button class="proto-tab " onclick="window.location.href='local-archive-33.html'"><span class="material-symbols-outlined mi">inventory_2</span><span>Archive</span></button><button class="proto-tab active" onclick="window.location.href='0d3e44f6ae204b73aaafaa6bf153282c.html'"><span class="material-symbols-outlined mi">settings</span><span>Settings</span></button></nav>
+</body></html>

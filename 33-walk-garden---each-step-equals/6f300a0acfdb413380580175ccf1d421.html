@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<title>Milestone Reached - Botanical Journal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#626838",
+              "tertiary-dim": "#894157",
+              "tertiary-container": "#fda1ba",
+              "inverse-primary": "#c2f3af",
+              "primary-container": "#c0f0ad",
+              "inverse-on-surface": "#9e9e88",
+              "secondary-fixed-dim": "#ffca9e",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#ffdcc1",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#0e0f03",
+              "outline-variant": "#b8be86",
+              "tertiary": "#984d63",
+              "on-tertiary-container": "#622238",
+              "on-tertiary-fixed": "#460b22",
+              "surface-container": "#f4f7ce",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed-variant": "#6d2b41",
+              "error": "#b23d21",
+              "primary-dim": "#39622e",
+              "primary-fixed-dim": "#b2e1a0",
+              "secondary-dim": "#7c4e20",
+              "on-primary-fixed": "#204817",
+              "error-container": "#fa7150",
+              "on-background": "#363b10",
+              "on-primary-fixed-variant": "#3c6531",
+              "on-secondary": "#ffffff",
+              "surface-bright": "#fefee5",
+              "on-surface": "#363b10",
+              "tertiary-fixed": "#fda1ba",
+              "error-dim": "#821a01",
+              "on-secondary-container": "#75471a",
+              "primary": "#456e39",
+              "secondary-container": "#ffdcc1",
+              "surface": "#fefee5",
+              "primary-fixed": "#c0f0ad",
+              "surface-container-high": "#eef2bf",
+              "on-secondary-fixed-variant": "#805123",
+              "on-error-container": "#671200",
+              "surface-container-low": "#fafcda",
+              "on-secondary-fixed": "#5f3508",
+              "secondary": "#8a592a",
+              "outline": "#7f8452",
+              "surface-tint": "#456e39",
+              "surface-variant": "#e7edb1",
+              "on-primary-container": "#335b28",
+              "background": "#fefee5",
+              "tertiary-fixed-dim": "#ed94ad",
+              "surface-dim": "#e1e8a2",
+              "surface-container-highest": "#e7edb1",
+              "on-error": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .botanical-glow {
+            box-shadow: 0 24px 32px rgba(54, 59, 16, 0.06);
+        }
+        .organic-shape-1 {
+            border-radius: 60% 40% 70% 30% / 40% 50% 60% 40%;
+        }
+        .organic-shape-2 {
+            border-radius: 30% 70% 40% 60% / 50% 30% 70% 50%;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  
+<style id="proto-shell-css">
+  :root {
+    --proto-bg: #fefee5;
+    --proto-surface: rgba(254,254,229,0.94);
+    --proto-ink: #363b10;
+    --proto-muted: #626838;
+    --proto-line: rgba(127,132,82,0.18);
+    --proto-primary: #456e39;
+    --proto-primary-soft: #c0f0ad;
+    --proto-card: #fafcda;
+  }
+  body { background: var(--proto-bg) !important; color: var(--proto-ink); padding-top: 92px !important; }
+  body.proto-has-nav { padding-bottom: 92px !important; }
+  body.proto-no-nav { padding-bottom: 28px !important; }
+  .proto-statusbar {
+    position: fixed; inset: 0 0 auto 0; height: 24px; z-index: 90;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 18px; font: 700 11px/1 'Be Vietnam Pro', sans-serif;
+    background: rgba(254,254,229,0.96); color: var(--proto-ink);
+  }
+  .proto-header {
+    position: fixed; top: 24px; left: 0; right: 0; height: 68px; z-index: 90;
+    display: grid; grid-template-columns: 48px 1fr 48px; align-items: center;
+    padding: 0 14px; background: rgba(254,254,229,0.96);
+    border-bottom: 1px solid var(--proto-line); backdrop-filter: blur(12px);
+  }
+  .proto-header-title {
+    text-align: center; font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px; font-weight: 700; color: var(--proto-ink); letter-spacing: -0.02em;
+  }
+  .proto-icon-btn {
+    width: 40px; height: 40px; border: 0; border-radius: 999px;
+    background: transparent; color: var(--proto-primary); font-size: 20px; cursor: pointer;
+  }
+  .proto-icon-btn:active { transform: scale(0.98); }
+  .proto-bottom-nav {
+    position: fixed; left: 14px; right: 14px; bottom: 12px; height: 68px; z-index: 90;
+    border-radius: 28px; background: rgba(244,247,206,0.92); border: 1px solid var(--proto-line);
+    backdrop-filter: blur(14px); display: grid; grid-template-columns: repeat(3,1fr); padding: 8px;
+    box-shadow: 0 -4px 24px rgba(54,59,16,0.06);
+  }
+  .proto-tab {
+    border: 0; background: transparent; border-radius: 22px; color: var(--proto-muted);
+    font: 600 11px/1 'Be Vietnam Pro', sans-serif; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 4px; cursor: pointer;
+  }
+  .proto-tab.active { background: var(--proto-primary); color: #fff; }
+  .proto-tab .mi { font-size: 20px; }
+  .proto-clickable { cursor: pointer !important; }
+  .proto-card {
+    background: var(--proto-card); border: 1px solid var(--proto-line); border-radius: 28px;
+    box-shadow: 0 24px 32px rgba(54,59,16,0.06);
+  }
+  .proto-hero-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 34px; font-weight: 800; line-height: 1.05; letter-spacing: -0.03em; }
+  .proto-copy { font: 500 15px/1.6 'Be Vietnam Pro', sans-serif; color: var(--proto-muted); }
+  .proto-pill { display:inline-flex; align-items:center; gap:8px; padding:8px 14px; border-radius:999px; background:#f4f7ce; color:var(--proto-primary); font:700 11px/1 'Be Vietnam Pro', sans-serif; text-transform:uppercase; letter-spacing:.08em; }
+  .proto-cta { display:inline-flex; width:100%; align-items:center; justify-content:center; border:0; border-radius:999px; background:var(--proto-primary); color:#fff; padding:16px 20px; font:700 15px/1 'Be Vietnam Pro', sans-serif; cursor:pointer; }
+  .proto-secondary { background:#eef2bf; color:var(--proto-ink); }
+  .proto-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
+  .proto-tile { aspect-ratio:1; border-radius:24px; }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container proto-has-nav">
+<div class="proto-statusbar"><span>9:41</span><span>5G &#183; 100%</span></div>
+<div class="proto-header"><button class="proto-icon-btn" aria-label="Back" onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'">&#8592;</button><div class="proto-header-title">Weekly Row Complete</div><div></div></div>
+<!-- TopAppBar -->
+
+<main class="min-h-screen flex flex-col items-center px-6 pt-12 pb-32 max-w-2xl mx-auto overflow-hidden">
+<!-- Flourishing Central Icon Section -->
+<div class="relative mb-12 flex justify-center items-center">
+<div class="absolute inset-0 bg-primary-container opacity-20 blur-3xl rounded-full scale-150"></div>
+<div class="relative w-64 h-64 bg-primary-container organic-shape-1 flex items-center justify-center botanical-glow overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-20"></div>
+<span class="material-symbols-outlined text-8xl text-primary" data-icon="local_florist" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+<!-- Decorative smaller leaves -->
+<span class="material-symbols-outlined absolute top-12 right-12 text-3xl text-primary opacity-40" data-icon="eco">eco</span>
+<span class="material-symbols-outlined absolute bottom-12 left-12 text-3xl text-primary opacity-40 rotate-180" data-icon="eco">eco</span>
+</div>
+<!-- Floating Achievement Badge -->
+<div class="absolute -bottom-4 -right-2 bg-tertiary text-on-tertiary px-6 py-2 rounded-full font-headline font-bold text-sm botanical-glow flex items-center gap-2">
+<span class="material-symbols-outlined text-lg" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                WEEK 1 COMPLETE
+            </div>
+</div>
+<!-- Headline & Message -->
+<div class="text-center space-y-4 mb-12">
+<h2 class="font-headline font-extrabold text-4xl tracking-tight text-on-surface">Row 1 Flourishes</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md mx-auto">
+                You've established a strong foundation for your garden. Every step taken has nurtured this new growth.
+            </p>
+</div>
+<!-- Weekly Summary: Bento Style -->
+<div class="grid grid-cols-2 gap-4 w-full mb-16">
+<div class="col-span-2 bg-surface-container-high p-6 rounded-xl flex items-center gap-4 transition-all hover:scale-[1.02]">
+<div class="bg-primary rounded-full w-12 h-12 flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+</div>
+<div>
+<div class="font-headline font-bold text-xl text-on-surface">7 Tiles Cultivated</div>
+<div class="text-on-surface-variant text-sm font-medium uppercase tracking-wider">Perfect Streak</div>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-xl flex flex-col gap-3 transition-all hover:scale-[1.02]">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="footprint">footprint</span>
+<div>
+<div class="font-headline font-bold text-lg text-on-surface">54,203</div>
+<div class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider">Steps Taken</div>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-xl flex flex-col gap-3 transition-all hover:scale-[1.02]">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="map">map</span>
+<div>
+<div class="font-headline font-bold text-lg text-on-surface">4.2 mi</div>
+<div class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider">Walked</div>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="w-full space-y-6">
+<button class="w-full bg-primary text-on-primary py-5 rounded-full font-headline font-bold text-lg hover:opacity-90 transition-all active:scale-95 botanical-glow" cursor-pointer onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'">
+                Return to Home
+            </button>
+<div class="flex justify-center items-center gap-2">
+<span class="h-[1px] w-8 bg-outline-variant opacity-30"></span>
+<span class="text-on-surface-variant text-sm font-medium">Next Row Unlocks Tomorrow</span>
+<span class="h-[1px] w-8 bg-outline-variant opacity-30"></span>
+</div>
+</div>
+<!-- Decorative Garden Elements -->
+<div class="mt-16 w-full flex justify-between items-end opacity-20">
+<img alt="Decorative leaf" class="w-12 h-12" data-alt="minimalist watercolor illustration of a single green willow leaf with soft textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3TQmfvixu68cNl5s0hCSR99g8pVH0k_h_Idg3YsAYpe46uFqxEstOjzWWU8VmLhxM9gvzAusNh1Xo0jwhP8RtGjaG-v5Ajbo4QCcbGJ8ZGZqik5CfRZ9j1GaqKyqt5I_nCM6htxXi0MKfVZqIZmxOnp3N0lnFFJYx4NFAfVyLKsM6Xr2hLIwBFM5DIKn3L8Ra_bXTUwRPhe2CwXJVMCyKfKEcjiR3ixmqe6uP-27ZQVLgb32RD61pigTvlB2HWpGRj75li_qCPdi4"/>
+<img alt="Decorative flower" class="w-16 h-16 translate-y-4" data-alt="minimalist watercolor illustration of a soft pink cherry blossom with delicate petals" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWUdHMtP9iTSPWkpBZC9QgzZE_XafCTnTsF6Ktkdm_sJpSKs0mrG6NLyJQdiq6DxnU5hU88fXyCvdopI8ByZnawd8YDne1zux_eQc4B7fZ7skLOgnL4P_vRvqFmgU4qtcnMWZNs8DfmGG9OONU8HLKRZLqc2sf3v5S7cwtwm3Gs0h4SXxoACO4CozgvkIwdsAnHA74JE9fY6W3YoWlpqGrkLOb5GrPgpNRmo8vj1qP3DyzESBVcBuGwB-SJjXu8q5GvfOpLaHYWCxr"/>
+<img alt="Decorative sprout" class="w-10 h-10" data-alt="minimalist watercolor illustration of a small green seedling sprouting from the earth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1JXjJ-ZMfskoY10-oufutjKZ4jAcPkfaRmPQFwMShZqWJwAg0iHBIOla5UFZDY-YTHxunWY4D80FBaH9AVwBfZF9TNHgr4c8m6Fu4n7v0PNwGOGTNaslLFhGzfHL4TUivgXlr0Mdlk1yf5HOzKR-tSxfvYiX6xH4jKymnKLRBspHgQk3YxXw2Yau2Nmpa2rr2Ukl9I-XbLBDKi7Otp1wc8TvetzG_Y9FXMcsT72nLq1J9qV4zAUVA3bXe_t84PU7br3nuTjXJ_MPC"/>
+</div>
+</main>
+<!-- BottomNavBar (Suppressed as per "Task-Focused" rule, but structure is here for reference if needed for other screens) -->
+<!-- The prompt implies a focused celebration screen, so the nav shell is suppressed to prioritize the completion message -->
+<nav class="proto-bottom-nav"><button class="proto-tab active" onclick="window.location.href='d4cca8e27c734fe997bdedf41d2dad06.html'"><span class="material-symbols-outlined mi">home</span><span>Home</span></button><button class="proto-tab " onclick="window.location.href='local-archive-33.html'"><span class="material-symbols-outlined mi">inventory_2</span><span>Archive</span></button><button class="proto-tab " onclick="window.location.href='0d3e44f6ae204b73aaafaa6bf153282c.html'"><span class="material-symbols-outlined mi">settings</span><span>Settings</span></button></nav>
+</body></html>
