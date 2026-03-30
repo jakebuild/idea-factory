@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onboarding / Topic Intro</title>
+  <style>
+:root{
+  --bg:#f5f0e8;
+  --paper:#fffdf8;
+  --ink:#1e2330;
+  --muted:#637086;
+  --line:#d8cfbf;
+  --nav:#213247;
+  --nav-2:#32526f;
+  --sand:#ebe1d1;
+  --teal:#2f7c74;
+  --gold:#cb8f2d;
+  --accent:#c45f35;
+  --shadow:0 24px 70px rgba(33,50,71,.12);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Georgia, "Times New Roman", serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(203,143,45,.16), transparent 26%),
+    linear-gradient(180deg, #f9f5ee 0%, #f4efe7 100%);
+}
+.app-shell{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding:22px 28px;
+  background:rgba(255,253,248,.88);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(216,207,191,.9);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.header-left{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+.back{
+  border:1px solid var(--line);
+  background:var(--paper);
+  color:var(--ink);
+  border-radius:999px;
+  width:40px;
+  height:40px;
+  font-size:20px;
+  cursor:pointer;
+}
+.title-wrap h1{
+  margin:0;
+  font-size:31px;
+  font-weight:700;
+  line-height:1.05;
+}
+.title-wrap p{
+  margin:4px 0 0;
+  font-family:Arial, sans-serif;
+  font-size:13px;
+  color:var(--muted);
+}
+.badge-row{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.pill{
+  border:1px solid var(--line);
+  background:var(--paper);
+  border-radius:999px;
+  padding:10px 14px;
+  font-family:Arial, sans-serif;
+  font-size:12px;
+  color:var(--muted);
+}
+.tabs{
+  display:flex;
+  gap:10px;
+  padding:12px 28px 0;
+  flex-wrap:wrap;
+}
+.tabs button{
+  border:none;
+  background:var(--nav);
+  color:#dbe5ef;
+  border-radius:999px;
+  padding:10px 14px;
+  font:600 13px/1 Arial, sans-serif;
+  cursor:pointer;
+}
+.tabs button.active{
+  background:var(--teal);
+  color:#f7fffd;
+}
+main{
+  padding:28px;
+  display:grid;
+  gap:20px;
+}
+.hero,
+.panel,
+.metric,
+.timeline,
+.list-item,
+.cta-card{
+  background:var(--paper);
+  border:1px solid rgba(216,207,191,.9);
+  border-radius:28px;
+  box-shadow:var(--shadow);
+}
+.hero{
+  padding:28px;
+  display:grid;
+  gap:18px;
+}
+.hero-grid,
+.split,
+.metric-grid,
+.cards{
+  display:grid;
+  gap:18px;
+}
+.hero-grid{grid-template-columns:1.6fr 1fr}
+.split{grid-template-columns:1.2fr .8fr}
+.metric-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.cards{grid-template-columns:repeat(3,minmax(0,1fr))}
+.eyebrow{
+  font:700 11px/1.2 Arial,sans-serif;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--teal);
+}
+.lede{
+  font-size:20px;
+  line-height:1.5;
+  max-width:58ch;
+}
+.body-copy,.list-item p,.panel p,.timeline p{
+  font:400 14px/1.6 Arial,sans-serif;
+  color:var(--muted);
+}
+.kicker{
+  font:700 12px/1.2 Arial,sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+.panel,.cta-card,.metric,.timeline{
+  padding:22px;
+}
+.panel h2,.metric h3,.cta-card h2,.timeline h2{
+  margin:0 0 10px;
+  font-size:24px;
+}
+.metric h3{
+  font-size:18px;
+}
+.big-number{
+  font-size:44px;
+  color:var(--nav);
+  margin:8px 0;
+}
+.stack{display:grid;gap:12px}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.tag{
+  display:inline-flex;
+  align-items:center;
+  border-radius:999px;
+  background:#eef7f5;
+  color:var(--teal);
+  padding:8px 12px;
+  font:700 12px/1 Arial,sans-serif;
+}
+.list{
+  display:grid;
+  gap:14px;
+}
+.list-item{
+  padding:18px 20px;
+}
+.list-item strong{
+  display:block;
+  font-size:18px;
+  margin-bottom:6px;
+}
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+button.primary,
+button.secondary,
+.lesson-link{
+  border:none;
+  border-radius:18px;
+  padding:14px 18px;
+  cursor:pointer;
+  font:700 14px/1 Arial,sans-serif;
+  text-decoration:none;
+}
+button.primary{background:linear-gradient(135deg,var(--accent),#d88951);color:#fffaf4}
+button.secondary,.lesson-link{background:var(--nav);color:#f1f6fb}
+.lesson-link{display:inline-flex;align-items:center;justify-content:center}
+.progress-bar{
+  height:10px;
+  border-radius:999px;
+  background:#e7ded0;
+  overflow:hidden;
+}
+.progress-bar span{
+  display:block;
+  height:100%;
+  background:linear-gradient(90deg,var(--teal),#5aa499);
+}
+.timeline-day{
+  display:grid;
+  grid-template-columns:72px 1fr 100px;
+  gap:16px;
+  align-items:center;
+  padding:16px 0;
+  border-top:1px solid var(--line);
+}
+.timeline-day:first-of-type{border-top:none}
+.chip{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:7px 10px;
+  border-radius:999px;
+  background:#f0ece2;
+  color:var(--nav);
+  font:700 12px/1 Arial,sans-serif;
+}
+.search{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:14px 16px;
+  font:400 14px/1 Arial,sans-serif;
+  background:#fff;
+}
+.setting{
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  padding:18px 0;
+  border-top:1px solid var(--line);
+}
+.setting:first-of-type{border-top:none}
+.toggle{
+  width:52px;
+  height:30px;
+  border-radius:999px;
+  background:var(--teal);
+  position:relative;
+  flex-shrink:0;
+}
+.toggle::after{
+  content:"";
+  position:absolute;
+  top:4px;
+  left:26px;
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  background:#fff;
+}
+.question{
+  border-top:1px solid var(--line);
+  padding-top:14px;
+}
+.question:first-of-type{border-top:none;padding-top:0}
+.answer{
+  display:grid;
+  gap:10px;
+  margin-top:10px;
+}
+.answer button{
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:16px;
+  padding:12px 14px;
+  text-align:left;
+  cursor:pointer;
+  font:600 14px/1.4 Arial,sans-serif;
+  color:var(--ink);
+}
+.answer button.correct{
+  border-color:#79a99f;
+  background:#eef7f5;
+}
+.callout{
+  border-left:4px solid var(--gold);
+  padding-left:14px;
+}
+@media (max-width: 900px){
+  .hero-grid,.split,.metric-grid,.cards{grid-template-columns:1fr}
+  .timeline-day{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="header">
+      <div class="header-left">
+        <button class="back" onclick="window.location.href='landing-value-prop.html'">&#8592;</button>
+        <div class="title-wrap">
+          <h1>Course Setup</h1>
+          <p>Onboarding introduces the first topic track and reminder setup.</p>
+        </div>
+      </div>
+      <div class="badge-row">
+        <span class="pill">14-day Decision-Making Course</span>
+        <span class="pill">Under 5 minutes a day</span>
+      </div>
+    </header>
+    <div class="tabs"><button class="active" onclick="window.location.href='home-today.html'">Home</button><button class="" onclick="window.location.href='review-queue.html'">Review Queue</button><button class="" onclick="window.location.href='takeaways-library.html'">Takeaways</button><button class="" onclick="window.location.href='course-progress.html'">Progress</button><button class="" onclick="window.location.href='settings.html'">Settings</button></div>
+    <main>
+      
+    <section class="split">
+      <article class="panel stack">
+        <div class="eyebrow">Welcome to day zero</div>
+        <h2>Decision-Making Foundations</h2>
+        <p class="body-copy">You will spend five minutes a day reading one excerpt, flipping through three key ideas, answering two recall questions, and ending with one reflection prompt.</p>
+        <div class="list">
+          <div class="list-item"><strong>Your goal</strong><p>Remember more of what you read and use one idea the same day.</p></div>
+          <div class="list-item"><strong>Reminder preference</strong><p>Weekday email at 7:30 AM, with review resurfacing in week two.</p></div>
+          <div class="list-item"><strong>Expected effort</strong><p>4-5 minutes daily for fourteen days.</p></div>
+        </div>
+        <div class="actions">
+          <button class="primary" onclick="window.location.href='home-today.html'">Continue into today</button>
+        </div>
+      </article>
+      <article class="cta-card stack">
+        <div class="kicker">What you&apos;ll unlock</div>
+        <span class="tag">14 daily lessons</span>
+        <span class="tag">Saved actions</span>
+        <span class="tag">Review queue</span>
+        <span class="tag">Progress tracking</span>
+      </article>
+    </section>
+    
+    </main>
+  </div>
+</body>
+</html>
