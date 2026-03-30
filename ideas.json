@@ -118,5 +118,15 @@
     "folder": "29-design-swipe-tinder-for-app-de",
     "startScreenId": "1173587dc29e4c959563e317e13c3ba5",
     "status": "complete"
+  },
+  {
+    "num": 30,
+    "title": "Baby Story",
+    "sub": "AI-written milestone stories shared via magic link, printed as keepsake books",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "30-stories-for-baby---stories-for",
+    "startScreenId": "cd5ea2b08dc04887acb9e50fdb6c0c3a",
+    "status": "complete"
   }
 ]

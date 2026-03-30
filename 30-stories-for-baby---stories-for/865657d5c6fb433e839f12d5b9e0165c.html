@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Work+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f5f4ed",
+              "outline-variant": "#b1b3a9",
+              "on-tertiary-fixed-variant": "#69665f",
+              "surface": "#fbf9f4",
+              "tertiary-dim": "#56534c",
+              "error": "#9e422c",
+              "on-primary-fixed-variant": "#645a4f",
+              "on-surface-variant": "#5e6058",
+              "tertiary-container": "#f9f3ea",
+              "primary-fixed-dim": "#e1d2c4",
+              "on-tertiary-container": "#5f5b54",
+              "on-background": "#31332c",
+              "surface-dim": "#d9dbcf",
+              "surface-variant": "#e2e3d9",
+              "surface-container-lowest": "#ffffff",
+              "error-container": "#fe8b70",
+              "surface-tint": "#675d51",
+              "inverse-on-surface": "#9e9d99",
+              "secondary-dim": "#62503a",
+              "primary": "#675d51",
+              "on-secondary-fixed-variant": "#6b5841",
+              "secondary-fixed-dim": "#ead0b3",
+              "primary-container": "#efe0d2",
+              "on-error": "#fff7f6",
+              "surface-container-high": "#e8e9e0",
+              "on-error-container": "#742410",
+              "on-surface": "#31332c",
+              "secondary-fixed": "#f8dec1",
+              "error-dim": "#5c1202",
+              "surface-bright": "#fbf9f4",
+              "secondary": "#6f5c45",
+              "outline": "#797c73",
+              "on-secondary-container": "#614f38",
+              "surface-container": "#efeee6",
+              "on-primary": "#fff6f0",
+              "inverse-primary": "#feeedf",
+              "on-secondary": "#fff7f3",
+              "primary-dim": "#5b5146",
+              "surface-container-highest": "#e2e3d9",
+              "on-secondary-fixed": "#4d3c27",
+              "on-tertiary": "#fef8ef",
+              "on-primary-fixed": "#473e34",
+              "inverse-surface": "#0e0e0c",
+              "tertiary-fixed-dim": "#ebe4db",
+              "secondary-container": "#f8dec1",
+              "on-primary-container": "#5a5045",
+              "tertiary": "#625f58",
+              "background": "#fbf9f4",
+              "on-tertiary-fixed": "#4c4943",
+              "tertiary-fixed": "#f9f3ea",
+              "primary-fixed": "#efe0d2"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif", "serif"],
+              "body": ["Work Sans", "sans-serif"],
+              "label": ["Work Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .editorial-gradient {
+            background: linear-gradient(45deg, #efe0d2 0%, #fbf9f4 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container">
+<!-- Hero Section: Full Width Image -->
+<header class="w-full min-h-[618px] relative flex flex-col items-center justify-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Candid high-end photography of a baby girl in cream linen clothes taking her first wobbly steps on a soft textured rug in a sun-drenched minimalist living room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdbpo2jlrQLIFIZoC09F0v5G6dEek8KjmgNV2XfPuKPf6s9hUMthHq0ut0yiZamUyIaKAq1nVhQTyOabY4Cx2DIR2Xt6etJtGGZooTSx9aJegG4hAhuEGLbLaw7sdQdW2D_SU1b3yl41qhNvfmT4Ccwzjj9etLRc3Yeu7zqzFw6xnsWjPtyeZxTIa3Q0Q7gaP-puxMczm06guzKZqSbpVkFMPOsQtb9VHztbg6JT7t-TDjDwirQaUSvMRxrH91UGzJloSh6O27nbe-"/>
+<!-- Subtle Vignette for readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+</div>
+<!-- Header Text -->
+<div class="relative z-10 w-full max-w-4xl px-8 pb-20 text-center md:text-left">
+<span class="font-headline italic text-primary text-lg mb-4 block">A Chapter Unfolds</span>
+<h1 class="font-headline text-5xl md:text-7xl text-on-surface tracking-tight leading-tight">
+                Olivia's First Steps
+            </h1>
+<p class="font-label text-on-surface-variant uppercase tracking-widest mt-6 text-sm">
+                March 28, 2026
+            </p>
+</div>
+</header>
+<!-- Narrative Content Section -->
+<main class="w-full max-w-5xl mx-auto px-8 py-24 md:py-32">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<!-- Left Side: Asymmetrical Detail Image -->
+<div class="md:col-span-5 order-2 md:order-1 mt-12 md:mt-0">
+<div class="bg-surface-container-lowest p-5 shadow-sm rounded-none">
+<img class="w-full aspect-[4/5] object-cover" data-alt="Close up of a baby's tiny bare feet on a warm wooden floor, soft morning light casting gentle shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHAmeq0lMagXeAWDOhTa8lYTHKCd4KTKNZRyXDvHW0VP5q7R6SCASsAoXqx6MZxvYUdd_oYkrFoiRgRFdXSRgUvSGm-OIsHGmz54lhB8IRAaSM2oKDl-UIa46zBZvulcV-U2PiBXdLpDiW3eryeSq4loXXVUeNnU6NJcwHndC7QIcpEpnKz1Ug55-y4mbOngKd5ID0nfC9GqImtYZsQFmTIzBNIwr6OI_fS6bn8xonUmZv-sLKIm8Tm0EzywmCF6luxY5qu1AfZxeH"/>
+<p class="font-label italic text-on-surface-variant text-xs mt-4 text-center">The first of many journeys.</p>
+</div>
+</div>
+<!-- Right Side: The Narrative Text -->
+<div class="md:col-span-7 order-1 md:order-2 space-y-12">
+<div class="prose prose-stone lg:prose-xl">
+<p class="font-headline text-2xl md:text-3xl leading-relaxed text-on-surface mb-8 italic">
+                        "The world suddenly became much wider today. One small wobble, a breathless pause, and then—the breakthrough."
+                    </p>
+<div class="space-y-8 font-headline text-lg leading-loose text-on-surface-variant font-light">
+<p>
+                            It happened in the quiet pocket of a Tuesday afternoon, as the sun streaked across the linen rug. Olivia, usually content with her rhythmic crawl, reached for the edge of the velvet armchair. But instead of pulling herself up to stay, she let go.
+                        </p>
+<p>
+                            There is a specific kind of silence that falls when a child realizes they are untethered. It was only three steps—clumsy, beautiful, and heavy with the weight of independence—but they were the most monumental steps we have ever witnessed.
+                        </p>
+<div class="py-8">
+<span class="block h-px w-24 bg-primary-fixed-dim"></span>
+</div>
+<p>
+                            She looked back at us, not with fear, but with a wide-eyed grin that seemed to say she finally understood what her feet were for. The heirloom quilt was forgotten; the entire room was now her domain.
+                        </p>
+</div>
+</div>
+<!-- Pull Quote Component -->
+<blockquote class="border-l-2 border-primary-fixed-dim pl-8 py-4">
+<p class="font-headline text-3xl text-primary leading-snug">
+                        Every great adventure begins with a single, trembling step toward the unknown.
+                    </p>
+</blockquote>
+</div>
+</div>
+</main>
+<!-- Tonal Shift Section for Secondary Imagery -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-6xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/2">
+<img class="w-full aspect-video object-cover grayscale opacity-80" data-alt="Blurred background of a happy mother reaching out for her child, warm domestic atmosphere, soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcwirGj48YWuqQRDCx_qpxCWgV9rq8kLLPOEoDwrMXuh3nxLXiM6u3LYVv5vfM7ZkoC2o8uvUwAYgZ4ZbP0TXyfAZ9cdssafuINJ5TzSac_x9EeotBGO6HO7HIDE-IX2Ao1FBKegBs8qH52M2R911E1bUS66gwzVzRJSihGr84_-UNPk3uq6325xEdCYzoyEkZHM_ZubFJLxR4MFo4-uxkwu7Ps7jwDfwWGrKKpDt-475nlHzxisBWgvh-DDsKm2rf4M5C4u2Gt1oG"/>
+</div>
+<div class="w-full md:w-1/2 space-y-6">
+<h2 class="font-headline text-3xl text-on-surface">A Mother's Perspective</h2>
+<p class="font-headline text-lg text-on-surface-variant font-light leading-relaxed">
+                        I remember thinking how small she looked against the vastness of the hallway, yet how immense the moment felt. We are no longer just keeping her safe; we are now keeping up with her.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Shared Component: Footer -->
+<footer class="bg-[#fbf9f4] dark:bg-stone-950 text-[#675d51] dark:text-stone-400 full-width py-20 mt-24 flex flex-col items-center justify-center space-y-8 w-full text-center">
+<!-- Branding -->
+<div class="space-y-2">
+<div class="flex items-center justify-center space-x-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 0;">auto_stories</span>
+<span class="text-lg font-serif text-[#675d51] dark:text-stone-200 italic">The Digital Heirloom</span>
+</div>
+<p class="text-base font-light Work Sans">Made with Baby Story</p>
+</div>
+<!-- Call to Action -->
+<div class="pt-4">
+<a class="font-serif italic underline decoration-[#675d51]/30 underline-offset-4 text-xl hover:opacity-80 transition-all duration-500" onclick="window.location.href='915622ae4a774a609b65f00108bfdff1.html'">
+                Capture your baby's story →
+            </a>
+</div>
+<!-- Subtle Copyright -->
+<div class="pt-12 opacity-40">
+<p class="text-xs uppercase tracking-[0.2em] font-label">© 2026 The Digital Heirloom Archive</p>
+</div>
+</footer>
+</body></html>

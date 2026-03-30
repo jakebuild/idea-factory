@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta name="viewport" content="width=390, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Heirloom | Parent Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-high": "#e8e9e0",
+                        "secondary-container": "#f8dec1",
+                        "on-surface": "#31332c",
+                        "surface-bright": "#fbf9f4",
+                        "surface-container": "#efeee6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#4d3c27",
+                        "on-primary": "#fff6f0",
+                        "tertiary-container": "#f9f3ea",
+                        "on-tertiary-fixed-variant": "#69665f",
+                        "on-error": "#fff7f6",
+                        "primary-container": "#efe0d2",
+                        "secondary-fixed-dim": "#ead0b3",
+                        "surface-dim": "#d9dbcf",
+                        "outline-variant": "#b1b3a9",
+                        "on-secondary-fixed-variant": "#6b5841",
+                        "surface-variant": "#e2e3d9",
+                        "on-error-container": "#742410",
+                        "primary-dim": "#5b5146",
+                        "on-secondary-container": "#614f38",
+                        "tertiary-fixed-dim": "#ebe4db",
+                        "outline": "#797c73",
+                        "on-secondary": "#fff7f3",
+                        "error": "#9e422c",
+                        "on-surface-variant": "#5e6058",
+                        "on-tertiary-fixed": "#4c4943",
+                        "tertiary-dim": "#56534c",
+                        "surface-container-highest": "#e2e3d9",
+                        "inverse-primary": "#feeedf",
+                        "inverse-surface": "#0e0e0c",
+                        "secondary-dim": "#62503a",
+                        "tertiary": "#625f58",
+                        "on-primary-fixed-variant": "#645a4f",
+                        "on-primary-container": "#5a5045",
+                        "error-dim": "#5c1202",
+                        "on-tertiary-container": "#5f5b54",
+                        "surface-container-low": "#f5f4ed",
+                        "surface": "#fbf9f4",
+                        "primary": "#675d51",
+                        "error-container": "#fe8b70",
+                        "background": "#fbf9f4",
+                        "inverse-on-surface": "#9e9d99",
+                        "primary-fixed-dim": "#e1d2c4",
+                        "surface-tint": "#675d51",
+                        "secondary": "#6f5c45",
+                        "on-background": "#31332c",
+                        "on-tertiary": "#fef8ef",
+                        "secondary-fixed": "#f8dec1",
+                        "primary-fixed": "#efe0d2",
+                        "on-primary-fixed": "#473e34",
+                        "tertiary-fixed": "#f9f3ea"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Work Sans"],
+                        "label": ["Work Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #fbf9f4;
+            color: #31332c;
+            -webkit-font-smoothing: antialiased;
+        }
+        .editorial-shadow {
+            box-shadow: 0 10px 40px rgba(49, 51, 44, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf9f4]/80 dark:bg-stone-900/80 backdrop-blur-xl flex items-center justify-between px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/20">
+<img class="w-full h-full object-cover" data-alt="Soft focused portrait of a young mother with a gentle expression in warm natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdiP_0n-fIawu5AYVZLmQ8lxWLQTDB6BcIl2UDPYKwdbmeVihWiei76OeFYbTuhA-pRAbIZdw7ZUNZqedCYLbg7c3ScOS-k2noZiw_82UXaLrVuqw7s1QJYGGLem4lFadDyCNisM1T1VpTt_7T4bBhtXhmkYpuWtocl2qm_gZv4zN1W44bqWn2m74At_Ok1VbE9GTJikdzZUQXh19Wfpz38JmYFJk4UO35QR5xYRuCfynEW-bTSfMLAKFQ_zNu40m32BN2OPrJcQgB"/>
+</div>
+<span class="font-serif italic text-2xl text-[#675d51] dark:text-stone-200">The Heirloom</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#675d51] dark:text-stone-400 hover:opacity-80 transition-opacity duration-300">
+<span class="material-symbols-outlined" data-icon="history_edu">history_edu</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-6xl mx-auto">
+<!-- Child Selector Tabs -->
+<nav class="flex items-center gap-8 mb-12 border-b border-outline-variant/10">
+<button class="pb-4 px-2 text-[#675d51] dark:text-white border-b-2 border-[#675d51] font-headline font-bold text-lg transition-all">
+                Olivia
+            </button>
+<button class="pb-4 px-2 text-stone-400 dark:text-stone-500 font-headline font-medium text-lg hover:text-primary transition-colors">
+                Liam
+            </button>
+</nav>
+<!-- Stories Grid for Olivia -->
+<section class="mb-20">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h2 class="font-headline text-3xl font-bold text-on-surface tracking-tight">Olivia's Journey</h2>
+<p class="font-body text-on-surface-variant mt-1 italic">Capturing the small wonders, one day at a time.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Milestone Card 1 -->
+<article class="bg-surface-container-lowest p-5 editorial-shadow group">
+<div class="aspect-[4/5] overflow-hidden mb-5 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a baby's tiny hand grasping a parent's finger, soft morning light through a window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPCT5vq5yCftpL2-0GpilhHf8ZMaABIhwPzopdwwpcxJR1idR-2-b-hWAicLd6xYPOwWqxTR6zGFKnZFnqZP-VyTVBgg-1_EeWQD2PFZ_MMA26cWUhTvzb5S44Yfd88pIUUJHSp3vGjYS8p4h1aFFBEoassJni3l8RC9w81PbIjuAf18YVsXG39jBTIeUrbh_EjK_jFyf53kkkl3wk0DzHFQxFkJY_q9m5sudlUKolzxPPZfe0PDK77yMjM9C_vMni5tseIgfW4_zp"/>
+<div class="absolute top-4 right-4 flex items-center gap-2 bg-surface-container-lowest/90 px-3 py-1.5 backdrop-blur-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface">Link Active</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">First Steps</h3>
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-widest">October 14, 2023</p>
+</div>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed line-clamp-2">A wobbly step across the living room rug that changed everything. The look of pure joy on her face...</p>
+<div class="pt-4 flex justify-between items-center border-t border-outline-variant/10">
+<button onclick="window.location.href='a43b9674454845b7b2957f7f24c0833b.html'" class="bg-primary text-on-primary px-6 py-2.5 text-sm font-medium hover:opacity-90 transition-opacity">
+                                Share
+                            </button>
+<button class="text-primary font-headline italic text-sm underline underline-offset-4 decoration-primary-fixed-dim">
+                                View Story
+                            </button>
+</div>
+</div>
+</article>
+<!-- Milestone Card 2 -->
+<article class="bg-surface-container-lowest p-5 editorial-shadow group">
+<div class="aspect-[4/5] overflow-hidden mb-5 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A baby laughing joyfully while sitting on a soft white linen blanket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_l1bhnoIOdt-B_SkoIg-ft0SzC9IYhCn0bXxclnxIVs3prS5yP-RoYa0iQTwE9IrA3yY2LNanHA5vQpr6OcnfGSy71ibTgJPrz6fOtlIgMpnTVXKN4o-Ocgzy0BDxZDesBrRBOeKT1NM5BUxB6ODrhHjgdHNaMoE7jpPDmCfIHB6pSHEHD5CDP6qOHf3z8jH5ZiG7MZrehhw6ctFBKL5VaLwixxkqcXFwlQIw0krnXCEITc5h8mh7O9Cvx2hvlrKb0XWirrEVp6Np"/>
+<div class="absolute top-4 right-4 flex items-center gap-2 bg-surface-container-lowest/90 px-3 py-1.5 backdrop-blur-sm">
+<span class="w-2 h-2 rounded-full bg-stone-300"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface">Private</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">First Smile</h3>
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-widest">August 22, 2023</p>
+</div>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed line-clamp-2">Morning cuddles turned into the most beautiful gummy smile we've ever seen. Pure magic.</p>
+<div class="pt-4 flex justify-between items-center border-t border-outline-variant/10">
+<button onclick="window.location.href='a43b9674454845b7b2957f7f24c0833b.html'" class="bg-primary text-on-primary px-6 py-2.5 text-sm font-medium hover:opacity-90 transition-opacity">
+                                Share
+                            </button>
+<button class="text-primary font-headline italic text-sm underline underline-offset-4 decoration-primary-fixed-dim">
+                                View Story
+                            </button>
+</div>
+</div>
+</article>
+<!-- Milestone Card 3 -->
+<article class="bg-surface-container-lowest p-5 editorial-shadow group">
+<div class="aspect-[4/5] overflow-hidden mb-5 relative">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A small child sitting up unsupported on a textured rug in a sun-drenched nursery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFRxDOX9uTUYUkhs3XgGN8fnvrXP4O6bKYwK8R8dW7mTRY_JA1pJd8gL7ETbWDrN-tE_4l32fa1GFpIy90VgkJMcEqVn2dtl8DsScLJGR2Ku9hlfpNSLPzEt8aUBCJn_XE-Xn8EIEfuYu4Mi05n9xSdb-Amw3fIR_aYD634oB-X0Hno_gy3gqszzI9ImOZsBdd28s4S31M75-8FR8kQ1xFKzajpaYjXxFVv_slldBGi5RxwpDWaJQHckibulrJTu6_SsrjUrzWj6ET"/>
+<div class="absolute top-4 right-4 flex items-center gap-2 bg-surface-container-lowest/90 px-3 py-1.5 backdrop-blur-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface">Link Active</span>
+</div>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Sitting Up</h3>
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-widest">September 05, 2023</p>
+</div>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed line-clamp-2">Finally mastering the art of balance. She's seeing the world from a whole new perspective now.</p>
+<div class="pt-4 flex justify-between items-center border-t border-outline-variant/10">
+<button onclick="window.location.href='a43b9674454845b7b2957f7f24c0833b.html'" class="bg-primary text-on-primary px-6 py-2.5 text-sm font-medium hover:opacity-90 transition-opacity">
+                                Share
+                            </button>
+<button class="text-primary font-headline italic text-sm underline underline-offset-4 decoration-primary-fixed-dim">
+                                View Story
+                            </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Print Book CTA Banner -->
+<section class="mt-24 mb-16 relative overflow-hidden bg-primary-container p-12 md:p-20 flex flex-col md:flex-row items-center gap-12 group">
+<div class="relative z-10 flex-1 space-y-6">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-on-primary-fixed-variant">Limited Edition</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-primary-container leading-tight">Create Your <br/>Print Book</h2>
+<p class="font-body text-lg text-on-primary-container/80 max-w-md leading-relaxed">
+                    Turn your digital memories into a stunning, linen-bound heirloom that lasts for generations.
+                </p>
+<button class="bg-primary text-on-primary px-10 py-4 font-medium text-lg hover:opacity-90 transition-all editorial-shadow">
+                    Start Your Collection
+                </button>
+</div>
+<div class="relative z-10 flex-1">
+<div class="bg-surface-container-lowest p-4 shadow-2xl rotate-3 transition-transform group-hover:rotate-0 duration-700">
+<img class="w-full aspect-square object-cover" data-alt="A luxury linen-bound photo album lying open on a wooden table with high quality prints" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk67a3I27rK9SeFLY1C2xwCmjPlMk5m3wbYnVGc8NaKUOfDEbNSlcnXF6dCP9Dor-h7VA9cR_pou8bX88YTzP0ss8eSdKr3-qg7TXTupC68it3aFK1Sfzu3GEPvdVyArzpLB5-pPILr_MOT_7nccHFnmDp7WbqEjd54pekuXvXpUMfdMWIOZ8udVuvwB0ulCNSKTrhJLrE_xyH2C3zaGvCHGsJp-hk9WcQ57q293HDKezxxtYxMLJOCHaJ_uOLFXIVzEHCmXLrQRGz"/>
+</div>
+</div>
+<!-- Decorative background element -->
+<div class="absolute -bottom-20 -right-20 w-80 h-80 bg-secondary-fixed-dim/30 rounded-full blur-3xl"></div>
+</section>
+<!-- Liam Placeholder (Design Variant / Hidden State Prompt) -->
+<section class="mt-24 border-t border-outline-variant/10 pt-20 text-center">
+<div class="max-w-md mx-auto py-20 px-6 bg-surface-container-low/50">
+<div class="mb-6 flex justify-center">
+<span class="material-symbols-outlined text-stone-300 text-6xl" style="font-variation-settings: 'wght' 100;">child_care</span>
+</div>
+<h3 class="font-headline text-2xl text-on-surface mb-3">Liam's Story Awaits</h3>
+<p class="font-body text-on-surface-variant mb-8 leading-relaxed">Every milestone is a legacy in the making. Add your first memory for Liam today.</p>
+<button class="font-headline italic text-primary underline underline-offset-8 decoration-primary-fixed-dim hover:text-primary-dim transition-colors text-lg">
+                    Add your first milestone — it takes 2 minutes
+                </button>
+</div>
+</section>
+</main>
+<!-- FAB -->
+<button onclick="window.location.href='19877befd3de417694e9c54b29932205.html'" class="fixed bottom-28 right-8 w-16 h-16 bg-primary text-on-primary flex items-center justify-center editorial-shadow hover:scale-105 active:scale-95 transition-all z-40 group">
+<span class="material-symbols-outlined text-3xl group-hover:rotate-90 transition-transform duration-500" data-icon="add">add</span>
+</button>
+
+
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-[#fbf9f4]/90 backdrop-blur-2xl z-50 border-t border-stone-200/20 shadow-[0_-10px_40px_rgba(49,51,44,0.05)]">
+<a class="flex flex-col items-center justify-center text-[#675d51] font-bold scale-105" onclick="window.location.href='cd5ea2b08dc04887acb9e50fdb6c0c3a.html'">
+<span class="material-symbols-outlined mb-1" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-serif text-[10px] uppercase tracking-widest">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-[#675d51] transition-colors duration-500" onclick="window.location.href='19877befd3de417694e9c54b29932205.html'">
+<span class="material-symbols-outlined mb-1" data-icon="auto_stories">auto_stories</span>
+<span class="font-serif text-[10px] uppercase tracking-widest">Stories</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-[#675d51] transition-colors duration-500" onclick="window.location.href='f4d20710c69c4755a6dfcf692edb54e4.html'">
+<span class="material-symbols-outlined mb-1" data-icon="menu_book">menu_book</span>
+<span class="font-serif text-[10px] uppercase tracking-widest">Book</span>
+</a>
+<a class="flex flex-col items-center justify-center text-stone-400 hover:text-[#675d51] transition-colors duration-500" onclick="window.location.href='8ba4acc6f01442d4ad0764fa3c6bf49a.html'">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="font-serif text-[10px] uppercase tracking-widest">Settings</span>
+</a>
+</nav>
+</body></html>
