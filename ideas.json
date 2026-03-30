@@ -42,7 +42,7 @@
   {
     "num": 22,
     "title": "AI Portrait Weekly",
-    "sub": "Weekly selfie → AI painting → grow your portrait journal over time",
+    "sub": "Weekly selfie \u2192 AI painting \u2192 grow your portrait journal over time",
     "score": "7/10",
     "deviceType": "MOBILE",
     "folder": "22-ai-portrait-an-app-that-paints",
@@ -55,7 +55,7 @@
     "sub": "Turns your weekly movement into a personal star map",
     "score": "7/10",
     "deviceType": "MOBILE",
-    "folder": "23-life-constellation-—-turns-you",
+    "folder": "23-life-constellation-\u2014-turns-you",
     "startScreenId": "e5b8363685554944b246be9f5cc4b920",
     "status": "complete"
   },
@@ -65,7 +65,7 @@
     "sub": "Your Google Calendar week, turned into a geometric art poster",
     "score": "8/10",
     "deviceType": "MOBILE",
-    "folder": "24-weekprint-—-pulls-your-apple",
+    "folder": "24-weekprint-\u2014-pulls-your-apple",
     "startScreenId": "3d76bb0c46454080b765e8f7d6c17558",
     "status": "complete"
   },
@@ -92,7 +92,7 @@
   {
     "num": 27,
     "title": "Future Face AI",
-    "sub": "Upload a photo, see yourself decades from now — pay $1.99 to download",
+    "sub": "Upload a photo, see yourself decades from now \u2014 pay $1.99 to download",
     "score": "7/10",
     "deviceType": "WEB",
     "folder": "27-future-face-ai-app-that-genera",
@@ -102,7 +102,7 @@
   {
     "num": 28,
     "title": "Idea Swipe",
-    "sub": "Keyboard-driven web app to build your personal idea backlog — swipe to keep, drop, or maybe",
+    "sub": "Keyboard-driven web app to build your personal idea backlog \u2014 swipe to keep, drop, or maybe",
     "score": "8/10",
     "deviceType": "WEB",
     "folder": "28-idea-swipe-tinder-for-ideas---",
@@ -112,7 +112,7 @@
   {
     "num": 29,
     "title": "Design Swipe",
-    "sub": "Tinder for app designs — swipe to BUILD or DROP your inspiration queue",
+    "sub": "Tinder for app designs \u2014 swipe to BUILD or DROP your inspiration queue",
     "score": "8/10",
     "deviceType": "MOBILE",
     "folder": "29-design-swipe-tinder-for-app-de",
@@ -137,6 +137,16 @@
     "deviceType": "WEB",
     "folder": "31-duolingo-for-reading---book-su",
     "startScreenId": "landing-value-prop",
+    "status": "complete"
+  },
+  {
+    "num": 32,
+    "title": "Walk City",
+    "sub": "Every day you walk grows a collectible city that shifts with your movement and time of day.",
+    "score": "?/10",
+    "deviceType": "MOBILE",
+    "folder": "32-walk-city---your-steps-build-a",
+    "startScreenId": "1dd2553d3dc34179836e41c3bb9a8c65",
     "status": "complete"
   }
 ]

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-surface": "#e5e1e7",
+              "on-primary-fixed": "#291800",
+              "outline-variant": "#4a4452",
+              "tertiary-fixed-dim": "#ffb59e",
+              "secondary-fixed": "#ebdcff",
+              "outline": "#968e9d",
+              "primary-container": "#4f3100",
+              "on-secondary": "#3f0f81",
+              "on-secondary-fixed-variant": "#572e99",
+              "on-tertiary-fixed": "#3a0b00",
+              "inverse-primary": "#835500",
+              "surface-container-lowest": "#0e0e11",
+              "surface-tint": "#ffb954",
+              "on-surface": "#e5e1e7",
+              "on-tertiary-container": "#f3805c",
+              "on-error": "#690005",
+              "background": "#141317",
+              "error": "#ffb4ab",
+              "on-secondary-container": "#c6a5ff",
+              "surface-variant": "#353438",
+              "primary-fixed": "#ffddb4",
+              "tertiary-container": "#6a1b00",
+              "surface-container-high": "#2b292d",
+              "on-tertiary": "#5e1700",
+              "surface": "#141317",
+              "on-tertiary-fixed-variant": "#7f2a0d",
+              "surface-dim": "#141317",
+              "on-error-container": "#ffdad6",
+              "secondary-fixed-dim": "#d4bbff",
+              "primary": "#ffb954",
+              "on-surface-variant": "#cdc3d4",
+              "on-primary": "#452b00",
+              "surface-container-highest": "#353438",
+              "inverse-on-surface": "#313034",
+              "secondary-container": "#572e99",
+              "error-container": "#93000a",
+              "surface-bright": "#3a383d",
+              "tertiary-fixed": "#ffdbd0",
+              "primary-fixed-dim": "#ffb954",
+              "surface-container-low": "#1c1b1f",
+              "surface-container": "#201f23",
+              "secondary": "#d4bbff",
+              "on-primary-container": "#d5932b",
+              "on-secondary-fixed": "#260058",
+              "on-background": "#e5e1e7",
+              "tertiary": "#ffb59e",
+              "on-primary-fixed-variant": "#633f00"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #141317;
+            color: #e5e1e7;
+            font-family: 'Manrope', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(20, 19, 23, 0) 0%, rgba(20, 19, 23, 1) 100%);
+        }
+        .cta-gradient {
+            background: linear-gradient(135deg, #ffb954 0%, #4f3100 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-32 selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-[#141317]/95 backdrop-blur-xl border-b border-white/5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#ffb954]">wb_twilight</span>
+<h1 class="font-['Plus_Jakarta_Sans'] text-xl font-bold tracking-tight text-[#ffb954]">Walk City</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest/80 text-on-surface-variant">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</header>
+<main class="relative">
+<!-- Hero Section: City Skyline -->
+<section class="relative h-[530px] w-full overflow-hidden">
+<img alt="City Skyline" class="absolute inset-0 w-full h-full object-cover" data-alt="cinematic city skyline at dusk with warm golden hour lighting, soft orange and purple clouds, and glowing street lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbqcysU5mmfYTiUZxRMHOqJhIf8GCfd_W16dx2xubtJqzMb_UusqcwW9NeyKLhoq5xIjlWOCJMVLRMUtq3R7UyVEmGri3x_9xJPqCF0rlkS14e9FXhUn-zBtehPVLFr5103GjR5a2IbrqxnmcG02H96ncjiAivhzruzSXvMAKVc-Luem0dO5kptNG-iSEvZMg9q7k3z-PAJR0diqmilL7SDsixT2Ibd9ms6b57eD0R5CEuDM_QX0py4IW4dk2ps5p6bXdBFJOFAdJo"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<!-- Asymmetric Hero Content -->
+<div class="absolute bottom-8 left-6 right-6">
+<div class="flex justify-between items-end">
+<div class="space-y-1">
+<span class="font-label text-primary font-bold tracking-widest text-xs uppercase">Today's Milestone</span>
+<h2 class="font-headline text-5xl font-extrabold text-on-surface leading-none">The Neon District</h2>
+</div>
+<div class="text-right">
+<p class="font-label text-zinc-400 text-xs">Streak</p>
+<p class="font-headline text-3xl font-bold text-tertiary">12 Days</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats & Content Canvas -->
+<div class="px-6 -mt-4 relative z-10 space-y-10">
+<!-- Bento Grid Stats -->
+<div class="grid grid-cols-12 gap-4">
+<!-- Step Count Card -->
+<div class="col-span-12 md:col-span-7 bg-surface-container rounded-xl p-6 flex flex-col justify-between min-h-[180px]">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-3xl">directions_walk</span>
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-tighter">Active Now</span>
+</div>
+<div>
+<p class="font-headline text-6xl font-extrabold text-on-surface tracking-tighter">8,432</p>
+<p class="font-label text-zinc-400 text-sm mt-1">Steps walked today</p>
+</div>
+</div>
+<!-- Growth Meter Card -->
+<div class="col-span-12 md:col-span-5 bg-surface-container rounded-xl p-6">
+<p class="font-label text-zinc-400 text-xs uppercase tracking-widest mb-4">City Evolution</p>
+<div class="relative pt-2">
+<div class="flex justify-between mb-2 items-end">
+<span class="text-xs font-bold text-on-surface">Town</span>
+<span class="text-xs font-bold text-primary">Metropolis</span>
+</div>
+<div class="h-3 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full w-[72%] shadow-[0_0_12px_rgba(255,185,84,0.4)]"></div>
+</div>
+<p class="text-[10px] text-zinc-500 mt-3 leading-relaxed">72% to becoming a sprawling urban metropolis. Keep moving to unlock skyscrapers.</p>
+</div>
+</div>
+</div>
+<!-- Focus Actions -->
+<div class="space-y-4">
+<button class="w-full cta-gradient h-16 rounded-xl flex items-center justify-center gap-3 active:scale-[0.96] transition-transform shadow-lg shadow-primary/10" onclick="window.location.href='e4d7e7e39356455aa932911851b3d9ec.html'">
+<span class="material-symbols-outlined text-on-primary">nightlight</span>
+<span class="font-headline font-bold text-on-primary text-lg">Revisit Tonight's City</span>
+</button>
+<button class="w-full bg-secondary-container h-14 rounded-full flex items-center justify-center gap-2 active:scale-[0.96] transition-transform" onclick="window.location.href='e4d7e7e39356455aa932911851b3d9ec.html'">
+<span class="material-symbols-outlined text-on-secondary-container text-xl">history_edu</span>
+<span class="font-label font-bold text-on-secondary-container">Daily Archive</span>
+</button>
+</div>
+<!-- Informational/Warning Card -->
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10 relative overflow-hidden">
+<div class="absolute -right-4 -top-4 opacity-10">
+<span class="material-symbols-outlined text-8xl" style="font-variation-settings: 'FILL' 1;">bedtime</span>
+</div>
+<div class="flex gap-4 items-start relative z-10">
+<div class="bg-tertiary/10 p-3 rounded-lg">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">info</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface mb-1">Architect's Note</h4>
+<p class="font-body text-zinc-400 text-sm leading-relaxed">Missing a day makes the city sleep. Inactive days lead to dimmed lights and halted construction. Maintain your streak to see the skyline glow.</p>
+</div>
+</div>
+</div>
+<!-- Secondary Decorative Section (The Progress Ring) -->
+<div class="flex flex-col items-center py-8">
+<div class="relative w-48 h-48 flex items-center justify-center">
+<!-- SVG Progress Ring -->
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-tertiary/10" cx="96" cy="96" fill="transparent" r="80" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-primary" cx="96" cy="96" fill="transparent" r="80" stroke="currentColor" stroke-dasharray="502.4" stroke-dashoffset="150" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-headline text-3xl font-black text-on-surface">70%</span>
+<span class="font-label text-[10px] uppercase text-zinc-500 tracking-tighter">Daily Goal</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#0e0e11]/88 backdrop-blur-xl shadow-[0_-24px_48px_rgba(0,0,0,0.35)] rounded-t-[1.75rem]">
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#ffb954] to-[#4f3100] text-[#452b00] rounded-2xl px-5 py-2 scale-105 shadow-[0_0_18px_rgba(255,185,84,0.22)] transition-all active:scale-95 duration-200" href="1dd2553d3dc34179836e41c3bb9a8c65.html" onclick="window.location.href='1dd2553d3dc34179836e41c3bb9a8c65.html'">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_city</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-1">City</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e5e1e7]/60 px-5 py-2 hover:text-[#ffb954] transition-all active:scale-95 duration-200" href="e4d7e7e39356455aa932911851b3d9ec.html" onclick="window.location.href='e4d7e7e39356455aa932911851b3d9ec.html'">
+<span class="material-symbols-outlined">inventory_2</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-1">Archive</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e5e1e7]/60 px-5 py-2 hover:text-[#ffb954] transition-all active:scale-95 duration-200" href="db393f1b7dcf46fdab17254977fe8bc2.html" onclick="window.location.href='db393f1b7dcf46fdab17254977fe8bc2.html'">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-1">Settings</span>
+</a>
+</nav>
+</body></html>

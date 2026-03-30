@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=390, initial-scale=1.0"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#4f3100",
+                        "secondary-container": "#572e99",
+                        "on-tertiary-fixed-variant": "#7f2a0d",
+                        "on-secondary": "#3f0f81",
+                        "surface-container-lowest": "#0e0e11",
+                        "inverse-on-surface": "#313034",
+                        "outline": "#968e9d",
+                        "on-surface": "#e5e1e7",
+                        "surface-container-highest": "#353438",
+                        "primary": "#ffb954",
+                        "surface-variant": "#353438",
+                        "on-error": "#690005",
+                        "tertiary-fixed": "#ffdbd0",
+                        "tertiary": "#ffb59e",
+                        "tertiary-fixed-dim": "#ffb59e",
+                        "surface-tint": "#ffb954",
+                        "surface-dim": "#141317",
+                        "on-tertiary-fixed": "#3a0b00",
+                        "secondary": "#d4bbff",
+                        "on-secondary-fixed": "#260058",
+                        "surface-container-low": "#1c1b1f",
+                        "on-tertiary": "#5e1700",
+                        "on-background": "#e5e1e7",
+                        "on-secondary-fixed-variant": "#572e99",
+                        "on-error-container": "#ffdad6",
+                        "error": "#ffb4ab",
+                        "surface-bright": "#3a383d",
+                        "on-primary-container": "#d5932b",
+                        "primary-fixed": "#ffddb4",
+                        "inverse-surface": "#e5e1e7",
+                        "tertiary-container": "#6a1b00",
+                        "on-primary-fixed-variant": "#633f00",
+                        "on-primary-fixed": "#291800",
+                        "surface": "#141317",
+                        "background": "#141317",
+                        "surface-container-high": "#2b292d",
+                        "on-surface-variant": "#cdc3d4",
+                        "surface-container": "#201f23",
+                        "secondary-fixed-dim": "#d4bbff",
+                        "on-secondary-container": "#c6a5ff",
+                        "primary-fixed-dim": "#ffb954",
+                        "outline-variant": "#4a4452",
+                        "secondary-fixed": "#ebdcff",
+                        "error-container": "#93000a",
+                        "inverse-primary": "#835500",
+                        "on-primary": "#452b00",
+                        "on-tertiary-container": "#f3805c"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e11;
+            color: #e5e1e7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-[#141317]/95 backdrop-blur-xl border-b border-white/5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#ffb954]">history</span>
+<h1 class="font-['Plus_Jakarta_Sans'] text-xl font-bold tracking-tight text-[#ffb954]">Daily Archive</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-highest/80 text-on-surface-variant">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</header>
+<main class="pb-32">
+<!-- Filter Bar -->
+<section class="mt-4 px-6">
+<div class="flex gap-3 overflow-x-auto hide-scrollbar py-2">
+<!-- All (Active state example) -->
+<button class="flex-shrink-0 px-6 py-2 rounded-full bg-primary text-on-primary font-label font-bold text-sm transition-all shadow-[0_4px_20px_rgba(255,185,84,0.2)]">
+                    All
+                </button>
+<button class="flex-shrink-0 px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label font-medium text-sm hover:bg-surface-bright transition-all">
+                    Active
+                </button>
+<button class="flex-shrink-0 px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label font-medium text-sm hover:bg-surface-bright transition-all">
+                    Sleeping
+                </button>
+<button class="flex-shrink-0 px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label font-medium text-sm hover:bg-surface-bright transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+                    Favorite
+                </button>
+</div>
+</section>
+<!-- Archive List -->
+<section class="mt-8 px-6 space-y-6">
+<!-- Daily Card 1: Dusk -->
+<div class="group relative overflow-hidden rounded-3xl bg-surface-container transition-all duration-300 hover:bg-surface-container-highest" role="button" tabindex="0" onclick="window.location.href='1dd2553d3dc34179836e41c3bb9a8c65.html'">
+<div class="aspect-[16/10] w-full overflow-hidden relative">
+<img alt="City sunset" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Cinematic aerial view of a sprawling metropolis during golden hour with warm amber light reflecting off skyscraper windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdkhCsPImVBZHHReRaU6pKw87uzBcatcGmZ5iM8Y66qSz4mL0EFtPHRy-I-9gRd_jSTUs5GmZUn2NOEX139g3VkUGVMwgQAbSN6qSnHik_AYvfQ7A1bHILg1Gekppi02juqzkNbQQcup1wAjVazAs6q5lpkOGP9M8NknJV9r3k2zUHID6kcGOH_2FWfKQRxsaWFMvE3IdC93ZUAyUnSPHBVgGfmdxgtHHcqps41HIMq7Z19cSdDExlZEgxeUiA84sX-HauxRNvRykJ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-60"></div>
+<div class="absolute top-4 right-4 bg-primary/20 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-2 border border-primary/20">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] font-label font-bold uppercase tracking-widest text-primary">Dusk</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-end">
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">October 12</p>
+<h2 class="font-headline text-3xl font-extrabold text-on-surface leading-none">12,430</h2>
+<p class="font-label text-sm text-primary/80 mt-1">Total Steps</p>
+</div>
+<button class="w-12 h-12 rounded-2xl bg-surface-bright flex items-center justify-center text-on-surface-variant transition-all duration-300" onclick="window.location.href='1dd2553d3dc34179836e41c3bb9a8c65.html'">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Daily Card 2: Sleeping -->
+<div class="group relative overflow-hidden rounded-3xl bg-surface-container transition-all duration-300 hover:bg-surface-container-highest" role="button" tabindex="0" onclick="window.location.href='1dd2553d3dc34179836e41c3bb9a8c65.html'">
+<div class="aspect-[16/10] w-full overflow-hidden relative">
+<img alt="City night" class="w-full h-full object-cover grayscale-[0.4] transition-transform duration-700 group-hover:scale-110" data-alt="Nocturnal city view with deep blue and purple tones, neon lights illuminating quiet streets and silhouetted architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBecdEoKorEMkNplDB8V9Hka-_ZxEWEgek2nEpNQsYtsrCb0jO7AAADGixtW_2HPIdbzD-_osKQZs_Cb7JKGLdXQYDR8ND-yHylzf7nDGsf0m5vaLAIrDHFBVEUaYAIjBmClbDnGdOEndVapQ373fTbqvmvIiDlodKYqE-xbKSuXQAIXi7ov0EKS_Z3ZLVX3Z1o679FJnfMM2RGXpGxwc086TDZcMBIXDUGcDY3NgQ9dqbh4T0PMstCrUfZfRqZ3gXAja6xYBbzRH5"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-60"></div>
+<div class="absolute top-4 right-4 bg-secondary-container/40 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-2 border border-secondary/20">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-[10px] font-label font-bold uppercase tracking-widest text-secondary">Sleeping</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-end">
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">October 11</p>
+<h2 class="font-headline text-3xl font-extrabold text-on-surface leading-none">4,120</h2>
+<p class="font-label text-sm text-secondary/80 mt-1">Total Steps</p>
+</div>
+<button class="w-12 h-12 rounded-2xl bg-surface-bright flex items-center justify-center text-on-surface-variant transition-all duration-300" onclick="window.location.href='1dd2553d3dc34179836e41c3bb9a8c65.html'">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Daily Card 3: Dawn -->
+<div class="group relative overflow-hidden rounded-3xl bg-surface-container transition-all duration-300 hover:bg-surface-container-highest" role="button" tabindex="0" onclick="window.location.href='1dd2553d3dc34179836e41c3bb9a8c65.html'">
+<div class="aspect-[16/10] w-full overflow-hidden relative">
+<img alt="City morning" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Early morning cityscape with soft hazy sunrise light, pastel pink and blue sky, and long shadows across wide boulevards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzRJnRafAlxjPFamP0DdF5iT3HVg1joxuVlzW7fDg7Zw3eOekMItzoPEhcRdsIBIuxRsCjPdJI0_G4b2pxOxTJmXQ7Ts9NG0nBUIxY1X-ha22q83Z2VANE7x2QFbHJSYpQodvFVCg00d30e0eWfCt2GuWVkgSKdSXF8svVBhlkyj-8hgFVbY27PMX3LVtySlLbu1AnDKiWPdILjKeVyR-7AFZ2loBY4qfw23DMTsImYZyk5gDBUAq7BWMERyzyjNDtoclPf3N_CTLA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent opacity-60"></div>
+<div class="absolute top-4 right-4 bg-tertiary-container/40 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-2 border border-tertiary/20">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-[10px] font-label font-bold uppercase tracking-widest text-tertiary">Dawn</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-end">
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-1">October 10</p>
+<h2 class="font-headline text-3xl font-extrabold text-on-surface leading-none">18,902</h2>
+<p class="font-label text-sm text-tertiary/80 mt-1">Total Steps</p>
+</div>
+<button class="w-12 h-12 rounded-2xl bg-surface-bright flex items-center justify-center text-on-surface-variant transition-all duration-300" onclick="window.location.href='1dd2553d3dc34179836e41c3bb9a8c65.html'">
+<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#0e0e11]/88 backdrop-blur-xl shadow-[0_-24px_48px_rgba(0,0,0,0.35)] rounded-t-[1.75rem]">
+<a class="flex flex-col items-center justify-center text-[#e5e1e7]/60 px-5 py-2 hover:text-[#ffb954] transition-all active:scale-95 duration-200" href="1dd2553d3dc34179836e41c3bb9a8c65.html" onclick="window.location.href='1dd2553d3dc34179836e41c3bb9a8c65.html'">
+<span class="material-symbols-outlined">location_city</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-1">City</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#ffb954] to-[#4f3100] text-[#452b00] rounded-2xl px-5 py-2 scale-105 shadow-[0_0_18px_rgba(255,185,84,0.22)] transition-all active:scale-95 duration-200" href="e4d7e7e39356455aa932911851b3d9ec.html" onclick="window.location.href='e4d7e7e39356455aa932911851b3d9ec.html'">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-1">Archive</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e5e1e7]/60 px-5 py-2 hover:text-[#ffb954] transition-all active:scale-95 duration-200" href="db393f1b7dcf46fdab17254977fe8bc2.html" onclick="window.location.href='db393f1b7dcf46fdab17254977fe8bc2.html'">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-1">Settings</span>
+</a>
+</nav>
+</body></html>
