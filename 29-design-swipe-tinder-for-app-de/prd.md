@@ -308,7 +308,7 @@ Solo developers, indie hackers, and vibe coders who want fast design inspiration
 **Acceptance criteria:**
 - [ ] Navigating back from Screen 2 returns to the previously viewed card index in Screen 1 (not card index 0)
 - [ ] "Open in Stitch" button is not rendered when `DesignCard.stitchProjectId` is null
-- [ ] "Open in Stitch" button opens the confirmed Stitch deep-link URL in a new tab when `stitchProjectId` is present
+- [ ] "Open in Stitch" button opens the verified Stitch URL (format confirmed before build per Section 11) in a new tab when `stitchProjectId` is present
 - [ ] Tapping "Add to BUILD Queue" upserts a `QueueItem` row and changes button label to "Saved ✓" without page reload
 - [ ] "Saved ✓" state is rendered on load if a `QueueItem` row exists for this user + design
 - [ ] Tapping "Request Full Specs" inserts a `SpecRequest` row and changes button label to "Requested ✓" without page reload
@@ -486,7 +486,7 @@ Solo developers, indie hackers, and vibe coders who want fast design inspiration
 
 **Service:** Stitch (Google)
 - **Purpose:** Deep-link from design card to working prototype
-- **Specifics:** URL format TBD — must be verified before build (see Section 11). Expected format: `https://stitch.withgoogle.com/project/{stitchProjectId}`. No SDK or API key assumed — this is a URL navigation only. `StitchOpenEvent` is logged via Supabase insert after click. If the deep-link requires Stitch auth, display a tooltip: "You may need to sign in to Stitch to open this project."
+- **Specifics:** URL format must be verified before build (see Section 11). Do not hardcode a URL format until confirmed. Known example from design metadata: `https://stitch.withgoogle.com/projects/15776618951775017939` — but whether this URL is publicly accessible without Stitch auth is unverified. No SDK or API key assumed — this is URL navigation only. `StitchOpenEvent` is logged via Supabase insert after click. If the deep-link requires Stitch auth, display a tooltip: "You may need to sign in to Stitch to open this project."
 
 **Service:** Vercel
 - **Purpose:** Hosting and CI/CD
