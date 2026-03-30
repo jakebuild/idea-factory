@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Botanical Archive - Seasonal History</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#ffeff1",
+              "tertiary-container": "#ff8eaf",
+              "secondary": "#72554b",
+              "surface-bright": "#f2f9ea",
+              "on-secondary-fixed": "#4b3229",
+              "tertiary": "#a7295a",
+              "on-tertiary-fixed": "#380017",
+              "surface-tint": "#0a6a1d",
+              "outline-variant": "#a8afa2",
+              "on-secondary-container": "#5f453b",
+              "surface-dim": "#ccd8c4",
+              "primary-fixed": "#9df898",
+              "tertiary-fixed": "#ff8eaf",
+              "on-primary-fixed": "#004b0f",
+              "inverse-surface": "#0a1008",
+              "inverse-primary": "#9df898",
+              "surface-container-low": "#ebf3e3",
+              "secondary-container": "#f6cfc2",
+              "error": "#b02500",
+              "on-error-container": "#520c00",
+              "error-container": "#f95630",
+              "tertiary-fixed-dim": "#ff75a2",
+              "surface-container-highest": "#d6e0cd",
+              "on-secondary-fixed-variant": "#6a4e44",
+              "primary-dim": "#005d16",
+              "on-surface": "#2a3127",
+              "on-error": "#ffefec",
+              "on-background": "#2a3127",
+              "secondary-fixed": "#f6cfc2",
+              "on-primary": "#d1ffc8",
+              "outline": "#72796d",
+              "primary-fixed-dim": "#90e98b",
+              "surface-container-high": "#dce6d4",
+              "surface-variant": "#d6e0cd",
+              "surface": "#f2f9ea",
+              "on-tertiary-container": "#66002f",
+              "on-primary-fixed-variant": "#0a6a1d",
+              "secondary-dim": "#65493f",
+              "on-surface-variant": "#575e52",
+              "surface-container-lowest": "#ffffff",
+              "error-dim": "#b92902",
+              "secondary-fixed-dim": "#e7c1b4",
+              "on-secondary": "#ffefeb",
+              "inverse-on-surface": "#989f92",
+              "surface-container": "#e2ebda",
+              "tertiary-dim": "#971b4e",
+              "primary": "#0a6a1d",
+              "background": "#f2f9ea",
+              "on-primary-container": "#006016"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .custom-glass {
+        background: rgba(242, 249, 234, 0.7);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+      }
+      .editorial-shadow {
+        box-shadow: 0 20px 40px rgba(42, 49, 39, 0.06);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="idea33-nav-style">
+.idea33-header{position:fixed;top:0;left:0;right:0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:rgba(242,249,234,.88);backdrop-filter:blur(20px);z-index:60;border-bottom:1px solid rgba(168,175,162,.18)}
+.idea33-header__side{width:44px;height:44px;display:flex;align-items:center;justify-content:center}
+.idea33-header__btn{width:40px;height:40px;border:none;border-radius:9999px;background:transparent;color:#0a6a1d;display:flex;align-items:center;justify-content:center}
+.idea33-header__title{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;line-height:1;color:#2a3127;text-align:center;flex:1;padding:0 8px}
+.idea33-body-pad{padding-top:76px !important}
+.idea33-nav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-around;align-items:center;padding:12px 18px 24px;background:rgba(242,249,234,.9);backdrop-filter:blur(20px);z-index:60;border-top:1px solid rgba(168,175,162,.18)}
+.idea33-tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:72px;padding:8px 12px;border-radius:9999px;color:#575e52;text-decoration:none}
+.idea33-tab.active{background:linear-gradient(135deg,#0a6a1d 0%,#9df898 100%);color:white}
+.idea33-tab .material-symbols-outlined{font-size:22px}
+.idea33-tab span:last-child{font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.idea33-has-nav{padding-bottom:112px !important}
+</style></head>
+<body class="bg-surface font-body text-on-surface min-h-screen pb-32"><header class="idea33-header"><div class="idea33-header__side"></div><div class="idea33-header__title">History Seasonal Archive</div><div class="idea33-header__side"></div></header>
+<!-- TopAppBar -->
+
+<!-- Main Content Canvas -->
+<main class="pt-24 px-6 max-w-md mx-auto idea33-body-pad idea33-has-nav">
+<!-- Editorial Header -->
+<section class="mb-10">
+<span class="font-label text-[10px] uppercase tracking-[0.1em] text-on-surface-variant font-semibold">Seasonal Heritage</span>
+<h2 class="font-headline text-3xl font-extrabold text-on-surface mt-1 leading-tight tracking-tight">2024 Collection</h2>
+<p class="text-on-surface-variant mt-2 leading-relaxed opacity-80">Chronicle your garden's evolution through the cycles of nature. Each season is a chapter in your botanical legacy.</p>
+</section>
+<!-- Postcard Grid -->
+<div class="grid grid-cols-2 gap-5">
+<!-- Spring 2024: Completed -->
+<div class="group cursor-pointer" onclick="window.location.href='fb4b489ade884d61825a80df59763e2d.html'">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden editorial-shadow bg-surface-container-lowest border border-outline-variant/10">
+<img alt="Vibrant spring garden with blooming tulips and cherry blossoms" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of vibrant pink tulips and cherry blossoms in a lush green spring garden with soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUaDFjDo8NlvQz23kkgyV0MfMWoL-xRvkwBWRbPR0BiIPUIgo1OQtnCRQ2Dsez2u0i5F7Qth6LwzzZ2qDB4pS7VBiDGjbp_o6LHdo0rdNAHrMiW_QlSIGK0PQ9X3upEa3Vcb40-bVilJkrPlPjNe5lCIVbOHbzkCNmunqEztswAi_VOp-kTeDWFoWcpQC18lAl71r7TVpoHGpNmG-o1nFjQSdFoToMVxyz2c2YgeYJAs2UHSyYRu79nhv2ZZNbFFAWbFvS1nKeCjYz"/>
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<!-- Status Badge -->
+<div class="absolute top-3 right-3 bg-primary text-on-primary text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                        Completed
+                    </div>
+</div>
+<div class="mt-4">
+<h3 class="font-headline font-bold text-sm text-on-surface leading-tight">Spring Sanctuary</h3>
+<p class="font-label text-[10px] text-primary font-semibold mt-1">JOURNAL UNLOCKED</p>
+</div>
+</div>
+<!-- Summer 2024: Locked -->
+<div class="relative group" onclick="window.location.href='19fb1e4df4c647d6bf903789e9386ea3.html'">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden editorial-shadow bg-surface-container-high border border-outline-variant/10 grayscale-[0.8] opacity-60">
+<img alt="Warm summer garden teaser" class="w-full h-full object-cover" data-alt="Lush summer meadow with warm golden sunlight filtering through sunflowers and tall wild grasses in a hazy afternoon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkiTBBclDmWvR12AASqJTN-6BaVcDCMAbdb43AIsKbYfUj8TfOZPKbfVQ0Mk0nIElIt7tFCeeE2RAU2RNHRQZseCU6d69qGnerbyKVBHXLthsnyC7sB1cS0E_HN9fukZH8L4Srezv9gcwTHEEyKQsNqxk46X2FfyzJG5jzIcjV9d1vyuuAmXzibwJEHhXGyE_GModkvnRkk82xX2R6V5PWU4S6OWN8RhPNgywn7cO8k88OyExXih4psssHdeFVLF5-VB3D03IMVawc"/>
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent"></div>
+<!-- Status Badge -->
+<div class="absolute top-3 right-3 bg-surface-container-highest text-on-surface-variant text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                        Start after Spring
+                    </div>
+<!-- Lock Icon -->
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-white/50 text-4xl">lock</span>
+</div>
+</div>
+<div class="mt-4">
+<h3 class="font-headline font-bold text-sm text-on-surface opacity-50">Summer Radiance</h3>
+<p class="font-label text-[10px] text-on-surface-variant font-semibold mt-1">LOCKED</p>
+</div>
+</div>
+<!-- Fall 2024: Locked -->
+<div class="relative group">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden editorial-shadow bg-surface-container-high border border-outline-variant/10 grayscale-[0.9] opacity-40">
+<img alt="Autumn leaves teaser" class="w-full h-full object-cover" data-alt="Vibrant red and orange maple leaves scattered on a rustic wooden bench in a misty forest during autumn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8LDH-OMdql3hERcYKhgyg_KtQ6ituZnhltAr4wrNrQ1UgcIkV5ldpQfQ4etJ-17dEzsdPI9pX6Swyo5zXQO9BfZFH2Wh1UH1eGzEdUbXM9eYVeiso5YMVQAkD8no3cYbCiS2e4M1ClAxMewfhLwUhGid3_RWP8pMtNwJvRwAZ_H8vf_EY1Rj4oe-MLxYAxZi59ZKgiXAwaqkYqaW5Urqd1t7GYA0nFAKeJ_mrQC2t3oKB8vjNAi0wj-u2IEhCNlsNAciopo0e3eRh"/>
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-tertiary/60 to-transparent"></div>
+<!-- Status Badge -->
+<div class="absolute top-3 right-3 bg-surface-container-highest text-on-surface-variant text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                        Locked
+                    </div>
+</div>
+<div class="mt-4">
+<h3 class="font-headline font-bold text-sm text-on-surface opacity-50">Autumn Echoes</h3>
+<p class="font-label text-[10px] text-on-surface-variant font-semibold mt-1">LOCKED</p>
+</div>
+</div>
+<!-- Winter 2024: Locked -->
+<div class="relative group">
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden editorial-shadow bg-surface-container-high border border-outline-variant/10 grayscale-[1] opacity-40">
+<img alt="Snowy winter garden teaser" class="w-full h-full object-cover" data-alt="Minimalist winter garden scene with frosted branches and soft white snow under a pale blue morning sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4QAfHnPQLRImL4qMQSv2Yu9MBi8doZDBdTGAiD5EY-j7ktyy4ZxdMDIhtFNQVDnf2jqDBHJJxm4IIGy0dRPdtlEh6vyKx9upptPaPUCeMcIvf2qKAuXDTgdSLav74YucK6o-PkzlYlyGhATk-7lE3KKtW4EYW-JGa4S00nijb_7kGmmJw1zf_92IGLZxBRKcA9rLnjnXx4YozSfonXRDJCc_BFj6Sv2QbPmVwhAD9dBMzXuNmKN0G9kQEkdaDZxDqKZFsCz6Nxwbb"/>
+<!-- Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#1a1c18]/60 to-transparent"></div>
+<!-- Status Badge -->
+<div class="absolute top-3 right-3 bg-surface-container-highest text-on-surface-variant text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">
+                        Locked
+                    </div>
+</div>
+<div class="mt-4">
+<h3 class="font-headline font-bold text-sm text-on-surface opacity-50">Winter Solstice</h3>
+<p class="font-label text-[10px] text-on-surface-variant font-semibold mt-1">LOCKED</p>
+</div>
+</div>
+</div>
+<!-- Featured Growth Insight Card -->
+<section class="mt-12 bg-surface-container-low p-6 rounded-lg relative overflow-hidden">
+<div class="relative z-10">
+<h4 class="font-headline font-bold text-lg text-primary">Annual Progress</h4>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">You've successfully preserved 25% of this year's seasonal cycle.</p>
+<!-- Growth Tracker Component -->
+<div class="mt-6 h-3 bg-tertiary-container/30 rounded-full relative overflow-hidden">
+<div class="h-full bg-tertiary w-1/4 rounded-full relative">
+<div class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-4 h-4 bg-white border-2 border-tertiary rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-tertiary" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Plant Art Overlay -->
+<span class="material-symbols-outlined absolute -bottom-4 -right-4 text-9xl text-primary/5 rotate-12 pointer-events-none">local_florist</span>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="idea33-nav"><a class="idea33-tab" href="#" onclick="window.location.href='7410983355e84d73b76d74ddd8dff7ce.html'; return false;"><span class="material-symbols-outlined">spa</span><span>Garden</span></a><a class="idea33-tab active" href="#" onclick="window.location.href='0b09a4c489e945429ed31af2641794f3.html'; return false;"><span class="material-symbols-outlined">grid_view</span><span>Archive</span></a><a class="idea33-tab" href="#" onclick="window.location.href='1e526debe9bb44a0a16cff5d5755355f.html'; return false;"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></nav></body></html>

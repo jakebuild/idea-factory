@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Botanica Vital - Start Your Spring Garden</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#ff8eaf",
+              "secondary-fixed-dim": "#e7c1b4",
+              "surface-variant": "#d6e0cd",
+              "on-surface-variant": "#575e52",
+              "on-primary": "#d1ffc8",
+              "background": "#f2f9ea",
+              "surface-container-highest": "#d6e0cd",
+              "tertiary": "#a7295a",
+              "on-tertiary-container": "#66002f",
+              "surface-bright": "#f2f9ea",
+              "outline": "#72796d",
+              "primary-dim": "#005d16",
+              "on-background": "#2a3127",
+              "primary": "#0a6a1d",
+              "outline-variant": "#a8afa2",
+              "tertiary-container": "#ff8eaf",
+              "on-secondary-fixed-variant": "#6a4e44",
+              "surface-container": "#e2ebda",
+              "inverse-on-surface": "#989f92",
+              "error": "#b02500",
+              "secondary-container": "#f6cfc2",
+              "surface-dim": "#ccd8c4",
+              "error-container": "#f95630",
+              "inverse-primary": "#9df898",
+              "inverse-surface": "#0a1008",
+              "on-tertiary-fixed": "#380017",
+              "secondary-fixed": "#f6cfc2",
+              "on-tertiary": "#ffeff1",
+              "on-secondary-container": "#5f453b",
+              "secondary-dim": "#65493f",
+              "primary-fixed-dim": "#90e98b",
+              "surface-container-high": "#dce6d4",
+              "on-error": "#ffefec",
+              "on-primary-fixed": "#004b0f",
+              "on-primary-container": "#006016",
+              "surface-container-lowest": "#ffffff",
+              "secondary": "#72554b",
+              "on-tertiary-fixed-variant": "#760038",
+              "surface": "#f2f9ea",
+              "on-error-container": "#520c00",
+              "primary-fixed": "#9df898",
+              "surface-tint": "#0a6a1d",
+              "error-dim": "#b92902",
+              "tertiary-fixed-dim": "#ff75a2",
+              "on-secondary": "#ffefeb",
+              "primary-container": "#9df898",
+              "tertiary-dim": "#971b4e",
+              "surface-container-low": "#ebf3e3",
+              "on-secondary-fixed": "#4b3229",
+              "on-primary-fixed-variant": "#0a6a1d",
+              "on-surface": "#2a3127"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .botanical-blur {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .text-gradient {
+            background: linear-gradient(to bottom right, #0a6a1d, #004b0f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="idea33-nav-style">
+.idea33-header{position:fixed;top:0;left:0;right:0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:rgba(242,249,234,.88);backdrop-filter:blur(20px);z-index:60;border-bottom:1px solid rgba(168,175,162,.18)}
+.idea33-header__side{width:44px;height:44px;display:flex;align-items:center;justify-content:center}
+.idea33-header__btn{width:40px;height:40px;border:none;border-radius:9999px;background:transparent;color:#0a6a1d;display:flex;align-items:center;justify-content:center}
+.idea33-header__title{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;line-height:1;color:#2a3127;text-align:center;flex:1;padding:0 8px}
+.idea33-body-pad{padding-top:76px !important}
+.idea33-nav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-around;align-items:center;padding:12px 18px 24px;background:rgba(242,249,234,.9);backdrop-filter:blur(20px);z-index:60;border-top:1px solid rgba(168,175,162,.18)}
+.idea33-tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:72px;padding:8px 12px;border-radius:9999px;color:#575e52;text-decoration:none}
+.idea33-tab.active{background:linear-gradient(135deg,#0a6a1d 0%,#9df898 100%);color:white}
+.idea33-tab .material-symbols-outlined{font-size:22px}
+.idea33-tab span:last-child{font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.idea33-has-nav{padding-bottom:112px !important}
+</style></head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container"><header class="idea33-header"><div class="idea33-header__side"><button class="idea33-header__btn" onclick="window.location.href='71a981d626d341678269decbb0cd2169.html'"><span class="material-symbols-outlined">arrow_back</span></button></div><div class="idea33-header__title">Start Run Empty Garden Preview</div><div class="idea33-header__side"></div></header>
+<!-- TopAppBar -->
+
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto min-h-screen idea33-body-pad">
+<!-- Editorial Header Section -->
+<section class="mb-12">
+<span class="font-label text-on-surface-variant text-[10px] uppercase tracking-[0.2em] mb-3 block font-semibold">Program Launch</span>
+<h2 class="font-headline text-5xl font-extrabold text-on-surface tracking-tight leading-[1.1] mb-6">Start Your <span class="text-primary italic">Spring</span> Garden</h2>
+<div class="bg-surface-container-low rounded-lg p-6 relative overflow-hidden">
+<div class="relative z-10">
+<p class="text-on-surface-variant leading-relaxed mb-4">
+                        Welcome to your seasonal transformation. Over the next <span class="font-bold text-primary">3 weeks</span>, you'll cultivate both physical endurance and a vibrant digital landscape.
+                    </p>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-tertiary mt-0.5" data-icon="info" style="font-variation-settings: 'FILL' 1;">info</span>
+<p class="text-sm font-medium text-on-surface/80">Every Monday, 2 new plots will unlock as you reach your movement milestones.</p>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-10 -bottom-10 opacity-10">
+<span class="material-symbols-outlined text-[180px]" data-icon="eco">eco</span>
+</div>
+</div>
+</section>
+<!-- Garden Grid Section -->
+<section class="mb-16">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h3 class="font-headline text-2xl font-bold text-on-surface tracking-tight">The Plot Layout</h3>
+<p class="text-sm text-on-surface-variant">6 Plots • 2 Active</p>
+</div>
+<div class="flex gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-surface-container-highest"></div>
+</div>
+</div>
+<!-- Bento-style Garden Grid -->
+<div class="grid grid-cols-2 gap-6">
+<!-- Active Plot 1 (Week 1) -->
+<div class="group relative aspect-square bg-surface-container-lowest rounded-lg overflow-hidden border-2 border-primary/20 shadow-sm transition-transform duration-300 hover:scale-[1.02]">
+<div class="absolute inset-0 bg-gradient-to-t from-[#72554b]/10 to-transparent"></div>
+<img alt="Fresh dark soil" class="w-full h-full object-cover opacity-80" data-alt="close-up of rich dark moist gardening soil textured with organic peat and small bark pieces in a square plot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPKq4cD3kox1792VFz-sKM4WBwIX59M8Lh-PZedCsSpX9E9G3n-STgp5JkRHqWT91Kdv8JPFQu67g-Tt7bSyhNco8KwbORPb7LnsLpI5JUpBhRH_TUE52bmY-Z-ZdDHkEdXEzDYjjLZdQc1xbEL-g-0qE0L10Jo2cpLUDn_iBF1PIJRiHOemLdVEvf1FRyVViucVOP9JzvX_j-_heyn09SOsQi7ZF6vyd0Rnpv7zYTq5zPs2TRcqc7XIcZiX1Aq9qzM_VUAa2n3Pof"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Active</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<p class="font-headline font-bold text-lg drop-shadow-md">Plot 01</p>
+<p class="text-xs font-medium opacity-90 drop-shadow-sm">Week 1 Milestone</p>
+</div>
+</div>
+<!-- Active Plot 2 (Week 1) -->
+<div class="group relative aspect-square bg-surface-container-lowest rounded-lg overflow-hidden border-2 border-primary/20 shadow-sm transition-transform duration-300 hover:scale-[1.02]">
+<div class="absolute inset-0 bg-gradient-to-t from-[#72554b]/10 to-transparent"></div>
+<img alt="Tilled earth" class="w-full h-full object-cover opacity-80" data-alt="evenly tilled rows of fertile dark earth in a small garden bed waiting for planting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIsiYmD3jxl35mV8tH4G-br4B-TmH1ufoRfb1Bi81Zvw-2yjP0kUrQw7PPkFo9X_ph0ut8MQoPwlVRuXv5Q0AJycNNDrypxjo6tOi-EY4UuEmsJT5CrZ3-vkWGJgRXmWUQsGofDoYFLpMUxQdLvTWS0-IUIouKfbPr8FS7IsVv_ZMV4dmJ22wEC0hSbQXkUuEC3TrpF0-9PSLww1zA_U29JKhxqsG6Roj8iC6SpNYGx2A5N6r1BP90qTFVd6fEWi-RhEWNZoIzB7L0"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Active</span>
+</div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<p class="font-headline font-bold text-lg drop-shadow-md">Plot 02</p>
+<p class="text-xs font-medium opacity-90 drop-shadow-sm">Week 1 Milestone</p>
+</div>
+</div>
+<!-- Locked Plots (Week 2 & 3) -->
+<div class="relative aspect-square bg-surface-container-high rounded-lg flex items-center justify-center border border-outline-variant/10">
+<div class="text-center">
+<span class="material-symbols-outlined text-outline/40 mb-2 scale-125" data-icon="lock">lock</span>
+<p class="text-[10px] font-bold text-outline/60 uppercase tracking-tighter">Unlocks Monday</p>
+</div>
+</div>
+<div class="relative aspect-square bg-surface-container-high rounded-lg flex items-center justify-center border border-outline-variant/10">
+<div class="text-center">
+<span class="material-symbols-outlined text-outline/40 mb-2 scale-125" data-icon="lock">lock</span>
+<p class="text-[10px] font-bold text-outline/60 uppercase tracking-tighter">Unlocks Monday</p>
+</div>
+</div>
+<div class="relative aspect-square bg-surface-container-high rounded-lg flex items-center justify-center border border-outline-variant/10">
+<div class="text-center">
+<span class="material-symbols-outlined text-outline/40 mb-2 scale-125" data-icon="lock">lock</span>
+<p class="text-[10px] font-bold text-outline/60 uppercase tracking-tighter">Week 3</p>
+</div>
+</div>
+<div class="relative aspect-square bg-surface-container-high rounded-lg flex items-center justify-center border border-outline-variant/10">
+<div class="text-center">
+<span class="material-symbols-outlined text-outline/40 mb-2 scale-125" data-icon="lock">lock</span>
+<p class="text-[10px] font-bold text-outline/60 uppercase tracking-tighter">Week 3</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="flex flex-col items-center">
+<button class="w-full py-5 px-8 rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-headline font-extrabold text-xl shadow-lg active:scale-95 transition-all duration-300 mb-4 group overflow-hidden relative" onclick="window.location.href='0ae9ef488b7841869e808fda4ecacc00.html'">
+<span class="relative z-10 flex items-center justify-center gap-3">
+                    Pick Your Seeds
+                    <span class="material-symbols-outlined transition-transform group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</span>
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</button>
+<p class="text-xs text-on-surface-variant text-center px-12 italic">
+                You can choose up to 2 seed types for this week's active plots.
+            </p>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+</body></html>

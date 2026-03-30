@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Weekly Seed Pack - Botanica Vital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-variant": "#d6e0cd",
+                        "tertiary": "#a7295a",
+                        "primary-fixed-dim": "#90e98b",
+                        "on-error": "#ffefec",
+                        "on-secondary-container": "#5f453b",
+                        "on-error-container": "#520c00",
+                        "on-surface-variant": "#575e52",
+                        "on-tertiary": "#ffeff1",
+                        "tertiary-fixed-dim": "#ff75a2",
+                        "surface-tint": "#0a6a1d",
+                        "background": "#f2f9ea",
+                        "inverse-on-surface": "#989f92",
+                        "primary": "#0a6a1d",
+                        "on-secondary-fixed-variant": "#6a4e44",
+                        "tertiary-dim": "#971b4e",
+                        "primary-container": "#9df898",
+                        "secondary-dim": "#65493f",
+                        "error": "#b02500",
+                        "surface": "#f2f9ea",
+                        "inverse-primary": "#9df898",
+                        "on-tertiary-fixed": "#380017",
+                        "secondary-container": "#f6cfc2",
+                        "tertiary-container": "#ff8eaf",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#2a3127",
+                        "primary-fixed": "#9df898",
+                        "on-tertiary-container": "#66002f",
+                        "inverse-surface": "#0a1008",
+                        "on-secondary": "#ffefeb",
+                        "surface-container-low": "#ebf3e3",
+                        "secondary-fixed-dim": "#e7c1b4",
+                        "secondary-fixed": "#f6cfc2",
+                        "on-primary-container": "#006016",
+                        "secondary": "#72554b",
+                        "on-surface": "#2a3127",
+                        "primary-dim": "#005d16",
+                        "tertiary-fixed": "#ff8eaf",
+                        "on-primary": "#d1ffc8",
+                        "outline-variant": "#a8afa2",
+                        "on-primary-fixed": "#004b0f",
+                        "error-container": "#f95630",
+                        "surface-container-highest": "#d6e0cd",
+                        "on-primary-fixed-variant": "#0a6a1d",
+                        "surface-container-high": "#dce6d4",
+                        "on-tertiary-fixed-variant": "#760038",
+                        "outline": "#72796d",
+                        "surface-container": "#e2ebda",
+                        "error-dim": "#b92902",
+                        "on-secondary-fixed": "#4b3229",
+                        "surface-dim": "#ccd8c4",
+                        "surface-bright": "#f2f9ea"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(42, 49, 39, 0.06);
+        }
+        .seed-card-active {
+            outline: 2px solid #0a6a1d;
+            outline-offset: 4px;
+        }
+        body {
+            background-color: #f2f9ea;
+            color: #2a3127;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="idea33-nav-style">
+.idea33-header{position:fixed;top:0;left:0;right:0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:rgba(242,249,234,.88);backdrop-filter:blur(20px);z-index:60;border-bottom:1px solid rgba(168,175,162,.18)}
+.idea33-header__side{width:44px;height:44px;display:flex;align-items:center;justify-content:center}
+.idea33-header__btn{width:40px;height:40px;border:none;border-radius:9999px;background:transparent;color:#0a6a1d;display:flex;align-items:center;justify-content:center}
+.idea33-header__title{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;line-height:1;color:#2a3127;text-align:center;flex:1;padding:0 8px}
+.idea33-body-pad{padding-top:76px !important}
+.idea33-nav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-around;align-items:center;padding:12px 18px 24px;background:rgba(242,249,234,.9);backdrop-filter:blur(20px);z-index:60;border-top:1px solid rgba(168,175,162,.18)}
+.idea33-tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:72px;padding:8px 12px;border-radius:9999px;color:#575e52;text-decoration:none}
+.idea33-tab.active{background:linear-gradient(135deg,#0a6a1d 0%,#9df898 100%);color:white}
+.idea33-tab .material-symbols-outlined{font-size:22px}
+.idea33-tab span:last-child{font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.idea33-has-nav{padding-bottom:112px !important}
+</style></head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container antialiased min-h-screen pb-32"><header class="idea33-header"><div class="idea33-header__side"><button class="idea33-header__btn" onclick="window.location.href='19fb1e4df4c647d6bf903789e9386ea3.html'"><span class="material-symbols-outlined">arrow_back</span></button></div><div class="idea33-header__title">Weekly Seed Pack</div><div class="idea33-header__side"></div></header>
+<!-- Top Navigation Anchor -->
+
+<main class="px-6 pt-8 max-w-md mx-auto idea33-body-pad">
+<!-- Editorial Header -->
+<section class="mb-10">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight text-on-surface mb-2 leading-tight">Choose Your Seeds.</h2>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed">Select 2 types for this week's active plots.</p>
+</section>
+<!-- Bento Grid / Asymmetric Seed Selection -->
+<div class="grid grid-cols-1 gap-6">
+<!-- Card 1: Selected -->
+<div class="relative group cursor-pointer transition-all duration-300 active:scale-95" onclick="window.location.href='7b0430c920ab44279efb413f5aba7bd2.html'">
+<div class="bg-surface-container-lowest rounded-xl p-6 editorial-shadow border-2 border-primary overflow-hidden flex gap-5">
+<div class="w-24 h-32 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close-up of a tiny organic seedling with golden-tipped leaves emerging from rich dark soil in soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCfO99rJR2Cv_tRTeln5AGlMuijRvGfswthaJq7fpato8rNJk7qBOCyRU5bM5c40tC-4GexOh7-urdUS2DqUxk7GQYDLw-FWKfDtto61eymbVIBwkNLew61gMpjQp66h7KqiUtJHF3ASK3hKWF6BoQRVAi33f621ItAFQupBjyte4R8AtI8OrjSU0MYLMamtN-McTVfQgaYjOc7M2m1Xo8TRAPMEP-AilgdSVmnCfBODRYAIgkOGN3ygP3aTu6a_UHFMnhngsxe9Q2"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="font-label text-[10px] font-semibold uppercase tracking-widest text-primary px-2 py-0.5 bg-primary-container/30 rounded-full">Easy</span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Golden Bloom</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-snug">Thrives in direct sunlight and frequent movement.</p>
+</div>
+<div class="flex items-center gap-2 mt-3">
+<span class="font-label text-[10px] text-on-surface-variant uppercase tracking-wider">Bloom:</span>
+<div class="w-4 h-4 rounded-full bg-yellow-400 ring-2 ring-yellow-400/20"></div>
+<span class="text-[11px] font-medium text-on-surface">Sunflower-like</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Selected -->
+<div class="relative group cursor-pointer transition-all duration-300 active:scale-95">
+<div class="bg-surface-container-lowest rounded-xl p-6 editorial-shadow border-2 border-primary overflow-hidden flex gap-5">
+<div class="w-24 h-32 rounded-lg bg-surface-container overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Micro photography of lush deep emerald velvet moss with soft organic textures and gentle shadow patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfq7T-7tRJKZJ7UjTY4zl2M42A_g5hB7Ss0AH4JcqPPOtYyH2tYA94dti0EdcCvpCjVYPon7EnOBj7N_x8L7wK3aIv-My1tIGRoN4W9SElGvpKb_neusobSrjumBI17ZHos9PmOvEyyVBENiqCt_YzuOkp4vUtnFgjnWXgRMBj7XW3gWuZWBOYQlr7CcEWn9k32SM15z5q-vEMGppVtGWScFzBsF_I-fh-8BAPfWRbw8fVQ0Rxxjapgn62JOCxY3LkhPVhyJtfIbPA"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="font-label text-[10px] font-semibold uppercase tracking-widest text-secondary px-2 py-0.5 bg-secondary-container/50 rounded-full">Intermediate</span>
+<span class="material-symbols-outlined text-primary text-xl" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Velvet Moss</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-snug">Flourishes during low-impact, restorative sessions.</p>
+</div>
+<div class="flex items-center gap-2 mt-3">
+<span class="font-label text-[10px] text-on-surface-variant uppercase tracking-wider">Bloom:</span>
+<div class="w-4 h-4 rounded-full bg-emerald-700 ring-2 ring-emerald-700/20"></div>
+<span class="text-[11px] font-medium text-on-surface">Emerald Velvet</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Deselected -->
+<div class="relative group cursor-pointer transition-all duration-300 active:scale-95 opacity-50 grayscale-[0.3]">
+<div class="bg-surface-container-low rounded-xl p-6 editorial-shadow border border-outline-variant/15 overflow-hidden flex gap-5">
+<div class="w-24 h-32 rounded-lg bg-surface-container-highest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Thin spiraling green vines reaching upwards against a soft blue sky background with artistic light leaks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLSo1yzReoQmlimynX9240srOwyGXm_40AAGGH90URhxwG601BDJ-4PL0yNeC_H0Y6CBKe8ohTju7aOYa3djxdlATDtIW8Omkh5z_C07jqUfCAj2BW9FOc8chM2wVWdT8IUCiW_2sEk1dpDYRVV53eb4EVVGaO5FARsRi9CzDlz4UP7I3MONdI-4ak2mCs-Fnuxxs4Rn0oG_bXpYn-o3KEfl5b6KmBscH7rPQbYLYF8NPNKR47DLUIngLdnwffVarwxVUs_L4E7ndP"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="font-label text-[10px] font-semibold uppercase tracking-widest text-tertiary px-2 py-0.5 bg-tertiary-container/30 rounded-full">Expert</span>
+<span class="material-symbols-outlined text-outline-variant text-xl" data-icon="radio_button_unchecked">radio_button_unchecked</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Sky Runner</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-snug">Growth is tied to high-intensity cardiovascular bursts.</p>
+</div>
+<div class="flex items-center gap-2 mt-3">
+<span class="font-label text-[10px] text-on-surface-variant uppercase tracking-wider">Bloom:</span>
+<div class="w-4 h-4 rounded-full bg-blue-400 ring-2 ring-blue-400/20"></div>
+<span class="text-[11px] font-medium text-on-surface">Blue Bell</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4: Deselected -->
+<div class="relative group cursor-pointer transition-all duration-300 active:scale-95 opacity-50 grayscale-[0.3]">
+<div class="bg-surface-container-low rounded-xl p-6 editorial-shadow border border-outline-variant/15 overflow-hidden flex gap-5">
+<div class="w-24 h-32 rounded-lg bg-surface-container-highest overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Exotic heart-shaped leaves with deep red veins and vibrant green edges shot in a moody botanical conservatory" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA7sob14yv6a5QAfPlOYN0vWWwgm5A1oTSGc3u5N-ERDzQSzOCifLs3cK_RBuWPMurA1WApAwMAVdNX0FXtablh3LRIw8xCswHt6BwkO-Yng0N-0qJtv8a3dAW8u98f2QnWJUpnnkAhQwNZBDNsErQgIJKyxCLs9plF6FlHA3081RDdoSqJekNdqMjctpvLAw0O5bYyKMzwv6iuW_ICBt-RPcS_sZLsvtzsvMGvKIDfXshK74cPMrnyFkT4ccwv-tHhXcNsVvM1jOP"/>
+</div>
+<div class="flex flex-col justify-between py-1">
+<div>
+<div class="flex justify-between items-start mb-1">
+<span class="font-label text-[10px] font-semibold uppercase tracking-widest text-primary px-2 py-0.5 bg-primary-container/30 rounded-full">Easy</span>
+<span class="material-symbols-outlined text-outline-variant text-xl" data-icon="radio_button_unchecked">radio_button_unchecked</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Crimson Heart</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-snug">Needs consistent, steady-state activity to blossom.</p>
+</div>
+<div class="flex items-center gap-2 mt-3">
+<span class="font-label text-[10px] text-on-surface-variant uppercase tracking-wider">Bloom:</span>
+<div class="w-4 h-4 rounded-full bg-error ring-2 ring-error/20"></div>
+<span class="text-[11px] font-medium text-on-surface">Red Lily</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Interaction Zone -->
+<div class="fixed bottom-0 left-0 w-full px-6 pb-8 pt-4 bg-gradient-to-t from-background via-background to-transparent pointer-events-none">
+<button class="pointer-events-auto w-full py-5 bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed font-headline font-extrabold text-lg rounded-full flex items-center justify-center gap-2 shadow-lg active:scale-95 duration-200 transition-all hover:opacity-95" onclick="window.location.href='d04c42ba3c8746829f3823efdd9ed91e.html'">
+                Plant These
+                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+
+</body></html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Garden Postcard - Botanica Vital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error-container": "#520c00",
+              "secondary-fixed-dim": "#e7c1b4",
+              "outline-variant": "#a8afa2",
+              "on-primary": "#d1ffc8",
+              "error-dim": "#b92902",
+              "tertiary-fixed-dim": "#ff75a2",
+              "primary-dim": "#005d16",
+              "on-secondary-fixed-variant": "#6a4e44",
+              "primary-fixed": "#9df898",
+              "on-primary-fixed-variant": "#0a6a1d",
+              "secondary-container": "#f6cfc2",
+              "surface-bright": "#f2f9ea",
+              "inverse-surface": "#0a1008",
+              "surface": "#f2f9ea",
+              "on-primary-container": "#006016",
+              "on-tertiary-container": "#66002f",
+              "on-secondary-fixed": "#4b3229",
+              "tertiary-dim": "#971b4e",
+              "on-secondary": "#ffefeb",
+              "surface-dim": "#ccd8c4",
+              "on-background": "#2a3127",
+              "primary": "#0a6a1d",
+              "surface-container-high": "#dce6d4",
+              "surface-container-low": "#ebf3e3",
+              "on-secondary-container": "#5f453b",
+              "error-container": "#f95630",
+              "tertiary-container": "#ff8eaf",
+              "on-tertiary": "#ffeff1",
+              "tertiary-fixed": "#ff8eaf",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#e2ebda",
+              "secondary-dim": "#65493f",
+              "on-tertiary-fixed-variant": "#760038",
+              "secondary-fixed": "#f6cfc2",
+              "inverse-primary": "#9df898",
+              "surface-container-highest": "#d6e0cd",
+              "tertiary": "#a7295a",
+              "primary-container": "#9df898",
+              "on-tertiary-fixed": "#380017",
+              "secondary": "#72554b",
+              "on-error": "#ffefec",
+              "surface-variant": "#d6e0cd",
+              "on-primary-fixed": "#004b0f",
+              "primary-fixed-dim": "#90e98b",
+              "on-surface": "#2a3127",
+              "surface-tint": "#0a6a1d",
+              "error": "#b02500",
+              "background": "#f2f9ea",
+              "inverse-on-surface": "#989f92",
+              "outline": "#72796d",
+              "on-surface-variant": "#575e52"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-smoothing: antialiased;
+        }
+        .postcard-shadow {
+            box-shadow: 0 20px 40px rgba(42, 49, 39, 0.06);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="idea33-nav-style">
+.idea33-header{position:fixed;top:0;left:0;right:0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:rgba(242,249,234,.88);backdrop-filter:blur(20px);z-index:60;border-bottom:1px solid rgba(168,175,162,.18)}
+.idea33-header__side{width:44px;height:44px;display:flex;align-items:center;justify-content:center}
+.idea33-header__btn{width:40px;height:40px;border:none;border-radius:9999px;background:transparent;color:#0a6a1d;display:flex;align-items:center;justify-content:center}
+.idea33-header__title{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;line-height:1;color:#2a3127;text-align:center;flex:1;padding:0 8px}
+.idea33-body-pad{padding-top:76px !important}
+.idea33-nav{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-around;align-items:center;padding:12px 18px 24px;background:rgba(242,249,234,.9);backdrop-filter:blur(20px);z-index:60;border-top:1px solid rgba(168,175,162,.18)}
+.idea33-tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:72px;padding:8px 12px;border-radius:9999px;color:#575e52;text-decoration:none}
+.idea33-tab.active{background:linear-gradient(135deg,#0a6a1d 0%,#9df898 100%);color:white}
+.idea33-tab .material-symbols-outlined{font-size:22px}
+.idea33-tab span:last-child{font-family:'Plus Jakarta Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.idea33-has-nav{padding-bottom:112px !important}
+</style></head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container"><header class="idea33-header"><div class="idea33-header__side"><button class="idea33-header__btn" onclick="window.location.href='0b09a4c489e945429ed31af2641794f3.html'"><span class="material-symbols-outlined">arrow_back</span></button></div><div class="idea33-header__title">Final Garden Postcard</div><div class="idea33-header__side"></div></header>
+<!-- TopAppBar -->
+
+<main class="pt-24 pb-32 px-6 min-h-screen idea33-body-pad idea33-has-nav">
+<!-- Editorial Header Section -->
+<section class="mb-8 text-center">
+<div class="inline-flex items-center gap-2 mb-2">
+<h2 class="text-3xl font-headline font-extrabold tracking-tight text-on-surface border-b-2 border-primary/20 pb-1 focus:outline-none focus:border-primary" contenteditable="true">My Spring Sanctuary</h2>
+<span class="material-symbols-outlined text-on-surface-variant text-lg">edit</span>
+</div>
+<div class="flex justify-center gap-8 mt-6">
+<div class="text-center">
+<p class="text-[10px] font-label font-semibold uppercase tracking-[0.1em] text-on-surface-variant mb-1">Activity</p>
+<p class="text-lg font-headline font-bold text-primary">124,500 <span class="text-sm font-medium opacity-70">steps</span></p>
+</div>
+<div class="w-px h-8 bg-outline-variant opacity-20 self-end"></div>
+<div class="text-center">
+<p class="text-[10px] font-label font-semibold uppercase tracking-[0.1em] text-on-surface-variant mb-1">Results</p>
+<p class="text-lg font-headline font-bold text-primary">4 <span class="text-sm font-medium opacity-70 text-on-surface">Blooms</span> / 2 <span class="text-sm font-medium opacity-70 text-on-surface">Planters</span></p>
+</div>
+</div>
+</section>
+<!-- Postcard Main Canvas -->
+<div class="relative max-w-md mx-auto aspect-[3/4] bg-white p-4 rounded-xl postcard-shadow border-[12px] border-white overflow-hidden">
+<!-- The Garden Grid (6 Plots) -->
+<div class="grid grid-cols-2 grid-rows-3 gap-3 h-full rounded-lg overflow-hidden relative">
+<!-- Plot 1: Blooming Wildflowers -->
+<div class="relative group overflow-hidden bg-surface-container-low rounded-lg">
+<img class="w-full h-full object-cover" data-alt="Close-up of vibrant pink and purple wildflowers blooming in a lush green meadow with soft morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH6Ni1JxLDy3vw2wga9owpTrQDUpVKaO_d2rEUQPnPGUR0n50nPfpBs9QmRKc747Hbyiqdu4RwL1gI3kSw6HuAubXbman1Z9SkQwiElBkXE7XL0AdEVbtA0oU8OV8UXnful3PTm-fRlv42eLHMA--8Wf97JJLoebK-0PYC6Z-U4MTO5VbGsnJuYPHgjC5gzpdkSqgyEtNWqE5ma17OWUfzzcA-8hCRkyylnw6WbK1XeefwzEUT2bW5NH_K5gTsxCrlGX5Gj4UBJ0S2"/>
+</div>
+<!-- Plot 2: Stone Planter with Succulents -->
+<div class="relative group overflow-hidden bg-surface-container-low rounded-lg">
+<img class="w-full h-full object-cover" data-alt="Handcrafted grey stone planter sitting on a gravel path containing various types of architectural succulents and moss" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7ogDAiAsZX8ysMerUjmyfa4z36Djx4d5XEKrSeJFZPwfeW2HuYxx2QCwtWrT9EaKKX_bJhh5Ig65aajdl6EwTeHQBKK62bu5y2Vn5wL8RSmyX-sKfSRhVUYdUt3DbV4gEB6_RymNpEGzTR6b_I7GkqJ63KNbuCFdV4K2PQ1jdziTQUZH6BSaDZIRzqJi8fvX6ZCbkfbKFfgFOIpqCKeETYiST6FRzqolOpoJShuG-0PMi6DrwhnTGlge55oQNWXpctm_ibqHAV5eI"/>
+</div>
+<!-- Plot 3: Lavender Rows -->
+<div class="relative group overflow-hidden bg-surface-container-low rounded-lg">
+<img class="w-full h-full object-cover" data-alt="Lush row of blooming deep purple lavender plants in a garden with soft focus background of green foliage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwrgYJExu_1arV4-zubR4XaFoB7L6j7lHzkOEvY4SdLFQUgCSGWLLPq1NYusgCfYy9B2e7OWqG4OOt0wJK_ul2394sLbmem_-XlcSMlt6MXGg9Hddd6sHRw7eqCM1i86kEcJq_cQRYdJZEnO9hOzXGfLlTMGPy4HAbugbYwtkCDv5WD4FrhvESUmz8XykQGvjgoP0wNOdTtFOzb0tUd-ITF6qVWhzGEEyG8Xi0GEasX2-wqxpiizLAQBZlV3kX7OBHQaeDC8Z8HRz2"/>
+</div>
+<!-- Plot 4: Blooming Tulips -->
+<div class="relative group overflow-hidden bg-surface-container-low rounded-lg">
+<img class="w-full h-full object-cover" data-alt="Field of bright yellow and red tulips standing tall against a backdrop of fresh green spring grass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOHtQVRUF0oyttgIXYNKzCpjWRMquc4GdeFHJzQyJNZni57Oz_QtwabM3ux4XZMbVQyLEd5CmyMicMsmLcYHU9zxGXtjecprF_K-gWPQIulySX42VNmWx1Mm13gWs1Nr73GuY0tUouV0-qIoZlPL6qvwCJfS8Mi_Ay4xd9CCCKbDF9rpMatKA1aZAiwNNFBzvv1b9NTWygkFnQOrSkz_uUQIL61uD2HGUPOBTpsmHbI7zsYP4AT_mBcC1BHVlEn9khYc3fsBw8f6hj"/>
+</div>
+<!-- Plot 5: Stone Planter with Ferns -->
+<div class="relative group overflow-hidden bg-surface-container-low rounded-lg">
+<img class="w-full h-full object-cover" data-alt="Large rustic stone container overflowing with delicate green ferns in a shaded corner of a cottage garden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiz6_4Ip0fyWgAFhFJXJNnpUjTScAhrRhZ0Gd6s8iqvcGMboKkBpfjAtLPYm33tiYMwL2SNvMpiYtT2n4iMC4fxrQqlN2LZ0B7Kmq0E8fcaUvtsdCG6LENkektzsZPMLBqGnkResvgCrQPUiGn31Y3-wEvZ7045HOXUTXduFsebIj_QUnd4twgYx6vdfIuudp7DDOPhpfCZSAYHgZVqS9O-rjXe-vWtJknazSK3nDd6huZYteSFbQvKAMwWf83Aqlxp0xtY-mUrrbZ"/>
+</div>
+<!-- Plot 6: Diverse Bloom Mix -->
+<div class="relative group overflow-hidden bg-surface-container-low rounded-lg">
+<img class="w-full h-full object-cover" data-alt="An artistic cluster of various colorful spring flowers including daisies and poppies in a dense garden plot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1S1S7QfZ-SpVfqZj7MfdZabAqQlU1UBCau8xgVDXPgylyqLOeTpBa3Tx3_93H9KWdbrUcaKgkoNhPcXmG6xRwFxioBhy7NR8JcInyS2_sTLDjze9pxNDP0IB2W_XOl3Yse56FMy3wsqZYfO7HBX5-s7RwpNrv9OLOC0Tz4PlPnKc_Bq8Qo3gMwtPglwfaofuN_JUMlHE3JsuqgJXENFQ2_3sfkqegYo3q7pIsFc2ovyy0tYsyGM8jxtnJtUqFjblKxBgErNy1wn2G"/>
+</div>
+<!-- Postcard Overlays -->
+<div class="absolute inset-0 pointer-events-none flex flex-col justify-between p-6">
+<div class="flex justify-end">
+<div class="bg-white/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/30">
+<span class="text-[9px] font-label font-bold text-on-surface/80 tracking-widest uppercase">Certified Bloom</span>
+</div>
+</div>
+<div class="flex justify-between items-end">
+<div class="bg-white/80 backdrop-blur-sm p-3 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div>
+<p class="text-[8px] font-label font-bold text-on-surface-variant uppercase tracking-tighter">Season Finale</p>
+<p class="text-xs font-headline font-extrabold text-on-surface">SPRING 2024</p>
+</div>
+</div>
+<div class="opacity-30 rotate-12">
+<span class="material-symbols-outlined text-6xl text-primary" style="font-variation-settings: 'wght' 200;">local_post_office</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Subtle Watermark -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] pointer-events-none select-none">
+<span class="text-8xl font-headline font-black rotate-[-30deg]">BOTANICA</span>
+</div>
+</div>
+<!-- Growth Tracker Component -->
+<div class="mt-12 max-w-sm mx-auto">
+<div class="flex justify-between items-end mb-3">
+<h3 class="text-sm font-headline font-bold text-on-surface">Growth Journey Complete</h3>
+<span class="text-xs font-label font-semibold text-tertiary">100%</span>
+</div>
+<div class="h-3 w-full bg-tertiary-container rounded-full overflow-visible relative">
+<div class="h-full bg-tertiary rounded-full w-full relative">
+<div class="absolute -right-2 -top-3 w-8 h-8 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-2xl" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+</div>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant mt-4 text-center italic">"The earth laughs in flowers." – Emerson</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="idea33-nav"><a class="idea33-tab" href="#" onclick="window.location.href='7410983355e84d73b76d74ddd8dff7ce.html'; return false;"><span class="material-symbols-outlined">spa</span><span>Garden</span></a><a class="idea33-tab active" href="#" onclick="window.location.href='0b09a4c489e945429ed31af2641794f3.html'; return false;"><span class="material-symbols-outlined">grid_view</span><span>Archive</span></a><a class="idea33-tab" href="#" onclick="window.location.href='1e526debe9bb44a0a16cff5d5755355f.html'; return false;"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></nav></body></html>
