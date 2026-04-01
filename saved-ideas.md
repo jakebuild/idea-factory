@@ -39,3 +39,10 @@
 **Copies:** UMax — proved people will pay for a blunt appearance verdict and a clear "fix this first" upsell
 **Hook:** It tells you whether your hairline is actually moving or whether you are just spiraling.
 **Submit:** idea-factory submit "Weekly hairline tracker for men who think they might be thinning. Take the same guided selfies each week and the app measures temple recession, crown visibility, and overall hairline change against your own baseline, then shows a blunt Hairline Loss Score and a 6-month projection if nothing changes. The loop is simple: scan, see proof of change or no change, follow one action for the next week, and come back because hair anxiety is not a one-time problem."
+
+## Caffeine Curfew
+**Source:** mix-20260401-235927.md
+**Targets:** Health
+**Copies:** Cal AI — proved people will repeatedly scan what they consume if the payoff is an instant, scary number reveal
+**Hook:** It tells you if this drink is stealing tomorrow before you even order it.
+**Submit:** idea-factory submit "Caffeine scanner that predicts your sleep damage before you drink it. Scan a coffee, energy drink, pre-workout, or cafe menu item and the app estimates when you will actually fall asleep tonight, how hard tomorrow's energy will crash, and the latest safe time to have that dose based on your planned bedtime and recent sleep. The loop is scan, see the damage, swap to a safer option or accept it, then come back because caffeine regret is a daily problem."
