@@ -53,3 +53,10 @@
 **Copies:** UMax — proved users will pay for a blunt attractiveness score reveal plus a concrete improvement plan
 **Hook:** It tells you the single frame from a 5-second video where you look hottest, instead of making you guess.
 **Submit:** idea-factory submit "PoseProof is an attractiveness app that copies the UMax model but focuses on a sharper reveal moment: instead of rating one selfie, you record a 5-second slow-turn selfie video and the app auto-picks the single best frame for Hinge, Tinder, or Instagram. It scores angle, smile, eye openness, and posture, shows how much better that frame is than the photo you were about to post, and gives one blunt retake instruction like chin lower or camera higher. The core loop is shoot, get the keeper frame, reshoot, and watch your score improve, which makes it naturally shareable and realistic for a solo dev to ship in 2-4 weeks with a vision API and a simple subscription."
+
+## MirrorMargin
+**Source:** mix-20260402-055037.md
+**Targets:** Attractiveness
+**Copies:** UMax — proved people will pay for a blunt attractiveness verdict and a clear "fix this first" upgrade path
+**Hook:** It ends the "which outfit actually makes me look hotter?" group-chat debate in ten seconds.
+**Submit:** idea-factory submit "MirrorMargin is an attractiveness app that copies the UMax model but applies it to outfits instead of faces. You take 3 mirror selfies before a date, party, or interview, and the app ranks them by attractiveness, polish, and 'looks expensive' impression, then tells you the single swap most likely to lift your score, like changing shoes, removing a jacket, or fixing color contrast. The reveal is instant and screen-recordable: three looks side by side, one stamped Best First Impression, and one blunt reason the others lost."
