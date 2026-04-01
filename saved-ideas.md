@@ -25,3 +25,10 @@
 **Copies:** Alarmy — proved daily pain plus forced action creates habit retention far better than gentle reminders
 **Hook:** It turns forgetting your essentials into Alarmy for your front door.
 **Submit:** idea-factory submit "Front-door panic prevention app. You stick cheap NFC tags on your wallet, keys, badge, meds, or laptop charger, and the app arms a leave-home check when your phone disconnects from home WiFi during chosen hours. If an essential item has not been tapped that morning, it throws a loud lock-screen alert and keeps nagging until you confirm it or deliberately skip it. Different packs cover work, gym, travel, or school, so it becomes Alarmy for forgetting your essentials."
+
+## PuffScore
+**Source:** mix-20260401-183457.md
+**Targets:** Attractiveness
+**Copies:** UMax — proved people will pay for a blunt attractiveness score and a personalized "fix this first" upsell
+**Hook:** It tells you tonight whether tomorrow's face will betray you.
+**Submit:** idea-factory submit "Beauty-prediction app for tomorrow morning. Scan your dinner, dessert, or drinks and log your planned sleep, and the app predicts your next-morning Puff Score: puffiness, acne risk, dullness, and the exact time your face is likely to look camera-ready again. The loop is scan tonight, see tomorrow's damage, then follow one simple save-it action like extra water, an earlier bedtime, or skipping the salty add-on, so it feels like Cal AI for beauty anxiety instead of calories."
