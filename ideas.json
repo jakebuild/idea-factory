@@ -158,5 +158,15 @@
     "folder": "33-walk-garden---each-step-equals",
     "startScreenId": "83b29874ca184bc3a9bf063dd94f1470",
     "status": "complete"
+  },
+  {
+    "num": 34,
+    "title": "Book Pledge",
+    "sub": "Email-first reading pledges with streaks, summaries, and recovery loops.",
+    "score": "6/10",
+    "deviceType": "WEB",
+    "folder": "34-book-pledge---bet-on-your-read",
+    "startScreenId": "d79631cc0d244ae3a6ee4dc54223176c",
+    "status": "complete"
   }
 ]
