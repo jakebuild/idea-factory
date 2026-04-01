@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Vitalis Pro - History</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#d9dadb",
+              "on-background": "#191c1d",
+              "on-surface": "#191c1d",
+              "surface-tint": "#7e5700",
+              "surface-bright": "#f8f9fa",
+              "secondary-fixed": "#d6e3ff",
+              "surface": "#f8f9fa",
+              "secondary": "#495f84",
+              "on-primary-fixed": "#281900",
+              "primary-fixed-dim": "#ffba38",
+              "on-secondary-container": "#445a7f",
+              "on-primary-container": "#af7a00",
+              "primary": "#000000",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed": "#ffdbcd",
+              "inverse-primary": "#ffba38",
+              "on-tertiary-container": "#b2755b",
+              "tertiary-container": "#351001",
+              "on-primary-fixed-variant": "#604100",
+              "on-error": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#e7e8e9",
+              "primary-fixed": "#ffdeac",
+              "on-secondary-fixed": "#001b3d",
+              "inverse-on-surface": "#f0f1f2",
+              "surface-container-low": "#f3f4f5",
+              "surface-variant": "#e1e3e4",
+              "primary-container": "#281900",
+              "on-surface-variant": "#44474e",
+              "error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#fdb698",
+              "on-tertiary-fixed": "#351001",
+              "tertiary": "#000000",
+              "outline-variant": "#c4c6cf",
+              "secondary-fixed-dim": "#b1c7f2",
+              "on-tertiary-fixed-variant": "#6b3a24",
+              "outline": "#74777f",
+              "surface-container": "#edeeef",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "background": "#f8f9fa",
+              "error": "#ba1a1a",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-highest": "#e1e3e4",
+              "on-secondary-fixed-variant": "#31476b",
+              "secondary-container": "#bcd2fe"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/90 backdrop-blur-xl shadow-[0px_12px_32px_rgba(25,28,29,0.06)]">
+<div class="max-w-md mx-auto h-16 px-4 flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0"><span class="h-10 w-10"></span><h1 class="text-xl font-bold tracking-tight text-slate-900 truncate">History</h1></div>
+<span class="h-10 w-10"></span>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-md mx-auto pb-32">
+<!-- Summary Section (Bento Inspired Cards) -->
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-sm border-l-4 border-primary-fixed-dim">
+<p class="text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant mb-2">Avg. Latest Safe Time</p>
+<p class="text-2xl font-extrabold text-on-secondary-fixed">2:15 PM</p>
+<div class="mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-amber-600" data-icon="schedule">schedule</span>
+<span class="text-[10px] text-on-surface-variant">Optimal Window</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-lg shadow-sm border-l-4 border-amber-600/20">
+<p class="text-[11px] font-semibold uppercase tracking-wider text-on-surface-variant mb-2">Late Caffeine Events</p>
+<p class="text-2xl font-extrabold text-on-secondary-fixed">4 <span class="text-xs font-medium text-on-surface-variant">this week</span></p>
+<div class="mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-error" data-icon="warning">warning</span>
+<span class="text-[10px] text-error">Above average</span>
+</div>
+</div>
+</div>
+<!-- Filter Chips -->
+<div class="flex overflow-x-auto gap-2 no-scrollbar mb-8 pb-1">
+<button class="bg-on-secondary-fixed text-on-secondary px-5 py-2 rounded-full text-xs font-medium whitespace-nowrap">All</button>
+<button class="bg-surface-container-high text-on-surface-variant px-5 py-2 rounded-full text-xs font-medium whitespace-nowrap hover:bg-slate-100 transition-colors">High Risk</button>
+<button class="bg-surface-container-high text-on-surface-variant px-5 py-2 rounded-full text-xs font-medium whitespace-nowrap hover:bg-slate-100 transition-colors">Logged Anyway</button>
+<button class="bg-surface-container-high text-on-surface-variant px-5 py-2 rounded-full text-xs font-medium whitespace-nowrap hover:bg-slate-100 transition-colors">Low Impact</button>
+</div>
+<!-- Timeline List -->
+<div class="space-y-4">
+<h2 class="text-xs font-bold text-on-surface-variant uppercase tracking-widest px-1">Recent Entries</h2>
+<!-- Timeline Item 1 -->
+<div class="relative pl-6 border-l border-outline-variant/30 ml-2 space-y-4">
+<div class="absolute -left-[5px] top-4 w-2.5 h-2.5 bg-amber-500 rounded-full"></div>
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="font-bold text-on-secondary-fixed text-base leading-tight">Double Espresso</h3>
+<p class="text-[11px] text-on-surface-variant font-medium">150mg • Logged at 4:30 PM</p>
+</div>
+<span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wide">High Risk</span>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-base" data-icon="bedtime">bedtime</span>
+<p class="text-[11px] text-on-surface-variant">Planned Bedtime: <span class="font-bold">11:30 PM</span></p>
+</div>
+<span class="material-symbols-outlined text-amber-500 text-lg" data-icon="coffee_maker">coffee_maker</span>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="absolute -left-[5px] top-[184px] w-2.5 h-2.5 bg-secondary-container rounded-full"></div>
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="font-bold text-on-secondary-fixed text-base leading-tight">Standard Oat Latte</h3>
+<p class="text-[11px] text-on-surface-variant font-medium">85mg • Logged at 10:15 AM</p>
+</div>
+<span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wide">Low Risk</span>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-base" data-icon="bedtime">bedtime</span>
+<p class="text-[11px] text-on-surface-variant">Planned Bedtime: <span class="font-bold">11:00 PM</span></p>
+</div>
+<span class="material-symbols-outlined text-on-secondary-fixed opacity-20 text-lg" data-icon="local_cafe">local_cafe</span>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="absolute -left-[5px] top-[352px] w-2.5 h-2.5 bg-amber-500 rounded-full"></div>
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm opacity-90">
+<div class="flex justify-between items-start mb-3">
+<div>
+<h3 class="font-bold text-on-secondary-fixed text-base leading-tight">Cold Brew</h3>
+<p class="text-[11px] text-on-surface-variant font-medium">210mg • Logged at 2:45 PM</p>
+</div>
+<span class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wide">High Risk</span>
+</div>
+<div class="flex items-center justify-between pt-3 border-t border-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-base" data-icon="bedtime">bedtime</span>
+<p class="text-[11px] text-on-surface-variant">Planned Bedtime: <span class="font-bold">11:30 PM</span></p>
+</div>
+<span class="material-symbols-outlined text-amber-500 text-lg" data-icon="ice_skating">ice_skating</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-slate-50/90 backdrop-blur-xl rounded-t-3xl shadow-[0px_-8px_24px_rgba(25,28,29,0.04)]">
+<div class="max-w-md mx-auto flex justify-around items-center px-4 pt-3 pb-8">
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all text-slate-400 hover:text-amber-500" href="2ece5531da8942c7b442b1e134dfd88c.html" onclick="window.location.href='2ece5531da8942c7b442b1e134dfd88c.html'; return false;">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all bg-amber-100/70 text-amber-700" href="a24a5e98acca4d2f976833cbc7928cb3.html" onclick="window.location.href='a24a5e98acca4d2f976833cbc7928cb3.html'; return false;">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">history</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">History</span>
+</a>
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all text-slate-400 hover:text-amber-500" href="814e2923274c434abfdd6fedaf496455.html" onclick="window.location.href='814e2923274c434abfdd6fedaf496455.html'; return false;">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">Settings</span>
+</a>
+</div>
+</nav>
+</body></html>

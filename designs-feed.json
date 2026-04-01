@@ -1,5 +1,37 @@
 [
   {
+    "id": "idea-43",
+    "num": 43,
+    "title": "Caffeine Pulse",
+    "subtitle": "Scan a drink to see your latest safe caffeine time before bed.",
+    "description": "Caffeine scanner that predicts your sleep damage before you drink it. Scan a coffee, energy drink, pre-workout, or cafe menu item and the app estimates when you will actually fall asleep tonight, how hard tomorrow's energy will crash, and the latest safe time to have that dose based on your planned bedtime and recent sleep. The loop is scan, see the damage, swap to a safer option or accept it, then come back because caffeine regret is a daily problem.",
+    "score": 5,
+    "status": "complete",
+    "deviceType": "MOBILE",
+    "category": "Health",
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "tags": [
+      "caffeine",
+      "sleep",
+      "scanner",
+      "health",
+      "habit"
+    ],
+    "folder": "43-caffeine-scanner-that-predicts",
+    "prototypeUrl": "https://jakebuild.github.io/idea-factory/43-caffeine-scanner-that-predicts/",
+    "metaUrl": "https://jakebuild.github.io/idea-factory/43-caffeine-scanner-that-predicts/meta.json",
+    "startScreenId": "2ece5531da8942c7b442b1e134dfd88c",
+    "startScreenUrl": "https://jakebuild.github.io/idea-factory/43-caffeine-scanner-that-predicts/2ece5531da8942c7b442b1e134dfd88c.html",
+    "screenCount": 6,
+    "stitchId": "17301081833792818601",
+    "stitchUrl": "https://stitch.withgoogle.com/projects/17301081833792818601",
+    "publishedAt": "2026-04-01T17:37:07Z",
+    "updatedAt": "2026-04-01T17:37:07Z"
+  },
+  {
     "id": "idea-40",
     "num": 40,
     "title": "Front-door panic prevention app",

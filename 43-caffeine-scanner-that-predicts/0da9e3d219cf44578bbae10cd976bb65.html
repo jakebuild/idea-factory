@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Safer Swaps - Caffeine Pulse</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#351001",
+              "secondary-fixed-dim": "#b1c7f2",
+              "primary-fixed-dim": "#ffba38",
+              "primary-fixed": "#ffdeac",
+              "on-surface-variant": "#44474e",
+              "background": "#f8f9fa",
+              "tertiary-container": "#351001",
+              "on-secondary-container": "#445a7f",
+              "on-error": "#ffffff",
+              "outline-variant": "#c4c6cf",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed-variant": "#31476b",
+              "surface-container-highest": "#e1e3e4",
+              "tertiary-fixed": "#ffdbcd",
+              "surface-variant": "#e1e3e4",
+              "secondary-fixed": "#d6e3ff",
+              "primary": "#000000",
+              "on-secondary-fixed": "#001b3d",
+              "error": "#ba1a1a",
+              "on-primary-fixed-variant": "#604100",
+              "surface-container-low": "#f3f4f5",
+              "outline": "#74777f",
+              "secondary": "#495f84",
+              "tertiary": "#000000",
+              "surface-container-high": "#e7e8e9",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed": "#281900",
+              "error-container": "#ffdad6",
+              "on-primary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "primary-container": "#281900",
+              "on-surface": "#191c1d",
+              "inverse-primary": "#ffba38",
+              "surface-dim": "#d9dadb",
+              "inverse-on-surface": "#f0f1f2",
+              "on-secondary": "#ffffff",
+              "secondary-container": "#bcd2fe",
+              "on-tertiary-container": "#b2755b",
+              "on-background": "#191c1d",
+              "inverse-surface": "#2e3132",
+              "on-primary-container": "#af7a00",
+              "surface-bright": "#f8f9fa",
+              "on-tertiary-fixed-variant": "#6b3a24",
+              "surface-tint": "#7e5700",
+              "tertiary-fixed-dim": "#fdb698",
+              "surface-container": "#edeeef",
+              "surface": "#f8f9fa"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/90 backdrop-blur-xl shadow-[0px_12px_32px_rgba(25,28,29,0.06)]">
+<div class="max-w-md mx-auto h-16 px-4 flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0"><button aria-label="Back" class="h-10 w-10 flex items-center justify-center rounded-full text-slate-700 hover:bg-slate-100 transition-colors" onclick="window.location.href='41fc3fd14d104df8b8c6978970630eb9.html'"><span class="material-symbols-outlined">arrow_back</span></button><h1 class="text-xl font-bold tracking-tight text-slate-900 truncate">Safer Swaps</h1></div>
+<span class="h-10 w-10"></span>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-8 pb-32">
+<!-- Hero Recommendation Banner -->
+<section class="relative overflow-hidden rounded-xl bg-primary-container p-8 text-on-primary">
+<div class="relative z-10 flex flex-col gap-2">
+<span class="font-label text-xs uppercase tracking-[0.1em] text-primary-fixed-dim">AI Recommendation</span>
+<h2 class="font-headline text-3xl font-extrabold tracking-tight leading-tight">
+                    Best fit for your <span class="text-primary-fixed-dim">11:30 PM</span> bedtime
+                </h2>
+<p class="text-on-primary-fixed-variant text-sm mt-2 font-medium">Switching to decaf now ensures your restorative deep sleep starts on time.</p>
+</div>
+<!-- Decorative Gradient Shape -->
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-primary-fixed-dim/20 rounded-full blur-3xl"></div>
+</section>
+<!-- Options Container -->
+<div class="grid gap-6">
+<!-- Option 1: Current Drink (High Risk) -->
+<div class="group relative bg-surface-container-low rounded-xl p-5 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="space-y-1">
+<span class="font-label text-[10px] uppercase font-bold tracking-wider text-outline">Current Choice</span>
+<h3 class="font-headline text-xl font-bold text-on-surface">Standard Oat Latte</h3>
+</div>
+<span class="px-3 py-1 rounded-full text-[10px] font-bold bg-error/10 text-error border border-error/20 uppercase tracking-widest">High Risk</span>
+</div>
+<div class="flex items-center justify-between py-4 border-t border-outline-variant/10">
+<div class="text-center">
+<span class="block text-2xl font-bold text-on-surface">150mg</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant font-medium">Caffeine</span>
+</div>
+<div class="h-8 w-px bg-outline-variant/20"></div>
+<div class="text-center">
+<span class="block text-2xl font-bold text-on-surface">2:15 PM</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant font-medium">Latest Safe</span>
+</div>
+<div class="h-8 w-px bg-outline-variant/20"></div>
+<div class="text-center">
+<span class="block text-2xl font-bold text-error">1h 15m</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant font-medium">Sleep Delay</span>
+</div>
+</div>
+</div>
+<!-- Option 2: Half Size (Moderate Risk) -->
+<div class="group relative bg-surface-container-low rounded-xl p-5 transition-all duration-300">
+<div class="flex justify-between items-start mb-4">
+<div class="space-y-1">
+<span class="font-label text-[10px] uppercase font-bold tracking-wider text-outline">Lighter Alternative</span>
+<h3 class="font-headline text-xl font-bold text-on-surface">Small Oat Latte</h3>
+</div>
+<span class="px-3 py-1 rounded-full text-[10px] font-bold bg-amber-500/10 text-on-primary-container border border-amber-500/20 uppercase tracking-widest">Moderate Risk</span>
+</div>
+<div class="flex items-center justify-between py-4 border-t border-outline-variant/10">
+<div class="text-center">
+<span class="block text-2xl font-bold text-on-surface">75mg</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant font-medium">Caffeine</span>
+</div>
+<div class="h-8 w-px bg-outline-variant/20"></div>
+<div class="text-center">
+<span class="block text-2xl font-bold text-on-surface">4:45 PM</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant font-medium">Latest Safe</span>
+</div>
+<div class="h-8 w-px bg-outline-variant/20"></div>
+<div class="text-center">
+<span class="block text-2xl font-bold text-amber-600">30m</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant font-medium">Sleep Delay</span>
+</div>
+</div>
+</div>
+<!-- Option 3: Lower-Caffeine Alternative (WINNER) -->
+<div class="group relative bg-surface-container-lowest rounded-xl p-6 shadow-xl shadow-on-surface/5 border-2 border-primary-fixed-dim transition-all duration-300 scale-[1.02]">
+<div class="absolute -top-3 left-6 px-3 py-1 bg-primary-fixed-dim rounded-full text-[10px] font-black uppercase text-on-primary-fixed tracking-widest">Recommended</div>
+<div class="flex justify-between items-start mb-6 pt-2">
+<div class="space-y-1">
+<span class="font-label text-[10px] uppercase font-bold tracking-wider text-on-secondary-fixed-variant">Best Performance</span>
+<h3 class="font-headline text-2xl font-black text-on-surface">Decaf Oat Latte</h3>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-3 py-1 rounded-full text-[10px] font-bold bg-emerald-500/10 text-emerald-600 border border-emerald-500/20 uppercase tracking-widest">Low Risk</span>
+</div>
+</div>
+<div class="flex items-center justify-between py-6 border-y border-outline-variant/10 mb-8">
+<div class="text-center">
+<span class="block text-3xl font-black text-on-surface">15mg</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant font-bold">Caffeine</span>
+</div>
+<div class="h-10 w-px bg-outline-variant/20"></div>
+<div class="text-center">
+<span class="block text-3xl font-black text-on-surface">9:00 PM</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant font-bold">Latest Safe</span>
+</div>
+<div class="h-10 w-px bg-outline-variant/20"></div>
+<div class="text-center">
+<span class="block text-3xl font-black text-emerald-500">0m</span>
+<span class="text-[10px] uppercase tracking-tighter text-on-surface-variant font-bold">Sleep Delay</span>
+</div>
+</div>
+<button class="w-full py-4 bg-primary-fixed-dim hover:bg-primary-fixed text-on-primary-fixed font-bold rounded-full transition-all active:scale-[0.98] shadow-lg shadow-primary-fixed-dim/20 cursor-pointer" onclick="window.location.href='a24a5e98acca4d2f976833cbc7928cb3.html'">
+                    Choose This Instead
+                </button>
+</div>
+</div>
+<!-- Footer Actions -->
+<footer class="flex flex-col items-center gap-4 py-8">
+<button class="text-on-secondary-fixed-variant font-bold text-sm tracking-wide hover:opacity-70 transition-opacity cursor-pointer" onclick="window.location.href='a24a5e98acca4d2f976833cbc7928cb3.html'">
+                Keep Original Drink
+                <span class="block h-[2px] w-full bg-primary-fixed mt-1"></span>
+</button>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-slate-50/90 backdrop-blur-xl rounded-t-3xl shadow-[0px_-8px_24px_rgba(25,28,29,0.04)]">
+<div class="max-w-md mx-auto flex justify-around items-center px-4 pt-3 pb-8">
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all bg-amber-100/70 text-amber-700" href="2ece5531da8942c7b442b1e134dfd88c.html" onclick="window.location.href='2ece5531da8942c7b442b1e134dfd88c.html'; return false;">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all text-slate-400 hover:text-amber-500" href="a24a5e98acca4d2f976833cbc7928cb3.html" onclick="window.location.href='a24a5e98acca4d2f976833cbc7928cb3.html'; return false;">
+<span class="material-symbols-outlined">history</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">History</span>
+</a>
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all text-slate-400 hover:text-amber-500" href="814e2923274c434abfdd6fedaf496455.html" onclick="window.location.href='814e2923274c434abfdd6fedaf496455.html'; return false;">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">Settings</span>
+</a>
+</div>
+</nav>
+<!-- Background Decorative Gradient -->
+<div class="fixed inset-0 -z-10 bg-background overflow-hidden pointer-events-none">
+<div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-secondary-container/20 rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-primary-fixed-dim/10 rounded-full blur-[120px]"></div>
+</div>
+</body></html>

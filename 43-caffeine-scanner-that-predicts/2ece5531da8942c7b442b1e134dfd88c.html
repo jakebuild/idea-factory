@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Caffeine Pulse - Sleep-First Caffeine Decisions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#ffffff",
+              "surface-container-high": "#e7e8e9",
+              "surface-bright": "#f8f9fa",
+              "surface-container-low": "#f3f4f5",
+              "surface-container": "#edeeef",
+              "surface": "#f8f9fa",
+              "outline": "#74777f",
+              "surface-variant": "#e1e3e4",
+              "inverse-on-surface": "#f0f1f2",
+              "inverse-primary": "#ffba38",
+              "error": "#ba1a1a",
+              "secondary-fixed": "#d6e3ff",
+              "on-tertiary-container": "#b2755b",
+              "surface-tint": "#7e5700",
+              "on-secondary-fixed-variant": "#31476b",
+              "on-primary-fixed": "#281900",
+              "error-container": "#ffdad6",
+              "primary-container": "#281900",
+              "tertiary-fixed": "#ffdbcd",
+              "on-error-container": "#93000a",
+              "tertiary": "#000000",
+              "surface-dim": "#d9dadb",
+              "on-secondary-container": "#445a7f",
+              "on-tertiary-fixed-variant": "#6b3a24",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#001b3d",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed-dim": "#fdb698",
+              "on-primary-container": "#af7a00",
+              "outline-variant": "#c4c6cf",
+              "secondary-fixed-dim": "#b1c7f2",
+              "tertiary-container": "#351001",
+              "primary-fixed": "#ffdeac",
+              "primary-fixed-dim": "#ffba38",
+              "on-tertiary-fixed": "#351001",
+              "primary": "#000000",
+              "secondary-container": "#bcd2fe",
+              "on-surface-variant": "#44474e",
+              "background": "#f8f9fa",
+              "on-background": "#191c1d",
+              "inverse-surface": "#2e3132",
+              "on-surface": "#191c1d",
+              "secondary": "#495f84",
+              "surface-container-highest": "#e1e3e4",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#604100"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(20px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/90 backdrop-blur-xl shadow-[0px_12px_32px_rgba(25,28,29,0.06)]">
+<div class="max-w-md mx-auto h-16 px-4 flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0"><span class="h-10 w-10"></span><h1 class="text-xl font-bold tracking-tight text-slate-900 truncate">Caffeine Pulse</h1></div>
+<span class="h-10 w-10"></span>
+</div>
+</header>
+<main class="pt-24 max-w-md mx-auto px-6 pt-8 pb-32 space-y-10">
+<!-- Hero Section -->
+<section class="space-y-2">
+<h1 class="text-4xl font-extrabold tracking-tight text-slate-900 leading-tight">Sleep-First Caffeine Decisions</h1>
+<p class="text-on-surface-variant text-lg">Estimate how your drink will impact your sleep tonight.</p>
+</section>
+<!-- Status Bento Card -->
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 bg-secondary p-6 rounded-xl relative overflow-hidden text-on-primary">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed-dim/10 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div class="flex justify-between items-start mb-6">
+<div class="space-y-1">
+<span class="text-[11px] font-bold uppercase tracking-widest text-secondary-fixed opacity-80">Current Status</span>
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary-fixed-dim animate-pulse"></div>
+<span class="text-xl font-bold tracking-tight">System Ready</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary-fixed-dim" data-icon="bedtime">bedtime</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-slate-900/30 p-4 rounded-lg backdrop-blur-md">
+<p class="text-xs text-secondary-fixed font-medium mb-1">Planned Bedtime</p>
+<div class="flex items-center justify-between">
+<span class="text-lg font-bold">11:30 PM</span>
+<span class="material-symbols-outlined text-sm opacity-60" data-icon="edit">edit</span>
+</div>
+</div>
+<div class="bg-slate-900/30 p-4 rounded-lg backdrop-blur-md">
+<p class="text-xs text-secondary-fixed font-medium mb-1">Last Night</p>
+<span class="text-lg font-bold">7h 15m</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Action Area -->
+<section class="space-y-4">
+<button class="w-full bg-primary-fixed-dim text-on-primary-fixed font-bold py-5 rounded-full flex items-center justify-center gap-3 shadow-[0px_12px_24px_rgba(255,186,56,0.3)] active:scale-95 duration-200 transition-transform cursor-pointer" onclick="window.location.href='41fc3fd14d104df8b8c6978970630eb9.html'">
+<span class="material-symbols-outlined text-2xl" data-icon="photo_camera">photo_camera</span>
+<span class="text-lg">Scan a Drink</span>
+</button>
+<button class="w-full bg-surface-variant/40 text-on-secondary-fixed-variant font-semibold py-4 rounded-full flex items-center justify-center gap-2 hover:bg-surface-variant/60 transition-colors cursor-pointer" onclick="window.location.href='71ee62c5b48f4ba0a0b7ef9b6f556ef5.html'">
+<span class="material-symbols-outlined text-xl" data-icon="search">search</span>
+<span>Search or enter manually</span>
+</button>
+</section>
+<!-- Quick Picks Section -->
+<section class="space-y-6">
+<div class="flex items-end justify-between">
+<h2 class="text-2xl font-bold text-slate-900 tracking-tight">Quick Picks</h2>
+<span class="text-sm font-semibold text-on-primary-container cursor-pointer">View all</span>
+</div>
+<div class="grid grid-cols-2 gap-4 cursor-pointer" onclick="window.location.href='41fc3fd14d104df8b8c6978970630eb9.html'">
+<!-- Cold Brew -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-[0px_8px_16px_rgba(0,0,0,0.02)] hover:shadow-md transition-shadow group cursor-pointer border border-transparent hover:border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-amber-600" data-icon="icecream">icecream</span>
+</div>
+<h3 class="font-bold text-slate-900">Cold Brew</h3>
+<p class="text-xs text-slate-500 mt-1">~200mg Caffeine</p>
+</div>
+<!-- Energy Drink -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-[0px_8px_16px_rgba(0,0,0,0.02)] hover:shadow-md transition-shadow group cursor-pointer border border-transparent hover:border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-blue-600" data-icon="bolt">bolt</span>
+</div>
+<h3 class="font-bold text-slate-900">Energy Drink</h3>
+<p class="text-xs text-slate-500 mt-1">~160mg Caffeine</p>
+</div>
+<!-- Pre-Workout -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-[0px_8px_16px_rgba(0,0,0,0.02)] hover:shadow-md transition-shadow group cursor-pointer border border-transparent hover:border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-red-600" data-icon="fitness_center">fitness_center</span>
+</div>
+<h3 class="font-bold text-slate-900">Pre-Workout</h3>
+<p class="text-xs text-slate-500 mt-1">~300mg Caffeine</p>
+</div>
+<!-- Latte -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-[0px_8px_16px_rgba(0,0,0,0.02)] hover:shadow-md transition-shadow group cursor-pointer border border-transparent hover:border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-stone-100 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-stone-600" data-icon="local_cafe">local_cafe</span>
+</div>
+<h3 class="font-bold text-slate-900">Latte</h3>
+<p class="text-xs text-slate-500 mt-1">~75mg Caffeine</p>
+</div>
+</div>
+</section>
+<!-- Confidence Footer -->
+<footer class="pt-4 pb-8 text-center">
+<div class="inline-flex items-center gap-2 bg-surface-container py-2 px-4 rounded-full">
+<span class="material-symbols-outlined text-sm text-slate-400" data-icon="verified">verified</span>
+<p class="text-[12px] font-medium text-slate-500">Predictions are estimates with 85% confidence.</p>
+</div>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-slate-50/90 backdrop-blur-xl rounded-t-3xl shadow-[0px_-8px_24px_rgba(25,28,29,0.04)]">
+<div class="max-w-md mx-auto flex justify-around items-center px-4 pt-3 pb-8">
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all bg-amber-100/70 text-amber-700" href="2ece5531da8942c7b442b1e134dfd88c.html" onclick="window.location.href='2ece5531da8942c7b442b1e134dfd88c.html'; return false;">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all text-slate-400 hover:text-amber-500" href="a24a5e98acca4d2f976833cbc7928cb3.html" onclick="window.location.href='a24a5e98acca4d2f976833cbc7928cb3.html'; return false;">
+<span class="material-symbols-outlined">history</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">History</span>
+</a>
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all text-slate-400 hover:text-amber-500" href="814e2923274c434abfdd6fedaf496455.html" onclick="window.location.href='814e2923274c434abfdd6fedaf496455.html'; return false;">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">Settings</span>
+</a>
+</div>
+</nav>
+</body></html>

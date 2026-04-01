@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Idea Factory — Design Preview</title>
+<!-- IDEA_DATA injected here by design agent -->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0f1a;
+    color: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ──────────────────────────────────────── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .idea-num {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: #3b82f6; background: #1e3a5f;
+    padding: 3px 10px; border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .idea-title { font-size: 1.1rem; font-weight: 700; color: #f9fafb; }
+  .idea-sub { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+  .header-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    border-radius: 99px; padding: 4px 12px;
+    font-size: 0.75rem; color: #9ca3af;
+  }
+  .score-pill {
+    background: #1a2e1a; border: 1px solid #2d4a2d;
+    color: #86efac; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 99px;
+  }
+  .toggle-btn {
+    display: flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    color: #9ca3af; font-size: 0.75rem;
+    padding: 4px 12px; border-radius: 99px;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .toggle-btn:hover { background: #1f2937; color: #f9fafb; border-color: #374151; }
+
+  /* ── Body ────────────────────────────────────────── */
+  .body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: stretch;
+  }
+
+  /* ── Phone column ────────────────────────────────── */
+  .phone-col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 40px;
+    gap: 16px;
+    background: #0a0f1a;
+    overflow: hidden;
+  }
+
+  /* MOBILE frame */
+  .phone-frame {
+    width: 390px;
+    height: 844px;
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 0 0 10px #0f172a,
+      0 0 0 11px rgba(255,255,255,0.06),
+      0 50px 100px rgba(0,0,0,0.7);
+    background: #000;
+    flex-shrink: 0;
+  }
+
+  /* WEB frame */
+  .web-frame {
+    width: min(900px, calc(100% - 80px));
+    height: min(640px, calc(100vh - 180px));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 24px 60px rgba(0,0,0,0.6);
+    background: #1f2937;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .web-chrome {
+    height: 36px;
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .web-chrome .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .web-chrome .dot-r { background: #ef4444; }
+  .web-chrome .dot-y { background: #f59e0b; }
+  .web-chrome .dot-g { background: #22c55e; }
+  .web-chrome .url {
+    flex: 1; background: #111827; border-radius: 4px;
+    height: 20px; margin: 0 8px;
+    display: flex; align-items: center; padding: 0 10px;
+    font-size: 0.68rem; color: #6b7280;
+  }
+
+  .device-iframe {
+    width: 100%; height: 100%;
+    border: none; display: block;
+    flex: 1;
+  }
+
+  /* Switcher */
+  .switcher {
+    display: flex; gap: 6px;
+    flex-wrap: wrap; justify-content: center;
+    max-width: 600px;
+  }
+  .switcher button {
+    height: 28px; padding: 0 10px;
+    border-radius: 6px; border: 1px solid #1f2937;
+    background: #111827; color: #6b7280;
+    font-size: 0.7rem; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .switcher button:hover { background: #1f2937; color: #d1d5db; border-color: #374151; }
+  .switcher button.active { background: #1e3a5f; color: #60a5fa; border-color: #3b82f6; }
+
+  /* ── Resize handle ───────────────────────────────── */
+  .resize-handle {
+    width: 8px;
+    flex-shrink: 0;
+    cursor: col-resize;
+    position: relative;
+    background: transparent;
+    z-index: 10;
+  }
+  .resize-handle::after {
+    content: '';
+    position: absolute;
+    left: 3px; top: 0; bottom: 0;
+    width: 2px;
+    background: #1a2235;
+    transition: background 0.15s;
+  }
+  .resize-handle:hover::after { background: #374151; }
+  .resize-handle.dragging::after { background: #3b82f6; }
+
+  /* ── Timeline column ─────────────────────────────── */
+  .timeline-col {
+    width: 460px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 0.25s ease;
+    background: #0d1424;
+  }
+  .timeline-col.collapsed { width: 0; }
+
+  .timeline-header {
+    padding: 20px 28px 14px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .timeline-header h2 {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #4b5563;
+  }
+
+  .timeline-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 28px 40px;
+  }
+  .timeline-scroll::-webkit-scrollbar { width: 4px; }
+  .timeline-scroll::-webkit-scrollbar-track { background: transparent; }
+  .timeline-scroll::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 2px; }
+
+  /* ── Timeline line + dots ────────────────────────── */
+  /* --lx: horizontal center of the line/dots from .timeline-line left edge */
+  .timeline-line {
+    --lx: 8px;
+    position: relative;
+    padding-left: 28px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+  }
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--lx) - 1px); /* 2px line centered at --lx */
+    top: 10px; bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, #1e3a5f 0%, #1f2937 100%);
+    border-radius: 2px;
+  }
+
+  .entry {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .entry::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+    top: 18px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #1f2937;
+    border: 2px solid #374151;
+    z-index: 1;
+  }
+  .entry.s-critique::before { background: #78350f; border-color: #d97706; }
+  .entry.s-improve::before  { background: #1e3a5f; border-color: #3b82f6; }
+  .entry.s-validate::before { background: #14532d; border-color: #16a34a; }
+  .entry.s-design::before   { background: #312e81; border-color: #6366f1; }
+
+  /* ── Entry cards ─────────────────────────────────── */
+  .entry-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+  .entry-card:hover { border-color: #374151; }
+
+  .entry-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer; user-select: none;
+  }
+  .entry-icon { font-size: 1.1rem; flex-shrink: 0; line-height: 1; }
+  .entry-info { flex: 1; min-width: 0; }
+  .entry-title {
+    font-size: 0.85rem; font-weight: 600; color: #f9fafb;
+    display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+    line-height: 1.3;
+  }
+  .entry-desc { font-size: 0.72rem; color: #6b7280; margin-top: 3px; }
+  .entry-chevron {
+    color: #374151; font-size: 0.6rem; flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .entry.open .entry-chevron { transform: rotate(180deg); color: #6b7280; }
+
+  .verdict {
+    font-size: 0.6rem; font-weight: 700;
+    padding: 2px 6px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .verdict-needs { background: #451a03; color: #fb923c; }
+  .verdict-worth { background: #14532d; color: #86efac; }
+  .verdict-kill  { background: #450a0a; color: #f87171; }
+  .escore { font-size: 0.7rem; font-weight: 700; color: #60a5fa; }
+
+  .entry-body {
+    display: none;
+    border-top: 1px solid #1f2937;
+    padding: 14px;
+    font-size: 0.76rem; color: #9ca3af; line-height: 1.65;
+  }
+  .entry.open .entry-body { display: block; }
+
+  .esect { margin-top: 10px; }
+  .esect:first-child { margin-top: 0; }
+  .esect-label {
+    font-size: 0.62rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: #4b5563; margin-bottom: 5px;
+  }
+  .esect ul { padding-left: 14px; }
+  .esect li { margin-bottom: 3px; color: #9ca3af; }
+  .esect p { color: #9ca3af; }
+  .esect strong { color: #d1d5db; font-weight: 600; }
+  .tag-row { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+  .etag {
+    background: #0a0f1a; border: 1px solid #1f2937;
+    border-radius: 4px; padding: 2px 7px;
+    font-size: 0.66rem; color: #6b7280;
+  }
+  .etag.green { border-color: #14532d; color: #86efac; }
+  .etag.blue  { border-color: #1e3a5f; color: #60a5fa; }
+  a.ext-link { color: #818cf8; text-decoration: none; }
+  a.ext-link:hover { text-decoration: underline; }
+</style>
+<script>
+window.IDEA_DATA = {
+  "ideaNum": 43,
+  "title": "Caffeine Pulse",
+  "sub": "Scan a drink to see your latest safe caffeine time before bed.",
+  "score": "5/10",
+  "deviceType": "MOBILE",
+  "stitchId": "17301081833792818601",
+  "startScreen": 0,
+  "screens": [
+    {
+      "id": "2ece5531da8942c7b442b1e134dfd88c",
+      "label": "Home / Scanner"
+    },
+    {
+      "id": "71ee62c5b48f4ba0a0b7ef9b6f556ef5",
+      "label": "Manual Search / Entry"
+    },
+    {
+      "id": "41fc3fd14d104df8b8c6978970630eb9",
+      "label": "Sleep Impact Result"
+    },
+    {
+      "id": "0da9e3d219cf44578bbae10cd976bb65",
+      "label": "Compare Safer Options"
+    },
+    {
+      "id": "a24a5e98acca4d2f976833cbc7928cb3",
+      "label": "History"
+    },
+    {
+      "id": "814e2923274c434abfdd6fedaf496455",
+      "label": "Settings"
+    }
+  ],
+  "timeline": [
+    {
+      "status": "",
+      "icon": "💡",
+      "title": "Original Idea",
+      "desc": "Scan a drink and estimate its sleep cost before you consume it.",
+      "body": "<div class=\"esect\"><div class=\"esect-label\">Description</div><p>Caffeine scanner that predicts your sleep damage before you drink it. Scan a coffee, energy drink, pre-workout, or cafe menu item and the app estimates when you will actually fall asleep tonight, how hard tomorrow&#x27;s energy will crash, and the latest safe time to have that dose based on your planned bedtime and recent sleep. The loop is scan, see the damage, swap to a safer option or accept it, then come back because caffeine regret is a daily problem.</p></div>"
+    },
+    {
+      "status": "critique",
+      "icon": "🔍",
+      "title": "Critique v1",
+      "desc": "The concept was pushed away from fake precision toward an honest cutoff calculator.",
+      "verdict": "NEEDS MAJOR WORK",
+      "verdictClass": "needs",
+      "score": "5/10",
+      "body": "<div class=\"esect\"><div class=\"esect-label\">What's Good</div><ul><li>The pain is real. People do regret caffeine timing, and &quot;before you drink it&quot; is a cleaner hook than another passive tracker nobody opens.</li><li>The loop is understandable in one sentence: scan drink, get warning, make decision. That is better product shape than most wellness sludge.</li><li>There is a usable MVP hiding in here if you stop pretending to predict biology and instead build a caffeine cutoff calculator with honest confidence ranges.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>&quot;Predicts your sleep damage&quot; is marketing nonsense unless you want users to immediately discover the app is bluffing. Caffeine affects sleep, but so do stress, alcohol, screens, food timing, exercise, medication, tolerance, and whether the user is lying to themselves about bedtime.</li><li>Your core trick depends on knowing the caffeine dose of whatever gets scanned. That is the whole product. And that data is a mess. Bottled drinks vary, cafe drinks are inconsistent, pre-workouts are label chaos, and menus often do not publish caffeine at all. Core differentiator: UNVERIFIED.</li><li>Cafe menu scanning is especially suspect. Most cafe menus tell you flavor names and cup sizes, not milligrams of caffeine. So the app is not really &quot;scanning reality.&quot; It is guessing from drink type and size, which is a much weaker product than the pitch implies.</li><li>&quot;How hard tomorrow&#x27;s energy will crash&quot; is fake-precision fluff. You do not have the data. You do not have the model. You barely have the caffeine input. This is exactly the kind of made-up score that gets screenshots on X and churn everywhere else.</li><li>&quot;Based on your planned bedtime and recent sleep&quot; sounds tidy until you ask how you get that data. Manual entry adds friction. Health integrations add permissions, sync bugs, device differences, and weeks of yak shaving. Skip the integration and your prediction gets even softer.</li><li>The retention loop is not proven at all. Why does the user come back after day 1? Because they regret caffeine daily? Maybe. More likely they learn &quot;big caffeine late is bad,&quot; then never need your app again except the occasional edge case.</li><li>The moat is microscopic. Barcode lookup, OCR, heuristics, and scary red warnings can be cloned by any half-competent indie builder in a weekend. If the prediction is shallow, the product is shallow.</li><li>The swap story is weak. &quot;Safer option&quot; based on what exactly? A database of alternatives? Nearby products? Cafe substitutions? If the answer is &quot;smaller size, half-caf, or decaf,&quot; that is useful, but it does not require a grand scanner-predictor narrative.</li><li>This idea hides too much complexity behind one neat sentence: camera scanning, OCR, barcode handling, caffeine normalization, bedtime math, optional sleep context, uncertainty handling, history, and recommendation logic. That is how solo projects turn into fragile demos that impress for 45 seconds and then die.</li><li>The trust problem is ugly. If the app is specific, it looks smart but will be wrong often enough to feel fake. If the app is cautious, it becomes &quot;generic caffeine advice with a camera,&quot; which is not compelling enough to win.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Key Questions</div><ul><li>What is the real MVP input: barcode, OCR, search, or manual entry?</li><li>Where does caffeine data come from for cafe drinks, custom orders, and pre-workouts with incomplete labeling?</li><li>What is the prediction model beyond generic caffeine half-life math plus vibes?</li><li>Why does the user come back after day 1?</li><li>What concrete action does the app help the user take in the moment: buy smaller, buy earlier, switch product, or skip?</li><li>How will you communicate uncertainty without exposing that most of the product is inference piled on inference?</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — but only if the MVP is brutally stripped to packaged drinks, manual bedtime input, simple heuristics, and explicit uncertainty. The full &quot;scan anything and predict tonight&quot; pitch is not a 2-4 week solo build.</li><li>Biggest solo complexity traps: camera and OCR edge cases; barcode coverage gaps; unreliable caffeine data for cafes and pre-workouts; HealthKit or wearable integration scope creep; false confidence from weak heuristics; recommendation logic with no real inventory data; user trust collapse when predictions miss obvious real-world variables.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Suggested Pivot</div><ul><li>Cut the lie. Replace &quot;predict your sleep damage&quot; with a rough risk band and latest recommended caffeine cutoff time.</li><li>Cut cafe menu scanning from MVP unless you verify a reliable caffeine source. Start with packaged drinks plus manual caffeine entry for everything else.</li><li>Delete the &quot;tomorrow crash&quot; score. It is decorative pseudoscience.</li><li>Make the product a decision tool, not a fake oracle. &quot;Can I have this now?&quot; is stronger than &quot;we know your night.&quot;</li><li>Add a compare interaction instead of more prediction theater: this can now vs this at 2 p.m. vs half size vs decaf.</li><li>If you want retention, earn it with personal pattern learning or recurring reminders. Otherwise this is a novelty utility, not a habit product.</li></ul></div>"
+    },
+    {
+      "status": "validate",
+      "icon": "✅",
+      "title": "Validated",
+      "desc": "Approved for design as a six-screen mobile decision tool.",
+      "body": "<div class=\"esect\"><div class=\"esect-label\">Validation</div><p>Ready for design on 2026-04-02 00:24 with a 5/10 critique score.</p></div><div class=\"esect\"><div class=\"esect-label\">Design Handoff Used For Prototype</div><ul><li>Screen 1: Home / Scanner</li><li>Screen 2: Manual Search / Entry</li><li>Screen 3: Sleep Impact Result</li><li>Screen 4: Compare Safer Options</li><li>Screen 5: History</li><li>Screen 6: Settings</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Device</div><div class=\"tag-row\"><span class=\"etag blue\">MOBILE</span><span class=\"etag\">Explicit uncertainty</span><span class=\"etag\">Decision tool MVP</span></div></div>"
+    },
+    {
+      "status": "design",
+      "icon": "🎨",
+      "title": "Designed",
+      "desc": "Stitch screens were generated and exported into a clickable prototype.",
+      "body": "<div class=\"esect\"><div class=\"esect-label\">Prototype</div><p><a class=\"ext-link\" href=\"https://stitch.withgoogle.com/projects/17301081833792818601\">Open Stitch project</a></p></div><div class=\"esect\"><div class=\"esect-label\">Notes</div><p>Built as a mobile prototype with a scanner-first home screen, explicit confidence language, a manual fallback, result and safer-swap child flows, plus history and settings roots.</p></div>"
+    }
+  ]
+};
+</script>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <span class="idea-num" id="hNum"></span>
+    <div>
+      <div class="idea-title" id="hTitle"></div>
+      <div class="idea-sub" id="hSub"></div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="score-pill" id="hScore"></span>
+    <span class="badge" id="hBadge"></span>
+    <button class="toggle-btn" id="toggleBtn" onclick="toggleTimeline()">
+      <span id="toggleIcon">›</span>
+      <span id="toggleLabel">Hide Journey</span>
+    </button>
+  </div>
+</div>
+
+<div class="body">
+  <div class="phone-col" id="phoneCol">
+    <div id="deviceFrame"></div>
+    <div class="switcher" id="switcher"></div>
+  </div>
+
+  <div class="resize-handle" id="resizeHandle"></div>
+
+  <div class="timeline-col" id="timelineCol">
+    <div class="timeline-header"><h2>Idea Journey</h2></div>
+    <div class="timeline-scroll">
+      <div class="timeline-line" id="timeline"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Render from IDEA_DATA ────────────────────────────
+(function () {
+  const D = window.IDEA_DATA || {};
+  const isMobile = (D.deviceType || 'MOBILE').toUpperCase() !== 'WEB';
+
+  // Header
+  document.title = 'Idea #' + D.ideaNum + ' — ' + D.title;
+  document.getElementById('hNum').textContent   = '#' + D.ideaNum;
+  document.getElementById('hTitle').textContent = D.title;
+  document.getElementById('hSub').textContent   = D.sub || '';
+  document.getElementById('hScore').textContent = D.score || '';
+  document.getElementById('hBadge').textContent = isMobile ? '📱 Mobile Prototype' : '💻 Web Prototype';
+
+  // Device frame
+  const frameContainer = document.getElementById('deviceFrame');
+  if (isMobile) {
+    frameContainer.className = 'phone-frame';
+    frameContainer.innerHTML = '<iframe id="app" class="device-iframe"></iframe>';
+  } else {
+    frameContainer.className = 'web-frame';
+    frameContainer.innerHTML =
+      '<div class="web-chrome">' +
+        '<div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>' +
+        '<div class="url" id="webUrl">preview</div>' +
+      '</div>' +
+      '<iframe id="app" class="device-iframe"></iframe>';
+  }
+
+  // Screens switcher
+  const screens = D.screens || [];
+  const startIdx = D.startScreen != null ? D.startScreen : (screens.length > 1 ? 1 : 0);
+  const switcher = document.getElementById('switcher');
+  const iframe   = document.getElementById('app');
+
+  function hideIframeScrollbars() {
+    try {
+      const style = iframe.contentDocument.createElement('style');
+      style.textContent = '::-webkit-scrollbar{display:none}*{-ms-overflow-style:none!important;scrollbar-width:none!important}';
+      iframe.contentDocument.head.appendChild(style);
+    } catch(e) {}
+  }
+  iframe.addEventListener('load', hideIframeScrollbars);
+
+  function goTo(i) {
+    iframe.src = screens[i].id + '.html';
+    switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
+    const urlEl = document.getElementById('webUrl');
+    if (urlEl) urlEl.textContent = screens[i].label;
+  }
+
+  screens.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = (i + 1) + ' · ' + s.label;
+    btn.onclick = () => goTo(i);
+    switcher.appendChild(btn);
+  });
+
+  if (screens.length) goTo(startIdx);
+
+  // Timeline
+  const timeline = document.getElementById('timeline');
+  (D.timeline || []).forEach(e => {
+    const verdictHtml = e.verdict
+      ? '<span class="verdict verdict-' + (e.verdictClass || 'needs') + '">' + e.verdict + '</span>'
+      : '';
+    const scoreHtml = e.score
+      ? '<span class="escore">' + e.score + '</span>'
+      : '';
+
+    const div = document.createElement('div');
+    div.className = 'entry' + (e.status ? ' s-' + e.status : '');
+    div.innerHTML =
+      '<div class="entry-card">' +
+        '<div class="entry-head" onclick="this.closest(\'.entry\').classList.toggle(\'open\')">' +
+          '<span class="entry-icon">' + e.icon + '</span>' +
+          '<div class="entry-info">' +
+            '<div class="entry-title">' + e.title + ' ' + verdictHtml + ' ' + scoreHtml + '</div>' +
+            '<div class="entry-desc">' + e.desc + '</div>' +
+          '</div>' +
+          '<span class="entry-chevron">▼</span>' +
+        '</div>' +
+        '<div class="entry-body">' + (e.body || '') + '</div>' +
+      '</div>';
+    timeline.appendChild(div);
+  });
+
+  // Timeline toggle
+  let open = true;
+  window.toggleTimeline = function () {
+    open = !open;
+    document.getElementById('timelineCol').classList.toggle('collapsed', !open);
+    document.getElementById('resizeHandle').style.display = open ? '' : 'none';
+    document.getElementById('toggleIcon').textContent  = open ? '›' : '‹';
+    document.getElementById('toggleLabel').textContent = open ? 'Hide Journey' : 'Show Journey';
+  };
+
+  // Drag resize
+  const handle      = document.getElementById('resizeHandle');
+  const timelineCol = document.getElementById('timelineCol');
+  let resizing = false, rx = 0, rw = 0;
+
+  handle.addEventListener('mousedown', e => {
+    if (!open) return;
+    resizing = true; rx = e.clientX; rw = timelineCol.offsetWidth;
+    handle.classList.add('dragging');
+    timelineCol.style.transition = 'none';
+    document.documentElement.style.cssText += ';cursor:col-resize!important;user-select:none!important';
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', e => {
+    if (!resizing) return;
+    const w = Math.max(280, Math.min(window.innerWidth - 500, rw + (rx - e.clientX)));
+    timelineCol.style.width = w + 'px';
+  });
+  window.addEventListener('mouseup', () => {
+    if (!resizing) return;
+    resizing = false;
+    handle.classList.remove('dragging');
+    timelineCol.style.transition = '';
+    document.documentElement.style.cursor = '';
+    document.documentElement.style.userSelect = '';
+  });
+})();
+</script>
+</body>
+</html>

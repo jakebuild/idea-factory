@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Caffeine Pulse - Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#f8f9fa",
+              "tertiary-fixed-dim": "#fdb698",
+              "surface-container": "#edeeef",
+              "surface-bright": "#f8f9fa",
+              "on-tertiary-fixed-variant": "#6b3a24",
+              "surface-tint": "#7e5700",
+              "on-primary-container": "#af7a00",
+              "on-secondary": "#ffffff",
+              "secondary-container": "#bcd2fe",
+              "on-tertiary-container": "#b2755b",
+              "on-background": "#191c1d",
+              "inverse-surface": "#2e3132",
+              "inverse-on-surface": "#f0f1f2",
+              "on-surface": "#191c1d",
+              "inverse-primary": "#ffba38",
+              "surface-dim": "#d9dadb",
+              "surface-container-lowest": "#ffffff",
+              "primary-container": "#281900",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#281900",
+              "surface-container-high": "#e7e8e9",
+              "on-tertiary": "#ffffff",
+              "tertiary": "#000000",
+              "outline": "#74777f",
+              "secondary": "#495f84",
+              "surface-container-low": "#f3f4f5",
+              "on-primary-fixed-variant": "#604100",
+              "tertiary-fixed": "#ffdbcd",
+              "surface-variant": "#e1e3e4",
+              "secondary-fixed": "#d6e3ff",
+              "primary": "#000000",
+              "on-secondary-fixed": "#001b3d",
+              "error": "#ba1a1a",
+              "surface-container-highest": "#e1e3e4",
+              "on-secondary-fixed-variant": "#31476b",
+              "outline-variant": "#c4c6cf",
+              "on-error-container": "#93000a",
+              "tertiary-container": "#351001",
+              "on-secondary-container": "#445a7f",
+              "on-error": "#ffffff",
+              "background": "#f8f9fa",
+              "secondary-fixed-dim": "#b1c7f2",
+              "primary-fixed-dim": "#ffba38",
+              "primary-fixed": "#ffdeac",
+              "on-surface-variant": "#44474e",
+              "on-tertiary-fixed": "#351001"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition {
+            background: linear-gradient(180deg, rgba(248, 249, 250, 0.9) 0%, rgba(243, 244, 245, 0.8) 100%);
+        }
+        .spring-physics-bounce {
+            transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/90 backdrop-blur-xl shadow-[0px_12px_32px_rgba(25,28,29,0.06)]">
+<div class="max-w-md mx-auto h-16 px-4 flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0"><span class="h-10 w-10"></span><h1 class="text-xl font-bold tracking-tight text-slate-900 truncate">Settings</h1></div>
+<span class="h-10 w-10"></span>
+</div>
+</header>
+<!-- Main Content -->
+<main class="mt-24 px-6 max-w-2xl mx-auto space-y-10 pb-32">
+<!-- Section 1: Bedtime Preferences -->
+<section class="space-y-6">
+<h2 class="text-[11px] font-medium uppercase tracking-widest text-secondary font-label">Bedtime Preferences</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-[0px_12px_32px_rgba(25,28,29,0.04)] border-b-2 border-transparent focus-within:border-primary-fixed-dim transition-all">
+<label class="block text-xs font-medium text-on-surface-variant mb-2">Default Bedtime</label>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold text-on-surface tracking-tight">11:30 PM</span>
+<span class="material-symbols-outlined text-amber-500">schedule</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-[0px_12px_32px_rgba(25,28,29,0.04)] border-b-2 border-transparent focus-within:border-primary-fixed-dim transition-all">
+<label class="block text-xs font-medium text-on-surface-variant mb-2">Weekend Bedtime</label>
+<div class="flex items-center justify-between">
+<span class="text-2xl font-bold text-on-surface tracking-tight">12:30 AM</span>
+<span class="material-symbols-outlined text-amber-500">bedtime</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Sleep Inputs -->
+<section class="space-y-4">
+<h2 class="text-[11px] font-medium uppercase tracking-widest text-secondary font-label">Sleep Inputs</h2>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl shadow-[0px_12px_32px_rgba(25,28,29,0.04)]">
+<div class="flex flex-col">
+<span class="text-md font-semibold text-on-surface">Last Night's Sleep</span>
+<span class="text-sm text-on-surface-variant">Manual adjustment</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full">
+<span class="text-md font-bold text-on-surface">7h 45m</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant">edit</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl shadow-[0px_12px_32px_rgba(25,28,29,0.04)]">
+<div class="flex items-center gap-4">
+<div class="bg-red-50 p-2 rounded-lg">
+<span class="material-symbols-outlined text-red-500" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<div class="flex flex-col">
+<span class="text-md font-semibold text-on-surface">Apple Health Connection</span>
+<span class="text-sm text-amber-600 font-medium">Connected</span>
+</div>
+</div>
+<button class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-amber-500 transition-colors duration-200 ease-in-out focus:outline-none">
+<span class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 3: Risk Sensitivity -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<h2 class="text-[11px] font-medium uppercase tracking-widest text-secondary font-label">Risk Sensitivity</h2>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">info</span>
+</div>
+<div class="bg-surface-container-lowest p-1.5 rounded-full flex shadow-[0px_12px_32px_rgba(25,28,29,0.04)]">
+<button class="flex-1 py-3 px-4 text-xs font-bold rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors">Conservative</button>
+<button class="flex-1 py-3 px-4 text-xs font-bold rounded-full bg-amber-100/50 text-amber-700 shadow-sm border border-amber-200/50">Balanced</button>
+<button class="flex-1 py-3 px-4 text-xs font-bold rounded-full text-on-surface-variant hover:bg-surface-container-low transition-colors">Flexible</button>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed px-2">
+                This adjusts how strictly caffeine impact is calculated. Balanced uses standard metabolic models suitable for most active users.
+            </p>
+</section>
+<!-- Section 4: Reminders & Privacy -->
+<section class="space-y-8">
+<h2 class="text-[11px] font-medium uppercase tracking-widest text-secondary font-label">Reminders &amp; Privacy</h2>
+<div class="flex items-center justify-between p-5 bg-surface-container-lowest rounded-xl shadow-[0px_12px_32px_rgba(25,28,29,0.04)]">
+<div class="flex flex-col">
+<span class="text-md font-semibold text-on-surface">Caffeine Cut-off Reminders</span>
+<span class="text-sm text-on-surface-variant">Alert me when it's time to stop caffeine</span>
+</div>
+<button class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-surface-variant transition-colors duration-200 ease-in-out focus:outline-none">
+<span class="translate-x-0 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<div class="pt-6 border-t border-outline-variant/15 text-center">
+<p class="text-[11px] italic text-on-surface-variant font-medium leading-relaxed max-w-sm mx-auto">
+                    All calculations are estimates based on standard metabolic models. Individual results may vary.
+                </p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-slate-50/90 backdrop-blur-xl rounded-t-3xl shadow-[0px_-8px_24px_rgba(25,28,29,0.04)]">
+<div class="max-w-md mx-auto flex justify-around items-center px-4 pt-3 pb-8">
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all text-slate-400 hover:text-amber-500" href="2ece5531da8942c7b442b1e134dfd88c.html" onclick="window.location.href='2ece5531da8942c7b442b1e134dfd88c.html'; return false;">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all text-slate-400 hover:text-amber-500" href="a24a5e98acca4d2f976833cbc7928cb3.html" onclick="window.location.href='a24a5e98acca4d2f976833cbc7928cb3.html'; return false;">
+<span class="material-symbols-outlined">history</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">History</span>
+</a>
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all bg-amber-100/70 text-amber-700" href="814e2923274c434abfdd6fedaf496455.html" onclick="window.location.href='814e2923274c434abfdd6fedaf496455.html'; return false;">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">Settings</span>
+</a>
+</div>
+</nav>
+</body></html>

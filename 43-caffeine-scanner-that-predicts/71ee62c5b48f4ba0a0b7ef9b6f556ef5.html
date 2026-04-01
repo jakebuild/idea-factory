@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#e7e8e9",
+              "surface-bright": "#f8f9fa",
+              "on-primary": "#ffffff",
+              "surface-container-low": "#f3f4f5",
+              "surface": "#f8f9fa",
+              "surface-container": "#edeeef",
+              "surface-variant": "#e1e3e4",
+              "outline": "#74777f",
+              "inverse-on-surface": "#f0f1f2",
+              "inverse-primary": "#ffba38",
+              "secondary-fixed": "#d6e3ff",
+              "error": "#ba1a1a",
+              "surface-tint": "#7e5700",
+              "on-tertiary-container": "#b2755b",
+              "on-secondary-fixed-variant": "#31476b",
+              "on-primary-fixed": "#281900",
+              "error-container": "#ffdad6",
+              "tertiary-fixed": "#ffdbcd",
+              "primary-container": "#281900",
+              "tertiary": "#000000",
+              "surface-dim": "#d9dadb",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed-variant": "#6b3a24",
+              "on-secondary-container": "#445a7f",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed": "#001b3d",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#fdb698",
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#af7a00",
+              "secondary-fixed-dim": "#b1c7f2",
+              "outline-variant": "#c4c6cf",
+              "tertiary-container": "#351001",
+              "primary-fixed": "#ffdeac",
+              "primary": "#000000",
+              "primary-fixed-dim": "#ffba38",
+              "on-tertiary-fixed": "#351001",
+              "secondary-container": "#bcd2fe",
+              "on-surface-variant": "#44474e",
+              "on-background": "#191c1d",
+              "background": "#f8f9fa",
+              "inverse-surface": "#2e3132",
+              "on-surface": "#191c1d",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#e1e3e4",
+              "secondary": "#495f84",
+              "on-primary-fixed-variant": "#604100"
+            },
+            fontFamily: {
+              "headline": ["Inter"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/90 backdrop-blur-xl shadow-[0px_12px_32px_rgba(25,28,29,0.06)]">
+<div class="max-w-md mx-auto h-16 px-4 flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0"><button aria-label="Back" class="h-10 w-10 flex items-center justify-center rounded-full text-slate-700 hover:bg-slate-100 transition-colors" onclick="window.location.href='2ece5531da8942c7b442b1e134dfd88c.html'"><span class="material-symbols-outlined">arrow_back</span></button><h1 class="text-xl font-bold tracking-tight text-slate-900 truncate">Find Your Caffeine</h1></div>
+<span class="h-10 w-10"></span>
+</div>
+</header>
+<main class="pt-24 px-6 py-6 max-w-md mx-auto space-y-8 pb-32">
+<!-- Segmented Control -->
+<div class="bg-surface-container-low p-1.5 rounded-full flex items-center">
+<button class="flex-1 py-2 px-4 rounded-full bg-surface-container-lowest shadow-sm text-on-surface font-semibold text-sm transition-all">
+                Search
+            </button>
+<button class="flex-1 py-2 px-4 rounded-full text-on-surface-variant font-medium text-sm hover:text-on-surface transition-all">
+                Manual
+            </button>
+</div>
+<!-- Search Section -->
+<div class="space-y-4 cursor-pointer" onclick="window.location.href='41fc3fd14d104df8b8c6978970630eb9.html'">
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-on-primary-container" data-icon="search">search</span>
+<input class="w-full bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-on-primary-container focus:ring-0 pl-12 pr-4 py-4 rounded-xl shadow-sm transition-all text-body-lg" placeholder="Search drink names or cafe menus..." type="text"/>
+</div>
+<!-- List of Suggested Matches (Bento-ish Editorial Style) -->
+<div class="grid gap-3">
+<h3 class="text-label-md font-bold text-secondary uppercase tracking-[0.05em] px-1">Suggested Matches</h3>
+<!-- Match 1 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center justify-between group active:scale-[0.98] transition-transform">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="coffee">coffee</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Standard Oat Latte</p>
+<p class="text-sm text-on-surface-variant">12 oz • 2 Shots</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-lg font-black text-on-surface">150mg</p>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-green-100 text-green-700 uppercase">High Confidence</span>
+</div>
+</div>
+<!-- Match 2 -->
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center justify-between group active:scale-[0.98] transition-transform">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="bolt">bolt</span>
+</div>
+<div>
+<p class="font-bold text-on-surface">Artisan Cold Brew</p>
+<p class="text-sm text-on-surface-variant">House Roast • Estimated</p>
+</div>
+</div>
+<div class="text-right">
+<p class="text-lg font-black text-on-surface">210mg</p>
+<span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 uppercase">Medium Confidence</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Manual Entry Card -->
+<section class="space-y-4">
+<h3 class="text-label-md font-bold text-secondary uppercase tracking-[0.05em] px-1">Manual Entry</h3>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(25,28,29,0.06)] space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-[11px] font-bold text-secondary uppercase tracking-wider block">Caffeine (mg)</label>
+<input class="w-full text-2xl font-black border-none border-b-2 border-outline-variant focus:border-on-primary-container focus:ring-0 p-0 bg-transparent text-on-surface" placeholder="0" type="number"/>
+</div>
+<div class="space-y-2">
+<label class="text-[11px] font-bold text-secondary uppercase tracking-wider block">Serving Size</label>
+<input class="w-full text-2xl font-black border-none border-b-2 border-outline-variant focus:border-on-primary-container focus:ring-0 p-0 bg-transparent text-on-surface" placeholder="e.g. 16oz" type="text"/>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-on-secondary-fixed-variant" data-icon="info">info</span>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Cafe and custom drinks are estimated based on standard preparation methods. Actual caffeine may vary by roast.
+                    </p>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<button class="w-full bg-primary-fixed-dim text-on-primary-fixed font-black py-5 rounded-full shadow-lg active:scale-95 transition-transform text-lg uppercase tracking-tight cursor-pointer" onclick="window.location.href='41fc3fd14d104df8b8c6978970630eb9.html'">
+            Use This Dose
+        </button>
+<!-- Image / Decorative Context -->
+<div class="relative h-48 rounded-xl overflow-hidden mt-8 grayscale opacity-60">
+<img alt="Coffee beans on a rustic wooden surface" class="w-full h-full object-cover" data-alt="top-down macro view of roasted espresso beans scattered on a dark textured wooden table with soft moody morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6HgVxqBFld1FZqoR5W7m11UuudsCwJzx7XA9ws1Eggg0bhOYTikVHI-AUg0OmUdYFl-se-VgFu0ayCDIrCbmnyUzrP0PddP-sejPY807q8IfGzGLq2fO71ZCq1_0KTOjlA6g7XGH4xadASDdQSXjNDtSokODeetfs3Ny4BYTlvpa4tqK6_zT9rwxxKGagSTZN6u7DKkTk-hKAfNHekNsKmkhHWJ2SC2Ne4diR3vudIfZlU9IA9HGKfiMyn30fCzTTCV0ukoW1_YQi"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-slate-50/90 backdrop-blur-xl rounded-t-3xl shadow-[0px_-8px_24px_rgba(25,28,29,0.04)]">
+<div class="max-w-md mx-auto flex justify-around items-center px-4 pt-3 pb-8">
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all bg-amber-100/70 text-amber-700" href="2ece5531da8942c7b442b1e134dfd88c.html" onclick="window.location.href='2ece5531da8942c7b442b1e134dfd88c.html'; return false;">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all text-slate-400 hover:text-amber-500" href="a24a5e98acca4d2f976833cbc7928cb3.html" onclick="window.location.href='a24a5e98acca4d2f976833cbc7928cb3.html'; return false;">
+<span class="material-symbols-outlined">history</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">History</span>
+</a>
+<a class="flex flex-col items-center justify-center rounded-full px-5 py-1.5 transition-all text-slate-400 hover:text-amber-500" href="814e2923274c434abfdd6fedaf496455.html" onclick="window.location.href='814e2923274c434abfdd6fedaf496455.html'; return false;">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[11px] font-medium uppercase tracking-wider mt-1">Settings</span>
+</a>
+</div>
+</nav>
+</body></html>
