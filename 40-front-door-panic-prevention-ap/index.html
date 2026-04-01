@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Idea Factory — Design Preview</title>
+<!-- IDEA_DATA injected here by design agent -->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0f1a;
+    color: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ──────────────────────────────────────── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .idea-num {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: #3b82f6; background: #1e3a5f;
+    padding: 3px 10px; border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .idea-title { font-size: 1.1rem; font-weight: 700; color: #f9fafb; }
+  .idea-sub { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+  .header-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    border-radius: 99px; padding: 4px 12px;
+    font-size: 0.75rem; color: #9ca3af;
+  }
+  .score-pill {
+    background: #1a2e1a; border: 1px solid #2d4a2d;
+    color: #86efac; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 99px;
+  }
+  .toggle-btn {
+    display: flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    color: #9ca3af; font-size: 0.75rem;
+    padding: 4px 12px; border-radius: 99px;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .toggle-btn:hover { background: #1f2937; color: #f9fafb; border-color: #374151; }
+
+  /* ── Body ────────────────────────────────────────── */
+  .body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: stretch;
+  }
+
+  /* ── Phone column ────────────────────────────────── */
+  .phone-col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 40px;
+    gap: 16px;
+    background: #0a0f1a;
+    overflow: hidden;
+  }
+
+  /* MOBILE frame */
+  .phone-frame {
+    width: 390px;
+    height: 844px;
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 0 0 10px #0f172a,
+      0 0 0 11px rgba(255,255,255,0.06),
+      0 50px 100px rgba(0,0,0,0.7);
+    background: #000;
+    flex-shrink: 0;
+  }
+
+  /* WEB frame */
+  .web-frame {
+    width: min(900px, calc(100% - 80px));
+    height: min(640px, calc(100vh - 180px));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 24px 60px rgba(0,0,0,0.6);
+    background: #1f2937;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .web-chrome {
+    height: 36px;
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .web-chrome .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .web-chrome .dot-r { background: #ef4444; }
+  .web-chrome .dot-y { background: #f59e0b; }
+  .web-chrome .dot-g { background: #22c55e; }
+  .web-chrome .url {
+    flex: 1; background: #111827; border-radius: 4px;
+    height: 20px; margin: 0 8px;
+    display: flex; align-items: center; padding: 0 10px;
+    font-size: 0.68rem; color: #6b7280;
+  }
+
+  .device-iframe {
+    width: 100%; height: 100%;
+    border: none; display: block;
+    flex: 1;
+  }
+
+  /* Switcher */
+  .switcher {
+    display: flex; gap: 6px;
+    flex-wrap: wrap; justify-content: center;
+    max-width: 600px;
+  }
+  .switcher button {
+    height: 28px; padding: 0 10px;
+    border-radius: 6px; border: 1px solid #1f2937;
+    background: #111827; color: #6b7280;
+    font-size: 0.7rem; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .switcher button:hover { background: #1f2937; color: #d1d5db; border-color: #374151; }
+  .switcher button.active { background: #1e3a5f; color: #60a5fa; border-color: #3b82f6; }
+
+  /* ── Resize handle ───────────────────────────────── */
+  .resize-handle {
+    width: 8px;
+    flex-shrink: 0;
+    cursor: col-resize;
+    position: relative;
+    background: transparent;
+    z-index: 10;
+  }
+  .resize-handle::after {
+    content: '';
+    position: absolute;
+    left: 3px; top: 0; bottom: 0;
+    width: 2px;
+    background: #1a2235;
+    transition: background 0.15s;
+  }
+  .resize-handle:hover::after { background: #374151; }
+  .resize-handle.dragging::after { background: #3b82f6; }
+
+  /* ── Timeline column ─────────────────────────────── */
+  .timeline-col {
+    width: 460px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 0.25s ease;
+    background: #0d1424;
+  }
+  .timeline-col.collapsed { width: 0; }
+
+  .timeline-header {
+    padding: 20px 28px 14px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .timeline-header h2 {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #4b5563;
+  }
+
+  .timeline-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 28px 40px;
+  }
+  .timeline-scroll::-webkit-scrollbar { width: 4px; }
+  .timeline-scroll::-webkit-scrollbar-track { background: transparent; }
+  .timeline-scroll::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 2px; }
+
+  /* ── Timeline line + dots ────────────────────────── */
+  /* --lx: horizontal center of the line/dots from .timeline-line left edge */
+  .timeline-line {
+    --lx: 8px;
+    position: relative;
+    padding-left: 28px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+  }
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--lx) - 1px); /* 2px line centered at --lx */
+    top: 10px; bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, #1e3a5f 0%, #1f2937 100%);
+    border-radius: 2px;
+  }
+
+  .entry {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .entry::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+    top: 18px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #1f2937;
+    border: 2px solid #374151;
+    z-index: 1;
+  }
+  .entry.s-critique::before { background: #78350f; border-color: #d97706; }
+  .entry.s-improve::before  { background: #1e3a5f; border-color: #3b82f6; }
+  .entry.s-validate::before { background: #14532d; border-color: #16a34a; }
+  .entry.s-design::before   { background: #312e81; border-color: #6366f1; }
+
+  /* ── Entry cards ─────────────────────────────────── */
+  .entry-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+  .entry-card:hover { border-color: #374151; }
+
+  .entry-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer; user-select: none;
+  }
+  .entry-icon { font-size: 1.1rem; flex-shrink: 0; line-height: 1; }
+  .entry-info { flex: 1; min-width: 0; }
+  .entry-title {
+    font-size: 0.85rem; font-weight: 600; color: #f9fafb;
+    display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+    line-height: 1.3;
+  }
+  .entry-desc { font-size: 0.72rem; color: #6b7280; margin-top: 3px; }
+  .entry-chevron {
+    color: #374151; font-size: 0.6rem; flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .entry.open .entry-chevron { transform: rotate(180deg); color: #6b7280; }
+
+  .verdict {
+    font-size: 0.6rem; font-weight: 700;
+    padding: 2px 6px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .verdict-needs { background: #451a03; color: #fb923c; }
+  .verdict-worth { background: #14532d; color: #86efac; }
+  .verdict-kill  { background: #450a0a; color: #f87171; }
+  .escore { font-size: 0.7rem; font-weight: 700; color: #60a5fa; }
+
+  .entry-body {
+    display: none;
+    border-top: 1px solid #1f2937;
+    padding: 14px;
+    font-size: 0.76rem; color: #9ca3af; line-height: 1.65;
+  }
+  .entry.open .entry-body { display: block; }
+
+  .esect { margin-top: 10px; }
+  .esect:first-child { margin-top: 0; }
+  .esect-label {
+    font-size: 0.62rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: #4b5563; margin-bottom: 5px;
+  }
+  .esect ul { padding-left: 14px; }
+  .esect li { margin-bottom: 3px; color: #9ca3af; }
+  .esect p { color: #9ca3af; }
+  .esect strong { color: #d1d5db; font-weight: 600; }
+  .tag-row { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+  .etag {
+    background: #0a0f1a; border: 1px solid #1f2937;
+    border-radius: 4px; padding: 2px 7px;
+    font-size: 0.66rem; color: #6b7280;
+  }
+  .etag.green { border-color: #14532d; color: #86efac; }
+  .etag.blue  { border-color: #1e3a5f; color: #60a5fa; }
+  a.ext-link { color: #818cf8; text-decoration: none; }
+  a.ext-link:hover { text-decoration: underline; }
+</style>
+<script>window.IDEA_DATA = {"ideaNum": 40, "title": "Front-door panic prevention app", "sub": "Tracks repeated forgotten items and nudges office commuters before they leave.", "score": "5/10", "deviceType": "MOBILE", "stitchId": "14130794587659095788", "startScreen": 0, "screens": [{"id": "8009b91eb2634b6a9ca79af1f0566b4f", "label": "Onboarding"}, {"id": "467fe760a7d04d3b88074c9646a8a181", "label": "Home"}, {"id": "2f6c47af2f2f4329a57aecf6cd3e4d7c", "label": "Miss Logger"}, {"id": "9bdd110e6e7e4283944f5e87a9249ae5", "label": "Pre-Departure Check"}, {"id": "15c52f3700ce458ebc4c837d0918ecb7", "label": "Item Detail"}, {"id": "ea6c4202f5f6470d86517ca58a28bf96", "label": "Settings"}], "timeline": [{"status": "", "icon": "💡", "title": "Original Idea", "desc": "NFC-tagged leave-home alarm with WiFi-triggered panic alerts.", "body": "<div class=\"esect\"><div class=\"esect-label\">Description</div><p>Front-door panic prevention app. You stick cheap NFC tags on your wallet, keys, badge, meds, or laptop charger, and the app arms a leave-home check when your phone disconnects from home WiFi during chosen hours. If an essential item has not been tapped that morning, it throws a loud lock-screen alert and keeps nagging until you confirm it or deliberately skip it. Different packs cover work, gym, travel, or school, so it becomes Alarmy for forgetting your essentials.</p></div>"}, {"status": "critique", "icon": "🔍", "title": "Critique v1", "desc": "Flags the ambient detection and NFC loop as fragile and self-defeating.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "4/10", "body": "<div class=\"tag-row\"><span class=\"etag blue\">NEEDS MAJOR WORK</span><span class=\"etag\">4/10</span></div><div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>The problem is real and painfully relatable. Forgetting keys, badges, meds, or a charger creates instant stress, so the pitch lands in one sentence.</li><li>The behavior is concrete, not vague wellness fluff. &quot;Did you tap your essentials before leaving?&quot; is a clearer job than most habit apps ever manage.</li><li>Selling pre-grouped packs like work, gym, travel, or school is a decent packaging idea because it maps to real routines instead of generic checklists.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>The core loop is self-defeating. You are trying to solve &quot;people forget things when rushed&quot; by asking them to remember to do extra taps when rushed. That is not elegant. That is adding another thing to forget.</li><li>The entire differentiator is UNVERIFIED. Can the app reliably detect home WiFi disconnect in the background, decide &quot;the user is leaving,&quot; fire a loud lock-screen alert, and keep nagging until resolved across iPhone and Android without the OS neutering it? If not, this is not a product. It is a pitch deck with NFC stickers.</li><li>NFC sounds clever until you imagine real life. People will tag keys and wallet, then immediately hit stupid edge cases: shared items, metal surfaces, worn tags, dead tags, charger left in a second bag, meds in a weekly organizer, badge in yesterday&#x27;s jacket.</li><li>Morning-only logic is brittle. Plenty of people forget items at lunch, after work, before the gym, on weekend errands, or when leaving from somewhere other than home. So either the app is too narrow to matter or it starts ballooning into a messy rule engine.</li><li>&quot;Phone disconnects from home WiFi&quot; is a weak proxy for leaving. Walk to the mailbox, take out trash, router blips, weak signal near the garage, or leave WiFi on a different floor and now the app is screaming like you forgot your kidneys.</li><li>The value proposition sounds good in a demo and annoying in daily life. Repeated loud alerts and nagging are only lovable when they are extremely accurate. If you get even a few false alarms, users will mute it, skip everything, or uninstall.</li><li>Retention is not solved. Why does the user come back after day 1? Because they are scared of forgetting stuff? Maybe for three mornings. Then what? If the routine is stable, they stop needing you. If the routine is unstable, your rules become noisy and they stop trusting you.</li><li>The setup burden is uglier than the pitch admits. Buy tags, attach tags, name items, group them into packs, define hours, set home WiFi, tune alerts, train household members not to mess with them, and remember to tap every morning. That is a lot of ceremony for &quot;don&#x27;t forget keys.&quot;</li><li>The idea quietly assumes users are willing to build a weird tagged-object ritual around their life. Most are not. Normal people prefer a checklist by the door, a bag they pack the night before, or one reminder for the one thing they actually forget.</li><li>&quot;Alarmy for essentials&quot; is flattering but misleading. Alarmy works because waking up is universal and daily. Forgetting a laptop charger is episodic. This is a niche pain, not a universal ritual.</li><li>The app could even train bad behavior. Users may start trusting taps over actually checking the bag, which is great until they tap the tag on the charger and still forget the charger because the tag peeled off or was on the wrong cable.</li><li>The likely MVP is worse than the pitch. A solo dev vibe-coding this will almost certainly end up shipping a fragile notification/checklist app with NFC garnish, not a reliable ambient safety net.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — but only as a stripped-down mobile MVP with manual checklists, basic NFC scanning, and simple notifications. The full &quot;ambient leave-home detection plus loud lock-screen nagging&quot; promise is not something I would trust a solo builder to ship cross-platform in a few weeks.</li><li>Biggest solo complexity traps: iOS vs Android background restrictions; NFC scanning behavior and permissions; unreliable WiFi-disconnect heuristics; notification escalation limits on lock screens; false positives destroying trust; setup friction making onboarding collapse; scope creep into packs, schedules, locations, households, and exceptions; hardware edge cases with cheap NFC tags in the real world</li></ul></div>"}, {"status": "improve", "icon": "✨", "title": "Improved v2", "desc": "Cuts sensors and pivots to a scheduled checklist ritual with streaks.", "body": "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Cut NFC tags and WiFi-disconnect detection entirely. The critique called both UNVERIFIED and fragile — ambient detection via WiFi disconnect is unreliable (mailbox trips, router blips, weak signal), and NFC tapping adds friction exactly when users are most rushed. The improved idea removes all sensor magic. The trigger is now a scheduled local notification at the user&#x27;s departure time — no background permissions, no hardware required, no false positives. Reliable on day one.</li><li>Replaced loud nagging with intentional pre-departure ritual. The critique identified that repeated aggressive alerts are only lovable when accuracy is near-perfect, which it never is. V2 flips the model: instead of the app screaming at you when it thinks you&#x27;re leaving, you open a one-tap checklist the moment you get a soft nudge 10 minutes before your normal departure time. Think pilot pre-flight checklist, not car alarm. The user opts in; the app does not ambush them.</li><li>Solved retention with a streak mechanic. The critique flagged &quot;why come back after day 1?&quot; as unresolved. V2 adds a daily streak counter: &quot;12 days, zero forgotten items.&quot; It is not about the app being clever — it is about the ritual feeling satisfying and quantified. Users who build a 2-week streak will protect it, exactly the same psychology that makes Duolingo sticky. The value is the habit record, not just the checklist.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>Single departure time per day (configurable by day of week)</li><li>Pre-built starter pack: keys, wallet, phone, badge, charger, meds</li><li>Tap-through checklist UI with per-item skip</li><li>&quot;I&#x27;m out&quot; confirmation ending the flow</li><li>Streak counter (consecutive days with a completed check-out)</li><li>Pack editor: rename, add, remove items (one pack only)</li><li>Local push notification at departure time (no server required)</li><li>History screen: last 30 days, skipped items, completion rate</li><li>Onboarding: set departure time, pick starter pack items, done</li></ul></div>"}, {"status": "critique", "icon": "🔍", "title": "Critique v2", "desc": "Finds the checklist-plus-streak version too shallow and easy to ignore.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "5/10", "body": "<div class=\"tag-row\"><span class=\"etag blue\">NEEDS MAJOR WORK</span><span class=\"etag\">5/10</span></div><div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>You finally cut the fake-smart garbage. No NFC, no WiFi disconnect voodoo, no background surveillance theater. That removes most of the technical fragility.</li><li>The MVP is actually buildable by one person because it is basically notifications, local persistence, a checklist UI, and simple stats.</li><li>The problem is real. People do forget keys, badges, meds, and chargers. This is not an invented pain point.</li><li>The default starter pack is the right instinct because setup friction kills habit apps immediately.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>This is still dangerously close to being a fancy recurring to-do list with a motivational sticker on top. &quot;Checklist plus streak&quot; is not a product moat. It is a pattern every productivity app already has.</li><li>The core promise is weak: the app does not prevent forgetting, it asks users to remember to open an app so they can remember not to forget things. That is a ridiculous dependency chain.</li><li>You bragged that the app is &quot;reliable on day one,&quot; but the actual system still depends on the user seeing the notification, opening it at the right moment, and truthfully tapping through items. That is not reliability. That is compliance theater.</li><li>The retention answer is still mostly hand-waving. Duolingo works because it has content, progression, novelty, and sunk-cost learning. Your app has the same six taps forever. A streak alone is a very flimsy substitute. Why does the user come back after day 1?</li><li>The history screen is classic builder self-indulgence. Nobody desperate not to forget their badge is begging for a 30-day calendar heatmap of past checkbox behavior. That is dashboard garnish, not value.</li><li>&quot;Skip today&quot; is necessary, but it also exposes how little signal the app has. If users can skip half the pack whenever context changes, the ritual becomes arbitrary fast.</li><li>The target user is narrower than you admit. This only works for people with stable routines, predictable departure windows, and repeated item sets. Shift workers, parents, hybrid workers, frequent travelers, and anyone with a chaotic schedule will outgrow it immediately.</li><li>The market is crowded with reminders, habits, routines, to-do lists, Apple Reminders, Google Tasks, alarm labels, sticky notes, and mental muscle memory. Your wedge is not obviously strong enough to make someone install yet another app.</li><li>The emotional moment of failure happens after the user has already left and discovered they forgot something. Your app intervenes before departure, but only if they remember to obey it. If they are stressed, late, or juggling kids, the app becomes one more thing to dismiss.</li><li>There is no monetization story with teeth. Charging for extra packs or stats is weak because neither feature is meaningfully valuable. The likely user reaction is &quot;I can do this with free reminders.&quot;</li><li>The build estimate is optimistic in the annoying way solo builders always are. Notifications, timezone changes, DST, rescheduling, missed days, onboarding edge cases, iOS permission timing, and app background behavior always take longer than the slide deck says.</li><li>You cut the risky differentiators, which was correct, but you also cut most of the novelty. What remains is safer to build and easier to ignore.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the app itself is simple enough, but the hard part is not coding, it is proving anyone will keep using a single-purpose checklist app after the first week.</li><li>Biggest solo complexity traps: overbuilding analytics/history before validating habit formation; underestimating notification edge cases across iOS/Android; wasting time polishing streak mechanics that do not fix weak retention; trying to support too many routine types instead of one narrow use case; confusing &quot;easy to build&quot; with &quot;worth distributing&quot;</li></ul></div>"}, {"status": "improve", "icon": "✨", "title": "Improved v3", "desc": "Reframes the product around miss logging, watch lists, and mastery.", "body": "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Replaced the generic pre-departure checklist with a miss-based personal watch list. The critique landed the killing blow: &quot;the same six taps forever&quot; is compliance theater, not a product. It is indistinguishable from a sticky note. V3 inverts the model — the watch list is built from items you have ACTUALLY forgotten. You do not set it up; it grows from your real failures. Pre-departure reminders surface only your known weak spots (1–3 items), not a generic 6-item generic inventory. The list evolves as items graduate to &quot;mastered.&quot; This makes the product feel personalized and alive instead of static.</li><li>Made the miss logger the primary entry point, not the checklist. The critique identified the circular dependency exactly: &quot;asks users to remember to open an app so they can remember not to forget things.&quot; V3 fixes this by meeting users at the emotional moment of failure — after they have already left and realized they forgot something. The core action is &quot;I forgot X&quot; — a one-tap log from the lock screen or home screen widget when the frustration is real. This organic, zero-friction log populates the watch list without any manual setup and creates actual personal data. &quot;Days since last miss&quot; replaces the streak because it measures real-world success, not ritual compliance.</li><li>Cut the history screen entirely and demoted the streak mechanic. The critique was explicit: the 30-day calendar heatmap is &quot;builder self-indulgence&quot; and the streak is &quot;flimsy without content depth.&quot; Both are removed from MVP. Accumulated value comes from the watch list itself — seeing items move from &quot;active miss&quot; to &quot;mastered&quot; over weeks is forward progression that earns meaning. No dashboard garnish.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>Miss logger: one-tap log screen with item name (free text or quick-pick from watch list)</li><li>iOS home screen widget: single button &quot;I forgot…&quot; → opens miss logger instantly</li><li>Watch list: items auto-added after 2+ misses; shows each item, miss count, days since last miss</li><li>Item mastery: item graduates to &quot;mastered&quot; after 14 clean days; removed from active reminders</li><li>Pre-departure micro-check: single scheduled notification showing only active watch-list items (not a generic checklist)</li><li>&quot;Days since last miss&quot; counter on home screen (across all items combined)</li><li>Onboarding: set departure time, one screen, done — no item setup required</li><li>Settings: departure time, notification on/off, reset an item&#x27;s mastery progress</li></ul></div>"}, {"status": "critique", "icon": "🔍", "title": "Critique v3", "desc": "Challenges the miss-logging loop, cold start, and tiny target audience.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "5/10", "body": "<div class=\"tag-row\"><span class=\"etag blue\">NEEDS MAJOR WORK</span><span class=\"etag\">5/10</span></div><div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>You cut the dumb NFC/WiFi gimmicks and finally reduced this to something a solo dev could plausibly ship without inventing a hardware support business.</li><li>The post-failure logging angle is more specific than a generic checklist app, and &quot;watch only what I actually screw up&quot; is the one part that sounds like a product instead of productivity wallpaper.</li><li>iOS-only, no backend, local notifications, and a tiny data model is the right technical instinct for a one-person build.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>The entire product still depends on the user remembering to log the thing they forgot. That is not a cute irony. That is the central failure mode. If they do not log misses, your &quot;personalized intelligence&quot; never exists.</li><li>You claim the app feels alive because the list grows from real failures. No, it feels empty on day 1, maybe day 7, and possibly forever. An empty state is not magic. It is a cold start problem wearing nicer copy.</li><li>The retention loop is still weak. Why does the user come back after day 1? The answer cannot be &quot;because they forgot something again.&quot; That is not retention. That is recurrence of pain.</li><li>Your success state literally deletes the reason the app exists. If all items are mastered, the app goes quiet and becomes uninstall bait. You built a product whose best-case outcome is self-erasure.</li><li>The morning &quot;Got your badge?&quot; flow is drifting right back toward checklist theater, just with fewer items. Users will absolutely start blind-tapping Yes to clear the interruption. You did not remove compliance theater; you narrowed it.</li><li>&quot;Days since last miss&quot; is a fake metric if logging is inconsistent. It measures how often the user opened your app, not how often they forgot something. That means your hero stat is easily corrupted by apathy.</li><li>The target market is tiny and annoyingly specific: office commuters with stable routines who forget the same item a couple times a month, but not parents, not shift workers, not chaotic schedules, not Android users. That is a lot of exclusion for a problem people currently solve with &quot;put the badge by the door.&quot;</li><li>The item mastery logic is brittle. Fourteen clean days punishes non-daily routines, while &quot;departures&quot; requires behavior detection you explicitly cut. You removed the hard part and kept a metric that needs the hard part.</li><li>Free-text miss logging sounds flexible until the user creates &quot;badge,&quot; &quot;work badge,&quot; &quot;id badge,&quot; and &quot;office pass.&quot; Now your magical watch list turns into data cleanup work.</li><li>You say &quot;no history screen,&quot; then sneak history back in through item detail. That is not fatal, but it shows the product still wants to become a self-tracking scrapbook instead of a sharp intervention tool.</li><li>Notification timing is more fragile than your estimate admits. Leave time shifts, WFH days, holidays, late starts, travel days, and routine drift all make a single scheduled nudge look dumb fast.</li><li>The widget flow is doing a lot of heavy lifting and parts of it are effectively UNVERIFIED in real usage. If the lock-screen or widget path is slower, clunkier, or less immediate than you think, the primary logging loop loses its only convenience story.</li><li>Monetization is hand-wavy because the core value is small. Charging for extra departure times on a product that many users may only need for one recurring item is weak sauce.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the bare app is shippable, but the real risk is not coding difficulty. It is that you can finish the build and still learn the core behavior loop is too weak to justify the app existing.</li><li>Biggest solo complexity traps: Widget/lock-screen interaction friction on iOS; notification permission drop-off; item-name deduplication and normalization; mastery logic that breaks on irregular schedules; overbuilding analytics/history screens to compensate for weak core retention; false confidence from a polished UI masking that users do not log misses consistently</li></ul></div>"}, {"status": "validate", "icon": "✅", "title": "Validated", "desc": "Ready-for-design state with the v3 handoff and final critique score.", "body": "<div class=\"tag-row\"><span class=\"etag blue\">Validated 2026-04-01 16:23</span><span class=\"etag\">5/10</span></div><div class=\"esect\"><div class=\"esect-label\">Design Handoff Screens</div><ul><li>Screen 1: Onboarding — Set Departure Time</li><li>Screen 2: Home Screen</li><li>Screen 3: Miss Logger</li><li>Screen 4: Pre-Departure Micro-Check (Notification Landing)</li><li>Screen 5: Item Detail / Mastery Progress</li><li>Screen 6: Settings</li><li>Widget (Home Screen / Lock Screen):</li></ul></div>"}, {"status": "design", "icon": "🎨", "title": "Designed", "desc": "Stitch screens were normalized, wired together, and prepared for GitHub Pages.", "body": "<div class=\"esect\"><div class=\"esect-label\">Prototype</div><p>Stitch project 14130794587659095788 was exported as a clickable mobile prototype.</p></div><div class=\"esect\"><div class=\"esect-label\">Links</div><p><a class=\"ext-link\" href=\"https://stitch.withgoogle.com/projects/14130794587659095788\">Open in Stitch</a></p></div>"}]};</script>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <span class="idea-num" id="hNum"></span>
+    <div>
+      <div class="idea-title" id="hTitle"></div>
+      <div class="idea-sub" id="hSub"></div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="score-pill" id="hScore"></span>
+    <span class="badge" id="hBadge"></span>
+    <button class="toggle-btn" id="toggleBtn" onclick="toggleTimeline()">
+      <span id="toggleIcon">›</span>
+      <span id="toggleLabel">Hide Journey</span>
+    </button>
+  </div>
+</div>
+
+<div class="body">
+  <div class="phone-col" id="phoneCol">
+    <div id="deviceFrame"></div>
+    <div class="switcher" id="switcher"></div>
+  </div>
+
+  <div class="resize-handle" id="resizeHandle"></div>
+
+  <div class="timeline-col" id="timelineCol">
+    <div class="timeline-header"><h2>Idea Journey</h2></div>
+    <div class="timeline-scroll">
+      <div class="timeline-line" id="timeline"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Render from IDEA_DATA ────────────────────────────
+(function () {
+  const D = window.IDEA_DATA || {};
+  const isMobile = (D.deviceType || 'MOBILE').toUpperCase() !== 'WEB';
+
+  // Header
+  document.title = 'Idea #' + D.ideaNum + ' — ' + D.title;
+  document.getElementById('hNum').textContent   = '#' + D.ideaNum;
+  document.getElementById('hTitle').textContent = D.title;
+  document.getElementById('hSub').textContent   = D.sub || '';
+  document.getElementById('hScore').textContent = D.score || '';
+  document.getElementById('hBadge').textContent = isMobile ? '📱 Mobile Prototype' : '💻 Web Prototype';
+
+  // Device frame
+  const frameContainer = document.getElementById('deviceFrame');
+  if (isMobile) {
+    frameContainer.className = 'phone-frame';
+    frameContainer.innerHTML = '<iframe id="app" class="device-iframe"></iframe>';
+  } else {
+    frameContainer.className = 'web-frame';
+    frameContainer.innerHTML =
+      '<div class="web-chrome">' +
+        '<div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>' +
+        '<div class="url" id="webUrl">preview</div>' +
+      '</div>' +
+      '<iframe id="app" class="device-iframe"></iframe>';
+  }
+
+  // Screens switcher
+  const screens = D.screens || [];
+  const startIdx = D.startScreen != null ? D.startScreen : (screens.length > 1 ? 1 : 0);
+  const switcher = document.getElementById('switcher');
+  const iframe   = document.getElementById('app');
+
+  function hideIframeScrollbars() {
+    try {
+      const style = iframe.contentDocument.createElement('style');
+      style.textContent = '::-webkit-scrollbar{display:none}*{-ms-overflow-style:none!important;scrollbar-width:none!important}';
+      iframe.contentDocument.head.appendChild(style);
+    } catch(e) {}
+  }
+  iframe.addEventListener('load', hideIframeScrollbars);
+
+  function goTo(i) {
+    iframe.src = screens[i].id + '.html';
+    switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
+    const urlEl = document.getElementById('webUrl');
+    if (urlEl) urlEl.textContent = screens[i].label;
+  }
+
+  screens.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = (i + 1) + ' · ' + s.label;
+    btn.onclick = () => goTo(i);
+    switcher.appendChild(btn);
+  });
+
+  if (screens.length) goTo(startIdx);
+
+  // Timeline
+  const timeline = document.getElementById('timeline');
+  (D.timeline || []).forEach(e => {
+    const verdictHtml = e.verdict
+      ? '<span class="verdict verdict-' + (e.verdictClass || 'needs') + '">' + e.verdict + '</span>'
+      : '';
+    const scoreHtml = e.score
+      ? '<span class="escore">' + e.score + '</span>'
+      : '';
+
+    const div = document.createElement('div');
+    div.className = 'entry' + (e.status ? ' s-' + e.status : '');
+    div.innerHTML =
+      '<div class="entry-card">' +
+        '<div class="entry-head" onclick="this.closest(\'.entry\').classList.toggle(\'open\')">' +
+          '<span class="entry-icon">' + e.icon + '</span>' +
+          '<div class="entry-info">' +
+            '<div class="entry-title">' + e.title + ' ' + verdictHtml + ' ' + scoreHtml + '</div>' +
+            '<div class="entry-desc">' + e.desc + '</div>' +
+          '</div>' +
+          '<span class="entry-chevron">▼</span>' +
+        '</div>' +
+        '<div class="entry-body">' + (e.body || '') + '</div>' +
+      '</div>';
+    timeline.appendChild(div);
+  });
+
+  // Timeline toggle
+  let open = true;
+  window.toggleTimeline = function () {
+    open = !open;
+    document.getElementById('timelineCol').classList.toggle('collapsed', !open);
+    document.getElementById('resizeHandle').style.display = open ? '' : 'none';
+    document.getElementById('toggleIcon').textContent  = open ? '›' : '‹';
+    document.getElementById('toggleLabel').textContent = open ? 'Hide Journey' : 'Show Journey';
+  };
+
+  // Drag resize
+  const handle      = document.getElementById('resizeHandle');
+  const timelineCol = document.getElementById('timelineCol');
+  let resizing = false, rx = 0, rw = 0;
+
+  handle.addEventListener('mousedown', e => {
+    if (!open) return;
+    resizing = true; rx = e.clientX; rw = timelineCol.offsetWidth;
+    handle.classList.add('dragging');
+    timelineCol.style.transition = 'none';
+    document.documentElement.style.cssText += ';cursor:col-resize!important;user-select:none!important';
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', e => {
+    if (!resizing) return;
+    const w = Math.max(280, Math.min(window.innerWidth - 500, rw + (rx - e.clientX)));
+    timelineCol.style.width = w + 'px';
+  });
+  window.addEventListener('mouseup', () => {
+    if (!resizing) return;
+    resizing = false;
+    handle.classList.remove('dragging');
+    timelineCol.style.transition = '';
+    document.documentElement.style.cursor = '';
+    document.documentElement.style.userSelect = '';
+  });
+})();
+</script>
+</body>
+</html>

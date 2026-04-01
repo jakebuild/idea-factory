@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/><meta content="width=390, initial-scale=1.0" name="viewport"/>
+
+<title>Onboarding - Set Time</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-primary-fixed-variant": "#13596f",
+            "on-surface-variant": "#596064",
+            "on-secondary": "#f2faff",
+            "on-tertiary-fixed-variant": "#3f5075",
+            "on-secondary-fixed-variant": "#495f68",
+            "surface-container": "#eaeff2",
+            "on-tertiary-container": "#35476b",
+            "surface-variant": "#dce4e8",
+            "on-error": "#fff7f6",
+            "primary-fixed": "#a1ddf7",
+            "secondary": "#4d626c",
+            "primary-dim": "#155a70",
+            "inverse-primary": "#a1ddf7",
+            "secondary-fixed-dim": "#c1d8e3",
+            "secondary-fixed": "#cfe6f1",
+            "on-primary-container": "#005065",
+            "surface-container-low": "#f0f4f7",
+            "surface-container-high": "#e3e9ed",
+            "on-secondary-fixed": "#2d424b",
+            "on-tertiary-fixed": "#213457",
+            "outline-variant": "#acb3b7",
+            "on-secondary-container": "#40555e",
+            "tertiary-dim": "#415377",
+            "primary-container": "#a1ddf7",
+            "tertiary-fixed-dim": "#b1c4ee",
+            "surface": "#f7f9fb",
+            "secondary-dim": "#41565f",
+            "on-primary-fixed": "#003b4c",
+            "on-surface": "#2c3437",
+            "on-tertiary": "#f9f8ff",
+            "on-error-container": "#6e0a12",
+            "error-dim": "#67040d",
+            "error-container": "#fa746f",
+            "outline": "#747c80",
+            "tertiary": "#4d5f84",
+            "error": "#a83836",
+            "primary": "#26667c",
+            "surface-dim": "#d4dbdf",
+            "primary-fixed-dim": "#93cfe8",
+            "inverse-on-surface": "#9a9d9f",
+            "surface-tint": "#26667c",
+            "on-primary": "#f2faff",
+            "background": "#f7f9fb",
+            "surface-container-highest": "#dce4e8",
+            "secondary-container": "#cfe6f1",
+            "inverse-surface": "#0b0f10",
+            "tertiary-fixed": "#bfd2fd",
+            "surface-container-lowest": "#ffffff",
+            "surface-bright": "#f7f9fb",
+            "on-background": "#2c3437",
+            "tertiary-container": "#bfd2fd"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-effect {
+      background: rgba(247, 249, 251, 0.8);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style data-idea-shell="true">body{padding-top:64px;}
+body.has-tabbar{padding-bottom:108px;}
+body.no-tabbar{padding-bottom:24px;}
+.idea-header,.idea-bottom-nav{font-family:Inter,sans-serif;}
+.idea-header h1{font-family:Manrope,sans-serif;}
+.nav-safe{padding-bottom:108px !important;}
+.clickable-card{cursor:pointer;}
+</style></head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col items-center selection:bg-primary-container selection:text-on-primary-container no-tabbar"><header class="idea-header fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-slate-200/70"><div class="mx-auto flex h-16 w-full max-w-2xl items-center justify-between px-4"><div class="w-10 h-10"></div><h1 class="text-xl font-headline font-bold tracking-tight text-on-surface">Set Departure Time</h1><div class="w-10 h-10"></div></div></header>
+<!-- Navigation Shell (TopAppBar) -->
+<!-- Note: Suppression logic applied for onboarding, but rendering minimal TopAppBar as requested by anchor component hierarchy for structural consistency -->
+
+<main class="flex-1 w-full max-w-lg mx-auto flex flex-col px-8 pt-24 pb-12">
+<!-- Hero Text Section -->
+<section class="mt-8 space-y-3">
+<h1 class="font-headline text-[2.5rem] leading-[1.1] font-extrabold tracking-tight text-on-surface">
+        When do you usually leave?
+      </h1>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed opacity-80">
+        We'll check in before you go.
+      </p>
+</section>
+<!-- Time Picker Section (Asymmetric Editorial Style) -->
+<section class="flex-1 flex items-center justify-center py-12">
+<div class="relative w-full aspect-square flex items-center justify-center">
+<!-- Background Atmospheric Element -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/20 to-transparent rounded-full blur-3xl opacity-50"></div>
+<!-- The "Floating" Time Picker Container -->
+<div class="relative z-10 w-full flex items-center justify-between gap-4">
+<!-- Hours Column -->
+<div class="flex-1 h-64 overflow-hidden relative">
+<div class="absolute inset-0 pointer-events-none z-20 bg-gradient-to-b from-surface via-transparent to-surface"></div>
+<div class="flex flex-col items-center no-scrollbar overflow-y-auto h-full space-y-4 py-24">
+<span class="font-headline text-5xl font-extrabold text-on-surface-variant/20">06</span>
+<span class="font-headline text-5xl font-extrabold text-on-surface-variant/40">07</span>
+<span class="font-headline text-7xl font-extrabold text-on-surface scale-110">08</span>
+<span class="font-headline text-5xl font-extrabold text-on-surface-variant/40">09</span>
+<span class="font-headline text-5xl font-extrabold text-on-surface-variant/20">10</span>
+</div>
+</div>
+<!-- Separator -->
+<div class="flex flex-col items-center justify-center">
+<span class="font-headline text-6xl font-extrabold text-primary">:</span>
+</div>
+<!-- Minutes Column -->
+<div class="flex-1 h-64 overflow-hidden relative">
+<div class="absolute inset-0 pointer-events-none z-20 bg-gradient-to-b from-surface via-transparent to-surface"></div>
+<div class="flex flex-col items-center no-scrollbar overflow-y-auto h-full space-y-4 py-24">
+<span class="font-headline text-5xl font-extrabold text-on-surface-variant/20">15</span>
+<span class="font-headline text-5xl font-extrabold text-on-surface-variant/40">20</span>
+<span class="font-headline text-7xl font-extrabold text-on-surface scale-110">30</span>
+<span class="font-headline text-5xl font-extrabold text-on-surface-variant/40">45</span>
+<span class="font-headline text-5xl font-extrabold text-on-surface-variant/20">00</span>
+</div>
+</div>
+<!-- AM/PM Toggle (Asymmetric Sidebar) -->
+<div class="flex flex-col gap-3 ml-4">
+<button class="w-16 h-16 rounded-full flex items-center justify-center bg-primary text-on-primary font-headline font-bold text-lg shadow-xl shadow-primary/10 active:scale-95 transition-transform duration-300">
+              AM
+            </button>
+<button class="w-16 h-16 rounded-full flex items-center justify-center bg-surface-container-high text-on-surface-variant font-headline font-bold text-lg hover:bg-surface-container-highest transition-colors active:scale-95">
+              PM
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Contextual Information Card -->
+<div class="mb-12 bg-surface-container-lowest p-6 rounded-xl flex items-start gap-4">
+<div class="bg-tertiary-container text-on-tertiary-container p-3 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="light_mode">light_mode</span>
+</div>
+<div class="flex-1">
+<h3 class="font-headline text-sm font-bold text-on-surface">Smart Prep</h3>
+<p class="font-body text-xs text-on-surface-variant mt-1 leading-relaxed">
+          We'll send a brief summary 15 minutes prior to your selected time so you can leave with confidence.
+        </p>
+</div>
+</div>
+<!-- Action Bar -->
+<footer class="w-full">
+<button class="w-full h-14 bg-primary text-on-primary font-headline font-bold text-lg rounded-full flex items-center justify-center gap-2 hover:opacity-90 active:scale-95 transition-all duration-500 ease-out shadow-lg shadow-primary/20 cursor-pointer" onclick="window.location.href='467fe760a7d04d3b88074c9646a8a181.html'">
+        Done
+      </button>
+<div class="flex justify-center mt-6">
+<div class="flex gap-2">
+<div class="w-1.5 h-1.5 rounded-full bg-surface-variant"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-surface-variant"></div>
+<div class="w-6 h-1.5 rounded-full bg-primary"></div>
+</div>
+</div>
+</footer>
+</main>
+<!-- Decorative Atmosphere Background -->
+<div class="fixed bottom-0 left-0 w-full h-[353px] -z-10 pointer-events-none overflow-hidden">
+<div class="absolute -bottom-24 -left-24 w-96 h-96 bg-primary-container/30 blur-[120px] rounded-full"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary-container/30 blur-[120px] rounded-full"></div>
+</div>
+</body></html>

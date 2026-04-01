@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/><meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Digital Sanctuary - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#747c80",
+              "on-primary-fixed-variant": "#13596f",
+              "on-tertiary-container": "#35476b",
+              "surface": "#f7f9fb",
+              "primary": "#26667c",
+              "surface-container-high": "#e3e9ed",
+              "secondary": "#4d626c",
+              "secondary-container": "#cfe6f1",
+              "tertiary-fixed-dim": "#b1c4ee",
+              "primary-fixed-dim": "#93cfe8",
+              "surface-container": "#eaeff2",
+              "on-background": "#2c3437",
+              "surface-container-highest": "#dce4e8",
+              "on-error": "#fff7f6",
+              "primary-container": "#a1ddf7",
+              "on-tertiary": "#f9f8ff",
+              "on-error-container": "#6e0a12",
+              "tertiary": "#4d5f84",
+              "tertiary-container": "#bfd2fd",
+              "secondary-fixed": "#cfe6f1",
+              "error-dim": "#67040d",
+              "on-secondary-container": "#40555e",
+              "outline-variant": "#acb3b7",
+              "inverse-primary": "#a1ddf7",
+              "inverse-surface": "#0b0f10",
+              "surface-tint": "#26667c",
+              "on-primary-fixed": "#003b4c",
+              "error": "#a83836",
+              "on-surface": "#2c3437",
+              "error-container": "#fa746f",
+              "on-primary-container": "#005065",
+              "secondary-fixed-dim": "#c1d8e3",
+              "background": "#f7f9fb",
+              "on-surface-variant": "#596064",
+              "surface-bright": "#f7f9fb",
+              "primary-dim": "#155a70",
+              "tertiary-fixed": "#bfd2fd",
+              "inverse-on-surface": "#9a9d9f",
+              "secondary-dim": "#41565f",
+              "surface-variant": "#dce4e8",
+              "on-secondary-fixed-variant": "#495f68",
+              "on-primary": "#f2faff",
+              "on-secondary-fixed": "#2d424b",
+              "surface-container-low": "#f0f4f7",
+              "surface-dim": "#d4dbdf",
+              "on-tertiary-fixed": "#213457",
+              "tertiary-dim": "#415377",
+              "primary-fixed": "#a1ddf7",
+              "on-secondary": "#f2faff",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#3f5075"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .glass-header {
+            background: rgba(247, 249, 251, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style data-idea-shell="true">body{padding-top:64px;}
+body.has-tabbar{padding-bottom:108px;}
+body.no-tabbar{padding-bottom:24px;}
+.idea-header,.idea-bottom-nav{font-family:Inter,sans-serif;}
+.idea-header h1{font-family:Manrope,sans-serif;}
+.nav-safe{padding-bottom:108px !important;}
+.clickable-card{cursor:pointer;}
+</style></head>
+<body class="bg-surface text-on-surface min-h-screen pb-40 has-tabbar"><header class="idea-header fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-slate-200/70"><div class="mx-auto flex h-16 w-full max-w-2xl items-center justify-between px-4"><div class="w-10 h-10"></div><h1 class="text-xl font-headline font-bold tracking-tight text-on-surface">Home</h1><div class="w-10 h-10"></div></div></header>
+<!-- TopAppBar -->
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-10 nav-safe">
+<!-- Global Streak Counter -->
+<section class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary to-primary-dim p-8 text-on-primary shadow-lg">
+<div class="relative z-10 space-y-1">
+<p class="text-primary-container/80 font-label font-medium uppercase tracking-widest text-[11px]">Current Sanctuary Streak</p>
+<div class="flex items-baseline gap-2">
+<span class="text-6xl font-extrabold tracking-tighter font-headline">4</span>
+<span class="text-2xl font-semibold font-headline opacity-90">days clean</span>
+</div>
+</div>
+<!-- Decorative abstract background for the sanctuary feeling -->
+<div class="absolute top-0 right-0 w-48 h-48 bg-primary-container/10 rounded-full -mr-12 -mt-12 blur-3xl"></div>
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full -ml-8 -mb-8 blur-2xl"></div>
+</section>
+<!-- Watch List Section -->
+<section class="space-y-6">
+<div class="flex items-end justify-between px-2">
+<h2 class="text-2xl font-bold tracking-tight text-on-surface">Watch List</h2>
+<span class="text-sm font-medium text-on-surface-variant mb-1">Active items</span>
+</div>
+<div class="grid gap-4">
+<!-- Watch Card 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl transition-all hover:translate-y-[-2px] group cursor-pointer" onclick="window.location.href='15c52f3700ce458ebc4c837d0918ecb7.html'" role="button">
+<div class="flex justify-between items-start">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="smartphone">smartphone</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">Phone</h3>
+</div>
+<div class="flex gap-6">
+<div class="space-y-0.5">
+<p class="text-[10px] uppercase tracking-wider font-bold text-on-surface-variant">History</p>
+<p class="font-semibold text-on-surface">2 misses</p>
+</div>
+<div class="space-y-0.5">
+<p class="text-[10px] uppercase tracking-wider font-bold text-primary">Status</p>
+<p class="font-semibold text-primary">12 days clean</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high w-12 h-12 rounded-full flex items-center justify-center transition-colors group-hover:bg-primary-container/30 cursor-pointer">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="more_vert">more_vert</span>
+</div>
+</div>
+</div>
+<!-- Watch Card 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl transition-all hover:translate-y-[-2px] group cursor-pointer" onclick="window.location.href='15c52f3700ce458ebc4c837d0918ecb7.html'" role="button">
+<div class="flex justify-between items-start">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="vpn_key">vpn_key</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface">Keys</h3>
+</div>
+<div class="flex gap-6">
+<div class="space-y-0.5">
+<p class="text-[10px] uppercase tracking-wider font-bold text-on-surface-variant">History</p>
+<p class="font-semibold text-on-surface">5 misses</p>
+</div>
+<div class="space-y-0.5">
+<p class="text-[10px] uppercase tracking-wider font-bold text-primary">Status</p>
+<p class="font-semibold text-primary">8 days clean</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high w-12 h-12 rounded-full flex items-center justify-center transition-colors group-hover:bg-primary-container/30 cursor-pointer">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="more_vert">more_vert</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mastered Section -->
+<section class="space-y-4 opacity-70 pb-24">
+<div class="px-2">
+<h2 class="text-lg font-bold tracking-tight text-on-surface-variant">Mastered</h2>
+</div>
+<div class="bg-surface-container-low rounded-xl p-4 flex items-center justify-between cursor-pointer" onclick="window.location.href='15c52f3700ce458ebc4c837d0918ecb7.html'" role="button">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface-variant/60" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-medium text-on-surface-variant">Wallet</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-xs font-semibold text-primary">45 day streak</span>
+<span class="material-symbols-outlined text-primary text-sm" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Floating Action Area -->
+<div class="fixed bottom-24 left-0 w-full px-6 pointer-events-none">
+<div class="max-w-2xl mx-auto flex justify-center pointer-events-auto">
+<button class="w-full bg-primary text-on-primary py-5 rounded-full shadow-2xl flex items-center justify-center gap-3 transition-transform active:scale-95 duration-300 cursor-pointer" onclick="window.location.href='2f6c47af2f2f4329a57aecf6cd3e4d7c.html'">
+<span class="material-symbols-outlined" data-icon="error_outline">error_outline</span>
+<span class="font-headline font-bold text-lg tracking-tight">I forgot something</span>
+</button>
+</div>
+</div>
+<!-- BottomNavBar -->
+<nav class="idea-bottom-nav fixed bottom-0 left-0 right-0 z-50 border-t border-slate-200/70 bg-white/85 px-5 pb-6 pt-3 backdrop-blur-xl"><div class="mx-auto flex max-w-md items-center justify-center gap-3"><button class="flex min-w-[112px] flex-col items-center justify-center gap-1 rounded-full px-4 py-2 text-primary bg-primary-container/50" onclick="window.location.href='467fe760a7d04d3b88074c9646a8a181.html'"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span><span class="text-[11px] font-medium uppercase tracking-[0.14em]">Home</span></button><button class="flex min-w-[112px] flex-col items-center justify-center gap-1 rounded-full px-4 py-2 text-on-surface-variant" onclick="window.location.href='ea6c4202f5f6470d86517ca58a28bf96.html'"><span class="material-symbols-outlined">settings</span><span class="text-[11px] font-medium uppercase tracking-[0.14em]">Settings</span></button></div></nav></body></html>

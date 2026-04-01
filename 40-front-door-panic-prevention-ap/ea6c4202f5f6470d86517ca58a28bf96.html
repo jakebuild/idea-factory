@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/><meta content="width=390, initial-scale=1.0" name="viewport"/>
+
+<title>Settings - Digital Sanctuary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed": "#cfe6f1",
+              "on-primary-fixed": "#003b4c",
+              "primary-dim": "#155a70",
+              "on-secondary-container": "#40555e",
+              "on-primary": "#f2faff",
+              "outline": "#747c80",
+              "on-error-container": "#6e0a12",
+              "tertiary-fixed-dim": "#b1c4ee",
+              "primary-fixed": "#a1ddf7",
+              "on-background": "#2c3437",
+              "surface-tint": "#26667c",
+              "on-primary-container": "#005065",
+              "surface-container": "#eaeff2",
+              "on-tertiary-fixed": "#213457",
+              "on-secondary": "#f2faff",
+              "surface": "#f7f9fb",
+              "inverse-surface": "#0b0f10",
+              "secondary-dim": "#41565f",
+              "secondary-fixed-dim": "#c1d8e3",
+              "tertiary-fixed": "#bfd2fd",
+              "error": "#a83836",
+              "background": "#f7f9fb",
+              "on-primary-fixed-variant": "#13596f",
+              "tertiary-dim": "#415377",
+              "error-container": "#fa746f",
+              "secondary": "#4d626c",
+              "on-tertiary-fixed-variant": "#3f5075",
+              "on-secondary-fixed": "#2d424b",
+              "tertiary-container": "#bfd2fd",
+              "primary-container": "#a1ddf7",
+              "on-tertiary-container": "#35476b",
+              "on-surface": "#2c3437",
+              "on-secondary-fixed-variant": "#495f68",
+              "surface-bright": "#f7f9fb",
+              "tertiary": "#4d5f84",
+              "primary": "#26667c",
+              "primary-fixed-dim": "#93cfe8",
+              "inverse-on-surface": "#9a9d9f",
+              "surface-dim": "#d4dbdf",
+              "secondary-container": "#cfe6f1",
+              "surface-container-highest": "#dce4e8",
+              "inverse-primary": "#a1ddf7",
+              "on-surface-variant": "#596064",
+              "surface-container-low": "#f0f4f7",
+              "surface-container-high": "#e3e9ed",
+              "outline-variant": "#acb3b7",
+              "on-tertiary": "#f9f8ff",
+              "error-dim": "#67040d",
+              "on-error": "#fff7f6",
+              "surface-variant": "#dce4e8",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-header {
+        background: rgba(247, 249, 251, 0.8);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style data-idea-shell="true">body{padding-top:64px;}
+body.has-tabbar{padding-bottom:108px;}
+body.no-tabbar{padding-bottom:24px;}
+.idea-header,.idea-bottom-nav{font-family:Inter,sans-serif;}
+.idea-header h1{font-family:Manrope,sans-serif;}
+.nav-safe{padding-bottom:108px !important;}
+.clickable-card{cursor:pointer;}
+</style></head>
+<body class="bg-surface text-on-surface min-h-screen pb-24 has-tabbar"><header class="idea-header fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-slate-200/70"><div class="mx-auto flex h-16 w-full max-w-2xl items-center justify-between px-4"><div class="w-10 h-10"></div><h1 class="text-xl font-headline font-bold tracking-tight text-on-surface">Settings</h1><div class="w-10 h-10"></div></div></header>
+<!-- TopAppBar -->
+
+<!-- Main Content Canvas -->
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-10 nav-safe">
+<!-- Header Text -->
+<section class="mb-2">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight text-on-surface">Digital Sanctuary</h2>
+<p class="text-on-surface-variant font-body leading-relaxed mt-1">Configure your environment for maximum peace.</p>
+</section>
+<!-- Departure Times Section (Asymmetric Bento Style) -->
+<section class="space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-lg font-semibold text-on-surface">Departure Times</h3>
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Mon-Fri Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col justify-between min-h-[140px] transition-all duration-300 hover:bg-white">
+<span class="font-label text-sm text-on-surface-variant">Mon-Fri</span>
+<div class="flex items-end justify-between">
+<span class="font-headline text-4xl font-bold text-on-surface">08:30</span>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-label text-sm font-medium hover:bg-secondary-fixed-dim transition-colors">Edit</button>
+</div>
+</div>
+<div class="space-y-4">
+<!-- Saturday Card -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex items-center justify-between transition-all duration-300 hover:bg-white">
+<div>
+<span class="font-label text-xs text-on-surface-variant block">Saturday</span>
+<span class="font-headline text-2xl font-bold text-on-surface">10:00</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="edit">edit</span>
+</div>
+<!-- Sunday Card -->
+<div class="bg-surface-container-lowest p-5 rounded-xl flex items-center justify-between transition-all duration-300 hover:bg-white">
+<div>
+<span class="font-label text-xs text-on-surface-variant block">Sunday</span>
+<span class="font-headline text-2xl font-bold text-on-surface">Off</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="edit">edit</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Notifications & Mastery (Combined Tonal Container) -->
+<section class="bg-surface-container-low rounded-xl p-1 space-y-1">
+<!-- Notification Toggle -->
+<div class="bg-surface-container-lowest rounded-xl p-6 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="notifications_active">notifications_active</span>
+</div>
+<div>
+<h4 class="font-headline font-semibold text-on-surface">Daily Reminders</h4>
+<p class="text-on-surface-variant text-sm font-body">Gentle nudges to keep your rhythm</p>
+</div>
+</div>
+<!-- Toggle Switch -->
+<div class="w-14 h-8 bg-primary rounded-full relative p-1 flex items-center justify-end transition-colors cursor-pointer">
+<div class="w-6 h-6 bg-on-primary rounded-full shadow-sm"></div>
+</div>
+</div>
+<!-- Item Management: Reset Mastery -->
+<div class="bg-surface-container-lowest rounded-xl p-6 space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-tertiary-container rounded-full flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div>
+<h4 class="font-headline font-semibold text-on-surface">Reset Mastery</h4>
+<p class="text-on-surface-variant text-sm font-body">Clear progress for specific items</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-3">
+<button class="flex items-center gap-2 bg-surface-container-high px-5 py-3 rounded-full hover:bg-surface-container-highest transition-colors active:scale-95 group">
+<span class="material-symbols-outlined text-lg text-outline" data-icon="smartphone">smartphone</span>
+<span class="font-label font-medium text-on-surface">Phone</span>
+<span class="material-symbols-outlined text-error opacity-0 group-hover:opacity-100 transition-opacity ml-1" data-icon="close">close</span>
+</button>
+<button class="flex items-center gap-2 bg-surface-container-high px-5 py-3 rounded-full hover:bg-surface-container-highest transition-colors active:scale-95 group">
+<span class="material-symbols-outlined text-lg text-outline" data-icon="vpn_key">vpn_key</span>
+<span class="font-label font-medium text-on-surface">Keys</span>
+<span class="material-symbols-outlined text-error opacity-0 group-hover:opacity-100 transition-opacity ml-1" data-icon="close">close</span>
+</button>
+<button class="flex items-center gap-2 bg-surface-container-high px-5 py-3 rounded-full hover:bg-surface-container-highest transition-colors active:scale-95 group">
+<span class="material-symbols-outlined text-lg text-outline" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-label font-medium text-on-surface">Wallet</span>
+<span class="material-symbols-outlined text-error opacity-0 group-hover:opacity-100 transition-opacity ml-1" data-icon="close">close</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Support Section -->
+<section class="space-y-3">
+<h3 class="font-headline text-lg font-semibold text-on-surface px-1">Support</h3>
+<div class="grid grid-cols-1 gap-2">
+<a class="flex items-center justify-between p-5 rounded-xl bg-surface-container-lowest hover:bg-white transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors" data-icon="info">info</span>
+<span class="font-body font-medium text-on-surface">About Digital Sanctuary</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-5 rounded-xl bg-surface-container-lowest hover:bg-white transition-colors group" href="#">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-body font-medium text-on-surface">Send Feedback</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</section>
+<!-- Footer Visual -->
+<div class="pt-8 pb-12 flex flex-col items-center opacity-40 grayscale contrast-125">
+<img alt="Zen pebbles" class="w-16 h-16 rounded-full object-cover mb-4" data-alt="A minimalist overhead shot of smooth grey river stones stacked in a small tower on a soft white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD9Fdk7wAhTOSLFpicBuF6Kwa0K350b2S9EiT8Pr_i8PMNMBH4zddXcZp58Cd-8aeZRlRyNJrklJdhKPdz9XnWt2-otFyT3_B5IKk0zQ8wRJPUZbN5gbScVD_Pb-cKmpY6jC91vQy3H97gSBRwsNQBFNd8pB5cOvtHrSu85vRlAwo1uyFi-b0ThMa5B3U2bO-doBSKU1K_dDicsq5k0WQJsvJB-TOjW5edeaJnYjib_WDj-J3S3Yqs4XYexmdxat6Ul1WhNQNhmSCl"/>
+<p class="font-label text-xs text-on-surface-variant">Version 2.4.0 • Sanctuary Labs</p>
+</div>
+</main>
+<!-- Bottom Navigation Mockup -->
+
+<nav class="idea-bottom-nav fixed bottom-0 left-0 right-0 z-50 border-t border-slate-200/70 bg-white/85 px-5 pb-6 pt-3 backdrop-blur-xl"><div class="mx-auto flex max-w-md items-center justify-center gap-3"><button class="flex min-w-[112px] flex-col items-center justify-center gap-1 rounded-full px-4 py-2 text-on-surface-variant" onclick="window.location.href='467fe760a7d04d3b88074c9646a8a181.html'"><span class="material-symbols-outlined">home</span><span class="text-[11px] font-medium uppercase tracking-[0.14em]">Home</span></button><button class="flex min-w-[112px] flex-col items-center justify-center gap-1 rounded-full px-4 py-2 text-primary bg-primary-container/50" onclick="window.location.href='ea6c4202f5f6470d86517ca58a28bf96.html'"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span><span class="text-[11px] font-medium uppercase tracking-[0.14em]">Settings</span></button></div></nav></body></html>

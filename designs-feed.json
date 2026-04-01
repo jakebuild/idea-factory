@@ -1,0 +1,34 @@
+[
+  {
+    "id": "idea-40",
+    "num": 40,
+    "title": "Front-door panic prevention app",
+    "subtitle": "Tracks repeated forgotten items and nudges office commuters before they leave.",
+    "description": "GotIt is a personal forgetting tracker for office commuters who consistently miss the same 1–3 items when leaving the house. Instead of a generic pre-departure checklist, it learns what you specifically forget and only reminds you about those things. The primary action is logging a miss. When you arrive at work and realize you left your badge at home, you open the app (or tap a widget) and log \"forgot badge.\" After two misses on the same item, it joins your active watch list. The next morning, your departure notification says: \"Watch out — you've forgotten your badge twice. Got it today?\" That is a targeted nudge about a real pattern, not a generic \"did you grab everything?\" As you go 14 days without forgetting a watched item, it graduates to \"mastered\" and drops off the active list. The watch list shrinks over time as you fix your weak spots. The success state is an empty list — the app has done its job and goes quiet. There are no NFC tags, no WiFi detection, no background monitoring, no 6-item compliance checklist, no history heatmap. Just: log your misses → build your personal weak-spot list → get targeted departure nudges for YOUR specific patterns. Target user: office commuters with consistent weekday routines who forget the same item 2–3 times per month. Not shift workers, not parents with chaotic schedules, not general forgetfulness. MVP is a single-platform mobile app (iOS first) with local notifications, a home screen widget for quick miss logging, and no backend.",
+    "score": 5,
+    "status": "complete",
+    "deviceType": "MOBILE",
+    "category": "Utility",
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "tags": [
+      "ios",
+      "widget",
+      "notifications",
+      "commute",
+      "memory"
+    ],
+    "folder": "40-front-door-panic-prevention-ap",
+    "prototypeUrl": "https://jakebuild.github.io/idea-factory/40-front-door-panic-prevention-ap/",
+    "metaUrl": "https://jakebuild.github.io/idea-factory/40-front-door-panic-prevention-ap/meta.json",
+    "startScreenId": "8009b91eb2634b6a9ca79af1f0566b4f",
+    "startScreenUrl": "https://jakebuild.github.io/idea-factory/40-front-door-panic-prevention-ap/8009b91eb2634b6a9ca79af1f0566b4f.html",
+    "screenCount": 6,
+    "stitchId": "14130794587659095788",
+    "stitchUrl": "https://stitch.withgoogle.com/projects/14130794587659095788",
+    "publishedAt": "2026-04-01T09:40:35Z",
+    "updatedAt": "2026-04-01T09:40:35Z"
+  }
+]
