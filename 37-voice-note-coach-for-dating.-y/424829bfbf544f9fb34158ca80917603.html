@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Settings - The Mindful Connection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary": "#72605e",
+                        "primary-fixed-dim": "#eea399",
+                        "surface-variant": "#ebe8e3",
+                        "outline": "#82807c",
+                        "on-secondary-fixed": "#4b3c39",
+                        "surface-dim": "#e5e2dd",
+                        "on-error": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#6e0523",
+                        "secondary-fixed-dim": "#e6cfcc",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#666461",
+                        "on-secondary-fixed-variant": "#695855",
+                        "background": "#fffbff",
+                        "surface-container-low": "#fdf9f5",
+                        "primary": "#90544c",
+                        "primary-fixed": "#fdb0a6",
+                        "tertiary-container": "#ffdfd1",
+                        "tertiary-fixed-dim": "#f0d1c3",
+                        "on-primary-fixed-variant": "#6e3831",
+                        "surface": "#fffbff",
+                        "primary-container": "#fdb0a6",
+                        "on-primary-container": "#632f29",
+                        "tertiary": "#775f55",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#393835",
+                        "secondary-container": "#f5ddda",
+                        "surface-container-highest": "#ebe8e3",
+                        "secondary-dim": "#655452",
+                        "inverse-surface": "#0e0e0d",
+                        "outline-variant": "#bcb9b4",
+                        "inverse-on-surface": "#9f9c9a",
+                        "on-primary-fixed": "#4a1b16",
+                        "surface-container-high": "#f1ede9",
+                        "tertiary-fixed": "#ffdfd1",
+                        "tertiary-dim": "#6a5349",
+                        "secondary-fixed": "#f5ddda",
+                        "surface-tint": "#90544c",
+                        "surface-container": "#f7f3ef",
+                        "error-container": "#f97386",
+                        "on-secondary-container": "#5e4e4b",
+                        "on-tertiary-fixed-variant": "#6f584e",
+                        "on-background": "#393835",
+                        "error": "#af3b50",
+                        "on-tertiary-fixed": "#513c33",
+                        "surface-bright": "#fffbff",
+                        "primary-dim": "#824841",
+                        "error-dim": "#6b0221",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#fdb0a6",
+                        "on-tertiary-container": "#654f44"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #fffbff;
+            color: #393835;
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 251, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+.proto-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 14px;background:#fffbff;color:#393835;position:sticky;top:0;z-index:60;border-bottom:1px solid rgba(188,185,180,.4)}
+.proto-header-left,.proto-header-right{display:flex;align-items:center;gap:10px;min-width:44px}.proto-header-title{font-family:"Plus Jakarta Sans",sans-serif;font-size:18px;font-weight:700;letter-spacing:-.02em;color:#393835;text-align:center;flex:1}
+.proto-icon-btn{height:40px;width:40px;border:none;border-radius:9999px;background:#f7f3ef;color:#5e4e4b;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.proto-icon-btn span{font-family:"Material Symbols Outlined";font-size:22px;line-height:1}
+.proto-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px 18px 18px;background:rgba(255,251,255,.92);backdrop-filter:blur(18px);border-top:1px solid rgba(188,185,180,.35)}
+.proto-nav-btn{border:none;border-radius:20px;background:#f7f3ef;color:#666461;padding:10px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-family:"Manrope",sans-serif;font-size:11px;font-weight:700;cursor:pointer}
+.proto-nav-btn span{font-family:"Material Symbols Outlined";font-size:20px;line-height:1}.proto-nav-btn.active{background:#90544c;color:#fff}.proto-main-pad{padding-bottom:108px !important}
+body{background:#fffbff !important;color:#393835 !important}
+</style></head>
+<body class="min-h-screen pb-32"><div class="proto-header"><div class="proto-header-left"></div><div class="proto-header-title">Settings</div><div class="proto-header-right"></div></div>
+<!-- TopAppBar -->
+
+<main class="max-w-2xl mx-auto px-6 py-12 space-y-12 proto-main-pad">
+<!-- Welcome Aesthetic Section (Optional but follows North Star) -->
+<section class="space-y-4">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight text-on-surface">Your Space</h2>
+<p class="font-body text-on-surface-variant max-w-md leading-relaxed">
+                Refine your experience and manage how your data interacts with our sanctuary.
+            </p>
+</section>
+<!-- Section 1: Transparency & Privacy -->
+<section class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'wght' 500;">shield_person</span>
+<h3 class="font-headline text-xl font-bold text-on-surface">Transparency &amp; Privacy</h3>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8 space-y-6 relative overflow-hidden group">
+<!-- Abstract Decorative Element -->
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary-container/10 rounded-full blur-3xl group-hover:bg-primary-container/20 transition-colors duration-500"></div>
+<div class="relative space-y-4">
+<div class="flex items-start gap-4">
+<div class="mt-1 w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-container text-sm">mic</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-headline font-semibold text-on-surface">Audio Processing</h4>
+<p class="font-body text-sm leading-relaxed text-on-surface-variant">
+                                We leverage the Whisper API for high-quality, nuanced transcriptions of your thoughts. This ensures that every inflection and pause in your journey is captured with artisanal precision.
+                            </p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="mt-1 w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-sm">lock</span>
+</div>
+<div class="space-y-2">
+<h4 class="font-headline font-semibold text-on-surface">Data Sovereignty</h4>
+<p class="font-body text-sm leading-relaxed text-on-surface-variant">
+                                Your audio is processed securely and is <span class="font-semibold text-on-surface">not stored permanently</span> for app training or any third-party use. The moment your transcript is finalized, the raw audio file is dissolved from our active processing servers.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Data Management -->
+<section class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'wght' 500;">database</span>
+<h3 class="font-headline text-xl font-bold text-on-surface">Data Management</h3>
+</div>
+<div class="bg-surface-container p-8 rounded-xl flex flex-col items-center text-center space-y-6">
+<div class="space-y-2">
+<h4 class="font-headline font-semibold text-on-surface">A Fresh Beginning</h4>
+<p class="font-body text-sm text-on-surface-variant max-w-sm">
+                        Clearing your session data will reset your local environment. This action is intentional and permanent, designed for when you need a clean slate.
+                    </p>
+</div>
+<button class="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-primary to-primary-dim text-on-primary rounded-full font-headline font-semibold shadow-xl shadow-primary/10 active:scale-95 transition-all duration-300 ease-in-out" onclick="window.location.href='15970110b06c41aaab225d77c79a1f70.html'">
+                    Clear all session data
+                </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="pt-12 pb-8 flex flex-col items-center space-y-4">
+<div class="w-12 h-px bg-outline-variant/30"></div>
+<p class="font-body text-xs tracking-widest text-outline uppercase opacity-60">Version 1.0.4</p>
+</footer>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="proto-bottom-nav"><button aria-label="Record" class="proto-nav-btn" onclick="window.location.href='15970110b06c41aaab225d77c79a1f70.html'"><span>mic</span><strong>Record</strong></button><button aria-label="Review" class="proto-nav-btn" onclick="window.location.href='038cf0c1a65a4c4a9423841609801cfb.html'"><span>auto_fix_high</span><strong>Review</strong></button><button aria-label="Settings" class="proto-nav-btn active" onclick="window.location.href='424829bfbf544f9fb34158ca80917603.html'"><span>settings</span><strong>Settings</strong></button></nav></body></html>

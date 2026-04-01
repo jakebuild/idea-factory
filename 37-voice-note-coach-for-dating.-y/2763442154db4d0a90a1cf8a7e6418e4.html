@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Processing Reflection - Velvet Hearth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#5e4e4b",
+                        "tertiary": "#775f55",
+                        "secondary-dim": "#655452",
+                        "surface-tint": "#90544c",
+                        "secondary-fixed": "#f5ddda",
+                        "on-tertiary-container": "#654f44",
+                        "inverse-surface": "#0e0e0d",
+                        "error-container": "#f97386",
+                        "on-surface-variant": "#666461",
+                        "tertiary-fixed-dim": "#f0d1c3",
+                        "secondary": "#72605e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#ebe8e3",
+                        "surface-container-low": "#fdf9f5",
+                        "on-tertiary-fixed-variant": "#6f584e",
+                        "on-primary-fixed": "#4a1b16",
+                        "tertiary-container": "#ffdfd1",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "background": "#fffbff",
+                        "on-background": "#393835",
+                        "outline": "#82807c",
+                        "on-secondary-fixed": "#4b3c39",
+                        "surface-container": "#f7f3ef",
+                        "primary-fixed": "#fdb0a6",
+                        "surface-container-highest": "#ebe8e3",
+                        "on-error": "#ffffff",
+                        "tertiary-dim": "#6a5349",
+                        "primary-dim": "#824841",
+                        "on-error-container": "#6e0523",
+                        "on-tertiary-fixed": "#513c33",
+                        "on-secondary-fixed-variant": "#695855",
+                        "secondary-container": "#f5ddda",
+                        "tertiary-fixed": "#ffdfd1",
+                        "surface-dim": "#e5e2dd",
+                        "primary": "#90544c",
+                        "surface-container-high": "#f1ede9",
+                        "inverse-primary": "#fdb0a6",
+                        "surface-bright": "#fffbff",
+                        "primary-fixed-dim": "#eea399",
+                        "secondary-fixed-dim": "#e6cfcc",
+                        "inverse-on-surface": "#9f9c9a",
+                        "primary-container": "#fdb0a6",
+                        "on-primary-fixed-variant": "#6e3831",
+                        "outline-variant": "#bcb9b4",
+                        "on-surface": "#393835",
+                        "error-dim": "#6b0221",
+                        "error": "#af3b50",
+                        "surface": "#fffbff",
+                        "on-primary-container": "#632f29"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes soft-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.4; }
+            50% { transform: scale(1.1); opacity: 0.15; }
+        }
+        .pulse-layer {
+            animation: soft-pulse 4s ease-in-out infinite;
+        }
+        .pulse-layer-delayed {
+            animation: soft-pulse 4s ease-in-out infinite 2s;
+        }
+        .text-reveal {
+            background: linear-gradient(to bottom, #393835 0%, #393835 60%, transparent 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+.proto-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 14px;background:#fffbff;color:#393835;position:sticky;top:0;z-index:60;border-bottom:1px solid rgba(188,185,180,.4)}
+.proto-header-left,.proto-header-right{display:flex;align-items:center;gap:10px;min-width:44px}.proto-header-title{font-family:"Plus Jakarta Sans",sans-serif;font-size:18px;font-weight:700;letter-spacing:-.02em;color:#393835;text-align:center;flex:1}
+.proto-icon-btn{height:40px;width:40px;border:none;border-radius:9999px;background:#f7f3ef;color:#5e4e4b;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.proto-icon-btn span{font-family:"Material Symbols Outlined";font-size:22px;line-height:1}
+.proto-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px 18px 18px;background:rgba(255,251,255,.92);backdrop-filter:blur(18px);border-top:1px solid rgba(188,185,180,.35)}
+.proto-nav-btn{border:none;border-radius:20px;background:#f7f3ef;color:#666461;padding:10px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-family:"Manrope",sans-serif;font-size:11px;font-weight:700;cursor:pointer}
+.proto-nav-btn span{font-family:"Material Symbols Outlined";font-size:20px;line-height:1}.proto-nav-btn.active{background:#90544c;color:#fff}.proto-main-pad{padding-bottom:108px !important}
+body{background:#fffbff !important;color:#393835 !important}
+</style></head>
+<body class="bg-background font-body text-on-background selection:bg-primary-container selection:text-on-primary-container"><div class="proto-header"><div class="proto-header-left"><button aria-label="Back" class="proto-icon-btn" onclick="window.location.href='a3c10ef4a9244bc5b9f23fcccb6eee40.html'"><span>arrow_back</span></button></div><div class="proto-header-title">Processing</div><div class="proto-header-right"></div></div>
+<!-- TopAppBar -->
+
+<main class="max-w-xl mx-auto px-6 pt-12 pb-32 flex flex-col items-center min-h-screen proto-main-pad" onclick="window.location.href='038cf0c1a65a4c4a9423841609801cfb.html'" style="cursor:pointer" title="Tap to continue to feedback">
+<!-- Central Indicator -->
+<div class="relative w-64 h-64 flex items-center justify-center mb-16">
+<!-- Pulsing Rings -->
+<div class="absolute inset-0 rounded-full bg-[#CB857C] pulse-layer"></div>
+<div class="absolute inset-4 rounded-full bg-[#CB857C] pulse-layer-delayed"></div>
+<!-- Core -->
+<div class="relative z-10 w-32 h-32 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center shadow-xl">
+<span class="material-symbols-outlined text-white text-4xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<!-- Abstract Floating Elements (Intentional Asymmetry) -->
+<div class="absolute top-0 right-4 w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="absolute bottom-12 -left-2 w-2 h-2 rounded-full bg-primary-fixed"></div>
+</div>
+<!-- Status Text Section -->
+<div class="text-center space-y-3 mb-16">
+<div class="flex items-center justify-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<p class="font-headline font-semibold text-xl text-on-surface">Transcribing your note...</p>
+</div>
+<p class="font-body text-on-surface-variant opacity-60 italic">Analyzing emotional depth and key themes</p>
+</div>
+<!-- Transcript Preview (Asymmetric Card Layout) -->
+<div class="w-full relative">
+<div class="absolute -top-6 -left-2 opacity-10">
+<span class="material-symbols-outlined text-6xl" data-icon="format_quote">format_quote</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8 shadow-sm relative overflow-hidden">
+<div class="flex justify-between items-center mb-6">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Live Transcript</span>
+<div class="flex gap-1">
+<span class="w-1 h-1 rounded-full bg-primary animate-bounce"></span>
+<span class="w-1 h-1 rounded-full bg-primary animate-bounce" style="animation-delay: 0.2s"></span>
+<span class="w-1 h-1 rounded-full bg-primary animate-bounce" style="animation-delay: 0.4s"></span>
+</div>
+</div>
+<div class="space-y-4 text-reveal font-body leading-relaxed text-on-surface">
+<p>I was thinking about the way the light hit the kitchen table this morning. It felt like a small, quiet moment of grace in a busy week. Sometimes I forget that these tiny fragments of peace are enough...</p>
+<p class="opacity-40">The conversation yesterday stayed with me longer than I expected. There was a sense of unspoken understanding that I'm still trying to put into words. It's funny how the heart remembers things the mind tries to rationalize away.</p>
+</div>
+<!-- Glassmorphism Overlay for gradual fade -->
+<div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-surface-container-low to-transparent"></div>
+</div>
+<!-- Contextual Decorative Element -->
+<div class="mt-8 flex justify-end">
+<div class="bg-tertiary-container px-4 py-2 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="psychology">psychology</span>
+<span class="font-label text-xs font-semibold text-on-tertiary-container">Identifying Sentiment</span>
+</div>
+</div>
+</div>
+<!-- Intentional White Space for Focus -->
+<div class="h-24"></div>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="proto-bottom-nav"><button aria-label="Record" class="proto-nav-btn active" onclick="window.location.href='15970110b06c41aaab225d77c79a1f70.html'"><span>mic</span><strong>Record</strong></button><button aria-label="Review" class="proto-nav-btn" onclick="window.location.href='038cf0c1a65a4c4a9423841609801cfb.html'"><span>auto_fix_high</span><strong>Review</strong></button><button aria-label="Settings" class="proto-nav-btn" onclick="window.location.href='424829bfbf544f9fb34158ca80917603.html'"><span>settings</span><strong>Settings</strong></button></nav></body></html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Take 2 - Record</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#6e3831",
+                        "primary-fixed": "#fdb0a6",
+                        "secondary-container": "#f5ddda",
+                        "inverse-surface": "#0e0e0d",
+                        "surface-bright": "#fffbff",
+                        "surface": "#fffbff",
+                        "on-primary-container": "#632f29",
+                        "on-tertiary-container": "#654f44",
+                        "on-secondary-fixed": "#4b3c39",
+                        "secondary-fixed-dim": "#e6cfcc",
+                        "on-error-container": "#6e0523",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#bcb9b4",
+                        "tertiary-fixed-dim": "#f0d1c3",
+                        "primary-dim": "#824841",
+                        "error-dim": "#6b0221",
+                        "on-secondary-fixed-variant": "#695855",
+                        "on-secondary-container": "#5e4e4b",
+                        "error-container": "#f97386",
+                        "tertiary-container": "#ffdfd1",
+                        "tertiary-dim": "#6a5349",
+                        "on-secondary": "#ffffff",
+                        "primary": "#90544c",
+                        "surface-dim": "#e5e2dd",
+                        "on-background": "#393835",
+                        "surface-container-high": "#f1ede9",
+                        "surface-container-low": "#fdf9f5",
+                        "inverse-primary": "#fdb0a6",
+                        "tertiary": "#775f55",
+                        "surface-container-highest": "#ebe8e3",
+                        "on-tertiary-fixed": "#513c33",
+                        "primary-container": "#fdb0a6",
+                        "secondary": "#72605e",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#ebe8e3",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#ffdfd1",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#f7f3ef",
+                        "secondary-dim": "#655452",
+                        "on-tertiary-fixed-variant": "#6f584e",
+                        "secondary-fixed": "#f5ddda",
+                        "on-primary-fixed": "#4a1b16",
+                        "surface-tint": "#90544c",
+                        "error": "#af3b50",
+                        "background": "#fffbff",
+                        "primary-fixed-dim": "#eea399",
+                        "on-surface": "#393835",
+                        "inverse-on-surface": "#9f9c9a",
+                        "outline": "#82807c",
+                        "on-surface-variant": "#666461"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        .scroll-mask {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+.proto-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 14px;background:#fffbff;color:#393835;position:sticky;top:0;z-index:60;border-bottom:1px solid rgba(188,185,180,.4)}
+.proto-header-left,.proto-header-right{display:flex;align-items:center;gap:10px;min-width:44px}.proto-header-title{font-family:"Plus Jakarta Sans",sans-serif;font-size:18px;font-weight:700;letter-spacing:-.02em;color:#393835;text-align:center;flex:1}
+.proto-icon-btn{height:40px;width:40px;border:none;border-radius:9999px;background:#f7f3ef;color:#5e4e4b;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.proto-icon-btn span{font-family:"Material Symbols Outlined";font-size:22px;line-height:1}
+.proto-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px 18px 18px;background:rgba(255,251,255,.92);backdrop-filter:blur(18px);border-top:1px solid rgba(188,185,180,.35)}
+.proto-nav-btn{border:none;border-radius:20px;background:#f7f3ef;color:#666461;padding:10px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-family:"Manrope",sans-serif;font-size:11px;font-weight:700;cursor:pointer}
+.proto-nav-btn span{font-family:"Material Symbols Outlined";font-size:20px;line-height:1}.proto-nav-btn.active{background:#90544c;color:#fff}.proto-main-pad{padding-bottom:108px !important}
+body{background:#fffbff !important;color:#393835 !important}
+</style></head>
+<body class="bg-surface text-on-background font-body min-h-screen flex flex-col"><div class="proto-header"><div class="proto-header-left"><button aria-label="Back" class="proto-icon-btn" onclick="window.location.href='f9deec76253f4b5ab074b7cec3d48da7.html'"><span>arrow_back</span></button></div><div class="proto-header-title">Take 2</div><div class="proto-header-right"></div></div>
+<!-- TopAppBar -->
+
+<main class="flex-1 flex flex-col px-6 pt-4 pb-32 max-w-2xl mx-auto w-full gap-8 proto-main-pad">
+<!-- Status Indicator -->
+<div class="flex justify-center mt-2">
+<div class="bg-tertiary-container text-on-tertiary-container px-5 py-1.5 rounded-full flex items-center gap-2 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label text-sm font-semibold tracking-wide uppercase">Ready to listen</span>
+</div>
+</div>
+<!-- Script Card -->
+<section class="relative flex-1 min-h-[300px]">
+<div class="absolute inset-0 bg-surface-container-low rounded-full p-12 flex flex-col items-center justify-center text-center overflow-hidden border border-surface-container shadow-sm">
+<div class="max-h-full overflow-y-auto scroll-mask px-4">
+<p class="text-xl md:text-2xl font-headline font-medium leading-relaxed text-on-surface-variant">
+                        "I realized today that my pace wasn't just about speed—it was about avoidance. I was running away from the quiet moments where the truth usually waits for me. But here, in the stillness, I'm choosing to stay."
+                    </p>
+<div class="h-12"></div>
+</div>
+</div>
+</section>
+<!-- Recording Controls Section -->
+<section class="flex flex-col items-center gap-10">
+<!-- Record Button -->
+<div class="relative group">
+<!-- Ambient Glow -->
+<div class="absolute inset-0 bg-primary opacity-20 blur-3xl group-active:opacity-40 transition-opacity duration-500 rounded-full"></div>
+<button class="relative w-28 h-28 rounded-full bg-gradient-to-br from-[#90544c] to-[#cb857c] flex items-center justify-center shadow-2xl active:scale-90 transition-transform duration-500 ease-in-out" onclick="window.location.href='8f11b96c63fc4b7ea6bc7b8651eb8073.html'">
+<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">mic</span>
+</button>
+</div>
+<div class="text-center">
+<p class="font-label text-sm tracking-widest uppercase text-on-surface-variant opacity-60">Tap to start recording</p>
+<div class="flex justify-center gap-1 mt-4">
+<span class="w-1 h-4 bg-primary-container rounded-full opacity-30"></span>
+<span class="w-1 h-6 bg-primary-container rounded-full opacity-50"></span>
+<span class="w-1 h-8 bg-primary rounded-full"></span>
+<span class="w-1 h-5 bg-primary-container rounded-full opacity-50"></span>
+<span class="w-1 h-3 bg-primary-container rounded-full opacity-30"></span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<!-- Decorative Texture Element -->
+<div class="fixed top-0 left-0 w-full h-full pointer-events-none opacity-[0.03] z-[-1]" data-alt="subtle organic paper texture for a tactile feel" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB-Ed3519UbYP3g81AgRwyyVaJO5eUPA4UoBohpjG8FkLDr2s8MjXKHhUVBLwKkDrdMJT8Qo37ZQUR8DOLQOwD9llb7bjFyExjNlZ4SrbwxpvyBSkZm4u2QFcoBHy9fkNMXCguS2hjxdmb7jjc3LIxcjH-MQ8-Sy8QspjA_PWGKPSirS_17yLyR3rFQytHoXVhnpKl4h8vfv9GjbNGY-6r22YEPBcbB97vQCjV3OwsbYVEecDZLQRUzwyxUvJvd0KrWDm9qfWLWJVE');"></div>
+<nav class="proto-bottom-nav"><button aria-label="Record" class="proto-nav-btn" onclick="window.location.href='15970110b06c41aaab225d77c79a1f70.html'"><span>mic</span><strong>Record</strong></button><button aria-label="Review" class="proto-nav-btn active" onclick="window.location.href='038cf0c1a65a4c4a9423841609801cfb.html'"><span>auto_fix_high</span><strong>Review</strong></button><button aria-label="Settings" class="proto-nav-btn" onclick="window.location.href='424829bfbf544f9fb34158ca80917603.html'"><span>settings</span><strong>Settings</strong></button></nav></body></html>

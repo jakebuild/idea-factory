@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#f1ede9",
+              "surface-bright": "#fffbff",
+              "error-container": "#f97386",
+              "inverse-on-surface": "#9f9c9a",
+              "surface-tint": "#90544c",
+              "on-secondary-container": "#5e4e4b",
+              "error-dim": "#6b0221",
+              "surface-container-highest": "#ebe8e3",
+              "on-secondary-fixed": "#4b3c39",
+              "on-tertiary": "#ffffff",
+              "on-surface-variant": "#666461",
+              "tertiary-fixed": "#ffdfd1",
+              "on-error": "#ffffff",
+              "primary-container": "#fdb0a6",
+              "on-surface": "#393835",
+              "surface-variant": "#ebe8e3",
+              "secondary": "#72605e",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "surface-dim": "#e5e2dd",
+              "on-secondary-fixed-variant": "#695855",
+              "tertiary-fixed-dim": "#f0d1c3",
+              "tertiary-dim": "#6a5349",
+              "tertiary-container": "#ffdfd1",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#4a1b16",
+              "outline-variant": "#bcb9b4",
+              "on-tertiary-fixed-variant": "#6f584e",
+              "primary-dim": "#824841",
+              "surface-container-low": "#fdf9f5",
+              "secondary-fixed-dim": "#e6cfcc",
+              "outline": "#82807c",
+              "on-primary-fixed-variant": "#6e3831",
+              "secondary-container": "#f5ddda",
+              "surface-container": "#f7f3ef",
+              "on-error-container": "#6e0523",
+              "secondary-dim": "#655452",
+              "primary-fixed": "#fdb0a6",
+              "surface": "#fffbff",
+              "inverse-surface": "#0e0e0d",
+              "inverse-primary": "#fdb0a6",
+              "on-tertiary-fixed": "#513c33",
+              "secondary-fixed": "#f5ddda",
+              "primary": "#90544c",
+              "on-tertiary-container": "#654f44",
+              "on-primary-container": "#632f29",
+              "on-background": "#393835",
+              "error": "#af3b50",
+              "tertiary": "#775f55",
+              "primary-fixed-dim": "#eea399",
+              "background": "#fffbff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        -webkit-tap-highlight-color: transparent;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+.proto-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 14px;background:#fffbff;color:#393835;position:sticky;top:0;z-index:60;border-bottom:1px solid rgba(188,185,180,.4)}
+.proto-header-left,.proto-header-right{display:flex;align-items:center;gap:10px;min-width:44px}.proto-header-title{font-family:"Plus Jakarta Sans",sans-serif;font-size:18px;font-weight:700;letter-spacing:-.02em;color:#393835;text-align:center;flex:1}
+.proto-icon-btn{height:40px;width:40px;border:none;border-radius:9999px;background:#f7f3ef;color:#5e4e4b;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.proto-icon-btn span{font-family:"Material Symbols Outlined";font-size:22px;line-height:1}
+.proto-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px 18px 18px;background:rgba(255,251,255,.92);backdrop-filter:blur(18px);border-top:1px solid rgba(188,185,180,.35)}
+.proto-nav-btn{border:none;border-radius:20px;background:#f7f3ef;color:#666461;padding:10px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-family:"Manrope",sans-serif;font-size:11px;font-weight:700;cursor:pointer}
+.proto-nav-btn span{font-family:"Material Symbols Outlined";font-size:20px;line-height:1}.proto-nav-btn.active{background:#90544c;color:#fff}.proto-main-pad{padding-bottom:108px !important}
+body{background:#fffbff !important;color:#393835 !important}
+</style></head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container"><div class="proto-header"><div class="proto-header-left"><button aria-label="Back" class="proto-icon-btn" onclick="window.location.href='64d6aaf866624430b9db74e743918be3.html'"><span>arrow_back</span></button></div><div class="proto-header-title">Comparison</div><div class="proto-header-right"></div></div>
+<!-- Top App Bar -->
+
+<main class="max-w-xl mx-auto px-6 pt-4 pb-32 space-y-8 proto-main-pad">
+<!-- Hero Header -->
+<div class="space-y-2">
+<span class="font-label text-xs uppercase tracking-widest text-primary font-bold">Improvement analysis</span>
+<h2 class="font-headline text-3xl font-bold leading-tight">Growth measured.</h2>
+<p class="text-on-surface-variant text-lg">Your second attempt shows significant clarity and focus.</p>
+</div>
+<!-- Comparison Bento Grid -->
+<div class="grid grid-cols-1 gap-6">
+<!-- Main Comparison Card -->
+<div class="bg-surface-container-low rounded-xl p-6 relative overflow-hidden group">
+<!-- Soft background glow -->
+<div class="absolute -top-24 -right-24 w-48 h-48 bg-primary/5 rounded-full blur-3xl transition-transform group-hover:scale-125 duration-500"></div>
+<div class="relative z-10 space-y-6">
+<div class="flex justify-between items-end border-b border-outline-variant/10 pb-4">
+<div class="space-y-1">
+<p class="font-label text-xs text-on-surface-variant font-semibold">METRIC</p>
+<p class="font-headline font-bold text-on-surface">Communication Delta</p>
+</div>
+<div class="bg-primary/10 px-3 py-1 rounded-full">
+<p class="font-label text-[10px] font-bold text-primary uppercase">Optimized</p>
+</div>
+</div>
+<!-- Side by Side Metrics -->
+<div class="grid grid-cols-2 gap-8 items-center">
+<!-- Left: Original -->
+<div class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-outline"></div>
+<p class="font-label text-sm text-on-surface-variant">First Take</p>
+</div>
+<div class="space-y-4">
+<div class="space-y-0.5">
+<p class="text-2xl font-headline font-bold">3:45</p>
+<p class="text-xs text-on-surface-variant">Duration</p>
+</div>
+<div class="space-y-0.5">
+<p class="text-2xl font-headline font-bold">8</p>
+<p class="text-xs text-on-surface-variant">Filler Words</p>
+</div>
+<div class="space-y-0.5">
+<p class="text-2xl font-headline font-bold">5</p>
+<p class="text-xs text-on-surface-variant">Hedges</p>
+</div>
+</div>
+</div>
+<!-- Right: New -->
+<div class="space-y-6 bg-surface-container rounded-lg p-4 -mr-2 shadow-[0_4px_20px_rgba(144,84,76,0.04)] border border-primary/5">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<p class="font-label text-sm font-bold text-primary">New Take</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<p class="text-2xl font-headline font-bold text-primary">2:59</p>
+<p class="text-xs text-on-surface-variant">Duration</p>
+</div>
+<div class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded text-[10px] font-bold">-46s</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<p class="text-2xl font-headline font-bold text-primary">2</p>
+<p class="text-xs text-on-surface-variant">Fillers</p>
+</div>
+<div class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded text-[10px] font-bold">-6</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<p class="text-2xl font-headline font-bold text-primary">3</p>
+<p class="text-xs text-on-surface-variant">Hedges</p>
+</div>
+<div class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded text-[10px] font-bold">-2</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Insights Card -->
+<div class="bg-surface-container rounded-xl p-6 flex items-start gap-4">
+<div class="bg-tertiary-container p-3 rounded-lg text-on-tertiary-container">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline font-bold">Clarity Score increased by 22%</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">By reducing your hedges (e.g., "I think", "maybe"), you sounded significantly more authoritative in the conclusion.</p>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-3 pt-4">
+<button class="w-full h-14 bg-gradient-to-r from-primary to-primary-dim text-on-primary rounded-full font-headline font-bold text-lg active:scale-95 transition-all shadow-lg shadow-primary/20" onclick="window.location.href='15970110b06c41aaab225d77c79a1f70.html'">
+                Done
+            </button>
+<button class="w-full h-14 bg-transparent border border-outline-variant/30 text-on-surface-variant rounded-full font-headline font-semibold hover:bg-surface-container-high active:scale-95 transition-all" onclick="window.location.href='15970110b06c41aaab225d77c79a1f70.html'">
+                Delete everything and go back
+            </button>
+</div>
+</main>
+<!-- Bottom Navigation (Filtered to show only when relevant - currently active on 'Compare') -->
+
+<nav class="proto-bottom-nav"><button aria-label="Record" class="proto-nav-btn" onclick="window.location.href='15970110b06c41aaab225d77c79a1f70.html'"><span>mic</span><strong>Record</strong></button><button aria-label="Review" class="proto-nav-btn active" onclick="window.location.href='038cf0c1a65a4c4a9423841609801cfb.html'"><span>auto_fix_high</span><strong>Review</strong></button><button aria-label="Settings" class="proto-nav-btn" onclick="window.location.href='424829bfbf544f9fb34158ca80917603.html'"><span>settings</span><strong>Settings</strong></button></nav></body></html>

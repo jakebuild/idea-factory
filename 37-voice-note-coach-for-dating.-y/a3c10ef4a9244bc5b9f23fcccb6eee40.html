@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Recording Active - Mindful Moment</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans & Manrope -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#fffbff",
+              "primary-container": "#fdb0a6",
+              "tertiary": "#775f55",
+              "surface-container-highest": "#ebe8e3",
+              "on-secondary-fixed-variant": "#695855",
+              "outline": "#82807c",
+              "secondary-container": "#f5ddda",
+              "surface-container-low": "#fdf9f5",
+              "on-surface": "#393835",
+              "on-secondary": "#ffffff",
+              "inverse-surface": "#0e0e0d",
+              "error-dim": "#6b0221",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#f1ede9",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#666461",
+              "surface-tint": "#90544c",
+              "on-error-container": "#6e0523",
+              "surface-variant": "#ebe8e3",
+              "primary-fixed-dim": "#eea399",
+              "on-secondary-container": "#5e4e4b",
+              "error": "#af3b50",
+              "on-primary": "#ffffff",
+              "on-primary-fixed": "#4a1b16",
+              "on-tertiary-fixed": "#513c33",
+              "tertiary-fixed": "#ffdfd1",
+              "surface": "#fffbff",
+              "outline-variant": "#bcb9b4",
+              "secondary-fixed": "#f5ddda",
+              "on-tertiary-fixed-variant": "#6f584e",
+              "surface-dim": "#e5e2dd",
+              "background": "#fffbff",
+              "secondary-dim": "#655452",
+              "secondary-fixed-dim": "#e6cfcc",
+              "on-background": "#393835",
+              "inverse-primary": "#fdb0a6",
+              "tertiary-dim": "#6a5349",
+              "tertiary-fixed-dim": "#f0d1c3",
+              "primary-fixed": "#fdb0a6",
+              "surface-container": "#f7f3ef",
+              "on-tertiary-container": "#654f44",
+              "secondary": "#72605e",
+              "inverse-on-surface": "#9f9c9a",
+              "tertiary-container": "#ffdfd1",
+              "error-container": "#f97386",
+              "primary": "#90544c",
+              "primary-dim": "#824841",
+              "on-secondary-fixed": "#4b3c39",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#6e3831",
+              "on-primary-container": "#632f29"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .breathing-indicator {
+            box-shadow: 0 0 0 0 rgba(144, 84, 76, 0.4);
+            animation: breathe 3s infinite ease-in-out;
+        }
+        @keyframes breathe {
+            0% { transform: scale(0.98); opacity: 0.85; box-shadow: 0 0 0 0 rgba(144, 84, 76, 0.4); }
+            50% { transform: scale(1.05); opacity: 1; box-shadow: 0 0 0 40px rgba(144, 84, 76, 0); }
+            100% { transform: scale(0.98); opacity: 0.85; box-shadow: 0 0 0 0 rgba(144, 84, 76, 0); }
+        }
+        .bg-recording-gradient {
+            background: radial-gradient(circle at top, #fffbff, #fdf9f5, #f7f3ef);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+.proto-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 14px;background:#fffbff;color:#393835;position:sticky;top:0;z-index:60;border-bottom:1px solid rgba(188,185,180,.4)}
+.proto-header-left,.proto-header-right{display:flex;align-items:center;gap:10px;min-width:44px}.proto-header-title{font-family:"Plus Jakarta Sans",sans-serif;font-size:18px;font-weight:700;letter-spacing:-.02em;color:#393835;text-align:center;flex:1}
+.proto-icon-btn{height:40px;width:40px;border:none;border-radius:9999px;background:#f7f3ef;color:#5e4e4b;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.proto-icon-btn span{font-family:"Material Symbols Outlined";font-size:22px;line-height:1}
+.proto-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px 18px 18px;background:rgba(255,251,255,.92);backdrop-filter:blur(18px);border-top:1px solid rgba(188,185,180,.35)}
+.proto-nav-btn{border:none;border-radius:20px;background:#f7f3ef;color:#666461;padding:10px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-family:"Manrope",sans-serif;font-size:11px;font-weight:700;cursor:pointer}
+.proto-nav-btn span{font-family:"Material Symbols Outlined";font-size:20px;line-height:1}.proto-nav-btn.active{background:#90544c;color:#fff}.proto-main-pad{padding-bottom:108px !important}
+body{background:#fffbff !important;color:#393835 !important}
+</style></head>
+<body class="font-body text-on-surface bg-recording-gradient min-h-screen flex flex-col overflow-hidden"><div class="proto-header"><div class="proto-header-left"><button aria-label="Back" class="proto-icon-btn" onclick="window.location.href='15970110b06c41aaab225d77c79a1f70.html'"><span>arrow_back</span></button></div><div class="proto-header-title">Recording Active</div><div class="proto-header-right"></div></div>
+<!-- TopAppBar (Shared Component Logic) -->
+
+<!-- Main Content: Focused Journey - No SideNav/BottomNav per suppression rules -->
+<main class="flex-grow flex flex-col items-center justify-center px-8 relative proto-main-pad">
+<!-- Breathing Recording Indicator -->
+<div class="relative flex items-center justify-center mb-12">
+<!-- Outermost Glow -->
+<div class="absolute w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<!-- Pulsing Circle -->
+<div class="breathing-indicator w-48 h-48 rounded-full bg-gradient-to-br from-primary to-primary-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-6xl" style="font-variation-settings: 'FILL' 1;">mic</span>
+</div>
+</div>
+<!-- Timer Section -->
+<div class="text-center space-y-2">
+<p class="font-label text-on-surface-variant uppercase tracking-widest text-sm">Recording Active</p>
+<!-- Large Digital Timer - Under 60s State (Dark Text) -->
+<h2 class="font-headline text-7xl font-extrabold text-on-surface tracking-tighter">
+                0:34
+            </h2>
+<!-- Note: Over 60s would use text-[#d97706] for soft amber per prompt instructions -->
+</div>
+<!-- Content Canvas Decoration -->
+<div class="mt-16 w-full max-w-xs p-6 rounded-xl bg-surface-container/40 backdrop-blur-sm border-0 flex items-center gap-4">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<p class="text-on-surface-variant font-body text-sm italic">"The breath is the bridge which connects life to consciousness..."</p>
+</div>
+</main>
+<!-- Footer Action -->
+<footer class="pb-16 px-8 flex justify-center">
+<!-- Stop Button: High Contrast, Elegant Typography -->
+<button class="group w-full max-w-md py-6 rounded-full bg-gradient-to-r from-primary to-primary-dim text-on-primary shadow-2xl transition-transform active:scale-95 duration-300 ease-in-out flex items-center justify-center gap-3" onclick="window.location.href='2763442154db4d0a90a1cf8a7e6418e4.html'">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">stop_circle</span>
+<span class="font-headline text-xl font-extrabold tracking-wide">Stop Reflection</span>
+</button>
+</footer>
+<!-- Bottom Decorative Image -->
+<div class="fixed bottom-0 left-0 w-full h-1/4 pointer-events-none opacity-20 overflow-hidden">
+<img alt="" class="w-full h-full object-cover mix-blend-multiply" data-alt="abstract close-up of soft beige linen fabric with gentle ripples and warm diffused lighting for a tactile serene background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9ddAvD4v3fI1wZOZgYMnUffScza6CybtsxFXHu7pY2VV_rcLcJVvtLmLCEjw26u5bg6DuNHQTZZbsv_wayyAtf2dygOXrtXS6mcpj00FzEABlKjMVj1-jBs64yFEmY0R8qHbS2aeHZ-nuFjwZyOOoQQjmTihyIXWkuH1Ompk_t3JySpKV-t39QySnMt5NZ9czTKhVZHeYPdu92SstrsgrvrmnpwwgO8kfWb1Y5aeOjrO1l6Pc2-5nwoe1LSHC9DgYI0HDc8ZNdbE"/>
+</div>
+<nav class="proto-bottom-nav"><button aria-label="Record" class="proto-nav-btn active" onclick="window.location.href='15970110b06c41aaab225d77c79a1f70.html'"><span>mic</span><strong>Record</strong></button><button aria-label="Review" class="proto-nav-btn" onclick="window.location.href='038cf0c1a65a4c4a9423841609801cfb.html'"><span>auto_fix_high</span><strong>Review</strong></button><button aria-label="Settings" class="proto-nav-btn" onclick="window.location.href='424829bfbf544f9fb34158ca80917603.html'"><span>settings</span><strong>Settings</strong></button></nav></body></html>

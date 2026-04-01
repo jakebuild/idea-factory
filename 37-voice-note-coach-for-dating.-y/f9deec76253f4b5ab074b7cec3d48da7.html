@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Script Review - Rewrite View</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#72605e",
+              "on-tertiary-container": "#654f44",
+              "error-container": "#f97386",
+              "secondary-dim": "#655452",
+              "error-dim": "#6b0221",
+              "on-error-container": "#6e0523",
+              "on-secondary": "#ffffff",
+              "background": "#fffbff",
+              "surface": "#fffbff",
+              "secondary-container": "#f5ddda",
+              "primary": "#90544c",
+              "on-secondary-container": "#5e4e4b",
+              "primary-dim": "#824841",
+              "on-primary-container": "#632f29",
+              "secondary-fixed": "#f5ddda",
+              "surface-variant": "#ebe8e3",
+              "outline": "#82807c",
+              "inverse-on-surface": "#9f9c9a",
+              "tertiary-container": "#ffdfd1",
+              "surface-bright": "#fffbff",
+              "on-secondary-fixed": "#4b3c39",
+              "error": "#af3b50",
+              "surface-container-high": "#f1ede9",
+              "on-primary-fixed": "#4a1b16",
+              "surface-container": "#f7f3ef",
+              "surface-container-highest": "#ebe8e3",
+              "primary-fixed-dim": "#eea399",
+              "surface-container-low": "#fdf9f5",
+              "tertiary-fixed": "#ffdfd1",
+              "outline-variant": "#bcb9b4",
+              "on-tertiary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#e6cfcc",
+              "on-tertiary-fixed-variant": "#6f584e",
+              "on-background": "#393835",
+              "on-surface": "#393835",
+              "primary-fixed": "#fdb0a6",
+              "inverse-surface": "#0e0e0d",
+              "inverse-primary": "#fdb0a6",
+              "on-tertiary-fixed": "#513c33",
+              "on-surface-variant": "#666461",
+              "primary-container": "#fdb0a6",
+              "surface-tint": "#90544c",
+              "surface-dim": "#e5e2dd",
+              "tertiary-fixed-dim": "#f0d1c3",
+              "on-error": "#ffffff",
+              "on-secondary-fixed-variant": "#695855",
+              "on-primary-fixed-variant": "#6e3831",
+              "tertiary-dim": "#6a5349",
+              "tertiary": "#775f55"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #fffbff; color: #393835; -webkit-font-smoothing: antialiased; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+        .tab-indicator { transition: all 0.3s ease-in-out; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+.proto-header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 14px;background:#fffbff;color:#393835;position:sticky;top:0;z-index:60;border-bottom:1px solid rgba(188,185,180,.4)}
+.proto-header-left,.proto-header-right{display:flex;align-items:center;gap:10px;min-width:44px}.proto-header-title{font-family:"Plus Jakarta Sans",sans-serif;font-size:18px;font-weight:700;letter-spacing:-.02em;color:#393835;text-align:center;flex:1}
+.proto-icon-btn{height:40px;width:40px;border:none;border-radius:9999px;background:#f7f3ef;color:#5e4e4b;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.proto-icon-btn span{font-family:"Material Symbols Outlined";font-size:22px;line-height:1}
+.proto-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:12px 18px 18px;background:rgba(255,251,255,.92);backdrop-filter:blur(18px);border-top:1px solid rgba(188,185,180,.35)}
+.proto-nav-btn{border:none;border-radius:20px;background:#f7f3ef;color:#666461;padding:10px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-family:"Manrope",sans-serif;font-size:11px;font-weight:700;cursor:pointer}
+.proto-nav-btn span{font-family:"Material Symbols Outlined";font-size:20px;line-height:1}.proto-nav-btn.active{background:#90544c;color:#fff}.proto-main-pad{padding-bottom:108px !important}
+body{background:#fffbff !important;color:#393835 !important}
+</style></head>
+<body class="flex flex-col min-h-screen"><div class="proto-header"><div class="proto-header-left"><button aria-label="Back" class="proto-icon-btn" onclick="window.location.href='038cf0c1a65a4c4a9423841609801cfb.html'"><span>arrow_back</span></button></div><div class="proto-header-title">Rewrite View</div><div class="proto-header-right"></div></div>
+<!-- TopAppBar -->
+
+<main class="flex-1 mt-20 mb-32 px-6 proto-main-pad">
+<!-- Segmented Control / Tabs -->
+<div class="bg-surface-container-low rounded-full p-1.5 flex items-center mb-8 max-w-sm mx-auto shadow-sm">
+<button class="flex-1 py-3 px-4 rounded-full text-sm font-semibold transition-all duration-300 bg-white text-primary shadow-sm">
+                Trimmed
+            </button>
+<button class="flex-1 py-3 px-4 rounded-full text-sm font-medium text-on-surface-variant hover:text-primary transition-all duration-300">
+                Front-Loaded
+            </button>
+</div>
+<!-- Script Area (Editorial Style) -->
+<section class="relative">
+<div class="bg-surface-container-low rounded-xl p-8 md:p-12 mb-8 relative overflow-hidden group">
+<!-- Subtle Gradient Accent -->
+<div class="absolute top-0 right-0 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl -mr-24 -mt-24 pointer-events-none"></div>
+<div class="flex items-center justify-between mb-6">
+<span class="uppercase tracking-widest text-[10px] font-bold text-primary/60 font-body">Refined Draft</span>
+<button class="flex items-center gap-2 text-primary hover:text-primary-dim transition-colors group">
+<span class="material-symbols-outlined text-xl" data-icon="content_copy">content_copy</span>
+<span class="text-xs font-semibold font-label">Copy to clipboard</span>
+</button>
+</div>
+<div class="space-y-6">
+<p class="font-headline text-2xl md:text-3xl font-bold leading-tight text-on-surface">
+                        I realized today that my pace wasn't just about speed—it was about <span class="text-primary italic">avoidance</span>. 
+                    </p>
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed">
+                        By focusing on the constant "next step," I was neglecting the current ground. The meditation helped me see that being present isn't a state of rest, but a state of awareness. Tomorrow, I'll try to breathe into the transitions rather than rushing through them.
+                    </p>
+</div>
+<!-- Subtle Iconography at Bottom -->
+<div class="mt-12 flex items-center gap-4 opacity-40">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+<div class="h-[1px] flex-1 bg-outline-variant/30"></div>
+<span class="text-[10px] font-bold font-body uppercase tracking-[0.2em]">End of Transcript</span>
+</div>
+</div>
+<!-- Action Section -->
+<div class="flex flex-col gap-4 items-center max-w-md mx-auto">
+<button class="w-full py-5 px-8 rounded-full bg-gradient-to-r from-primary to-primary-dim text-white font-headline font-bold text-lg shadow-xl shadow-primary/20 active:scale-[0.96] transition-transform duration-300 flex items-center justify-center gap-3" onclick="window.location.href='64d6aaf866624430b9db74e743918be3.html'">
+<span class="material-symbols-outlined" data-icon="mic" style="font-variation-settings: 'FILL' 1;">mic</span>
+                    Re-record using this
+                </button>
+<p class="text-xs text-on-surface-variant font-medium text-center px-4">
+                    Your previous recording will be archived in the Library.
+                </p>
+</div>
+</section>
+<!-- Discovery/Secondary Info Bento-ish -->
+<div class="mt-12 grid grid-cols-2 gap-4">
+<div class="bg-surface-container rounded-lg p-6 flex flex-col gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="history_edu">history_edu</span>
+<h3 class="font-headline font-bold text-sm">Mindful Edit</h3>
+<p class="text-xs text-on-surface-variant">Focuses on emotional clarity and removing filler thoughts.</p>
+</div>
+<div class="bg-surface-container-high rounded-lg p-6 flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-headline font-bold text-sm">Clarity Score</h3>
+<p class="text-xs text-on-surface-variant">92% — This script is optimized for calm vocal delivery.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="proto-bottom-nav"><button aria-label="Record" class="proto-nav-btn" onclick="window.location.href='15970110b06c41aaab225d77c79a1f70.html'"><span>mic</span><strong>Record</strong></button><button aria-label="Review" class="proto-nav-btn active" onclick="window.location.href='038cf0c1a65a4c4a9423841609801cfb.html'"><span>auto_fix_high</span><strong>Review</strong></button><button aria-label="Settings" class="proto-nav-btn" onclick="window.location.href='424829bfbf544f9fb34158ca80917603.html'"><span>settings</span><strong>Settings</strong></button></nav></body></html>
