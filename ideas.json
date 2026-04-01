@@ -168,5 +168,15 @@
     "folder": "34-book-pledge---bet-on-your-read",
     "startScreenId": "d79631cc0d244ae3a6ee4dc54223176c",
     "status": "complete"
+  },
+  {
+    "num": 35,
+    "title": "HingeFix",
+    "sub": "Hinge-aware profile audit and rewrite flow for bios and prompt answers.",
+    "score": "5/10",
+    "deviceType": "MOBILE",
+    "folder": "35-dating-profile-scorer-and-roas",
+    "startScreenId": "67f737aeac33418494cd6738c7182fa5",
+    "status": "complete"
   }
 ]
