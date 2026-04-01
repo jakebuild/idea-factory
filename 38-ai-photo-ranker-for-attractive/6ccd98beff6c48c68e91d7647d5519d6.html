@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>The Curator - Photo Upload</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-highest": "#dee1ff",
+            "tertiary": "#a04223",
+            "secondary-container": "#cbfbee",
+            "on-surface-variant": "#555d86",
+            "tertiary-dim": "#903618",
+            "on-secondary-container": "#366259",
+            "on-error-container": "#68001f",
+            "on-secondary-fixed": "#224f47",
+            "primary-fixed-dim": "#a0aeff",
+            "background": "#fbf8ff",
+            "tertiary-fixed-dim": "#ff8b67",
+            "secondary-dim": "#2e5b52",
+            "secondary-fixed": "#cbfbee",
+            "on-primary-container": "#002aab",
+            "error": "#ac3149",
+            "surface": "#fbf8ff",
+            "surface-container-low": "#f4f2ff",
+            "primary": "#2f4fdd",
+            "inverse-surface": "#090d20",
+            "surface-dim": "#d3d8ff",
+            "on-primary": "#faf8ff",
+            "error-container": "#f76a80",
+            "on-tertiary": "#fff7f5",
+            "inverse-primary": "#7087ff",
+            "on-tertiary-fixed-variant": "#752306",
+            "error-dim": "#770326",
+            "tertiary-container": "#ffa183",
+            "primary-dim": "#1d41d1",
+            "surface-bright": "#fbf8ff",
+            "inverse-on-surface": "#989bb5",
+            "secondary-fixed-dim": "#bdece0",
+            "on-error": "#fff7f7",
+            "on-secondary-fixed-variant": "#406c63",
+            "on-secondary": "#e3fff7",
+            "surface-container-high": "#e5e6ff",
+            "on-background": "#283057",
+            "on-tertiary-fixed": "#420e00",
+            "surface-tint": "#2f4fdd",
+            "on-primary-fixed": "#001a77",
+            "surface-container": "#ececff",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#dee1ff",
+            "primary-fixed": "#b2bdff",
+            "secondary": "#3b675e",
+            "on-tertiary-container": "#691b00",
+            "on-surface": "#283057",
+            "tertiary-fixed": "#ffa183",
+            "on-primary-fixed-variant": "#0030c1",
+            "primary-container": "#b2bdff",
+            "outline-variant": "#a8afde",
+            "outline": "#7178a4"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary/20"><header class="fixed top-0 left-0 right-0 z-50 bg-[#fbf8ff] border-b border-[#a8afde]/20">
+<div class="mx-auto flex h-[72px] max-w-xl items-center justify-between px-5">
+<div class="flex items-center gap-3"><button class="h-10 w-10 rounded-full flex items-center justify-center text-[#283057] bg-[#ececff] active:scale-95" onclick="window.location.href='b25833c96c964350b5fa8a8a2fba2219.html'"><span class="material-symbols-outlined">arrow_back</span></button><h1 class="font-headline text-[20px] font-extrabold tracking-tight text-[#283057]">Upload Photos</h1></div>
+<div class="h-10 w-10"></div>
+</div>
+</header>
+<!-- TopAppBar -->
+
+<main class="max-w-xl mx-auto px-6 pt-8 pb-32 pt-24">
+<!-- Header Section -->
+<section class="mb-10 text-center md:text-left">
+<h2 class="font-headline text-3xl font-extrabold tracking-tight text-on-background mb-3">Choose your best shots</h2>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-md">Upload 3 to 6 solo, clear-face photos for a technical audit.</p>
+</section>
+<!-- Upload Canvas -->
+<div class="space-y-8">
+<!-- Progress & Count -->
+<div class="flex items-center justify-between">
+<span class="font-label font-semibold text-sm uppercase tracking-wider text-on-surface-variant">0/6 photos added</span>
+<div class="flex gap-1">
+<div class="w-12 h-1.5 rounded-full bg-surface-container"></div>
+<div class="w-12 h-1.5 rounded-full bg-surface-container"></div>
+<div class="w-12 h-1.5 rounded-full bg-surface-container"></div>
+</div>
+</div>
+<!-- Add Photos Bento Grid -->
+<div class="grid grid-cols-3 gap-4">
+<!-- Main Upload Area -->
+<div class="col-span-2 row-span-2 aspect-square rounded-xl border-2 border-dashed border-outline/30 bg-surface-container-low flex flex-col items-center justify-center p-6 text-center group cursor-pointer hover:bg-surface-container-high transition-all active:scale-[0.98] duration-200">
+<div class="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" data-icon="add">add</span>
+</div>
+<p class="font-headline font-bold text-on-surface">Add Photos</p>
+<p class="text-xs text-on-surface-variant mt-1">JPEG or PNG up to 10MB</p>
+</div>
+<!-- Placeholder Slots for visual rhythm -->
+<div class="aspect-square rounded-xl bg-surface-container/50 border border-outline/10 flex items-center justify-center text-outline/40">
+<span class="material-symbols-outlined" data-icon="image">image</span>
+</div>
+<div class="aspect-square rounded-xl bg-surface-container/50 border border-outline/10 flex items-center justify-center text-outline/40">
+<span class="material-symbols-outlined" data-icon="image">image</span>
+</div>
+</div>
+<!-- Analysis Checklist -->
+<div class="bg-surface-container rounded-xl p-6">
+<h3 class="font-headline font-bold text-on-surface mb-4">Checklist for best results:</h3>
+<ul class="space-y-3">
+<li class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm text-on-secondary-container" data-icon="check" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">Solo photo?</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm text-on-secondary-container" data-icon="check" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">Face clearly visible?</span>
+</li>
+<li class="flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm text-on-secondary-container" data-icon="check" style="font-variation-settings: 'wght' 700;">check</span>
+</div>
+<span class="text-sm font-medium text-on-surface-variant">No sunglasses or hats?</span>
+</li>
+</ul>
+</div>
+<!-- Action & Privacy -->
+<div class="pt-4 space-y-6">
+<button class="w-full py-4 px-6 rounded-xl bg-surface-container-highest text-outline font-headline font-bold text-lg cursor-not-allowed transition-all" disabled="" onclick="window.location.href='a650903ef05f4e6fa74fb5ff94216fdc.html'">
+          Analyze 3+ Photos
+        </button>
+<div class="flex items-start gap-3 p-4 rounded-lg bg-surface-container-low border border-outline/5">
+<span class="material-symbols-outlined text-primary/60 mt-0.5" data-icon="lock">lock</span>
+<p class="text-xs leading-relaxed text-on-surface-variant">
+<span class="font-bold text-on-surface">Privacy:</span> Your photos are analyzed and immediately deleted—we never store them.
+          </p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="fixed bottom-0 left-0 right-0 z-50 border-t border-[#a8afde]/20 bg-[#fbf8ff]/96 px-3 pb-5 pt-3 backdrop-blur-xl"><div class="mx-auto flex max-w-xl items-center justify-around"><button aria-label="Home" class="flex min-w-[64px] flex-col items-center gap-1 rounded-2xl px-3 py-2" onclick="window.location.href='b25833c96c964350b5fa8a8a2fba2219.html'">
+<span class="material-symbols-outlined text-[22px]" style="color:#555d86;">home</span>
+<span class="text-[11px] font-semibold" style="color:#555d86;">Home</span>
+</button><button aria-label="Upload" class="flex min-w-[64px] flex-col items-center gap-1 rounded-2xl px-3 py-2" onclick="window.location.href='6ccd98beff6c48c68e91d7647d5519d6.html'">
+<span class="material-symbols-outlined text-[22px]" style="color:#4361EE;">add_a_photo</span>
+<span class="text-[11px] font-semibold" style="color:#4361EE;">Upload</span>
+</button><button aria-label="Scores" class="flex min-w-[64px] flex-col items-center gap-1 rounded-2xl px-3 py-2" onclick="window.location.href='360e3836d2284d0087a7caecd75a44b8.html'">
+<span class="material-symbols-outlined text-[22px]" style="color:#555d86;">analytics</span>
+<span class="text-[11px] font-semibold" style="color:#555d86;">Scores</span>
+</button><button aria-label="Audit" class="flex min-w-[64px] flex-col items-center gap-1 rounded-2xl px-3 py-2" onclick="window.location.href='b76d72c8f6b44c3cbb4cd7978e045983.html'">
+<span class="material-symbols-outlined text-[22px]" style="color:#555d86;">fact_check</span>
+<span class="text-[11px] font-semibold" style="color:#555d86;">Audit</span>
+</button></div></nav></body></html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Idea Factory — Design Preview</title>
+<!-- IDEA_DATA injected here by design agent -->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0f1a;
+    color: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ──────────────────────────────────────── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .idea-num {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: #3b82f6; background: #1e3a5f;
+    padding: 3px 10px; border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .idea-title { font-size: 1.1rem; font-weight: 700; color: #f9fafb; }
+  .idea-sub { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+  .header-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    border-radius: 99px; padding: 4px 12px;
+    font-size: 0.75rem; color: #9ca3af;
+  }
+  .score-pill {
+    background: #1a2e1a; border: 1px solid #2d4a2d;
+    color: #86efac; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 99px;
+  }
+  .toggle-btn {
+    display: flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    color: #9ca3af; font-size: 0.75rem;
+    padding: 4px 12px; border-radius: 99px;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .toggle-btn:hover { background: #1f2937; color: #f9fafb; border-color: #374151; }
+
+  /* ── Body ────────────────────────────────────────── */
+  .body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: stretch;
+  }
+
+  /* ── Phone column ────────────────────────────────── */
+  .phone-col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 40px;
+    gap: 16px;
+    background: #0a0f1a;
+    overflow: hidden;
+  }
+
+  /* MOBILE frame */
+  .phone-frame {
+    width: 390px;
+    height: 844px;
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 0 0 10px #0f172a,
+      0 0 0 11px rgba(255,255,255,0.06),
+      0 50px 100px rgba(0,0,0,0.7);
+    background: #000;
+    flex-shrink: 0;
+  }
+
+  /* WEB frame */
+  .web-frame {
+    width: min(900px, calc(100% - 80px));
+    height: min(640px, calc(100vh - 180px));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 24px 60px rgba(0,0,0,0.6);
+    background: #1f2937;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .web-chrome {
+    height: 36px;
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .web-chrome .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .web-chrome .dot-r { background: #ef4444; }
+  .web-chrome .dot-y { background: #f59e0b; }
+  .web-chrome .dot-g { background: #22c55e; }
+  .web-chrome .url {
+    flex: 1; background: #111827; border-radius: 4px;
+    height: 20px; margin: 0 8px;
+    display: flex; align-items: center; padding: 0 10px;
+    font-size: 0.68rem; color: #6b7280;
+  }
+
+  .device-iframe {
+    width: 100%; height: 100%;
+    border: none; display: block;
+    flex: 1;
+  }
+
+  /* Switcher */
+  .switcher {
+    display: flex; gap: 6px;
+    flex-wrap: wrap; justify-content: center;
+    max-width: 600px;
+  }
+  .switcher button {
+    height: 28px; padding: 0 10px;
+    border-radius: 6px; border: 1px solid #1f2937;
+    background: #111827; color: #6b7280;
+    font-size: 0.7rem; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .switcher button:hover { background: #1f2937; color: #d1d5db; border-color: #374151; }
+  .switcher button.active { background: #1e3a5f; color: #60a5fa; border-color: #3b82f6; }
+
+  /* ── Resize handle ───────────────────────────────── */
+  .resize-handle {
+    width: 8px;
+    flex-shrink: 0;
+    cursor: col-resize;
+    position: relative;
+    background: transparent;
+    z-index: 10;
+  }
+  .resize-handle::after {
+    content: '';
+    position: absolute;
+    left: 3px; top: 0; bottom: 0;
+    width: 2px;
+    background: #1a2235;
+    transition: background 0.15s;
+  }
+  .resize-handle:hover::after { background: #374151; }
+  .resize-handle.dragging::after { background: #3b82f6; }
+
+  /* ── Timeline column ─────────────────────────────── */
+  .timeline-col {
+    width: 460px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 0.25s ease;
+    background: #0d1424;
+  }
+  .timeline-col.collapsed { width: 0; }
+
+  .timeline-header {
+    padding: 20px 28px 14px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .timeline-header h2 {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #4b5563;
+  }
+
+  .timeline-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 28px 40px;
+  }
+  .timeline-scroll::-webkit-scrollbar { width: 4px; }
+  .timeline-scroll::-webkit-scrollbar-track { background: transparent; }
+  .timeline-scroll::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 2px; }
+
+  /* ── Timeline line + dots ────────────────────────── */
+  /* --lx: horizontal center of the line/dots from .timeline-line left edge */
+  .timeline-line {
+    --lx: 8px;
+    position: relative;
+    padding-left: 28px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+  }
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--lx) - 1px); /* 2px line centered at --lx */
+    top: 10px; bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, #1e3a5f 0%, #1f2937 100%);
+    border-radius: 2px;
+  }
+
+  .entry {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .entry::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+    top: 18px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #1f2937;
+    border: 2px solid #374151;
+    z-index: 1;
+  }
+  .entry.s-critique::before { background: #78350f; border-color: #d97706; }
+  .entry.s-improve::before  { background: #1e3a5f; border-color: #3b82f6; }
+  .entry.s-validate::before { background: #14532d; border-color: #16a34a; }
+  .entry.s-design::before   { background: #312e81; border-color: #6366f1; }
+
+  /* ── Entry cards ─────────────────────────────────── */
+  .entry-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+  .entry-card:hover { border-color: #374151; }
+
+  .entry-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer; user-select: none;
+  }
+  .entry-icon { font-size: 1.1rem; flex-shrink: 0; line-height: 1; }
+  .entry-info { flex: 1; min-width: 0; }
+  .entry-title {
+    font-size: 0.85rem; font-weight: 600; color: #f9fafb;
+    display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+    line-height: 1.3;
+  }
+  .entry-desc { font-size: 0.72rem; color: #6b7280; margin-top: 3px; }
+  .entry-chevron {
+    color: #374151; font-size: 0.6rem; flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .entry.open .entry-chevron { transform: rotate(180deg); color: #6b7280; }
+
+  .verdict {
+    font-size: 0.6rem; font-weight: 700;
+    padding: 2px 6px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .verdict-needs { background: #451a03; color: #fb923c; }
+  .verdict-worth { background: #14532d; color: #86efac; }
+  .verdict-kill  { background: #450a0a; color: #f87171; }
+  .escore { font-size: 0.7rem; font-weight: 700; color: #60a5fa; }
+
+  .entry-body {
+    display: none;
+    border-top: 1px solid #1f2937;
+    padding: 14px;
+    font-size: 0.76rem; color: #9ca3af; line-height: 1.65;
+  }
+  .entry.open .entry-body { display: block; }
+
+  .esect { margin-top: 10px; }
+  .esect:first-child { margin-top: 0; }
+  .esect-label {
+    font-size: 0.62rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: #4b5563; margin-bottom: 5px;
+  }
+  .esect ul { padding-left: 14px; }
+  .esect li { margin-bottom: 3px; color: #9ca3af; }
+  .esect p { color: #9ca3af; }
+  .esect strong { color: #d1d5db; font-weight: 600; }
+  .tag-row { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+  .etag {
+    background: #0a0f1a; border: 1px solid #1f2937;
+    border-radius: 4px; padding: 2px 7px;
+    font-size: 0.66rem; color: #6b7280;
+  }
+  .etag.green { border-color: #14532d; color: #86efac; }
+  .etag.blue  { border-color: #1e3a5f; color: #60a5fa; }
+  a.ext-link { color: #818cf8; text-decoration: none; }
+  a.ext-link:hover { text-decoration: underline; }
+</style>
+<script>window.IDEA_DATA = {"ideaNum": 38, "title": "AI Dating Photo Technical Audit", "sub": "Technical audit for solo dating photos with a free score reveal and paid explanations.", "score": "6/10", "deviceType": "MOBILE", "stitchId": "16310548155242682532", "startScreen": 0, "screens": [{"id": "b25833c96c964350b5fa8a8a2fba2219", "label": "Landing / Value Prop"}, {"id": "6ccd98beff6c48c68e91d7647d5519d6", "label": "Upload Screen"}, {"id": "a650903ef05f4e6fa74fb5ff94216fdc", "label": "Processing / Loading State"}, {"id": "360e3836d2284d0087a7caecd75a44b8", "label": "Free Results — Score Reveal"}, {"id": "b76d72c8f6b44c3cbb4cd7978e045983", "label": "Paid Results — Full Explanations"}], "timeline": [{"status": "", "icon": "💡", "title": "Original Idea", "desc": "Attractiveness ranker with opener generation and multi-platform ambition.", "body": "<div class=\"esect\"><div class=\"esect-label\">Description</div><p>AI photo ranker for attractiveness. Upload 5-10 selfies or dating-profile photos and the app ranks them from most attractive to least, tells you exactly why the weak ones fail, and picks the single best opener for Tinder, Hinge, LinkedIn, or Instagram. The reveal is instant: your winning photo, your worst photo, and the one fix that would raise your whole profile.</p></div>"}, {"status": "critique", "icon": "🔍", "title": "Critique v1", "desc": "The original framing was overclaiming, risky, and unfocused.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "3/10", "body": "<div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>The value proposition is instantly legible. People obsess over which photo makes them look best, so the pain point is real.</li><li>The input is simple: upload photos, get a ranking, get a recommendation. That is much cleaner than bloated dating-coach products.</li><li>The reveal mechanic is decent. &quot;Best photo, worst photo, one fix&quot; is a strong result format for short attention spans.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>&quot;AI ranks attractiveness&quot; is a magnet for backlash. It sounds shallow, creepy, and biased in one sentence. You are not building a playful utility, you are walking straight into a trust and ethics swamp.</li><li>The core promise is fake-precise. &quot;Exactly why the weak ones fail&quot; implies the model understands human attraction in a reliable, causal way. It does not. At best it can guess at generic photo quality signals like lighting, framing, expression, blur, background clutter, and eye contact. Calling that &quot;attractiveness&quot; is overclaiming.</li><li>Users will immediately ask the obvious question: why should I trust this ranking? If the app cannot prove that its top pick correlates with more matches, clicks, or replies, it is just horoscope-level confidence wrapped in computer vision.</li><li>The LinkedIn part is especially dumb. LinkedIn profile photos optimize for professionalism and trust, not &quot;most attractive.&quot; Tinder, Hinge, LinkedIn, and Instagram do not share one scoring rubric. That means your product pitch is actually four different products pretending to be one.</li><li>&quot;Best opener&quot; is stapled on and weakens the concept. A photo ranker and an opener generator are different jobs. The opener also depends on target profile context, tone, platform norms, and user intent. Without that context, the feature is filler.</li><li>The retention loop is terrible. Why does the user come back after day 1? Most people will upload their 5-10 photos once, get roasted by the robot, maybe swap one picture, then leave forever.</li><li>This is a privacy anxiety machine. You are asking people to upload selfies and dating photos into an AI system that judges attractiveness. Many users will bounce before upload. The ones who do upload will worry about storage, training use, leaks, and embarrassment.</li><li>Moderation is not optional here. You will get shirtless mirror pics, minors, couples, explicit photos, revenge-uploaded images, and probably screenshots from dating apps. That means safety policy, storage rules, abuse handling, and deletion flows. Solo-dev &quot;ship fast&quot; energy crashes into compliance reality immediately.</li><li>The app can be offensively wrong in ways that feel personal. If it downranks someone due to race-linked features, disability, age cues, gender presentation, cultural style, or simply bad model taste, the product does not just fail. It insults the user.</li><li>&quot;Instant reveal&quot; sounds nice until inference cost shows up. Ranking 5-10 images with pairwise comparisons, explanations, and tailored recommendations is not free. If you cheap out on the model, results become generic sludge. If you use a strong vision model, margins get ugly fast unless pricing is high enough to scare away casual users.</li><li>There is no moat. The moment the idea gets any traction, it gets copied by a weekend builder, a dating coach with a prompt template, or a general-purpose AI app that already has image upload and vision analysis.</li><li>The strongest part of the product is not &quot;AI attractiveness.&quot; It is probably &quot;which photo is clearest, most confident, and most platform-appropriate?&quot; But that version is less sexy, so the current pitch oversells the one part most likely to break trust.</li><li>There is a good chance users prefer human judgment anyway. &quot;Ask three friends which photo to use&quot; is free, socially credible, and often more useful than machine feedback. Your competitor is not another startup. It is group chat.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev Check</div><p>- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — a fake-it-till-it-works MVP, yes; a trustworthy product people will actually rely on, no. A solo dev can ship upload, scoring, and a flashy results page fast. The hard part is making the judgments believable, safe, differentiated, and not legally or reputationally radioactive.\n- Biggest solo complexity traps: moderation for sexual/minor/non-consensual images; storing and deleting sensitive photos safely; prompt/model tuning to avoid insulting or biased feedback; platform-specific scoring logic for dating vs professional use; inference cost control on multi-image ranking; weak retention after the first use; proving the ranking predicts real-world outcomes instead of generic photo-quality clichés.</p></div>"}, {"status": "improve", "icon": "✨", "title": "Improved v2", "desc": "Reframed around dating photo effectiveness and privacy-first UX.", "body": "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>**Dropped &quot;attractiveness&quot; entirely — reframed as photo effectiveness for dating profiles.** The critique nailed it: claiming to rank attractiveness is overclaiming, biased, and a trust-destroyer before the user even sees results. The product is actually about objective, observable photo quality signals — lighting, expression, eye contact, composition, background clutter — framed as &quot;will this photo perform well on a dating app?&quot; That&#x27;s a claim the app can actually back up, and it sidesteps the ethics swamp.</li><li>**Cut LinkedIn, cut the opener generator, cut multi-platform pitch.** The critique called these out as four products pretending to be one. The MVP does exactly one job: help someone pick their best first photo for a dating profile (Tinder/Hinge). LinkedIn professional headshots are a different use case with different rubrics — it&#x27;s out. The opener generator is filler that muddies the message — it&#x27;s out. Scope ruthlessly narrowed to the single highest-value moment: which photo should I lead with?</li><li>**Replaced mystical absolute ranking with side-by-side A/B comparisons and concrete, objective feedback.** Instead of &quot;we computed your attractiveness hierarchy,&quot; the app asks &quot;which of these two performs better for a first impression on Hinge — and here&#x27;s what the data says about each.&quot; Pairwise comparisons are more believable, less offensive when wrong, and map to how users actually make this decision. Feedback focuses on observable signals (lighting, crop, smile, background) not aesthetic verdicts.</li><li>**Added explicit privacy-first design and moderation guardrails.** The critique flagged privacy anxiety and moderation (minors, explicit content, non-consensual uploads) as non-optional. v2 addresses this upfront: photos are processed and not stored beyond the session (server-side delete after analysis), explicit privacy messaging on the upload screen, and a basic content moderation check (NSFW classifier) before photos reach the vision model. This is table stakes, not optional polish.</li><li>**Added a weak but real retention mechanic.** The critique asked &quot;why come back week 2?&quot; The honest answer: users swap photos after getting feedback, then want to re-check. The retention hook is: &quot;Re-scan your profile after you update it.&quot; Plus a lightweight &quot;Did this photo get you more matches?&quot; prompt 7 days after first use — this seeds the outcome feedback loop the critique said is needed to be more than a gimmick. It won&#x27;t create strong retention alone, but it&#x27;s better than nothing and keeps the door open.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>Upload 3–8 photos (JPEG/PNG, client-side size limit)</li><li>NSFW classifier pre-check (reject explicit/minor content before analysis)</li><li>Pairwise comparison via vision model scoring on: lighting, expression, eye contact, background, crop</li><li>Ranked output: best first photo + one reason, worst photo + one fix</li><li>Plain-language per-photo feedback (2–3 sentences, observable signals only)</li><li>Session-only photo storage — deleted after analysis, no accounts</li><li>Privacy messaging on upload screen (what happens to photos, how long they&#x27;re stored)</li><li>Re-scan flow (upload again after making changes)</li><li>7-day follow-up prompt via localStorage (no email, no account) — &quot;Did this photo get you more matches?&quot;</li></ul></div>"}, {"status": "critique", "icon": "🔍", "title": "Critique v2", "desc": "The effect-on-dating-outcomes claim and pairwise cost were still weak.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "5/10", "body": "<div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>The scope is less delusional than v1. Cutting LinkedIn, opener generation, and explicit &quot;attractiveness&quot; claims removed a lot of obvious nonsense.</li><li>The core user moment is real: people do want help choosing a lead dating photo, and &quot;pick my best first photo&quot; is clearer than &quot;optimize my whole identity.&quot;</li><li>The UX can be simple enough for a solo dev to ship: upload, analyze, reveal winner, explain loser.</li><li>Privacy-first messaging and no-account-required are directionally correct for a sensitive upload flow.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>This is still a confidence game built on an unverified black box. Your core promise is &quot;this photo will perform better on dating apps,&quot; but you do not have actual performance data, platform integrations, or a validated prediction model. You have heuristics wearing a lab coat.</li><li>&quot;Objective signals&quot; is partly marketing fiction. Lighting and crop are objective enough. &quot;Genuine vs forced smile&quot; and &quot;will perform better on Hinge&quot; are not. The second you cross from technical photo quality into social outcome prediction, you are back in subjectivity hell.</li><li>Pairwise comparisons sound smarter, but they also multiply cost and inconsistency. With 8 photos, naive pairwise is 28 comparisons before explanations. For a cheap MVP that is supposed to feel instant, that is a dumb cost/latency profile unless you secretly stop doing true pairwise, in which case the product pitch is already cheating.</li><li>The retention story is still weak. Re-scan after swapping photos is not a retention loop; it is a second use case. The 7-day localStorage prompt is not a moat, not a habit, and not a real feedback engine. Why does the user come back after day 1? Mostly they do not.</li><li>Privacy messaging is easy to write and hard to make users believe. &quot;Deleted after analysis&quot; means nothing to a skeptical user unless the brand already has trust. A random solo-dev tool asking for dating photos is a conversion tax from day one.</li><li>Moderation is underspecified and riskier than you are admitting. &quot;Reject minors&quot; is not a trivial classifier checkbox. If the product handles selfies, group shots, ambiguous ages, swimwear, mirror pics, and blurry uploads, moderation false positives and false negatives become product damage fast.</li><li>The app is vulnerable to the most obvious user reaction: &quot;This thing picked the wrong photo.&quot; And unlike grammar tools or OCR apps, there is no ground truth the user can inspect. One bad result makes the whole product feel fake.</li><li>You still have a positioning problem. If the output is too soft, users think it is generic fluff. If the output is too strong, users think it is rude, biased, or creepy. That is an ugly product middle to sit in.</li><li>There is no moat. Any vision-capable model plus a decent prompt can clone the basic experience. If this works, larger dating-adjacent products can copy it. If it does not work, you built a demo, not a business.</li><li>Distribution is hand-waved. SEO for &quot;best dating profile photo&quot; is crowded, Reddit communities hate obvious self-promo, and paid acquisition for a one-shot utility with uncertain conversion is a fast way to burn money.</li><li>The business model is conveniently postponed. That is a mistake because this is almost certainly a low-retention utility. If monetization has to happen near first use, then accuracy and trust need to be good enough immediately, which is exactly the part you have not verified.</li><li>The &quot;no account, no history&quot; choice helps privacy but weakens learning, referrals, longitudinal value, and any serious feedback loop. You cut the one thing that could eventually improve the model because the privacy problem forced your hand.</li><li>The product is walking straight into bias complaints anyway. Even if you ban the word &quot;attractive,&quot; users will interpret &quot;best dating photo&quot; as &quot;which version of me people will want most.&quot; If the model outputs skew by race, age, gender presentation, disability, or style, you own that result.</li><li>The build estimate is optimistic in the worst way: it counts coding tasks but discounts product-risk tasks. Shipping upload screens in 2 weeks is easy. Proving the answers are credible enough that strangers upload sensitive photos is the hard part, and that does not obey your sprint calendar.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev Check</div><p>- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the interface and pipeline, yes; a trustworthy product, no. A solo dev can ship an MVP fast, but not validate the core claim that fast.\n- Biggest solo complexity traps: moderation edge cases around minors/NSFW/group shots; building user trust around sensitive photo uploads; keeping inference cost and latency low if pairwise analysis is real; handling inconsistent or insulting model output; finding distribution for a low-retention consumer utility; proving enough accuracy to charge money</p></div>"}, {"status": "improve", "icon": "✨", "title": "Improved v3", "desc": "Narrowed to a technical audit with one-time payment and transparent disagreement handling.", "body": "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>**Cut pairwise comparisons entirely — replaced with single-pass independent scoring per photo.** The critique was right: 28 comparisons for 8 photos is expensive, slow, and produces inconsistent results. Worse, it is a lie — you would have to stop doing true pairwise at scale anyway. v3 scores each photo independently on 5 measurable technical criteria (lighting quality, face visibility, focus/sharpness, framing/crop, background clarity). Each criterion gets a 1–5 score with a plain reason. No inter-photo dependencies, no combinatorial cost explosion, no hidden cheating. The output is an honest technical audit, not a fake tournament.</li><li>**Dropped all social outcome prediction language.** &quot;Will perform better on Hinge&quot; is unverified and uncheckable before build. It is heuristics wearing a lab coat and the critique called it correctly. v3 makes no claim that better technical quality = more matches. The product is a **technical photo quality audit**: it tells you if your photo is blurry, shadowed, poorly cropped, or cluttered. What you do with that is your business. This is both more honest and more defensible when users disagree.</li><li>**Narrow the accepted input: solo clear-face photos only.** Group shots, photos where eyes are obscured (sunglasses, hats, extreme shadows), extreme filters, and NSFW content are rejected at upload with a plain-language reason. This makes moderation tractable for one developer, makes scoring results more reliable and less ambiguous, and removes the &quot;whose face am I scoring?&quot; moderation nightmare for group shots. The product becomes: audit tool for photos where you are the solo subject with your face visible. That is the actual use case anyway.</li><li>**Monetize at first use — freemium gate between scores and explanations.** The critique was explicit: if this is a one-shot utility, the business model cannot be postponed. v3 shows scores for free (e.g. &quot;Photo 2: 4/5 — Photo 5: 2/5&quot;) to create desire, then charges a small one-time fee ($4–6) to unlock the full explanations and fix suggestions. This tests willingness to pay at the exact moment the user has seen enough to want more. No subscriptions. No credits. One session, one payment, full results unlocked. Monetization decision made now, not later.</li><li>**Added explicit disagreement mechanic to prevent trust collapse.** The critique flagged the obvious failure mode: user sees a result they disagree with and the whole product feels fake. v3 adds a thumbs-down on every photo result card. When a user disagrees, they see the raw signal breakdown — the exact 5 criteria scores and what the model flagged. This turns disagreement into transparency (&quot;here is exactly what the AI saw&quot;) rather than a black box verdict. It does not fix bad results, but it prevents immediate trust collapse by giving the user something to inspect.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>Upload 3–6 photos with explicit constraints (solo, clear face visible, no sunglasses, no groups)</li><li>Client-side pre-validation: file size, format, count limits</li><li>NSFW + group shot rejection (AWS Rekognition or OpenAI moderation endpoint) before reaching vision model</li><li>Single-pass scoring: one API call per photo, 5 criteria, 1–5 score + one-line reason each</li><li>Free tier output: score per photo + best/worst photo labels (no explanations)</li><li>Payment gate ($4–6, Stripe one-time charge) to unlock full explanations</li><li>Paid output: full per-criterion explanation, one specific fix per weak photo, priority fix order</li><li>Disagree mechanic: tap any result card to see raw criterion breakdown</li><li>Session-only storage — photos deleted after analysis, no accounts</li><li>Privacy copy on upload screen</li></ul></div>"}, {"status": "critique", "icon": "🔍", "title": "Critique v3", "desc": "The narrower scope improved honesty, but trust and conversion are still unverified.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "6/10", "body": "<div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>This is finally scoped like a real solo-dev MVP instead of a hallucinated startup deck. Cutting pairwise, opener generation, and cross-platform nonsense removed a lot of fake sophistication.</li><li>The new framing is more honest. &quot;Technical photo audit&quot; is much more defensible than pretending you can predict dating outcomes from selfies.</li><li>The flow is simple enough to ship: upload, reject bad inputs, score, tease, charge, explain. That is an actual product loop, not a feature landfill.</li><li>Charging on first use is the right instinct for a low-retention utility. At least this version admits the business has to work immediately.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>You did not solve the core problem. You renamed it. Users still want to know &quot;which photo will do better,&quot; and your product now answers a narrower question they may not care enough to pay for: &quot;which photo is technically cleaner.&quot; That is safer, but also less valuable.</li><li>Your core differentiator is still UNVERIFIED: can a vision model reliably judge lighting, focus, face visibility, crop, and background quality across real dating photos in a way users trust? If that answer is shaky, the whole app is a polished random-number generator with camera jargon.</li><li>&quot;Technical&quot; is not as objective as you want it to sound. Background clutter, framing, and even &quot;face visibility&quot; get subjective fast once style enters the room. Plenty of high-performing dating photos break clean-photo rules on purpose. Messy bar photo, sunglasses-at-sunset shot, tight crop, dramatic shadows. Your app may punish what actually works.</li><li>The disagreement mechanic is weaker than you think. Showing the user the model&#x27;s reasoning does not rebuild trust if the reasoning itself looks dumb. &quot;Lighting 2/5 because shadow on left side&quot; is not transparency; it is a more detailed way to look wrong.</li><li>The paywall is vulnerable to immediate collapse. Free scores may be enough for most users to bounce, and the users who do pay may feel cheated if the locked explanations are just obvious photography advice they could get free anywhere.</li><li>The product is caught between two bad positions. If the advice is generic, nobody pays. If the advice is blunt and specific, users get defensive because you are critiquing their face photos in a sensitive context. There is no comfortable middle here.</li><li>You still have a severe trust tax. &quot;Upload your dating photos to a random web app and we delete them, promise&quot; is exactly the kind of sentence normal people do not believe. No accounts does not solve that. It just means you have less ability to prove value later.</li><li>Moderation is still uglier than the doc admits. Group-shot rejection is one thing. &quot;Obscured eyes,&quot; heavy filters, ambiguous ages, sexy-but-not-NSFW shots, anime filters, mirror selfies with bystanders in the back, or partial faces are where your clean constraint story starts to crack.</li><li>The pricing logic is hand-wavy. If real users only come once and many will upload 3 photos instead of 6, your total value per session is tiny. That means conversion has to be surprisingly good for this to matter, and there is no evidence it will be.</li><li>Distribution is still fantasy-prone. Reddit is not a growth channel; it is a place where communities smell self-promo from orbit and punish it. &quot;Be useful first&quot; is respectable advice, but it does not magically become scalable distribution.</li><li>There is still no moat. A general AI with image input plus a half-decent prompt can imitate this experience almost immediately. Your only possible moat is trust, sharper taste, and better UX. Right now those are aspirations, not assets.</li><li>Why does the user come back after day 1? Mostly they do not. You already admitted that, which is honest, but it also means you are building a single-use utility that needs first-session monetization, first-session trust, and first-session delight all at once. That is a brutal combination.</li><li>The build estimate is still optimistic in the wrong way. Wiring upload, Stripe, and result cards in 2-4 weeks is plausible. Getting outputs consistent enough that people do not call bullshit is the real work, and that part does not compress just because AI writes React faster.</li><li>The &quot;deleted immediately&quot; promise may conflict with reality if you need logs, retries, dispute handling, abuse review, or prompt debugging. If you keep anything temporarily, your privacy copy gets squishy fast.</li><li>You are still building a product where the most common response may be: &quot;Why would I pay for this instead of asking ChatGPT, Claude, or Reddit for free?&quot; If your answer is speed and polish, that is a thin wedge.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev Check</div><p>- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — one person can ship the software in that window, but not confidently validate trust, conversion, moderation behavior, and output quality in the same timeframe.\n- Biggest solo complexity traps: unreliable vision-model judgments; moderation false positives/negatives on borderline photos; users distrusting photo uploads from an unknown site; weak conversion from free score to paid explanation; refund/support overhead when users think the model is wrong; lack of a scalable acquisition channel for a one-shot utility</p></div>"}, {"status": "validate", "icon": "✅", "title": "Validated", "desc": "Marked ready for design with the current 6/10 critique score.", "body": "<div class=\"esect\"><div class=\"esect-label\">Status</div><p>Validated on 2026-04-01 14:37 with status ready-for-design.</p></div><div class=\"esect\"><div class=\"esect-label\">Score</div><p>6/10</p></div><div class=\"esect\"><div class=\"esect-label\">Design Handoff Screens</div><ul><li>Screen 1: Landing / Value Prop</li><li>Screen 2: Upload Screen</li><li>Screen 3: Rejection Screen (inline or modal)</li><li>Screen 4: Processing / Loading State</li><li>Screen 5: Free Results — Score Reveal</li><li>Screen 6: Payment Gate</li><li>Screen 7: Paid Results — Full Explanations</li><li>Screen 8: Disagree / Raw Breakdown Modal</li></ul></div>"}, {"status": "design", "icon": "🎨", "title": "Designed", "desc": "Stitch prototype generated and wired into a clickable preview.", "body": "<div class=\"esect\"><div class=\"esect-label\">Design Link</div><a class=\"ext-link\" href=\"https://stitch.withgoogle.com/projects/16310548155242682532\">Open Stitch project</a></div><div class=\"esect\"><div class=\"esect-label\">Device Note</div><p>Device type set to MOBILE by the requested keyword-scan rule.</p></div><div class=\"esect\"><div class=\"esect-label\">Prototype Screens</div><div class=\"tag-row\"><span class=\"etag blue\">Landing / Value Prop</span><span class=\"etag blue\">Upload Screen</span><span class=\"etag blue\">Processing / Loading State</span><span class=\"etag blue\">Free Results — Score Reveal</span><span class=\"etag blue\">Paid Results — Full Explanations</span></div></div>"}]};</script>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <span class="idea-num" id="hNum"></span>
+    <div>
+      <div class="idea-title" id="hTitle"></div>
+      <div class="idea-sub" id="hSub"></div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="score-pill" id="hScore"></span>
+    <span class="badge" id="hBadge"></span>
+    <button class="toggle-btn" id="toggleBtn" onclick="toggleTimeline()">
+      <span id="toggleIcon">›</span>
+      <span id="toggleLabel">Hide Journey</span>
+    </button>
+  </div>
+</div>
+
+<div class="body">
+  <div class="phone-col" id="phoneCol">
+    <div id="deviceFrame"></div>
+    <div class="switcher" id="switcher"></div>
+  </div>
+
+  <div class="resize-handle" id="resizeHandle"></div>
+
+  <div class="timeline-col" id="timelineCol">
+    <div class="timeline-header"><h2>Idea Journey</h2></div>
+    <div class="timeline-scroll">
+      <div class="timeline-line" id="timeline"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Render from IDEA_DATA ────────────────────────────
+(function () {
+  const D = window.IDEA_DATA || {};
+  const isMobile = (D.deviceType || 'MOBILE').toUpperCase() !== 'WEB';
+
+  // Header
+  document.title = 'Idea #' + D.ideaNum + ' — ' + D.title;
+  document.getElementById('hNum').textContent   = '#' + D.ideaNum;
+  document.getElementById('hTitle').textContent = D.title;
+  document.getElementById('hSub').textContent   = D.sub || '';
+  document.getElementById('hScore').textContent = D.score || '';
+  document.getElementById('hBadge').textContent = isMobile ? '📱 Mobile Prototype' : '💻 Web Prototype';
+
+  // Device frame
+  const frameContainer = document.getElementById('deviceFrame');
+  if (isMobile) {
+    frameContainer.className = 'phone-frame';
+    frameContainer.innerHTML = '<iframe id="app" class="device-iframe"></iframe>';
+  } else {
+    frameContainer.className = 'web-frame';
+    frameContainer.innerHTML =
+      '<div class="web-chrome">' +
+        '<div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>' +
+        '<div class="url" id="webUrl">preview</div>' +
+      '</div>' +
+      '<iframe id="app" class="device-iframe"></iframe>';
+  }
+
+  // Screens switcher
+  const screens = D.screens || [];
+  const startIdx = D.startScreen != null ? D.startScreen : (screens.length > 1 ? 1 : 0);
+  const switcher = document.getElementById('switcher');
+  const iframe   = document.getElementById('app');
+
+  function hideIframeScrollbars() {
+    try {
+      const style = iframe.contentDocument.createElement('style');
+      style.textContent = '::-webkit-scrollbar{display:none}*{-ms-overflow-style:none!important;scrollbar-width:none!important}';
+      iframe.contentDocument.head.appendChild(style);
+    } catch(e) {}
+  }
+  iframe.addEventListener('load', hideIframeScrollbars);
+
+  function goTo(i) {
+    iframe.src = screens[i].id + '.html';
+    switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
+    const urlEl = document.getElementById('webUrl');
+    if (urlEl) urlEl.textContent = screens[i].label;
+  }
+
+  screens.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = (i + 1) + ' · ' + s.label;
+    btn.onclick = () => goTo(i);
+    switcher.appendChild(btn);
+  });
+
+  if (screens.length) goTo(startIdx);
+
+  // Timeline
+  const timeline = document.getElementById('timeline');
+  (D.timeline || []).forEach(e => {
+    const verdictHtml = e.verdict
+      ? '<span class="verdict verdict-' + (e.verdictClass || 'needs') + '">' + e.verdict + '</span>'
+      : '';
+    const scoreHtml = e.score
+      ? '<span class="escore">' + e.score + '</span>'
+      : '';
+
+    const div = document.createElement('div');
+    div.className = 'entry' + (e.status ? ' s-' + e.status : '');
+    div.innerHTML =
+      '<div class="entry-card">' +
+        '<div class="entry-head" onclick="this.closest(\'.entry\').classList.toggle(\'open\')">' +
+          '<span class="entry-icon">' + e.icon + '</span>' +
+          '<div class="entry-info">' +
+            '<div class="entry-title">' + e.title + ' ' + verdictHtml + ' ' + scoreHtml + '</div>' +
+            '<div class="entry-desc">' + e.desc + '</div>' +
+          '</div>' +
+          '<span class="entry-chevron">▼</span>' +
+        '</div>' +
+        '<div class="entry-body">' + (e.body || '') + '</div>' +
+      '</div>';
+    timeline.appendChild(div);
+  });
+
+  // Timeline toggle
+  let open = true;
+  window.toggleTimeline = function () {
+    open = !open;
+    document.getElementById('timelineCol').classList.toggle('collapsed', !open);
+    document.getElementById('resizeHandle').style.display = open ? '' : 'none';
+    document.getElementById('toggleIcon').textContent  = open ? '›' : '‹';
+    document.getElementById('toggleLabel').textContent = open ? 'Hide Journey' : 'Show Journey';
+  };
+
+  // Drag resize
+  const handle      = document.getElementById('resizeHandle');
+  const timelineCol = document.getElementById('timelineCol');
+  let resizing = false, rx = 0, rw = 0;
+
+  handle.addEventListener('mousedown', e => {
+    if (!open) return;
+    resizing = true; rx = e.clientX; rw = timelineCol.offsetWidth;
+    handle.classList.add('dragging');
+    timelineCol.style.transition = 'none';
+    document.documentElement.style.cssText += ';cursor:col-resize!important;user-select:none!important';
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', e => {
+    if (!resizing) return;
+    const w = Math.max(280, Math.min(window.innerWidth - 500, rw + (rx - e.clientX)));
+    timelineCol.style.width = w + 'px';
+  });
+  window.addEventListener('mouseup', () => {
+    if (!resizing) return;
+    resizing = false;
+    handle.classList.remove('dragging');
+    timelineCol.style.transition = '';
+    document.documentElement.style.cursor = '';
+    document.documentElement.style.userSelect = '';
+  });
+})();
+</script>
+</body>
+</html>

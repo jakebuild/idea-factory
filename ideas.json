@@ -198,5 +198,15 @@
     "folder": "37-voice-note-coach-for-dating.-y",
     "startScreenId": "15970110b06c41aaab225d77c79a1f70",
     "status": "complete"
+  },
+  {
+    "num": 38,
+    "title": "AI Dating Photo Technical Audit",
+    "sub": "Technical audit for solo dating photos with a free score reveal and paid explanations.",
+    "score": "6/10",
+    "deviceType": "MOBILE",
+    "folder": "38-ai-photo-ranker-for-attractive",
+    "startScreenId": "b25833c96c964350b5fa8a8a2fba2219",
+    "status": "complete"
   }
 ]
