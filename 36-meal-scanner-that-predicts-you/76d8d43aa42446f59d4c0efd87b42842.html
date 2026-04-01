@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Vitality - Energy Check-in</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#f5f7f6",
+              "secondary-container": "#ffc791",
+              "error-dim": "#b92902",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#ffb467",
+              "surface-container-highest": "#d9dedd",
+              "on-secondary": "#fff0e5",
+              "surface-bright": "#f5f7f6",
+              "on-secondary-fixed-variant": "#774400",
+              "primary-container": "#6cfea0",
+              "on-primary-fixed-variant": "#006a37",
+              "on-tertiary": "#ffefeb",
+              "inverse-surface": "#0b0f0f",
+              "on-background": "#2c2f2f",
+              "on-primary-container": "#005f30",
+              "on-primary": "#ccffd5",
+              "surface-container": "#e6e9e8",
+              "surface-container-high": "#dfe3e2",
+              "secondary-dim": "#764400",
+              "on-error-container": "#520c00",
+              "on-tertiary-fixed": "#340800",
+              "tertiary-fixed": "#ff9475",
+              "error": "#b02500",
+              "primary-fixed-dim": "#5cef93",
+              "on-surface": "#2c2f2f",
+              "outline-variant": "#abaead",
+              "outline": "#747777",
+              "surface-variant": "#d9dedd",
+              "surface-dim": "#d0d5d4",
+              "on-error": "#ffefec",
+              "on-tertiary-container": "#601500",
+              "tertiary-container": "#ff9475",
+              "primary": "#006a37",
+              "error-container": "#f95630",
+              "primary-fixed": "#6cfea0",
+              "on-secondary-fixed": "#4f2c00",
+              "surface-tint": "#006a37",
+              "secondary-fixed": "#ffc791",
+              "on-secondary-container": "#6a3c00",
+              "background": "#f5f7f6",
+              "secondary": "#874e00",
+              "on-surface-variant": "#595c5c",
+              "primary-dim": "#005c2f",
+              "tertiary": "#ab2d00",
+              "inverse-primary": "#6cfea0",
+              "tertiary-fixed-dim": "#ff7d57",
+              "on-primary-fixed": "#004a24",
+              "tertiary-dim": "#962700",
+              "inverse-on-surface": "#9b9d9d",
+              "on-tertiary-fixed-variant": "#6f1a00",
+              "surface-container-low": "#eff1f0"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f7f6;
+            color: #2c2f2f;
+        }
+        h1, h2, h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="ia-shell-styles">
+.ia-header{position:sticky;top:0;z-index:60;background:rgba(245,247,246,.96);backdrop-filter:blur(18px);border-bottom:1px solid rgba(171,174,173,.6)}
+.ia-header-inner{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}
+.ia-header-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;color:#114a2c;flex:1;text-align:center}
+.ia-icon-btn,.ia-text-btn{display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;color:#006a37;cursor:pointer;border-radius:999px}
+.ia-icon-btn{width:40px;height:40px}.ia-text-btn{padding:0 14px;height:40px;font:600 14px Inter,sans-serif}.ia-icon-slot{width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.ia-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:space-around;align-items:center;padding:10px 16px 20px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-top:1px solid rgba(171,174,173,.45);border-top-left-radius:32px;border-top-right-radius:32px;box-shadow:0 -10px 32px rgba(44,47,47,.06)}
+.ia-tab{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:72px;padding:8px 6px;border:none;background:transparent;color:#6b7280;cursor:pointer}
+.ia-tab.active{color:#006a37}.ia-tab .material-symbols-outlined{font-size:22px}.ia-tab-label{font:700 11px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.ia-click{cursor:pointer}
+body.ia-has-nav{padding-bottom:96px}
+</style>
+</head>
+<body class="min-h-screen bg-surface flex flex-col text-on-surface items-center ia-has-nav"><header class="ia-header" id="ia-header"><div class="ia-header-inner"><button class="ia-icon-btn" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'"><span class="material-symbols-outlined">arrow_back</span></button><div class="ia-header-title">Energy check-in</div><div class="ia-icon-slot"></div></div></header>
+<!-- TopAppBar -->
+<main class="w-full max-w-md px-6 pt-4 pb-32 flex flex-col">
+<!-- Meal Context Section -->
+<section class="mb-10">
+<div class="bg-surface-container-low rounded-lg p-6 flex flex-col gap-3">
+<span class="text-on-surface-variant font-medium text-xs uppercase tracking-wider">90 MIN AGO</span>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="restaurant">restaurant</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-0.5">
+<span class="font-bold text-lg">Carb-heavy</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-lg" data-icon="bakery_dining">bakery_dining</span>
+</div>
+<p class="text-on-surface-variant text-sm">Post-lunch metabolic peak</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Question -->
+<section class="mb-10 text-center">
+<h2 class="text-3xl font-extrabold tracking-tight mb-2 text-on-surface">How's your energy right now?</h2>
+<p class="text-on-surface-variant leading-relaxed">Checking in after your last meal helps us tune your vitality plan.</p>
+</section>
+<!-- Energy Rating Row -->
+<section class="mb-12">
+<div class="grid grid-cols-5 gap-3">
+<!-- 1: Wrecked -->
+<button class="flex flex-col items-center gap-3 p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors group active:scale-95 duration-150" data-rating="1" onclick="selectEnergy(this, 1)">
+<span class="text-3xl grayscale group-hover:grayscale-0 transition-all">😫</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant">Wrecked</span>
+</button>
+<!-- 2: Sluggish -->
+<button class="flex flex-col items-center gap-3 p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors group active:scale-95 duration-150" data-rating="2" onclick="selectEnergy(this, 2)">
+<span class="text-3xl grayscale group-hover:grayscale-0 transition-all">🥱</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant">Sluggish</span>
+</button>
+<!-- 3: Neutral -->
+<button class="flex flex-col items-center gap-3 p-4 rounded-lg bg-surface-container-low border-2 border-primary/20 transition-colors group active:scale-95 duration-150" data-rating="3" onclick="selectEnergy(this, 3)">
+<span class="text-3xl">😐</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-primary">Neutral</span>
+</button>
+<!-- 4: Focused -->
+<button class="flex flex-col items-center gap-3 p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors group active:scale-95 duration-150" data-rating="4" onclick="selectEnergy(this, 4)">
+<span class="text-3xl grayscale group-hover:grayscale-0 transition-all">🧠</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant">Focused</span>
+</button>
+<!-- 5: Energized -->
+<button class="flex flex-col items-center gap-3 p-4 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high transition-colors group active:scale-95 duration-150" data-rating="5" onclick="selectEnergy(this, 5)">
+<span class="text-3xl grayscale group-hover:grayscale-0 transition-all">⚡</span>
+<span class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant">Active</span>
+</button>
+</div>
+</section>
+<!-- Optional Notes -->
+<section class="mb-8">
+<div class="relative">
+<textarea class="w-full bg-surface-container-high border-none rounded-lg p-5 focus:ring-2 focus:ring-primary-fixed text-on-surface placeholder:text-outline resize-none transition-all" placeholder="Add a note..." rows="4"></textarea>
+<div class="absolute right-4 bottom-4">
+<span class="material-symbols-outlined text-outline" data-icon="edit_note">edit_note</span>
+</div>
+</div>
+</section>
+<!-- Secondary Action -->
+<section class="mb-6"><button class="w-full rounded-full bg-primary text-on-primary py-4 font-headline text-lg font-bold opacity-50" disabled="disabled" id="energy-save" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'">Save</button></section><section class="flex flex-col items-center gap-4">
+<button class="text-primary font-semibold text-sm hover:underline active:scale-95 transition-transform py-2 ia-click" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'">
+                Remind me in 15 min
+            </button>
+</section>
+</main>
+<!-- BottomNavBar (Execution of style_active_navigation and shell_layout) -->
+<!-- Visual Anchor Decorations (Intentional Asymmetry) -->
+<div class="fixed -top-10 -right-10 w-48 h-48 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="fixed bottom-20 -left-10 w-32 h-32 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<nav class="ia-bottom-nav" id="ia-bottom-nav"><button class="ia-tab active" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span><span class="ia-tab-label">Home</span></button><button class="ia-tab" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'"><span class="material-symbols-outlined">receipt_long</span><span class="ia-tab-label">History</span></button><button class="ia-tab" onclick="window.location.href='f602280fe0fe42619a1c1bdfb6c0a612.html'"><span class="material-symbols-outlined">query_stats</span><span class="ia-tab-label">Patterns</span></button></nav><script>
+function selectEnergy(el, rating) {
+  document.querySelectorAll('[data-rating]').forEach((btn) => {
+    btn.classList.remove('bg-primary-container','text-on-primary-container','border-primary');
+    btn.classList.add('bg-surface-container-lowest');
+  });
+  el.classList.add('bg-primary-container','text-on-primary-container','border-primary');
+  el.classList.remove('bg-surface-container-lowest');
+  const save = document.getElementById('energy-save');
+  if (save) {
+    save.disabled = false;
+    save.classList.remove('opacity-50');
+  }
+}
+</script></body></html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Vitality - Onboarding</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#595c5c",
+              "outline": "#747777",
+              "inverse-on-surface": "#9b9d9d",
+              "on-primary-fixed": "#004a24",
+              "primary-fixed-dim": "#5cef93",
+              "on-surface": "#2c2f2f",
+              "surface-tint": "#006a37",
+              "background": "#f5f7f6",
+              "error": "#b02500",
+              "surface-variant": "#d9dedd",
+              "on-error": "#ffefec",
+              "primary-container": "#6cfea0",
+              "on-tertiary-fixed": "#340800",
+              "secondary": "#874e00",
+              "inverse-primary": "#6cfea0",
+              "surface-container-highest": "#d9dedd",
+              "tertiary": "#ab2d00",
+              "on-tertiary-fixed-variant": "#6f1a00",
+              "secondary-fixed": "#ffc791",
+              "secondary-dim": "#764400",
+              "surface-container": "#e6e9e8",
+              "on-tertiary": "#ffefeb",
+              "tertiary-fixed": "#ff9475",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-container": "#ff9475",
+              "error-container": "#f95630",
+              "on-secondary-container": "#6a3c00",
+              "surface-container-high": "#dfe3e2",
+              "surface-container-low": "#eff1f0",
+              "on-background": "#2c2f2f",
+              "surface-dim": "#d0d5d4",
+              "primary": "#006a37",
+              "on-secondary": "#fff0e5",
+              "tertiary-dim": "#962700",
+              "on-tertiary-container": "#601500",
+              "on-secondary-fixed": "#4f2c00",
+              "surface-bright": "#f5f7f6",
+              "inverse-surface": "#0b0f0f",
+              "on-primary-container": "#005f30",
+              "surface": "#f5f7f6",
+              "secondary-container": "#ffc791",
+              "primary-fixed": "#6cfea0",
+              "on-primary-fixed-variant": "#006a37",
+              "error-dim": "#b92902",
+              "tertiary-fixed-dim": "#ff7d57",
+              "primary-dim": "#005c2f",
+              "on-secondary-fixed-variant": "#774400",
+              "on-error-container": "#520c00",
+              "secondary-fixed-dim": "#ffb467",
+              "outline-variant": "#abaead",
+              "on-primary": "#ccffd5"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .vitality-ring-bg {
+            background: radial-gradient(circle at center, transparent 60%, rgba(108, 254, 160, 0.1) 100%);
+        }
+        .editorial-shadow {
+            box-shadow: 0 24px 40px rgba(44, 47, 47, 0.06);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="ia-shell-styles">
+.ia-header{position:sticky;top:0;z-index:60;background:rgba(245,247,246,.96);backdrop-filter:blur(18px);border-bottom:1px solid rgba(171,174,173,.6)}
+.ia-header-inner{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}
+.ia-header-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;color:#114a2c;flex:1;text-align:center}
+.ia-icon-btn,.ia-text-btn{display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;color:#006a37;cursor:pointer;border-radius:999px}
+.ia-icon-btn{width:40px;height:40px}.ia-text-btn{padding:0 14px;height:40px;font:600 14px Inter,sans-serif}.ia-icon-slot{width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.ia-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:space-around;align-items:center;padding:10px 16px 20px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-top:1px solid rgba(171,174,173,.45);border-top-left-radius:32px;border-top-right-radius:32px;box-shadow:0 -10px 32px rgba(44,47,47,.06)}
+.ia-tab{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:72px;padding:8px 6px;border:none;background:transparent;color:#6b7280;cursor:pointer}
+.ia-tab.active{color:#006a37}.ia-tab .material-symbols-outlined{font-size:22px}.ia-tab-label{font:700 11px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.ia-click{cursor:pointer}
+body.ia-has-nav{padding-bottom:96px}
+</style>
+</head>
+<body class="min-h-screen bg-surface flex overflow-x-hidden flex-col text-on-surface font-body items-center">
+<!-- Header Navigation (Hidden for Onboarding focus) -->
+<!-- The TopAppBar is suppressed per "Shell Visibility & Relevance" rule for Transactional/Onboarding pages -->
+<main class="w-full max-w-md mx-auto px-6 py-12 flex flex-grow flex-col justify-between relative">
+<!-- Progress Indicator -->
+<div class="flex gap-2 justify-start mb-12">
+<div class="h-1.5 w-12 rounded-full bg-primary"></div>
+<div class="h-1.5 w-12 rounded-full bg-surface-variant"></div>
+</div>
+<!-- Content Section -->
+<div class="flex flex-col gap-8">
+<!-- Asymmetric Illustration Area -->
+<div class="relative w-full aspect-square flex items-center justify-center">
+<!-- Background "Breath" Circle -->
+<div class="absolute inset-0 rounded-full bg-primary-container/20 scale-110 blur-3xl opacity-50"></div>
+<!-- Main Image Card -->
+<div class="relative z-10 w-full h-full rounded-lg overflow-hidden editorial-shadow bg-surface-container-lowest flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Modern high-angle shot of a vibrant grain bowl with fresh greens and salmon, bathed in warm natural afternoon sunlight on a textured ceramic plate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjJr60x1mFWY4Mdj6hOvPIDASp2MymBG7gC0oQ4M0YEmBnV72VNUKA-NAlwH08-TnWmT7tJNyWY8PMQoEzGeF1rRzTAo222I0lAq1m5m80nQLuTbKCXwKg2kr_e7Rez2vcD8IeMijqtzlzMo1M_8fLeIrtv5JbT122bAMNIMIpM0INNTJPt0XGFLVu9f5Z_-3yCWyLJIatxVCaDGH60gl5ifrMRtDUu5svBhyIoj7lttWNAkYVY5Nbe-SdNtlyTLqLsJexA4pDGc8"/>
+<!-- Floating Overlay Detail -->
+<div class="absolute bottom-6 right-6 bg-surface-container-lowest/90 backdrop-blur-md px-4 py-3 rounded-xl border border-white/20 editorial-shadow flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest font-bold text-outline">Energy Score</p>
+<p class="font-headline font-bold text-lg leading-none">High Peak</p>
+</div>
+</div>
+</div>
+<!-- Floating Vitality Ring (Branding Signature) -->
+<div class="absolute -top-4 -left-4 w-24 h-24 rounded-full border-[12px] border-primary-container/30 flex items-center justify-center">
+<div class="w-full h-full rounded-full border-[12px] border-primary border-t-transparent -rotate-45"></div>
+</div>
+</div>
+<!-- Typography Cluster -->
+<div class="space-y-4">
+<h1 class="font-headline font-extrabold text-4xl leading-tight tracking-tight text-on-surface">
+                    Find out which lunches <span class="text-primary italic">tank</span> your 3pm.
+                </h1>
+<p class="text-on-surface-variant text-lg leading-relaxed font-medium">
+                    Log your lunch, rate your energy 90 min later. After 8 logs, we show you the pattern.
+                </p>
+</div>
+<!-- Disclaimer Card (No-Line Principle) -->
+<div class="bg-surface-container-low rounded-xl p-5 flex items-start gap-4">
+<span class="material-symbols-outlined text-outline mt-0.5">info</span>
+<p class="text-sm text-on-surface-variant leading-snug">
+                    Vitality is designed strictly for tracking lunch-to-energy correlations and is not a medical diagnostic tool.
+                </p>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="mt-12 pb-6">
+<button class="w-full bg-primary hover:opacity-90 active:scale-[0.98] transition-all py-5 px-8 rounded-full flex items-center justify-between group ia-click" onclick="window.location.href='0b7b1755c2854531b342b2c6838fd3ca.html'">
+<span class="text-on-primary font-headline font-bold text-lg">Get started</span>
+<div class="w-8 h-8 rounded-full bg-primary-container/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">
+<span class="material-symbols-outlined text-on-primary">arrow_forward</span>
+</div>
+</button>
+<p class="text-center mt-6 font-label text-sm text-outline font-semibold tracking-wide uppercase">
+                Step 1 of 2
+            </p>
+</div>
+</main>
+<!-- Navigation Shell Suppressed for Focus -->
+</body></html>

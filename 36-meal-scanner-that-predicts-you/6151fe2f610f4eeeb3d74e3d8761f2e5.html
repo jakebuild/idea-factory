@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-container": "#601500",
+              "inverse-primary": "#6cfea0",
+              "error-dim": "#b92902",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#f5f7f6",
+              "primary-dim": "#005c2f",
+              "on-tertiary-fixed": "#340800",
+              "on-background": "#2c2f2f",
+              "error": "#b02500",
+              "on-secondary-container": "#6a3c00",
+              "on-tertiary-fixed-variant": "#6f1a00",
+              "surface-container": "#e6e9e8",
+              "error-container": "#f95630",
+              "surface-container-high": "#dfe3e2",
+              "on-primary-fixed": "#004a24",
+              "tertiary-fixed": "#ff9475",
+              "tertiary-dim": "#962700",
+              "secondary-fixed": "#ffc791",
+              "surface-tint": "#006a37",
+              "inverse-surface": "#0b0f0f",
+              "outline-variant": "#abaead",
+              "inverse-on-surface": "#9b9d9d",
+              "secondary-container": "#ffc791",
+              "surface-container-highest": "#d9dedd",
+              "secondary-dim": "#764400",
+              "tertiary": "#ab2d00",
+              "on-secondary": "#fff0e5",
+              "on-surface": "#2c2f2f",
+              "tertiary-fixed-dim": "#ff7d57",
+              "on-primary-fixed-variant": "#006a37",
+              "on-primary-container": "#005f30",
+              "surface": "#f5f7f6",
+              "primary-container": "#6cfea0",
+              "surface-container-low": "#eff1f0",
+              "primary": "#006a37",
+              "primary-fixed": "#6cfea0",
+              "tertiary-container": "#ff9475",
+              "on-surface-variant": "#595c5c",
+              "on-secondary-fixed-variant": "#774400",
+              "background": "#f5f7f6",
+              "on-primary": "#ccffd5",
+              "on-error-container": "#520c00",
+              "secondary-fixed-dim": "#ffb467",
+              "on-tertiary": "#ffefeb",
+              "primary-fixed-dim": "#5cef93",
+              "secondary": "#874e00",
+              "surface-variant": "#d9dedd",
+              "outline": "#747777",
+              "on-secondary-fixed": "#4f2c00",
+              "surface-dim": "#d0d5d4",
+              "on-error": "#ffefec"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tap-highlight-transparent {
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="ia-shell-styles">
+.ia-header{position:sticky;top:0;z-index:60;background:rgba(245,247,246,.96);backdrop-filter:blur(18px);border-bottom:1px solid rgba(171,174,173,.6)}
+.ia-header-inner{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}
+.ia-header-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;color:#114a2c;flex:1;text-align:center}
+.ia-icon-btn,.ia-text-btn{display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;color:#006a37;cursor:pointer;border-radius:999px}
+.ia-icon-btn{width:40px;height:40px}.ia-text-btn{padding:0 14px;height:40px;font:600 14px Inter,sans-serif}.ia-icon-slot{width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.ia-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:space-around;align-items:center;padding:10px 16px 20px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-top:1px solid rgba(171,174,173,.45);border-top-left-radius:32px;border-top-right-radius:32px;box-shadow:0 -10px 32px rgba(44,47,47,.06)}
+.ia-tab{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:72px;padding:8px 6px;border:none;background:transparent;color:#6b7280;cursor:pointer}
+.ia-tab.active{color:#006a37}.ia-tab .material-symbols-outlined{font-size:22px}.ia-tab-label{font:700 11px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.ia-click{cursor:pointer}
+body.ia-has-nav{padding-bottom:96px}
+</style>
+</head>
+<body class="text-on-surface bg-surface font-body ia-has-nav"><header class="ia-header" id="ia-header"><div class="ia-header-inner"><div class="ia-icon-slot"></div><div class="ia-header-title">History</div><div class="ia-icon-slot"></div></div></header>
+<!-- TopAppBar -->
+
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto">
+<!-- Page Header -->
+<div class="mb-10">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight text-on-surface mb-2">History</h2>
+<p class="text-on-surface-variant text-body md:text-lg leading-relaxed">Your journey toward optimal energy, one bite at a time.</p>
+</div>
+<!-- Section: Today -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline text-xl font-bold text-on-surface">Today</h3>
+<span class="text-label text-xs font-semibold uppercase tracking-widest text-outline">3 Logs</span>
+</div>
+<div class="space-y-4 ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<!-- Log Entry 1 -->
+<div class="group relative bg-surface-container-lowest rounded-lg p-5 flex items-center justify-between transition-all active:scale-[0.98] cursor-pointer ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="flex items-center gap-5 ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="restaurant">restaurant</span>
+</div>
+<div class="ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="flex items-center gap-2 mb-1 ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<span class="text-label text-xs font-bold uppercase tracking-tighter text-primary">Salad</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant text-xs">1:30 PM</span>
+</div>
+<h4 class="font-headline font-bold text-lg text-on-surface">Mediterranean Quinoa Bowl</h4>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex flex-col items-end">
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline mb-1">Energy</span>
+<div class="bg-primary text-on-primary px-3 py-1 rounded-full text-sm font-bold">5</div>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Log Entry 2 -->
+<div class="group relative bg-surface-container-lowest rounded-lg p-5 flex items-center justify-between transition-all active:scale-[0.98] cursor-pointer ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="lunch_dining">lunch_dining</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-label text-xs font-bold uppercase tracking-tighter text-secondary">Carb-heavy</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant text-xs">8:15 AM</span>
+</div>
+<h4 class="font-headline font-bold text-lg text-on-surface">Whole Grain Pancakes</h4>
+</div>
+</div>
+<div class="flex items-center gap-4 ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="flex flex-col items-end ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline mb-1">Energy</span>
+<div class="bg-surface-container-highest text-on-surface-variant px-3 py-1 rounded-full text-sm font-bold ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">Pending</div>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Yesterday -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline text-xl font-bold text-on-surface">Yesterday</h3>
+<span class="text-label text-xs font-semibold uppercase tracking-widest text-outline">Oct 23</span>
+</div>
+<div class="space-y-4 ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<!-- Log Entry 3 -->
+<div class="group relative bg-surface-container-lowest rounded-lg p-5 flex items-center justify-between transition-all active:scale-[0.98] cursor-pointer">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 rounded-full bg-tertiary-container flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="local_pizza">local_pizza</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-label text-xs font-bold uppercase tracking-tighter text-tertiary">Fast Food</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant text-xs">7:45 PM</span>
+</div>
+<h4 class="font-headline font-bold text-lg text-on-surface">Late Night Slice</h4>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex flex-col items-end">
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline mb-1">Energy</span>
+<div class="bg-tertiary-fixed text-on-tertiary-container px-3 py-1 rounded-full text-sm font-bold">2</div>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Log Entry 4 -->
+<div class="group relative bg-surface-container-lowest rounded-lg p-5 flex items-center justify-between transition-all active:scale-[0.98] cursor-pointer ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="flex items-center gap-5 ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="w-14 h-14 rounded-full bg-primary-container/40 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-primary" data-icon="egg_alt">egg_alt</span>
+</div>
+<div class="ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="flex items-center gap-2 mb-1 ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<span class="text-label text-xs font-bold uppercase tracking-tighter text-primary">Protein</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="text-on-surface-variant text-xs">12:30 PM</span>
+</div>
+<h4 class="font-headline font-bold text-lg text-on-surface">Avocado &amp; Egg Toast</h4>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex flex-col items-end">
+<span class="text-[10px] font-bold uppercase tracking-widest text-outline mb-1">Energy</span>
+<div class="bg-primary-fixed-dim text-on-primary-fixed px-3 py-1 rounded-full text-sm font-bold">4</div>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Last Week -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline text-xl font-bold text-on-surface">Last Week</h3>
+<span class="text-label text-xs font-semibold uppercase tracking-widest text-outline">Oct 16 - Oct 22</span>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Simplified Weekly Rows -->
+<div class="flex items-center justify-between bg-surface-container-low rounded-lg p-5 cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<div class="text-center w-10">
+<span class="text-[10px] font-bold uppercase block text-outline">Sun</span>
+<span class="font-headline font-bold text-lg">22</span>
+</div>
+<div>
+<p class="text-on-surface font-semibold">Average Energy: 4.2</p>
+<p class="text-xs text-on-surface-variant">5 Logs recorded</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="keyboard_arrow_right">keyboard_arrow_right</span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low rounded-lg p-5 cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<div class="text-center w-10">
+<span class="text-[10px] font-bold uppercase block text-outline">Sat</span>
+<span class="font-headline font-bold text-lg">21</span>
+</div>
+<div>
+<p class="text-on-surface font-semibold">Average Energy: 3.8</p>
+<p class="text-xs text-on-surface-variant">4 Logs recorded</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="keyboard_arrow_right">keyboard_arrow_right</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<!-- FAB: Log New Meal -->
+<div class="fixed bottom-24 right-6 z-40">
+<button class="w-16 h-16 rounded-full bg-primary-container shadow-2xl flex items-center justify-center text-on-primary-container active:scale-90 transition-transform shadow-primary/20 ia-click" onclick="window.location.href='f2b03d34def74a24a21f7712f9881de2.html'">
+<span class="material-symbols-outlined text-3xl font-bold" data-icon="add">add</span>
+</button>
+</div>
+<nav class="ia-bottom-nav" id="ia-bottom-nav"><button class="ia-tab" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'"><span class="material-symbols-outlined">home</span><span class="ia-tab-label">Home</span></button><button class="ia-tab active" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">receipt_long</span><span class="ia-tab-label">History</span></button><button class="ia-tab" onclick="window.location.href='f602280fe0fe42619a1c1bdfb6c0a612.html'"><span class="material-symbols-outlined">query_stats</span><span class="ia-tab-label">Patterns</span></button></nav></body></html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Vitality Onboarding - Set your rhythm</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#006a37",
+              "primary-dim": "#005c2f",
+              "on-primary-fixed-variant": "#006a37",
+              "inverse-on-surface": "#9b9d9d",
+              "on-primary": "#ccffd5",
+              "surface": "#f5f7f6",
+              "outline-variant": "#abaead",
+              "surface-variant": "#d9dedd",
+              "primary-container": "#6cfea0",
+              "on-primary-fixed": "#004a24",
+              "primary-fixed": "#6cfea0",
+              "on-secondary-fixed": "#4f2c00",
+              "background": "#f5f7f6",
+              "on-surface-variant": "#595c5c",
+              "on-tertiary-container": "#601500",
+              "error": "#b02500",
+              "surface-container-high": "#dfe3e2",
+              "outline": "#747777",
+              "tertiary-fixed": "#ff9475",
+              "surface-dim": "#d0d5d4",
+              "on-error": "#ffefec",
+              "on-background": "#2c2f2f",
+              "secondary-fixed-dim": "#ffb467",
+              "on-error-container": "#520c00",
+              "secondary-container": "#ffc791",
+              "surface-container-highest": "#d9dedd",
+              "inverse-surface": "#0b0f0f",
+              "error-container": "#f95630",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed-variant": "#774400",
+              "tertiary-container": "#ff9475",
+              "surface-container-low": "#eff1f0",
+              "inverse-primary": "#6cfea0",
+              "surface-bright": "#f5f7f6",
+              "tertiary-fixed-dim": "#ff7d57",
+              "error-dim": "#b92902",
+              "secondary-fixed": "#ffc791",
+              "primary": "#006a37",
+              "on-surface": "#2c2f2f",
+              "primary-fixed-dim": "#5cef93",
+              "surface-container": "#e6e9e8",
+              "secondary": "#874e00",
+              "on-tertiary-fixed": "#340800",
+              "on-secondary-container": "#6a3c00",
+              "tertiary-dim": "#962700",
+              "on-secondary": "#fff0e5",
+              "tertiary": "#ab2d00",
+              "on-tertiary-fixed-variant": "#6f1a00",
+              "on-tertiary": "#ffefeb",
+              "secondary-dim": "#764400",
+              "on-primary-container": "#005f30"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .vitality-gradient {
+            background: linear-gradient(135deg, #006a37 0%, #6cfea0 100%);
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="ia-shell-styles">
+.ia-header{position:sticky;top:0;z-index:60;background:rgba(245,247,246,.96);backdrop-filter:blur(18px);border-bottom:1px solid rgba(171,174,173,.6)}
+.ia-header-inner{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}
+.ia-header-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;color:#114a2c;flex:1;text-align:center}
+.ia-icon-btn,.ia-text-btn{display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;color:#006a37;cursor:pointer;border-radius:999px}
+.ia-icon-btn{width:40px;height:40px}.ia-text-btn{padding:0 14px;height:40px;font:600 14px Inter,sans-serif}.ia-icon-slot{width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.ia-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:space-around;align-items:center;padding:10px 16px 20px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-top:1px solid rgba(171,174,173,.45);border-top-left-radius:32px;border-top-right-radius:32px;box-shadow:0 -10px 32px rgba(44,47,47,.06)}
+.ia-tab{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:72px;padding:8px 6px;border:none;background:transparent;color:#6b7280;cursor:pointer}
+.ia-tab.active{color:#006a37}.ia-tab .material-symbols-outlined{font-size:22px}.ia-tab-label{font:700 11px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.ia-click{cursor:pointer}
+body.ia-has-nav{padding-bottom:96px}
+</style>
+</head>
+<body class="min-h-screen bg-surface flex overflow-x-hidden flex-col text-on-surface font-body"><header class="ia-header" id="ia-header"><div class="ia-header-inner"><button class="ia-icon-btn" onclick="window.location.href='e0c56f18a80f4dc69f71d04b2104b5e3.html'"><span class="material-symbols-outlined">arrow_back</span></button><div class="ia-header-title">Lunch window</div><div class="ia-icon-slot"></div></div></header>
+<!-- Header (Shared Component: TopAppBar) -->
+
+<main class="flex-grow px-6 pt-8 pb-32 max-w-2xl mx-auto w-full">
+<!-- Progress Bar -->
+<div class="flex gap-2 mb-10 px-1">
+<div class="h-1.5 flex-1 rounded-full bg-primary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-primary"></div>
+</div>
+<!-- Hero Section -->
+<section class="mb-12">
+<h2 class="font-headline text-5xl font-extrabold tracking-tight text-on-surface mb-4 leading-tight">
+                Set your rhythm.
+            </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">
+                We'll sync with your daily habits to make health check-ins feel effortless.
+            </p>
+</section>
+<!-- Time Picker Section (Bento Style) -->
+<div class="grid grid-cols-1 gap-6 mb-8">
+<div class="bg-surface-container-low rounded-lg p-8">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined" data-icon="restaurant">restaurant</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Typical Lunch Window</h3>
+</div>
+<div class="flex items-center justify-center gap-4 bg-surface-container-lowest rounded-xl py-8 px-4">
+<div class="text-center">
+<span class="block text-[3.5rem] font-headline font-bold text-primary leading-none">12:00</span>
+<span class="text-xs font-bold uppercase tracking-widest text-outline">Starts</span>
+</div>
+<div class="h-12 w-px bg-outline-variant/30"></div>
+<div class="text-center">
+<span class="block text-[3.5rem] font-headline font-bold text-primary leading-none">13:00</span>
+<span class="text-xs font-bold uppercase tracking-widest text-outline">Ends</span>
+</div>
+</div>
+<p class="mt-6 text-sm text-on-surface-variant text-center px-4">
+                    Adjusting this helps us know when you're likely finishing your first big meal of the day.
+                </p>
+</div>
+<!-- Notifications Card -->
+<div class="bg-surface-container-highest rounded-lg p-8 relative overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline text-xl font-bold text-on-surface">Enable notifications</h3>
+<div class="w-14 h-8 bg-primary rounded-full relative flex items-center px-1">
+<div class="w-6 h-6 bg-white rounded-full ml-auto shadow-sm"></div>
+</div>
+</div>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                        We'll check in ~90 min after you log a meal to see how you're feeling.
+                    </p>
+<!-- Notification Preview -->
+<div class="bg-surface-container-lowest/80 backdrop-blur-md rounded-2xl p-4 shadow-xl border border-white/20">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-2xl overflow-hidden flex-shrink-0">
+<img alt="Vitality App Icon" class="w-full h-full object-cover" data-alt="abstract organic shape with soft green and white tones representing vitality and health" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEWvwlZ3tZoq0uE72xD_OZay49tAK4Sqe2mbdE9LwEHasG5KHaqEB_QQelScAl7NNLR8jWMR_XcLyemEi_6bBvIsTbjTMMfzjJxr1dUcaqeif_uvB4JDv6y6uvKcRHgzhCiu7wQBg1QjSQOxxbdCMCNWFdMxAYGZoHPavf_q4_ZQwqYHZ-Wmb5djE9ZXuy-leIgBPDLt0123jwSa2FnUiIO30p6mQ4R3hZrA33wFtLBiJlvkMWdDvMLw6ynZCtRZhoCGVxmZWBxaU"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-center mb-1">
+<span class="font-headline font-bold text-sm text-primary">VITALITY</span>
+<span class="text-[10px] text-outline font-medium">NOW</span>
+</div>
+<h4 class="font-bold text-on-surface text-base">How was that lunch?</h4>
+<p class="text-sm text-on-surface-variant">Tap to check in your energy now.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Subtle graphic element -->
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+</div>
+</div>
+<!-- Descriptive Quote -->
+<div class="px-2 py-4 italic text-on-surface-variant/80 border-l-2 border-primary-container ml-2">
+            "The secret of your future is hidden in your daily routine."
+        </div>
+</main>
+<!-- Bottom Navigation Shell (Shared Component: BottomNavBar) -->
+
+</body></html>

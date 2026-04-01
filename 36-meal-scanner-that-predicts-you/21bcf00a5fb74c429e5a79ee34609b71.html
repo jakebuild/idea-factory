@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Vitality Patterns — Unlocked</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline": "#747777",
+              "on-secondary-fixed": "#4f2c00",
+              "primary-fixed": "#6cfea0",
+              "surface-container": "#e6e9e8",
+              "background": "#f5f7f6",
+              "on-secondary": "#fff0e5",
+              "on-background": "#2c2f2f",
+              "on-tertiary-fixed-variant": "#6f1a00",
+              "tertiary-container": "#ff9475",
+              "on-primary": "#ccffd5",
+              "on-primary-fixed": "#004a24",
+              "secondary": "#874e00",
+              "surface-container-lowest": "#ffffff",
+              "surface-variant": "#d9dedd",
+              "surface-container-low": "#eff1f0",
+              "error-container": "#f95630",
+              "on-tertiary-container": "#601500",
+              "inverse-surface": "#0b0f0f",
+              "tertiary-fixed-dim": "#ff7d57",
+              "on-surface-variant": "#595c5c",
+              "secondary-dim": "#764400",
+              "secondary-fixed": "#ffc791",
+              "surface-tint": "#006a37",
+              "on-tertiary": "#ffefeb",
+              "on-secondary-container": "#6a3c00",
+              "tertiary": "#ab2d00",
+              "surface": "#f5f7f6",
+              "on-primary-container": "#005f30",
+              "on-surface": "#2c2f2f",
+              "error-dim": "#b92902",
+              "error": "#b02500",
+              "primary-container": "#6cfea0",
+              "on-primary-fixed-variant": "#006a37",
+              "inverse-on-surface": "#9b9d9d",
+              "outline-variant": "#abaead",
+              "secondary-fixed-dim": "#ffb467",
+              "surface-container-high": "#dfe3e2",
+              "primary": "#006a37",
+              "inverse-primary": "#6cfea0",
+              "surface-bright": "#f5f7f6",
+              "primary-fixed-dim": "#5cef93",
+              "surface-dim": "#d0d5d4",
+              "secondary-container": "#ffc791",
+              "on-tertiary-fixed": "#340800",
+              "on-secondary-fixed-variant": "#774400",
+              "tertiary-fixed": "#ff9475",
+              "tertiary-dim": "#962700",
+              "primary-dim": "#005c2f",
+              "on-error-container": "#520c00",
+              "surface-container-highest": "#d9dedd",
+              "on-error": "#ffefec"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="ia-shell-styles">
+.ia-header{position:sticky;top:0;z-index:60;background:rgba(245,247,246,.96);backdrop-filter:blur(18px);border-bottom:1px solid rgba(171,174,173,.6)}
+.ia-header-inner{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}
+.ia-header-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;color:#114a2c;flex:1;text-align:center}
+.ia-icon-btn,.ia-text-btn{display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;color:#006a37;cursor:pointer;border-radius:999px}
+.ia-icon-btn{width:40px;height:40px}.ia-text-btn{padding:0 14px;height:40px;font:600 14px Inter,sans-serif}.ia-icon-slot{width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.ia-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:space-around;align-items:center;padding:10px 16px 20px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-top:1px solid rgba(171,174,173,.45);border-top-left-radius:32px;border-top-right-radius:32px;box-shadow:0 -10px 32px rgba(44,47,47,.06)}
+.ia-tab{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:72px;padding:8px 6px;border:none;background:transparent;color:#6b7280;cursor:pointer}
+.ia-tab.active{color:#006a37}.ia-tab .material-symbols-outlined{font-size:22px}.ia-tab-label{font:700 11px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.ia-click{cursor:pointer}
+body.ia-has-nav{padding-bottom:96px}
+</style>
+</head>
+<body class="min-h-screen text-on-background bg-background pb-32 ia-has-nav"><header class="ia-header" id="ia-header"><div class="ia-header-inner"><div class="ia-icon-slot"></div><div class="ia-header-title">Patterns</div><div class="ia-icon-slot"></div></div></header>
+<!-- TopAppBar -->
+
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-10">
+<!-- Hero Suggestion Block -->
+<section class="relative overflow-hidden bg-primary-container rounded-lg p-8 space-y-4 shadow-none">
+<div class="relative z-10 ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<span class="bg-on-primary-container/10 text-on-primary-container text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">Recommendation</span>
+<h2 class="text-3xl font-extrabold text-on-primary-container mt-4 tracking-tight leading-tight">Try this tomorrow: Salad Bowl</h2>
+<p class="text-on-primary-container/80 text-lg font-medium max-w-[80%] mt-2">Your energy levels are highest (4.8/5) after these meals.</p>
+<div class="mt-8">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold shadow-xl shadow-primary/20 active:scale-95 transition-transform ia-click" onclick="window.location.href='f2b03d34def74a24a21f7712f9881de2.html'">
+                        Add to Planner
+                    </button>
+</div>
+</div>
+<!-- Decorative "Vitality Ring" Background Element -->
+<div class="absolute -right-20 -bottom-20 w-64 h-64 border-[24px] border-on-primary-container/5 rounded-full"></div>
+<div class="absolute -right-10 -bottom-10 w-48 h-48 border-[12px] border-on-primary-container/10 rounded-full"></div>
+</section>
+<!-- Ranked Patterns List -->
+<section class="space-y-6">
+<div class="flex justify-between items-end">
+<div>
+<h3 class="text-2xl font-bold tracking-tight">Energy Impact</h3>
+<p class="text-on-surface-variant text-sm mt-1">Sorted by average vitality rating</p>
+</div>
+<span class="text-primary font-bold text-sm bg-primary-container/30 px-3 py-1 rounded-full">34 logs</span>
+</div>
+<div class="space-y-4 ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<!-- Item 1: Salad Bowl -->
+<div class="bg-surface-container-lowest rounded-lg p-6 flex items-center gap-6 transition-all ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="leafy_green">energy_savings_leaf</span>
+</div>
+<div class="flex-1 space-y-2 ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<div class="flex justify-between items-baseline ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<h4 class="font-bold text-lg">Salad Bowl</h4>
+<span class="font-bold text-primary">4.8/5</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 96%"></div>
+</div>
+<p class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider">12 logs</p>
+</div>
+</div>
+<!-- Item 2: Protein Bowl -->
+<div class="bg-surface-container-lowest rounded-lg p-6 flex items-center gap-6 ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<div class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-dim text-3xl" data-icon="restaurant">restaurant</span>
+</div>
+<div class="flex-1 space-y-2 ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<div class="flex justify-between items-baseline ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<h4 class="font-bold text-lg">Protein Bowl</h4>
+<span class="font-bold text-primary-dim">4.2/5</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-primary-fixed-dim h-full rounded-full" style="width: 84%"></div>
+</div>
+<p class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider">8 logs</p>
+</div>
+</div>
+<!-- Item 3: Mixed Plate -->
+<div class="bg-surface-container-lowest rounded-lg p-6 flex items-center gap-6 ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<div class="w-16 h-16 rounded-full bg-secondary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="dinner_dining">dinner_dining</span>
+</div>
+<div class="flex-1 space-y-2 ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<div class="flex justify-between items-baseline ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<h4 class="font-bold text-lg">Mixed Plate</h4>
+<span class="font-bold text-secondary">3.5/5</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-secondary-fixed h-full rounded-full" style="width: 70%"></div>
+</div>
+<p class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider">5 logs</p>
+</div>
+</div>
+<!-- Item 4: Carb-heavy -->
+<div class="bg-surface-container-lowest rounded-lg p-6 flex items-center gap-6 ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<div class="w-16 h-16 rounded-full bg-error-container/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-error text-3xl" data-icon="bakery_dining">bakery_dining</span>
+</div>
+<div class="flex-1 space-y-2 ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<div class="flex justify-between items-baseline ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">
+<h4 class="font-bold text-lg">Carb-heavy</h4>
+<span class="font-bold text-error">2.1/5</span>
+</div>
+<div class="w-full bg-surface-container h-2.5 rounded-full overflow-hidden">
+<div class="bg-error-container h-full rounded-full" style="width: 42%"></div>
+</div>
+<p class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider">9 logs</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Confidence Note -->
+<section class="bg-surface-container-low rounded-lg p-6 flex items-start gap-4">
+<span class="material-symbols-outlined text-tertiary mt-0.5" data-icon="info">info</span>
+<div>
+<p class="text-on-surface font-medium leading-relaxed">Based on 34 check-ins — the more you log, the clearer the picture.</p>
+<p class="text-on-surface-variant text-sm mt-1">Patterns are calculated using your self-reported vitality scores 2 hours post-meal.</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="ia-bottom-nav" id="ia-bottom-nav"><button class="ia-tab" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'"><span class="material-symbols-outlined">home</span><span class="ia-tab-label">Home</span></button><button class="ia-tab" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'"><span class="material-symbols-outlined">receipt_long</span><span class="ia-tab-label">History</span></button><button class="ia-tab active" onclick="window.location.href='f602280fe0fe42619a1c1bdfb6c0a612.html'"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">query_stats</span><span class="ia-tab-label">Patterns</span></button></nav></body></html>

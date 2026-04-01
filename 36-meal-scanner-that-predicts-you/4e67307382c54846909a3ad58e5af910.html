@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Vitality Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f5f7f6",
+              "error-container": "#f95630",
+              "surface-container-high": "#dfe3e2",
+              "inverse-on-surface": "#9b9d9d",
+              "surface-tint": "#006a37",
+              "on-secondary-container": "#6a3c00",
+              "error-dim": "#b92902",
+              "on-secondary-fixed": "#4f2c00",
+              "surface-container-highest": "#d9dedd",
+              "on-tertiary": "#ffefeb",
+              "on-surface-variant": "#595c5c",
+              "on-error": "#ffefec",
+              "tertiary-fixed": "#ff9475",
+              "surface-variant": "#d9dedd",
+              "secondary": "#874e00",
+              "primary-container": "#6cfea0",
+              "on-surface": "#2c2f2f",
+              "on-primary": "#ccffd5",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#ff7d57",
+              "tertiary-dim": "#962700",
+              "on-secondary-fixed-variant": "#774400",
+              "surface-dim": "#d0d5d4",
+              "on-secondary": "#fff0e5",
+              "on-primary-fixed": "#004a24",
+              "tertiary-container": "#ff9475",
+              "surface-container-low": "#eff1f0",
+              "secondary-fixed-dim": "#ffb467",
+              "outline": "#747777",
+              "on-primary-fixed-variant": "#006a37",
+              "primary-dim": "#005c2f",
+              "outline-variant": "#abaead",
+              "on-tertiary-fixed-variant": "#6f1a00",
+              "on-error-container": "#520c00",
+              "secondary-container": "#ffc791",
+              "surface-container": "#e6e9e8",
+              "primary-fixed": "#6cfea0",
+              "secondary-dim": "#764400",
+              "secondary-fixed": "#ffc791",
+              "primary": "#006a37",
+              "inverse-primary": "#6cfea0",
+              "on-tertiary-fixed": "#340800",
+              "surface": "#f5f7f6",
+              "inverse-surface": "#0b0f0f",
+              "tertiary": "#ab2d00",
+              "primary-fixed-dim": "#5cef93",
+              "background": "#f5f7f6",
+              "on-background": "#2c2f2f",
+              "error": "#b02500",
+              "on-tertiary-container": "#601500",
+              "on-primary-container": "#005f30"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        line-height: 1;
+      }
+      .vitality-ring {
+        background: conic-gradient(from 0deg, #006a37 50%, #6cfea04d 50%);
+      }
+      .glass-nav {
+        backdrop-filter: blur(20px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="ia-shell-styles">
+.ia-header{position:sticky;top:0;z-index:60;background:rgba(245,247,246,.96);backdrop-filter:blur(18px);border-bottom:1px solid rgba(171,174,173,.6)}
+.ia-header-inner{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}
+.ia-header-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;color:#114a2c;flex:1;text-align:center}
+.ia-icon-btn,.ia-text-btn{display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;color:#006a37;cursor:pointer;border-radius:999px}
+.ia-icon-btn{width:40px;height:40px}.ia-text-btn{padding:0 14px;height:40px;font:600 14px Inter,sans-serif}.ia-icon-slot{width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.ia-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:space-around;align-items:center;padding:10px 16px 20px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-top:1px solid rgba(171,174,173,.45);border-top-left-radius:32px;border-top-right-radius:32px;box-shadow:0 -10px 32px rgba(44,47,47,.06)}
+.ia-tab{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:72px;padding:8px 6px;border:none;background:transparent;color:#6b7280;cursor:pointer}
+.ia-tab.active{color:#006a37}.ia-tab .material-symbols-outlined{font-size:22px}.ia-tab-label{font:700 11px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.ia-click{cursor:pointer}
+body.ia-has-nav{padding-bottom:96px}
+</style>
+</head>
+<body class="min-h-screen bg-surface text-on-surface font-body pb-32 ia-has-nav"><header class="ia-header" id="ia-header"><div class="ia-header-inner"><div class="ia-icon-slot"></div><div class="ia-header-title">Lunch Lab</div><button class="ia-icon-btn" onclick="window.location.href='f602280fe0fe42619a1c1bdfb6c0a612.html'"><span class="material-symbols-outlined">query_stats</span></button></div></header>
+<!-- TopAppBar -->
+<main class="pt-24 px-6 space-y-10">
+<!-- Hero Section: The Living Breath -->
+<section class="flex flex-col items-center justify-center text-center space-y-8 py-4">
+<div class="relative">
+<!-- Vitality Ring Decoration -->
+<div class="absolute inset-0 -m-8 rounded-full opacity-10 vitality-ring blur-xl"></div>
+<div class="relative z-10 space-y-2">
+<h2 class="text-display-lg font-headline font-extrabold text-primary leading-tight">Fuel your<br/>potential</h2>
+<p class="text-on-surface-variant text-sm font-medium tracking-wide">LUNCH • OCT 24</p>
+</div>
+</div>
+<!-- Prominent Log Button -->
+<button class="group flex flex-col items-center space-y-4 ia-click" onclick="window.location.href='f2b03d34def74a24a21f7712f9881de2.html'">
+<div class="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-primary-container flex items-center justify-center shadow-2xl transition-transform active:scale-95 duration-200">
+<span class="material-symbols-outlined text-on-primary-container text-4xl" data-icon="add" style="font-variation-settings: 'wght' 600;">add</span>
+</div>
+<span class="font-headline font-bold text-lg text-primary">Log lunch</span>
+</button>
+</section>
+<!-- Insights Bento Moment (Organic Asymmetry) -->
+<section class="grid grid-cols-2 gap-4">
+<div class="col-span-1 bg-surface-container-low p-6 rounded-lg flex flex-col justify-between h-40">
+<span class="material-symbols-outlined text-tertiary" data-icon="bolt">bolt</span>
+<div>
+<p class="text-3xl font-headline font-bold text-on-surface">84%</p>
+<p class="text-xs font-semibold text-on-surface-variant">Daily Energy</p>
+</div>
+</div>
+<div class="col-span-1 bg-secondary-container p-6 rounded-lg flex flex-col justify-between h-40">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="water_drop">water_drop</span>
+<div>
+<p class="text-3xl font-headline font-bold text-on-secondary-container">1.2L</p>
+<p class="text-xs font-semibold text-on-secondary-container opacity-80">Hydration</p>
+</div>
+</div>
+</section>
+<!-- Recent Logs Section -->
+<section class="space-y-6">
+<div class="flex justify-between items-end px-2">
+<h3 class="text-headline-sm font-headline font-bold text-on-surface">Recent Logs</h3>
+<button class="text-primary font-bold text-sm ia-click" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'">View all</button>
+</div>
+<div class="space-y-4 ia-click" onclick="window.location.href='76d8d43aa42446f59d4c0efd87b42842.html'">
+<!-- Log Card 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg flex items-center justify-between transition-colors hover:bg-surface-container-low ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="flex items-center space-x-4 ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="w-12 h-12 rounded-full bg-primary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="skillet">skillet</span>
+</div>
+<div class="ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<h4 class="font-headline font-bold text-on-surface">Salad Bowl</h4>
+<p class="text-xs font-medium text-on-surface-variant">Oct 24 • 12:45 PM</p>
+</div>
+</div>
+<div class="bg-[#6cfea0]/20 text-primary px-3 py-1 rounded-full flex items-center space-x-1">
+<span class="text-xs font-bold">4.8/5</span>
+<span class="material-symbols-outlined text-[14px]" data-icon="energy_savings_leaf" style="font-variation-settings: 'FILL' 1;">energy_savings_leaf</span>
+</div>
+</div>
+<!-- Log Card 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg flex items-center justify-between transition-colors hover:bg-surface-container-low ia-click" onclick="window.location.href='76d8d43aa42446f59d4c0efd87b42842.html'">
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="bakery_dining">bakery_dining</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Whole Grain Pancakes</h4>
+<p class="text-xs font-medium text-on-surface-variant">Oct 23 • 08:30 AM</p>
+</div>
+</div>
+<div class="bg-surface-container-high text-on-surface-variant px-3 py-1 rounded-full flex items-center space-x-1">
+<span class="text-xs font-bold">Pending</span>
+</div>
+</div>
+<!-- Log Card 3 -->
+<div class="bg-surface-container-lowest p-5 rounded-lg flex items-center justify-between transition-colors hover:bg-surface-container-low ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="flex items-center space-x-4 ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<div class="w-12 h-12 rounded-full bg-tertiary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="lunch_dining">lunch_dining</span>
+</div>
+<div class="ia-click" onclick="window.location.href='9571652d2a8b421daaba705ed8665827.html'">
+<h4 class="font-headline font-bold text-on-surface">Avocado Toast</h4>
+<p class="text-xs font-medium text-on-surface-variant">Oct 22 • 09:15 AM</p>
+</div>
+</div>
+<div class="bg-[#6cfea0]/20 text-primary px-3 py-1 rounded-full flex items-center space-x-1">
+<span class="text-xs font-bold">4.0/5</span>
+<span class="material-symbols-outlined text-[14px]" data-icon="energy_savings_leaf" style="font-variation-settings: 'FILL' 1;">energy_savings_leaf</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="ia-bottom-nav" id="ia-bottom-nav"><button class="ia-tab active" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span><span class="ia-tab-label">Home</span></button><button class="ia-tab" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'"><span class="material-symbols-outlined">receipt_long</span><span class="ia-tab-label">History</span></button><button class="ia-tab" onclick="window.location.href='f602280fe0fe42619a1c1bdfb6c0a612.html'"><span class="material-symbols-outlined">query_stats</span><span class="ia-tab-label">Patterns</span></button></nav></body></html>

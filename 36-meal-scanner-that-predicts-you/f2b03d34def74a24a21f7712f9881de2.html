@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Log Meal - Vitality Framework</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#ab2d00",
+              "error": "#b02500",
+              "primary-dim": "#005c2f",
+              "secondary-dim": "#764400",
+              "on-error": "#ffefec",
+              "primary-fixed": "#6cfea0",
+              "on-surface": "#2c2f2f",
+              "on-secondary-container": "#6a3c00",
+              "on-secondary-fixed": "#4f2c00",
+              "surface": "#f5f7f6",
+              "on-secondary": "#fff0e5",
+              "on-primary-container": "#005f30",
+              "error-container": "#f95630",
+              "tertiary-dim": "#962700",
+              "tertiary-fixed-dim": "#ff7d57",
+              "background": "#f5f7f6",
+              "on-surface-variant": "#595c5c",
+              "primary": "#006a37",
+              "surface-variant": "#d9dedd",
+              "inverse-on-surface": "#9b9d9d",
+              "on-tertiary-fixed-variant": "#6f1a00",
+              "secondary-fixed-dim": "#ffb467",
+              "inverse-primary": "#6cfea0",
+              "outline-variant": "#abaead",
+              "tertiary-fixed": "#ff9475",
+              "error-dim": "#b92902",
+              "secondary-container": "#ffc791",
+              "on-tertiary-container": "#601500",
+              "primary-fixed-dim": "#5cef93",
+              "surface-dim": "#d0d5d4",
+              "secondary-fixed": "#ffc791",
+              "secondary": "#874e00",
+              "on-tertiary-fixed": "#340800",
+              "on-error-container": "#520c00",
+              "surface-tint": "#006a37",
+              "on-primary-fixed-variant": "#006a37",
+              "inverse-surface": "#0b0f0f",
+              "surface-container": "#e6e9e8",
+              "surface-container-high": "#dfe3e2",
+              "on-primary-fixed": "#004a24",
+              "on-primary": "#ccffd5",
+              "outline": "#747777",
+              "on-tertiary": "#ffefeb",
+              "surface-container-low": "#eff1f0",
+              "primary-container": "#6cfea0",
+              "surface-bright": "#f5f7f6",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-container": "#ff9475",
+              "on-background": "#2c2f2f",
+              "on-secondary-fixed-variant": "#774400",
+              "surface-container-highest": "#d9dedd"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #f5f7f6;
+        font-family: 'Inter', sans-serif;
+      }
+      .font-headline {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      /* Custom focus-within styling for input container */
+      .input-container:focus-within {
+        background-color: #ffffff;
+        box-shadow: 0 0 0 2px #6cfea0;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="ia-shell-styles">
+.ia-header{position:sticky;top:0;z-index:60;background:rgba(245,247,246,.96);backdrop-filter:blur(18px);border-bottom:1px solid rgba(171,174,173,.6)}
+.ia-header-inner{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}
+.ia-header-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;color:#114a2c;flex:1;text-align:center}
+.ia-icon-btn,.ia-text-btn{display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;color:#006a37;cursor:pointer;border-radius:999px}
+.ia-icon-btn{width:40px;height:40px}.ia-text-btn{padding:0 14px;height:40px;font:600 14px Inter,sans-serif}.ia-icon-slot{width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.ia-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:space-around;align-items:center;padding:10px 16px 20px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-top:1px solid rgba(171,174,173,.45);border-top-left-radius:32px;border-top-right-radius:32px;box-shadow:0 -10px 32px rgba(44,47,47,.06)}
+.ia-tab{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:72px;padding:8px 6px;border:none;background:transparent;color:#6b7280;cursor:pointer}
+.ia-tab.active{color:#006a37}.ia-tab .material-symbols-outlined{font-size:22px}.ia-tab-label{font:700 11px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.ia-click{cursor:pointer}
+body.ia-has-nav{padding-bottom:96px}
+</style>
+</head>
+<body class="min-h-screen bg-surface flex flex-col text-on-surface items-center ia-has-nav"><header class="ia-header" id="ia-header"><div class="ia-header-inner"><button class="ia-icon-btn" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'"><span class="material-symbols-outlined">arrow_back</span></button><div class="ia-header-title">Log lunch</div><div class="ia-icon-slot"></div></div></header>
+<!-- Top App Bar -->
+<main class="w-full max-w-md px-6 pt-8 pb-32 flex-grow">
+<!-- Hero Section -->
+<section class="mb-10">
+<h2 class="text-[32px] font-headline font-extrabold leading-tight tracking-tight text-on-surface">
+                What are you having?
+            </h2>
+<p class="text-on-surface-variant mt-2 font-body text-md leading-relaxed">
+                Categorize your meal to better understand its impact on your energy levels.
+            </p>
+</section>
+<!-- Meal Tag Grid (2x4) -->
+<section class="grid grid-cols-2 gap-4 mb-8">
+<!-- Carb-heavy (Active state example) -->
+<button class="flex flex-col items-center justify-center p-6 rounded-lg bg-primary-container text-on-primary-container border-2 border-primary transition-all active:scale-95" onclick="selectMeal(this, 'Your last carb-heavy lunch: 2/5 energy on average — 3 logs.')">
+<span class="material-symbols-outlined text-3xl mb-2" style="font-variation-settings: 'FILL' 1;">meal_dinner</span>
+<span class="font-label font-semibold text-sm">Carb-heavy</span>
+</button>
+<!-- Protein bowl -->
+<button class="flex flex-col items-center justify-center p-6 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all active:scale-95" onclick="selectMeal(this, 'Your last protein bowl lunch: 4/5 energy on average — 2 logs.')">
+<span class="material-symbols-outlined text-3xl mb-2">egg</span>
+<span class="font-label font-semibold text-sm">Protein bowl</span>
+</button>
+<!-- Salad -->
+<button class="flex flex-col items-center justify-center p-6 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all active:scale-95" onclick="selectMeal(this, '')">
+<span class="material-symbols-outlined text-3xl mb-2">energy_savings_leaf</span>
+<span class="font-label font-semibold text-sm">Salad</span>
+</button>
+<!-- Fast food -->
+<button class="flex flex-col items-center justify-center p-6 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all active:scale-95" onclick="selectMeal(this, '')">
+<span class="material-symbols-outlined text-3xl mb-2">fastfood</span>
+<span class="font-label font-semibold text-sm">Fast food</span>
+</button>
+<!-- Soup -->
+<button class="flex flex-col items-center justify-center p-6 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all active:scale-95" onclick="selectMeal(this, '')">
+<span class="material-symbols-outlined text-3xl mb-2">soup_kitchen</span>
+<span class="font-label font-semibold text-sm">Soup</span>
+</button>
+<!-- Light snack -->
+<button class="flex flex-col items-center justify-center p-6 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all active:scale-95" onclick="selectMeal(this, '')">
+<span class="material-symbols-outlined text-3xl mb-2">chips</span>
+<span class="font-label font-semibold text-sm">Light snack</span>
+</button>
+<!-- Mixed plate -->
+<button class="flex flex-col items-center justify-center p-6 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all active:scale-95" onclick="selectMeal(this, '')">
+<span class="material-symbols-outlined text-3xl mb-2">restaurant</span>
+<span class="font-label font-semibold text-sm">Mixed plate</span>
+</button>
+<!-- Fried/heavy -->
+<button class="flex flex-col items-center justify-center p-6 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-all active:scale-95" onclick="selectMeal(this, '')">
+<span class="material-symbols-outlined text-3xl mb-2">outdoor_grill</span>
+<span class="font-label font-semibold text-sm">Fried/heavy</span>
+</button>
+</section>
+<!-- Insights Callout -->
+<section class="mb-10 px-6 py-5 bg-surface-container-low rounded-lg flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">query_stats</span>
+<div id="history-callout" style="display:none;">
+<p class="text-sm font-medium text-on-surface leading-tight">
+                    Your last <span class="text-primary font-bold">Carb-heavy</span> lunch:
+                </p>
+<p class="text-xs text-on-surface-variant mt-1">
+                    2/5 energy on average — 3 logs
+                </p>
+</div>
+</section>
+<!-- Secondary Actions -->
+<section class="space-y-6">
+<!-- Add Photo -->
+<button class="flex items-center gap-3 text-primary font-semibold py-2 px-1 hover:opacity-80 transition-opacity active:scale-95">
+<span class="material-symbols-outlined">add_a_photo</span>
+<span class="font-headline text-md">Add a photo</span>
+</button>
+<!-- Add Note -->
+<div class="input-container bg-surface-container-high rounded-lg p-4 transition-all border-none">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">edit_note</span>
+<label class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Note</label>
+</div>
+<textarea class="w-full bg-transparent border-none focus:ring-0 text-on-surface font-body p-0 placeholder-on-surface-variant" placeholder="Add a note..." rows="2"></textarea>
+</div>
+</section>
+</main>
+<!-- Footer CTA -->
+<!-- Content Separation Design Element -->
+<div class="fixed top-0 left-0 w-full h-24 bg-gradient-to-b from-surface to-transparent pointer-events-none z-40"></div>
+<!-- Image Placeholder for Aesthetic Context (Editorial Image) -->
+<div class="sr-only">
+<img alt="Healthy Food" data-alt="vibrant healthy salad bowl with avocado, greens and radish on a clean light tabletop with soft natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrjseh_h3b-KgnXJTGLvlR_Bi1m7BH3Xnut3p3GZyWFdBsy1mJ5pO3Prvt-L9vB8raweJ-HX71pt3BKe8JfSmDm1FI5WxiEvbj76mPGDc6YQI1amxjza0tiK9QYVfU5TIE8LMun3D0V9qRWlG0eUVyFakL6Uxd76IFhtaifChIue_D0KL8Yb19IAuG24OlSfLfWb8wiR3Xa2IbExy2laf1RVaKB0iLE9u93XG6W7TcXSCIWHD9ny82eS-i3AEC97JDeKbJrNoiOVQ"/>
+</div>
+<nav class="ia-bottom-nav" id="ia-bottom-nav"><button class="ia-tab active" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span><span class="ia-tab-label">Home</span></button><button class="ia-tab" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'"><span class="material-symbols-outlined">receipt_long</span><span class="ia-tab-label">History</span></button><button class="ia-tab" onclick="window.location.href='f602280fe0fe42619a1c1bdfb6c0a612.html'"><span class="material-symbols-outlined">query_stats</span><span class="ia-tab-label">Patterns</span></button></nav><script>
+function selectMeal(el, message) {
+  document.querySelectorAll('section button').forEach((btn) => {
+    btn.classList.remove('bg-primary-container','text-on-primary-container','border-primary');
+    btn.classList.add('bg-surface-container-lowest','text-on-surface');
+  });
+  el.classList.add('bg-primary-container','text-on-primary-container','border-primary');
+  el.classList.remove('bg-surface-container-lowest','text-on-surface');
+  const callout = document.getElementById('history-callout');
+  if (callout) {
+    if (message) {
+      callout.style.display = '';
+      const textNode = callout.querySelector('p,span,div') || callout;
+      textNode.textContent = message;
+    } else {
+      callout.style.display = 'none';
+    }
+  }
+  const submit = document.getElementById('log-submit');
+  if (submit) {
+    submit.disabled = false;
+    submit.classList.remove('opacity-50');
+  }
+}
+</script></body></html>

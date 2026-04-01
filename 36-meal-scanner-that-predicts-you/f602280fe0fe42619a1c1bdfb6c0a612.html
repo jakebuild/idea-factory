@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Vitality Patterns — Locked State</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed-dim": "#ff7d57",
+                        "tertiary": "#ab2d00",
+                        "on-surface-variant": "#595c5c",
+                        "primary-fixed-dim": "#5cef93",
+                        "surface-variant": "#d9dedd",
+                        "surface-tint": "#006a37",
+                        "inverse-primary": "#6cfea0",
+                        "error-container": "#f95630",
+                        "surface-bright": "#f5f7f6",
+                        "on-primary-fixed": "#004a24",
+                        "secondary-fixed": "#ffc791",
+                        "primary-fixed": "#6cfea0",
+                        "surface-dim": "#d0d5d4",
+                        "surface": "#f5f7f6",
+                        "background": "#f5f7f6",
+                        "on-error-container": "#520c00",
+                        "on-tertiary-fixed-variant": "#6f1a00",
+                        "on-primary": "#ccffd5",
+                        "on-secondary-fixed": "#4f2c00",
+                        "error": "#b02500",
+                        "on-secondary-fixed-variant": "#774400",
+                        "surface-container-highest": "#d9dedd",
+                        "on-primary-fixed-variant": "#006a37",
+                        "secondary-dim": "#764400",
+                        "surface-container": "#e6e9e8",
+                        "surface-container-high": "#dfe3e2",
+                        "secondary-container": "#ffc791",
+                        "tertiary-fixed": "#ff9475",
+                        "secondary": "#874e00",
+                        "on-tertiary": "#ffefeb",
+                        "error-dim": "#b92902",
+                        "on-tertiary-fixed": "#340800",
+                        "primary-container": "#6cfea0",
+                        "tertiary-container": "#ff9475",
+                        "on-error": "#ffefec",
+                        "outline-variant": "#abaead",
+                        "on-surface": "#2c2f2f",
+                        "inverse-surface": "#0b0f0f",
+                        "tertiary-dim": "#962700",
+                        "surface-container-low": "#eff1f0",
+                        "outline": "#747777",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#fff0e5",
+                        "on-tertiary-container": "#601500",
+                        "primary-dim": "#005c2f",
+                        "inverse-on-surface": "#9b9d9d",
+                        "on-secondary-container": "#6a3c00",
+                        "secondary-fixed-dim": "#ffb467",
+                        "on-primary-container": "#005f30",
+                        "on-background": "#2c2f2f",
+                        "primary": "#006a37"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .vitality-ring-gradient {
+            background: conic-gradient(from 0deg, #006a37 0%, #6cfea0 37.5%, transparent 37.5%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="ia-shell-styles">
+.ia-header{position:sticky;top:0;z-index:60;background:rgba(245,247,246,.96);backdrop-filter:blur(18px);border-bottom:1px solid rgba(171,174,173,.6)}
+.ia-header-inner{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}
+.ia-header-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;color:#114a2c;flex:1;text-align:center}
+.ia-icon-btn,.ia-text-btn{display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;color:#006a37;cursor:pointer;border-radius:999px}
+.ia-icon-btn{width:40px;height:40px}.ia-text-btn{padding:0 14px;height:40px;font:600 14px Inter,sans-serif}.ia-icon-slot{width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.ia-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:space-around;align-items:center;padding:10px 16px 20px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-top:1px solid rgba(171,174,173,.45);border-top-left-radius:32px;border-top-right-radius:32px;box-shadow:0 -10px 32px rgba(44,47,47,.06)}
+.ia-tab{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:72px;padding:8px 6px;border:none;background:transparent;color:#6b7280;cursor:pointer}
+.ia-tab.active{color:#006a37}.ia-tab .material-symbols-outlined{font-size:22px}.ia-tab-label{font:700 11px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.ia-click{cursor:pointer}
+body.ia-has-nav{padding-bottom:96px}
+</style>
+</head>
+<body class="min-h-screen bg-surface flex flex-col text-on-surface font-body ia-has-nav"><header class="ia-header" id="ia-header"><div class="ia-header-inner"><div class="ia-icon-slot"></div><div class="ia-header-title">Patterns</div><div class="ia-icon-slot"></div></div></header>
+<!-- TopAppBar -->
+
+<!-- Main Content Canvas -->
+<main class="flex-1 mt-20 mb-28 px-6 max-w-screen-xl mx-auto w-full flex flex-col items-center justify-center">
+<!-- Hero Section: The Locked State -->
+<section class="w-full max-w-md text-center space-y-12">
+<!-- Vitality Ring Progress Anchor -->
+<div class="relative w-64 h-64 mx-auto flex items-center justify-center">
+<!-- Ghost Ring -->
+<div class="absolute inset-0 rounded-full border-[16px] border-primary-container/30"></div>
+<!-- Active Progress (Simulated Ring) -->
+<div class="absolute inset-0 rounded-full border-[16px] border-transparent border-t-primary border-r-primary vitality-ring-gradient rotate-[-45deg]"></div>
+<!-- Inner Content -->
+<div class="flex flex-col items-center justify-center bg-surface-container-lowest rounded-full w-48 h-48 shadow-[0_24px_40px_rgba(44,47,47,0.04)]">
+<span class="material-symbols-outlined text-4xl text-primary-dim/40 mb-2" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="text-4xl font-extrabold font-headline text-primary tracking-tighter">3 of 8</span>
+<span class="text-xs font-semibold text-outline tracking-widest uppercase mt-1">Check-ins</span>
+</div>
+</div>
+<!-- Copy Cluster: Intentional Asymmetry & Editorial Typography -->
+<div class="space-y-6">
+<h2 class="text-4xl font-extrabold font-headline text-on-surface leading-tight tracking-tight">
+                    Keep logging to <span class="text-primary">unlock</span> your lunch patterns.
+                </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-[300px] mx-auto">
+                    We need a few more data points to identify the nutrients driving your midday energy.
+                </p>
+</div>
+<!-- Action Area -->
+<div class="pt-4 flex flex-col gap-4 items-center">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-bold text-lg flex items-center gap-3 transition-transform active:scale-95 shadow-lg shadow-primary/10 ia-click" onclick="window.location.href='f2b03d34def74a24a21f7712f9881de2.html'">
+                    Log Today's Lunch
+                    <span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+</button>
+<button class="text-primary font-semibold px-8 py-3 rounded-full hover:bg-primary/5 transition-colors">
+                    Why 8 check-ins?
+                </button>
+</div>
+</section>
+<!-- Secondary Info Layer: Tonal Nesting -->
+<section class="w-full mt-16">
+<div class="bg-surface-container-low rounded-lg p-8 flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1 space-y-3">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-xl" data-icon="auto_awesome">auto_awesome</span>
+<span class="font-bold text-sm uppercase tracking-wider">Coming Soon</span>
+</div>
+<h3 class="text-2xl font-bold font-headline text-on-surface">The Nutrition Mirror</h3>
+<p class="text-on-surface-variant">Once unlocked, you'll see a deep-dive analysis of how your protein-to-carb ratios affect your 3 PM focus levels.</p>
+</div>
+<div class="relative w-full md:w-48 h-32 rounded-xl overflow-hidden bg-surface-container-highest">
+<img alt="Healthy lunch patterns" class="w-full h-full object-cover grayscale opacity-50 mix-blend-multiply" data-alt="Abstract view of vibrant green vegetables and citrus slices on a minimalist white surface with soft artistic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnpGDmNfa0Go4voIIp7wq4UshdjjCPZKOXcs7OjjTMKaWKyfAJpZEZZgLsgi0626bgy2gY96yzqgnHqt11KmPA-5CDQ5dw54Lr3kBmsxFIRMXjRHqtzgwVd_PLzkK4U7d0mv_LY1A5OkGc9lXgjKFfINpnzTEem0z14qMihRhE-9-gsl56kguSB9TU2tE1ODi8KOpJUx-gLGapAThZmENDk4lEBscMoMgOCu56DUf9LaEAtlFrUXeLEpYvU81HrEDvuS3tfC3vN08"/>
+<div class="absolute inset-0 flex items-center justify-center backdrop-blur-[2px] bg-surface-container/20">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="visibility_off">visibility_off</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="ia-bottom-nav" id="ia-bottom-nav"><button class="ia-tab" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'"><span class="material-symbols-outlined">home</span><span class="ia-tab-label">Home</span></button><button class="ia-tab" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'"><span class="material-symbols-outlined">receipt_long</span><span class="ia-tab-label">History</span></button><button class="ia-tab active" onclick="window.location.href='f602280fe0fe42619a1c1bdfb6c0a612.html'"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">query_stats</span><span class="ia-tab-label">Patterns</span></button></nav></body></html>

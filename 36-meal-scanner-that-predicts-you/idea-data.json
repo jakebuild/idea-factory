@@ -1,0 +1,51 @@
+{
+  "ideaNum": 36,
+  "title": "Lunch Lab",
+  "sub": "Track lunch tags and post-meal energy to uncover your afternoon crash patterns.",
+  "score": "6/10",
+  "deviceType": "MOBILE",
+  "stitchId": "2241967484609120344",
+  "startScreen": 0,
+  "screens": [
+    {
+      "id": "e0c56f18a80f4dc69f71d04b2104b5e3",
+      "label": "Onboarding (Step 1 of 2)"
+    },
+    {
+      "id": "0b7b1755c2854531b342b2c6838fd3ca",
+      "label": "Onboarding (Step 2 of 2)"
+    },
+    {
+      "id": "4e67307382c54846909a3ad58e5af910",
+      "label": "Home"
+    },
+    {
+      "id": "f2b03d34def74a24a21f7712f9881de2",
+      "label": "Log Meal"
+    },
+    {
+      "id": "75649add3de44da887481f27d4a08249",
+      "label": "Logged Confirmation"
+    },
+    {
+      "id": "76d8d43aa42446f59d4c0efd87b42842",
+      "label": "Check-in Prompt"
+    },
+    {
+      "id": "9571652d2a8b421daaba705ed8665827",
+      "label": "Log Detail"
+    },
+    {
+      "id": "6151fe2f610f4eeeb3d74e3d8761f2e5",
+      "label": "Log History"
+    },
+    {
+      "id": "f602280fe0fe42619a1c1bdfb6c0a612",
+      "label": "Patterns - Locked State"
+    },
+    {
+      "id": "21bcf00a5fb74c429e5a79ee34609b71",
+      "label": "Patterns - Unlocked State"
+    }
+  ]
+}

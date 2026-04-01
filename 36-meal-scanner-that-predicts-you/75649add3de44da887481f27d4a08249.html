@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Meal Logged - Vitality</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary": "#ffefeb",
+                        "tertiary-dim": "#962700",
+                        "error-container": "#f95630",
+                        "on-primary": "#ccffd5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d0d5d4",
+                        "inverse-primary": "#6cfea0",
+                        "inverse-on-surface": "#9b9d9d",
+                        "on-tertiary-container": "#601500",
+                        "error-dim": "#b92902",
+                        "surface-bright": "#f5f7f6",
+                        "surface-container": "#e6e9e8",
+                        "tertiary-fixed-dim": "#ff7d57",
+                        "secondary-fixed-dim": "#ffb467",
+                        "primary-fixed-dim": "#5cef93",
+                        "on-surface-variant": "#595c5c",
+                        "background": "#f5f7f6",
+                        "tertiary-container": "#ff9475",
+                        "on-error": "#ffefec",
+                        "tertiary-fixed": "#ff9475",
+                        "primary": "#006a37",
+                        "on-primary-fixed-variant": "#006a37",
+                        "secondary": "#874e00",
+                        "surface-container-high": "#dfe3e2",
+                        "on-primary-fixed": "#004a24",
+                        "primary-fixed": "#6cfea0",
+                        "on-surface": "#2c2f2f",
+                        "secondary-dim": "#764400",
+                        "secondary-container": "#ffc791",
+                        "on-background": "#2c2f2f",
+                        "inverse-surface": "#0b0f0f",
+                        "on-secondary": "#fff0e5",
+                        "on-primary-container": "#005f30",
+                        "surface-tint": "#006a37",
+                        "on-tertiary-fixed-variant": "#6f1a00",
+                        "surface": "#f5f7f6",
+                        "primary-dim": "#005c2f",
+                        "on-tertiary-fixed": "#340800",
+                        "primary-fixed": "#6cfea0",
+                        "on-secondary-container": "#6a3c00",
+                        "outline-variant": "#abaead",
+                        "on-error-container": "#520c00",
+                        "on-secondary-fixed-variant": "#774400",
+                        "surface-container-highest": "#d9dedd",
+                        "error": "#b02500",
+                        "secondary-fixed": "#ffc791",
+                        "on-secondary-fixed": "#4f2c00",
+                        "surface-container-low": "#eff1f0",
+                        "outline": "#747777",
+                        "tertiary": "#ab2d00"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .vitality-ring-gradient {
+            background: conic-gradient(from 0deg, #006a37 0% 75%, transparent 75% 100%);
+        }
+        .bg-confetti-pattern {
+            background-image: radial-gradient(circle, #6cfea0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="ia-shell-styles">
+.ia-header{position:sticky;top:0;z-index:60;background:rgba(245,247,246,.96);backdrop-filter:blur(18px);border-bottom:1px solid rgba(171,174,173,.6)}
+.ia-header-inner{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:12px}
+.ia-header-title{font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.03em;color:#114a2c;flex:1;text-align:center}
+.ia-icon-btn,.ia-text-btn{display:inline-flex;align-items:center;justify-content:center;border:none;background:transparent;color:#006a37;cursor:pointer;border-radius:999px}
+.ia-icon-btn{width:40px;height:40px}.ia-text-btn{padding:0 14px;height:40px;font:600 14px Inter,sans-serif}.ia-icon-slot{width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.ia-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;justify-content:space-around;align-items:center;padding:10px 16px 20px;background:rgba(255,255,255,.92);backdrop-filter:blur(20px);border-top:1px solid rgba(171,174,173,.45);border-top-left-radius:32px;border-top-right-radius:32px;box-shadow:0 -10px 32px rgba(44,47,47,.06)}
+.ia-tab{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:72px;padding:8px 6px;border:none;background:transparent;color:#6b7280;cursor:pointer}
+.ia-tab.active{color:#006a37}.ia-tab .material-symbols-outlined{font-size:22px}.ia-tab-label{font:700 11px Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.ia-click{cursor:pointer}
+body.ia-has-nav{padding-bottom:96px}
+</style>
+</head>
+<body class="bg-surface selection:text-on-primary-container selection:bg-primary-container text-on-surface overflow-hidden font-body ia-has-nav"><header class="ia-header" id="ia-header"><div class="ia-header-inner"><button class="ia-icon-btn" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'"><span class="material-symbols-outlined">arrow_back</span></button><div class="ia-header-title">Lunch logged</div><div class="ia-icon-slot"></div></div></header>
+<!-- Top Navigation (Shell suppressed for transactional flow, showing simplified "Close" header) -->
+
+<main class="flex-1 flex flex-col items-center justify-center min-h-[751px] px-8 text-center">
+<!-- Success Animation/Graphic Area -->
+<div class="relative mb-12 flex items-center justify-center">
+<!-- Animated Background Pulse -->
+<div class="absolute w-64 h-64 bg-primary-container/20 rounded-full blur-3xl animate-pulse"></div>
+<!-- Vitality Ring Signature Component -->
+<div class="relative w-48 h-48 rounded-full border-[12px] border-primary-container/30 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full border-[12px] border-primary vitality-ring-gradient rotate-12"></div>
+<div class="w-40 h-40 bg-surface-container-lowest rounded-full flex flex-col items-center justify-center shadow-[0_24px_40px_rgba(0,0,0,0.04)]">
+<span class="material-symbols-outlined text-primary text-5xl mb-1" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-headline font-extrabold text-2xl text-on-surface">Logged</span>
+</div>
+</div>
+</div>
+<!-- Meal Metadata -->
+<div class="mb-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-secondary-container rounded-full mb-4">
+<span class="material-symbols-outlined text-on-secondary-container text-sm" data-icon="restaurant">restaurant</span>
+<span class="font-label text-sm font-semibold text-on-secondary-container">Carb-heavy</span>
+</div>
+<h2 class="font-headline text-3xl font-bold tracking-tight text-on-surface mb-2">Meal Recorded.</h2>
+<p class="font-body text-on-surface-variant max-w-xs mx-auto leading-relaxed">
+                Your vitality score is adapting. Great job on tracking your lunch!
+            </p>
+</div>
+<!-- Next Check-in Interaction -->
+<div class="w-full max-w-sm p-6 rounded-lg bg-surface-container-low flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label text-sm text-on-surface-variant">Next Check-in</span>
+<span class="font-headline font-bold text-primary">2:30 PM</span>
+</div>
+<!-- Visual Timeline Representation -->
+<div class="relative h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="absolute top-0 left-0 h-full w-2/3 bg-primary rounded-full"></div>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-3 rounded-[1.25rem]">
+<div class="w-8 h-8 rounded-full bg-tertiary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-lg" data-icon="schedule">schedule</span>
+</div>
+<p class="text-xs font-medium text-left text-on-surface-variant leading-tight">
+                    Logged. Check back in at <span class="text-on-surface font-bold">2:30 PM</span> to track your energy levels.
+                </p>
+</div>
+</div>
+</main>
+<!-- Bottom Action Anchor -->
+<div class="fixed bottom-0 w-full px-8 pb-12 pt-6 bg-gradient-to-t from-surface via-surface to-transparent">
+<button class="w-full h-16 bg-gradient-to-br from-primary to-primary-container text-on-primary-container font-headline font-bold text-lg rounded-full flex items-center justify-center gap-2 transition-transform active:scale-95 shadow-[0_24px_40px_rgba(0,106,55,0.1)] ia-click" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'">
+            Done
+            <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Background Decorative Elements -->
+<div class="fixed -bottom-24 -left-24 w-64 h-64 bg-primary-container/10 rounded-full blur-[80px] pointer-events-none"></div>
+<div class="fixed -top-24 -right-24 w-64 h-64 bg-tertiary-container/10 rounded-full blur-[80px] pointer-events-none"></div>
+<nav class="ia-bottom-nav" id="ia-bottom-nav"><button class="ia-tab active" onclick="window.location.href='4e67307382c54846909a3ad58e5af910.html'"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1">home</span><span class="ia-tab-label">Home</span></button><button class="ia-tab" onclick="window.location.href='6151fe2f610f4eeeb3d74e3d8761f2e5.html'"><span class="material-symbols-outlined">receipt_long</span><span class="ia-tab-label">History</span></button><button class="ia-tab" onclick="window.location.href='f602280fe0fe42619a1c1bdfb6c0a612.html'"><span class="material-symbols-outlined">query_stats</span><span class="ia-tab-label">Patterns</span></button></nav></body></html>

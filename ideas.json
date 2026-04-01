@@ -178,5 +178,15 @@
     "folder": "35-dating-profile-scorer-and-roas",
     "startScreenId": "67f737aeac33418494cd6738c7182fa5",
     "status": "complete"
+  },
+  {
+    "num": 36,
+    "title": "Lunch Lab",
+    "sub": "Track lunch tags and post-meal energy to uncover your afternoon crash patterns.",
+    "score": "6/10",
+    "deviceType": "MOBILE",
+    "folder": "36-meal-scanner-that-predicts-you",
+    "startScreenId": "e0c56f18a80f4dc69f71d04b2104b5e3",
+    "status": "complete"
   }
 ]
