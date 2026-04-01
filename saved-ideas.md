@@ -32,3 +32,10 @@
 **Copies:** UMax — proved people will pay for a blunt attractiveness score and a personalized "fix this first" upsell
 **Hook:** It tells you tonight whether tomorrow's face will betray you.
 **Submit:** idea-factory submit "Beauty-prediction app for tomorrow morning. Scan your dinner, dessert, or drinks and log your planned sleep, and the app predicts your next-morning Puff Score: puffiness, acne risk, dullness, and the exact time your face is likely to look camera-ready again. The loop is scan tonight, see tomorrow's damage, then follow one simple save-it action like extra water, an earlier bedtime, or skipping the salty add-on, so it feels like Cal AI for beauty anxiety instead of calories."
+
+## Hairline Receipt
+**Source:** mix-20260401-210051.md
+**Targets:** Attractiveness
+**Copies:** UMax — proved people will pay for a blunt appearance verdict and a clear "fix this first" upsell
+**Hook:** It tells you whether your hairline is actually moving or whether you are just spiraling.
+**Submit:** idea-factory submit "Weekly hairline tracker for men who think they might be thinning. Take the same guided selfies each week and the app measures temple recession, crown visibility, and overall hairline change against your own baseline, then shows a blunt Hairline Loss Score and a 6-month projection if nothing changes. The loop is simple: scan, see proof of change or no change, follow one action for the next week, and come back because hair anxiety is not a one-time problem."
