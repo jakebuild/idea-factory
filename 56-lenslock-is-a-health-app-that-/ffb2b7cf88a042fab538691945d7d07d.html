@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Ocularis - Alert Status</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#006a60",
+              "background": "#f7f9fb",
+              "primary-fixed": "#cbe6ff",
+              "surface-tint": "#006494",
+              "tertiary-fixed-dim": "#a9c7ff",
+              "on-secondary-fixed-variant": "#005048",
+              "on-primary-fixed": "#001e30",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f2f4f6",
+              "on-surface-variant": "#414754",
+              "outline": "#717786",
+              "on-secondary-fixed": "#00201c",
+              "on-primary-fixed-variant": "#004b71",
+              "on-primary": "#ffffff",
+              "on-background": "#191c1e",
+              "surface-container": "#eceef0",
+              "outline-variant": "#c1c6d7",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#1a73da",
+              "surface-variant": "#e0e3e5",
+              "on-tertiary-fixed": "#001b3e",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#8ecdff",
+              "surface-dim": "#d8dadc",
+              "secondary-fixed": "#9cf2e5",
+              "inverse-on-surface": "#eff1f3",
+              "secondary-fixed-dim": "#80d6c9",
+              "on-tertiary-container": "#fefcff",
+              "inverse-primary": "#8ecdff",
+              "surface-bright": "#f7f9fb",
+              "secondary-container": "#99efe2",
+              "on-error": "#ffffff",
+              "on-surface": "#191c1e",
+              "tertiary-fixed": "#d6e3ff",
+              "error": "#ba1a1a",
+              "on-tertiary": "#ffffff",
+              "surface": "#f7f9fb",
+              "surface-container-highest": "#e0e3e5",
+              "on-tertiary-fixed-variant": "#00468c",
+              "primary-container": "#2d7bac",
+              "primary": "#006190",
+              "on-primary-container": "#fcfcff",
+              "tertiary": "#005bb3",
+              "on-secondary-container": "#006f65",
+              "surface-container-high": "#e6e8ea",
+              "inverse-surface": "#2d3133",
+              "on-error-container": "#93000a"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f7f9fb;
+      }
+      h1, h2, h3 {
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-24"><header class="fixed top-0 left-0 right-0 z-50 h-16 px-5 bg-slate-50/92 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,97,144,0.08)] flex items-center justify-between"><div class="flex items-center gap-3 min-w-0"><button class="h-10 w-10 rounded-full bg-surface-container-low text-primary flex items-center justify-center shrink-0" onclick="window.location.href='8165fdd79ba145d8822c8e0033c5c634.html'" type="button"><span class="material-symbols-outlined">arrow_back</span></button><div class="min-w-0"><div class="font-headline text-[18px] font-extrabold tracking-tight text-on-surface truncate">Still In</div><div class="text-[11px] uppercase tracking-[0.18em] text-on-surface-variant">LensLock</div></div></div><div class="flex items-center gap-2 shrink-0"></div></header>
+<!-- TopAppBar Section -->
+
+<main class="pt-24 px-6 max-w-lg mx-auto pb-32">
+<!-- Status Header: Unresolved State -->
+<section class="mb-10 text-center">
+<div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-error-container text-error mb-6 shadow-sm">
+<span class="material-symbols-outlined !text-4xl" data-icon="notification_important" style="font-variation-settings: 'FILL' 1;">notification_important</span>
+</div>
+<h2 class="text-3xl font-extrabold tracking-tight mb-3 text-on-surface">Still In</h2>
+<p class="text-on-surface-variant leading-relaxed px-4">
+                Your lenses are currently past their daily wear limit. Your corneal health is our priority.
+            </p>
+</section>
+<!-- Snooze Confirmation -->
+<div class="bg-surface-container-low rounded-2xl p-5 flex items-center gap-4 mb-8">
+<div class="bg-primary-container/20 p-3 rounded-xl">
+<span class="material-symbols-outlined text-primary" data-icon="timer">timer</span>
+</div>
+<div>
+<p class="text-sm font-semibold text-primary">Snoozed for 15 minutes</p>
+<p class="text-xs text-on-surface-variant">We'll check back with you at 11:45 PM</p>
+</div>
+</div>
+<!-- Primary Action -->
+<div class="mb-10">
+<button class="w-full py-5 rounded-xl bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold text-lg shadow-[0_12px_32px_rgba(0,97,144,0.12)] active:scale-95 transition-transform flex items-center justify-center gap-3" onclick="window.location.href='64da3e881ba44df1b26c4064ff6f13af.html'">
+<span class="material-symbols-outlined" data-icon="done_all">done_all</span>
+                Lenses are Out
+            </button>
+<button class="w-full py-4 mt-4 text-primary font-semibold text-sm hover:bg-primary/5 rounded-lg transition-colors" onclick="window.location.href='64da3e881ba44df1b26c4064ff6f13af.html'">
+                Extend for 1 hour
+            </button>
+</div>
+<!-- Educational Bento Section -->
+<div class="grid grid-cols-1 gap-4">
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_8px_24px_rgba(0,97,144,0.04)]">
+<div class="flex items-center gap-2 mb-4 text-secondary">
+<span class="material-symbols-outlined text-xl" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-bold text-xs uppercase tracking-widest">Clinical Insight</span>
+</div>
+<h3 class="text-xl font-bold mb-2">The Hypoxia Risk</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-4">
+                    Sleeping in contacts reduces oxygen flow to your cornea by up to <span class="text-error font-bold">90%</span>, significantly increasing the risk of microbial keratitis.
+                </p>
+<div class="relative w-full h-48 rounded-xl overflow-hidden mb-2">
+<img alt="Clinical eye health visualization" class="w-full h-full object-cover" data-alt="Macro photography of a human eye with high detail and soft blue atmospheric lighting, professional clinical aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOQa7wEXAc0cyxAdLWAATOM7UTb7wVcv7wTrAPuaskN7shHg9Bt42UTldnVoKf0rmUaXllbYKX-0CT5kRSdGIwyHfeD15YSd1insjdHrDMpKIWsrS9P7qSA7f5dDG57swAbWU0Kzofpb7IclsVbWZdCP8TfOdQEyMJ21kfA91EX3S_kjZ5G7C99QkdYBzYfzf_Qa5EDazp7gPuAHTrihMX1B6e5G18tPJnqazYFygC8u5V2ztdagkWe3kXkrc00ovVi9Bw7-Gwxbg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+</div>
+<!-- Side Cards Asymmetric -->
+<div class="flex flex-col gap-4">
+<div class="bg-secondary-container/30 rounded-2xl p-5 border-l-4 border-secondary">
+<p class="text-on-secondary-container text-sm font-medium">
+                        "Removing lenses only takes 60 seconds, but your eyes need 8 hours of rest."
+                    </p>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-5 flex justify-between items-center group cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline" data-icon="menu_book">menu_book</span>
+<span class="text-sm font-semibold">View Removal Guide</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Section -->
+
+<nav class="fixed bottom-0 left-0 right-0 z-50 rounded-t-[28px] bg-slate-50/92 backdrop-blur-xl shadow-[0_-8px_24px_rgba(0,97,144,0.08)] flex justify-around items-center px-4 pt-3 pb-6"><a class="flex flex-col items-center justify-center rounded-full transition-all duration-300 bg-teal-100 text-teal-900 px-4 py-1" href="#" onclick="window.location.href='64da3e881ba44df1b26c4064ff6f13af.html'"><span class="material-symbols-outlined">home</span><span class="font-['Inter'] text-[10px] font-medium mt-1">Home</span></a><a class="flex flex-col items-center justify-center rounded-full transition-all duration-300 text-slate-500 px-3 py-1 hover:bg-slate-200/60" href="#" onclick="window.location.href='2cc307ef3dec476ea083269557da8205.html'"><span class="material-symbols-outlined">emoji_events</span><span class="font-['Inter'] text-[10px] font-medium mt-1">Challenge</span></a><a class="flex flex-col items-center justify-center rounded-full transition-all duration-300 text-slate-500 px-3 py-1 hover:bg-slate-200/60" href="#" onclick="window.location.href='09335612b931470e87e452bc2b4134be.html'"><span class="material-symbols-outlined">settings</span><span class="font-['Inter'] text-[10px] font-medium mt-1">Settings</span></a></nav></body></html>

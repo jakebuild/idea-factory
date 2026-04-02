@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Ocularis Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#c1c6d7",
+                        "on-background": "#191c1e",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e6e8ea",
+                        "on-primary-fixed": "#001e30",
+                        "on-error-container": "#93000a",
+                        "secondary": "#006a60",
+                        "on-secondary-container": "#006f65",
+                        "surface-tint": "#006494",
+                        "primary": "#006190",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#2d7bac",
+                        "tertiary": "#005bb3",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005048",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#8ecdff",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary-fixed-variant": "#00468c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#00201c",
+                        "inverse-surface": "#2d3133",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed": "#d6e3ff",
+                        "surface-variant": "#e0e3e5",
+                        "surface-container-low": "#f2f4f6",
+                        "tertiary-container": "#1a73da",
+                        "on-tertiary-fixed": "#001b3e",
+                        "surface-dim": "#d8dadc",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#414754",
+                        "secondary-fixed-dim": "#80d6c9",
+                        "secondary-container": "#99efe2",
+                        "surface": "#f7f9fb",
+                        "on-primary-container": "#fcfcff",
+                        "surface-bright": "#f7f9fb",
+                        "on-surface": "#191c1e",
+                        "secondary-fixed": "#9cf2e5",
+                        "primary-fixed-dim": "#8ecdff",
+                        "on-primary-fixed-variant": "#004b71",
+                        "outline": "#717786",
+                        "tertiary-fixed-dim": "#a9c7ff",
+                        "on-tertiary-container": "#fefcff",
+                        "surface-container": "#eceef0",
+                        "background": "#f7f9fb",
+                        "primary-fixed": "#cbe6ff",
+                        "surface-container-highest": "#e0e3e5"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-header {
+            background: rgba(247, 249, 251, 0.8);
+            backdrop-filter: blur(24px);
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #006190 0%, #2d7bac 100%);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased mb-24"><header class="fixed top-0 left-0 right-0 z-50 h-16 px-5 bg-slate-50/92 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,97,144,0.08)] flex items-center justify-between"><div class="flex items-center gap-3 min-w-0"><div class="min-w-0"><div class="font-headline text-[18px] font-extrabold tracking-tight text-on-surface truncate">Settings</div><div class="text-[11px] uppercase tracking-[0.18em] text-on-surface-variant">LensLock</div></div></div><div class="flex items-center gap-2 shrink-0"></div></header>
+<!-- TopAppBar -->
+
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-10 pb-32">
+<!-- Hero Section: Bedtime Window -->
+<section class="space-y-4">
+<h2 class="font-headline font-bold text-2xl tracking-tight px-1">Rest &amp; Recovery</h2>
+<div class="surface-container-lowest rounded-xl p-6 shadow-[0_12px_32px_rgba(0,97,144,0.05)] space-y-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="bedtime">bedtime</span>
+</div>
+<div>
+<p class="font-headline font-bold text-on-surface">Bedtime Window</p>
+<p class="text-xs text-on-surface-variant font-medium">Auto-reminders for lens removal</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low rounded-lg p-4 flex flex-col items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-1">Target Sleep</span>
+<span class="font-headline font-extrabold text-xl text-primary">10:30 PM</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-4 flex flex-col items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-1">Wake Time</span>
+<span class="font-headline font-extrabold text-xl text-primary">06:30 AM</span>
+</div>
+</div>
+<div class="pt-2 border-t border-surface-variant/30">
+<button class="w-full py-3 text-sm font-bold text-primary hover:bg-primary/5 rounded-lg transition-colors" onclick="window.location.href='471fb962a2be4c958422e68f0917c99a.html'">Adjust Schedule</button>
+</div>
+</div>
+</section>
+<!-- Interval & Challenge Section (Asymmetric Grid) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Reminder Interval -->
+<div class="surface-container-low rounded-xl p-6 flex flex-col justify-between">
+<div class="space-y-3">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="timer">timer</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface">Check-in Interval</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">How often should Ocularis remind you to check lens hydration?</p>
+</div>
+<div class="mt-6 flex gap-2">
+<button class="flex-1 py-2 text-xs font-bold rounded-full bg-secondary-fixed text-on-secondary-fixed active:scale-95 transition-all">15m</button>
+<button class="flex-1 py-2 text-xs font-bold rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-all">30m</button>
+<button class="flex-1 py-2 text-xs font-bold rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-all">60m</button>
+</div>
+</div>
+<!-- Challenge Control -->
+<div class="primary-gradient rounded-xl p-6 flex flex-col justify-between shadow-[0_12px_32px_rgba(0,97,144,0.15)]">
+<div class="space-y-2">
+<span class="px-2 py-1 bg-white/20 rounded text-[10px] font-black text-white uppercase tracking-tighter">Active Streak: 8 Nights</span>
+<h3 class="font-headline font-bold text-white text-lg">14-Night Challenge</h3>
+<p class="text-sm text-white/80 leading-relaxed">Consistency improves eye moisture levels over time.</p>
+</div>
+<button class="mt-6 w-full py-3 bg-white text-primary font-bold text-sm rounded-lg hover:bg-white/90 active:scale-95 transition-all">Pause 14-Night Challenge</button>
+</div>
+</section>
+<!-- Data Management -->
+<section class="space-y-4 pt-4">
+<h2 class="font-headline font-bold text-lg tracking-tight px-1">Storage &amp; Privacy</h2>
+<div class="space-y-4">
+<div class="surface-container-low rounded-xl p-5 flex items-center justify-between group cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="database">database</span>
+<div>
+<p class="font-bold text-sm">App Cache</p>
+<p class="text-xs text-on-surface-variant">14.2 MB currently used</p>
+</div>
+</div>
+<button class="text-xs font-bold text-primary px-4 py-2 bg-surface-container-lowest rounded-full group-hover:bg-primary group-hover:text-white transition-all">Clear</button>
+</div>
+<div class="bg-error-container/20 rounded-xl p-5 flex items-center justify-between group cursor-pointer hover:bg-error-container/40 transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-error" data-icon="delete_sweep">delete_sweep</span>
+<div>
+<p class="font-bold text-sm text-error">Reset App Data</p>
+<p class="text-xs text-on-error-container/70">Wipes all history and preferences</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-error/40 group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Help & Trust -->
+<section class="mt-12 mb-20">
+<div class="bg-surface-container-high/40 rounded-2xl p-8 text-center space-y-6">
+<div class="flex justify-center -space-x-3">
+<img class="w-12 h-12 rounded-full border-2 border-surface object-cover" data-alt="portrait of a medical professional with a friendly smile wearing glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIYt0fG5xvUVhQ_rj4QAGWurOh2leQhpuXePB89rC208brFfnZGrD26c4HH0E22W4fDgJoR_3_bU1y5L8j8ZcbBq77hGkzuucaXqNAVd0txRQ4mYCefbR-yaNB0d0rP_QiZYcQnnUXGs7mINRa39ljATVylx-mDB_a0SiB3zoiHg3MCx2W5MFdvhDtYQHICQMMoE2KSNVGhBylq7iNL4O_xSzdDh54tUdWrwmcQzPUeWmrbRElKDWMZSO_v4PQwnPsfRVTl1XjQj4"/>
+<img class="w-12 h-12 rounded-full border-2 border-surface object-cover" data-alt="close up profile of a calm person wearing contact lenses in soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa_qgQgivLz2gqRSUTq-zcy_qvY_W-eRdTP386Mhvy56zUvDW3xtt1AlbmyIEO92HBhhk-t41UoCG91CBmPglrWQxDsceOR_YJRLPu6DVYyP1WCdu-2K2Xl2pXXMZs1Aqil0kKolGPKZIfrtngeXpZgfBGfurQo5e4XiQ8ERX07o4D7X2R9KXTwQEHmtIqmGapVqsI4ENtYYYhPSW7joaFbPygtMxvpTgi9dFx4VePcyT9aHP7B1OrUU5U_-E0wl46qrvK1WzFE6c"/>
+<img class="w-12 h-12 rounded-full border-2 border-surface object-cover" data-alt="portrait of a young man with clear eyes reflecting bright clinical light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD858cudXxd__mMf_MO_9RdnqA5L5uWOiGtqjDSQDRqPzqc7fG6mcfZ5LBCykDJl_E5ZjXq1g9GhgpJQDxvTkTrehdMvXcZ2Xl2UVu-jxj61YsVIBfkMj3HGe5O7DiaNKf5ePG8AbrgJ5bV6cuMmGGZiEBIjWhGIw0X-BJgqzt3tg7XKPCBPLFzZb_dp__syhrQaRuB0ktDmcJLJyRTBIz0P5dVLTgXBFDhmbL3BgNn9fzZB67e0Tt1shgghfZ_cr-UOcd9KV6K454"/>
+</div>
+<div class="max-w-md mx-auto space-y-2">
+<h3 class="font-headline font-bold text-on-surface">Data Privacy &amp; Ethics</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed font-medium">
+                        We only track your lens status to help your eye health. No other biometrics are collected. Your vision data is encrypted and remains strictly local.
+                    </p>
+</div>
+<div class="flex flex-col gap-3 max-w-xs mx-auto">
+<a class="inline-flex items-center justify-center gap-2 font-bold text-primary hover:underline text-sm" href="#">
+<span class="material-symbols-outlined text-base" data-icon="help_center">help_center</span>
+                        Help Center
+                    </a>
+<a class="inline-flex items-center justify-center gap-2 font-bold text-primary hover:underline text-sm" href="#">
+<span class="material-symbols-outlined text-base" data-icon="policy">policy</span>
+                        Full Privacy Policy
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="fixed bottom-0 left-0 right-0 z-50 rounded-t-[28px] bg-slate-50/92 backdrop-blur-xl shadow-[0_-8px_24px_rgba(0,97,144,0.08)] flex justify-around items-center px-4 pt-3 pb-6"><a class="flex flex-col items-center justify-center rounded-full transition-all duration-300 text-slate-500 px-3 py-1 hover:bg-slate-200/60" href="#" onclick="window.location.href='64da3e881ba44df1b26c4064ff6f13af.html'"><span class="material-symbols-outlined">home</span><span class="font-['Inter'] text-[10px] font-medium mt-1">Home</span></a><a class="flex flex-col items-center justify-center rounded-full transition-all duration-300 text-slate-500 px-3 py-1 hover:bg-slate-200/60" href="#" onclick="window.location.href='2cc307ef3dec476ea083269557da8205.html'"><span class="material-symbols-outlined">emoji_events</span><span class="font-['Inter'] text-[10px] font-medium mt-1">Challenge</span></a><a class="flex flex-col items-center justify-center rounded-full transition-all duration-300 bg-teal-100 text-teal-900 px-4 py-1" href="#" onclick="window.location.href='09335612b931470e87e452bc2b4134be.html'"><span class="material-symbols-outlined">settings</span><span class="font-['Inter'] text-[10px] font-medium mt-1">Settings</span></a></nav></body></html>

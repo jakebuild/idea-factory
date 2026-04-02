@@ -1,5 +1,37 @@
 [
   {
+    "id": "56-lenslock-is-a-health-app-that",
+    "num": 56,
+    "title": "LensLock",
+    "subtitle": "A 14-night bedtime closeout challenge for contact lens wearers.",
+    "description": "LensLock should become a brutally simple 14-night compliance tool for monthly reusable contact lens wearers who sometimes go to bed with lenses still in. The product promise is no longer \"track your lens health\" or \"measure wear risk.\" It is: Before you sleep, confirm your lenses are out. On first launch, the user sets only a bedtime window and notification permission. Every night, the app creates one unresolved closeout task. The bedtime notification opens a single decision screen with three choices: Lenses out, Still in, or Skip tonight. If the user taps Lenses out, the night is marked safe and the streak/score advances. If the user taps Still in, the app snoozes and sends another reminder after a short interval until the user clears it or explicitly skips. If they never clear it, the next morning the app marks that night as missed. There is no fake precision, no duration math, and no annoying reconstruction flow. The product measures only the one behavior that matters for this niche: did the user close out before sleep or not? This version is structurally better because it stops pretending the app has a durable moat or a broad health-management future. It is a focused validation product with one job and one testable outcome. The dedicated-app case is also clearer now: generic reminders can ring, but they do not maintain a purpose-built unresolved nightly state, a one-tap closeout flow, and a 14-night compliance score in the same place. That differentiator is still demand-risk, so it is not the moat; it is the hypothesis being tested. 3 biggest assumptions that could kill the product: VERIFIED: A solo developer can ship an iOS-only or Android-only version with local notifications, local state, one bedtime flow, and a 14-night scorecard in 2-4 weeks. The critique explicitly supports a brutally small single-platform MVP. UNVERIFIED: Users who have this habit will actually complete a bedtime confirmation flow for 10-14 nights instead of ignoring it like a normal reminder. This is the main product risk. Fallback plan: if completion is weak in a tiny pilot, stop building and package the concept as a lighter Shortcut/template instead of expanding the app. FALSE: Accurate wear-time tracking is necessary for this product to feel valuable. The critique made clear that missed logs and reconstruction make the core value mushy, so wear-time math is removed from v1. Why would users come back in week 2? Because the app is framed as a 14-night challenge, not an endless utility. Users return to keep the challenge alive, avoid a missed night, and finish with a clean scorecard. If testers do not care about completing that 14-night run, retention is weak and confidence in the idea should drop sharply.",
+    "score": 6,
+    "status": "complete",
+    "deviceType": "MOBILE",
+    "category": "Health",
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "tags": [
+      "contacts",
+      "eye-health",
+      "habit",
+      "notifications",
+      "challenge"
+    ],
+    "folder": "56-lenslock-is-a-health-app-that-",
+    "prototypeUrl": "https://jakebuild.github.io/idea-factory/56-lenslock-is-a-health-app-that-/",
+    "metaUrl": "https://jakebuild.github.io/idea-factory/56-lenslock-is-a-health-app-that-/meta.json",
+    "startScreenId": "41bfde5f8b754b7d9b11be430af61e0d",
+    "startScreenUrl": "https://jakebuild.github.io/idea-factory/56-lenslock-is-a-health-app-that-/41bfde5f8b754b7d9b11be430af61e0d.html",
+    "screenCount": 7,
+    "stitchId": "1375077488937730689",
+    "stitchUrl": "https://stitch.withgoogle.com/projects/1375077488937730689",
+    "publishedAt": "2026-04-02T22:41:54Z",
+    "updatedAt": "2026-04-02T22:41:54Z"
+  },
+  {
     "id": "idea-55",
     "num": 55,
     "title": "BiteBack",

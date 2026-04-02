@@ -268,5 +268,15 @@
     "folder": "55-biteback-is-a-health-app-that-",
     "startScreenId": "8b2acf68e8f244df99089f8a5197bcef",
     "status": "complete"
+  },
+  {
+    "num": 56,
+    "title": "LensLock",
+    "sub": "A 14-night bedtime closeout challenge for contact lens wearers.",
+    "score": "6/10",
+    "deviceType": "MOBILE",
+    "folder": "56-lenslock-is-a-health-app-that-",
+    "startScreenId": "41bfde5f8b754b7d9b11be430af61e0d",
+    "status": "complete"
   }
 ]

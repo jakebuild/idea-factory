@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#ffffff",
+              "on-surface": "#191c1e",
+              "surface-variant": "#e0e3e5",
+              "surface-container": "#eceef0",
+              "secondary-fixed-dim": "#80d6c9",
+              "on-tertiary": "#ffffff",
+              "secondary": "#006a60",
+              "on-secondary-container": "#006f65",
+              "outline-variant": "#c1c6d7",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#cbe6ff",
+              "on-background": "#191c1e",
+              "primary-fixed-dim": "#8ecdff",
+              "on-primary-container": "#fcfcff",
+              "surface": "#f7f9fb",
+              "surface-dim": "#d8dadc",
+              "tertiary": "#005bb3",
+              "surface-container-highest": "#e0e3e5",
+              "tertiary-container": "#1a73da",
+              "primary-container": "#2d7bac",
+              "on-primary-fixed-variant": "#004b71",
+              "surface-container-high": "#e6e8ea",
+              "surface-tint": "#006494",
+              "secondary-fixed": "#9cf2e5",
+              "inverse-primary": "#8ecdff",
+              "on-error": "#ffffff",
+              "secondary-container": "#99efe2",
+              "on-tertiary-fixed-variant": "#00468c",
+              "inverse-surface": "#2d3133",
+              "background": "#f7f9fb",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed-variant": "#005048",
+              "inverse-on-surface": "#eff1f3",
+              "on-tertiary-container": "#fefcff",
+              "outline": "#717786",
+              "error": "#ba1a1a",
+              "primary": "#006190",
+              "surface-container-low": "#f2f4f6",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#00201c",
+              "on-secondary": "#ffffff",
+              "surface-bright": "#f7f9fb",
+              "tertiary-fixed": "#d6e3ff",
+              "on-tertiary-fixed": "#001b3e",
+              "on-primary-fixed": "#001e30",
+              "on-surface-variant": "#414754",
+              "tertiary-fixed-dim": "#a9c7ff"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .glass-effect { backdrop-filter: blur(24px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-32"><header class="fixed top-0 left-0 right-0 z-50 h-16 px-5 bg-slate-50/92 backdrop-blur-xl shadow-[0_12px_32px_rgba(0,97,144,0.08)] flex items-center justify-between"><div class="flex items-center gap-3 min-w-0"><div class="min-w-0"><div class="font-headline text-[18px] font-extrabold tracking-tight text-on-surface truncate">Challenge History</div><div class="text-[11px] uppercase tracking-[0.18em] text-on-surface-variant">LensLock</div></div></div><div class="flex items-center gap-2 shrink-0"></div></header>
+<!-- Top Navigation Anchor -->
+
+<main class="pt-24 px-6 max-w-md mx-auto pb-32">
+<!-- Title & Hero Section -->
+
+<!-- Progress Summary Card -->
+<section class="mb-8 relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-primary-container p-8 text-on-primary shadow-xl">
+<div class="relative z-10">
+<p class="font-label uppercase tracking-widest text-[10px] text-white/70 mb-1">Current Progress</p>
+<div class="flex items-baseline gap-2 mb-6">
+<span class="text-5xl font-black tracking-tighter">12</span>
+<span class="text-xl font-medium text-white/70 uppercase tracking-tighter">of 14 Nights Complete</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex-1 h-3 bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed shadow-[0_0_12px_rgba(156,242,229,0.5)]" style="width: 86%"></div>
+</div>
+<span class="text-2xl font-bold">86%</span>
+</div>
+</div>
+<!-- Aesthetic Decoration -->
+<div class="absolute -right-8 -bottom-8 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+</section>
+<!-- Nightly Bento Grid -->
+<section class="grid grid-cols-4 gap-4 mb-10">
+<!-- Nights 1-4 (Cleared) -->
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="text-[10px] font-bold text-on-surface-variant/60">DAY 01</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="text-[10px] font-bold text-on-surface-variant/60">DAY 02</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="text-[10px] font-bold text-on-surface-variant/60">DAY 03</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="text-[10px] font-bold text-on-surface-variant/60">DAY 04</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Night 5 (Missed) -->
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-error-container/30">
+<span class="text-[10px] font-bold text-error/60">DAY 05</span>
+<div class="w-10 h-10 rounded-full bg-error/10 flex items-center justify-center text-error">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">cancel</span>
+</div>
+</div>
+<!-- Nights 6-12 (Cleared) -->
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="text-[10px] font-bold text-on-surface-variant/60">DAY 06</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="text-[10px] font-bold text-on-surface-variant/60">DAY 07</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="text-[10px] font-bold text-on-surface-variant/60">DAY 08</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="text-[10px] font-bold text-on-surface-variant/60">DAY 09</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="text-[10px] font-bold text-on-surface-variant/60">DAY 10</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low">
+<span class="text-[10px] font-bold text-on-surface-variant/60">DAY 11</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container-low ring-2 ring-primary ring-inset">
+<span class="text-[10px] font-bold text-primary">TODAY</span>
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<!-- Nights 13-14 (Pending) -->
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container/50">
+<span class="text-[10px] font-bold text-on-surface-variant/30">DAY 13</span>
+<div class="w-10 h-10 rounded-full border-2 border-dashed border-outline-variant/50 flex items-center justify-center text-outline-variant/50">
+<span class="material-symbols-outlined">more_horiz</span>
+</div>
+</div>
+<div class="flex flex-col items-center gap-2 p-3 rounded-2xl bg-surface-container/50">
+<span class="text-[10px] font-bold text-on-surface-variant/30">DAY 14</span>
+<div class="w-10 h-10 rounded-full border-2 border-dashed border-outline-variant/50 flex items-center justify-center text-outline-variant/50">
+<span class="material-symbols-outlined">more_horiz</span>
+</div>
+</div>
+</section>
+<!-- Insights / Asymmetric Layout Detail -->
+<div class="flex gap-4 mb-10">
+<div class="flex-1 bg-surface-container-low rounded-[2rem] p-6">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-on-secondary-fixed text-sm">trending_up</span>
+</div>
+<h4 class="font-bold text-sm mb-1">Consistency</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">You are in the top 15% of users this month.</p>
+</div>
+<div class="w-1/3 bg-tertiary-container text-on-tertiary-container rounded-[2rem] p-6 flex flex-col justify-center items-center text-center">
+<span class="text-3xl font-black mb-1">2</span>
+<span class="text-[10px] font-label uppercase">Left</span>
+</div>
+</div>
+<!-- Action Section -->
+<div class="space-y-4">
+<div class="bg-surface-container-high rounded-3xl p-6 flex items-start gap-4">
+<div class="text-primary-container p-2 bg-primary-container/10 rounded-full">
+<span class="material-symbols-outlined">info</span>
+</div>
+<div>
+<p class="text-xs font-semibold text-on-surface">Restart Challenge</p>
+<p class="text-[11px] text-on-surface-variant mt-1">Completion resets are available after Night 14 is finalized. Keep going!</p>
+</div>
+</div>
+<button class="w-full py-5 rounded-2xl bg-secondary-container text-on-secondary-container font-bold text-sm transition-all active:scale-[0.98] opacity-50 cursor-not-allowed" onclick="window.location.href='41bfde5f8b754b7d9b11be430af61e0d.html'">
+                Restart Challenge
+            </button>
+</div>
+</main>
+<!-- Bottom Navigation Anchor -->
+
+<!-- Aesthetic Ambient Elements -->
+<div class="fixed top-1/4 -left-20 w-64 h-64 bg-primary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="fixed bottom-1/4 -right-20 w-64 h-64 bg-secondary/5 rounded-full blur-[100px] pointer-events-none"></div>
+<nav class="fixed bottom-0 left-0 right-0 z-50 rounded-t-[28px] bg-slate-50/92 backdrop-blur-xl shadow-[0_-8px_24px_rgba(0,97,144,0.08)] flex justify-around items-center px-4 pt-3 pb-6"><a class="flex flex-col items-center justify-center rounded-full transition-all duration-300 text-slate-500 px-3 py-1 hover:bg-slate-200/60" href="#" onclick="window.location.href='64da3e881ba44df1b26c4064ff6f13af.html'"><span class="material-symbols-outlined">home</span><span class="font-['Inter'] text-[10px] font-medium mt-1">Home</span></a><a class="flex flex-col items-center justify-center rounded-full transition-all duration-300 bg-teal-100 text-teal-900 px-4 py-1" href="#" onclick="window.location.href='2cc307ef3dec476ea083269557da8205.html'"><span class="material-symbols-outlined">emoji_events</span><span class="font-['Inter'] text-[10px] font-medium mt-1">Challenge</span></a><a class="flex flex-col items-center justify-center rounded-full transition-all duration-300 text-slate-500 px-3 py-1 hover:bg-slate-200/60" href="#" onclick="window.location.href='09335612b931470e87e452bc2b4134be.html'"><span class="material-symbols-outlined">settings</span><span class="font-['Inter'] text-[10px] font-medium mt-1">Settings</span></a></nav></body></html>
