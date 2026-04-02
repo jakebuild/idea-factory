@@ -116,3 +116,10 @@
 **Copies:** Cal AI — reportedly does $3M+/mo, proved that "scan what you're about to consume, get one scary verdict instantly" is a brutally effective conversion model
 **Hook:** It catches the expensive skincare routine that is quietly sabotaging your face the night before you need to look good.
 **Submit:** idea-factory submit "Glow Clash is an attractiveness app that copies the Cal AI model but applies it to skincare anxiety instead of calories. You scan the skincare products you plan to use tonight, and the app flags ingredient collisions that commonly lead to redness, peeling, breakouts, or next-morning irritation before a date, event, or photo day. The reveal is instant and screen-recordable: a blunt warning that says your routine is likely to make your face look worse by morning, plus the single product to remove so the loop becomes scan, get the verdict, swap one thing, and check your face tomorrow."
+
+## Panic Brake
+**Source:** mix-20260402-223908.md
+**Targets:** Status
+**Copies:** Poised — proved professionals will pay for feedback that helps them sound sharper and more confident in high-stakes conversations
+**Hook:** It gives you a screen-recordable before-and-after confidence receipt in under 90 seconds.
+**Submit:** idea-factory submit "Panic Brake is a status app that copies the Poised model but compresses it into a sharper mobile reveal for high-stakes moments. Two minutes before a meeting, interview, sales call, or date, you read one short prompt and the app measures pace, filler words, volume consistency, and camera-based pulse, then gives you a 60-second reset drill and a second retest so the loop becomes check, reset, retest, walk in greener than before. The reveal is instant and screen-recordable: your pulse drops, your filler-word risk flips from red to green, and the app shows that you sound calmer before the conversation even begins."
