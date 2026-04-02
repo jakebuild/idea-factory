@@ -67,3 +67,10 @@
 **Copies:** Crystal Knows — proved people pay for AI-powered communication analysis and external validation of how they come across
 **Hook:** My Rizz Score came back a 3/10 and it fixed my Hinge reply rate overnight.
 **Submit:** idea-factory submit "Rizz Score is a dating conversation analyzer that copies the Crystal Knows model but focuses on a sharper reveal: paste your last 10-15 messages with a match and the app scores your Rizz across four dimensions — confidence, intrigue, availability, and wit — then gives you one blunt fix to increase your reply rate. The reveal is instant: a score out of 10, a one-line diagnosis like 'you are double-texting and answering too fast,' and one specific change for your next message. Works for Hinge, Bumble, Tinder, and Instagram DMs with no account required, and the loop is natural because every new match is a new test."
+
+## Renewal Radar
+**Source:** mix-20260402-123127.md
+**Targets:** Fear of Loss
+**Copies:** Rocket Money — proved people will pay to stop silent recurring charges when the payoff is an instant money-leak reveal
+**Hook:** It catches the charge before your bank statement does.
+**Submit:** idea-factory submit "Renewal Radar is a fear-of-loss app that copies Rocket Money but focuses on a sharper reveal moment: upload screenshots of trial signups, App Store subscription pages, or renewal emails, and the app extracts the exact amount you are about to be charged, the cancellation deadline, and the hidden renewal traps before they hit your account. The reveal is instant and screen-recordable: a blunt screen that says how much money you are about to lose in the next few days unless you cancel now, plus a countdown card for each charge and a simple cancel-prep checklist. The core loop is save proof once, get escalating alerts as the deadline approaches, and come back because subscriptions and free trials keep resetting the same anxiety."
