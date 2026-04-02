@@ -102,3 +102,10 @@
 **Copies:** Rocket Money — proved deadline-plus-dollars-at-risk reveals make invisible losses feel urgent enough to pay to avoid
 **Hook:** It turns fridge guilt into a visible countdown before your leftovers quietly become both waste and a health risk.
 **Submit:** idea-factory submit "FreshClock is a fear-of-loss app that copies the Rocket Money model but applies it to fridge waste instead of subscriptions. You snap a leftover container, grocery pack, or takeout receipt, and the app turns it into one exact eat-by deadline based on food type, storage method, and when it entered the fridge. The reveal is instant and screen-recordable: a blunt screen that says 'Eat this chicken by tomorrow 1:10 PM or toss $18 and risk a bad night,' plus a live spoil clock and escalating reminders before it becomes trash. The core loop is save food in under five seconds, watch the countdown, and come back because leftovers and half-used groceries keep quietly turning into waste."
+ 
+## Snore Receipt
+**Source:** mix-20260402-193716.md
+**Targets:** Health
+**Copies:** SnoreLab — proved people will pay to quantify a sleep-breathing problem when the app gives them proof they can hear and compare
+**Hook:** It turns vague sleep shame into one brutal receipt and one obvious experiment instead of generic sleep advice.
+**Submit:** idea-factory submit "Snore Receipt is a health app that copies the SnoreLab model but sharpens the reveal and the action. Leave your phone on the bed or nightstand, and by morning the app shows your total snore minutes, your worst 10-second clip, and exactly how much of the snoring happened on your back versus your side. Then it gives you one simple 3-night experiment like side-sleeping or pillow elevation so the loop becomes sleep, get the receipt, test one change, and compare tomorrow."
