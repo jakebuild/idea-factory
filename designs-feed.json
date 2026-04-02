@@ -1,5 +1,37 @@
 [
   {
+    "id": "idea-55",
+    "num": 55,
+    "title": "BiteBack",
+    "subtitle": "A 14-night reset for breaking one repeat late-night snack or drink habit.",
+    "description": "BiteBack becomes a mobile-first 14-night reset for people who have one repeat late-night habit they actually want to break: soda after brushing, candy in bed, dessert right before sleep, sports drink at night, or post-dinner grazing. On first use, the user picks their main culprit category, chooses a simple cutoff plan, and selects two fallback moves they are willing to do instead. The product does not score \"tooth damage,\" pretend to know exact brush timing, or ask the user to log every snack forever. Each night, the app gives the user only three choices: `I'm about to have it`, `I already had it`, or `I skipped it tonight`. If they are about to slip, BiteBack shows a single rescue card for that category: the least-bad move right now, the one thing to avoid, and the next clean reset step for tonight. If they already slipped, it gives a low-drama recovery card instead of a guilt label. If they skipped it, the night is logged in one tap and the user moves on. After a few nights, the app does not show charts; it suggests exactly one plan adjustment based on failures, such as moving the cutoff earlier, changing the fallback choice, or delaying brushing until the user is truly done eating. This is better because the product is no longer pretending to be a forever tracker or a medical rules engine. It is a short behavior-change utility for one recurring problem. It is also more believable for a solo builder: 5-7 tightly written culprit playbooks, local-only state, one simple rules layer, and no dependence on notifications, social loops, partnerships, or a giant content library. Why would users come back in week 2? Because they are still inside a finite 14-night reset, the app already holds their chosen culprit and fallback plan, and week 2 is when the first plan adjustment appears if the original plan is failing. If users do not care enough to complete a 14-night reset, retention is weak and the product should be treated as a one-off utility, not a habit app.",
+    "score": 7,
+    "status": "complete",
+    "deviceType": "MOBILE",
+    "category": "Health",
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "tags": [
+      "dental",
+      "habit",
+      "nighttime",
+      "health",
+      "pwa"
+    ],
+    "folder": "55-biteback-is-a-health-app-that-",
+    "prototypeUrl": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/",
+    "metaUrl": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/meta.json",
+    "startScreenId": "8b2acf68e8f244df99089f8a5197bcef",
+    "startScreenUrl": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/8b2acf68e8f244df99089f8a5197bcef.html",
+    "screenCount": 8,
+    "stitchId": "13808771399622021930",
+    "stitchUrl": "https://stitch.withgoogle.com/projects/13808771399622021930",
+    "publishedAt": "2026-04-02T20:07:00Z",
+    "updatedAt": "2026-04-02T20:07:00Z"
+  },
+  {
     "id": "54-panic-brake-is-a-status-app-th",
     "num": 54,
     "title": "Panic Brake",

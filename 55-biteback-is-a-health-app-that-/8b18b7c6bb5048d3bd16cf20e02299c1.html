@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "primary": "#186665",
+              "on-tertiary-fixed": "#0e1e1e",
+              "error": "#ba1a1a",
+              "secondary-fixed": "#c9e7f7",
+              "secondary-fixed-dim": "#adcbda",
+              "on-tertiary-fixed-variant": "#3a4a49",
+              "surface-variant": "#e4e2e1",
+              "surface-container": "#f0eded",
+              "inverse-on-surface": "#f3f0f0",
+              "surface-container-low": "#f6f3f2",
+              "on-secondary-fixed": "#001f2a",
+              "outline-variant": "#bec9c8",
+              "inverse-primary": "#8dd3d1",
+              "surface-container-high": "#eae8e7",
+              "secondary": "#466270",
+              "on-tertiary-container": "#f3fffe",
+              "on-surface-variant": "#3f4948",
+              "tertiary-container": "#677877",
+              "surface-bright": "#fbf9f8",
+              "on-primary-fixed": "#002020",
+              "primary-fixed-dim": "#8dd3d1",
+              "on-primary-container": "#f3fffe",
+              "tertiary-fixed": "#d4e6e5",
+              "surface-container-lowest": "#ffffff",
+              "on-error": "#ffffff",
+              "secondary-container": "#c6e4f4",
+              "on-secondary-fixed-variant": "#2e4b57",
+              "on-error-container": "#93000a",
+              "outline": "#6f7978",
+              "on-secondary-container": "#4a6774",
+              "surface-container-highest": "#e4e2e1",
+              "primary-fixed": "#a9efed",
+              "on-primary": "#ffffff",
+              "surface-dim": "#dcd9d9",
+              "tertiary": "#4f5f5f",
+              "on-background": "#1b1c1c",
+              "primary-container": "#387f7e",
+              "inverse-surface": "#303030",
+              "on-primary-fixed-variant": "#00504f",
+              "on-surface": "#1b1c1c",
+              "background": "#fbf9f8",
+              "surface": "#fbf9f8",
+              "tertiary-fixed-dim": "#b8cac9",
+              "surface-tint": "#1c6968",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .font-notoSerif { font-family: 'Noto Serif', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .bloom-gradient {
+            background: radial-gradient(circle at 45% 45%, #186665 0%, #387f7e 100%);
+        }
+        .mist-overlay {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="prototype-shell-style">
+  body.prototype-mobile {
+    min-height: max(844px, 100dvh) !important;
+    padding-top: 76px !important;
+    padding-bottom: 104px !important;
+    background: #fbf9f8 !important;
+    color: #1b1c1c !important;
+  }
+  body.prototype-mobile.no-bottom-nav {
+    padding-bottom: 24px !important;
+  }
+  .prototype-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 72px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(190, 201, 200, 0.45);
+  }
+  .prototype-header-side {
+    width: 78px;
+    display: flex;
+    align-items: center;
+    min-width: 78px;
+  }
+  .prototype-header-side.end {
+    justify-content: flex-end;
+  }
+  .prototype-header-btn {
+    border: 0;
+    background: transparent;
+    color: #186665;
+    font-family: Manrope, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  .prototype-header-btn.icon {
+    font-size: 24px;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: 1;
+  }
+  .prototype-header-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #186665;
+    letter-spacing: -0.02em;
+  }
+  .prototype-bottom-nav {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(190, 201, 200, 0.45);
+    border-radius: 24px;
+    box-shadow: 0 -6px 28px rgba(27, 28, 28, 0.08);
+  }
+  .prototype-bottom-link {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    border-radius: 16px;
+    background: transparent;
+    color: rgba(27, 28, 28, 0.52);
+    padding: 10px 6px;
+    font-family: Manrope, sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prototype-bottom-link.active {
+    background: #c6e4f4;
+    color: #186665;
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed prototype-mobile no-bottom-nav"><header class="prototype-header"><div class="prototype-header-side"><button class="prototype-header-btn icon" onclick="window.location.href='8b2acf68e8f244df99089f8a5197bcef.html'" type="button">←</button></div><div class="prototype-header-title">Choose Your Habit</div><div class="prototype-header-side end"></div></header>
+<!-- TopAppBar -->
+
+<main class="max-w-7xl mx-auto px-6 pt-12 pb-24">
+<!-- Introduction Section -->
+<section class="mb-16 md:mb-24 max-w-2xl">
+<h2 class="font-headline text-4xl md:text-5xl lg:text-6xl text-on-surface mb-8 leading-tight tracking-tight">
+                Honesty is the <br/><span class="italic text-primary">first exhale.</span>
+</h2>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                Before we can design your 14-night sanctuary, we must identify the noise. Choosing your primary culprit isn't an admission of failure—it's the intentional first step toward a curated renewal.
+            </p>
+</section>
+<!-- Asymmetric Bento Grid for Habit Categories -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<!-- Category 1: Digital Noise -->
+<div class="md:col-span-7 group relative overflow-hidden rounded-xl bg-surface-container-low p-8 transition-all hover:bg-surface-container-high">
+<div class="flex flex-col h-full justify-between">
+<div>
+<div class="mb-6 flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="edgesensor_low">edgesensor_low</span>
+<span class="font-label text-xs uppercase tracking-widest text-primary font-bold">Mental Clarity</span>
+</div>
+<h3 class="font-headline text-3xl mb-4">Digital Noise</h3>
+<p class="font-body text-on-surface-variant mb-8 max-w-sm">Scrolling social media past midnight, losing the quiet moments to a glowing screen.</p>
+</div>
+<button class="w-fit px-8 py-3 bg-primary text-on-primary rounded-md font-medium active:scale-95 duration-200 hover:opacity-90 transition-all" onclick="window.location.href='558799a402c14f20ac4db6cfbba596e8.html'" type="button">
+                        This is the one I want to cut
+                    </button>
+</div>
+<div class="absolute -right-12 -bottom-12 opacity-10 pointer-events-none transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-[200px]" data-icon="grid_view">grid_view</span>
+</div>
+</div>
+<!-- Category 2: Caffeine Reliance -->
+<div class="md:col-span-5 rounded-xl bg-surface-container-lowest p-8 border border-outline-variant/15 flex flex-col justify-between min-h-[400px]">
+<div>
+<div class="mb-6">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="coffee">coffee</span>
+</div>
+<h3 class="font-headline text-2xl mb-3">Caffeine Reliance</h3>
+<p class="font-body text-on-surface-variant mb-6 italic">"Needing a third cup just to function by noon."</p>
+</div>
+<button class="w-full py-4 bg-surface-container-highest text-primary font-bold rounded-md hover:bg-secondary-container transition-colors" onclick="window.location.href='558799a402c14f20ac4db6cfbba596e8.html'" type="button">
+                    Focus on Caffeine
+                </button>
+</div>
+<!-- Category 3: Late-Night Loops -->
+<div class="md:col-span-5 group relative overflow-hidden rounded-xl bg-primary-container p-8 text-on-primary-container">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-6" data-icon="nights_stay">nights_stay</span>
+<h3 class="font-headline text-2xl mb-3">Late-Night Loops</h3>
+<p class="font-body opacity-90 mb-8">Caught in a cycle of revenge sleep procrastination or midnight thinking.</p>
+<button class="px-6 py-2 border-2 border-primary-fixed text-primary-fixed rounded-full hover:bg-primary-fixed hover:text-primary transition-all font-bold" onclick="window.location.href='558799a402c14f20ac4db6cfbba596e8.html'" type="button">
+                        Break the Loop
+                    </button>
+</div>
+<div class="absolute inset-0 bloom-gradient opacity-20"></div>
+</div>
+<!-- Category 4: Sedentary Stagnation -->
+<div class="md:col-span-7 bg-surface-container-low rounded-xl p-8 flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="chair">chair</span>
+<h3 class="font-headline text-3xl mb-4">Sedentary Stagnation</h3>
+<p class="font-body text-on-surface-variant mb-6">Days that pass entirely within four walls, seated at a desk without fresh air.</p>
+<button class="text-primary font-bold inline-flex items-center gap-2 group" onclick="window.location.href='558799a402c14f20ac4db6cfbba596e8.html'" type="button">
+                        Choose this path
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="w-full md:w-48 h-48 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Minimalist sunlit yoga studio with soft shadows and a single green plant in a ceramic pot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhQXFJ0c3X96tkfuHYsWi2PVwalt2MPecBkOfWIR25yZYrHkfGdGvrAHkGZtKbBKfF80UvBAaU_DyKjK6BzGwQ6QJ-VixaQsDL1nKT6Hioo5uzefIEucxrC9fvMX6yl2V3g5B8hMa465RHP9JrOuH5jHM11OEbjvcUmMT4FeUpdx6CYSLnYeYudfs74zzBhoRkTVhxOQiPd_0G9R038b1rjW0-qTl_E35XZYEXpq-99-oQ7DgFFTw2cf0jKsnMOExh7h-2ZvX7C_bF"/>
+</div>
+</div>
+<!-- Category 5: Sugar Spikes -->
+<div class="md:col-span-4 rounded-xl bg-secondary-container p-8 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-on-secondary-container text-4xl mb-6" data-icon="icecream">icecream</span>
+<h3 class="font-headline text-2xl mb-3">Sugar Spikes</h3>
+<p class="font-body text-on-secondary-container opacity-80 mb-6">Reaching for the quick energy of refined sweets when the afternoon slump hits.</p>
+</div>
+<button class="w-full py-3 bg-on-secondary-container text-white rounded-md font-bold hover:opacity-90 transition-opacity" onclick="window.location.href='558799a402c14f20ac4db6cfbba596e8.html'" type="button">
+                    Reset Nutrition
+                </button>
+</div>
+<!-- Category 6: Emotional Grazing -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-surface-container-low p-10">
+<div class="grid md:grid-cols-2 gap-8 items-center">
+<div>
+<h3 class="font-headline text-3xl mb-4">Emotional Grazing</h3>
+<p class="font-body text-on-surface-variant mb-8 leading-relaxed italic">"Eating when stressed, bored, or simply because the pantry is open."</p>
+<button class="px-8 py-3 bg-primary text-on-primary rounded-md font-bold active:scale-95 transition-transform" onclick="window.location.href='558799a402c14f20ac4db6cfbba596e8.html'" type="button">
+                            Start Habit Reset
+                        </button>
+</div>
+<div class="relative h-64 rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" data-alt="Bespoke ceramic bowl filled with vibrant seasonal greens and edible flowers on a textured linen cloth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1sQjLZ83a43ON5RDJALUWsv3CXHjHKgDs7PM1KUo--2T2aCTFlaZ6II7McYxYvUr4eY6K8qsx7CvW5fi6UzCmid4dIw2K8b235EiYyTbp4SJsvnWxWHvz9PUmenFczLBxmHdcMOylCvmGjh3Fzv1b5wymrlsLGeDxzhNiPDRIurJySANM9zI2FrSImZR555WhXlaB2pZryiJwX81M2yvOa8JoYEGJbVhw8aAZQrzDUd1qzeWdIu08sHWQDstC2tN5yUJBvmIza6DY"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Optional Action for multiple culprits -->
+<div class="mt-24 text-center">
+<p class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-4">Unsure where to begin?</p>
+<button class="font-headline text-xl text-primary underline decoration-primary-fixed decoration-2 underline-offset-8 hover:text-primary-container transition-colors" onclick="window.location.href='558799a402c14f20ac4db6cfbba596e8.html'" type="button">
+                Take the Discovery Assessment
+            </button>
+</div>
+</main>
+<!-- Footer -->
+
+</body></html>

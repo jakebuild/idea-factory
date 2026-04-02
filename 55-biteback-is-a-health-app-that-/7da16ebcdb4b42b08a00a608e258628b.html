@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>Serene Reset - Your Journey</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-bright": "#fbf9f8",
+            "secondary-container": "#c6e4f4",
+            "tertiary": "#4f5f5f",
+            "on-secondary": "#ffffff",
+            "tertiary-container": "#677877",
+            "surface-tint": "#1c6968",
+            "on-surface-variant": "#3f4948",
+            "secondary-fixed-dim": "#adcbda",
+            "primary-container": "#387f7e",
+            "outline": "#6f7978",
+            "on-secondary-container": "#4a6774",
+            "primary": "#186665",
+            "outline-variant": "#bec9c8",
+            "tertiary-fixed-dim": "#b8cac9",
+            "surface-variant": "#e4e2e1",
+            "surface-container": "#f0eded",
+            "surface-container-low": "#f6f3f2",
+            "on-primary": "#ffffff",
+            "background": "#fbf9f8",
+            "surface": "#fbf9f8",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed": "#c9e7f7",
+            "tertiary-fixed": "#d4e6e5",
+            "primary-fixed": "#a9efed",
+            "on-secondary-fixed-variant": "#2e4b57",
+            "inverse-primary": "#8dd3d1",
+            "on-primary-fixed": "#002020",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed-dim": "#8dd3d1",
+            "on-tertiary-container": "#f3fffe",
+            "on-background": "#1b1c1c",
+            "error-container": "#ffdad6",
+            "surface-container-high": "#eae8e7",
+            "error": "#ba1a1a",
+            "surface-dim": "#dcd9d9",
+            "inverse-surface": "#303030",
+            "secondary": "#466270",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed-variant": "#3a4a49",
+            "surface-container-highest": "#e4e2e1",
+            "on-tertiary-fixed": "#0e1e1e",
+            "on-primary-container": "#f3fffe",
+            "inverse-on-surface": "#f3f0f0",
+            "on-surface": "#1b1c1c",
+            "on-primary-fixed-variant": "#00504f",
+            "on-secondary-fixed": "#001f2a",
+            "on-error-container": "#93000a"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+    .bloom-active {
+      box-shadow: 0 0 15px rgba(24, 102, 101, 0.3);
+    }
+    body {
+      background-color: #fbf9f8;
+      color: #1b1c1c;
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="prototype-shell-style">
+  body.prototype-mobile {
+    min-height: max(844px, 100dvh) !important;
+    padding-top: 76px !important;
+    padding-bottom: 104px !important;
+    background: #fbf9f8 !important;
+    color: #1b1c1c !important;
+  }
+  body.prototype-mobile.no-bottom-nav {
+    padding-bottom: 24px !important;
+  }
+  .prototype-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 72px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(190, 201, 200, 0.45);
+  }
+  .prototype-header-side {
+    width: 78px;
+    display: flex;
+    align-items: center;
+    min-width: 78px;
+  }
+  .prototype-header-side.end {
+    justify-content: flex-end;
+  }
+  .prototype-header-btn {
+    border: 0;
+    background: transparent;
+    color: #186665;
+    font-family: Manrope, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  .prototype-header-btn.icon {
+    font-size: 24px;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: 1;
+  }
+  .prototype-header-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #186665;
+    letter-spacing: -0.02em;
+  }
+  .prototype-bottom-nav {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(190, 201, 200, 0.45);
+    border-radius: 24px;
+    box-shadow: 0 -6px 28px rgba(27, 28, 28, 0.08);
+  }
+  .prototype-bottom-link {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    border-radius: 16px;
+    background: transparent;
+    color: rgba(27, 28, 28, 0.52);
+    padding: 10px 6px;
+    font-family: Manrope, sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prototype-bottom-link.active {
+    background: #c6e4f4;
+    color: #186665;
+  }
+</style>
+</head>
+<body class="min-h-screen flex flex-col prototype-mobile"><header class="prototype-header"><div class="prototype-header-side"></div><div class="prototype-header-title">Reset Progress</div><div class="prototype-header-side end"></div></header>
+<!-- TopAppBar -->
+
+<main class="flex-grow px-6 pt-8 pb-32 max-w-2xl mx-auto w-full">
+<!-- Progress Bloom Hero Section -->
+<section class="mb-12">
+<div class="flex flex-col items-start gap-2">
+<span class="font-label uppercase tracking-widest text-[10px] font-medium text-primary">Current Reset</span>
+<h2 class="font-headline text-4xl text-on-surface mb-6">3 of 14 nights</h2>
+<!-- The Progress Bloom Visualization -->
+<div class="flex flex-wrap gap-4 items-center">
+<!-- Completed Days -->
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary bloom-active">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary bloom-active">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<!-- Current Day (Tonight) -->
+<div class="w-12 h-12 rounded-full border-2 border-primary-fixed flex items-center justify-center relative">
+<div class="w-8 h-8 rounded-full bg-primary-container animate-pulse"></div>
+<span class="absolute -top-6 left-1/2 -translate-x-1/2 font-label text-[9px] uppercase tracking-tighter text-primary font-bold">Tonight</span>
+</div>
+<!-- Remaining Days -->
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+<div class="hidden sm:flex gap-4">
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+<div class="w-8 h-8 rounded-full border border-outline-variant bg-surface-container-lowest"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Split Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+<!-- Current Plan Card -->
+<section class="space-y-4">
+<h3 class="font-label uppercase tracking-widest text-[10px] font-semibold text-on-surface-variant px-1">Tonight's Focus</h3>
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="bg-secondary-container text-on-secondary-container text-[10px] font-label px-2 py-1 rounded-full uppercase">Adjusted</span>
+</div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 bg-primary-container/10 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">screen_lock_portrait</span>
+</div>
+<div>
+<h4 class="font-headline text-2xl text-on-surface">Digital Noise</h4>
+<p class="text-on-surface-variant text-sm mt-2 leading-relaxed">Limit social scrolls and blue light exposure to prime your cortisol levels for sleep.</p>
+</div>
+<div class="mt-4 pt-6 border-t border-outline-variant/15">
+<div class="flex justify-between items-end">
+<div>
+<span class="text-[10px] font-label uppercase text-outline">Cutoff Time</span>
+<p class="text-3xl font-headline text-primary mt-1">9:30 PM</p>
+</div>
+<div class="text-right">
+<span class="text-[10px] font-label uppercase text-outline">Was</span>
+<p class="text-sm text-on-surface-variant line-through italic">9:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- History Grid -->
+<section class="space-y-4">
+<h3 class="font-label uppercase tracking-widest text-[10px] font-semibold text-on-surface-variant px-1">Reset Log</h3>
+<div class="bg-surface-container-low rounded-xl p-6 space-y-3">
+<div class="flex items-center justify-between p-3 bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-3">
+<span class="text-primary font-headline text-lg">01</span>
+<span class="text-sm font-medium">Night One</span>
+</div>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container-lowest rounded-lg">
+<div class="flex items-center gap-3">
+<span class="text-primary font-headline text-lg">02</span>
+<span class="text-sm font-medium">Night Two</span>
+</div>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container-lowest rounded-lg border-2 border-primary-fixed/30">
+<div class="flex items-center gap-3">
+<span class="text-primary font-headline text-lg">03</span>
+<span class="text-sm font-bold">Tonight</span>
+</div>
+<span class="material-symbols-outlined text-outline">radio_button_unchecked</span>
+</div>
+<div class="flex items-center justify-between p-3 opacity-40">
+<div class="flex items-center gap-3">
+<span class="text-outline font-headline text-lg">04</span>
+<span class="text-sm font-medium">Night Four</span>
+</div>
+<span class="material-symbols-outlined text-outline">lock</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Restart Action -->
+<div class="mt-20 flex flex-col items-center gap-4">
+<p class="text-xs text-on-surface-variant font-body">Feeling like you need a fresh start?</p>
+<button class="bg-surface-container-highest text-primary px-8 py-4 rounded-lg font-label uppercase tracking-widest text-[11px] font-bold hover:bg-surface-container-high transition-colors" onclick="window.location.href='8b18b7c6bb5048d3bd16cf20e02299c1.html'" type="button">
+        Restart My Reset
+      </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="prototype-bottom-nav"><button class="prototype-bottom-link" onclick="window.location.href='b22d9124ea5b4f7681046e2616c0f1fb.html'" type="button">Check-In</button><button class="prototype-bottom-link active" onclick="window.location.href='7da16ebcdb4b42b08a00a608e258628b.html'" type="button">Progress</button><button class="prototype-bottom-link" onclick="window.location.href='558799a402c14f20ac4db6cfbba596e8.html'" type="button">Plan</button><button class="prototype-bottom-link" onclick="window.location.href='2e95f60582a648d1a96a2386c49aa2b2.html'" type="button">Trust</button></nav></body></html>

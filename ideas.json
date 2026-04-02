@@ -1,242 +1,12 @@
 [
   {
-    "num": 54,
-    "title": "Panic Brake",
-    "sub": "Practice tighter interview answers with a record-review-redo loop.",
-    "score": "7/10",
-    "deviceType": "WEB",
-    "folder": "54-panic-brake-is-a-status-app-th",
-    "startScreenId": "d8cafd8a68094e6c927121da523f586b",
-    "status": "complete"
-  },
-  {
-    "num": 53,
-    "title": "Glow Clash",
-    "sub": "Pre-event irritation checker for strong skincare routines.",
-    "score": "6/10",
-    "deviceType": "WEB",
-    "folder": "53-glow-clash-is-an-attractivenes",
-    "startScreenId": "f40a5ab6deb94a27a2ea7804f20c9b73",
-    "status": "complete"
-  },
-  {
-    "num": 46,
-    "title": "Chat Unsticker",
-    "sub": "Reply ideas for stalled dating chats, with a redaction check before AI analysis.",
-    "score": "5/10",
-    "deviceType": "MOBILE",
-    "folder": "46-rizz-score-is-a-dating-convers",
-    "startScreenId": "3e9e43720f384eac8b151cf8719e22a6",
-    "status": "complete"
-  },
-  {
-    "num": 43,
-    "title": "Caffeine Pulse",
-    "sub": "Scan a drink to see your latest safe caffeine time before bed.",
-    "score": "5/10",
-    "deviceType": "MOBILE",
-    "folder": "43-caffeine-scanner-that-predicts",
-    "startScreenId": "2ece5531da8942c7b442b1e134dfd88c",
-    "status": "complete"
-  },
-  {
-    "num": 40,
-    "title": "Front-door panic prevention app",
-    "sub": "Tracks repeated forgotten items and nudges office commuters before they leave.",
-    "score": "5/10",
-    "deviceType": "MOBILE",
-    "folder": "40-front-door-panic-prevention-ap",
-    "startScreenId": "8009b91eb2634b6a9ca79af1f0566b4f",
-    "status": "complete"
-  },
-  {
-    "num": 38,
-    "title": "AI Dating Photo Technical Audit",
-    "sub": "Technical audit for solo dating photos with a free score reveal and paid explanations.",
+    "num": 17,
+    "title": "Mood Tracker",
+    "sub": "Tap an emoji to log how you feel each day",
     "score": "6/10",
     "deviceType": "MOBILE",
-    "folder": "38-ai-photo-ranker-for-attractive",
-    "startScreenId": "b25833c96c964350b5fa8a8a2fba2219",
-    "status": "complete"
-  },
-  {
-    "num": 37,
-    "title": "Voice Note Polish",
-    "sub": "A pre-send panic button for dating voice notes.",
-    "score": "6/10",
-    "deviceType": "MOBILE",
-    "folder": "37-voice-note-coach-for-dating.-y",
-    "startScreenId": "15970110b06c41aaab225d77c79a1f70",
-    "status": "complete"
-  },
-  {
-    "num": 36,
-    "title": "Lunch Lab",
-    "sub": "Track lunch tags and post-meal energy to uncover your afternoon crash patterns.",
-    "score": "6/10",
-    "deviceType": "MOBILE",
-    "folder": "36-meal-scanner-that-predicts-you",
-    "startScreenId": "e0c56f18a80f4dc69f71d04b2104b5e3",
-    "status": "complete"
-  },
-  {
-    "num": 35,
-    "title": "HingeFix",
-    "sub": "Hinge-aware profile audit and rewrite flow for bios and prompt answers.",
-    "score": "5/10",
-    "deviceType": "MOBILE",
-    "folder": "35-dating-profile-scorer-and-roas",
-    "startScreenId": "67f737aeac33418494cd6738c7182fa5",
-    "status": "complete"
-  },
-  {
-    "num": 34,
-    "title": "Book Pledge",
-    "sub": "Email-first reading pledges with streaks, summaries, and recovery loops.",
-    "score": "6/10",
-    "deviceType": "WEB",
-    "folder": "34-book-pledge---bet-on-your-read",
-    "startScreenId": "d79631cc0d244ae3a6ee4dc54223176c",
-    "status": "complete"
-  },
-  {
-    "num": 33,
-    "title": "Walk Garden",
-    "sub": "A 21-day step challenge that grows a collectible seasonal garden.",
-    "score": "6/10",
-    "deviceType": "MOBILE",
-    "folder": "33-walk-garden---each-step-equals",
-    "startScreenId": "83b29874ca184bc3a9bf063dd94f1470",
-    "status": "complete"
-  },
-  {
-    "num": 32,
-    "title": "Walk City",
-    "sub": "Build one civic project each week by completing 5 meaningful walk days.",
-    "score": "7/10",
-    "deviceType": "MOBILE",
-    "folder": "32-walk-city---your-steps-build-a",
-    "startScreenId": "27f671e3512642cd9524e423b52033cd",
-    "status": "complete"
-  },
-  {
-    "num": 31,
-    "title": "5-Minute Reading Retention",
-    "sub": "A guided nonfiction course for comprehension, recall, and action.",
-    "score": "3/10",
-    "deviceType": "WEB",
-    "folder": "31-duolingo-for-reading---book-su",
-    "startScreenId": "landing-value-prop",
-    "status": "complete"
-  },
-  {
-    "num": 30,
-    "title": "Baby Story",
-    "sub": "AI-written milestone stories shared via magic link, printed as keepsake books",
-    "score": "7/10",
-    "deviceType": "MOBILE",
-    "folder": "30-stories-for-baby---stories-for",
-    "startScreenId": "cd5ea2b08dc04887acb9e50fdb6c0c3a",
-    "status": "complete"
-  },
-  {
-    "num": 29,
-    "title": "Design Swipe",
-    "sub": "Tinder for app designs — swipe to BUILD or DROP your inspiration queue",
-    "score": "8/10",
-    "deviceType": "MOBILE",
-    "folder": "29-design-swipe-tinder-for-app-de",
-    "startScreenId": "1173587dc29e4c959563e317e13c3ba5",
-    "status": "complete"
-  },
-  {
-    "num": 28,
-    "title": "Idea Swipe",
-    "sub": "Keyboard-driven web app to build your personal idea backlog — swipe to keep, drop, or maybe",
-    "score": "8/10",
-    "deviceType": "WEB",
-    "folder": "28-idea-swipe-tinder-for-ideas---",
-    "startScreenId": "564064fcf47543b7bb154902ba9e496d",
-    "status": "complete"
-  },
-  {
-    "num": 27,
-    "title": "Future Face AI",
-    "sub": "Upload a photo, see yourself decades from now — pay $1.99 to download",
-    "score": "7/10",
-    "deviceType": "WEB",
-    "folder": "27-future-face-ai-app-that-genera",
-    "startScreenId": "716fed8c15b945a99ee6dfc35928da9e",
-    "status": "complete"
-  },
-  {
-    "num": 26,
-    "title": "AI Study Buddy",
-    "sub": "Voice-based Pomodoro companion with AI check-ins for teens",
-    "score": "8/10",
-    "deviceType": "MOBILE",
-    "folder": "26-ai-study-buddy-an-app-that-use",
-    "startScreenId": "e74f1ccd401d445cb6f4dd5ca9cb0251",
-    "status": "complete"
-  },
-  {
-    "num": 25,
-    "title": "ShakeShot",
-    "sub": "One morning portrait. One evening word. Your day in two moments.",
-    "score": "8/10",
-    "deviceType": "MOBILE",
-    "folder": "25-shakeshot-each-morning-you-get",
-    "startScreenId": "a300b4a31bf947f3b265de2ac01bb393",
-    "status": "complete"
-  },
-  {
-    "num": 24,
-    "title": "WeekPrint",
-    "sub": "Your Google Calendar week, turned into a geometric art poster",
-    "score": "8/10",
-    "deviceType": "MOBILE",
-    "folder": "24-weekprint-—-pulls-your-apple",
-    "startScreenId": "3d76bb0c46454080b765e8f7d6c17558",
-    "status": "complete"
-  },
-  {
-    "num": 23,
-    "title": "Life Constellation",
-    "sub": "Turns your weekly movement into a personal star map",
-    "score": "7/10",
-    "deviceType": "MOBILE",
-    "folder": "23-life-constellation-—-turns-you",
-    "startScreenId": "e5b8363685554944b246be9f5cc4b920",
-    "status": "complete"
-  },
-  {
-    "num": 22,
-    "title": "AI Portrait Weekly",
-    "sub": "Weekly selfie → AI painting → grow your portrait journal over time",
-    "score": "7/10",
-    "deviceType": "MOBILE",
-    "folder": "22-ai-portrait-an-app-that-paints",
-    "startScreenId": "ce02c189567340329fefeaae41a699e4",
-    "status": "complete"
-  },
-  {
-    "num": 21,
-    "title": "Dream Landscape",
-    "sub": "Turn your sleep log into a unique isometric pixel art city, generated every morning",
-    "score": "8/10",
-    "deviceType": "MOBILE",
-    "folder": "21-dream-landscape-an-app-that-ge",
-    "startScreenId": "242e10571b0f4d049918c3fa6973dcbc",
-    "status": "complete"
-  },
-  {
-    "num": 19,
-    "title": "Sleep Journal App",
-    "sub": "Manual sleep tracking with debt tally and tag-based insights for irregular sleepers",
-    "score": "7/10",
-    "deviceType": "MOBILE",
-    "folder": "19-a-sleep-journal-app-where-you-",
-    "startScreenId": "f2b0f838f912489f87aa82d208546778",
+    "folder": "17-mood-tracker-emoji-daily-log",
+    "startScreenId": "c9ffff6ca10f40ba9430a7633eede0f3",
     "status": "complete"
   },
   {
@@ -250,13 +20,253 @@
     "status": "complete"
   },
   {
-    "num": 17,
-    "title": "Mood Tracker",
-    "sub": "Tap an emoji to log how you feel each day",
+    "num": 19,
+    "title": "Sleep Journal App",
+    "sub": "Manual sleep tracking with debt tally and tag-based insights for irregular sleepers",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "19-a-sleep-journal-app-where-you-",
+    "startScreenId": "f2b0f838f912489f87aa82d208546778",
+    "status": "complete"
+  },
+  {
+    "num": 21,
+    "title": "Dream Landscape",
+    "sub": "Turn your sleep log into a unique isometric pixel art city, generated every morning",
+    "score": "8/10",
+    "deviceType": "MOBILE",
+    "folder": "21-dream-landscape-an-app-that-ge",
+    "startScreenId": "242e10571b0f4d049918c3fa6973dcbc",
+    "status": "complete"
+  },
+  {
+    "num": 22,
+    "title": "AI Portrait Weekly",
+    "sub": "Weekly selfie → AI painting → grow your portrait journal over time",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "22-ai-portrait-an-app-that-paints",
+    "startScreenId": "ce02c189567340329fefeaae41a699e4",
+    "status": "complete"
+  },
+  {
+    "num": 23,
+    "title": "Life Constellation",
+    "sub": "Turns your weekly movement into a personal star map",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "23-life-constellation-—-turns-you",
+    "startScreenId": "e5b8363685554944b246be9f5cc4b920",
+    "status": "complete"
+  },
+  {
+    "num": 24,
+    "title": "WeekPrint",
+    "sub": "Your Google Calendar week, turned into a geometric art poster",
+    "score": "8/10",
+    "deviceType": "MOBILE",
+    "folder": "24-weekprint-—-pulls-your-apple",
+    "startScreenId": "3d76bb0c46454080b765e8f7d6c17558",
+    "status": "complete"
+  },
+  {
+    "num": 25,
+    "title": "ShakeShot",
+    "sub": "One morning portrait. One evening word. Your day in two moments.",
+    "score": "8/10",
+    "deviceType": "MOBILE",
+    "folder": "25-shakeshot-each-morning-you-get",
+    "startScreenId": "a300b4a31bf947f3b265de2ac01bb393",
+    "status": "complete"
+  },
+  {
+    "num": 26,
+    "title": "AI Study Buddy",
+    "sub": "Voice-based Pomodoro companion with AI check-ins for teens",
+    "score": "8/10",
+    "deviceType": "MOBILE",
+    "folder": "26-ai-study-buddy-an-app-that-use",
+    "startScreenId": "e74f1ccd401d445cb6f4dd5ca9cb0251",
+    "status": "complete"
+  },
+  {
+    "num": 27,
+    "title": "Future Face AI",
+    "sub": "Upload a photo, see yourself decades from now — pay $1.99 to download",
+    "score": "7/10",
+    "deviceType": "WEB",
+    "folder": "27-future-face-ai-app-that-genera",
+    "startScreenId": "716fed8c15b945a99ee6dfc35928da9e",
+    "status": "complete"
+  },
+  {
+    "num": 28,
+    "title": "Idea Swipe",
+    "sub": "Keyboard-driven web app to build your personal idea backlog — swipe to keep, drop, or maybe",
+    "score": "8/10",
+    "deviceType": "WEB",
+    "folder": "28-idea-swipe-tinder-for-ideas---",
+    "startScreenId": "564064fcf47543b7bb154902ba9e496d",
+    "status": "complete"
+  },
+  {
+    "num": 29,
+    "title": "Design Swipe",
+    "sub": "Tinder for app designs — swipe to BUILD or DROP your inspiration queue",
+    "score": "8/10",
+    "deviceType": "MOBILE",
+    "folder": "29-design-swipe-tinder-for-app-de",
+    "startScreenId": "1173587dc29e4c959563e317e13c3ba5",
+    "status": "complete"
+  },
+  {
+    "num": 30,
+    "title": "Baby Story",
+    "sub": "AI-written milestone stories shared via magic link, printed as keepsake books",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "30-stories-for-baby---stories-for",
+    "startScreenId": "cd5ea2b08dc04887acb9e50fdb6c0c3a",
+    "status": "complete"
+  },
+  {
+    "num": 31,
+    "title": "5-Minute Reading Retention",
+    "sub": "A guided nonfiction course for comprehension, recall, and action.",
+    "score": "3/10",
+    "deviceType": "WEB",
+    "folder": "31-duolingo-for-reading---book-su",
+    "startScreenId": "landing-value-prop",
+    "status": "complete"
+  },
+  {
+    "num": 32,
+    "title": "Walk City",
+    "sub": "Build one civic project each week by completing 5 meaningful walk days.",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "32-walk-city---your-steps-build-a",
+    "startScreenId": "27f671e3512642cd9524e423b52033cd",
+    "status": "complete"
+  },
+  {
+    "num": 33,
+    "title": "Walk Garden",
+    "sub": "A 21-day step challenge that grows a collectible seasonal garden.",
     "score": "6/10",
     "deviceType": "MOBILE",
-    "folder": "17-mood-tracker-emoji-daily-log",
-    "startScreenId": "c9ffff6ca10f40ba9430a7633eede0f3",
+    "folder": "33-walk-garden---each-step-equals",
+    "startScreenId": "83b29874ca184bc3a9bf063dd94f1470",
+    "status": "complete"
+  },
+  {
+    "num": 34,
+    "title": "Book Pledge",
+    "sub": "Email-first reading pledges with streaks, summaries, and recovery loops.",
+    "score": "6/10",
+    "deviceType": "WEB",
+    "folder": "34-book-pledge---bet-on-your-read",
+    "startScreenId": "d79631cc0d244ae3a6ee4dc54223176c",
+    "status": "complete"
+  },
+  {
+    "num": 35,
+    "title": "HingeFix",
+    "sub": "Hinge-aware profile audit and rewrite flow for bios and prompt answers.",
+    "score": "5/10",
+    "deviceType": "MOBILE",
+    "folder": "35-dating-profile-scorer-and-roas",
+    "startScreenId": "67f737aeac33418494cd6738c7182fa5",
+    "status": "complete"
+  },
+  {
+    "num": 36,
+    "title": "Lunch Lab",
+    "sub": "Track lunch tags and post-meal energy to uncover your afternoon crash patterns.",
+    "score": "6/10",
+    "deviceType": "MOBILE",
+    "folder": "36-meal-scanner-that-predicts-you",
+    "startScreenId": "e0c56f18a80f4dc69f71d04b2104b5e3",
+    "status": "complete"
+  },
+  {
+    "num": 37,
+    "title": "Voice Note Polish",
+    "sub": "A pre-send panic button for dating voice notes.",
+    "score": "6/10",
+    "deviceType": "MOBILE",
+    "folder": "37-voice-note-coach-for-dating.-y",
+    "startScreenId": "15970110b06c41aaab225d77c79a1f70",
+    "status": "complete"
+  },
+  {
+    "num": 38,
+    "title": "AI Dating Photo Technical Audit",
+    "sub": "Technical audit for solo dating photos with a free score reveal and paid explanations.",
+    "score": "6/10",
+    "deviceType": "MOBILE",
+    "folder": "38-ai-photo-ranker-for-attractive",
+    "startScreenId": "b25833c96c964350b5fa8a8a2fba2219",
+    "status": "complete"
+  },
+  {
+    "num": 40,
+    "title": "Front-door panic prevention app",
+    "sub": "Tracks repeated forgotten items and nudges office commuters before they leave.",
+    "score": "5/10",
+    "deviceType": "MOBILE",
+    "folder": "40-front-door-panic-prevention-ap",
+    "startScreenId": "8009b91eb2634b6a9ca79af1f0566b4f",
+    "status": "complete"
+  },
+  {
+    "num": 43,
+    "title": "Caffeine Pulse",
+    "sub": "Scan a drink to see your latest safe caffeine time before bed.",
+    "score": "5/10",
+    "deviceType": "MOBILE",
+    "folder": "43-caffeine-scanner-that-predicts",
+    "startScreenId": "2ece5531da8942c7b442b1e134dfd88c",
+    "status": "complete"
+  },
+  {
+    "num": 46,
+    "title": "Chat Unsticker",
+    "sub": "Reply ideas for stalled dating chats, with a redaction check before AI analysis.",
+    "score": "5/10",
+    "deviceType": "MOBILE",
+    "folder": "46-rizz-score-is-a-dating-convers",
+    "startScreenId": "3e9e43720f384eac8b151cf8719e22a6",
+    "status": "complete"
+  },
+  {
+    "num": 53,
+    "title": "Glow Clash",
+    "sub": "Pre-event irritation checker for strong skincare routines.",
+    "score": "6/10",
+    "deviceType": "WEB",
+    "folder": "53-glow-clash-is-an-attractivenes",
+    "startScreenId": "f40a5ab6deb94a27a2ea7804f20c9b73",
+    "status": "complete"
+  },
+  {
+    "num": 54,
+    "title": "Panic Brake",
+    "sub": "Practice tighter interview answers with a record-review-redo loop.",
+    "score": "7/10",
+    "deviceType": "WEB",
+    "folder": "54-panic-brake-is-a-status-app-th",
+    "startScreenId": "d8cafd8a68094e6c927121da523f586b",
+    "status": "complete"
+  },
+  {
+    "num": 55,
+    "title": "BiteBack",
+    "sub": "A 14-night reset for breaking one repeat late-night snack or drink habit.",
+    "score": "7/10",
+    "deviceType": "MOBILE",
+    "folder": "55-biteback-is-a-health-app-that-",
+    "startScreenId": "8b2acf68e8f244df99089f8a5197bcef",
     "status": "complete"
   }
 ]

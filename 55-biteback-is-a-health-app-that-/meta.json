@@ -1,0 +1,287 @@
+{
+  "id": "idea-55",
+  "num": 55,
+  "title": "BiteBack",
+  "subtitle": "A 14-night reset for breaking one repeat late-night snack or drink habit.",
+  "description": "BiteBack becomes a mobile-first 14-night reset for people who have one repeat late-night habit they actually want to break: soda after brushing, candy in bed, dessert right before sleep, sports drink at night, or post-dinner grazing. On first use, the user picks their main culprit category, chooses a simple cutoff plan, and selects two fallback moves they are willing to do instead. The product does not score \"tooth damage,\" pretend to know exact brush timing, or ask the user to log every snack forever. Each night, the app gives the user only three choices: `I'm about to have it`, `I already had it`, or `I skipped it tonight`. If they are about to slip, BiteBack shows a single rescue card for that category: the least-bad move right now, the one thing to avoid, and the next clean reset step for tonight. If they already slipped, it gives a low-drama recovery card instead of a guilt label. If they skipped it, the night is logged in one tap and the user moves on. After a few nights, the app does not show charts; it suggests exactly one plan adjustment based on failures, such as moving the cutoff earlier, changing the fallback choice, or delaying brushing until the user is truly done eating. This is better because the product is no longer pretending to be a forever tracker or a medical rules engine. It is a short behavior-change utility for one recurring problem. It is also more believable for a solo builder: 5-7 tightly written culprit playbooks, local-only state, one simple rules layer, and no dependence on notifications, social loops, partnerships, or a giant content library. Why would users come back in week 2? Because they are still inside a finite 14-night reset, the app already holds their chosen culprit and fallback plan, and week 2 is when the first plan adjustment appears if the original plan is failing. If users do not care enough to complete a 14-night reset, retention is weak and the product should be treated as a one-off utility, not a habit app.",
+  "score": 7,
+  "status": "complete",
+  "deviceType": "MOBILE",
+  "category": "Health",
+  "platform": [
+    "ios",
+    "android"
+  ],
+  "tags": [
+    "dental",
+    "habit",
+    "nighttime",
+    "health",
+    "pwa"
+  ],
+  "folder": "55-biteback-is-a-health-app-that-",
+  "prototypeUrl": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/",
+  "metaUrl": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/meta.json",
+  "startScreenId": "8b2acf68e8f244df99089f8a5197bcef",
+  "startScreenUrl": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/8b2acf68e8f244df99089f8a5197bcef.html",
+  "screenCount": 8,
+  "stitchId": "13808771399622021930",
+  "stitchUrl": "https://stitch.withgoogle.com/projects/13808771399622021930",
+  "publishedAt": "2026-04-02T20:07:00Z",
+  "updatedAt": "2026-04-02T20:07:00Z",
+  "screens": [
+    {
+      "id": "8b2acf68e8f244df99089f8a5197bcef",
+      "label": "Landing / Value Prop",
+      "url": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/8b2acf68e8f244df99089f8a5197bcef.html",
+      "order": 0
+    },
+    {
+      "id": "8b18b7c6bb5048d3bd16cf20e02299c1",
+      "label": "Choose Your Habit",
+      "url": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/8b18b7c6bb5048d3bd16cf20e02299c1.html",
+      "order": 1
+    },
+    {
+      "id": "558799a402c14f20ac4db6cfbba596e8",
+      "label": "Build My Plan",
+      "url": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/558799a402c14f20ac4db6cfbba596e8.html",
+      "order": 2
+    },
+    {
+      "id": "b22d9124ea5b4f7681046e2616c0f1fb",
+      "label": "Nightly Check-In",
+      "url": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/b22d9124ea5b4f7681046e2616c0f1fb.html",
+      "order": 3
+    },
+    {
+      "id": "e1f55af5161e40b2aa14f49783b3c3fc",
+      "label": "Rescue / Recovery Card",
+      "url": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/e1f55af5161e40b2aa14f49783b3c3fc.html",
+      "order": 4
+    },
+    {
+      "id": "4b36143b7eaa45dd877b6c3547dd5d07",
+      "label": "Plan Adjustment",
+      "url": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/4b36143b7eaa45dd877b6c3547dd5d07.html",
+      "order": 5
+    },
+    {
+      "id": "7da16ebcdb4b42b08a00a608e258628b",
+      "label": "Reset Progress / History",
+      "url": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/7da16ebcdb4b42b08a00a608e258628b.html",
+      "order": 6
+    },
+    {
+      "id": "2e95f60582a648d1a96a2386c49aa2b2",
+      "label": "Method / Trust",
+      "url": "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/2e95f60582a648d1a96a2386c49aa2b2.html",
+      "order": 7
+    }
+  ],
+  "journey": [
+    {
+      "stage": "",
+      "icon": "💡",
+      "title": "Original Idea",
+      "desc": "Dental-anxiety guidance framed like a calorie tracker for late-night habits.",
+      "sections": [
+        {
+          "label": "Description",
+          "items": [
+            "BiteBack is a health app that copies the Cal AI model but applies it to dental anxiety instead of calories. You scan the dessert, soda, sports drink, or late-night snack you are about to have, tell the app roughly when you will brush, and it calculates a Tooth Damage Window based on sugar, acidity, stickiness, and timing. The reveal is instant and screen-recordable: a blunt warning that says your teeth stay in cavity-risk mode until a specific time tonight, plus the exact safe-brush time and one lower-damage swap so the loop becomes scan, see the damage, swap or delay, and come back because the same nighttime choices keep repeating."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "critique",
+      "icon": "🔍",
+      "title": "Critique v1",
+      "desc": "The fake precision and fear-based hook were the biggest credibility problems.",
+      "sections": [
+        {
+          "label": "What's Good",
+          "items": [
+            "The core hook is strong and legible: \"scan snack, see exact damage window, know when it's safer to brush\" is more concrete than generic dental advice.",
+            "It targets a real repeated behavior cluster: late-night sugar, soda, and lazy brushing decisions are common, emotionally loaded, and easy to understand.",
+            "The screen-recordable reveal gives it some viral potential because the output is blunt, visual, and easy to share.",
+            "A narrowly scoped MVP is possible if you stop pretending this is clinical intelligence and treat it as a heuristic risk meter."
+          ]
+        },
+        {
+          "label": "Brutal Feedback",
+          "items": [
+            "This is dental anxiety bait dressed up as science. \"Tooth Damage Window\" sounds authoritative, but unless you have a defensible model, it is just fear-based UX with a timer.",
+            "The main promise depends on false precision. You are implying the app can tell me an exact safe-brush time from a photo, rough brushing estimate, sugar, acidity, and stickiness. That is not how mouths work. Saliva flow, portion size, existing enamel damage, fluoride use, eating speed, and whether the user rinsed matter too. Your \"specific time tonight\" risks being confidently wrong.",
+            "You are stacking uncertainty on uncertainty. First the app has to identify the food or drink correctly. Then it has to estimate sugar/acidity/stickiness. Then it has to map that to cavity-risk timing. Then it has to tell the user what to do. Every layer compounds bullshit.",
+            "\"Copies the Cal AI model\" is not a strategy; it is cargo cult product design. Calorie apps work because users already accept rough nutritional estimates. Dental risk is less intuitive, less frequently tracked, and much harder to verify from daily feedback.",
+            "The retention loop is weak. Why does the user come back after day 1? Because they keep making bad nighttime choices? That is not a product loop; that is a hope that the user stays unhealthy enough to need you.",
+            "The product may be too negative to live with. A calorie app can feel empowering. A dental-anxiety app that scolds people before dessert can feel punishing, neurotic, and easy to uninstall.",
+            "The \"one lower-damage swap\" sounds simple until you try to make it useful. Swap to what: cheese, nuts, water, xylitol gum, a different dessert? Good suggestions require context, and bad suggestions make the app feel stupid instantly.",
+            "The scan step is friction masquerading as magic. Most people know soda and sticky candy are bad for teeth. If the app tells them what they already know, it is dead. If it tries to be smarter than common sense, it will often be wrong.",
+            "You are drifting into health advice territory without the credibility to support it. If your timer tells someone to delay brushing and they interpret that badly, you now own the trust problem even if your disclaimer screams otherwise.",
+            "The idea is not naturally habit-forming because the payoff is delayed and invisible. People do not feel enamel erosion in real time. Without immediate reward, the app becomes a guilt notification machine.",
+            "The market is niche inside a niche. You need users who both care enough about dental health to scan snacks and are not already solving this with \"don't drink soda before bed.\"",
+            "If the value depends on high-quality food recognition and nutrient/acidity mapping, your supposedly simple app quietly becomes a data product. That is exactly the kind of hidden scope that burns solo builders."
+          ]
+        },
+        {
+          "label": "Solo Dev",
+          "items": [
+            "Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — only if the MVP is brutally reduced to a heuristic risk checker with a tiny item database, manual input fallback, and zero claims of medical-grade accuracy.",
+            "Biggest solo complexity traps: camera-based food recognition quality; building or sourcing reliable sugar/acidity/stickiness data; inventing a defensible risk formula; handling health-adjacent liability and disclaimers; creating actually useful swap suggestions; retention mechanics that are not just shame loops."
+          ]
+        }
+      ],
+      "verdict": "NEEDS MAJOR WORK",
+      "verdictClass": "needs",
+      "score": "5/10"
+    },
+    {
+      "stage": "improve",
+      "icon": "✨",
+      "title": "Improved v2",
+      "desc": "The concept shifted toward a nightly helper with reduced technical scope.",
+      "sections": [
+        {
+          "label": "What Changed",
+          "items": [
+            "Replaced camera scanning and \"exact safe-brush time\" with a manual quick-add flow and heuristic risk bands (`Low`, `Moderate`, `High`) plus one clear next step. This removes the weakest technical claim, cuts the biggest solo-dev scope trap, and makes the product honest about uncertainty.",
+            "Narrowed the product to 12-20 common nighttime culprits with prewritten action cards instead of trying to understand every food. This turns a hidden data-product problem into a manageable content system a solo builder can prepare, verify, and ship in 2-4 weeks.",
+            "Added a retention loop based on nightly logging, streaks, and weekly trigger summaries rather than guilt-based warnings. This answers the critique's core question about week-2 retention by giving users a reason to return even after they learn the basics."
+          ]
+        },
+        {
+          "label": "MVP Scope",
+          "items": [
+            "What's in v1: manual quick-add for 12-20 predefined nighttime items; 2-3 context toggles; heuristic risk band output; one recommended next action; nightly log history; streaks; weekly \"worst offenders\" summary; onboarding/disclaimer copy; local notifications for bedtime check-in; a tiny curated content dataset covering item labels, risk band defaults, and action cards.",
+            "What's out of v1: camera scanning; photo recognition; exact safe-brush times; personalized oral-risk modeling; international product coverage; community features; user-generated food entries; dentist partnerships; payments; deep health tracking; dynamic swap recommendations beyond fixed action cards; Apple Health or insurance integrations."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "critique",
+      "icon": "🔍",
+      "title": "Critique v2",
+      "desc": "Scope improved, but retention and preset coverage still looked weak.",
+      "sections": [
+        {
+          "label": "What's Good",
+          "items": [
+            "This is dramatically less fraudulent than v1. Cutting camera scanning and fake timers removes the most embarrassing part of the original concept.",
+            "The scope is finally small enough to imagine a solo developer shipping a real MVP instead of a haunted science fair demo.",
+            "The product now has a clear nightly use case: \"I just had something dumb before bed, what is the least bad next step?\" That is understandable in one sentence.",
+            "The design is constrained enough that AI-assisted coding can plausibly handle most of the UI, local storage, rule logic, and reminder plumbing."
+          ]
+        },
+        {
+          "label": "Brutal Feedback",
+          "items": [
+            "You fixed the fake precision problem, but you still have a motivation problem. This is basically a bedtime guilt companion with nicer copy. Why does the user come back after day 1 once they learn that soda, candy, and chips at night are bad?",
+            "The retention loop is still mostly decorative. Streaks and weekly summaries are not magic. They are analytics frosting on top of a behavior that many users will not bother logging unless they are already unusually conscientious. The app risks becoming Duolingo for people who ate ice cream once.",
+            "The preset-library strategy is cleaner technically, but weaker psychologically. The moment a user’s actual snack is not on the list, the product feels toy-like. \"12-20 nighttime culprits\" sounds disciplined in a spec and flimsy in a real hand at 11:40 PM holding takeout, bubble tea, trail mix, fruit, or something homemade.",
+            "\"Just expand the preset library later\" is how small content apps quietly become maintenance sludge. Every new item needs labeling, rule mapping, copy, edge-case handling, and some confidence that you are not giving dumb advice. That is manual product work, not free scope.",
+            "The rule engine is still health-adjacent enough to create trust problems. \"Wait a bit before brushing after an acidic drink\" is reasonable-sounding, but the second users sense hand-wavy advice on something medical-ish, trust drops fast. Disclaimers do not make bad heuristics feel credible.",
+            "The emotional tone is still dangerous. You say this is not guilt-based, but the core loop is literally \"confess snack, receive risk label.\" A lot of people will interpret that as scolding with a pastel UI.",
+            "The pattern view is not a moat; it is a chart. \"3 of your last 5 high-risk nights came from soda after 9:30 PM\" is useful exactly once. After that, the user has learned the lesson. Repeating the obvious is not retention, it is a reminder that the app has no second act.",
+            "The app may be too narrow to matter and too naggy to love. Dental self-care is important, but it is not a category people romanticize, obsess over, or talk about daily unless they already have a problem. That is a weak base for habit-product ambition.",
+            "The fallback positioning exposes the weakness. If retention fails, you reposition it as a lightweight educational utility. That is another way of saying \"if the habit app does not work, maybe this is just a one-off tool.\" Exactly. That is the real risk.",
+            "The build estimate is still optimistic. \"4-5 days for content prep and rule writing\" sounds like someone who has never had to turn messy health-adjacent advice into consistent, non-annoying consumer copy. The content is the product here. Treating it like a side task is self-deception.",
+            "Notifications are not automatically a feature. A bedtime reminder to log risky snacks can easily become an instant mute or uninstall trigger, especially if the user is already tired, guilty, or annoyed.",
+            "There is still no obvious wedge for distribution. This is not inherently social, not clearly searchable, not obviously B2B, and not something people urgently recommend to friends. Without a strong acquisition channel, even a decent MVP can die in silence."
+          ]
+        },
+        {
+          "label": "Solo Dev",
+          "items": [
+            "Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the software is manageable, but the real trap is the content/rules layer and proving anyone wants to do this more than a few times.",
+            "Biggest solo complexity traps: turning hand-wavy oral-health advice into consistent action cards; preset coverage gaps making the app feel fake; building a weekly pattern view that says anything non-obvious; notification UX causing churn instead of habit; underestimating the manual copy/testing work; mistaking a small UI build for a validated product."
+          ]
+        }
+      ],
+      "verdict": "NEEDS MAJOR WORK",
+      "verdictClass": "needs",
+      "score": "6/10"
+    },
+    {
+      "stage": "improve",
+      "icon": "✨",
+      "title": "Improved v3",
+      "desc": "The product narrowed into a fixed 14-night reset with simpler playbooks.",
+      "sections": [
+        {
+          "label": "What Changed",
+          "items": [
+            "Reframed the product from an open-ended nightly logger into a 14-night \"late-night damage control\" reset for one specific habit. This fixes the biggest structural issue in the critique: users now have a concrete job-to-be-done and a real reason to return in week 2 beyond re-learning that soda and candy are bad.",
+            "Removed the broad preset library, risk labels, streaks, weekly pattern charts, and bedtime reminders from v1. Instead, v1 covers only 5-7 culprit categories with one rescue card and one fallback plan per category, which keeps content prep realistic and avoids dashboard features the critique already called decorative.",
+            "Changed the product from a pseudo-clinical app into a mobile-first utility/PWA with brutally concrete, low-drama guidance. That makes the trust problem smaller, reduces build scope, and gives the idea a more believable acquisition path through searchable \"what do I do now?\" moments instead of pretending it is a habit empire."
+          ]
+        },
+        {
+          "label": "MVP Scope",
+          "items": [
+            "What's in v1: mobile-first web app/PWA; onboarding to choose one main late-night habit from 5-7 categories; one cutoff plan; two fallback choices; nightly check-in with three actions (`about to`, `already did`, `skipped`); category-specific rescue/recovery cards; 14-night progress tracker; one rule-based plan adjustment after repeated slips; local-only history for the current reset; plain-language trust/disclaimer screen.",
+            "What's out of v1: camera scanning; food recognition; exact safe-brush times; broad food search; expanding preset coverage beyond the initial 5-7 categories; streaks; weekly summaries; pattern dashboards; notifications/reminders; user-generated entries; moderation; social sharing; payments; dentist partnerships; Apple Health integrations; personalized dental risk modeling."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "validate",
+      "icon": "✅",
+      "title": "Validated",
+      "desc": "The v3 handoff is specific enough to generate a design-ready prototype.",
+      "sections": [
+        {
+          "label": "Validation",
+          "items": [
+            "Score: 7/10",
+            "Status: status: ready-for-design\nvalidated_at: 2026-04-03 02:47\nscore: 7/10",
+            "Date: 2026-04-03"
+          ]
+        },
+        {
+          "label": "Design Handoff",
+          "items": [
+            "Screen 1: Landing / Value Prop — explains the 14-night reset in one sentence; key elements: headline, who it is for, three-step explanation, start CTA, trust disclaimer link.",
+            "Screen 2: Choose Your Habit — lets the user pick one main culprit category; key elements: 5-7 category cards, short examples for each, \"this is the one I want to cut\" CTA.",
+            "Screen 3: Build My Plan — sets the initial reset plan; key elements: chosen habit summary, cutoff selector, two fallback options, short note explaining the plan is editable after slips.",
+            "Screen 4: Nightly Check-In — core daily screen; key elements: three large actions (`I'm about to have it`, `I already had it`, `I skipped it tonight`), current day of 14, current plan summary.",
+            "Screen 5: Rescue / Recovery Card — shows the concrete next step for tonight; key elements: one recommended action, one avoid-this warning, one reset instruction for later tonight, save CTA.",
+            "Screen 6: Night Logged — confirms the entry was saved; key elements: tonight's outcome, current progress through the 14 nights, next check-in CTA, optional view history link.",
+            "Screen 7: Plan Adjustment — appears only after repeated slips; key elements: what keeps happening, one recommended plan change, accept/change-later actions.",
+            "Screen 8: Reset Progress / History — shows the current 14-night run; key elements: calendar/list of outcomes, current plan, accepted adjustments, restart reset CTA.",
+            "Screen 9: Method / Trust — explains the rule-based nature of the advice; key elements: what the app can and cannot tell you, non-medical framing, contact/support info."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "design",
+      "icon": "🎨",
+      "title": "Designed",
+      "desc": "Stitch project and preview assets were generated for the mobile prototype.",
+      "sections": [
+        {
+          "label": "Design Output",
+          "items": [
+            "https://stitch.withgoogle.com/projects/13808771399622021930",
+            "Device type: MOBILE",
+            "https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/"
+          ]
+        }
+      ]
+    }
+  ],
+  "journeyHtml": [
+    "<div class=\"esect\"><div class=\"esect-label\">Description</div><ul><li>BiteBack is a health app that copies the Cal AI model but applies it to dental anxiety instead of calories. You scan the dessert, soda, sports drink, or late-night snack you are about to have, tell the app roughly when you will brush, and it calculates a Tooth Damage Window based on sugar, acidity, stickiness, and timing. The reveal is instant and screen-recordable: a blunt warning that says your teeth stay in cavity-risk mode until a specific time tonight, plus the exact safe-brush time and one lower-damage swap so the loop becomes scan, see the damage, swap or delay, and come back because the same nighttime choices keep repeating.</li></ul></div>",
+    "<div class=\"tag-row\"><span class=\"etag\">NEEDS MAJOR WORK</span><span class=\"etag\">5/10</span></div><div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>The core hook is strong and legible: &quot;scan snack, see exact damage window, know when it&#x27;s safer to brush&quot; is more concrete than generic dental advice.</li><li>It targets a real repeated behavior cluster: late-night sugar, soda, and lazy brushing decisions are common, emotionally loaded, and easy to understand.</li><li>The screen-recordable reveal gives it some viral potential because the output is blunt, visual, and easy to share.</li><li>A narrowly scoped MVP is possible if you stop pretending this is clinical intelligence and treat it as a heuristic risk meter.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>This is dental anxiety bait dressed up as science. &quot;Tooth Damage Window&quot; sounds authoritative, but unless you have a defensible model, it is just fear-based UX with a timer.</li><li>The main promise depends on false precision. You are implying the app can tell me an exact safe-brush time from a photo, rough brushing estimate, sugar, acidity, and stickiness. That is not how mouths work. Saliva flow, portion size, existing enamel damage, fluoride use, eating speed, and whether the user rinsed matter too. Your &quot;specific time tonight&quot; risks being confidently wrong.</li><li>You are stacking uncertainty on uncertainty. First the app has to identify the food or drink correctly. Then it has to estimate sugar/acidity/stickiness. Then it has to map that to cavity-risk timing. Then it has to tell the user what to do. Every layer compounds bullshit.</li><li>&quot;Copies the Cal AI model&quot; is not a strategy; it is cargo cult product design. Calorie apps work because users already accept rough nutritional estimates. Dental risk is less intuitive, less frequently tracked, and much harder to verify from daily feedback.</li><li>The retention loop is weak. Why does the user come back after day 1? Because they keep making bad nighttime choices? That is not a product loop; that is a hope that the user stays unhealthy enough to need you.</li><li>The product may be too negative to live with. A calorie app can feel empowering. A dental-anxiety app that scolds people before dessert can feel punishing, neurotic, and easy to uninstall.</li><li>The &quot;one lower-damage swap&quot; sounds simple until you try to make it useful. Swap to what: cheese, nuts, water, xylitol gum, a different dessert? Good suggestions require context, and bad suggestions make the app feel stupid instantly.</li><li>The scan step is friction masquerading as magic. Most people know soda and sticky candy are bad for teeth. If the app tells them what they already know, it is dead. If it tries to be smarter than common sense, it will often be wrong.</li><li>You are drifting into health advice territory without the credibility to support it. If your timer tells someone to delay brushing and they interpret that badly, you now own the trust problem even if your disclaimer screams otherwise.</li><li>The idea is not naturally habit-forming because the payoff is delayed and invisible. People do not feel enamel erosion in real time. Without immediate reward, the app becomes a guilt notification machine.</li><li>The market is niche inside a niche. You need users who both care enough about dental health to scan snacks and are not already solving this with &quot;don&#x27;t drink soda before bed.&quot;</li><li>If the value depends on high-quality food recognition and nutrient/acidity mapping, your supposedly simple app quietly becomes a data product. That is exactly the kind of hidden scope that burns solo builders.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — only if the MVP is brutally reduced to a heuristic risk checker with a tiny item database, manual input fallback, and zero claims of medical-grade accuracy.</li><li>Biggest solo complexity traps: camera-based food recognition quality; building or sourcing reliable sugar/acidity/stickiness data; inventing a defensible risk formula; handling health-adjacent liability and disclaimers; creating actually useful swap suggestions; retention mechanics that are not just shame loops.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Replaced camera scanning and &quot;exact safe-brush time&quot; with a manual quick-add flow and heuristic risk bands (`Low`, `Moderate`, `High`) plus one clear next step. This removes the weakest technical claim, cuts the biggest solo-dev scope trap, and makes the product honest about uncertainty.</li><li>Narrowed the product to 12-20 common nighttime culprits with prewritten action cards instead of trying to understand every food. This turns a hidden data-product problem into a manageable content system a solo builder can prepare, verify, and ship in 2-4 weeks.</li><li>Added a retention loop based on nightly logging, streaks, and weekly trigger summaries rather than guilt-based warnings. This answers the critique&#x27;s core question about week-2 retention by giving users a reason to return even after they learn the basics.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>What&#x27;s in v1: manual quick-add for 12-20 predefined nighttime items; 2-3 context toggles; heuristic risk band output; one recommended next action; nightly log history; streaks; weekly &quot;worst offenders&quot; summary; onboarding/disclaimer copy; local notifications for bedtime check-in; a tiny curated content dataset covering item labels, risk band defaults, and action cards.</li><li>What&#x27;s out of v1: camera scanning; photo recognition; exact safe-brush times; personalized oral-risk modeling; international product coverage; community features; user-generated food entries; dentist partnerships; payments; deep health tracking; dynamic swap recommendations beyond fixed action cards; Apple Health or insurance integrations.</li></ul></div>",
+    "<div class=\"tag-row\"><span class=\"etag\">NEEDS MAJOR WORK</span><span class=\"etag\">6/10</span></div><div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>This is dramatically less fraudulent than v1. Cutting camera scanning and fake timers removes the most embarrassing part of the original concept.</li><li>The scope is finally small enough to imagine a solo developer shipping a real MVP instead of a haunted science fair demo.</li><li>The product now has a clear nightly use case: &quot;I just had something dumb before bed, what is the least bad next step?&quot; That is understandable in one sentence.</li><li>The design is constrained enough that AI-assisted coding can plausibly handle most of the UI, local storage, rule logic, and reminder plumbing.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>You fixed the fake precision problem, but you still have a motivation problem. This is basically a bedtime guilt companion with nicer copy. Why does the user come back after day 1 once they learn that soda, candy, and chips at night are bad?</li><li>The retention loop is still mostly decorative. Streaks and weekly summaries are not magic. They are analytics frosting on top of a behavior that many users will not bother logging unless they are already unusually conscientious. The app risks becoming Duolingo for people who ate ice cream once.</li><li>The preset-library strategy is cleaner technically, but weaker psychologically. The moment a user’s actual snack is not on the list, the product feels toy-like. &quot;12-20 nighttime culprits&quot; sounds disciplined in a spec and flimsy in a real hand at 11:40 PM holding takeout, bubble tea, trail mix, fruit, or something homemade.</li><li>&quot;Just expand the preset library later&quot; is how small content apps quietly become maintenance sludge. Every new item needs labeling, rule mapping, copy, edge-case handling, and some confidence that you are not giving dumb advice. That is manual product work, not free scope.</li><li>The rule engine is still health-adjacent enough to create trust problems. &quot;Wait a bit before brushing after an acidic drink&quot; is reasonable-sounding, but the second users sense hand-wavy advice on something medical-ish, trust drops fast. Disclaimers do not make bad heuristics feel credible.</li><li>The emotional tone is still dangerous. You say this is not guilt-based, but the core loop is literally &quot;confess snack, receive risk label.&quot; A lot of people will interpret that as scolding with a pastel UI.</li><li>The pattern view is not a moat; it is a chart. &quot;3 of your last 5 high-risk nights came from soda after 9:30 PM&quot; is useful exactly once. After that, the user has learned the lesson. Repeating the obvious is not retention, it is a reminder that the app has no second act.</li><li>The app may be too narrow to matter and too naggy to love. Dental self-care is important, but it is not a category people romanticize, obsess over, or talk about daily unless they already have a problem. That is a weak base for habit-product ambition.</li><li>The fallback positioning exposes the weakness. If retention fails, you reposition it as a lightweight educational utility. That is another way of saying &quot;if the habit app does not work, maybe this is just a one-off tool.&quot; Exactly. That is the real risk.</li><li>The build estimate is still optimistic. &quot;4-5 days for content prep and rule writing&quot; sounds like someone who has never had to turn messy health-adjacent advice into consistent, non-annoying consumer copy. The content is the product here. Treating it like a side task is self-deception.</li><li>Notifications are not automatically a feature. A bedtime reminder to log risky snacks can easily become an instant mute or uninstall trigger, especially if the user is already tired, guilty, or annoyed.</li><li>There is still no obvious wedge for distribution. This is not inherently social, not clearly searchable, not obviously B2B, and not something people urgently recommend to friends. Without a strong acquisition channel, even a decent MVP can die in silence.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the software is manageable, but the real trap is the content/rules layer and proving anyone wants to do this more than a few times.</li><li>Biggest solo complexity traps: turning hand-wavy oral-health advice into consistent action cards; preset coverage gaps making the app feel fake; building a weekly pattern view that says anything non-obvious; notification UX causing churn instead of habit; underestimating the manual copy/testing work; mistaking a small UI build for a validated product.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Reframed the product from an open-ended nightly logger into a 14-night &quot;late-night damage control&quot; reset for one specific habit. This fixes the biggest structural issue in the critique: users now have a concrete job-to-be-done and a real reason to return in week 2 beyond re-learning that soda and candy are bad.</li><li>Removed the broad preset library, risk labels, streaks, weekly pattern charts, and bedtime reminders from v1. Instead, v1 covers only 5-7 culprit categories with one rescue card and one fallback plan per category, which keeps content prep realistic and avoids dashboard features the critique already called decorative.</li><li>Changed the product from a pseudo-clinical app into a mobile-first utility/PWA with brutally concrete, low-drama guidance. That makes the trust problem smaller, reduces build scope, and gives the idea a more believable acquisition path through searchable &quot;what do I do now?&quot; moments instead of pretending it is a habit empire.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>What&#x27;s in v1: mobile-first web app/PWA; onboarding to choose one main late-night habit from 5-7 categories; one cutoff plan; two fallback choices; nightly check-in with three actions (`about to`, `already did`, `skipped`); category-specific rescue/recovery cards; 14-night progress tracker; one rule-based plan adjustment after repeated slips; local-only history for the current reset; plain-language trust/disclaimer screen.</li><li>What&#x27;s out of v1: camera scanning; food recognition; exact safe-brush times; broad food search; expanding preset coverage beyond the initial 5-7 categories; streaks; weekly summaries; pattern dashboards; notifications/reminders; user-generated entries; moderation; social sharing; payments; dentist partnerships; Apple Health integrations; personalized dental risk modeling.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">Validation</div><ul><li>Score: 7/10</li><li>Status: status: ready-for-design\nvalidated_at: 2026-04-03 02:47\nscore: 7/10</li><li>Date: 2026-04-03</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Design Handoff</div><ul><li>Screen 1: Landing / Value Prop — explains the 14-night reset in one sentence; key elements: headline, who it is for, three-step explanation, start CTA, trust disclaimer link.</li><li>Screen 2: Choose Your Habit — lets the user pick one main culprit category; key elements: 5-7 category cards, short examples for each, &quot;this is the one I want to cut&quot; CTA.</li><li>Screen 3: Build My Plan — sets the initial reset plan; key elements: chosen habit summary, cutoff selector, two fallback options, short note explaining the plan is editable after slips.</li><li>Screen 4: Nightly Check-In — core daily screen; key elements: three large actions (`I&#x27;m about to have it`, `I already had it`, `I skipped it tonight`), current day of 14, current plan summary.</li><li>Screen 5: Rescue / Recovery Card — shows the concrete next step for tonight; key elements: one recommended action, one avoid-this warning, one reset instruction for later tonight, save CTA.</li><li>Screen 6: Night Logged — confirms the entry was saved; key elements: tonight&#x27;s outcome, current progress through the 14 nights, next check-in CTA, optional view history link.</li><li>Screen 7: Plan Adjustment — appears only after repeated slips; key elements: what keeps happening, one recommended plan change, accept/change-later actions.</li><li>Screen 8: Reset Progress / History — shows the current 14-night run; key elements: calendar/list of outcomes, current plan, accepted adjustments, restart reset CTA.</li><li>Screen 9: Method / Trust — explains the rule-based nature of the advice; key elements: what the app can and cannot tell you, non-medical framing, contact/support info.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">Design Output</div><ul><li><a class=\"ext-link\" href=\"https://stitch.withgoogle.com/projects/13808771399622021930\">Open Stitch project</a></li><li>Device type: MOBILE</li><li><a class=\"ext-link\" href=\"https://jakebuild.github.io/idea-factory/55-biteback-is-a-health-app-that-/\">Open live preview</a></li></ul></div>"
+  ]
+}

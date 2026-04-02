@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<title>The Reset - Nightly Check-In</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#0e1e1e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#002020",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#d4e6e5",
+                        "on-secondary-fixed-variant": "#2e4b57",
+                        "on-surface": "#1b1c1c",
+                        "tertiary-fixed-dim": "#b8cac9",
+                        "on-primary-fixed-variant": "#00504f",
+                        "inverse-surface": "#303030",
+                        "surface-container-highest": "#e4e2e1",
+                        "primary-container": "#387f7e",
+                        "on-tertiary-container": "#f3fffe",
+                        "surface": "#fbf9f8",
+                        "tertiary": "#4f5f5f",
+                        "surface-container": "#f0eded",
+                        "error-container": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#a9efed",
+                        "on-tertiary-fixed-variant": "#3a4a49",
+                        "on-background": "#1b1c1c",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#6f7978",
+                        "tertiary-container": "#677877",
+                        "on-primary-container": "#f3fffe",
+                        "background": "#fbf9f8",
+                        "surface-tint": "#1c6968",
+                        "on-secondary-container": "#4a6774",
+                        "outline-variant": "#bec9c8",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#8dd3d1",
+                        "surface-container-low": "#f6f3f2",
+                        "secondary-container": "#c6e4f4",
+                        "inverse-on-surface": "#f3f0f0",
+                        "secondary": "#466270",
+                        "primary-fixed-dim": "#8dd3d1",
+                        "on-secondary-fixed": "#001f2a",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-fixed-dim": "#adcbda",
+                        "primary": "#186665",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#fbf9f8",
+                        "secondary-fixed": "#c9e7f7",
+                        "on-surface-variant": "#3f4948",
+                        "surface-container-high": "#eae8e7",
+                        "surface-variant": "#e4e2e1"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .font-notoSeric { font-family: 'Noto Serif', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="prototype-shell-style">
+  body.prototype-mobile {
+    min-height: max(844px, 100dvh) !important;
+    padding-top: 76px !important;
+    padding-bottom: 104px !important;
+    background: #fbf9f8 !important;
+    color: #1b1c1c !important;
+  }
+  body.prototype-mobile.no-bottom-nav {
+    padding-bottom: 24px !important;
+  }
+  .prototype-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 72px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(190, 201, 200, 0.45);
+  }
+  .prototype-header-side {
+    width: 78px;
+    display: flex;
+    align-items: center;
+    min-width: 78px;
+  }
+  .prototype-header-side.end {
+    justify-content: flex-end;
+  }
+  .prototype-header-btn {
+    border: 0;
+    background: transparent;
+    color: #186665;
+    font-family: Manrope, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  .prototype-header-btn.icon {
+    font-size: 24px;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: 1;
+  }
+  .prototype-header-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #186665;
+    letter-spacing: -0.02em;
+  }
+  .prototype-bottom-nav {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(190, 201, 200, 0.45);
+    border-radius: 24px;
+    box-shadow: 0 -6px 28px rgba(27, 28, 28, 0.08);
+  }
+  .prototype-bottom-link {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    border-radius: 16px;
+    background: transparent;
+    color: rgba(27, 28, 28, 0.52);
+    padding: 10px 6px;
+    font-family: Manrope, sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prototype-bottom-link.active {
+    background: #c6e4f4;
+    color: #186665;
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col prototype-mobile"><header class="prototype-header"><div class="prototype-header-side"></div><div class="prototype-header-title">Nightly Check-In</div><div class="prototype-header-side end"><button class="prototype-header-btn" onclick="window.location.href='7da16ebcdb4b42b08a00a608e258628b.html'" type="button">History</button></div></header>
+<!-- TopAppBar -->
+
+<main class="flex-1 max-w-2xl mx-auto w-full px-6 pt-8 pb-32">
+<!-- Progress Bloom -->
+<div class="flex justify-between items-center mb-12">
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_rgba(24,102,101,0.4)]"></div>
+<div class="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_rgba(24,102,101,0.4)]"></div>
+<div class="w-3 h-3 rounded-full bg-primary shadow-[0_0_12px_rgba(24,102,101,0.4)]"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+</div>
+<span class="font-label text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Step 3 of 14</span>
+</div>
+<!-- Plan Summary Section -->
+<section class="mb-12 relative overflow-hidden rounded-xl p-8 bg-surface-container-low">
+<div class="relative z-10">
+<p class="font-label text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Tonight's Protocol</p>
+<h2 class="font-headline text-3xl text-on-background mb-4 leading-tight">Current Focus: Digital Noise.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-sm">Silence all non-essential signals. Final digital cutoff is scheduled for <span class="text-primary font-bold">9:00 PM</span>.</p>
+</div>
+<div class="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-secondary-container/20 blur-3xl"></div>
+</section>
+<!-- Large Action Buttons -->
+<div class="space-y-6 mb-16">
+<!-- Primary Action: Ready -->
+<button class="group w-full flex items-center justify-between p-6 rounded-xl bg-primary text-on-primary transition-all duration-300 hover:opacity-95 active:scale-[0.98]" onclick="window.location.href='e1f55af5161e40b2aa14f49783b3c3fc.html'" type="button">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<div class="text-left">
+<span class="block font-headline text-xl">I'm about to have it</span>
+<span class="block font-label text-[10px] uppercase tracking-widest opacity-80 mt-1">Starting the ritual now</span>
+</div>
+</div>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+<!-- Success Action: Accomplished -->
+<button class="group w-full flex items-center justify-between p-6 rounded-xl bg-secondary-container text-on-secondary-container transition-all duration-300 hover:bg-[#b8d9eb] active:scale-[0.98]" onclick="window.location.href='e1f55af5161e40b2aa14f49783b3c3fc.html'" type="button">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" data-icon="check_circle">check_circle</span>
+</div>
+<div class="text-left">
+<span class="block font-headline text-xl">I already had it</span>
+<span class="block font-label text-[10px] uppercase tracking-widest text-on-surface-variant mt-1">Quietly completed</span>
+</div>
+</div>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+<!-- Neutral Action: Skip -->
+<button class="group w-full flex items-center justify-between p-6 rounded-xl bg-surface-container-highest text-on-surface-variant transition-all duration-300 hover:bg-surface-dim active:scale-[0.98]" onclick="window.location.href='7da16ebcdb4b42b08a00a608e258628b.html'" type="button">
+<div class="flex items-center gap-6">
+<div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl" data-icon="self_improvement">self_improvement</span>
+</div>
+<div class="text-left">
+<span class="block font-headline text-xl">I skipped it tonight</span>
+<span class="block font-label text-[10px] uppercase tracking-widest opacity-60 mt-1">Acceptance and renewal</span>
+</div>
+</div>
+<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+<!-- Reflection Prompt -->
+<section class="asymmetric-layout pt-8 border-t border-outline-variant/15">
+<h3 class="font-headline text-2xl text-on-surface mb-6">How did your mind feel today?</h3>
+<div class="relative">
+<textarea class="w-full bg-surface-container-low border-none rounded-sm border-b-2 border-transparent focus:border-primary focus:ring-0 font-body text-lg placeholder:text-on-surface-variant/40 py-4 px-0 transition-all duration-300" placeholder="Softly note your thoughts..." rows="3"></textarea>
+<div class="flex justify-end mt-4">
+<button class="font-label text-[10px] font-bold uppercase tracking-widest text-primary border-b-2 border-primary-fixed hover:border-primary transition-all py-1">Save Reflection</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="prototype-bottom-nav"><button class="prototype-bottom-link active" onclick="window.location.href='b22d9124ea5b4f7681046e2616c0f1fb.html'" type="button">Check-In</button><button class="prototype-bottom-link" onclick="window.location.href='7da16ebcdb4b42b08a00a608e258628b.html'" type="button">Progress</button><button class="prototype-bottom-link" onclick="window.location.href='558799a402c14f20ac4db6cfbba596e8.html'" type="button">Plan</button><button class="prototype-bottom-link" onclick="window.location.href='2e95f60582a648d1a96a2386c49aa2b2.html'" type="button">Trust</button></nav></body></html>

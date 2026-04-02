@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#f3fffe",
+              "primary": "#186665",
+              "surface-bright": "#fbf9f8",
+              "primary-container": "#387f7e",
+              "inverse-on-surface": "#f3f0f0",
+              "surface-container-high": "#eae8e7",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#4f5f5f",
+              "on-secondary-container": "#4a6774",
+              "inverse-surface": "#303030",
+              "on-tertiary-fixed": "#0e1e1e",
+              "surface-tint": "#1c6968",
+              "surface-container": "#f0eded",
+              "surface": "#fbf9f8",
+              "on-secondary-fixed-variant": "#2e4b57",
+              "background": "#fbf9f8",
+              "on-surface-variant": "#3f4948",
+              "tertiary-fixed-dim": "#b8cac9",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed": "#001f2a",
+              "on-secondary": "#ffffff",
+              "surface-variant": "#e4e2e1",
+              "outline": "#6f7978",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#e4e2e1",
+              "primary-fixed-dim": "#8dd3d1",
+              "tertiary-fixed": "#d4e6e5",
+              "surface-dim": "#dcd9d9",
+              "outline-variant": "#bec9c8",
+              "secondary": "#466270",
+              "primary-fixed": "#a9efed",
+              "inverse-primary": "#8dd3d1",
+              "tertiary-container": "#677877",
+              "secondary-fixed": "#c9e7f7",
+              "error": "#ba1a1a",
+              "surface-container-low": "#f6f3f2",
+              "secondary-fixed-dim": "#adcbda",
+              "on-tertiary-fixed-variant": "#3a4a49",
+              "error-container": "#ffdad6",
+              "secondary-container": "#c6e4f4",
+              "on-tertiary-container": "#f3fffe",
+              "on-surface": "#1b1c1c",
+              "on-primary-fixed": "#002020",
+              "on-background": "#1b1c1c",
+              "on-error": "#ffffff",
+              "on-primary-fixed-variant": "#00504f"
+            },
+            fontFamily: {
+              "notoSerif": ["Noto Serif"],
+              "manrope": ["Manrope"],
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .mist-effect {
+        backdrop-filter: blur(24px);
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+      .pulse-gradient {
+        background: radial-gradient(circle at 45% 45%, #186665 0%, #387f7e 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="prototype-shell-style">
+  body.prototype-mobile {
+    min-height: max(844px, 100dvh) !important;
+    padding-top: 76px !important;
+    padding-bottom: 104px !important;
+    background: #fbf9f8 !important;
+    color: #1b1c1c !important;
+  }
+  body.prototype-mobile.no-bottom-nav {
+    padding-bottom: 24px !important;
+  }
+  .prototype-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 72px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(190, 201, 200, 0.45);
+  }
+  .prototype-header-side {
+    width: 78px;
+    display: flex;
+    align-items: center;
+    min-width: 78px;
+  }
+  .prototype-header-side.end {
+    justify-content: flex-end;
+  }
+  .prototype-header-btn {
+    border: 0;
+    background: transparent;
+    color: #186665;
+    font-family: Manrope, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  .prototype-header-btn.icon {
+    font-size: 24px;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: 1;
+  }
+  .prototype-header-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #186665;
+    letter-spacing: -0.02em;
+  }
+  .prototype-bottom-nav {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(190, 201, 200, 0.45);
+    border-radius: 24px;
+    box-shadow: 0 -6px 28px rgba(27, 28, 28, 0.08);
+  }
+  .prototype-bottom-link {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    border-radius: 16px;
+    background: transparent;
+    color: rgba(27, 28, 28, 0.52);
+    padding: 10px 6px;
+    font-family: Manrope, sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prototype-bottom-link.active {
+    background: #c6e4f4;
+    color: #186665;
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface font-manrope selection:bg-primary-fixed selection:text-on-primary-fixed prototype-mobile no-bottom-nav"><header class="prototype-header"><div class="prototype-header-side"><button class="prototype-header-btn icon" onclick="window.location.href='8b18b7c6bb5048d3bd16cf20e02299c1.html'" type="button">←</button></div><div class="prototype-header-title">Build My Plan</div><div class="prototype-header-side end"><button class="prototype-header-btn" onclick="window.location.href='2e95f60582a648d1a96a2386c49aa2b2.html'" type="button">Trust</button></div></header>
+<!-- TopAppBar -->
+
+<main class="max-w-4xl mx-auto px-6 py-12 mb-32">
+<!-- Header Section: Editorial Authority -->
+
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+<!-- Chosen Habit Summary: Bento Style -->
+<section class="md:col-span-12 lg:col-span-7">
+<div class="bg-surface-container-low rounded-xl p-8 h-full flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-fixed text-2xl">phonelink_off</span>
+</div>
+<span class="font-manrope font-semibold text-lg">Digital Noise</span>
+</div>
+<p class="font-notoSerif text-xl text-on-surface-variant leading-relaxed">
+                            Restoring the boundary between your internal world and the constant hum of the digital landscape. A commitment to quietude.
+                        </p>
+</div>
+<div class="mt-12 flex items-center gap-4 text-primary font-medium group cursor-pointer">
+<span class="text-sm">Change Habit</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">east</span>
+</div>
+</div>
+</section>
+<!-- Cutoff Selector: Elegant Minimalist -->
+<section class="md:col-span-12 lg:col-span-5">
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-[#bec9c8]/15 h-full">
+<h3 class="font-manrope text-[10px] uppercase tracking-[0.1em] font-bold text-on-surface-variant mb-8">Cutoff Time</h3>
+<div class="space-y-6">
+<div class="flex items-center justify-between py-4 border-b border-[#bec9c8]/15 cursor-pointer hover:bg-surface-container-low transition-colors px-2 rounded-lg group">
+<span class="text-3xl font-notoSerif">8:00 PM</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary">check_circle</span>
+</div>
+<div class="flex items-center justify-between py-4 border-b border-primary/20 px-2 rounded-lg bg-primary-fixed/20">
+<span class="text-3xl font-notoSerif text-primary">9:00 PM</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center justify-between py-4 border-b border-[#bec9c8]/15 cursor-pointer hover:bg-surface-container-low transition-colors px-2 rounded-lg group">
+<span class="text-3xl font-notoSerif text-on-surface/40">10:00 PM</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary">radio_button_unchecked</span>
+</div>
+</div>
+<p class="mt-8 text-xs text-on-surface-variant leading-relaxed font-manrope">
+                        Selecting 9:00 PM gives your nervous system a two-hour window to downregulate before sleep.
+                    </p>
+</div>
+</section>
+<!-- Fallback Options: Asymmetric Layout -->
+<section class="md:col-span-12 mt-8">
+<h3 class="font-notoSerif text-2xl mb-8">When it feels difficult...</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="relative overflow-hidden group rounded-xl aspect-[16/9] md:aspect-auto md:h-64">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of an open book on a soft beige linen bedspread with warm natural morning light and gentle shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCuf5YqBzjwHYbQe8XRYlJWEEhVa2Ncuk7PT4TTZrxh1fvm8VSjjFN8icZShS3p8sBJ_lYN1LG8S9MdWCyAQFzLjLjJ4m7V4-uZNYs6mHah3-Kjkj5qOjBjEfhAdoIMtsDya7aroOmu1qes6lyZScpNGsCHYvfgJ6ylYqQuL4g3e5fkbecpaLXbffO__QtZtBQOeoYE2JeQxpibts9Zvh-r33sL9sJNvSEPgnN4vNYslTPzGe0Ve49pWQiIjybvGtxsjZqY2t93_3A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1b1c1c]/80 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-notoSerif text-xl mb-2">Read for 10 minutes</h4>
+<p class="text-white/80 text-sm font-manrope">An analog escape for the mind.</p>
+</div>
+</div>
+<div class="bg-secondary-container rounded-xl p-8 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-primary text-3xl mb-4">local_cafe</span>
+<h4 class="font-notoSerif text-xl mb-2 text-on-secondary-container">Sip herbal tea</h4>
+<p class="text-on-secondary-container/70 text-sm font-manrope leading-relaxed">
+                                Replace the tactile habit of scrolling with the warmth of a mug and the aroma of chamomile.
+                            </p>
+</div>
+<button class="mt-8 text-primary font-bold text-xs uppercase tracking-widest flex items-center gap-2">
+                            Add to Ritual <span class="material-symbols-outlined text-xs">add</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Encouragement Note: Tonal Transition -->
+<section class="md:col-span-12 mt-12">
+<div class="bg-surface-container p-10 rounded-xl border-l-4 border-primary/20">
+<p class="font-notoSerif italic text-lg text-on-surface-variant leading-relaxed max-w-2xl">
+                        "This plan is a compass, not a cage. If the path curves or you take a step back, the journey remains. You can refine these boundaries at any moment—kindness is the foundation of change."
+                    </p>
+</div>
+</section>
+</div>
+<!-- Action Button -->
+<div class="mt-16 flex justify-center">
+<button class="pulse-gradient text-on-primary px-12 py-5 rounded-full font-manrope font-bold uppercase tracking-widest hover:opacity-90 transition-all scale-100 active:scale-95 shadow-xl shadow-primary/10" onclick="window.location.href='b22d9124ea5b4f7681046e2616c0f1fb.html'" type="button">
+                Commit to Night 1
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+</body></html>

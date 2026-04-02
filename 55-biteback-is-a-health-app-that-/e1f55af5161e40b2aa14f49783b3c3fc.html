@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed": "#a9efed",
+            "on-secondary-fixed-variant": "#2e4b57",
+            "error": "#ba1a1a",
+            "on-surface": "#1b1c1c",
+            "outline-variant": "#bec9c8",
+            "on-tertiary-container": "#f3fffe",
+            "tertiary-fixed": "#d4e6e5",
+            "primary-container": "#387f7e",
+            "on-tertiary": "#ffffff",
+            "inverse-surface": "#303030",
+            "surface-container-high": "#eae8e7",
+            "secondary-container": "#c6e4f4",
+            "surface-container-low": "#f6f3f2",
+            "secondary": "#466270",
+            "secondary-fixed-dim": "#adcbda",
+            "on-background": "#1b1c1c",
+            "surface-container": "#f0eded",
+            "background": "#fbf9f8",
+            "inverse-primary": "#8dd3d1",
+            "surface": "#fbf9f8",
+            "primary-fixed-dim": "#8dd3d1",
+            "error-container": "#ffdad6",
+            "on-primary": "#ffffff",
+            "surface-tint": "#1c6968",
+            "on-error-container": "#93000a",
+            "outline": "#6f7978",
+            "secondary-fixed": "#c9e7f7",
+            "on-primary-fixed-variant": "#00504f",
+            "on-tertiary-fixed": "#0e1e1e",
+            "on-secondary-container": "#4a6774",
+            "tertiary": "#4f5f5f",
+            "surface-variant": "#e4e2e1",
+            "surface-dim": "#dcd9d9",
+            "inverse-on-surface": "#f3f0f0",
+            "surface-container-lowest": "#ffffff",
+            "primary": "#186665",
+            "on-primary-container": "#f3fffe",
+            "on-secondary-fixed": "#001f2a",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed-variant": "#3a4a49",
+            "on-primary-fixed": "#002020",
+            "surface-bright": "#fbf9f8",
+            "tertiary-fixed-dim": "#b8cac9",
+            "on-surface-variant": "#3f4948",
+            "tertiary-container": "#677877",
+            "surface-container-highest": "#e4e2e1",
+            "on-secondary": "#ffffff"
+          },
+          fontFamily: {
+            "notoSerif": ["Noto Serif"],
+            "manrope": ["Manrope"],
+            "headline": ["Noto Serif"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .tonal-shift-bg {
+      background-color: #fbf9f8;
+    }
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(24px);
+    }
+    body {
+      background-color: #fbf9f8;
+      color: #1b1c1c;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="prototype-shell-style">
+  body.prototype-mobile {
+    min-height: max(844px, 100dvh) !important;
+    padding-top: 76px !important;
+    padding-bottom: 104px !important;
+    background: #fbf9f8 !important;
+    color: #1b1c1c !important;
+  }
+  body.prototype-mobile.no-bottom-nav {
+    padding-bottom: 24px !important;
+  }
+  .prototype-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 72px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(190, 201, 200, 0.45);
+  }
+  .prototype-header-side {
+    width: 78px;
+    display: flex;
+    align-items: center;
+    min-width: 78px;
+  }
+  .prototype-header-side.end {
+    justify-content: flex-end;
+  }
+  .prototype-header-btn {
+    border: 0;
+    background: transparent;
+    color: #186665;
+    font-family: Manrope, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  .prototype-header-btn.icon {
+    font-size: 24px;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: 1;
+  }
+  .prototype-header-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #186665;
+    letter-spacing: -0.02em;
+  }
+  .prototype-bottom-nav {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(190, 201, 200, 0.45);
+    border-radius: 24px;
+    box-shadow: 0 -6px 28px rgba(27, 28, 28, 0.08);
+  }
+  .prototype-bottom-link {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    border-radius: 16px;
+    background: transparent;
+    color: rgba(27, 28, 28, 0.52);
+    padding: 10px 6px;
+    font-family: Manrope, sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prototype-bottom-link.active {
+    background: #c6e4f4;
+    color: #186665;
+  }
+</style>
+</head>
+<body class="font-body selection:bg-primary-fixed prototype-mobile"><header class="prototype-header"><div class="prototype-header-side"><button class="prototype-header-btn icon" onclick="window.location.href='b22d9124ea5b4f7681046e2616c0f1fb.html'" type="button">←</button></div><div class="prototype-header-title">Rescue / Recovery</div><div class="prototype-header-side end"><button class="prototype-header-btn" onclick="window.location.href='2e95f60582a648d1a96a2386c49aa2b2.html'" type="button">Trust</button></div></header>
+<!-- TopAppBar Implementation from JSON -->
+
+<main class="pt-24 pb-32 px-6 max-w-2xl mx-auto min-h-screen">
+<!-- Hero Imagery: Editorial style -->
+<section class="mb-12 relative">
+<div class="aspect-[16/9] w-full rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover opacity-90" data-alt="Close-up of calm water ripples in a ceramic bowl with soft morning light casting gentle shadows on a textured wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7t2z_9fIogQJ4hFsY1Zpn4ZkOTm0tUGyCVdI9EaYHpR0JBcNI7ETz1A55_lmqmF8F-u7USq26VSpEs9OuE7K0qkw1VD91tR-yrWqxJzakQoHsW_OLSYR8m4oi9eRPJ1aTm5ZsNKqQPPxEqxo6GdL0jN5TIqWqAJW8BaNezMwHuncCEBNYrPSwk6nKN3IfSElTqQUsXVDHW_ZQmEMxf8hvGCDK3--qqmjtzlrvf4JywQwUe12lfvtbgKHfywCbyrbCvA8fvSkhhumn"/>
+</div>
+<div class="absolute -bottom-6 -right-2 bg-secondary-container p-6 rounded-xl max-w-[200px] shadow-sm">
+<p class="font-notoSerif italic text-on-secondary-container leading-relaxed">The sanctuary is within reach, even in the noise.</p>
+</div>
+</section>
+<!-- The Rescue Card: The Immediate Pivot -->
+<article class="bg-surface-container-lowest rounded-xl p-8 mb-8 border border-outline-variant/10 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<span class="text-primary material-symbols-outlined text-3xl" data-icon="spa">spa</span>
+<h2 class="font-notoSerif text-2xl font-bold text-on-surface tracking-tight">The Immediate Pivot</h2>
+</div>
+<div class="space-y-8">
+<!-- Recommended Action -->
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="waves">waves</span>
+</div>
+<div>
+<p class="text-on-surface font-manrope text-lg leading-relaxed">
+              Step away from the screen and place your hands in cool water for 30 seconds. Feel the temperature change.
+            </p>
+</div>
+</div>
+<!-- The Warning -->
+<div class="bg-surface-container-low p-6 rounded-lg flex gap-4 border-l-4 border-primary">
+<span class="material-symbols-outlined text-primary" data-icon="error_outline">error_outline</span>
+<p class="text-on-surface-variant font-manrope text-sm italic">
+            Avoid the "Just one more minute" trap. The loop ends the moment you choose it.
+          </p>
+</div>
+</div>
+</article>
+<!-- The Reset Instruction -->
+<section class="mb-12 px-2">
+<h3 class="font-label text-[10px] uppercase tracking-widest font-bold text-primary mb-4">Tonight's Commitment</h3>
+<div class="space-y-4">
+<p class="font-notoSerif text-xl text-on-surface leading-snug">
+          Later Tonight: Set your alarm for 7:00 AM, then place your phone in another room.
+        </p>
+<p class="font-manrope text-on-surface-variant font-light">
+          Your sanctuary remains, waiting for your return to silence.
+        </p>
+</div>
+</section>
+<!-- Progress Bloom Visualization -->
+<section class="mb-12 flex justify-between items-center bg-surface-container-low p-6 rounded-xl">
+<div class="flex gap-2">
+<!-- 14-night bloom dots -->
+<div class="w-3 h-3 rounded-full bg-primary shadow-[0_0_8px_rgba(24,102,101,0.4)]"></div>
+<div class="w-3 h-3 rounded-full bg-primary shadow-[0_0_8px_rgba(24,102,101,0.4)]"></div>
+<div class="w-3 h-3 rounded-full bg-primary shadow-[0_0_8px_rgba(24,102,101,0.4)]"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container opacity-50"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container opacity-30"></div>
+<div class="w-1 h-1 rounded-full bg-outline-variant mt-1"></div>
+<div class="w-1 h-1 rounded-full bg-outline-variant mt-1"></div>
+</div>
+<span class="font-label text-[10px] uppercase tracking-widest font-medium text-secondary">Reset in progress</span>
+</section>
+<!-- Primary CTA -->
+<div class="fixed bottom-12 left-0 w-full px-6 flex justify-center">
+<button class="w-full max-w-md bg-primary text-on-primary py-5 rounded-md font-manrope font-semibold tracking-wide hover:opacity-90 transition-opacity active:scale-[0.98] duration-150 uppercase text-sm" onclick="window.location.href='7da16ebcdb4b42b08a00a608e258628b.html'" type="button">
+        SAVE MY PROGRESS
+      </button>
+</div>
+</main>
+<!-- BottomNavBar Implementation from JSON -->
+<!-- Suppressed due to "Task-Focused" rule: Back action implies temporary departure from main flow -->
+<nav class="prototype-bottom-nav"><button class="prototype-bottom-link active" onclick="window.location.href='b22d9124ea5b4f7681046e2616c0f1fb.html'" type="button">Check-In</button><button class="prototype-bottom-link" onclick="window.location.href='7da16ebcdb4b42b08a00a608e258628b.html'" type="button">Progress</button><button class="prototype-bottom-link" onclick="window.location.href='558799a402c14f20ac4db6cfbba596e8.html'" type="button">Plan</button><button class="prototype-bottom-link" onclick="window.location.href='2e95f60582a648d1a96a2386c49aa2b2.html'" type="button">Trust</button></nav></body></html>

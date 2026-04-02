@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>The Reset | Reclaim Your Radiance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-fixed-variant": "#00504f",
+                        "on-surface": "#1b1c1c",
+                        "inverse-surface": "#303030",
+                        "primary-container": "#387f7e",
+                        "surface": "#fbf9f8",
+                        "tertiary-fixed-dim": "#b8cac9",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#1c6968",
+                        "background": "#fbf9f8",
+                        "secondary-container": "#c6e4f4",
+                        "surface-container-highest": "#e4e2e1",
+                        "primary-fixed": "#a9efed",
+                        "on-primary": "#ffffff",
+                        "outline": "#6f7978",
+                        "on-secondary-container": "#4a6774",
+                        "on-background": "#1b1c1c",
+                        "tertiary": "#4f5f5f",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed-variant": "#2e4b57",
+                        "on-error-container": "#93000a",
+                        "secondary": "#466270",
+                        "tertiary-container": "#677877",
+                        "on-tertiary-container": "#f3fffe",
+                        "on-surface-variant": "#3f4948",
+                        "surface-container-high": "#eae8e7",
+                        "on-primary-container": "#f3fffe",
+                        "primary-fixed-dim": "#8dd3d1",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#d4e6e5",
+                        "surface-bright": "#fbf9f8",
+                        "on-primary-fixed": "#002020",
+                        "secondary-fixed": "#c9e7f7",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#186665",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#0e1e1e",
+                        "surface-container-low": "#f6f3f2",
+                        "on-secondary-fixed": "#001f2a",
+                        "inverse-primary": "#8dd3d1",
+                        "outline-variant": "#bec9c8",
+                        "surface-container": "#f0eded",
+                        "surface-variant": "#e4e2e1",
+                        "secondary-fixed-dim": "#adcbda",
+                        "on-tertiary-fixed-variant": "#3a4a49",
+                        "inverse-on-surface": "#f3f0f0"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-transition {
+            transition: background-color 0.5s ease;
+        }
+        .font-notoSerif { font-family: 'Noto Serif', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="prototype-shell-style">
+  body.prototype-mobile {
+    min-height: max(844px, 100dvh) !important;
+    padding-top: 76px !important;
+    padding-bottom: 104px !important;
+    background: #fbf9f8 !important;
+    color: #1b1c1c !important;
+  }
+  body.prototype-mobile.no-bottom-nav {
+    padding-bottom: 24px !important;
+  }
+  .prototype-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 72px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(190, 201, 200, 0.45);
+  }
+  .prototype-header-side {
+    width: 78px;
+    display: flex;
+    align-items: center;
+    min-width: 78px;
+  }
+  .prototype-header-side.end {
+    justify-content: flex-end;
+  }
+  .prototype-header-btn {
+    border: 0;
+    background: transparent;
+    color: #186665;
+    font-family: Manrope, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 8px 0;
+  }
+  .prototype-header-btn.icon {
+    font-size: 24px;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: 1;
+  }
+  .prototype-header-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #186665;
+    letter-spacing: -0.02em;
+  }
+  .prototype-bottom-nav {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(251, 249, 248, 0.92);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(190, 201, 200, 0.45);
+    border-radius: 24px;
+    box-shadow: 0 -6px 28px rgba(27, 28, 28, 0.08);
+  }
+  .prototype-bottom-link {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    border-radius: 16px;
+    background: transparent;
+    color: rgba(27, 28, 28, 0.52);
+    padding: 10px 6px;
+    font-family: Manrope, sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prototype-bottom-link.active {
+    background: #c6e4f4;
+    color: #186665;
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed prototype-mobile no-bottom-nav"><header class="prototype-header"><div class="prototype-header-side"></div><div class="prototype-header-title">BiteBack</div><div class="prototype-header-side end"><button class="prototype-header-btn" onclick="window.location.href='2e95f60582a648d1a96a2386c49aa2b2.html'" type="button">Trust</button></div></header>
+<!-- TopAppBar -->
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex items-center px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label text-xs font-bold uppercase tracking-widest mb-6">
+                        The 14-Night Protocol
+                    </span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.1] mb-8 text-on-surface">
+                        Reclaim Your <span class="italic text-primary">Radiance</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+                        A gentle, science-backed journey to restored energy, clear skin, and deeper sleep—all in just two weeks.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-lg font-manrope font-bold text-lg hover:opacity-90 transition-all shadow-sm" onclick="window.location.href='8b18b7c6bb5048d3bd16cf20e02299c1.html'" type="button">
+                            Start Your Reset
+                        </button>
+<button class="bg-surface-container-highest text-primary px-10 py-5 rounded-lg font-manrope font-bold text-lg hover:bg-surface-container-high transition-all" onclick="window.location.href='2e95f60582a648d1a96a2386c49aa2b2.html'" type="button">
+                            View The Science
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative h-[500px] lg:h-[700px]">
+<div class="absolute inset-0 bg-surface-container-low rounded-[3rem] -rotate-3 translate-x-4 translate-y-4"></div>
+<img alt="Calm morning scene" class="absolute inset-0 w-full h-full object-cover rounded-[3rem] z-0" data-alt="Soft morning sunlight streaming through linen curtains onto a minimalist wooden table with a steaming cup of herbal tea." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjQ1zf14GMZ1ycO-KIVW4OIk0MJQVDBe91gdthI0EPYjnNkuAH8so-6WVjVE1o_fEBpOumuJt7PrHtMmZv3TLIpXg0i-TiL81aeTOXVuXEg__R6kJHLqjLi11FZM6l09OP_Qf9jTkmIG61Nc_TH56ziSf5oaFtICtqBo2OFOLoE01K1WjLhv3ZOgj2bZXjDPI562-MTJRWipArSmI0o2XaLsOkrauDYEVp9W6NwHk554xHiGgP9wLqGnEjCy-nzH3IO9coZNJoS6j6"/>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-8 rounded-xl shadow-xl max-w-xs border border-outline-variant/10">
+<p class="font-headline italic text-primary text-lg mb-2">"I felt my vitality return by night four."</p>
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-widest">— Sarah J., Creative Director</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Audience Section (Who it's for) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="font-headline text-4xl md:text-5xl mb-8 leading-tight">Designed for those who pour from an empty cup.</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="work_outline">work_outline</span>
+</div>
+<div>
+<h3 class="font-bold text-xl mb-2">Busy Professionals</h3>
+<p class="text-on-surface-variant">Recover from the constant 'always-on' culture and decision fatigue that clouds your peak performance.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="child_care">child_care</span>
+</div>
+<div>
+<h3 class="font-bold text-xl mb-2">Dedicated Parents</h3>
+<p class="text-on-surface-variant">Reclaim your sense of self and vitality amidst the beautiful chaos of caregiving and household management.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative rounded-3xl overflow-hidden aspect-square">
+<img alt="Peaceful landscape" class="w-full h-full object-cover" data-alt="A serene woman resting her head against a large window, looking out at a soft misty forest at dawn, peaceful expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_yC99rX-ITPKZl8lQC3eRigR4G8xDJESHVyqOdCynF8KLzqZMSXA0OsSUto7MILdH33qf2-DK1slCZuB9FZ77ZHwGBFZUQWt-acnrjOdibR2_-YJFungMOXvvf4_gsTKZHH3bEb_4F8LUdJMOeV0rk5u6LfYMsswwsOQPWqdsprRzeA2BDN5khPTYgSGYrGDCBAYBXSX9vLlaQoga_QL6KkK2LGDY0EVF1N5c52j1qhLfLxkIDN0dtTiMBlBKRdJBqk5MieDwHIfi"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Three-Step Explanation -->
+<section class="py-32 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-24">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-primary mb-4 block">The Methodology</span>
+<h2 class="font-headline text-5xl md:text-6xl mb-6">Three Pillars of Renewal</h2>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl mx-auto">Our 14-night protocol isn't a cleanse—it's a physiological realignment.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Step 1 -->
+<div class="group">
+<div class="mb-8 aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low relative">
+<img alt="Detox phase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of fresh botanical extracts and green herbs on a clean stone surface with soft shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWT_DfeeFuSgFk56nwqR5F6iFgYTI9v6r9_wKFx-sxayI8KOU7V-VqpXum3KNRwaocbkdkJrCU19kCEhZXJaJ5bvSKdFz1b4oOjrUPwRp3zTwID_UY4J-ESTHVUQZXNXcMCM-s_pqh6f-uFeX-orrimI13Mu-V1MFGLY8qbDL_7-_h_aI6PmtvLv_ySEqPxsZ3o-IjrSQt7OsVdc0Zav7lKSgTxZhEtPUlgw6Av_dRJu9AChiV9UkGa1QqawsmnmCVo8Qix5P9BdGk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="text-6xl font-notoSerif italic text-primary/20">01</span>
+</div>
+</div>
+<h3 class="font-headline text-3xl mb-4">Detox</h3>
+<p class="text-on-surface-variant mb-4 leading-relaxed">Remove the environmental and digital stressors that keep your nervous system in a state of high alert.</p>
+<p class="font-label text-xs font-bold text-primary uppercase tracking-widest">PHASE: CALM</p>
+</div>
+<!-- Step 2 -->
+<div class="group pt-12 md:pt-24">
+<div class="mb-8 aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low relative">
+<img alt="Replenish phase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Golden honey drizzled onto a bowl of fresh berries and Greek yogurt in soft, warm afternoon light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_13lynn9WcDy7M14MmPwv2Idc_cDlpodqguFYp9ZH2QAtKOS1U_c_F_HZwAHgHh64Nw6lUsbi_w_vVoXQ6zTKx-4aqdnbgGe1VYb-lcEfO08c5481yV1pumekMnaU5VX5VU2o4GUEa-2JgNTIjQKdG7lznje_mzOgliyFAaJnU0h4Smxqf-Qr-5hXcZuZXzs4rMzAzZhVYtEIZBy_eWaQt_aHJrA9-YCZB3L0WmmRTu92ARA1-WNzPU7HbBwsbeAn6BxUuVviyu1m"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="text-6xl font-notoSerif italic text-primary/20">02</span>
+</div>
+</div>
+<h3 class="font-headline text-3xl mb-4">Replenish</h3>
+<p class="text-on-surface-variant mb-4 leading-relaxed">Restore essential nutrients and bio-active compounds your body needs to rebuild at a cellular level.</p>
+<p class="font-label text-xs font-bold text-primary uppercase tracking-widest">PHASE: NOURISH</p>
+</div>
+<!-- Step 3 -->
+<div class="group pt-0 md:pt-12">
+<div class="mb-8 aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low relative">
+<img alt="Rejuvenate phase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A person performing a gentle yoga stretch in a sun-drenched room with white linen and indoor plants." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWS8RsMorC3en91GYLF5AFlHDbvLU6GeJ2LrKvHr77WRiK8cIFtIZMvZSgHWGFN-vbQ-rYNQG1n6fFxg6qJWpMDrqUia3K5ZXgXfmHaqQkp5yNRn9AwBA9ONvuz5ary6g57CfvoSTJ4TusU77zET1rknpIeb3t5NKho_pZvk3Nn7fgCr32fyxeqBenN_2V-q7l5vLWx-NTA59iR8bBw3iEMWZucbdU06tAFP_QIg6dUy4dzI6styXY-fzW2tyFZGYnYyGJbSJdrl0i"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="text-6xl font-notoSerif italic text-primary/20">03</span>
+</div>
+</div>
+<h3 class="font-headline text-3xl mb-4">Rejuvenate</h3>
+<p class="text-on-surface-variant mb-4 leading-relaxed">Reset circadian habits and metabolic markers for sustained energy that lasts far beyond the 14 days.</p>
+<p class="font-label text-xs font-bold text-primary uppercase tracking-widest">PHASE: SUSTAIN</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Progress Bloom Visualization -->
+<section class="py-32 bg-primary overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-16">
+<div class="md:w-1/2">
+<h2 class="font-headline text-4xl md:text-5xl text-on-primary mb-6">The Progress Bloom</h2>
+<p class="text-primary-fixed/80 text-lg mb-10">Instead of ticking boxes, watch your vitality grow. Every night completed brings your sanctuary closer to full bloom.</p>
+<div class="flex flex-wrap gap-4">
+<!-- Bloom Circles -->
+<div class="w-12 h-12 rounded-full bg-primary-fixed shadow-[0_0_15px_rgba(169,239,237,0.5)] flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check" data-weight="fill">check</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary-fixed shadow-[0_0_15px_rgba(169,239,237,0.5)] flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check" data-weight="fill">check</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary-fixed shadow-[0_0_15px_rgba(169,239,237,0.5)] flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check" data-weight="fill">check</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-50"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-50"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-50"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-50"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-40"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-40"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-40"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-30"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-30"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-20"></div>
+<div class="w-12 h-12 rounded-full bg-secondary-container opacity-20"></div>
+</div>
+</div>
+<div class="md:w-1/3 relative">
+<div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-primary-container/40 border border-primary-fixed/20 animate-pulse absolute -top-10 -right-10 blur-3xl"></div>
+<div class="relative bg-white/5 backdrop-blur-xl border border-white/10 p-10 rounded-2xl">
+<p class="font-headline text-on-primary text-2xl mb-4 italic">"It feels like a deep breath for my soul."</p>
+<p class="font-label text-xs text-primary-fixed uppercase tracking-tighter">Your Transformation Awaits</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Call to Action -->
+<section class="py-40 text-center px-8 relative overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Soft light" class="w-full h-full object-cover opacity-10" data-alt="Gentle sun rays breaking through soft afternoon clouds, ethereal and calm atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaLQfIgtJwZrB7uPwK29odQpiBrtYtaOVtXXHbXBLyC9eCx1z4ZuruKv8IMN8DOzidykNWahHBvBJyuwX01R5FLSIzK3VO79tsiFWTqnhF8y4KzUzpmnjcy8yWUVoTQsWt_addTh8akinWaMSU2Ih0CMLXPxI2iUn19g6KWy2kEnbyUtdyp0FOSggq4394b34XvjU9Z2CnZcAAyMnlusd5M_efsaswnuurObsJK1w73m2YkTmp96LY8WOUsbgN-QDFh64udmsnUyiy"/>
+</div>
+<div class="max-w-4xl mx-auto relative z-10">
+<h2 class="font-headline text-5xl md:text-7xl mb-8">Ready to begin your journey?</h2>
+<p class="font-body text-xl text-on-surface-variant mb-12 max-w-2xl mx-auto">Join the 12,000+ individuals who have reset their systems and reclaimed their radiance.</p>
+<button class="bg-primary text-on-primary px-16 py-6 rounded-lg font-manrope font-bold text-xl hover:opacity-95 transition-all shadow-xl" onclick="window.location.href='8b18b7c6bb5048d3bd16cf20e02299c1.html'" type="button">
+                    Start Your Reset
+                </button>
+<p class="mt-8 text-on-surface-variant/60 text-sm font-manrope italic">Limited spots available for the next monthly cohort.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+</body></html>
