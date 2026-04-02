@@ -81,3 +81,10 @@
 **Copies:** Rocket Money — proved people will pay to avoid silent money leaks when the payoff is an instant "you are about to lose money" reveal
 **Hook:** It turns unreadable parking signs into one exact deadline before the city takes your money.
 **Submit:** idea-factory submit "TowProof is a fear-of-loss app that copies the Rocket Money model but applies it to parking anxiety instead of subscriptions. When you park, you scan the street signs and the app uses location plus OCR to translate the rules into one exact move-by deadline, the likely ticket risk, and a countdown alarm. The reveal is instant and screen-recordable: a blunt screen that says 'Move your car by 7:58 AM tomorrow or risk a $95 ticket,' plus a live countdown and one-tap reminder so users stop guessing and stop donating money to parking enforcement."
+
+## ReturnClock
+**Source:** mix-20260402-152223.md
+**Targets:** Fear of Loss
+**Copies:** Rocket Money — proved people will pay to stop silent money leaks when the payoff is an instant dollars-at-risk reveal
+**Hook:** It turns "I should probably return that later" into a visible money-loss clock you cannot ignore.
+**Submit:** idea-factory submit "ReturnClock is a fear-of-loss app that copies the Rocket Money model but applies it to shopping regret instead of subscriptions. Screenshot order confirmations, return-policy pages, or shipping emails, and the app extracts the exact return deadline, refund amount at risk, and any restocking fee before the window closes. The reveal is instant and screen-recordable: a blunt screen that says 'Return these shoes by Sunday 5:00 PM or lose $86,' with a live countdown and the exact refund you are about to forfeit. The core loop is save the proof once, watch the countdown, and get escalating reminders before the money is gone."
