@@ -60,3 +60,10 @@
 **Copies:** UMax — proved people will pay for a blunt attractiveness verdict and a clear "fix this first" upgrade path
 **Hook:** It ends the "which outfit actually makes me look hotter?" group-chat debate in ten seconds.
 **Submit:** idea-factory submit "MirrorMargin is an attractiveness app that copies the UMax model but applies it to outfits instead of faces. You take 3 mirror selfies before a date, party, or interview, and the app ranks them by attractiveness, polish, and 'looks expensive' impression, then tells you the single swap most likely to lift your score, like changing shoes, removing a jacket, or fixing color contrast. The reveal is instant and screen-recordable: three looks side by side, one stamped Best First Impression, and one blunt reason the others lost."
+
+## Rizz Score
+**Source:** mix-20260402-110417.md
+**Targets:** Sex / Dating
+**Copies:** Crystal Knows — proved people pay for AI-powered communication analysis and external validation of how they come across
+**Hook:** My Rizz Score came back a 3/10 and it fixed my Hinge reply rate overnight.
+**Submit:** idea-factory submit "Rizz Score is a dating conversation analyzer that copies the Crystal Knows model but focuses on a sharper reveal: paste your last 10-15 messages with a match and the app scores your Rizz across four dimensions — confidence, intrigue, availability, and wit — then gives you one blunt fix to increase your reply rate. The reveal is instant: a score out of 10, a one-line diagnosis like 'you are double-texting and answering too fast,' and one specific change for your next message. Works for Hinge, Bumble, Tinder, and Instagram DMs with no account required, and the loop is natural because every new match is a new test."
