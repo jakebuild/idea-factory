@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<title>Privacy &amp; Data Controls | Luminary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-background": "#191c1d",
+              "surface-container": "#eceeef",
+              "on-secondary-fixed": "#001f26",
+              "on-primary-fixed-variant": "#004e5e",
+              "on-primary": "#ffffff",
+              "outline": "#70787c",
+              "tertiary-container": "#953105",
+              "surface-variant": "#e1e3e4",
+              "on-tertiary-fixed": "#380c00",
+              "error-container": "#ffdad6",
+              "outline-variant": "#bfc8cc",
+              "on-secondary-fixed-variant": "#254c55",
+              "on-primary-fixed": "#001f27",
+              "surface-tint": "#19677a",
+              "tertiary-fixed-dim": "#ffb59c",
+              "primary-fixed": "#b2ebff",
+              "secondary": "#3e646e",
+              "background": "#f8fafb",
+              "surface-container-low": "#f2f4f5",
+              "on-surface-variant": "#3f484b",
+              "on-secondary": "#ffffff",
+              "primary": "#004250",
+              "on-primary-container": "#8ed1e7",
+              "primary-container": "#005b6e",
+              "surface-container-highest": "#e1e3e4",
+              "on-tertiary-fixed-variant": "#822800",
+              "on-error-container": "#93000a",
+              "surface-container-high": "#e6e8e9",
+              "inverse-surface": "#2e3132",
+              "on-secondary-container": "#446a74",
+              "tertiary": "#6f2100",
+              "inverse-primary": "#8dd0e6",
+              "secondary-fixed-dim": "#a5cdd8",
+              "on-tertiary-container": "#ffb59c",
+              "secondary-fixed": "#c1e9f5",
+              "inverse-on-surface": "#eff1f2",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed-dim": "#8dd0e6",
+              "surface-dim": "#d8dadb",
+              "on-tertiary": "#ffffff",
+              "surface": "#f8fafb",
+              "tertiary-fixed": "#ffdbcf",
+              "error": "#ba1a1a",
+              "surface-bright": "#f8fafb",
+              "secondary-container": "#c1e9f5",
+              "on-error": "#ffffff",
+              "on-surface": "#191c1d"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+      }
+      .ghost-border {
+        outline: 1px solid rgba(191, 200, 204, 0.15);
+      }
+    </style>
+<style>
+:root { color-scheme: light; }
+body { margin: 0; background: #eef3f6; color: #17202a; font-family: Inter, system-ui, sans-serif; }
+.shared-shell { min-height: 100vh; display: grid; grid-template-columns: 232px 1fr; }
+.shared-sidebar { background: linear-gradient(180deg, #0d2430 0%, #133545 100%); color: #e6f0f4; padding: 22px 16px; display: flex; flex-direction: column; gap: 18px; }
+.brand { font-family: Manrope, sans-serif; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.03em; }
+.brand-sub { color: rgba(230,240,244,.7); font-size: .78rem; line-height: 1.4; }
+.nav-group { display: flex; flex-direction: column; gap: 8px; }
+.nav-btn { border: 0; background: transparent; color: rgba(230,240,244,.78); border-radius: 14px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; font: 600 14px Inter, sans-serif; cursor: pointer; }
+.nav-btn.active { background: rgba(255,255,255,.12); color: #fff; }
+.nav-btn:hover { background: rgba(255,255,255,.08); color: #fff; }
+.nav-meta { color: rgba(230,240,244,.56); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; }
+.shell-main { min-width: 0; display: flex; flex-direction: column; }
+.shared-header { height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; background: rgba(255,255,255,.88); backdrop-filter: blur(16px); border-bottom: 1px solid #d7e0e6; position: sticky; top: 0; z-index: 40; }
+.header-left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.back-btn, .head-chip { border: 0; border-radius: 999px; background: #dfeaf0; color: #0f3341; padding: 10px 14px; font: 700 13px Inter, sans-serif; cursor: pointer; }
+.back-spacer { width: 80px; }
+.header-title { font-family: Manrope, sans-serif; font-size: 1.05rem; font-weight: 800; color: #10222c; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.header-sub { font-size: .78rem; color: #5b6c75; margin-top: 2px; }
+.shared-content { padding: 28px; }
+.shared-content > * { max-width: 100%; }
+.flow-card { background: #ffffff; border: 1px solid #d7e0e6; border-radius: 18px; padding: 18px 20px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(16,34,44,.06); }
+.flow-card h2 { margin: 0 0 6px; font-family: Manrope, sans-serif; font-size: 1rem; }
+.flow-card p { margin: 0; color: #5b6c75; font-size: .88rem; line-height: 1.5; }
+.flow-card button { margin-top: 12px; border: 0; border-radius: 12px; background: #004250; color: #fff; padding: 12px 16px; font: 700 14px Inter, sans-serif; cursor: pointer; }
+@media (max-width: 960px) {
+  .shared-shell { grid-template-columns: 1fr; }
+  .shared-sidebar { position: sticky; top: 0; z-index: 45; padding: 14px; gap: 12px; }
+  .nav-group { flex-direction: row; flex-wrap: wrap; }
+  .nav-btn { flex: 1 1 calc(50% - 8px); }
+  .shared-header { padding: 0 16px; }
+  .shared-content { padding: 16px; }
+}
+</style></head>
+<body class="bg-background text-on-background font-body antialiased"><div class="shared-shell">
+<aside class="shared-sidebar">
+<div><div class="brand">Panic Brake</div><div class="brand-sub">Sharper interview answers through a record, review, redo loop.</div></div>
+<div class="nav-meta">Prototype</div>
+<div class="nav-group">
+<button class="nav-btn" onclick="window.location.href='d8cafd8a68094e6c927121da523f586b.html'"><span>Home</span><span>01</span></button>
+<button class="nav-btn" onclick="window.location.href='a1e22d6c4d3548fbb5d908cee211aba0.html'"><span>Question Packs</span><span>02</span></button>
+<button class="nav-btn" onclick="window.location.href='ae31b5e17b134bf0a1168f89c76ffdc0.html'"><span>History</span><span>03</span></button>
+<button class="nav-btn active" onclick="window.location.href='02745cca2f374bd18f6c622fffcdf192.html'"><span>Settings</span><span>04</span></button>
+</div>
+</aside>
+<div class="shell-main">
+<header class="shared-header">
+<div class="header-left"><div class="back-spacer"></div><div><div class="header-title">Settings / Data Controls</div><div class="header-sub">Interview rehearsal prototype</div></div></div>
+<div class="head-chip">Web Preview</div>
+</header>
+<main class="shared-content"><!-- TopNavBar --><div class="flex max-w-screen-2xl mx-auto">
+<!-- SideNavBar -->
+<!-- Main Content Area -->
+<main class="flex-1 p-8 md:p-12 space-y-16">
+<!-- Page Header -->
+<section class="max-w-4xl">
+<h1 class="text-5xl font-extrabold font-headline text-primary tracking-tight mb-4">Privacy &amp; Data</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+                    Take full control of how Luminary handles your personal data and audio recordings. We prioritize your privacy through local-first processing.
+                </p>
+</section>
+<!-- Local-First Privacy Hero Card -->
+<section class="max-w-5xl">
+<div class="relative overflow-hidden bg-primary-container rounded-xl p-8 text-on-primary">
+<div class="relative z-10 flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<span class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full text-xs font-bold tracking-widest uppercase mb-4">
+<span class="material-symbols-outlined text-sm" data-icon="verified_user">verified_user</span>
+                                Local-First Privacy
+                            </span>
+<h2 class="text-3xl font-headline font-bold mb-4">Your Voice, Your Device.</h2>
+<p class="text-on-primary-container leading-relaxed mb-6">
+                                Luminary performs all audio processing directly on your hardware. Transcripts are generated locally, ensuring your raw audio never leaves your device unless you explicitly choose to sync it. No account is required for basic coaching functionality.
+                            </p>
+<button class="bg-surface-container-lowest text-primary px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-all active:scale-95">
+                                Learn about Encryption
+                            </button>
+</div>
+<div class="w-full md:w-1/3">
+<div class="aspect-square rounded-full bg-gradient-to-br from-primary to-teal-400 p-4 relative">
+<img alt="Security visual" class="w-full h-full object-cover rounded-full mix-blend-overlay opacity-80" data-alt="Abstract representation of digital security with neon circuit lines and a glowing core on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7gscJBT8f4Z3C1l4wgX10Z1uvZCfiyHceiLhxRKhHyFk7nkA-B9_gDFdxn50hLiqP1P8tXrWGhpUcDeUFD3htuR-IWL-iYpmFGnbRnZhKkbOvPmrorjL9EbVEgQZgU94a2rnUwmUqMU7VmkLc43FDDOEGDMFi5-PpLmxcCQynqRS-SIgcHrfwUXyY1hyT7bHQTYRYtdgRn4hW6Y6CuDTl6MvUOHHdrpp1sSCJ9cZ2slcun3M5QNYzjdMF_MgRsOK5gaKhT2MqM4s"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-7xl text-white drop-shadow-md" data-icon="security">security</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Background Decorative Gradient -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-teal-300/20 blur-3xl rounded-full"></div>
+</div>
+</section>
+<!-- Permissions & Preferences Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
+<!-- Microphone Permission -->
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="mic">mic</span>
+</div>
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full">System Controlled</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-on-surface mb-2">Microphone Permission</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                            Required for real-time coaching feedback and audio transcription.
+                        </p>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg ghost-border">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></div>
+<span class="text-sm font-semibold">Active</span>
+</div>
+<a class="text-primary text-sm font-bold underline decoration-2 underline-offset-4 hover:text-primary-container" href="javascript:void(0)" onclick="window.location.href='02745cca2f374bd18f6c622fffcdf192.html'">System Settings</a>
+</div>
+</div>
+<!-- Data Retention Preferences -->
+<div class="bg-surface-container-low rounded-xl p-8">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined" data-icon="auto_delete">auto_delete</span>
+</div>
+<h3 class="text-xl font-headline font-bold text-on-surface mb-2">Data Retention</h3>
+<p class="text-on-surface-variant text-sm mb-6">Define how long transcripts are stored.</p>
+<div class="space-y-3">
+<label class="flex items-center justify-between p-4 bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition-colors">
+<span class="text-sm font-medium">Delete after 24h</span>
+<input class="text-primary focus:ring-primary h-5 w-5" name="retention" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-4 bg-white rounded-lg cursor-pointer border-2 border-primary/20">
+<span class="text-sm font-medium">Keep for 30 days</span>
+<input checked="" class="text-primary focus:ring-primary h-5 w-5" name="retention" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-4 bg-white rounded-lg cursor-pointer hover:bg-slate-50 transition-colors">
+<span class="text-sm font-medium">Keep until manual deletion</span>
+<input class="text-primary focus:ring-primary h-5 w-5" name="retention" type="radio"/>
+</label>
+</div>
+</div>
+</section>
+<!-- Data Management / Recent Sessions -->
+<section class="max-w-5xl space-y-8">
+<div class="flex items-end justify-between border-b-2 border-surface-container pb-4">
+<div>
+<h2 class="text-3xl font-headline font-bold text-on-surface">Data Management</h2>
+<p class="text-on-surface-variant">Review and manage individual session transcripts.</p>
+</div>
+<button class="flex items-center gap-2 bg-error-container text-on-error-container px-6 py-2 rounded-lg font-bold hover:bg-red-200 transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="delete_forever">delete_forever</span>
+                        Delete All Data
+                    </button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm ghost-border">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant text-xs font-bold uppercase tracking-widest">
+<th class="px-6 py-4">Session Type</th>
+<th class="px-6 py-4">Date</th>
+<th class="px-6 py-4 text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr class="hover:bg-slate-50 transition-colors group">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-base" data-icon="fitness_center">fitness_center</span>
+</div>
+<span class="font-medium text-on-surface">Endurance Training</span>
+</div>
+</td>
+<td class="px-6 py-5 text-sm text-on-surface-variant">Oct 24, 2023 • 08:45 AM</td>
+<td class="px-6 py-5 text-right">
+<button class="p-2 text-slate-400 hover:text-error hover:bg-error-container/20 rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-slate-50 transition-colors group">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-base" data-icon="self_improvement">self_improvement</span>
+</div>
+<span class="font-medium text-on-surface">Mindfulness Session</span>
+</div>
+</td>
+<td class="px-6 py-5 text-sm text-on-surface-variant">Oct 23, 2023 • 09:12 PM</td>
+<td class="px-6 py-5 text-right">
+<button class="p-2 text-slate-400 hover:text-error hover:bg-error-container/20 rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-slate-50 transition-colors group">
+<td class="px-6 py-5">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-base" data-icon="psychology">psychology</span>
+</div>
+<span class="font-medium text-on-surface">Strategy Planning</span>
+</div>
+</td>
+<td class="px-6 py-5 text-sm text-on-surface-variant">Oct 21, 2023 • 02:00 PM</td>
+<td class="px-6 py-5 text-right">
+<button class="p-2 text-slate-400 hover:text-error hover:bg-error-container/20 rounded-full transition-all">
+<span class="material-symbols-outlined" data-icon="delete">delete</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Redo Action Section -->
+<div class="bg-tertiary-container/5 rounded-xl p-6 border-l-4 border-tertiary-container flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-tertiary-container text-3xl" data-icon="history_edu" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+<div>
+<h4 class="font-headline font-bold text-tertiary">Session Replay Available</h4>
+<p class="text-sm text-on-surface-variant">Your last session has been archived locally. Want to redo the analysis?</p>
+</div>
+</div>
+<button class="bg-tertiary-container text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-all active:scale-95" onclick="window.location.href='9dd73b3a1a214ce5a9ae96241ef2a40e.html'">
+                        Start Redo
+                    </button>
+</div>
+</section>
+</main>
+</div></main></div></div></body></html>

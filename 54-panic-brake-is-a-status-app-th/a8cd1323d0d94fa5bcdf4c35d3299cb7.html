@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-high": "#e6e8e9",
+            "inverse-surface": "#2e3132",
+            "on-error-container": "#93000a",
+            "tertiary": "#6f2100",
+            "on-secondary-container": "#446a74",
+            "primary-container": "#005b6e",
+            "primary": "#004250",
+            "on-primary-container": "#8ed1e7",
+            "surface-container-highest": "#e1e3e4",
+            "on-tertiary-fixed-variant": "#822800",
+            "tertiary-fixed": "#ffdbcf",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "surface": "#f8fafb",
+            "surface-bright": "#f8fafb",
+            "secondary-container": "#c1e9f5",
+            "on-error": "#ffffff",
+            "on-surface": "#191c1d",
+            "secondary-fixed-dim": "#a5cdd8",
+            "on-tertiary-container": "#ffb59c",
+            "inverse-primary": "#8dd0e6",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed-dim": "#8dd0e6",
+            "surface-dim": "#d8dadb",
+            "secondary-fixed": "#c1e9f5",
+            "inverse-on-surface": "#eff1f2",
+            "error-container": "#ffdad6",
+            "tertiary-container": "#953105",
+            "surface-variant": "#e1e3e4",
+            "on-tertiary-fixed": "#380c00",
+            "outline-variant": "#bfc8cc",
+            "on-background": "#191c1d",
+            "surface-container": "#eceeef",
+            "outline": "#70787c",
+            "on-secondary-fixed": "#001f26",
+            "on-primary-fixed-variant": "#004e5e",
+            "on-primary": "#ffffff",
+            "surface-container-low": "#f2f4f5",
+            "on-surface-variant": "#3f484b",
+            "on-secondary": "#ffffff",
+            "surface-tint": "#19677a",
+            "tertiary-fixed-dim": "#ffb59c",
+            "on-secondary-fixed-variant": "#254c55",
+            "on-primary-fixed": "#001f27",
+            "secondary": "#3e646e",
+            "background": "#f8fafb",
+            "primary-fixed": "#b2ebff"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(12px);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+:root { color-scheme: light; }
+body { margin: 0; background: #eef3f6; color: #17202a; font-family: Inter, system-ui, sans-serif; }
+.shared-shell { min-height: 100vh; display: grid; grid-template-columns: 232px 1fr; }
+.shared-sidebar { background: linear-gradient(180deg, #0d2430 0%, #133545 100%); color: #e6f0f4; padding: 22px 16px; display: flex; flex-direction: column; gap: 18px; }
+.brand { font-family: Manrope, sans-serif; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.03em; }
+.brand-sub { color: rgba(230,240,244,.7); font-size: .78rem; line-height: 1.4; }
+.nav-group { display: flex; flex-direction: column; gap: 8px; }
+.nav-btn { border: 0; background: transparent; color: rgba(230,240,244,.78); border-radius: 14px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; font: 600 14px Inter, sans-serif; cursor: pointer; }
+.nav-btn.active { background: rgba(255,255,255,.12); color: #fff; }
+.nav-btn:hover { background: rgba(255,255,255,.08); color: #fff; }
+.nav-meta { color: rgba(230,240,244,.56); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; }
+.shell-main { min-width: 0; display: flex; flex-direction: column; }
+.shared-header { height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; background: rgba(255,255,255,.88); backdrop-filter: blur(16px); border-bottom: 1px solid #d7e0e6; position: sticky; top: 0; z-index: 40; }
+.header-left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.back-btn, .head-chip { border: 0; border-radius: 999px; background: #dfeaf0; color: #0f3341; padding: 10px 14px; font: 700 13px Inter, sans-serif; cursor: pointer; }
+.back-spacer { width: 80px; }
+.header-title { font-family: Manrope, sans-serif; font-size: 1.05rem; font-weight: 800; color: #10222c; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.header-sub { font-size: .78rem; color: #5b6c75; margin-top: 2px; }
+.shared-content { padding: 28px; }
+.shared-content > * { max-width: 100%; }
+.flow-card { background: #ffffff; border: 1px solid #d7e0e6; border-radius: 18px; padding: 18px 20px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(16,34,44,.06); }
+.flow-card h2 { margin: 0 0 6px; font-family: Manrope, sans-serif; font-size: 1rem; }
+.flow-card p { margin: 0; color: #5b6c75; font-size: .88rem; line-height: 1.5; }
+.flow-card button { margin-top: 12px; border: 0; border-radius: 12px; background: #004250; color: #fff; padding: 12px 16px; font: 700 14px Inter, sans-serif; cursor: pointer; }
+@media (max-width: 960px) {
+  .shared-shell { grid-template-columns: 1fr; }
+  .shared-sidebar { position: sticky; top: 0; z-index: 45; padding: 14px; gap: 12px; }
+  .nav-group { flex-direction: row; flex-wrap: wrap; }
+  .nav-btn { flex: 1 1 calc(50% - 8px); }
+  .shared-header { padding: 0 16px; }
+  .shared-content { padding: 16px; }
+}
+</style></head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col overflow-x-hidden"><div class="shared-shell">
+<aside class="shared-sidebar">
+<div><div class="brand">Panic Brake</div><div class="brand-sub">Sharper interview answers through a record, review, redo loop.</div></div>
+<div class="nav-meta">Prototype</div>
+<div class="nav-group">
+<button class="nav-btn" onclick="window.location.href='d8cafd8a68094e6c927121da523f586b.html'"><span>Home</span><span>01</span></button>
+<button class="nav-btn active" onclick="window.location.href='a1e22d6c4d3548fbb5d908cee211aba0.html'"><span>Question Packs</span><span>02</span></button>
+<button class="nav-btn" onclick="window.location.href='ae31b5e17b134bf0a1168f89c76ffdc0.html'"><span>History</span><span>03</span></button>
+<button class="nav-btn" onclick="window.location.href='02745cca2f374bd18f6c622fffcdf192.html'"><span>Settings</span><span>04</span></button>
+</div>
+</aside>
+<div class="shell-main">
+<header class="shared-header">
+<div class="header-left"><button class="back-btn" onclick="window.location.href='a1e22d6c4d3548fbb5d908cee211aba0.html'">Back</button><div><div class="header-title">Question Detail / Prep</div><div class="header-sub">Interview rehearsal prototype</div></div></div>
+<div class="head-chip">Web Preview</div>
+</header>
+<main class="shared-content"><!-- TopAppBar --><main class="flex-grow pt-24 pb-32 px-6 max-w-2xl mx-auto w-full space-y-10">
+<!-- Hero Section: Question Detail -->
+<section class="space-y-6">
+<div class="inline-flex items-center px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant text-xs font-semibold tracking-wide uppercase">
+        Executive Leadership
+      </div>
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold text-primary leading-tight tracking-tight">
+        Tell me about a time you had to pivot a global strategy.
+      </h2>
+</section>
+<!-- Stats Bar: Tonal Depth without borders -->
+<section class="bg-surface-container-low rounded-xl p-5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="history">history</span>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline font-semibold">Prior Attempts</p>
+<p class="text-on-surface font-bold">3</p>
+</div>
+</div>
+<div class="h-8 w-[1px] bg-outline-variant opacity-20"></div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-container" data-icon="sync_problem" style="font-variation-settings: 'FILL' 1;">sync_problem</span>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline font-semibold">Latest Status</p>
+<p class="text-tertiary-container font-bold">Needs Redo</p>
+</div>
+</div>
+</section>
+<!-- Content: What a strong answer includes -->
+<section class="space-y-6">
+<div class="flex items-center gap-2">
+<div class="w-1 h-6 bg-primary rounded-full"></div>
+<h3 class="font-headline text-xl font-bold text-on-surface">What a strong answer includes</h3>
+</div>
+<div class="grid gap-4">
+<!-- Item 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl space-y-2 relative overflow-hidden group">
+<div class="flex items-start gap-4">
+<span class="font-headline text-2xl font-bold text-primary-container opacity-20 italic">01</span>
+<div class="space-y-1">
+<h4 class="font-bold text-on-surface">Strategic Rationale</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Clearly articulate the data-driven reasons why the existing global strategy was no longer viable and necessitated a shift.</p>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl space-y-2 relative overflow-hidden group">
+<div class="flex items-start gap-4">
+<span class="font-headline text-2xl font-bold text-primary-container opacity-20 italic">02</span>
+<div class="space-y-1">
+<h4 class="font-bold text-on-surface">Stakeholder Management</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Explain how you identified key opposition points and used influence to align diverse global teams with the new vision.</p>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl space-y-2 relative overflow-hidden group">
+<div class="flex items-start gap-4">
+<span class="font-headline text-2xl font-bold text-primary-container opacity-20 italic">03</span>
+<div class="space-y-1">
+<h4 class="font-bold text-on-surface">Measurable Outcomes</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Provide specific KPIs or impact metrics that validate the success of the pivot within a set timeframe.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contextual Guidance Card -->
+<div class="glass-panel p-8 rounded-3xl border border-white/40 shadow-xl flex flex-col md:flex-row items-center gap-8">
+<div class="w-24 h-24 rounded-full overflow-hidden flex-shrink-0 ring-4 ring-primary/10">
+<img alt="Expert Coach" class="w-full h-full object-cover" data-alt="professional corporate coach smiling warmly in a modern sun-drenched office studio high-end photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOXY709Vw6qFeQL1fqo5nBke0MUZ5Hsy8ZPftEyZLl2YX_y0qBDyVuaycgbQ-anzckg54BCdCU1_qo60jL8sn3Dhgy_DQriVeNpDBvTbFXPULjKZciVR9kQyANgmEyF9rlb4jE6Z89QMZoHNyOuFHomg5yUIJ-wxIMWaXFQWplhDCEwfd3bAOEfPyO660OjcyPr8mhIBfqEsaAKkp9wHTFumWpfWZgaSQu_6F83Vjx70b7NoL0cyeSF5LdXJZbdhdqjUnG4C9fwi8"/>
+</div>
+<div class="text-center md:text-left space-y-3">
+<p class="font-headline text-lg font-bold text-primary">Pro Tip</p>
+<p class="text-on-surface-variant italic">"The most effective pivots are those where you acknowledge the difficulty of the change while focusing on the long-term benefit for the organization."</p>
+</div>
+</div>
+<!-- CTA Area -->
+<div class="flex flex-col gap-4 pt-6 pb-12">
+<button class="bg-primary text-on-primary w-full py-5 rounded-xl font-headline font-extrabold text-lg shadow-lg hover:opacity-90 active:scale-95 transition-all duration-150 flex items-center justify-center gap-3" onclick="window.location.href='3aa93516d8084a54aeea3244e73cdd99.html'">
+<span class="material-symbols-outlined" data-icon="videocam" style="font-variation-settings: 'FILL' 1;">videocam</span>
+        Start Recording
+      </button>
+<button class="bg-tertiary-container text-white w-full py-4 rounded-xl font-headline font-bold text-base shadow-md hover:opacity-90 active:scale-95 transition-all duration-150 flex items-center justify-center gap-3" onclick="window.location.href='3aa93516d8084a54aeea3244e73cdd99.html'">
+<span class="material-symbols-outlined" data-icon="refresh">refresh</span>
+        Review Feedback
+      </button>
+</div>
+</main><!-- BottomNavBar --></main></div></div></body></html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<title>Session Detail - Luminary Coach</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-high": "#e6e8e9",
+                        "tertiary-container": "#953105",
+                        "on-tertiary-container": "#ffb59c",
+                        "on-surface-variant": "#3f484b",
+                        "secondary": "#3e646e",
+                        "on-primary-fixed": "#001f27",
+                        "surface-bright": "#f8fafb",
+                        "tertiary-fixed": "#ffdbcf",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#8dd0e6",
+                        "on-primary-container": "#8ed1e7",
+                        "primary": "#004250",
+                        "on-tertiary-fixed": "#380c00",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#c1e9f5",
+                        "inverse-on-surface": "#eff1f2",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container": "#eceeef",
+                        "secondary-fixed-dim": "#a5cdd8",
+                        "on-tertiary-fixed-variant": "#822800",
+                        "outline-variant": "#bfc8cc",
+                        "inverse-primary": "#8dd0e6",
+                        "surface-container-low": "#f2f4f5",
+                        "on-secondary-fixed": "#001f26",
+                        "inverse-surface": "#2e3132",
+                        "primary-container": "#005b6e",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed-variant": "#004e5e",
+                        "background": "#f8fafb",
+                        "tertiary-fixed-dim": "#ffb59c",
+                        "surface-tint": "#19677a",
+                        "error-container": "#ffdad6",
+                        "surface": "#f8fafb",
+                        "secondary-container": "#c1e9f5",
+                        "on-secondary-fixed-variant": "#254c55",
+                        "on-error-container": "#93000a",
+                        "tertiary": "#6f2100",
+                        "on-background": "#191c1d",
+                        "surface-dim": "#d8dadb",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary-fixed": "#b2ebff",
+                        "on-primary": "#ffffff",
+                        "outline": "#70787c",
+                        "on-secondary-container": "#446a74"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #bfc8cc;
+            border-radius: 10px;
+        }
+    </style>
+<style>
+:root { color-scheme: light; }
+body { margin: 0; background: #eef3f6; color: #17202a; font-family: Inter, system-ui, sans-serif; }
+.shared-shell { min-height: 100vh; display: grid; grid-template-columns: 232px 1fr; }
+.shared-sidebar { background: linear-gradient(180deg, #0d2430 0%, #133545 100%); color: #e6f0f4; padding: 22px 16px; display: flex; flex-direction: column; gap: 18px; }
+.brand { font-family: Manrope, sans-serif; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.03em; }
+.brand-sub { color: rgba(230,240,244,.7); font-size: .78rem; line-height: 1.4; }
+.nav-group { display: flex; flex-direction: column; gap: 8px; }
+.nav-btn { border: 0; background: transparent; color: rgba(230,240,244,.78); border-radius: 14px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; font: 600 14px Inter, sans-serif; cursor: pointer; }
+.nav-btn.active { background: rgba(255,255,255,.12); color: #fff; }
+.nav-btn:hover { background: rgba(255,255,255,.08); color: #fff; }
+.nav-meta { color: rgba(230,240,244,.56); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; }
+.shell-main { min-width: 0; display: flex; flex-direction: column; }
+.shared-header { height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; background: rgba(255,255,255,.88); backdrop-filter: blur(16px); border-bottom: 1px solid #d7e0e6; position: sticky; top: 0; z-index: 40; }
+.header-left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.back-btn, .head-chip { border: 0; border-radius: 999px; background: #dfeaf0; color: #0f3341; padding: 10px 14px; font: 700 13px Inter, sans-serif; cursor: pointer; }
+.back-spacer { width: 80px; }
+.header-title { font-family: Manrope, sans-serif; font-size: 1.05rem; font-weight: 800; color: #10222c; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.header-sub { font-size: .78rem; color: #5b6c75; margin-top: 2px; }
+.shared-content { padding: 28px; }
+.shared-content > * { max-width: 100%; }
+.flow-card { background: #ffffff; border: 1px solid #d7e0e6; border-radius: 18px; padding: 18px 20px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(16,34,44,.06); }
+.flow-card h2 { margin: 0 0 6px; font-family: Manrope, sans-serif; font-size: 1rem; }
+.flow-card p { margin: 0; color: #5b6c75; font-size: .88rem; line-height: 1.5; }
+.flow-card button { margin-top: 12px; border: 0; border-radius: 12px; background: #004250; color: #fff; padding: 12px 16px; font: 700 14px Inter, sans-serif; cursor: pointer; }
+@media (max-width: 960px) {
+  .shared-shell { grid-template-columns: 1fr; }
+  .shared-sidebar { position: sticky; top: 0; z-index: 45; padding: 14px; gap: 12px; }
+  .nav-group { flex-direction: row; flex-wrap: wrap; }
+  .nav-btn { flex: 1 1 calc(50% - 8px); }
+  .shared-header { padding: 0 16px; }
+  .shared-content { padding: 16px; }
+}
+</style></head>
+<body class="bg-background font-body text-on-surface"><div class="shared-shell">
+<aside class="shared-sidebar">
+<div><div class="brand">Panic Brake</div><div class="brand-sub">Sharper interview answers through a record, review, redo loop.</div></div>
+<div class="nav-meta">Prototype</div>
+<div class="nav-group">
+<button class="nav-btn" onclick="window.location.href='d8cafd8a68094e6c927121da523f586b.html'"><span>Home</span><span>01</span></button>
+<button class="nav-btn" onclick="window.location.href='a1e22d6c4d3548fbb5d908cee211aba0.html'"><span>Question Packs</span><span>02</span></button>
+<button class="nav-btn active" onclick="window.location.href='ae31b5e17b134bf0a1168f89c76ffdc0.html'"><span>History</span><span>03</span></button>
+<button class="nav-btn" onclick="window.location.href='02745cca2f374bd18f6c622fffcdf192.html'"><span>Settings</span><span>04</span></button>
+</div>
+</aside>
+<div class="shell-main">
+<header class="shared-header">
+<div class="header-left"><button class="back-btn" onclick="window.location.href='ae31b5e17b134bf0a1168f89c76ffdc0.html'">Back</button><div><div class="header-title">Session Detail</div><div class="header-sub">Interview rehearsal prototype</div></div></div>
+<div class="head-chip">Web Preview</div>
+</header>
+<main class="shared-content"><!-- TopNavBar --><!-- SideNavBar (Contextual for Session Detail) --><!-- Main Content Canvas --><main class="lg:ml-64 min-h-screen p-8 max-w-screen-2xl mx-auto">
+<!-- Header Section -->
+<!-- Bento Grid Comparison Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+<!-- First Take Column -->
+<div class="space-y-6">
+<div class="flex items-center justify-between px-2">
+<h2 class="font-headline text-xl font-bold text-on-surface">First Take</h2>
+<span class="text-xs font-bold uppercase tracking-widest text-slate-400">Baseline</span>
+</div>
+<!-- Video Player Placeholder -->
+<div class="relative aspect-video rounded-2xl overflow-hidden bg-surface-container-high group">
+<img class="w-full h-full object-cover opacity-80" data-alt="close-up of professional woman speaking in a home office setting with warm indoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB54M2Vr3c4uwd_GITa5PgeihjgbmuK9B9UfmkytJQ5XjjgdiSLEplALLOEnzESm5WzKT71Da9OnMA8GMEg_lMapY1AVsi90Ujgvqkb-pWArqHH3a626iXyKJvNPZxtLROdmXwSMmE6X75XoA7DaGWulV7NcDR5wb88AIqaMVPONbugko4j0Ayav-3HT0O5R2lwfhce8pfTxr3TIBGDA2U6CsM5fIfodeilcXzborrOkpTFIbt3IY8xTVMVonURFSwKNxfm0CH8IUc"/>
+<div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+<button class="w-16 h-16 rounded-full bg-white/30 backdrop-blur-md flex items-center justify-center text-white border border-white/40 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="absolute bottom-4 left-4 right-4 h-1 bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-white/60 w-1/3"></div>
+</div>
+</div>
+<!-- Metrics Card -->
+<div class="bg-surface-container-low rounded-2xl p-6 space-y-6">
+<div class="grid grid-cols-3 gap-4">
+<div class="text-center">
+<p class="text-[10px] uppercase font-bold text-slate-400 mb-1">Pace</p>
+<p class="text-2xl font-bold text-primary">165 <span class="text-xs font-medium">wpm</span></p>
+<span class="inline-block px-2 py-0.5 rounded-full bg-error-container text-on-error-container text-[10px] font-bold mt-2 italic">TOO FAST</span>
+</div>
+<div class="text-center">
+<p class="text-[10px] uppercase font-bold text-slate-400 mb-1">Filler Words</p>
+<p class="text-2xl font-bold text-primary">12</p>
+<span class="inline-block px-2 py-0.5 rounded-full bg-surface-container-highest text-slate-600 text-[10px] font-bold mt-2">HIGH</span>
+</div>
+<div class="text-center">
+<p class="text-[10px] uppercase font-bold text-slate-400 mb-1">Sentiment</p>
+<p class="text-2xl font-bold text-primary italic">Anxious</p>
+<span class="material-symbols-outlined text-error mt-1">waves</span>
+</div>
+</div>
+</div>
+</div>
+<!-- The Redo Column -->
+<div class="space-y-6">
+<div class="flex items-center justify-between px-2">
+<h2 class="font-headline text-xl font-bold text-tertiary flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">auto_awesome</span>
+                        The Redo
+                    </h2>
+<span class="text-xs font-bold uppercase tracking-widest text-tertiary-container/80">Growth Achieved</span>
+</div>
+<!-- Video Player Placeholder -->
+<div class="relative aspect-video rounded-2xl overflow-hidden bg-primary-container group">
+<img class="w-full h-full object-cover" data-alt="professional woman confidently presenting during a video call, soft natural daylight with minimalist modern office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBL6Zk7Y6YMaim3cnMXsjdnJFqBS68xPMrPBgWyb9Um9Dc_vn5gGdBe4a5HGF5ZrU_MqTrbTltyv1Jh6CFXHvuyQK8Hne5OUJ92ROCT5FniOjTbehHJiAUSLjN1H7Pb7lbYE3aWK5agg9Eb6p1I-x_P_ZySZfisAIrS6YcMCFG4Zewe6PUdDMo1vYAgJldrxzZaDFyVyJQXbuwprCabiRvhYbH7mkhd_N2lHLNVe1SKUgz985bI2vVXGB5gnhnlI76M1pjg4TS9t-4"/>
+<div class="absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/5 transition-colors">
+<button class="w-16 h-16 rounded-full bg-tertiary-container/40 backdrop-blur-md flex items-center justify-center text-white border border-white/20 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+<div class="absolute top-4 right-4 bg-tertiary-container text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                        LATEST TAKE
+                    </div>
+</div>
+<!-- Metrics Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-primary/5 space-y-6">
+<div class="grid grid-cols-3 gap-4">
+<div class="text-center">
+<p class="text-[10px] uppercase font-bold text-slate-400 mb-1">Pace</p>
+<p class="text-2xl font-bold text-primary">142 <span class="text-xs font-medium">wpm</span></p>
+<span class="inline-block px-2 py-0.5 rounded-full bg-primary-container/20 text-primary text-[10px] font-bold mt-2">OPTIMAL</span>
+</div>
+<div class="text-center">
+<p class="text-[10px] uppercase font-bold text-slate-400 mb-1">Filler Words</p>
+<p class="text-2xl font-bold text-primary">2</p>
+<span class="inline-block px-2 py-0.5 rounded-full bg-primary-container/20 text-primary text-[10px] font-bold mt-2">IDEAL</span>
+</div>
+<div class="text-center">
+<p class="text-[10px] uppercase font-bold text-slate-400 mb-1">Sentiment</p>
+<p class="text-2xl font-bold text-primary italic">Confident</p>
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Outcome Summary Card -->
+<section class="mb-16">
+<div class="bg-primary text-white p-8 md:p-12 rounded-[2rem] relative overflow-hidden">
+<!-- Abstract BG Texture -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container rounded-full blur-3xl opacity-30 -mr-32 -mt-32"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-10">
+<div class="flex-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-primary-fixed text-xs font-bold mb-6">
+<span class="material-symbols-outlined text-sm">stars</span>
+                            AI FEEDBACK
+                        </div>
+<h2 class="font-headline text-3xl font-extrabold mb-4 leading-tight">Evolution Success: +85% perceived authority.</h2>
+<p class="text-primary-fixed/80 text-lg max-w-2xl leading-relaxed">
+                            Precision focus on the <span class="text-white font-bold">STAR result</span> improved your narrative impact significantly. By slowing down during the Action phase, you allowed the interviewer to digest the complexity of your technical solution.
+                        </p>
+</div>
+<div class="w-full md:w-auto">
+<div class="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/10">
+<p class="text-xs font-bold uppercase tracking-widest text-primary-fixed mb-4">Core Improvement</p>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">verified</span>
+<span class="text-sm font-medium">Strategic Pausing</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-fixed-dim">verified</span>
+<span class="text-sm font-medium">Outcome Quantification</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Transcript & Analysis -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Transcript Column -->
+<div class="lg:col-span-2 space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="font-headline text-2xl font-bold">Transcript Comparison</h3>
+<div class="flex bg-surface-container rounded-lg p-1">
+<button class="px-4 py-1.5 rounded-md text-xs font-bold bg-white shadow-sm" onclick="window.location.href='9dd73b3a1a214ce5a9ae96241ef2a40e.html'">The Redo</button>
+<button class="px-4 py-1.5 rounded-md text-xs font-bold text-slate-500 hover:text-primary transition-colors">First Take</button>
+</div>
+</div>
+<div class="h-[600px] overflow-y-auto pr-6 custom-scrollbar space-y-8">
+<!-- Segment 1 -->
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<span class="px-2 py-0.5 rounded bg-primary text-white text-[10px] font-bold">HOOK</span>
+<span class="text-[10px] font-bold text-slate-400">00:12</span>
+</div>
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                            So, one project that truly defines my leadership style was the migration of our monolithic payment gateway. 
+                            <span class="bg-primary/10 border-b-2 border-primary text-primary font-medium px-1">I realized early on that technical debt was our primary bottleneck.</span>
+</p>
+</div>
+<!-- Segment 2 -->
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container text-[10px] font-bold">CONTEXT</span>
+<span class="text-[10px] font-bold text-slate-400">00:45</span>
+</div>
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                            We were dealing with intermittent outages and a 20% failure rate on legacy endpoints. My team was exhausted from on-call rotations. 
+                            I had to balance the immediate need for stability with the long-term vision of a microservices architecture.
+                        </p>
+</div>
+<!-- Segment 3 - AI Highlight -->
+<div class="space-y-3 p-6 bg-surface-container rounded-2xl border-l-4 border-tertiary">
+<div class="flex items-center gap-3">
+<span class="px-2 py-0.5 rounded bg-tertiary text-white text-[10px] font-bold">ACTION</span>
+<span class="text-[10px] font-bold text-slate-400">02:10</span>
+</div>
+<p class="text-lg leading-relaxed text-on-surface italic">
+                            "Instead of a big-bang rewrite, I proposed a strangler fig pattern. I personally mentored the junior devs on the service mesh implementation to ensure quality."
+                        </p>
+<div class="mt-4 flex items-center gap-2 text-tertiary text-xs font-bold">
+<span class="material-symbols-outlined text-sm">tips_and_updates</span>
+                            IMPROVED: This shows much more direct ownership than your first take.
+                        </div>
+</div>
+<!-- Segment 4 -->
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<span class="px-2 py-0.5 rounded bg-primary text-white text-[10px] font-bold">RESULT</span>
+<span class="text-[10px] font-bold text-slate-400">03:50</span>
+</div>
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                            Ultimately, we reduced deployment times by 60% and eliminated 99% of those legacy outages. 
+                            <span class="bg-tertiary/10 border-b-2 border-tertiary text-tertiary font-bold px-1">This resulted in a $2M annual saving in infrastructure costs.</span>
+</p>
+</div>
+</div>
+</div>
+<!-- Structure Flags & Tips -->
+<div class="space-y-8">
+<div class="bg-surface-container-low rounded-2xl p-8 border border-outline-variant/10">
+<h4 class="font-headline text-lg font-bold mb-6">Story Structure</h4>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-2 h-10 bg-primary rounded-full"></div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase">Hook</p>
+<p class="text-sm font-semibold">Strong engagement (0:12)</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-2 h-10 bg-secondary-container rounded-full"></div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase">Context</p>
+<p class="text-sm font-semibold">Concise problem setting</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-2 h-10 bg-tertiary rounded-full"></div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase">Action</p>
+<p class="text-sm font-semibold text-tertiary">Significantly clearer in Redo</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-2 h-10 bg-primary rounded-full"></div>
+<div>
+<p class="text-xs font-bold text-slate-400 uppercase">Result</p>
+<p class="text-sm font-semibold">Quantified impact (3:50)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-panel rounded-2xl p-8 border border-primary/10 relative">
+<span class="material-symbols-outlined absolute top-6 right-6 text-primary-fixed-dim text-4xl opacity-50">psychology</span>
+<h4 class="font-headline text-lg font-bold mb-4">Mastery Tip</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                        Your technical explanations are solid, but in your first take, you used too many "we" statements when discussing the Action. In the Redo, you correctly highlighted your individual leadership contribution while still acknowledging the team.
+                    </p>
+<button class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+                        View Mastery Guide
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main><!-- Footer Space --></main></div></div></body></html>

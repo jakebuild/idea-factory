@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-low": "#f2f4f5",
+                        "secondary-fixed-dim": "#a5cdd8",
+                        "primary": "#004250",
+                        "on-background": "#191c1d",
+                        "secondary-container": "#c1e9f5",
+                        "primary-fixed": "#b2ebff",
+                        "surface-dim": "#d8dadb",
+                        "tertiary-container": "#953105",
+                        "on-secondary-fixed": "#001f26",
+                        "outline-variant": "#bfc8cc",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#005b6e",
+                        "surface-bright": "#f8fafb",
+                        "secondary": "#3e646e",
+                        "on-primary-fixed-variant": "#004e5e",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e6e8e9",
+                        "on-secondary-container": "#446a74",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb59c",
+                        "on-tertiary-fixed-variant": "#822800",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#8dd0e6",
+                        "on-tertiary-fixed": "#380c00",
+                        "tertiary": "#6f2100",
+                        "surface-container-highest": "#e1e3e4",
+                        "surface-container": "#eceeef",
+                        "tertiary-fixed": "#ffdbcf",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "secondary-fixed": "#c1e9f5",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-container": "#ffb59c",
+                        "background": "#f8fafb",
+                        "on-secondary-fixed-variant": "#254c55",
+                        "on-surface-variant": "#3f484b",
+                        "outline": "#70787c",
+                        "on-primary-container": "#8ed1e7",
+                        "on-primary-fixed": "#001f27",
+                        "surface": "#f8fafb",
+                        "surface-tint": "#19677a",
+                        "inverse-primary": "#8dd0e6",
+                        "inverse-on-surface": "#eff1f2",
+                        "inverse-surface": "#2e3132",
+                        "on-primary": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+        .redo-gradient {
+            background: linear-gradient(135deg, #004250 0%, #005b6e 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+:root { color-scheme: light; }
+body { margin: 0; background: #eef3f6; color: #17202a; font-family: Inter, system-ui, sans-serif; }
+.shared-shell { min-height: 100vh; display: grid; grid-template-columns: 232px 1fr; }
+.shared-sidebar { background: linear-gradient(180deg, #0d2430 0%, #133545 100%); color: #e6f0f4; padding: 22px 16px; display: flex; flex-direction: column; gap: 18px; }
+.brand { font-family: Manrope, sans-serif; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.03em; }
+.brand-sub { color: rgba(230,240,244,.7); font-size: .78rem; line-height: 1.4; }
+.nav-group { display: flex; flex-direction: column; gap: 8px; }
+.nav-btn { border: 0; background: transparent; color: rgba(230,240,244,.78); border-radius: 14px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; font: 600 14px Inter, sans-serif; cursor: pointer; }
+.nav-btn.active { background: rgba(255,255,255,.12); color: #fff; }
+.nav-btn:hover { background: rgba(255,255,255,.08); color: #fff; }
+.nav-meta { color: rgba(230,240,244,.56); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; }
+.shell-main { min-width: 0; display: flex; flex-direction: column; }
+.shared-header { height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; background: rgba(255,255,255,.88); backdrop-filter: blur(16px); border-bottom: 1px solid #d7e0e6; position: sticky; top: 0; z-index: 40; }
+.header-left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.back-btn, .head-chip { border: 0; border-radius: 999px; background: #dfeaf0; color: #0f3341; padding: 10px 14px; font: 700 13px Inter, sans-serif; cursor: pointer; }
+.back-spacer { width: 80px; }
+.header-title { font-family: Manrope, sans-serif; font-size: 1.05rem; font-weight: 800; color: #10222c; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.header-sub { font-size: .78rem; color: #5b6c75; margin-top: 2px; }
+.shared-content { padding: 28px; }
+.shared-content > * { max-width: 100%; }
+.flow-card { background: #ffffff; border: 1px solid #d7e0e6; border-radius: 18px; padding: 18px 20px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(16,34,44,.06); }
+.flow-card h2 { margin: 0 0 6px; font-family: Manrope, sans-serif; font-size: 1rem; }
+.flow-card p { margin: 0; color: #5b6c75; font-size: .88rem; line-height: 1.5; }
+.flow-card button { margin-top: 12px; border: 0; border-radius: 12px; background: #004250; color: #fff; padding: 12px 16px; font: 700 14px Inter, sans-serif; cursor: pointer; }
+@media (max-width: 960px) {
+  .shared-shell { grid-template-columns: 1fr; }
+  .shared-sidebar { position: sticky; top: 0; z-index: 45; padding: 14px; gap: 12px; }
+  .nav-group { flex-direction: row; flex-wrap: wrap; }
+  .nav-btn { flex: 1 1 calc(50% - 8px); }
+  .shared-header { padding: 0 16px; }
+  .shared-content { padding: 16px; }
+}
+</style></head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container"><div class="shared-shell">
+<aside class="shared-sidebar">
+<div><div class="brand">Panic Brake</div><div class="brand-sub">Sharper interview answers through a record, review, redo loop.</div></div>
+<div class="nav-meta">Prototype</div>
+<div class="nav-group">
+<button class="nav-btn active" onclick="window.location.href='d8cafd8a68094e6c927121da523f586b.html'"><span>Home</span><span>01</span></button>
+<button class="nav-btn" onclick="window.location.href='a1e22d6c4d3548fbb5d908cee211aba0.html'"><span>Question Packs</span><span>02</span></button>
+<button class="nav-btn" onclick="window.location.href='ae31b5e17b134bf0a1168f89c76ffdc0.html'"><span>History</span><span>03</span></button>
+<button class="nav-btn" onclick="window.location.href='02745cca2f374bd18f6c622fffcdf192.html'"><span>Settings</span><span>04</span></button>
+</div>
+</aside>
+<div class="shell-main">
+<header class="shared-header">
+<div class="header-left"><div class="back-spacer"></div><div><div class="header-title">Landing / Positioning</div><div class="header-sub">Interview rehearsal prototype</div></div></div>
+<div class="head-chip">Web Preview</div>
+</header>
+<main class="shared-content"><!-- TopAppBar --><main class="pt-24 overflow-hidden">
+<!-- Hero Section -->
+<section class="relative px-6 md:px-20 py-16 md:py-32 flex flex-col items-center text-center max-w-6xl mx-auto">
+<div class="absolute -top-10 -right-20 w-64 h-64 bg-primary-fixed/20 blur-[100px] rounded-full -z-10"></div>
+<div class="absolute -bottom-10 -left-20 w-80 h-80 bg-tertiary-fixed/15 blur-[100px] rounded-full -z-10"></div>
+<span class="font-label text-sm uppercase tracking-[0.3em] text-secondary mb-6 block">Interview Coaching for Elite Professionals</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-background leading-[1.1] mb-8 max-w-4xl">
+                Tighten your narrative. <span class="text-primary italic">Sharpen your edge.</span>
+</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-2xl mb-12 leading-relaxed">
+                Unlock the boardroom-ready precision of your professional story. We guide high-impact leaders to master the art of the interview through iterative excellence.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+<button class="redo-gradient text-on-primary px-10 py-5 rounded-xl font-bold shadow-2xl shadow-primary/20 hover:scale-105 transition-transform" onclick="window.location.href='ede9a0f2ee7f43e2a416aa3e9a0eda25.html'">
+                    Get Started
+                </button>
+<button class="bg-surface-container-lowest text-primary border border-outline-variant/15 px-10 py-5 rounded-xl font-bold hover:bg-surface-container transition-colors" onclick="window.location.href='ede9a0f2ee7f43e2a416aa3e9a0eda25.html'">
+                    View Methodology
+                </button>
+</div>
+<!-- Hero Image Mockup -->
+<div class="mt-20 w-full relative">
+<div class="aspect-video w-full rounded-2xl overflow-hidden shadow-2xl relative">
+<img alt="Executive coaching session" class="w-full h-full object-cover" data-alt="Modern high-end office interior with a professional woman in a grey suit engaged in a serious but calm coaching conversation at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-IbxCAK3fP2PdUEynaUIhdSGP1fgxcBFO4KqYmY-PJD-sjocDoBNgi51_FVhKMWq2OzC0OxEibW6-QdyhoaVKU_3vpFjg-UsUpTn-BnUxriQVVLx8Yln8fs1Kne_8DQnY2tL2gttxxf7TiQJdJcd8H71D76Sse815I4gnQNpQlTcgl2a3Ghuw5Xu-oc2m0JRm1wshhVezBZvpIgJkqHpJsgcT-PgcVBlZbSw1bF-b5eiphD0NUOOD8iNLKF2EvsVyTXXJ0mTHqZA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+<!-- Glassmorphism Overlay -->
+<div class="absolute bottom-6 left-6 right-6 md:left-10 md:bottom-10 md:w-fit glass-panel p-6 rounded-2xl flex items-center gap-4">
+<div class="w-12 h-12 bg-tertiary-container rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+</div>
+<div class="text-left">
+<p class="font-headline font-bold text-on-surface leading-tight">Mastering The Pivot</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">Coach Sarah • 12m Duration</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Redo Loop Section -->
+<section class="bg-surface-container-low py-24 md:py-32">
+<div class="max-w-6xl mx-auto px-6 md:px-20">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-on-background mb-6">The Art of the Redo</h2>
+<p class="text-on-surface-variant text-lg">Great answers aren't written; they are refined. Our proprietary loop turns raw talent into polished authority through deliberate iteration.</p>
+</div>
+<div class="flex gap-2 pb-2">
+<div class="w-32 h-1 bg-primary"></div>
+<div class="w-12 h-1 bg-outline-variant"></div>
+</div>
+</div>
+<!-- Loop Visualization (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm group hover:shadow-xl transition-all duration-500 border-l-4 border-primary/20">
+<span class="text-5xl font-black text-surface-container-high mb-6 block group-hover:text-primary-container transition-colors">01</span>
+<div class="w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="mic_external_on">mic_external_on</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Record</h3>
+<p class="text-on-surface-variant leading-relaxed">Capture your authentic response to a curated set of elite-level behavioral prompts.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm group hover:shadow-xl transition-all duration-500 border-l-4 border-primary/20">
+<span class="text-5xl font-black text-surface-container-high mb-6 block group-hover:text-primary-container transition-colors">02</span>
+<div class="w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="visibility">visibility</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Review</h3>
+<p class="text-on-surface-variant leading-relaxed">Analyze the structure, tone, and impact of your message with expert-guided criteria.</p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm group hover:shadow-xl transition-all duration-500 border-l-4 border-tertiary-container/30">
+<span class="text-5xl font-black text-surface-container-high mb-6 block group-hover:text-tertiary-container transition-colors">03</span>
+<div class="w-14 h-14 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary mb-6">
+<span class="material-symbols-outlined text-3xl" data-icon="settings_backup_restore">settings_backup_restore</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Redo</h3>
+<p class="text-on-surface-variant leading-relaxed">Execute the same answer with precision adjustments. This is where the skill is born.</p>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="inline-flex items-center gap-3 text-tertiary font-bold group">
+<span class="underline decoration-tertiary/30 underline-offset-8 group-hover:decoration-tertiary transition-all">Explore the science of iteration</span>
+<span class="material-symbols-outlined" data-icon="trending_flat">trending_flat</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Biometric Positioning Section -->
+<section class="py-24 md:py-40 px-6 md:px-20 max-w-6xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-16 md:gap-24">
+<div class="relative">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-2xl relative">
+<img alt="Human connection" class="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700" data-alt="Close up of a person's hands holding a warm ceramic mug in a bright minimalist room with natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-EOG0RqXs9HCxQgmw7q5gdn8T9j_XpKCmQhehPK9_zzNaZuVYjLUmgSWNJXwRVmfF8NgzyTphbzG8ju7GLwm8j8T90BXrXVrYnAelPPTbsGEZ5tmFUHyXeO-KFFv98J0b3WcVldp_cn3A_uKfUb3xd4_inC8KmLxop67nx0QSSIWnmHzzcB_77HmDSCZXE0FD8Kq9sEiyNkm4XYdd9ZDh5uF4n_7aODLME2-rA6HEPI9JS95Bzot0Wl6fBMBNYvjAknzqZUJv34A"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+</div>
+<div class="absolute -bottom-8 -right-8 w-48 h-48 redo-gradient rounded-2xl p-8 flex flex-col justify-between text-on-primary shadow-2xl">
+<span class="material-symbols-outlined text-4xl" data-icon="do_not_disturb_on">do_not_disturb_on</span>
+<p class="font-headline font-bold text-lg leading-tight">No Biometrics. No Tracking.</p>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-on-background leading-tight">Human Skill. <br/>Not a Data Point.</h2>
+<div class="space-y-6 text-lg text-on-surface-variant">
+<p class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span>No anxiety-inducing algorithms measuring your blink rate or pulse.</span>
+</p>
+<p class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span>No intrusive biometric tracking that turns communication into a medical event.</span>
+</p>
+<p class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span>Just you, your voice, and the architectural guidance to build a better narrative.</span>
+</p>
+</div>
+<p class="text-on-surface italic pt-4 border-t border-outline-variant/30">
+                        "We believe executive presence is a craft to be practiced, not a metric to be surveilled."
+                    </p>
+</div>
+</div>
+</section>
+<!-- Premium Social Proof -->
+<section class="bg-primary text-on-primary py-24 md:py-32 relative overflow-hidden">
+<div class="absolute top-0 right-0 opacity-10 translate-x-1/4 -translate-y-1/4">
+<span class="material-symbols-outlined text-[400px]" data-icon="format_quote">format_quote</span>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<div class="flex justify-center mb-10">
+<div class="flex gap-1 text-tertiary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<blockquote class="font-headline text-3xl md:text-4xl font-medium italic leading-relaxed mb-12">
+                    "The Luminary didn't just teach me how to answer questions; they taught me how to control the room. The Redo Loop was the most transformative training I've experienced in twenty years of executive life."
+                </blockquote>
+<div>
+<p class="font-bold text-xl tracking-tight">Marcus V. Sterling</p>
+<p class="text-primary-fixed/70 uppercase tracking-widest text-sm mt-1">SVP Global Operations, FinTech Hub</p>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-24 md:py-40 px-6 text-center bg-surface-bright">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl md:text-6xl font-extrabold text-on-background mb-8">Ready to evolve?</h2>
+<p class="text-on-surface-variant text-xl mb-12 max-w-xl mx-auto">Join the ranks of elite professionals who refuse to settle for 'good enough' communication.</p>
+<button class="bg-tertiary-container text-on-primary px-12 py-6 rounded-2xl text-lg font-bold shadow-xl shadow-tertiary-container/20 hover:scale-105 active:scale-95 transition-all w-full sm:w-auto" onclick="window.location.href='ede9a0f2ee7f43e2a416aa3e9a0eda25.html'">
+                    Start Your Journey
+                </button>
+<p class="mt-8 text-sm text-outline font-medium uppercase tracking-widest">Limited Intake for Q3 Cohort</p>
+</div>
+</section>
+</main><!-- Footer --></main></div></div></body></html>

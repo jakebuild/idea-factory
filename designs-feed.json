@@ -1,5 +1,36 @@
 [
   {
+    "id": "54-panic-brake-is-a-status-app-th",
+    "num": 54,
+    "title": "Panic Brake",
+    "subtitle": "Practice tighter interview answers with a record-review-redo loop.",
+    "description": "Rebuild Idea #54 as a web app for practicing tighter interview answers, not for measuring stress. The user picks one of 15-20 curated interview questions across four packs: opener, behavioral stories, role fit, and wrap-up. They record a 60-90 second answer from their laptop, get a transcript, then receive a compact scorecard with only four outputs: pace, filler words, answer length, and a simple structure check. The structure check is the actual product value. For each question type, the app evaluates whether the answer hit the expected bones of a good response. Example outputs: \"Direct answer missing in first 15 seconds,\" \"Situation and action present, outcome missing,\" or \"Too abstract, no concrete example.\" This is intentionally lightweight and rule-based, not a fake AI oracle. It is better than raw speech metrics because it pushes the user toward stronger answers, not just slower answers. After the first take, the app assigns one of 5 specific redo drills tied to the failure mode. Example drills: \"Answer-first\": say the conclusion in one sentence before the example \"STAR compression\": give situation, action, result in 3 beats \"Outcome snap\": end with a measurable result or lesson \"Cut the runway\": restart and remove the first 10 seconds of throat-clearing \"Specifics only\": replace generic claims with one concrete detail The retake comparison shows whether the answer actually improved. The app highlights transcript deltas, shows whether the missing structure flags were cleared, and saves only a per-question attempt history with latest status: \"solid\" or \"needs redo.\" There is no broad dashboard, no answer library positioning, and no anxiety framing. Why would users come back in week 2? Because the product gives them an unfinished practice plan, not a one-off reading. They still have uncompleted question packs, and some practiced questions remain marked \"needs redo\" until they produce one solid version. That creates a concrete repeat loop during an active interview cycle without depending on social features, marketplaces, or fake progress charts. 3 biggest assumptions that could kill the product: VERIFIED: Users care more about tightening answer structure than seeing raw voice metrics alone. The critique explicitly asked for a structure check because that is closer to real interview value than pace or filler counts by themselves. UNVERIFIED: A simple rules-based structure check plus transcript review will feel trustworthy and useful enough without requiring a heavier LLM judging pipeline. Because this is unverified, it is not the moat. Fallback plan: if users find the rule-based feedback too shallow, keep the same flow but reposition the app as a practice accountability tool and add one narrow LLM pass only for \"missing outcome / missing specificity\" on a small subset of question types. UNVERIFIED: Users will return across multiple days to complete question packs and clear redo items. This cannot be the moat either. Fallback plan: if week-2 retention is weak, collapse the product into a one-session \"night before interview\" rehearsal tool and optimize for one high-value prep session instead of a longer habit loop.",
+    "score": 7,
+    "status": "complete",
+    "deviceType": "WEB",
+    "category": "Education",
+    "platform": [
+      "web"
+    ],
+    "tags": [
+      "interview",
+      "practice",
+      "coaching",
+      "transcript",
+      "speaking"
+    ],
+    "folder": "54-panic-brake-is-a-status-app-th",
+    "prototypeUrl": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/",
+    "metaUrl": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/meta.json",
+    "startScreenId": "d8cafd8a68094e6c927121da523f586b",
+    "startScreenUrl": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/d8cafd8a68094e6c927121da523f586b.html",
+    "screenCount": 13,
+    "stitchId": "1215482371593841962",
+    "stitchUrl": "https://stitch.withgoogle.com/projects/1215482371593841962",
+    "publishedAt": "2026-04-02T16:29:12Z",
+    "updatedAt": "2026-04-02T16:29:12Z"
+  },
+  {
     "id": "53-glow-clash-is-an-attractivenes",
     "num": 53,
     "title": "Glow Clash",

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#3e646e",
+                        "inverse-primary": "#8dd0e6",
+                        "surface-bright": "#f8fafb",
+                        "outline": "#70787c",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f2f4f5",
+                        "secondary-fixed": "#c1e9f5",
+                        "secondary-container": "#c1e9f5",
+                        "on-tertiary-fixed-variant": "#822800",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#ffb59c",
+                        "surface-tint": "#19677a",
+                        "surface-container": "#eceeef",
+                        "tertiary-container": "#953105",
+                        "on-surface-variant": "#3f484b",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#b2ebff",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary-fixed": "#001f26",
+                        "tertiary-fixed": "#ffdbcf",
+                        "background": "#f8fafb",
+                        "inverse-on-surface": "#eff1f2",
+                        "surface-variant": "#e1e3e4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#380c00",
+                        "surface-container-high": "#e6e8e9",
+                        "on-secondary-container": "#446a74",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#005b6e",
+                        "tertiary": "#6f2100",
+                        "secondary-fixed-dim": "#a5cdd8",
+                        "primary": "#004250",
+                        "on-background": "#191c1d",
+                        "on-primary-fixed-variant": "#004e5e",
+                        "surface-dim": "#d8dadb",
+                        "surface": "#f8fafb",
+                        "on-primary-fixed": "#001f27",
+                        "on-primary-container": "#8ed1e7",
+                        "primary-fixed-dim": "#8dd0e6",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#bfc8cc",
+                        "on-tertiary-container": "#ffb59c",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#254c55"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+:root { color-scheme: light; }
+body { margin: 0; background: #eef3f6; color: #17202a; font-family: Inter, system-ui, sans-serif; }
+.shared-shell { min-height: 100vh; display: grid; grid-template-columns: 232px 1fr; }
+.shared-sidebar { background: linear-gradient(180deg, #0d2430 0%, #133545 100%); color: #e6f0f4; padding: 22px 16px; display: flex; flex-direction: column; gap: 18px; }
+.brand { font-family: Manrope, sans-serif; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.03em; }
+.brand-sub { color: rgba(230,240,244,.7); font-size: .78rem; line-height: 1.4; }
+.nav-group { display: flex; flex-direction: column; gap: 8px; }
+.nav-btn { border: 0; background: transparent; color: rgba(230,240,244,.78); border-radius: 14px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; font: 600 14px Inter, sans-serif; cursor: pointer; }
+.nav-btn.active { background: rgba(255,255,255,.12); color: #fff; }
+.nav-btn:hover { background: rgba(255,255,255,.08); color: #fff; }
+.nav-meta { color: rgba(230,240,244,.56); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; }
+.shell-main { min-width: 0; display: flex; flex-direction: column; }
+.shared-header { height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; background: rgba(255,255,255,.88); backdrop-filter: blur(16px); border-bottom: 1px solid #d7e0e6; position: sticky; top: 0; z-index: 40; }
+.header-left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.back-btn, .head-chip { border: 0; border-radius: 999px; background: #dfeaf0; color: #0f3341; padding: 10px 14px; font: 700 13px Inter, sans-serif; cursor: pointer; }
+.back-spacer { width: 80px; }
+.header-title { font-family: Manrope, sans-serif; font-size: 1.05rem; font-weight: 800; color: #10222c; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.header-sub { font-size: .78rem; color: #5b6c75; margin-top: 2px; }
+.shared-content { padding: 28px; }
+.shared-content > * { max-width: 100%; }
+.flow-card { background: #ffffff; border: 1px solid #d7e0e6; border-radius: 18px; padding: 18px 20px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(16,34,44,.06); }
+.flow-card h2 { margin: 0 0 6px; font-family: Manrope, sans-serif; font-size: 1rem; }
+.flow-card p { margin: 0; color: #5b6c75; font-size: .88rem; line-height: 1.5; }
+.flow-card button { margin-top: 12px; border: 0; border-radius: 12px; background: #004250; color: #fff; padding: 12px 16px; font: 700 14px Inter, sans-serif; cursor: pointer; }
+@media (max-width: 960px) {
+  .shared-shell { grid-template-columns: 1fr; }
+  .shared-sidebar { position: sticky; top: 0; z-index: 45; padding: 14px; gap: 12px; }
+  .nav-group { flex-direction: row; flex-wrap: wrap; }
+  .nav-btn { flex: 1 1 calc(50% - 8px); }
+  .shared-header { padding: 0 16px; }
+  .shared-content { padding: 16px; }
+}
+</style></head>
+<body class="bg-surface text-on-surface min-h-screen pb-24"><div class="shared-shell">
+<aside class="shared-sidebar">
+<div><div class="brand">Panic Brake</div><div class="brand-sub">Sharper interview answers through a record, review, redo loop.</div></div>
+<div class="nav-meta">Prototype</div>
+<div class="nav-group">
+<button class="nav-btn" onclick="window.location.href='d8cafd8a68094e6c927121da523f586b.html'"><span>Home</span><span>01</span></button>
+<button class="nav-btn" onclick="window.location.href='a1e22d6c4d3548fbb5d908cee211aba0.html'"><span>Question Packs</span><span>02</span></button>
+<button class="nav-btn active" onclick="window.location.href='ae31b5e17b134bf0a1168f89c76ffdc0.html'"><span>History</span><span>03</span></button>
+<button class="nav-btn" onclick="window.location.href='02745cca2f374bd18f6c622fffcdf192.html'"><span>Settings</span><span>04</span></button>
+</div>
+</aside>
+<div class="shell-main">
+<header class="shared-header">
+<div class="header-left"><div class="back-spacer"></div><div><div class="header-title">Question History</div><div class="header-sub">Interview rehearsal prototype</div></div></div>
+<div class="head-chip">Web Preview</div>
+</header>
+<main class="shared-content"><!-- TopAppBar --><main class="pt-20 px-6 max-w-2xl mx-auto">
+<!-- Question Spotlight -->
+<section class="mt-8 mb-10">
+<div class="bg-primary-container p-8 rounded-3xl relative overflow-hidden">
+<!-- Subtle Gradient Pattern -->
+<div class="absolute inset-0 opacity-10 bg-gradient-to-br from-white to-transparent"></div>
+<span class="text-white/70 text-xs font-semibold uppercase tracking-widest font-label mb-3 block">Current Focus</span>
+<h2 class="text-white text-2xl font-extrabold leading-tight mb-4 relative z-10">
+                    "Tell me about a time you handled a difficult stakeholder conflict."
+                </h2>
+<div class="flex items-center gap-3">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-primary-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up headshot of a professional business coach with a friendly smile in a bright modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKYope0VS6vlF0nBClDemHi7EuHQbVvqAhn1iI3VZso6Lu-IfGWUdnYqMqXGyUvV7-wZ7VuzrLHry8jXZhuNuwMprImucCHUV1k2mFtGNPE4UiXhtbASvfW05dJVP5RXAJ4vFWUY8cBkVY7tQ7vFkC-Rd_blm8-jiQc0KvnO9-69XUdh7p3fPO91cW5y0mBYsRIZm8eOqeJpVSPv0dyYfqwXFNgkqrrLSF-fl5HbXXVv-ISFPzlo3gsxMN3L6e_1sUHegJsb5NGpE"/>
+</div>
+</div>
+<p class="text-on-primary-container text-sm font-medium">Coached by AI Mentor</p>
+</div>
+</div>
+</section>
+<!-- Attempts List -->
+<div class="space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="text-lg font-bold text-on-surface">Recent Attempts</h3>
+<span class="text-xs font-medium text-outline">Total: 4 Sessions</span>
+</div>
+<!-- Latest Attempt (Active State) -->
+<div class="relative group">
+
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_12px_32px_-4px_rgba(25,28,29,0.06)] transition-all duration-300 hover:translate-y-[-2px]">
+<div class="flex justify-between items-start mb-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-sm font-semibold text-primary font-label">Latest</span>
+<span class="text-outline text-xs">• Oct 24, 2024</span>
+</div>
+<h4 class="text-on-surface font-bold text-lg">Morning Session</h4>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Solid</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                        Pacing was excellent, but the initial hook needs work. You established the context quickly but could refine the stakeholder's motivation.
+                    </p>
+<button class="w-full py-3 bg-primary text-on-primary rounded-xl font-bold flex items-center justify-center gap-2 Active: scale-95 duration-150 transition-all" onclick="window.location.href='e2e97465af4b42dbb2ae8117f7944423.html'">
+<span>Open Session</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Redo Attempt -->
+<div class="bg-surface-container-low p-6 rounded-2xl transition-all duration-300 hover:bg-surface-container">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-outline text-xs block mb-1">Oct 22, 2024</span>
+<h4 class="text-on-surface font-bold text-lg">Quick Practice</h4>
+</div>
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Needs Redo</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                    Response felt rushed. The "Conflict" part of the STAR method was underdeveloped. Consider adding more detail on the resolution.
+                </p>
+<button class="w-full py-3 bg-tertiary-container text-on-tertiary-container border border-on-tertiary-container/10 rounded-xl font-bold flex items-center justify-center gap-2 Active: scale-95 duration-150 transition-all" onclick="window.location.href='a8cd1323d0d94fa5bcdf4c35d3299cb7.html'">
+<span class="material-symbols-outlined text-sm" data-icon="refresh">refresh</span>
+<span>Practice Again</span>
+</button>
+</div>
+<!-- In Progress Attempt -->
+<div class="bg-surface-container-low p-6 rounded-2xl transition-all duration-300 hover:bg-surface-container">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-outline text-xs block mb-1">Oct 20, 2024</span>
+<h4 class="text-on-surface font-bold text-lg">Late Night Draft</h4>
+</div>
+<span class="bg-primary-container/20 text-primary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">In Progress</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6 italic">
+                    AI analysis is still calculating the sentiment and vocal tone markers for this session...
+                </p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface-variant rounded-xl font-bold flex items-center justify-center gap-2 Active: scale-95 duration-150 transition-all" onclick="window.location.href='e2e97465af4b42dbb2ae8117f7944423.html'">
+<span>View Details</span>
+</button>
+</div>
+<!-- Previous Session -->
+<div class="bg-surface-container-low p-6 rounded-2xl transition-all duration-300 hover:bg-surface-container opacity-80">
+<div class="flex justify-between items-start mb-4">
+<div>
+<span class="text-outline text-xs block mb-1">Oct 18, 2024</span>
+<h4 class="text-on-surface font-bold text-lg">Initial Baseline</h4>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Solid</span>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                    Good structure, but the tone was a bit monotone. Eye contact with the camera was consistent throughout the answer.
+                </p>
+<button class="w-full py-3 bg-surface-container-highest text-on-surface-variant rounded-xl font-bold flex items-center justify-center gap-2 Active: scale-95 duration-150 transition-all" onclick="window.location.href='e2e97465af4b42dbb2ae8117f7944423.html'">
+<span>View Details</span>
+</button>
+</div>
+</div>
+<!-- Glassmorphism Coaching Tip -->
+<div class="mt-12 mb-8 bg-surface-container-lowest/70 backdrop-blur-xl border border-outline-variant/15 p-6 rounded-3xl flex items-start gap-4">
+<div class="bg-primary-container p-2 rounded-xl text-white">
+<span class="material-symbols-outlined" data-icon="lightbulb">lightbulb</span>
+</div>
+<div>
+<h5 class="text-on-surface font-bold text-sm mb-1">Mentor's Advice</h5>
+<p class="text-on-surface-variant text-xs leading-relaxed">
+                    You've improved your pacing by 15% this week. Focus on emphasizing the "Result" part of your story to leave a lasting impact.
+                </p>
+</div>
+</div>
+</main><!-- BottomNavBar --></main></div></div></body></html>

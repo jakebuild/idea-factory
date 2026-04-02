@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#2e3132",
+                        "surface-container-low": "#f2f4f5",
+                        "tertiary": "#6f2100",
+                        "surface-dim": "#d8dadb",
+                        "surface": "#f8fafb",
+                        "outline": "#70787c",
+                        "background": "#f8fafb",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed-variant": "#004e5e",
+                        "surface-variant": "#e1e3e4",
+                        "on-tertiary-fixed-variant": "#822800",
+                        "on-tertiary-fixed": "#380c00",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#c1e9f5",
+                        "tertiary-fixed": "#ffdbcf",
+                        "tertiary-container": "#953105",
+                        "secondary-fixed-dim": "#a5cdd8",
+                        "on-surface-variant": "#3f484b",
+                        "secondary-container": "#c1e9f5",
+                        "outline-variant": "#bfc8cc",
+                        "on-primary-container": "#8ed1e7",
+                        "on-background": "#191c1d",
+                        "on-secondary-container": "#446a74",
+                        "on-secondary-fixed-variant": "#254c55",
+                        "inverse-primary": "#8dd0e6",
+                        "primary-container": "#005b6e",
+                        "on-primary-fixed": "#001f27",
+                        "surface-container-highest": "#e1e3e4",
+                        "error-container": "#ffdad6",
+                        "secondary": "#3e646e",
+                        "inverse-on-surface": "#eff1f2",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eceeef",
+                        "surface-bright": "#f8fafb",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#ffb59c",
+                        "on-secondary-fixed": "#001f26",
+                        "on-secondary": "#ffffff",
+                        "surface-container-high": "#e6e8e9",
+                        "surface-tint": "#19677a",
+                        "primary-fixed": "#b2ebff",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#8dd0e6",
+                        "primary": "#004250",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb59c"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+:root { color-scheme: light; }
+body { margin: 0; background: #eef3f6; color: #17202a; font-family: Inter, system-ui, sans-serif; }
+.shared-shell { min-height: 100vh; display: grid; grid-template-columns: 232px 1fr; }
+.shared-sidebar { background: linear-gradient(180deg, #0d2430 0%, #133545 100%); color: #e6f0f4; padding: 22px 16px; display: flex; flex-direction: column; gap: 18px; }
+.brand { font-family: Manrope, sans-serif; font-weight: 800; font-size: 1.15rem; letter-spacing: -0.03em; }
+.brand-sub { color: rgba(230,240,244,.7); font-size: .78rem; line-height: 1.4; }
+.nav-group { display: flex; flex-direction: column; gap: 8px; }
+.nav-btn { border: 0; background: transparent; color: rgba(230,240,244,.78); border-radius: 14px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; font: 600 14px Inter, sans-serif; cursor: pointer; }
+.nav-btn.active { background: rgba(255,255,255,.12); color: #fff; }
+.nav-btn:hover { background: rgba(255,255,255,.08); color: #fff; }
+.nav-meta { color: rgba(230,240,244,.56); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; }
+.shell-main { min-width: 0; display: flex; flex-direction: column; }
+.shared-header { height: 72px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; background: rgba(255,255,255,.88); backdrop-filter: blur(16px); border-bottom: 1px solid #d7e0e6; position: sticky; top: 0; z-index: 40; }
+.header-left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.back-btn, .head-chip { border: 0; border-radius: 999px; background: #dfeaf0; color: #0f3341; padding: 10px 14px; font: 700 13px Inter, sans-serif; cursor: pointer; }
+.back-spacer { width: 80px; }
+.header-title { font-family: Manrope, sans-serif; font-size: 1.05rem; font-weight: 800; color: #10222c; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.header-sub { font-size: .78rem; color: #5b6c75; margin-top: 2px; }
+.shared-content { padding: 28px; }
+.shared-content > * { max-width: 100%; }
+.flow-card { background: #ffffff; border: 1px solid #d7e0e6; border-radius: 18px; padding: 18px 20px; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(16,34,44,.06); }
+.flow-card h2 { margin: 0 0 6px; font-family: Manrope, sans-serif; font-size: 1rem; }
+.flow-card p { margin: 0; color: #5b6c75; font-size: .88rem; line-height: 1.5; }
+.flow-card button { margin-top: 12px; border: 0; border-radius: 12px; background: #004250; color: #fff; padding: 12px 16px; font: 700 14px Inter, sans-serif; cursor: pointer; }
+@media (max-width: 960px) {
+  .shared-shell { grid-template-columns: 1fr; }
+  .shared-sidebar { position: sticky; top: 0; z-index: 45; padding: 14px; gap: 12px; }
+  .nav-group { flex-direction: row; flex-wrap: wrap; }
+  .nav-btn { flex: 1 1 calc(50% - 8px); }
+  .shared-header { padding: 0 16px; }
+  .shared-content { padding: 16px; }
+}
+</style></head>
+<body class="bg-background text-on-surface font-body min-h-screen pb-24"><div class="shared-shell">
+<aside class="shared-sidebar">
+<div><div class="brand">Panic Brake</div><div class="brand-sub">Sharper interview answers through a record, review, redo loop.</div></div>
+<div class="nav-meta">Prototype</div>
+<div class="nav-group">
+<button class="nav-btn" onclick="window.location.href='d8cafd8a68094e6c927121da523f586b.html'"><span>Home</span><span>01</span></button>
+<button class="nav-btn active" onclick="window.location.href='a1e22d6c4d3548fbb5d908cee211aba0.html'"><span>Question Packs</span><span>02</span></button>
+<button class="nav-btn" onclick="window.location.href='ae31b5e17b134bf0a1168f89c76ffdc0.html'"><span>History</span><span>03</span></button>
+<button class="nav-btn" onclick="window.location.href='02745cca2f374bd18f6c622fffcdf192.html'"><span>Settings</span><span>04</span></button>
+</div>
+</aside>
+<div class="shell-main">
+<header class="shared-header">
+<div class="header-left"><div class="back-spacer"></div><div><div class="header-title">Question Packs</div><div class="header-sub">Interview rehearsal prototype</div></div></div>
+<div class="head-chip">Web Preview</div>
+</header>
+<main class="shared-content"><!-- TopAppBar --><main class="max-w-7xl mx-auto px-6 pt-10 md:pt-16">
+<!-- Hero / Section Intro -->
+<section class="mb-12">
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-primary tracking-tight mb-4">Question Packs</h2>
+<p class="text-on-surface-variant max-w-2xl leading-relaxed">
+                Refine your narrative with our curated selection of industry-standard interview frameworks. Each pack is designed to challenge your mental models and polish your delivery.
+            </p>
+</section>
+<!-- Bento Grid for Packs -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+<!-- Pack 1 -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_12px_32px_-4px_rgba(25,28,29,0.06)] relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+<div>
+<div class="mb-6 aspect-video rounded-lg overflow-hidden relative">
+<img alt="Executive meeting" class="w-full h-full object-cover" data-alt="high-end modern corporate boardroom with warm lighting and professional atmosphere for executive interview coaching" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnstrCJx-o8os1HI3JS-u8ujPGqr_Q-nQ3hrBpwZ802sA_m78Tz5ENaFo6UUzN_HLDk1AxhZ9cRY07RHffQ9Ob-jYasLA-PyGqDputuOKkzdMtSYNsloZZQXFih-ChmBJePYY9ZzAK3VqOB7DBKoL0f6BnS-URhOO0wql5P6n1mVPcaInrx3c_yzn62R6UQv5o0Tj9LyqcaGH-A28PXZZ862D4najbSwwjaIB9mYNkjD30w30LBlruDpeTZgz_cEOA3aXqxuvbeVA"/>
+</div>
+<h3 class="font-headline font-bold text-lg text-primary mb-2">The Executive Core</h3>
+<p class="text-sm text-on-surface-variant mb-6">Strategic alignment and P&amp;L ownership narratives.</p>
+</div>
+<div class="mt-4">
+<div class="flex justify-between items-end mb-2">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Progress</span>
+<span class="text-sm font-bold text-primary">40%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-500" style="width: 40%"></div>
+</div>
+</div>
+</div>
+<!-- Pack 2 -->
+<div class="group bg-surface-container-lowest rounded-xl p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_12px_32px_-4px_rgba(25,28,29,0.06)] relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100"></div>
+<div>
+<div class="mb-6 aspect-video rounded-lg overflow-hidden relative">
+<img alt="Server room" class="w-full h-full object-cover" data-alt="abstract architectural representation of server infrastructure with cool teal and blue neon light accents for system design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtkNzXzpbkBfk7f1VmMkU4Gsj6gnCtNQ62zwVk9jyPauRkY8bNy405gOy_T_QFyCQM91COXO5VGopmXTLWGRyp18muq1eysr0Fjqh-c1BhhMx1oUCQh_DvpZ_C6AW0AzphMAjLKXe-hpnJ-lk30NKHxrczP3w6j2T6fEByc2wOAEE4bEAih1Ve2rl2uJSkEMl7Q-gKH9NdC25gAmbWUZh3ZugRkt3hhDTOlAGG-AkB3VPrvP-r8wxrWx8X6pM3zpJFtI4Ba8i8zAM"/>
+</div>
+<h3 class="font-headline font-bold text-lg text-primary mb-2">System Design Mastery</h3>
+<p class="text-sm text-on-surface-variant mb-6">Scalability, availability, and distributed system architectures.</p>
+</div>
+<div class="mt-4">
+<div class="flex justify-between items-end mb-2">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Progress</span>
+<span class="text-sm font-bold text-primary">100%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-500" style="width: 100%"></div>
+</div>
+</div>
+</div>
+<!-- Pack 3 -->
+<div class="group bg-surface-container-low border border-transparent rounded-xl p-6 flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-lowest hover:shadow-[0_12px_32px_-4px_rgba(25,28,29,0.06)] relative overflow-hidden">
+<div>
+<div class="mb-6 aspect-video rounded-lg overflow-hidden relative">
+<img alt="Leadership workshop" class="w-full h-full object-cover grayscale opacity-60" data-alt="close-up of hands collaborating over a blueprint on a bright wooden desk with natural sunlight streaming in" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmKl-omj6_1PvpmInTIDRBgdddzdOkpfMFKSQnExFCvIASTheoIPYEO76TTVEu_TT2ZHDax2SJtz-UBx-nfl6mm1IYTxHq5IDuGUv0080h0Ieyg7deaeVd0yCcV0EmkRWeP88gftqt_KZqmyJiHO003YwX4AGrV6kZGZU_RPK2HecM74lYRSxn8iqqoBmqViOmjlXheyfUeZCdboT5RhBMmpU23puAaxRpw705YsSnidrzTXMZsgUeuDKpwQAsOeGsqpf4yiBy5GU"/>
+</div>
+<h3 class="font-headline font-bold text-lg text-primary mb-2">Leadership &amp; Influence</h3>
+<p class="text-sm text-on-surface-variant mb-6">Leading through change and cross-functional orchestration.</p>
+</div>
+<div class="mt-4">
+<div class="flex justify-between items-end mb-2">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Progress</span>
+<span class="text-sm font-bold text-slate-400">0%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-500" style="width: 0%"></div>
+</div>
+</div>
+</div>
+<!-- Pack 4 -->
+<div class="group bg-surface-container-low border border-transparent rounded-xl p-6 flex flex-col justify-between transition-all duration-300 hover:bg-surface-container-lowest hover:shadow-[0_12px_32px_-4px_rgba(25,28,29,0.06)] relative overflow-hidden">
+<div>
+<div class="mb-6 aspect-video rounded-lg overflow-hidden relative">
+<img alt="Deep dive session" class="w-full h-full object-cover grayscale opacity-60" data-alt="overhead view of a notebook and fountain pen on a clean surface with dramatic soft shadows for behavioral interview prep" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrYg87m6peklHLfNYDWAUvRZZmaD9Co7O44RO3ev2kqURfIxGU_Jf1tWvrDZOLGUF6kybo8WJb5CgZxaaLcjghYe14-59H40dXPqcys2aj_Q52ZIsF_5AQv-a50pfWC2hLOX9ZHXrOC3t1ClSpCbKNIUNROUD9WCZiZ9FmAIpRQNwxUmioD5jxDt2FUKHI6igEu3RU3mLXXbp_oRxhKv5byIo57uN8NMQ6DO9sN6yZzOPI6svP9k-tciVIbFDG6xneknwBkxGhqsk"/>
+</div>
+<h3 class="font-headline font-bold text-lg text-primary mb-2">Behavioral Deep-Dive</h3>
+<p class="text-sm text-on-surface-variant mb-6">Psychological safety, conflict resolution, and growth mindset.</p>
+</div>
+<div class="mt-4">
+<div class="flex justify-between items-end mb-2">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">Progress</span>
+<span class="text-sm font-bold text-slate-400">0%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary transition-all duration-500" style="width: 0%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Questions List Section -->
+<section class="mb-32">
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="list_alt">list_alt</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-2xl text-primary">The Executive Core</h3>
+<p class="text-xs uppercase tracking-widest font-bold text-slate-400 mt-0.5">8 Questions Selected</p>
+</div>
+</div>
+<button class="bg-tertiary-container text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-transform active:scale-95 hover:opacity-90" onclick="window.location.href='a8cd1323d0d94fa5bcdf4c35d3299cb7.html'">
+                    Resume Practice
+                </button>
+</div>
+<div class="bg-surface-container-low rounded-2xl overflow-hidden">
+<!-- Question Row 1 -->
+<div class="flex items-center justify-between p-6 hover:bg-surface-container-lowest transition-colors cursor-pointer group">
+<div class="flex items-center gap-6">
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-green-100 text-green-700">
+<span class="material-symbols-outlined !text-[20px]" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-tighter text-slate-400 mb-1">Question 01</p>
+<h4 class="font-headline font-bold text-lg text-primary">Tell me about a time you had to pivot a global strategy.</h4>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="px-3 py-1 bg-green-50 text-green-700 text-[10px] font-extrabold uppercase rounded-full">Solid</span>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Question Row 2 -->
+<div class="flex items-center justify-between p-6 hover:bg-surface-container-lowest transition-colors cursor-pointer group">
+<div class="flex items-center gap-6">
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-tertiary-container/10 text-tertiary-container">
+<span class="material-symbols-outlined !text-[20px]" data-icon="history_edu" style="font-variation-settings: 'FILL' 0;">history_edu</span>
+</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-tighter text-slate-400 mb-1">Question 02</p>
+<h4 class="font-headline font-bold text-lg text-primary">How do you handle conflict between senior stakeholders?</h4>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="px-3 py-1 bg-tertiary-container/10 text-tertiary-container text-[10px] font-extrabold uppercase rounded-full">Needs Redo</span>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Question Row 3 -->
+<div class="flex items-center justify-between p-6 hover:bg-surface-container-lowest transition-colors cursor-pointer group">
+<div class="flex items-center gap-6">
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-slate-200 text-slate-500">
+<span class="material-symbols-outlined !text-[20px]" data-icon="circle" style="font-variation-settings: 'FILL' 0;">circle</span>
+</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-tighter text-slate-400 mb-1">Question 03</p>
+<h4 class="font-headline font-bold text-lg text-primary">Describe your approach to 5-year financial planning.</h4>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="px-3 py-1 bg-slate-100 text-slate-500 text-[10px] font-extrabold uppercase rounded-full">Unstarted</span>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Question Row 4 -->
+<div class="flex items-center justify-between p-6 hover:bg-surface-container-lowest transition-colors cursor-pointer group">
+<div class="flex items-center gap-6">
+<div class="w-8 h-8 rounded-full flex items-center justify-center bg-slate-200 text-slate-500">
+<span class="material-symbols-outlined !text-[20px]" data-icon="circle" style="font-variation-settings: 'FILL' 0;">circle</span>
+</div>
+<div>
+<p class="text-sm font-bold uppercase tracking-tighter text-slate-400 mb-1">Question 04</p>
+<h4 class="font-headline font-bold text-lg text-primary">What is your methodology for identifying new market opportunities?</h4>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="px-3 py-1 bg-slate-100 text-slate-500 text-[10px] font-extrabold uppercase rounded-full">Unstarted</span>
+<span class="material-symbols-outlined text-slate-300 group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+</main><!-- BottomNavBar --></main></div></div></body></html>

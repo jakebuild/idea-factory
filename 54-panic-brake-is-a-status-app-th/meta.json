@@ -1,0 +1,323 @@
+{
+  "id": "54-panic-brake-is-a-status-app-th",
+  "num": 54,
+  "title": "Panic Brake",
+  "subtitle": "Practice tighter interview answers with a record-review-redo loop.",
+  "description": "Rebuild Idea #54 as a web app for practicing tighter interview answers, not for measuring stress. The user picks one of 15-20 curated interview questions across four packs: opener, behavioral stories, role fit, and wrap-up. They record a 60-90 second answer from their laptop, get a transcript, then receive a compact scorecard with only four outputs: pace, filler words, answer length, and a simple structure check. The structure check is the actual product value. For each question type, the app evaluates whether the answer hit the expected bones of a good response. Example outputs: \"Direct answer missing in first 15 seconds,\" \"Situation and action present, outcome missing,\" or \"Too abstract, no concrete example.\" This is intentionally lightweight and rule-based, not a fake AI oracle. It is better than raw speech metrics because it pushes the user toward stronger answers, not just slower answers. After the first take, the app assigns one of 5 specific redo drills tied to the failure mode. Example drills: \"Answer-first\": say the conclusion in one sentence before the example \"STAR compression\": give situation, action, result in 3 beats \"Outcome snap\": end with a measurable result or lesson \"Cut the runway\": restart and remove the first 10 seconds of throat-clearing \"Specifics only\": replace generic claims with one concrete detail The retake comparison shows whether the answer actually improved. The app highlights transcript deltas, shows whether the missing structure flags were cleared, and saves only a per-question attempt history with latest status: \"solid\" or \"needs redo.\" There is no broad dashboard, no answer library positioning, and no anxiety framing. Why would users come back in week 2? Because the product gives them an unfinished practice plan, not a one-off reading. They still have uncompleted question packs, and some practiced questions remain marked \"needs redo\" until they produce one solid version. That creates a concrete repeat loop during an active interview cycle without depending on social features, marketplaces, or fake progress charts. 3 biggest assumptions that could kill the product: VERIFIED: Users care more about tightening answer structure than seeing raw voice metrics alone. The critique explicitly asked for a structure check because that is closer to real interview value than pace or filler counts by themselves. UNVERIFIED: A simple rules-based structure check plus transcript review will feel trustworthy and useful enough without requiring a heavier LLM judging pipeline. Because this is unverified, it is not the moat. Fallback plan: if users find the rule-based feedback too shallow, keep the same flow but reposition the app as a practice accountability tool and add one narrow LLM pass only for \"missing outcome / missing specificity\" on a small subset of question types. UNVERIFIED: Users will return across multiple days to complete question packs and clear redo items. This cannot be the moat either. Fallback plan: if week-2 retention is weak, collapse the product into a one-session \"night before interview\" rehearsal tool and optimize for one high-value prep session instead of a longer habit loop.",
+  "score": 7,
+  "status": "complete",
+  "deviceType": "WEB",
+  "category": "Education",
+  "platform": [
+    "web"
+  ],
+  "tags": [
+    "interview",
+    "practice",
+    "coaching",
+    "transcript",
+    "speaking"
+  ],
+  "folder": "54-panic-brake-is-a-status-app-th",
+  "prototypeUrl": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/",
+  "metaUrl": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/meta.json",
+  "startScreenId": "d8cafd8a68094e6c927121da523f586b",
+  "startScreenUrl": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/d8cafd8a68094e6c927121da523f586b.html",
+  "screenCount": 13,
+  "stitchId": "1215482371593841962",
+  "stitchUrl": "https://stitch.withgoogle.com/projects/1215482371593841962",
+  "publishedAt": "2026-04-02T16:29:12Z",
+  "updatedAt": "2026-04-02T16:29:12Z",
+  "screens": [
+    {
+      "id": "d8cafd8a68094e6c927121da523f586b",
+      "label": "Landing / Positioning",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/d8cafd8a68094e6c927121da523f586b.html",
+      "order": 0
+    },
+    {
+      "id": "ede9a0f2ee7f43e2a416aa3e9a0eda25",
+      "label": "Onboarding / Privacy",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/ede9a0f2ee7f43e2a416aa3e9a0eda25.html",
+      "order": 1
+    },
+    {
+      "id": "a1e22d6c4d3548fbb5d908cee211aba0",
+      "label": "Question Packs",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/a1e22d6c4d3548fbb5d908cee211aba0.html",
+      "order": 2
+    },
+    {
+      "id": "a8cd1323d0d94fa5bcdf4c35d3299cb7",
+      "label": "Question Detail / Prep",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/a8cd1323d0d94fa5bcdf4c35d3299cb7.html",
+      "order": 3
+    },
+    {
+      "id": "3aa93516d8084a54aeea3244e73cdd99",
+      "label": "Record Answer",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/3aa93516d8084a54aeea3244e73cdd99.html",
+      "order": 4
+    },
+    {
+      "id": "cd7774e3c27d453bad07340e54972a76",
+      "label": "Processing",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/cd7774e3c27d453bad07340e54972a76.html",
+      "order": 5
+    },
+    {
+      "id": "5addcc55bf854aafbc83ed9353bfefa6",
+      "label": "First Take Review",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/5addcc55bf854aafbc83ed9353bfefa6.html",
+      "order": 6
+    },
+    {
+      "id": "c5fcd428296445c6a536c082da9582bb",
+      "label": "First Take Result",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/c5fcd428296445c6a536c082da9582bb.html",
+      "order": 7
+    },
+    {
+      "id": "9dd73b3a1a214ce5a9ae96241ef2a40e",
+      "label": "Redo Drill",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/9dd73b3a1a214ce5a9ae96241ef2a40e.html",
+      "order": 8
+    },
+    {
+      "id": "2972245a9f8e4bbd9966fcd09f879c9c",
+      "label": "Retake Comparison",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/2972245a9f8e4bbd9966fcd09f879c9c.html",
+      "order": 9
+    },
+    {
+      "id": "ae31b5e17b134bf0a1168f89c76ffdc0",
+      "label": "Question History",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/ae31b5e17b134bf0a1168f89c76ffdc0.html",
+      "order": 10
+    },
+    {
+      "id": "e2e97465af4b42dbb2ae8117f7944423",
+      "label": "Session Detail",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/e2e97465af4b42dbb2ae8117f7944423.html",
+      "order": 11
+    },
+    {
+      "id": "02745cca2f374bd18f6c622fffcdf192",
+      "label": "Settings / Data Controls",
+      "url": "https://jakebuild.github.io/idea-factory/54-panic-brake-is-a-status-app-th/02745cca2f374bd18f6c622fffcdf192.html",
+      "order": 12
+    }
+  ],
+  "journey": [
+    {
+      "stage": "",
+      "icon": "💡",
+      "title": "Original Idea",
+      "desc": "A high-stakes moment status app with a reset-and-retest reveal.",
+      "sections": [
+        {
+          "label": "Description",
+          "items": [
+            "Panic Brake is a status app that copies the Poised model but compresses it into a sharper mobile reveal for high-stakes moments. Two minutes before a meeting, interview, sales call, or date, you read one short prompt and the app measures pace, filler words, volume consistency, and camera-based pulse, then gives you a 60-second reset drill and a second retest so the loop becomes check, reset, retest, walk in greener than before. The reveal is instant and screen-recordable: your pulse drops, your filler-word risk flips from red to green, and the app shows that you sound calmer before the conversation even begins."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "critique",
+      "icon": "🔍",
+      "title": "Critique v1",
+      "desc": "The original concept was overclaiming, over-scoped, and measurement-fragile.",
+      "verdict": "NEEDS MAJOR WORK",
+      "verdictClass": "needs",
+      "score": "4/10",
+      "sections": [
+        {
+          "label": "What's Good",
+          "items": [
+            "The core hook is instantly understandable: \"test your nerves before a high-stakes moment, calm down, retest, walk in better.\"",
+            "The before/after reveal is inherently shareable and emotionally legible if it works.",
+            "Narrowing Poised's broad coaching model into a two-minute ritual is smarter than trying to build a full communication coach from day one."
+          ]
+        },
+        {
+          "label": "Brutal Feedback",
+          "items": [
+            "This is trying to sell certainty in the exact moment where users are most sensitive to false confidence. If the measurement is even slightly flaky, the product feels fake, not helpful.",
+            "\"Camera-based pulse\" is UNVERIFIED and doing a stupid amount of work in the pitch. Mobile pulse estimation depends on device quality, lighting, finger placement or face conditions, permission friction, and signal quality. If that breaks, your big cinematic green-flip reveal collapses.",
+            "You are stacking multiple hard sensing problems into one tiny app: filler-word detection, pace analysis, volume consistency, and pulse measurement. A solo dev can fake one metric well enough for an MVP. Four at once is how you build a demo that lies.",
+            "The product story assumes the app can detect \"calmer\" in under two minutes from noisy mobile input. That is a big claim with weak proof. Pace and filler words do not equal calm. Someone can speak slowly and still be panicking.",
+            "The Poised comparison is not a flex. It sounds like \"we copied an existing product but stripped it down and hoped the mobile reveal is enough.\" That is not a moat. That is a thinner feature set with harder UX constraints.",
+            "The use cases are all over the place: meetings, interviews, sales calls, dates. Those are emotionally similar but behaviorally different. The prompt, coaching style, privacy expectations, and willingness to record yourself are not the same.",
+            "Dating is especially awkward here. Very few people want to open an app, film themselves, and get judged by a red anxiety score before a date. That sounds less like confidence and more like self-surveillance.",
+            "The retention loop is weak. Why does the user come back after day 1? If it works, they only need it occasionally. If it does not work consistently, they stop trusting it immediately.",
+            "The screen-recordable reveal sounds good for X/TikTok demos, but that is marketing garnish, not product substance. Viral-looking output does not fix shaky measurement.",
+            "There is a nasty emotional failure mode: user is already anxious, app labels them red, then gives them one minute to fix themselves. Congratulations, you built a pocket panic amplifier.",
+            "If you make health-ish claims around pulse and stress, you invite expectation and liability without having the science, hardware access, or validation budget to back it up.",
+            "Privacy and permission friction are brutal here. Camera + microphone right before a stressful event is exactly where users hesitate, especially if the app stores clips or derived scores.",
+            "The seed content is not actually \"ready.\" Good reset drills, prompts, scoring explanations, and context-specific advice need curation and testing. That is product work, not just code."
+          ]
+        },
+        {
+          "label": "Solo Dev",
+          "items": [
+            "Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — only if the MVP is radically cut to speech-only analysis and a scripted reset loop. The full pitch as written is not a 2-4 week solo build; it is a messy sensing product with trust problems.",
+            "Biggest solo complexity traps: camera-based pulse estimation reliability; mobile permission and device variability; real-time or near-real-time speech analysis quality; false precision in scoring; privacy handling for audio/video; designing drills that feel credible instead of gimmicky; measuring whether users actually return."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "improve",
+      "icon": "✨",
+      "title": "Improved v2",
+      "desc": "The idea narrowed to interview rehearsal and cut the fake biometric layer.",
+      "sections": [
+        {
+          "label": "What Changed",
+          "items": [
+            "The app is narrowed to one wedge: job interviews. Meetings, sales calls, and dates are cut because they need different prompts, privacy expectations, and coaching logic. Interviews are the cleanest use case because people already rehearse for them across multiple weeks, which gives the product a believable repeat-use window.",
+            "Camera pulse, volume consistency, and \"calmer\" detection are removed entirely. v1 now measures only two explainable speech signals from audio plus transcript: speaking pace and filler words, alongside a user self-rating before and after the reset. This fixes the trust problem by limiting the app to signals a solo developer can ship and defend.",
+            "The product changes from a last-minute truth machine into an interview rehearsal loop. Instead of promising \"we know you are calmer,\" it promises \"we help you sound more composed answering common interview questions.\" That creates a viable week-2 retention mechanic: users return to practice a new question, watch their own metrics improve, and build a reusable answer library during an active job search."
+          ]
+        },
+        {
+          "label": "MVP Scope",
+          "items": [
+            "What's in v1: interview-only onboarding; curated bank of 30-40 interview prompts; record answer flow; transcription; analysis for words per minute, filler words, and answer length; one self-rating before/after reset; one reset drill per session from a fixed drill library; immediate retake with side-by-side delta; session history by question; simple progress dashboard for repeat practice",
+            "What's out of v1: camera pulse, camera permissions, volume consistency scoring, claims about detecting calm, meetings, dates, sales calls, real-time coaching during live calls, AI-generated persona judgments, shareable social reveal features, marketplace/community features, UGC prompt libraries, payments, and any health framing",
+            "Estimated build time with AI coding tools: 2.5-3.5 weeks total, including 2-3 days for curating and structuring 30-40 interview prompts plus 8-10 reset drills, 5-7 days for mobile UI and recording flow, 3-4 days for transcription and analysis integration setup, 3-4 days for retake comparison and history views, and 2-3 days for polish, copy, and QA on permission and latency edge cases"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "critique",
+      "icon": "🔍",
+      "title": "Critique v2",
+      "desc": "The interview wedge made sense, but the app still needed stronger product value.",
+      "verdict": "WORTH BUILDING",
+      "verdictClass": "worth",
+      "score": "6/10",
+      "sections": [
+        {
+          "label": "What's Good",
+          "items": [
+            "This version finally stops pretending a phone can read your soul. Cutting pulse, fake calm detection, and multi-context scope was the adult decision.",
+            "Interviews are a real wedge. People already rehearse for them, tolerate awkward prep rituals, and have a short-term reason to come back.",
+            "The core loop is understandable in one sentence: answer, get metrics, do one reset, retake, compare.",
+            "For a solo builder, transcript + pace + filler words is a sane enough MVP surface. It is not magic, but at least it is shippable."
+          ]
+        },
+        {
+          "label": "Brutal Feedback",
+          "items": [
+            "The product is still dangerously close to being a prettier voice memo with a filler-word counter. That is useful for five minutes, not obviously worthy of a dedicated app.",
+            "Your moat is thin to nonexistent. \"Curated interview questions plus transcript metrics\" is exactly the kind of thing a bigger interview-prep app, an AI coach, or even ChatGPT with voice can clone in a weekend.",
+            "The retention story is better, but still soft. Why does the user come back after day 1? \"Because they have more interviews\" is not a product loop, it is borrowed urgency from the job market.",
+            "The reset drills are doing more work than you admit. If those drills are generic fluff, the retake improvement will feel fake and users will conclude the app is grading random noise.",
+            "Pace and filler words are blunt instruments. A candidate can game both and still give a rambling, weak, generic answer. The app risks optimizing users toward sounding slower rather than sounding better.",
+            "\"Build a reusable answer library\" sounds nice until you remember most people hate listening to themselves and do not want to maintain a personal archive of mediocre interview recordings.",
+            "The fixed question bank is finite, but it is also fragile product content. If the questions feel too generic, people bounce. If you make them too broad, the advice becomes mush. If you customize them later, scope expands again.",
+            "Mobile-first is not automatically smart here. Interview practice often happens at a desk, with notes, job descriptions, and a laptop open. Forcing mobile may make the product feel more constrained than focused.",
+            "Transcription latency and accuracy are still UNVERIFIED at the exact moment the product needs to feel snappy. If the processing step drags or the transcript mangles speech, the reveal dies.",
+            "The name and original framing still drag anxiety-app baggage behind the product. If users think this is emotional diagnosis in disguise, trust drops immediately.",
+            "You are undercounting polish work. Audio permission edge cases, interrupted recordings, bad mics, background noise, transcript edits, and storage/privacy UX are where solo projects go to waste two extra weeks.",
+            "The \"simple progress dashboard\" is the first place this becomes fake SaaS garnish. If the trend view is shallow, it adds clutter. If it is deep, it adds scope. Right now it smells like roadmap inflation."
+          ]
+        },
+        {
+          "label": "Solo Dev",
+          "items": [
+            "Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — if the MVP is aggressively cut to question bank, record/transcribe, filler + pace metrics, one reset flow, and basic per-question history. The current spec is close, but the dashboard/content/polish layer will try to bloat it.",
+            "Biggest solo complexity traps: transcription latency and cost choices; mobile audio permission and recording reliability; making reset drills feel credible instead of generic; content curation quality; avoiding fake precision in weak metrics; deciding between mobile and web early enough to avoid rebuilding core flows; privacy/storage UX for recordings and transcripts.",
+            "Screens needed: onboarding/positioning, question bank, question detail/prep, record answer, processing, first take result, reset drill, retake comparison, question history, session detail, settings/privacy",
+            "Key UI interactions: pick a question, record first take, wait through processing, review transcript and metrics, start reset drill, record retake, compare deltas, save session, reopen prior attempts by question",
+            "Data each screen needs: onboarding state and permission state; question categories, prompts, and prior-attempt counts; selected question metadata and prior best metrics; live recording state and timer; transcription/analysis job status; first-take transcript, pace, filler count, length, and self-rating; selected reset drill content and countdown/checklist state; side-by-side take metrics and improvement deltas; per-question session list with dates and best/latest stats; full session transcript/metrics for each attempt; privacy preferences, retention settings, and delete actions"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "improve",
+      "icon": "✨",
+      "title": "Improved v3",
+      "desc": "The product became a web-first interview answer drill focused on structure and redo loops.",
+      "sections": [
+        {
+          "label": "What Changed",
+          "items": [
+            "The product is no longer pitched as a \"calm check\" or a prettier voice memo. v3 is a web-first interview answer drill that grades one thing users actually care about: did this answer land as a clear, complete interview response. That fixes the critique that pace and filler words alone are too weak and too easy to game.",
+            "MVP scope is cut harder. The dashboard is removed, the question bank drops to 15-20 high-quality prompts, the reset library drops to 5 drills, and there is no answer archive narrative beyond per-question history. This directly honors the critique's cuts and keeps the build inside a realistic solo 2-4 week window, including content prep and transcription/privacy UX.",
+            "The core loop now adds a lightweight structure check and explicit retry queue. After each take, the app flags missing pieces such as \"no direct answer,\" \"weak example,\" or \"missing outcome,\" then pairs that with one concrete redo drill. That gives users a reason to return in week 2: finish the remaining question pack and clear the questions still marked \"needs redo,\" not just watch generic metrics move."
+          ]
+        },
+        {
+          "label": "MVP Scope",
+          "items": [
+            "What's in v1: web onboarding and positioning; 15-20 curated interview questions grouped into 4 packs; 5 scripted redo drills; browser recording; transcription; pace, filler-word count, and answer-length metrics; rule-based structure checks by question type; transcript review with lightweight edit/correct option before analysis rerun; retake comparison; per-question history with latest status and attempt count; privacy/delete controls",
+            "What's out of v1: mobile-first build, dashboard/trend charts, camera pulse, volume scoring, calm/confidence claims, meetings/dates/sales-call scenarios, AI-generated custom question banks, user-uploaded job-description tailoring, answer library product narrative, social sharing, community content, moderation, payments, and any feature that depends on users contributing content",
+            "Estimated build time with AI coding tools: 2.5-4 weeks total, including 2-3 days to curate and structure 15-20 strong questions plus 5 redo drills, 5-7 days for the web UI and recording flow, 3-4 days for transcription and analysis integration setup, 3-4 days for rule-based structure checks and retake comparison, 2-3 days for transcript correction/privacy/deletion UX, and 2-4 days for QA on browser audio, interrupted recordings, noisy input, and latency"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "validate",
+      "icon": "✅",
+      "title": "Validated",
+      "desc": "The final direction passed validation and produced a concrete design handoff.",
+      "sections": [
+        {
+          "label": "Validation",
+          "items": [
+            "Validated on 2026-04-02 22:56",
+            "Latest critique score: 7/10"
+          ]
+        },
+        {
+          "label": "Design Handoff Screens",
+          "items": [
+            "Landing / Positioning",
+            "Onboarding / Privacy",
+            "Question Packs",
+            "Question Detail / Prep",
+            "Record Answer",
+            "Processing",
+            "First Take Review",
+            "First Take Result",
+            "Redo Drill",
+            "Retake Comparison",
+            "Question History",
+            "Session Detail",
+            "Settings / Data Controls"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "design",
+      "icon": "🎨",
+      "title": "Designed",
+      "desc": "The Stitch design project was generated and prepared for preview deployment.",
+      "sections": [
+        {
+          "label": "Design",
+          "items": [
+            "Stitch project: https://stitch.withgoogle.com/projects/1215482371593841962",
+            "Device type: WEB"
+          ]
+        }
+      ]
+    }
+  ],
+  "journeyHtml": [
+    "<div class=\"esect\"><div class=\"esect-label\">Description</div><p>Panic Brake is a status app that copies the Poised model but compresses it into a sharper mobile reveal for high-stakes moments. Two minutes before a meeting, interview, sales call, or date, you read one short prompt and the app measures pace, filler words, volume consistency, and camera-based pulse, then gives you a 60-second reset drill and a second retest so the loop becomes check, reset, retest, walk in greener than before. The reveal is instant and screen-recordable: your pulse drops, your filler-word risk flips from red to green, and the app shows that you sound calmer before the conversation even begins.</p></div>",
+    "<div class=\"tag-row\"><span class=\"etag blue\">Version v1</span></div><div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>The core hook is instantly understandable: &quot;test your nerves before a high-stakes moment, calm down, retest, walk in better.&quot;</li><li>The before/after reveal is inherently shareable and emotionally legible if it works.</li><li>Narrowing Poised&#x27;s broad coaching model into a two-minute ritual is smarter than trying to build a full communication coach from day one.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>This is trying to sell certainty in the exact moment where users are most sensitive to false confidence. If the measurement is even slightly flaky, the product feels fake, not helpful.</li><li>&quot;Camera-based pulse&quot; is UNVERIFIED and doing a stupid amount of work in the pitch. Mobile pulse estimation depends on device quality, lighting, finger placement or face conditions, permission friction, and signal quality. If that breaks, your big cinematic green-flip reveal collapses.</li><li>You are stacking multiple hard sensing problems into one tiny app: filler-word detection, pace analysis, volume consistency, and pulse measurement. A solo dev can fake one metric well enough for an MVP. Four at once is how you build a demo that lies.</li><li>The product story assumes the app can detect &quot;calmer&quot; in under two minutes from noisy mobile input. That is a big claim with weak proof. Pace and filler words do not equal calm. Someone can speak slowly and still be panicking.</li><li>The Poised comparison is not a flex. It sounds like &quot;we copied an existing product but stripped it down and hoped the mobile reveal is enough.&quot; That is not a moat. That is a thinner feature set with harder UX constraints.</li><li>The use cases are all over the place: meetings, interviews, sales calls, dates. Those are emotionally similar but behaviorally different. The prompt, coaching style, privacy expectations, and willingness to record yourself are not the same.</li><li>Dating is especially awkward here. Very few people want to open an app, film themselves, and get judged by a red anxiety score before a date. That sounds less like confidence and more like self-surveillance.</li><li>The retention loop is weak. Why does the user come back after day 1? If it works, they only need it occasionally. If it does not work consistently, they stop trusting it immediately.</li><li>The screen-recordable reveal sounds good for X/TikTok demos, but that is marketing garnish, not product substance. Viral-looking output does not fix shaky measurement.</li><li>There is a nasty emotional failure mode: user is already anxious, app labels them red, then gives them one minute to fix themselves. Congratulations, you built a pocket panic amplifier.</li><li>If you make health-ish claims around pulse and stress, you invite expectation and liability without having the science, hardware access, or validation budget to back it up.</li><li>Privacy and permission friction are brutal here. Camera + microphone right before a stressful event is exactly where users hesitate, especially if the app stores clips or derived scores.</li><li>The seed content is not actually &quot;ready.&quot; Good reset drills, prompts, scoring explanations, and context-specific advice need curation and testing. That is product work, not just code.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — only if the MVP is radically cut to speech-only analysis and a scripted reset loop. The full pitch as written is not a 2-4 week solo build; it is a messy sensing product with trust problems.</li><li>Biggest solo complexity traps: camera-based pulse estimation reliability; mobile permission and device variability; real-time or near-real-time speech analysis quality; false precision in scoring; privacy handling for audio/video; designing drills that feel credible instead of gimmicky; measuring whether users actually return.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>The app is narrowed to one wedge: job interviews. Meetings, sales calls, and dates are cut because they need different prompts, privacy expectations, and coaching logic. Interviews are the cleanest use case because people already rehearse for them across multiple weeks, which gives the product a believable repeat-use window.</li><li>Camera pulse, volume consistency, and &quot;calmer&quot; detection are removed entirely. v1 now measures only two explainable speech signals from audio plus transcript: speaking pace and filler words, alongside a user self-rating before and after the reset. This fixes the trust problem by limiting the app to signals a solo developer can ship and defend.</li><li>The product changes from a last-minute truth machine into an interview rehearsal loop. Instead of promising &quot;we know you are calmer,&quot; it promises &quot;we help you sound more composed answering common interview questions.&quot; That creates a viable week-2 retention mechanic: users return to practice a new question, watch their own metrics improve, and build a reusable answer library during an active job search.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>What&#x27;s in v1: interview-only onboarding; curated bank of 30-40 interview prompts; record answer flow; transcription; analysis for words per minute, filler words, and answer length; one self-rating before/after reset; one reset drill per session from a fixed drill library; immediate retake with side-by-side delta; session history by question; simple progress dashboard for repeat practice</li><li>What&#x27;s out of v1: camera pulse, camera permissions, volume consistency scoring, claims about detecting calm, meetings, dates, sales calls, real-time coaching during live calls, AI-generated persona judgments, shareable social reveal features, marketplace/community features, UGC prompt libraries, payments, and any health framing</li><li>Estimated build time with AI coding tools: 2.5-3.5 weeks total, including 2-3 days for curating and structuring 30-40 interview prompts plus 8-10 reset drills, 5-7 days for mobile UI and recording flow, 3-4 days for transcription and analysis integration setup, 3-4 days for retake comparison and history views, and 2-3 days for polish, copy, and QA on permission and latency edge cases</li></ul></div>",
+    "<div class=\"tag-row\"><span class=\"etag blue\">Version v2</span></div><div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>This version finally stops pretending a phone can read your soul. Cutting pulse, fake calm detection, and multi-context scope was the adult decision.</li><li>Interviews are a real wedge. People already rehearse for them, tolerate awkward prep rituals, and have a short-term reason to come back.</li><li>The core loop is understandable in one sentence: answer, get metrics, do one reset, retake, compare.</li><li>For a solo builder, transcript + pace + filler words is a sane enough MVP surface. It is not magic, but at least it is shippable.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>The product is still dangerously close to being a prettier voice memo with a filler-word counter. That is useful for five minutes, not obviously worthy of a dedicated app.</li><li>Your moat is thin to nonexistent. &quot;Curated interview questions plus transcript metrics&quot; is exactly the kind of thing a bigger interview-prep app, an AI coach, or even ChatGPT with voice can clone in a weekend.</li><li>The retention story is better, but still soft. Why does the user come back after day 1? &quot;Because they have more interviews&quot; is not a product loop, it is borrowed urgency from the job market.</li><li>The reset drills are doing more work than you admit. If those drills are generic fluff, the retake improvement will feel fake and users will conclude the app is grading random noise.</li><li>Pace and filler words are blunt instruments. A candidate can game both and still give a rambling, weak, generic answer. The app risks optimizing users toward sounding slower rather than sounding better.</li><li>&quot;Build a reusable answer library&quot; sounds nice until you remember most people hate listening to themselves and do not want to maintain a personal archive of mediocre interview recordings.</li><li>The fixed question bank is finite, but it is also fragile product content. If the questions feel too generic, people bounce. If you make them too broad, the advice becomes mush. If you customize them later, scope expands again.</li><li>Mobile-first is not automatically smart here. Interview practice often happens at a desk, with notes, job descriptions, and a laptop open. Forcing mobile may make the product feel more constrained than focused.</li><li>Transcription latency and accuracy are still UNVERIFIED at the exact moment the product needs to feel snappy. If the processing step drags or the transcript mangles speech, the reveal dies.</li><li>The name and original framing still drag anxiety-app baggage behind the product. If users think this is emotional diagnosis in disguise, trust drops immediately.</li><li>You are undercounting polish work. Audio permission edge cases, interrupted recordings, bad mics, background noise, transcript edits, and storage/privacy UX are where solo projects go to waste two extra weeks.</li><li>The &quot;simple progress dashboard&quot; is the first place this becomes fake SaaS garnish. If the trend view is shallow, it adds clutter. If it is deep, it adds scope. Right now it smells like roadmap inflation.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — if the MVP is aggressively cut to question bank, record/transcribe, filler + pace metrics, one reset flow, and basic per-question history. The current spec is close, but the dashboard/content/polish layer will try to bloat it.</li><li>Biggest solo complexity traps: transcription latency and cost choices; mobile audio permission and recording reliability; making reset drills feel credible instead of generic; content curation quality; avoiding fake precision in weak metrics; deciding between mobile and web early enough to avoid rebuilding core flows; privacy/storage UX for recordings and transcripts.</li><li>Screens needed: onboarding/positioning, question bank, question detail/prep, record answer, processing, first take result, reset drill, retake comparison, question history, session detail, settings/privacy</li><li>Key UI interactions: pick a question, record first take, wait through processing, review transcript and metrics, start reset drill, record retake, compare deltas, save session, reopen prior attempts by question</li><li>Data each screen needs: onboarding state and permission state; question categories, prompts, and prior-attempt counts; selected question metadata and prior best metrics; live recording state and timer; transcription/analysis job status; first-take transcript, pace, filler count, length, and self-rating; selected reset drill content and countdown/checklist state; side-by-side take metrics and improvement deltas; per-question session list with dates and best/latest stats; full session transcript/metrics for each attempt; privacy preferences, retention settings, and delete actions</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>The product is no longer pitched as a &quot;calm check&quot; or a prettier voice memo. v3 is a web-first interview answer drill that grades one thing users actually care about: did this answer land as a clear, complete interview response. That fixes the critique that pace and filler words alone are too weak and too easy to game.</li><li>MVP scope is cut harder. The dashboard is removed, the question bank drops to 15-20 high-quality prompts, the reset library drops to 5 drills, and there is no answer archive narrative beyond per-question history. This directly honors the critique&#x27;s cuts and keeps the build inside a realistic solo 2-4 week window, including content prep and transcription/privacy UX.</li><li>The core loop now adds a lightweight structure check and explicit retry queue. After each take, the app flags missing pieces such as &quot;no direct answer,&quot; &quot;weak example,&quot; or &quot;missing outcome,&quot; then pairs that with one concrete redo drill. That gives users a reason to return in week 2: finish the remaining question pack and clear the questions still marked &quot;needs redo,&quot; not just watch generic metrics move.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>What&#x27;s in v1: web onboarding and positioning; 15-20 curated interview questions grouped into 4 packs; 5 scripted redo drills; browser recording; transcription; pace, filler-word count, and answer-length metrics; rule-based structure checks by question type; transcript review with lightweight edit/correct option before analysis rerun; retake comparison; per-question history with latest status and attempt count; privacy/delete controls</li><li>What&#x27;s out of v1: mobile-first build, dashboard/trend charts, camera pulse, volume scoring, calm/confidence claims, meetings/dates/sales-call scenarios, AI-generated custom question banks, user-uploaded job-description tailoring, answer library product narrative, social sharing, community content, moderation, payments, and any feature that depends on users contributing content</li><li>Estimated build time with AI coding tools: 2.5-4 weeks total, including 2-3 days to curate and structure 15-20 strong questions plus 5 redo drills, 5-7 days for the web UI and recording flow, 3-4 days for transcription and analysis integration setup, 3-4 days for rule-based structure checks and retake comparison, 2-3 days for transcript correction/privacy/deletion UX, and 2-4 days for QA on browser audio, interrupted recordings, noisy input, and latency</li></ul></div>",
+    "<div class=\"tag-row\"><span class=\"etag green\">Validated</span><span class=\"etag blue\">Score 7/10</span></div><div class=\"esect\"><div class=\"esect-label\">Validation</div><ul><li>Validated on 2026-04-02 22:56</li><li>Latest critique score: 7/10</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Design Handoff Screens</div><ul><li>Landing / Positioning</li><li>Onboarding / Privacy</li><li>Question Packs</li><li>Question Detail / Prep</li><li>Record Answer</li><li>Processing</li><li>First Take Review</li><li>First Take Result</li><li>Redo Drill</li><li>Retake Comparison</li><li>Question History</li><li>Session Detail</li><li>Settings / Data Controls</li></ul></div>",
+    "<div class=\"tag-row\"><span class=\"etag green\">Stitch</span><span class=\"etag blue\">WEB</span></div><div class=\"esect\"><div class=\"esect-label\">Prototype</div><p><a class=\"ext-link\" href=\"https://stitch.withgoogle.com/projects/1215482371593841962\">Open in Stitch</a></p></div><div class=\"esect\"><div class=\"esect-label\">Device Note</div><ul><li>Generated as a web prototype and wrapped in the shared web preview frame.</li></ul></div>"
+  ]
+}
