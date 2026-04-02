@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Diagnostic Report - Glow Clash</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "tertiary-container": "#e197fc",
+                "on-primary": "#5e1100",
+                "tertiary-fixed-dim": "#d28aee",
+                "on-surface": "#ffffff",
+                "surface-container-low": "#131313",
+                "secondary-container": "#454747",
+                "surface-bright": "#2c2c2c",
+                "outline": "#777575",
+                "on-primary-fixed": "#000000",
+                "on-primary-container": "#490b00",
+                "primary-fixed-dim": "#ff5d33",
+                "on-tertiary-container": "#530c6f",
+                "on-error": "#490013",
+                "outline-variant": "#494847",
+                "inverse-on-surface": "#565554",
+                "surface-container-high": "#201f1f",
+                "secondary-dim": "#d4d4d4",
+                "on-secondary-container": "#d0d0d0",
+                "error-container": "#a70138",
+                "surface-variant": "#262626",
+                "surface-container-lowest": "#000000",
+                "on-secondary-fixed": "#3e4040",
+                "background": "#0e0e0e",
+                "tertiary-fixed": "#e197fc",
+                "tertiary": "#e9aaff",
+                "primary": "#ff8f73",
+                "on-surface-variant": "#adaaaa",
+                "surface-tint": "#ff8f73",
+                "surface-container": "#1a1919",
+                "on-secondary": "#505252",
+                "inverse-primary": "#b52900",
+                "inverse-surface": "#fcf8f8",
+                "secondary": "#e2e2e2",
+                "on-tertiary-fixed-variant": "#5d1979",
+                "on-error-container": "#ffb2b9",
+                "secondary-fixed": "#e2e2e2",
+                "error": "#ff6e84",
+                "primary-dim": "#db3400",
+                "surface": "#0e0e0e",
+                "surface-dim": "#0e0e0e",
+                "on-tertiary": "#5e1b7a",
+                "on-secondary-fixed-variant": "#5a5c5c",
+                "error-dim": "#d73357",
+                "tertiary-dim": "#d28aee",
+                "on-tertiary-fixed": "#310045",
+                "surface-container-highest": "#262626",
+                "primary-fixed": "#ff7856",
+                "on-background": "#ffffff",
+                "on-primary-fixed-variant": "#5a1000",
+                "primary-container": "#ff7856",
+                "secondary-fixed-dim": "#d4d4d4"
+              },
+              fontFamily: {
+                "headline": ["Space Grotesk"],
+                "body": ["Inter"],
+                "label": ["Space Grotesk"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .brutalist-grid {
+            background-image: radial-gradient(circle, #2c2c2c 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="gc-proto-style">
+  .gc-shell-header { background:#131313; border-bottom:1px solid #2c2c2c; padding:18px 24px 14px; margin-bottom:24px; }
+  .gc-shell-bar { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+  .gc-shell-left { display:flex; align-items:center; gap:12px; min-width:0; }
+  .gc-back { width:40px; height:40px; border:1px solid #2c2c2c; background:#0e0e0e; color:#ffffff; cursor:pointer; font-size:20px; line-height:1; }
+  .gc-brand { color:#ff8f73; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
+  .gc-global-nav { display:flex; gap:10px; flex-wrap:wrap; }
+  .gc-nav-btn { border:1px solid #2c2c2c; background:#0e0e0e; color:#9ca3af; padding:10px 14px; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; }
+  .gc-nav-btn.is-active { background:#ff8f73; color:#0e0e0e; border-color:#ff8f73; }
+  .gc-page-title { margin-top:14px; color:#ffffff; font-family:'Space Grotesk',sans-serif; font-size:32px; font-weight:700; letter-spacing:-0.04em; text-transform:uppercase; }
+  .gc-clickable { cursor:pointer; }
+  @media (max-width: 720px) {
+    .gc-shell-header { padding:16px 18px 12px; }
+    .gc-page-title { font-size:24px; }
+    .gc-global-nav { width:100%; }
+    .gc-nav-btn { flex:1; min-width:88px; }
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary gc-web-prototype">
+<header class="gc-shell-header">
+<div class="gc-shell-bar">
+<div class="gc-shell-left"><button class="gc-back" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'" type="button">←</button><div class="gc-brand">Glow Clash</div></div>
+<nav class="gc-global-nav"><button class="gc-nav-btn" onclick="window.location.href='f40a5ab6deb94a27a2ea7804f20c9b73.html'" type="button">Home</button><button class="gc-nav-btn is-active" onclick="window.location.href='96e5494defcb4a51ab6757bb87855d05.html'" type="button">Check</button><button class="gc-nav-btn" onclick="window.location.href='79e27504adcd440c9f861be8ca0048ec.html'" type="button">Recent</button></nav>
+</div>
+<div class="gc-page-title">Rule Detail / Why It Was Flagged</div>
+</header>
+
+<!-- TopAppBar -->
+
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Section 1: CLINICAL_BREAKDOWN -->
+<section class="mb-16">
+<label class="font-label text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-4 block">LAB_CASE_0492</label>
+<h2 class="font-headline text-5xl md:text-7xl font-bold uppercase tracking-tighter leading-none text-white max-w-3xl">
+                CLINICAL_BREAKDOWN: <span class="text-primary">RETINOID + AHA/BHA</span>
+</h2>
+</section>
+<!-- Section 2: MOLECULAR_CONFLICT -->
+<section class="mb-20">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 relative border-none">
+<div class="bg-surface-container-low p-10 flex flex-col justify-between aspect-square md:aspect-auto md:h-80">
+<div>
+<span class="font-label text-xs font-bold text-primary block mb-2">ACTIVE_A</span>
+<h3 class="font-headline text-4xl font-bold uppercase">RETINOID</h3>
+</div>
+<div class="opacity-30">
+<img class="w-32 h-32 object-cover mix-blend-screen" data-alt="microscopic visual of crystalline retinoid structures, abstract sharp shapes, deep black and coral tones, clinical photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIAO1C5Sd-g47U_ekpBOtrhWj65QgLTtUj_CUTjqPsROyOfILKrfy5EI6Bui3cMO1x_T39vWZ0LmDkmanKfr95AxEjkRbfbhLgSTZqkPM-SCSBLoW-AjrT0_ReFGkdt63j3-mhrbIbM5BgDoWCzern6rmwxSts560pWIGMG-0kcGlvLADlHUTHc_R8LiAtR2fPQqgeVdEJqWD86hJ6Tefl0-t1w-pc8Utp5kFRPBcL_gj5HHZwqGccYOcEr8FclxzfU4kymgYFJV4"/>
+</div>
+</div>
+<!-- Clash Icon Anchor -->
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-20 h-20 bg-primary text-on-primary">
+<span class="material-symbols-outlined text-4xl" data-icon="bolt" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div class="flex md:hidden items-center justify-center h-16 bg-primary text-on-primary my-2">
+<span class="font-label font-bold tracking-widest uppercase">CONFLICT_DETECTED</span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col justify-between items-end aspect-square md:aspect-auto md:h-80">
+<div class="text-right">
+<span class="font-label text-xs font-bold text-primary block mb-2">ACTIVE_B</span>
+<h3 class="font-headline text-4xl font-bold uppercase">AHA/BHA</h3>
+</div>
+<div class="opacity-30">
+<img class="w-32 h-32 object-cover mix-blend-screen" data-alt="abstract biological pattern representing acidic molecules, liquid droplets on dark surface, high contrast medical aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJaIt9hNjVQ1Owo8ToeRTyiGxqsNH3sZExsWFCZ5jBi1uWw8PpTJIcdzVPKIrY17dT5mG0RniJRHVUgH1kkDHywwKlShSqu8ctq7-hzIrYdCWcD704dc0NMGRA0hevKnzo1tIHwm8OLnXo0_Yis7iLuBAr5djqU-irTQPQ5lDEaJ6e2EaDK3pOKjEhIB9TL3VyDY3IVPDLlit8jtR4ytSY_k1gO-mF1BuyMDX8Wo9BlJ_mYtm6ayOtO5DSLRFCv3LhS50Hl2UBA4k"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: MECHANISM_OF_ACTION -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-20">
+<div class="md:col-span-4">
+<h4 class="font-label text-xs font-bold uppercase tracking-widest text-primary border-b-2 border-primary pb-2 mb-4">MECHANISM_OF_ACTION</h4>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed italic">
+                    REF_ID: BIO-772910<br/>
+                    PATHOLOGY: HYPER-EXFOLIATION
+                </p>
+</div>
+<div class="md:col-span-8">
+<p class="font-headline text-2xl text-white leading-snug mb-6">
+                    Concurrent application triggers a synergistic acceleration of epidermal turnover. Stacking these specific actives leads to <span class="text-primary">rapid desquamation</span>, aggressive <span class="text-primary">pH destabilization</span>, and sustained chronic inflammation.
+                </p>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">
+                    The Retinoid stimulates cellular renewal from the basal layer upward, while the AHA/BHA complex aggressively dissolves the protein bonds in the stratum corneum. When deployed simultaneously, the protective barrier is bypassed, exposing immature skin cells to environmental oxidants before they have reached structural maturity.
+                </p>
+</div>
+</section>
+<!-- Section 4: PROTOCOL_FALLBACK -->
+<section class="bg-surface-bright p-8 md:p-12 mb-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[12rem]" data-icon="shield">shield</span>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h4 class="font-label text-xs font-bold uppercase tracking-widest text-primary mb-6">PROTOCOL_FALLBACK</h4>
+<h3 class="font-headline text-3xl font-bold text-white mb-6 uppercase">CLEANSE + MOISTURIZE ONLY</h3>
+<p class="font-body text-on-surface leading-relaxed mb-4">
+                    Immediate cessation of all active compounds is required for 72 hours. Reverting to a basic 'Cleanse + Moisturize' protocol allows the <span class="font-bold">moisture mantle</span> to recover.
+                </p>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                    This isolation phase prevents long-term barrier disruption and stabilizes the skin's acidic environment. Neutralizing the routine minimizes transepidermal water loss (TEWL) and facilitates the natural synthesis of ceramides and lipids.
+                </p>
+</div>
+</section>
+<!-- Section 5: SAFETY_DATA -->
+<section>
+<h4 class="font-label text-xs font-bold uppercase tracking-widest text-primary mb-8">SAFETY_DATA_METRICS</h4>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low">
+<th class="p-4 font-label text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">METRIC_TYPE</th>
+<th class="p-4 font-label text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">LEVEL</th>
+<th class="p-4 font-label text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">IMPACT_ESTIMATE</th>
+</tr>
+</thead>
+<tbody class="font-headline uppercase text-sm">
+<tr class="border-b border-surface-container">
+<td class="p-4">Inflammation Probability</td>
+<td class="p-4 text-error">CRITICAL (94%)</td>
+<td class="p-4">Widespread Erythema</td>
+</tr>
+<tr class="border-b border-surface-container">
+<td class="p-4">pH Shift</td>
+<td class="p-4 text-primary">DEVIATION (Δ 2.4)</td>
+<td class="p-4">Acid Mantle Breach</td>
+</tr>
+<tr>
+<td class="p-4">Recovery Time</td>
+<td class="p-4">EXTENDED</td>
+<td class="p-4">5-9 Diurnal Cycles</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+</body></html>

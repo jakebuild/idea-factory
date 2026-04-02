@@ -1,0 +1,324 @@
+{
+  "id": "53-glow-clash-is-an-attractivenes",
+  "num": 53,
+  "title": "Glow Clash",
+  "subtitle": "Pre-event irritation checker for strong skincare routines.",
+  "description": "Glow Clash should be built as a blunt \"Should I do this routine tonight?\" checker for people who already use strong actives and have an important morning tomorrow. It is not trying to diagnose skin, predict beauty outcomes, or maintain a full skincare diary. Its job is narrower: catch the most common irritation-prone combinations before the user makes their face harder to manage the next day. The MVP flow is simple. The user opens the app, chooses how important it is to avoid irritation tomorrow, and taps through a short set of routine step cards with plain-language examples: retinoid / tretinoin / adapalene leave-on acid exfoliant (AHA/BHA/PHA) benzoyl peroxide physical scrub or strong cleansing treatment vitamin C or other low-risk active thick moisturizer / barrier-repair step new product tonight skin already dry, tight, stinging, or irritated The app then returns three things only: a conservative risk level: low, medium, or high the exact rule that triggered, written in plain English a stripped-down fallback routine for tonight, such as \"skip the acid and keep moisturizer only\" The logic is based on a deliberately small, manually curated rule set. That rule set is the product work: around 8-12 high-confidence interactions, severity labels, explanation copy, and fallback suggestions that stay on the safe side of \"reduce irritation risk\" instead of pretending to offer medical advice. The app should say when the signal is weak, and it should avoid dramatic claims about breakouts or attractiveness. Optional next-morning logging remains in v1, but only as a lightweight experiment: one screen that asks whether the user had redness, stinging, peeling, or no issue after the checked routine. It is not sold as pattern intelligence. If people use it, great; if they do not, the product still works as a one-session utility. 3 biggest assumptions that could kill the product: VERIFIED: A solo developer can ship this in 2-4 weeks if v1 stays limited to a web app with step-card input, a small rules engine, no auth, no templates, and no product database. UNVERIFIED: Users will find the step-card taxonomy clear enough to map their real routine without second-guessing themselves. If this fails, fallback plan: reduce the cards further and reposition the tool around only the clearest high-risk steps, even if that makes the checker less comprehensive. UNVERIFIED: Enough users will return for another pre-event check or optional next-morning log to justify anything beyond a single-session utility. This is not the moat. Fallback plan: position Glow Clash as a disposable but useful pre-event checker and stop investing in retention features. Why would users come back in week 2? Not because the app magically becomes a diary. They come back only when they face the same job again: another important morning, a new product, a stronger active, or a routine change they do not fully trust. That is episodic retention, not habit retention, so confidence here is moderate rather than high.",
+  "score": 6,
+  "status": "complete",
+  "deviceType": "WEB",
+  "category": "Health",
+  "platform": [
+    "web"
+  ],
+  "tags": [
+    "skincare",
+    "irritation",
+    "routine",
+    "actives",
+    "pre-event"
+  ],
+  "folder": "53-glow-clash-is-an-attractivenes",
+  "prototypeUrl": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/",
+  "metaUrl": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/meta.json",
+  "startScreenId": "f40a5ab6deb94a27a2ea7804f20c9b73",
+  "startScreenUrl": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/f40a5ab6deb94a27a2ea7804f20c9b73.html",
+  "screenCount": 7,
+  "stitchId": "5640700694548438258",
+  "stitchUrl": "https://stitch.withgoogle.com/projects/5640700694548438258",
+  "publishedAt": "2026-04-02T14:35:09Z",
+  "updatedAt": "2026-04-02T14:35:09Z",
+  "screens": [
+    {
+      "id": "f40a5ab6deb94a27a2ea7804f20c9b73",
+      "label": "Landing / Value Proposition",
+      "url": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/f40a5ab6deb94a27a2ea7804f20c9b73.html",
+      "order": 0
+    },
+    {
+      "id": "019cb3b5a1e542db959acf466d1fd274",
+      "label": "Onboarding / How To Use It",
+      "url": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/019cb3b5a1e542db959acf466d1fd274.html",
+      "order": 1
+    },
+    {
+      "id": "96e5494defcb4a51ab6757bb87855d05",
+      "label": "Routine Check / Step Cards",
+      "url": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/96e5494defcb4a51ab6757bb87855d05.html",
+      "order": 2
+    },
+    {
+      "id": "4e642882becc4edbb45a4b83f8c85c59",
+      "label": "Results / Risk Verdict",
+      "url": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/4e642882becc4edbb45a4b83f8c85c59.html",
+      "order": 3
+    },
+    {
+      "id": "c0a88e45b52a4db9a0ec6c0bc62ecc01",
+      "label": "Rule Detail / Why It Was Flagged",
+      "url": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/c0a88e45b52a4db9a0ec6c0bc62ecc01.html",
+      "order": 4
+    },
+    {
+      "id": "a9dd637df92d46259bcae697f8fe5cb1",
+      "label": "Next-Morning Log",
+      "url": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/a9dd637df92d46259bcae697f8fe5cb1.html",
+      "order": 5
+    },
+    {
+      "id": "79e27504adcd440c9f861be8ca0048ec",
+      "label": "Recent Checks",
+      "url": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/79e27504adcd440c9f861be8ca0048ec.html",
+      "order": 6
+    }
+  ],
+  "journey": [
+    {
+      "stage": "",
+      "icon": "💡",
+      "title": "Original Idea",
+      "desc": "Glow Clash is an attractiveness app that copies the Cal AI model but applies it to skincare anxiety instead of calories.",
+      "sections": [
+        {
+          "label": "Description",
+          "items": [
+            "Glow Clash is an attractiveness app that copies the Cal AI model but applies it to skincare anxiety instead of calories. You scan the skincare products you plan to use tonight, and the app flags ingredient collisions that commonly lead to redness, peeling, breakouts, or next-morning irritation before a date, event, or photo day. The reveal is instant and screen-recordable: a blunt warning that says your routine is likely to make your face look worse by morning, plus the single product to remove so the loop becomes scan, get the verdict, swap one thing, and check your face tomorrow."
+          ]
+        }
+      ]
+    },
+    {
+      "status": "critique",
+      "icon": "🔍",
+      "title": "Critique v1",
+      "desc": "The idea is built on fake certainty.",
+      "verdict": "NEEDS MAJOR WORK",
+      "verdictClass": "needs",
+      "score": "4/10",
+      "sections": [
+        {
+          "label": "What's Good",
+          "items": [
+            "The hook is clean and emotionally legible. \"Will this routine make my face look worse by morning?\" is a real fear, not some made-up productivity fantasy.",
+            "The user moment is specific and high intent: before a date, event, or photo day. That is better than a vague \"optimize your skincare\" pitch.",
+            "The \"remove one product\" output is the right shape for consumer behavior. Simple verdicts beat dermatology cosplay.",
+            "A stripped-down version could be a decent content-led utility if it stops pretending to be more scientific than it is."
+          ]
+        },
+        {
+          "label": "Brutal Feedback",
+          "items": [
+            "The idea is built on fake certainty. Skincare irritation is not a clean collision problem where the app can reliably say \"your face will look worse by morning\" from a product scan. Skin response depends on skin barrier health, frequency of use, concentration, order, prior tolerance, climate, timing, and plain bad luck.",
+            "The \"single product to remove\" output sounds elegant, but it implies causal confidence you almost certainly do not have. If three actives are piled together, which one gets blamed? The app will be guessing with a stern tone.",
+            "You are dragging yourself into product-data hell on day one. Ingredient lists are inconsistent, brands reformulate, names are messy, and the same product can appear in different regional variants. Saying the content is \"ready\" because products exist on shelves is nonsense. The real work is structuring and maintaining a clean ingredient database, which is significant manual labor.",
+            "UNVERIFIED: the scanning flow depends on accurately identifying products and extracting ingredient lists from packaging, barcodes, or external product databases. If that lookup layer is not already proven, the core differentiator is unverified and the idea cannot score above 7/10. Right now it does not deserve anything close to that anyway.",
+            "Even if lookup works, the advice engine is still mostly a glorified rules table wearing an AI costume. Retinoid plus exfoliating acid plus benzoyl peroxide equals irritation risk. Vitamin C plus everything under the sun gets oversimplified. Users can already find endless charts with this logic for free.",
+            "The product makes a dangerous promise in a high-trust category. Wrong calorie estimates are annoying. Wrong skincare advice can burn someone's face before an event. That is a much worse failure mode.",
+            "The next-morning outcome is also slippery. Redness, peeling, and burning are somewhat connected to routine conflicts. Breakouts by morning are much less clean. The app is bundling different skin outcomes into one dramatic verdict because it sounds punchier, not because the prediction is credible.",
+            "The \"screen-recordable blunt warning\" angle is not a moat. It is just an aesthetic wrapper around fear. If the answer quality is mediocre, screen-recordability becomes a viral mechanism for mocking the app.",
+            "The retention loop is weak. Why does the user come back after day 1? Once the app teaches the obvious lesson that stacking too many harsh actives before an event is dumb, the habit collapses unless the user is constantly buying new products or chronically anxious.",
+            "There is no defensible wedge yet. Dermatologists have authority. Existing skincare apps have product libraries. Reddit has obsessive ingredient threads. Beauty creators have audience trust. You are a solo builder shipping a scanner plus heuristics into a category full of better-known voices.",
+            "This is also scope bait for a solo dev. Product recognition, ingredient normalization, conflict rules, confidence scoring, history tracking, and outcome feedback sound manageable in a pitch. In practice that is how you lose three weeks building a product lookup system and still do not have trustworthy advice.",
+            "The phrase \"copies the Cal AI model\" is a warning sign, not a strategy. Cal AI works because calorie logging is frequent and users accept approximation. Skincare collision checking is far less frequent and much less forgiving of wrong outputs."
+          ]
+        },
+        {
+          "label": "Solo Dev",
+          "items": [
+            "Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — but only after gutting the scanner dependence, narrowing the claim to irritation-risk heuristics, and accepting that v1 is basically a polished rules engine with manual input.",
+            "Biggest solo complexity traps: product recognition, OCR on ingredient labels, dependence on unverified product/ingredient APIs, formula normalization across brands, overclaiming medical-style certainty, calibrating risk outputs without real outcome data, and inventing retention beyond first-use curiosity."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "improve",
+      "icon": "✨",
+      "title": "Improved v2",
+      "desc": "Build Glow Clash as a cautious web app for people who already use strong actives and want a safer routine the night before a date, event, or photo day.",
+      "sections": [
+        {
+          "label": "What Changed",
+          "items": [
+            "Scanning, product recognition, and ingredient database dependency are removed from v1. Users build a routine manually from a fixed list of active categories such as retinoid, AHA/BHA exfoliant, benzoyl peroxide, vitamin C, prescription acne treatment, scrub, and barrier-repair products. This fixes the biggest solo-dev trap in the critique: unverified scanner accuracy and product-data maintenance.",
+            "The promise is narrowed from \"your face will look worse by morning\" to \"higher irritation risk before an event.\" The app no longer predicts breakouts or pretends it knows exactly which product caused the issue. Instead it shows the conflict rule, the reason, and a caution level. This makes the advice safer and more credible.",
+            "The product shifts from one-off warning tool to \"pre-event routine planner + next-day sensitivity log.\" Users save their usual routine templates, run an event check the night before, and log what happened the next morning. This answers the critique's retention problem: week-2 value comes from building a personal sensitivity record, not from repeating generic infographic advice."
+          ]
+        },
+        {
+          "label": "MVP Scope",
+          "items": [
+            "What's in v1: responsive web app, onboarding that explains the caution-first positioning, manual routine builder from a fixed taxonomy of active categories, pre-event irritation check with explicit rule explanations and caution levels, saveable routine templates, next-day outcome check-in, simple personal pattern history, and local auth/storage",
+            "What's out of v1: scanning, barcode lookup, OCR, product-name search, ingredient parsing, breakout prediction, \"face will look worse by morning\" copy, personalized medical claims, social sharing loops, UGC, community advice, moderation, payments, subscriptions, native mobile apps, push notifications, and brand/product partnerships",
+            "Estimated build time with AI coding tools: 2-3 weeks total, including 2-3 days to define and QA the active-category taxonomy and conflict rules, 6-8 days for UI and app logic, 2-3 days for auth/storage/integration setup, 2-3 days for next-day logging/history views, and 1-2 days for copy, safety disclaimers, and QA"
+          ]
+        }
+      ]
+    },
+    {
+      "status": "critique",
+      "icon": "🔍",
+      "title": "Critique v2",
+      "desc": "The product is still mostly a skinned infographic with a memory feature.",
+      "verdict": "NEEDS MAJOR WORK",
+      "verdictClass": "needs",
+      "score": "6/10",
+      "sections": [
+        {
+          "label": "What's Good",
+          "items": [
+            "You did the one smart thing v1 refused to do: you murdered the scanner gimmick before it murdered the build. That removes the dumbest technical trap.",
+            "The wedge is finally specific. \"Night-before-event irritation checker for people using strong actives\" is at least a real use case instead of vague beauty-tech sludge.",
+            "The output format is better. Explicit rules, caution levels, and fallback suggestions are more credible than fake clairvoyance.",
+            "This is small enough to ship as a web app without needing a team, ML pipeline, or vendor circus."
+          ]
+        },
+        {
+          "label": "Brutal Feedback",
+          "items": [
+            "The product is still mostly a skinned infographic with a memory feature. The core insight is \"do not stack harsh actives before an important day.\" That is not product magic. That is beginner skincare advice with a progress bar.",
+            "Your moat is weak to nonexistent. Anyone with a decent prompt and a weekend can clone this rules engine. If the main value is the rules table plus a log, there is no defensibility and barely any novelty.",
+            "The retention story is still doing wishful thinking cosplay. \"Personal sensitivity history\" sounds nice, but it depends on users caring enough to log the next morning after a stressful event. Most people will forget, get busy, or not want to think about their skin again. Why does the user come back after day 1?",
+            "UNVERIFIED: the entire week-2 value depends on repeated next-day logging being high enough to produce useful patterns. Until that behavior is proven, this cannot justify a premium score.",
+            "The taxonomy problem did not disappear. You replaced product-data hell with categorization friction. Real users do not think in neat buckets like \"leave-on exfoliant\" versus \"prescription acne treatment\" when one product can be both, or when packaging language is muddy. If users cannot confidently map their routine into your categories, the app feels dumb immediately.",
+            "The rules are not \"ready.\" They require meaningful manual work: selecting safe conflict rules, writing explanations, deciding severity thresholds, handling ambiguous combinations, and QA-ing edge cases so the app does not sound reckless or useless. That is not a two-hour setup task; it is a content design job disguised as logic.",
+            "You are still operating in a trust-sensitive category where being slightly wrong is enough to wreck credibility. Even with softer wording, a bad warning can make the app look alarmist, and a missed warning can make it look incompetent.",
+            "The personalization is weaker than you think. A handful of self-reported logs is not robust pattern detection; it is tiny, noisy anecdote storage. Dressing that up as \"your personal sensitivity record\" risks sounding smarter than the data deserves.",
+            "\"Event type\" may be fake depth. A date, wedding, meeting, or photo day does not change skin chemistry. It only changes user anxiety. If the event field does not materially change recommendations, it is fluff in a lab coat.",
+            "Saveable templates are useful, but they may cannibalize usage instead of increasing it. If users find one safe pre-event routine, they stop needing the checker and just reuse the template.",
+            "The build estimate is optimistic because it treats rule writing, safety copy, taxonomy clarity, and UX onboarding as small tasks. They are not. This app lives or dies on those details because the code is the easy part.",
+            "Local auth/storage in v1 is a smell. For an MVP this small, auth can be overkill and local-only storage can make continuity worse. You have not fully decided whether this is a disposable utility or a long-term tracker, and that muddle will leak into the product.",
+            "The positioning is still shaky. People with real skincare knowledge may find it insultingly obvious, and people without that knowledge may not trust themselves to categorize products correctly. That is a nasty middle zone."
+          ]
+        },
+        {
+          "label": "Solo Dev",
+          "items": [
+            "Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the software is buildable, but the real work is rule design, taxonomy clarity, safety copy, and validation that users will log enough data for the app to matter twice.",
+            "Biggest solo complexity traps: turning messy real-world products into simple categories without confusing users, writing conflict rules that are helpful but not reckless, overestimating next-day logging compliance, mistaking anecdotal self-reports for meaningful personalization, adding too many screens before proving the core checker is useful, and spending time on auth/templates/history before validating that anyone needs more than a one-time warning."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "improve",
+      "icon": "✨",
+      "title": "Improved v3",
+      "desc": "Glow Clash should be built as a blunt \"Should I do this routine tonight?\" checker for people who already use strong actives and have an important morning tomorrow.",
+      "sections": [
+        {
+          "label": "What Changed",
+          "items": [
+            "The product is no longer pretending to be a sticky skincare coach. v3 is a narrow pre-event irritation audit: answer a few step-level questions about tonight's routine, get a conservative risk verdict, and see the safest simplified version. This fixes the critique's core problem that v2 was still mostly a rules table plus wishful retention.",
+            "The input model is rebuilt around brutally obvious step cards instead of fuzzy product taxonomy. Users answer yes/no to routine steps such as \"retinoid,\" \"leave-on acid,\" \"benzoyl peroxide,\" \"physical scrub,\" \"new product tonight,\" and \"skin already irritated/dry,\" with examples on each card. If one product contains two harsh actives, they select both. This is better because it removes most categorization ambiguity without needing scanning or ingredient parsing.",
+            "v1 drops fake depth and nonessential systems: no event types, no templates, no auth, no settings sprawl, no \"personal sensitivity history\" moat. Optional next-morning logging stays only as a validation experiment attached to the last check. This makes the build honest, faster, and more credible in a trust-sensitive category."
+          ]
+        },
+        {
+          "label": "MVP Scope",
+          "items": [
+            "What's in v1: landing and trust-setting onboarding, one pre-event check flow, step-card routine input with examples, conservative rules engine with 8-12 manually written rules, results page with plain-language explanations and fallback routine, optional next-morning outcome log tied to the latest check, and lightweight local persistence for the latest checks only",
+            "What's out of v1: scanning, barcode lookup, OCR, ingredient parsing, product search, event-type personalization, templates, auth/accounts, settings page, pattern history claims, push notifications, social features, UGC, moderation, subscriptions, payments, native mobile apps, and any medical-style recommendation engine",
+            "Estimated build time with AI coding tools: 2-4 weeks total, including 4-6 days for rule writing, taxonomy examples, severity definitions, and safety copy; 5-7 days for the web UI and rules logic; 2-3 days for local persistence and integration setup; 1-2 days for the optional next-morning log flow; and 2-3 days for QA on wording, edge cases, and usability"
+          ]
+        }
+      ]
+    },
+    {
+      "status": "critique",
+      "icon": "🔍",
+      "title": "Critique v3",
+      "desc": "This is still dangerously close to being a glorified checklist with attitude.",
+      "verdict": "NEEDS MAJOR WORK",
+      "verdictClass": "needs",
+      "score": "6/10",
+      "sections": [
+        {
+          "label": "What's Good",
+          "items": [
+            "You finally stopped cosplaying as an AI skincare oracle and cut the scanner, OCR, database, auth, and fake personalization bloat. That is the first adult decision this idea has made.",
+            "The scope is now small enough that a solo developer could plausibly ship a working MVP instead of drowning in integrations and taxonomy sludge.",
+            "The input model is less stupid than product parsing. Step cards are a real simplification, even if they are still imperfect.",
+            "The core job is at least understandable now: \"tell me if tonight's routine is reckless before tomorrow matters.\""
+          ]
+        },
+        {
+          "label": "Brutal Feedback",
+          "items": [
+            "This is still dangerously close to being a glorified checklist with attitude. The core value proposition is \"don't combine harsh skincare steps before an important morning.\" That is useful, but it is not remotely novel.",
+            "The biggest problem is unchanged: the app is only as smart as a tiny manual rule table. If the product's brain is 8-12 canned warnings, users may get the same value from a decent TikTok, Reddit post, or dermatologist infographic without needing your app at all.",
+            "Your differentiation is weak because the hard part is not code, it is trust. And right now trust is exactly where the product is vulnerable. If you miss a common irritation combo, you look incompetent. If you over-warn, you look alarmist. In skincare, \"conservative\" can still feel dumb.",
+            "UNVERIFIED: the step-card taxonomy is better than scanning, but it still assumes users know what bucket their routine belongs in. Many do not. A serum with multiple actives, a toner marketed with vague language, or a treatment that straddles categories will make people hesitate. The second they hesitate, your \"simple\" flow stops feeling simple.",
+            "The retention loop is still weak. Why does the user come back after day 1? \"Another important morning someday\" is not a retention engine. It is occasional utility. That can support a tiny tool, but it does not support inflated product ambition.",
+            "Optional next-morning logging is not harmless just because you call it an experiment. It adds another screen, another concept, another piece of copy, and another place for users to ignore you. Most people will not want homework after a night routine. If the logging is low, that whole branch is dead weight.",
+            "The \"importance of avoiding irritation tomorrow\" input smells like fake nuance. Either it changes the recommendation logic, which is risky because user anxiety should not alter skin advice, or it only changes the tone, which means it is ornamental UX fluff.",
+            "The rules are still not actually \"ready.\" They need source selection, wording, severity calibration, contradiction handling, examples, and QA. That is real product labor, not setup polish. Your build estimate is flattering itself by treating content rigor like a side quest.",
+            "The market is awkward. Skincare beginners may not trust themselves to classify products. Skincare enthusiasts may find the advice insultingly obvious. That leaves you fishing for anxious intermediates who use actives, have event-driven panic, and also want a dedicated checker instead of Google. That is a narrower audience than the writeup admits.",
+            "The brand premise still has a trashy undertone. You say you moved away from attractiveness claims, but the original DNA is still \"your face will look worse tomorrow.\" That fear-based framing might get clicks, but it can also make the product feel manipulative and unserious.",
+            "There is no moat, and worse, there may not even be much product. If the best version of this thing is a well-designed one-session checker, fine, but then stop pretending there is a meaningful compounding system here."
+          ]
+        },
+        {
+          "label": "Solo Dev",
+          "items": [
+            "Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the app shell is easy, but trustworthy rules, crisp taxonomy, and copy that does not sound reckless will eat more time than the code.",
+            "Biggest solo complexity traps: overestimating how obvious the step cards are, underestimating the manual work to define and validate rule copy, shipping fake nuance like \"importance tomorrow,\" keeping the optional logging flow after it proves weak, and mistaking a one-session utility for a real recurring product."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "validate",
+      "icon": "✅",
+      "title": "Validated",
+      "desc": "Ready for design with a seven-screen handoff and 6/10 critique score.",
+      "sections": [
+        {
+          "label": "Validation",
+          "items": [
+            "Ready for design on 2026-04-02 21:18",
+            "Score: 6/10"
+          ]
+        },
+        {
+          "label": "Design Handoff Screens",
+          "items": [
+            "Screen 1: Landing / Value Proposition — explains the app as a blunt pre-event irritation checker, shows who it is for, what it does not do, the safety disclaimer, and the CTA to run a check",
+            "Screen 2: Onboarding / How To Use It — teaches the step-card input model with 1-2 concrete examples, explains that users should select every harsh step present even if one product covers multiple categories, and sets expectations around conservative guidance",
+            "Screen 3: Routine Check / Step Cards — main interaction screen with importance selector, step cards for each routine type, short examples under every card, and context toggles for \"new product tonight\" and \"skin already irritated\"",
+            "Screen 4: Results / Risk Verdict — shows risk level, triggered rules, brief reasoning, and the safest simplified routine for tonight; includes actions to edit answers or log outcome tomorrow",
+            "Screen 5: Rule Detail / Why It Was Flagged — expands the triggered rule copy with clearer explanation, what combination caused it, and why the fallback is safer",
+            "Screen 6: Next-Morning Log — optional 10-second follow-up showing the routine summary and asking for redness, stinging, peeling, or no issue, plus an optional note",
+            "Screen 7: Recent Checks — lightweight list of the last few checks and logged outcomes stored on-device, mainly to reopen the most recent check and support the optional follow-up"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "design",
+      "icon": "🎨",
+      "title": "Designed",
+      "desc": "Stitch screens generated and published as a live web prototype.",
+      "sections": [
+        {
+          "label": "Prototype",
+          "items": [
+            "Stitch project created",
+            "GitHub Pages prototype exported",
+            "Device type: WEB"
+          ]
+        }
+      ]
+    }
+  ],
+  "journeyHtml": [
+    "<div class='esect'><div class='esect-label'>Description</div><p>Glow Clash is an attractiveness app that copies the Cal AI model but applies it to skincare anxiety instead of calories. You scan the skincare products you plan to use tonight, and the app flags ingredient collisions that commonly lead to redness, peeling, breakouts, or next-morning irritation before a date, event, or photo day. The reveal is instant and screen-recordable: a blunt warning that says your routine is likely to make your face look worse by morning, plus the single product to remove so the loop becomes scan, get the verdict, swap one thing, and check your face tomorrow.</p></div>",
+    "<div class='esect'><div class='esect-label'>What's Good</div><ul><li>The hook is clean and emotionally legible. \"Will this routine make my face look worse by morning?\" is a real fear, not some made-up productivity fantasy.</li><li>The user moment is specific and high intent: before a date, event, or photo day. That is better than a vague \"optimize your skincare\" pitch.</li><li>The \"remove one product\" output is the right shape for consumer behavior. Simple verdicts beat dermatology cosplay.</li><li>A stripped-down version could be a decent content-led utility if it stops pretending to be more scientific than it is.</li></ul></div><div class='esect'><div class='esect-label'>Brutal Feedback</div><ul><li>The idea is built on fake certainty. Skincare irritation is not a clean collision problem where the app can reliably say \"your face will look worse by morning\" from a product scan. Skin response depends on skin barrier health, frequency of use, concentration, order, prior tolerance, climate, timing, and plain bad luck.</li><li>The \"single product to remove\" output sounds elegant, but it implies causal confidence you almost certainly do not have. If three actives are piled together, which one gets blamed? The app will be guessing with a stern tone.</li><li>You are dragging yourself into product-data hell on day one. Ingredient lists are inconsistent, brands reformulate, names are messy, and the same product can appear in different regional variants. Saying the content is \"ready\" because products exist on shelves is nonsense. The real work is structuring and maintaining a clean ingredient database, which is significant manual labor.</li><li>UNVERIFIED: the scanning flow depends on accurately identifying products and extracting ingredient lists from packaging, barcodes, or external product databases. If that lookup layer is not already proven, the core differentiator is unverified and the idea cannot score above 7/10. Right now it does not deserve anything close to that anyway.</li><li>Even if lookup works, the advice engine is still mostly a glorified rules table wearing an AI costume. Retinoid plus exfoliating acid plus benzoyl peroxide equals irritation risk. Vitamin C plus everything under the sun gets oversimplified. Users can already find endless charts with this logic for free.</li><li>The product makes a dangerous promise in a high-trust category. Wrong calorie estimates are annoying. Wrong skincare advice can burn someone's face before an event. That is a much worse failure mode.</li><li>The next-morning outcome is also slippery. Redness, peeling, and burning are somewhat connected to routine conflicts. Breakouts by morning are much less clean. The app is bundling different skin outcomes into one dramatic verdict because it sounds punchier, not because the prediction is credible.</li><li>The \"screen-recordable blunt warning\" angle is not a moat. It is just an aesthetic wrapper around fear. If the answer quality is mediocre, screen-recordability becomes a viral mechanism for mocking the app.</li><li>The retention loop is weak. Why does the user come back after day 1? Once the app teaches the obvious lesson that stacking too many harsh actives before an event is dumb, the habit collapses unless the user is constantly buying new products or chronically anxious.</li><li>There is no defensible wedge yet. Dermatologists have authority. Existing skincare apps have product libraries. Reddit has obsessive ingredient threads. Beauty creators have audience trust. You are a solo builder shipping a scanner plus heuristics into a category full of better-known voices.</li><li>This is also scope bait for a solo dev. Product recognition, ingredient normalization, conflict rules, confidence scoring, history tracking, and outcome feedback sound manageable in a pitch. In practice that is how you lose three weeks building a product lookup system and still do not have trustworthy advice.</li><li>The phrase \"copies the Cal AI model\" is a warning sign, not a strategy. Cal AI works because calorie logging is frequent and users accept approximation. Skincare collision checking is far less frequent and much less forgiving of wrong outputs.</li></ul></div><div class='esect'><div class='esect-label'>Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — but only after gutting the scanner dependence, narrowing the claim to irritation-risk heuristics, and accepting that v1 is basically a polished rules engine with manual input.</li><li>Biggest solo complexity traps: product recognition, OCR on ingredient labels, dependence on unverified product/ingredient APIs, formula normalization across brands, overclaiming medical-style certainty, calibrating risk outputs without real outcome data, and inventing retention beyond first-use curiosity.</li></ul></div>",
+    "<div class='esect'><div class='esect-label'>What Changed</div><ul><li>Scanning, product recognition, and ingredient database dependency are removed from v1. Users build a routine manually from a fixed list of active categories such as retinoid, AHA/BHA exfoliant, benzoyl peroxide, vitamin C, prescription acne treatment, scrub, and barrier-repair products. This fixes the biggest solo-dev trap in the critique: unverified scanner accuracy and product-data maintenance.</li><li>The promise is narrowed from \"your face will look worse by morning\" to \"higher irritation risk before an event.\" The app no longer predicts breakouts or pretends it knows exactly which product caused the issue. Instead it shows the conflict rule, the reason, and a caution level. This makes the advice safer and more credible.</li><li>The product shifts from one-off warning tool to \"pre-event routine planner + next-day sensitivity log.\" Users save their usual routine templates, run an event check the night before, and log what happened the next morning. This answers the critique's retention problem: week-2 value comes from building a personal sensitivity record, not from repeating generic infographic advice.</li></ul></div><div class='esect'><div class='esect-label'>MVP Scope</div><ul><li>What's in v1: responsive web app, onboarding that explains the caution-first positioning, manual routine builder from a fixed taxonomy of active categories, pre-event irritation check with explicit rule explanations and caution levels, saveable routine templates, next-day outcome check-in, simple personal pattern history, and local auth/storage</li><li>What's out of v1: scanning, barcode lookup, OCR, product-name search, ingredient parsing, breakout prediction, \"face will look worse by morning\" copy, personalized medical claims, social sharing loops, UGC, community advice, moderation, payments, subscriptions, native mobile apps, push notifications, and brand/product partnerships</li><li>Estimated build time with AI coding tools: 2-3 weeks total, including 2-3 days to define and QA the active-category taxonomy and conflict rules, 6-8 days for UI and app logic, 2-3 days for auth/storage/integration setup, 2-3 days for next-day logging/history views, and 1-2 days for copy, safety disclaimers, and QA</li></ul></div>",
+    "<div class='esect'><div class='esect-label'>What's Good</div><ul><li>You did the one smart thing v1 refused to do: you murdered the scanner gimmick before it murdered the build. That removes the dumbest technical trap.</li><li>The wedge is finally specific. \"Night-before-event irritation checker for people using strong actives\" is at least a real use case instead of vague beauty-tech sludge.</li><li>The output format is better. Explicit rules, caution levels, and fallback suggestions are more credible than fake clairvoyance.</li><li>This is small enough to ship as a web app without needing a team, ML pipeline, or vendor circus.</li></ul></div><div class='esect'><div class='esect-label'>Brutal Feedback</div><ul><li>The product is still mostly a skinned infographic with a memory feature. The core insight is \"do not stack harsh actives before an important day.\" That is not product magic. That is beginner skincare advice with a progress bar.</li><li>Your moat is weak to nonexistent. Anyone with a decent prompt and a weekend can clone this rules engine. If the main value is the rules table plus a log, there is no defensibility and barely any novelty.</li><li>The retention story is still doing wishful thinking cosplay. \"Personal sensitivity history\" sounds nice, but it depends on users caring enough to log the next morning after a stressful event. Most people will forget, get busy, or not want to think about their skin again. Why does the user come back after day 1?</li><li>UNVERIFIED: the entire week-2 value depends on repeated next-day logging being high enough to produce useful patterns. Until that behavior is proven, this cannot justify a premium score.</li><li>The taxonomy problem did not disappear. You replaced product-data hell with categorization friction. Real users do not think in neat buckets like \"leave-on exfoliant\" versus \"prescription acne treatment\" when one product can be both, or when packaging language is muddy. If users cannot confidently map their routine into your categories, the app feels dumb immediately.</li><li>The rules are not \"ready.\" They require meaningful manual work: selecting safe conflict rules, writing explanations, deciding severity thresholds, handling ambiguous combinations, and QA-ing edge cases so the app does not sound reckless or useless. That is not a two-hour setup task; it is a content design job disguised as logic.</li><li>You are still operating in a trust-sensitive category where being slightly wrong is enough to wreck credibility. Even with softer wording, a bad warning can make the app look alarmist, and a missed warning can make it look incompetent.</li><li>The personalization is weaker than you think. A handful of self-reported logs is not robust pattern detection; it is tiny, noisy anecdote storage. Dressing that up as \"your personal sensitivity record\" risks sounding smarter than the data deserves.</li><li>\"Event type\" may be fake depth. A date, wedding, meeting, or photo day does not change skin chemistry. It only changes user anxiety. If the event field does not materially change recommendations, it is fluff in a lab coat.</li><li>Saveable templates are useful, but they may cannibalize usage instead of increasing it. If users find one safe pre-event routine, they stop needing the checker and just reuse the template.</li><li>The build estimate is optimistic because it treats rule writing, safety copy, taxonomy clarity, and UX onboarding as small tasks. They are not. This app lives or dies on those details because the code is the easy part.</li><li>Local auth/storage in v1 is a smell. For an MVP this small, auth can be overkill and local-only storage can make continuity worse. You have not fully decided whether this is a disposable utility or a long-term tracker, and that muddle will leak into the product.</li><li>The positioning is still shaky. People with real skincare knowledge may find it insultingly obvious, and people without that knowledge may not trust themselves to categorize products correctly. That is a nasty middle zone.</li></ul></div><div class='esect'><div class='esect-label'>Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the software is buildable, but the real work is rule design, taxonomy clarity, safety copy, and validation that users will log enough data for the app to matter twice.</li><li>Biggest solo complexity traps: turning messy real-world products into simple categories without confusing users, writing conflict rules that are helpful but not reckless, overestimating next-day logging compliance, mistaking anecdotal self-reports for meaningful personalization, adding too many screens before proving the core checker is useful, and spending time on auth/templates/history before validating that anyone needs more than a one-time warning.</li></ul></div>",
+    "<div class='esect'><div class='esect-label'>What Changed</div><ul><li>The product is no longer pretending to be a sticky skincare coach. v3 is a narrow pre-event irritation audit: answer a few step-level questions about tonight's routine, get a conservative risk verdict, and see the safest simplified version. This fixes the critique's core problem that v2 was still mostly a rules table plus wishful retention.</li><li>The input model is rebuilt around brutally obvious step cards instead of fuzzy product taxonomy. Users answer yes/no to routine steps such as \"retinoid,\" \"leave-on acid,\" \"benzoyl peroxide,\" \"physical scrub,\" \"new product tonight,\" and \"skin already irritated/dry,\" with examples on each card. If one product contains two harsh actives, they select both. This is better because it removes most categorization ambiguity without needing scanning or ingredient parsing.</li><li>v1 drops fake depth and nonessential systems: no event types, no templates, no auth, no settings sprawl, no \"personal sensitivity history\" moat. Optional next-morning logging stays only as a validation experiment attached to the last check. This makes the build honest, faster, and more credible in a trust-sensitive category.</li></ul></div><div class='esect'><div class='esect-label'>MVP Scope</div><ul><li>What's in v1: landing and trust-setting onboarding, one pre-event check flow, step-card routine input with examples, conservative rules engine with 8-12 manually written rules, results page with plain-language explanations and fallback routine, optional next-morning outcome log tied to the latest check, and lightweight local persistence for the latest checks only</li><li>What's out of v1: scanning, barcode lookup, OCR, ingredient parsing, product search, event-type personalization, templates, auth/accounts, settings page, pattern history claims, push notifications, social features, UGC, moderation, subscriptions, payments, native mobile apps, and any medical-style recommendation engine</li><li>Estimated build time with AI coding tools: 2-4 weeks total, including 4-6 days for rule writing, taxonomy examples, severity definitions, and safety copy; 5-7 days for the web UI and rules logic; 2-3 days for local persistence and integration setup; 1-2 days for the optional next-morning log flow; and 2-3 days for QA on wording, edge cases, and usability</li></ul></div>",
+    "<div class='esect'><div class='esect-label'>What's Good</div><ul><li>You finally stopped cosplaying as an AI skincare oracle and cut the scanner, OCR, database, auth, and fake personalization bloat. That is the first adult decision this idea has made.</li><li>The scope is now small enough that a solo developer could plausibly ship a working MVP instead of drowning in integrations and taxonomy sludge.</li><li>The input model is less stupid than product parsing. Step cards are a real simplification, even if they are still imperfect.</li><li>The core job is at least understandable now: \"tell me if tonight's routine is reckless before tomorrow matters.\"</li></ul></div><div class='esect'><div class='esect-label'>Brutal Feedback</div><ul><li>This is still dangerously close to being a glorified checklist with attitude. The core value proposition is \"don't combine harsh skincare steps before an important morning.\" That is useful, but it is not remotely novel.</li><li>The biggest problem is unchanged: the app is only as smart as a tiny manual rule table. If the product's brain is 8-12 canned warnings, users may get the same value from a decent TikTok, Reddit post, or dermatologist infographic without needing your app at all.</li><li>Your differentiation is weak because the hard part is not code, it is trust. And right now trust is exactly where the product is vulnerable. If you miss a common irritation combo, you look incompetent. If you over-warn, you look alarmist. In skincare, \"conservative\" can still feel dumb.</li><li>UNVERIFIED: the step-card taxonomy is better than scanning, but it still assumes users know what bucket their routine belongs in. Many do not. A serum with multiple actives, a toner marketed with vague language, or a treatment that straddles categories will make people hesitate. The second they hesitate, your \"simple\" flow stops feeling simple.</li><li>The retention loop is still weak. Why does the user come back after day 1? \"Another important morning someday\" is not a retention engine. It is occasional utility. That can support a tiny tool, but it does not support inflated product ambition.</li><li>Optional next-morning logging is not harmless just because you call it an experiment. It adds another screen, another concept, another piece of copy, and another place for users to ignore you. Most people will not want homework after a night routine. If the logging is low, that whole branch is dead weight.</li><li>The \"importance of avoiding irritation tomorrow\" input smells like fake nuance. Either it changes the recommendation logic, which is risky because user anxiety should not alter skin advice, or it only changes the tone, which means it is ornamental UX fluff.</li><li>The rules are still not actually \"ready.\" They need source selection, wording, severity calibration, contradiction handling, examples, and QA. That is real product labor, not setup polish. Your build estimate is flattering itself by treating content rigor like a side quest.</li><li>The market is awkward. Skincare beginners may not trust themselves to classify products. Skincare enthusiasts may find the advice insultingly obvious. That leaves you fishing for anxious intermediates who use actives, have event-driven panic, and also want a dedicated checker instead of Google. That is a narrower audience than the writeup admits.</li><li>The brand premise still has a trashy undertone. You say you moved away from attractiveness claims, but the original DNA is still \"your face will look worse tomorrow.\" That fear-based framing might get clicks, but it can also make the product feel manipulative and unserious.</li><li>There is no moat, and worse, there may not even be much product. If the best version of this thing is a well-designed one-session checker, fine, but then stop pretending there is a meaningful compounding system here.</li></ul></div><div class='esect'><div class='esect-label'>Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the app shell is easy, but trustworthy rules, crisp taxonomy, and copy that does not sound reckless will eat more time than the code.</li><li>Biggest solo complexity traps: overestimating how obvious the step cards are, underestimating the manual work to define and validate rule copy, shipping fake nuance like \"importance tomorrow,\" keeping the optional logging flow after it proves weak, and mistaking a one-session utility for a real recurring product.</li></ul></div>",
+    "<div class='esect'><div class='esect-label'>Validation</div><p>Ready for design on 2026-04-02 21:18 with score 6/10.</p></div><div class='esect'><div class='esect-label'>Design Handoff Screens</div><ul><li>Screen 1: Landing / Value Proposition — explains the app as a blunt pre-event irritation checker, shows who it is for, what it does not do, the safety disclaimer, and the CTA to run a check</li><li>Screen 2: Onboarding / How To Use It — teaches the step-card input model with 1-2 concrete examples, explains that users should select every harsh step present even if one product covers multiple categories, and sets expectations around conservative guidance</li><li>Screen 3: Routine Check / Step Cards — main interaction screen with importance selector, step cards for each routine type, short examples under every card, and context toggles for \"new product tonight\" and \"skin already irritated\"</li><li>Screen 4: Results / Risk Verdict — shows risk level, triggered rules, brief reasoning, and the safest simplified routine for tonight; includes actions to edit answers or log outcome tomorrow</li><li>Screen 5: Rule Detail / Why It Was Flagged — expands the triggered rule copy with clearer explanation, what combination caused it, and why the fallback is safer</li><li>Screen 6: Next-Morning Log — optional 10-second follow-up showing the routine summary and asking for redness, stinging, peeling, or no issue, plus an optional note</li><li>Screen 7: Recent Checks — lightweight list of the last few checks and logged outcomes stored on-device, mainly to reopen the most recent check and support the optional follow-up</li></ul></div>",
+    "<div class='esect'><div class='esect-label'>Prototype</div><p>Stitch project created and exported as a clickable GitHub Pages prototype.</p><div class='tag-row'><span class='etag blue'>WEB prototype</span></div></div><div class='esect'><div class='esect-label'>Links</div><p><a class='ext-link' href='https://stitch.withgoogle.com/projects/5640700694548438258' target='_blank' rel='noreferrer'>Open in Stitch</a></p></div>"
+  ]
+}

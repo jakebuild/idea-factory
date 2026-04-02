@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Glow Clash - Risk Verdict</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#adaaaa",
+              "secondary-fixed": "#e2e2e2",
+              "on-tertiary": "#5e1b7a",
+              "tertiary-fixed": "#e197fc",
+              "on-surface": "#ffffff",
+              "secondary": "#e2e2e2",
+              "outline": "#777575",
+              "on-tertiary-fixed-variant": "#5d1979",
+              "on-secondary-container": "#d0d0d0",
+              "primary-dim": "#db3400",
+              "tertiary-dim": "#d28aee",
+              "primary": "#ff8f73",
+              "surface-container-high": "#201f1f",
+              "error-container": "#a70138",
+              "surface-container-low": "#131313",
+              "on-primary-fixed-variant": "#5a1000",
+              "primary-fixed-dim": "#ff5d33",
+              "on-error": "#490013",
+              "secondary-container": "#454747",
+              "on-primary-container": "#490b00",
+              "on-tertiary-container": "#530c6f",
+              "on-primary": "#5e1100",
+              "surface-container": "#1a1919",
+              "outline-variant": "#494847",
+              "inverse-on-surface": "#565554",
+              "inverse-surface": "#fcf8f8",
+              "on-secondary-fixed": "#3e4040",
+              "on-background": "#ffffff",
+              "tertiary-fixed-dim": "#d28aee",
+              "secondary-dim": "#d4d4d4",
+              "surface": "#0e0e0e",
+              "tertiary-container": "#e197fc",
+              "on-secondary-fixed-variant": "#5a5c5c",
+              "surface-container-highest": "#262626",
+              "surface-container-lowest": "#000000",
+              "tertiary": "#e9aaff",
+              "on-error-container": "#ffb2b9",
+              "surface-bright": "#2c2c2c",
+              "surface-dim": "#0e0e0e",
+              "surface-variant": "#262626",
+              "inverse-primary": "#b52900",
+              "on-tertiary-fixed": "#310045",
+              "primary-container": "#ff7856",
+              "secondary-fixed-dim": "#d4d4d4",
+              "background": "#0e0e0e",
+              "on-primary-fixed": "#000000",
+              "error": "#ff6e84",
+              "on-secondary": "#505252",
+              "error-dim": "#d73357",
+              "primary-fixed": "#ff7856",
+              "surface-tint": "#ff8f73"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .brutalist-border {
+            outline: 1px solid rgba(73, 72, 71, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="gc-proto-style">
+  .gc-shell-header { background:#131313; border-bottom:1px solid #2c2c2c; padding:18px 24px 14px; margin-bottom:24px; }
+  .gc-shell-bar { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+  .gc-shell-left { display:flex; align-items:center; gap:12px; min-width:0; }
+  .gc-back { width:40px; height:40px; border:1px solid #2c2c2c; background:#0e0e0e; color:#ffffff; cursor:pointer; font-size:20px; line-height:1; }
+  .gc-brand { color:#ff8f73; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
+  .gc-global-nav { display:flex; gap:10px; flex-wrap:wrap; }
+  .gc-nav-btn { border:1px solid #2c2c2c; background:#0e0e0e; color:#9ca3af; padding:10px 14px; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; }
+  .gc-nav-btn.is-active { background:#ff8f73; color:#0e0e0e; border-color:#ff8f73; }
+  .gc-page-title { margin-top:14px; color:#ffffff; font-family:'Space Grotesk',sans-serif; font-size:32px; font-weight:700; letter-spacing:-0.04em; text-transform:uppercase; }
+  .gc-clickable { cursor:pointer; }
+  @media (max-width: 720px) {
+    .gc-shell-header { padding:16px 18px 12px; }
+    .gc-page-title { font-size:24px; }
+    .gc-global-nav { width:100%; }
+    .gc-nav-btn { flex:1; min-width:88px; }
+  }
+</style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-24 gc-web-prototype">
+<header class="gc-shell-header">
+<div class="gc-shell-bar">
+<div class="gc-shell-left"><button class="gc-back" onclick="window.location.href='96e5494defcb4a51ab6757bb87855d05.html'" type="button">←</button><div class="gc-brand">Glow Clash</div></div>
+<nav class="gc-global-nav"><button class="gc-nav-btn" onclick="window.location.href='f40a5ab6deb94a27a2ea7804f20c9b73.html'" type="button">Home</button><button class="gc-nav-btn is-active" onclick="window.location.href='96e5494defcb4a51ab6757bb87855d05.html'" type="button">Check</button><button class="gc-nav-btn" onclick="window.location.href='79e27504adcd440c9f861be8ca0048ec.html'" type="button">Recent</button></nav>
+</div>
+<div class="gc-page-title">Results / Risk Verdict</div>
+</header>
+
+<!-- TopAppBar -->
+
+<main class="pt-24 px-6 max-w-4xl mx-auto">
+<!-- Hero Section: HIGH RISK -->
+<section class="mb-12">
+<div class="flex justify-between items-end mb-4">
+<span class="font-label text-xs tracking-[0.2em] text-primary uppercase">Status: Critical</span>
+<span class="font-label text-xs tracking-[0.2em] text-on-surface-variant uppercase">ID: GLW-992-X</span>
+</div>
+<div class="bg-surface-container-low p-8 border-l-8 border-primary relative overflow-hidden">
+<div class="absolute -right-12 -top-12 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[200px]" data-icon="warning">warning</span>
+</div>
+<h2 class="font-headline text-[5rem] md:text-[8rem] leading-[0.85] font-bold tracking-tighter text-primary mb-4">
+                    HIGH<br/>RISK
+                </h2>
+<p class="font-body text-lg max-w-md text-on-surface-variant">
+                    Multiple incompatible actives detected. Your current regimen will likely cause systemic barrier disruption.
+                </p>
+</div>
+</section>
+<!-- Conflict Grid -->
+<section class="mb-12">
+<div class="flex items-center gap-4 mb-6">
+<div class="h-[2px] flex-grow bg-outline-variant opacity-30"></div>
+<h3 class="font-label text-sm tracking-widest uppercase">Rule Triggers</h3>
+<div class="h-[2px] flex-grow bg-outline-variant opacity-30"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 gc-clickable" onclick="window.location.href='c0a88e45b52a4db9a0ec6c0bc62ecc01.html'">
+<!-- Conflict 1 -->
+<div class="bg-surface-container p-6 gc-clickable" onclick="window.location.href='c0a88e45b52a4db9a0ec6c0bc62ecc01.html'">
+<div class="flex justify-between items-start mb-4">
+<span class="text-primary font-headline text-3xl font-bold">01</span>
+<span class="material-symbols-outlined text-error" data-icon="dangerous">dangerous</span>
+</div>
+<p class="font-label text-lg font-bold mb-2">Retinoid + AHA/BHA</p>
+<p class="font-body text-sm text-on-surface-variant">Simultaneous use of Vitamin A derivatives and hydroxy acids leads to rapid desquamation and chronic inflammation.</p>
+</div>
+<!-- Conflict 2 -->
+<div class="bg-surface-container p-6 gc-clickable" onclick="window.location.href='c0a88e45b52a4db9a0ec6c0bc62ecc01.html'">
+<div class="flex justify-between items-start mb-4">
+<span class="text-primary font-headline text-3xl font-bold">02</span>
+<span class="material-symbols-outlined text-error" data-icon="dangerous">dangerous</span>
+</div>
+<p class="font-label text-lg font-bold mb-2">Low pH Acid + L-Ascorbic Acid</p>
+<p class="font-body text-sm text-on-surface-variant">Stacking multiple low-pH formulas destabilizes the moisture mantle, causing immediate erythema.</p>
+</div>
+</div>
+</section>
+<!-- Reasoning & Image -->
+<section class="mb-12 grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+<div class="md:col-span-3">
+<h3 class="font-headline text-2xl font-bold mb-4 uppercase tracking-tight">Clinical Reasoning</h3>
+<div class="space-y-4 font-body text-on-surface-variant">
+<p>The combination of these molecular structures creates an aggressive enzymatic reaction on the stratum corneum. Instead of controlled exfoliation, the skin enters a state of <span class="text-white font-medium">hyper-sensitivity</span>.</p>
+<p>Potential for <span class="text-error font-medium">severe barrier damage</span> is calculated at 87%. Continued application will result in stinging, peeling, and potential chemical burns.</p>
+</div>
+</div>
+<div class="md:col-span-2">
+<div class="aspect-square bg-surface-container overflow-hidden grayscale contrast-125">
+<img class="w-full h-full object-cover" data-alt="Macro close-up of human skin under clinical blue light showing texture and microscopic details with a high contrast laboratory aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXVxGnpk69UXV_0xFxJ76eEtGRZYreyompGYTkE2Ap3ywCRYfmG-syQhEOj6nP6h0jevx3JE0V3pQ1Oa0d8Uf3nGXBTK9u1IZzw_TdS7CKA0Jq1dBGnsMCwq7VJNQFN7qfk15BET3IJLlCTIcSWdlgEP2pMBEXdJ2btqBYpNkT8GkFPRyQDTI21jbPkPYi6muQf3KCQU_UrWN_e9Na8uorXgpl-u3jpV1M6kSYJGdeahlp0B6yQe-Dgech34VvEk0Dc0bpz9_ZbQg"/>
+</div>
+</div>
+</section>
+<!-- Simplified Routine Tonight -->
+<section class="mb-16 bg-surface-bright p-8">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+<div>
+<h3 class="font-headline text-2xl font-bold uppercase">Safe Path Forward</h3>
+<p class="font-label text-xs text-primary tracking-widest mt-1">SIMPLIFIED REGIMEN FOR TONIGHT</p>
+</div>
+<div class="bg-primary text-on-primary px-4 py-1 font-label text-xs font-bold uppercase tracking-tighter">
+                    Emergency Reset
+                </div>
+</div>
+<div class="space-y-4">
+<!-- Step 1 -->
+<div class="flex items-center gap-6 p-4 border-b border-outline-variant border-opacity-20">
+<span class="material-symbols-outlined text-primary" data-icon="check_box" data-weight="fill">check_box</span>
+<div>
+<p class="font-label text-sm uppercase">Phase 01</p>
+<p class="font-headline text-xl font-bold">Cleanse Only</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-center gap-6 p-4 border-b border-outline-variant border-opacity-20">
+<span class="material-symbols-outlined text-primary" data-icon="check_box" data-weight="fill">check_box</span>
+<div>
+<p class="font-label text-sm uppercase">Phase 02</p>
+<p class="font-headline text-xl font-bold">Moisturizer (Barrier Balm)</p>
+</div>
+</div>
+<!-- Step 3 (Disabled/Prohibited) -->
+<div class="flex items-center gap-6 p-4 opacity-30">
+<span class="material-symbols-outlined" data-icon="block">block</span>
+<div>
+<p class="font-label text-sm uppercase">Phase 03</p>
+<p class="font-headline text-xl font-bold line-through">All Actives Suspended</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-4 mb-20">
+<button class="w-full bg-primary text-on-primary py-5 font-headline font-extrabold uppercase tracking-widest active:scale-95 transition-transform" onclick="window.location.href='a9dd637df92d46259bcae697f8fe5cb1.html'" type="button">
+                Log Outcome Tomorrow
+            </button>
+<button class="w-full bg-surface-bright text-white py-5 font-headline font-extrabold uppercase tracking-widest hover:bg-surface-container-highest transition-colors active:scale-95" onclick="window.location.href='96e5494defcb4a51ab6757bb87855d05.html'" type="button">
+                Edit Answers
+            </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+</body></html>

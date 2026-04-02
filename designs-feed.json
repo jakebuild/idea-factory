@@ -1,5 +1,36 @@
 [
   {
+    "id": "53-glow-clash-is-an-attractivenes",
+    "num": 53,
+    "title": "Glow Clash",
+    "subtitle": "Pre-event irritation checker for strong skincare routines.",
+    "description": "Glow Clash should be built as a blunt \"Should I do this routine tonight?\" checker for people who already use strong actives and have an important morning tomorrow. It is not trying to diagnose skin, predict beauty outcomes, or maintain a full skincare diary. Its job is narrower: catch the most common irritation-prone combinations before the user makes their face harder to manage the next day. The MVP flow is simple. The user opens the app, chooses how important it is to avoid irritation tomorrow, and taps through a short set of routine step cards with plain-language examples: retinoid / tretinoin / adapalene leave-on acid exfoliant (AHA/BHA/PHA) benzoyl peroxide physical scrub or strong cleansing treatment vitamin C or other low-risk active thick moisturizer / barrier-repair step new product tonight skin already dry, tight, stinging, or irritated The app then returns three things only: a conservative risk level: low, medium, or high the exact rule that triggered, written in plain English a stripped-down fallback routine for tonight, such as \"skip the acid and keep moisturizer only\" The logic is based on a deliberately small, manually curated rule set. That rule set is the product work: around 8-12 high-confidence interactions, severity labels, explanation copy, and fallback suggestions that stay on the safe side of \"reduce irritation risk\" instead of pretending to offer medical advice. The app should say when the signal is weak, and it should avoid dramatic claims about breakouts or attractiveness. Optional next-morning logging remains in v1, but only as a lightweight experiment: one screen that asks whether the user had redness, stinging, peeling, or no issue after the checked routine. It is not sold as pattern intelligence. If people use it, great; if they do not, the product still works as a one-session utility. 3 biggest assumptions that could kill the product: VERIFIED: A solo developer can ship this in 2-4 weeks if v1 stays limited to a web app with step-card input, a small rules engine, no auth, no templates, and no product database. UNVERIFIED: Users will find the step-card taxonomy clear enough to map their real routine without second-guessing themselves. If this fails, fallback plan: reduce the cards further and reposition the tool around only the clearest high-risk steps, even if that makes the checker less comprehensive. UNVERIFIED: Enough users will return for another pre-event check or optional next-morning log to justify anything beyond a single-session utility. This is not the moat. Fallback plan: position Glow Clash as a disposable but useful pre-event checker and stop investing in retention features. Why would users come back in week 2? Not because the app magically becomes a diary. They come back only when they face the same job again: another important morning, a new product, a stronger active, or a routine change they do not fully trust. That is episodic retention, not habit retention, so confidence here is moderate rather than high.",
+    "score": 6,
+    "status": "complete",
+    "deviceType": "WEB",
+    "category": "Health",
+    "platform": [
+      "web"
+    ],
+    "tags": [
+      "skincare",
+      "irritation",
+      "routine",
+      "actives",
+      "pre-event"
+    ],
+    "folder": "53-glow-clash-is-an-attractivenes",
+    "prototypeUrl": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/",
+    "metaUrl": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/meta.json",
+    "startScreenId": "f40a5ab6deb94a27a2ea7804f20c9b73",
+    "startScreenUrl": "https://jakebuild.github.io/idea-factory/53-glow-clash-is-an-attractivenes/f40a5ab6deb94a27a2ea7804f20c9b73.html",
+    "screenCount": 7,
+    "stitchId": "5640700694548438258",
+    "stitchUrl": "https://stitch.withgoogle.com/projects/5640700694548438258",
+    "publishedAt": "2026-04-02T14:35:09Z",
+    "updatedAt": "2026-04-02T14:35:09Z"
+  },
+  {
     "id": "46-rizz-score-is-a-dating-convers",
     "num": 46,
     "title": "Chat Unsticker",

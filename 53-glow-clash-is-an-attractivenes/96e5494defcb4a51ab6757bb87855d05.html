@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Glow Clash - Routine Check</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#131313",
+            "tertiary-fixed-dim": "#d28aee",
+            "outline": "#777575",
+            "on-primary": "#5e1100",
+            "surface": "#0e0e0e",
+            "on-secondary-fixed-variant": "#5a5c5c",
+            "error-container": "#a70138",
+            "on-tertiary": "#5e1b7a",
+            "surface-tint": "#ff8f73",
+            "inverse-primary": "#b52900",
+            "secondary-fixed-dim": "#d4d4d4",
+            "surface-container-lowest": "#000000",
+            "primary": "#ff8f73",
+            "on-tertiary-container": "#530c6f",
+            "primary-fixed-dim": "#ff5d33",
+            "on-error-container": "#ffb2b9",
+            "secondary-container": "#454747",
+            "on-error": "#490013",
+            "on-surface-variant": "#adaaaa",
+            "secondary-fixed": "#e2e2e2",
+            "secondary-dim": "#d4d4d4",
+            "primary-fixed": "#ff7856",
+            "on-primary-fixed": "#000000",
+            "outline-variant": "#494847",
+            "primary-dim": "#db3400",
+            "on-tertiary-fixed": "#310045",
+            "on-secondary": "#505252",
+            "surface-dim": "#0e0e0e",
+            "surface-container-high": "#201f1f",
+            "primary-container": "#ff7856",
+            "inverse-on-surface": "#565554",
+            "surface-container-highest": "#262626",
+            "tertiary-dim": "#d28aee",
+            "on-surface": "#ffffff",
+            "on-primary-container": "#490b00",
+            "surface-container": "#1a1919",
+            "on-secondary-container": "#d0d0d0",
+            "tertiary-container": "#e197fc",
+            "surface-bright": "#2c2c2c",
+            "secondary": "#e2e2e2",
+            "on-tertiary-fixed-variant": "#5d1979",
+            "tertiary-fixed": "#e197fc",
+            "surface-variant": "#262626",
+            "tertiary": "#e9aaff",
+            "inverse-surface": "#fcf8f8",
+            "error": "#ff6e84",
+            "error-dim": "#d73357",
+            "background": "#0e0e0e",
+            "on-secondary-fixed": "#3e4040",
+            "on-primary-fixed-variant": "#5a1000",
+            "on-background": "#ffffff"
+          },
+          fontFamily: {
+            "headline": ["Space Grotesk"],
+            "body": ["Inter"],
+            "label": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      background-color: #0e0e0e;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0e0e0e;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #2c2c2c;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="gc-proto-style">
+  .gc-shell-header { background:#131313; border-bottom:1px solid #2c2c2c; padding:18px 24px 14px; margin-bottom:24px; }
+  .gc-shell-bar { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+  .gc-shell-left { display:flex; align-items:center; gap:12px; min-width:0; }
+  .gc-back { width:40px; height:40px; border:1px solid #2c2c2c; background:#0e0e0e; color:#ffffff; cursor:pointer; font-size:20px; line-height:1; }
+  .gc-brand { color:#ff8f73; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
+  .gc-global-nav { display:flex; gap:10px; flex-wrap:wrap; }
+  .gc-nav-btn { border:1px solid #2c2c2c; background:#0e0e0e; color:#9ca3af; padding:10px 14px; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; }
+  .gc-nav-btn.is-active { background:#ff8f73; color:#0e0e0e; border-color:#ff8f73; }
+  .gc-page-title { margin-top:14px; color:#ffffff; font-family:'Space Grotesk',sans-serif; font-size:32px; font-weight:700; letter-spacing:-0.04em; text-transform:uppercase; }
+  .gc-clickable { cursor:pointer; }
+  @media (max-width: 720px) {
+    .gc-shell-header { padding:16px 18px 12px; }
+    .gc-page-title { font-size:24px; }
+    .gc-global-nav { width:100%; }
+    .gc-nav-btn { flex:1; min-width:88px; }
+  }
+</style>
+</head>
+<body class="min-h-screen pb-24 gc-web-prototype">
+<header class="gc-shell-header">
+<div class="gc-shell-bar">
+<div class="gc-shell-left"><div class="gc-brand">Glow Clash</div></div>
+<nav class="gc-global-nav"><button class="gc-nav-btn" onclick="window.location.href='f40a5ab6deb94a27a2ea7804f20c9b73.html'" type="button">Home</button><button class="gc-nav-btn is-active" onclick="window.location.href='96e5494defcb4a51ab6757bb87855d05.html'" type="button">Check</button><button class="gc-nav-btn" onclick="window.location.href='79e27504adcd440c9f861be8ca0048ec.html'" type="button">Recent</button></nav>
+</div>
+<div class="gc-page-title">Routine Check / Step Cards</div>
+</header>
+
+<!-- TopAppBar -->
+
+<main class="pt-24 px-6 max-w-4xl mx-auto">
+<!-- Section: Header -->
+<section class="mb-12">
+<div class="flex flex-col gap-1">
+<span class="text-[#ff8f73] font-['Space_Grotesk'] text-[10px] font-black tracking-[0.2em] uppercase">SYSTEM_STATUS: READY</span>
+<h2 class="text-6xl md:text-8xl font-['Space_Grotesk'] font-black tracking-tighter leading-none text-white">ROUTINE<br/>CHECK</h2>
+</div>
+</section>
+<!-- Section: Context Toggles -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-16">
+<button class="flex items-center justify-between p-6 bg-surface-container-low border-b-4 border-surface-bright group hover:bg-surface-bright transition-all">
+<div class="flex flex-col text-left">
+<span class="font-['Space_Grotesk'] text-[10px] text-[#ff8f73] font-bold">VARIABLE_01</span>
+<span class="text-lg font-['Space_Grotesk'] font-bold text-white">NEW PRODUCT TONIGHT?</span>
+</div>
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center group-hover:bg-primary group-hover:text-black transition-colors">
+<span class="material-symbols-outlined">add</span>
+</div>
+</button>
+<button class="flex items-center justify-between p-6 bg-surface-container-low border-b-4 border-error group hover:bg-error-container transition-all">
+<div class="flex flex-col text-left">
+<span class="font-['Space_Grotesk'] text-[10px] text-error font-bold">VARIABLE_02</span>
+<span class="text-lg font-['Space_Grotesk'] font-bold text-white">SKIN ALREADY IRRITATED?</span>
+</div>
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center group-hover:bg-white group-hover:text-black transition-colors">
+<span class="material-symbols-outlined">warning</span>
+</div>
+</button>
+</section>
+<!-- Section: Step Cards (Bento Layout) -->
+<section class="mb-16">
+<div class="mb-6 flex justify-between items-end">
+<h3 class="font-['Space_Grotesk'] text-sm font-bold uppercase tracking-widest text-[#ff8f73]">03_ANALYSIS_MODES</h3>
+<span class="text-[10px] font-mono text-outline-variant">TOTAL_STEPS: 04</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-px bg-surface-bright">
+<!-- Card: Cleanse -->
+<div class="md:col-span-6 p-8 bg-surface-container-low hover:bg-surface-container-highest transition-colors flex flex-col justify-between min-h-[220px]">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">opacity</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold text-outline-variant">STEP_01</span>
+</div>
+<h4 class="text-2xl font-['Space_Grotesk'] font-black text-white mb-2">CLEANSE</h4>
+<p class="text-sm text-on-surface-variant font-['Inter'] leading-relaxed">Mild or strong surfactant? Determines baseline lipid disruption.</p>
+</div>
+<p class="mt-4 text-[10px] font-mono text-primary uppercase">Example: Sodium Lauryl Sulfate</p>
+</div>
+<!-- Card: Exfoliate -->
+<div class="md:col-span-6 p-8 bg-surface-container-low hover:bg-surface-container-highest transition-colors flex flex-col justify-between min-h-[220px]">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">grid_view</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold text-outline-variant">STEP_02</span>
+</div>
+<h4 class="text-2xl font-['Space_Grotesk'] font-black text-white mb-2">EXFOLIATE</h4>
+<p class="text-sm text-on-surface-variant font-['Inter'] leading-relaxed">AHA, BHA, or Physical? Crucial for barrier permeability.</p>
+</div>
+<p class="mt-4 text-[10px] font-mono text-primary uppercase">Example: 2% Salicylic Acid</p>
+</div>
+<!-- Card: Retinoid -->
+<div class="md:col-span-7 p-8 bg-surface-container-low hover:bg-surface-container-highest transition-colors flex flex-col justify-between min-h-[220px]">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">science</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold text-outline-variant">STEP_03</span>
+</div>
+<h4 class="text-2xl font-['Space_Grotesk'] font-black text-white mb-2">RETINOID</h4>
+<p class="text-sm text-on-surface-variant font-['Inter'] leading-relaxed">Prescription or OTC? Measures turnover acceleration vs irritation risk.</p>
+</div>
+<p class="mt-4 text-[10px] font-mono text-primary uppercase">Example: Tretinoin 0.05%</p>
+</div>
+<!-- Card: Acid -->
+<div class="md:col-span-5 p-8 bg-surface-container-low hover:bg-surface-container-highest transition-colors flex flex-col justify-between min-h-[220px]">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">colorize</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold text-outline-variant">STEP_04</span>
+</div>
+<h4 class="text-2xl font-['Space_Grotesk'] font-black text-white mb-2">ACID</h4>
+<p class="text-sm text-on-surface-variant font-['Inter'] leading-relaxed">L-Ascorbic or Derivatives? pH stability check.</p>
+</div>
+<p class="mt-4 text-[10px] font-mono text-primary uppercase">Example: Vitamin C / EAA</p>
+</div>
+</div>
+</section>
+<!-- Section: Importance Selector -->
+<section class="mb-20">
+<div class="flex flex-col gap-6">
+<div class="flex justify-between items-center">
+<label class="font-['Space_Grotesk'] text-sm font-bold uppercase tracking-widest text-[#ff8f73]">IMPORTANCE_LEVEL</label>
+<span class="font-['Space_Grotesk'] font-black text-xl text-white">CORRECTION</span>
+</div>
+<div class="relative w-full h-12 bg-surface-container-low flex items-center overflow-hidden">
+<div class="absolute inset-0 bg-surface-bright/30 w-full h-full pointer-events-none border-x border-primary/20"></div>
+<!-- Slider Track -->
+<div class="relative w-full px-1 flex items-center h-full">
+<div class="w-full h-1 bg-surface-bright flex items-center relative">
+<div class="absolute left-0 top-0 bottom-0 bg-primary w-3/4"></div>
+<div class="absolute left-3/4 -translate-x-1/2 w-8 h-8 bg-primary border-4 border-black flex items-center justify-center">
+<div class="w-1 h-3 bg-black"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-between text-[10px] font-['Space_Grotesk'] font-bold text-outline-variant uppercase">
+<span>Maintenance</span>
+<span>Moderate</span>
+<span>Correction</span>
+</div>
+</div>
+</section>
+<!-- Section: Primary Action -->
+<section class="mb-24">
+<button class="w-full bg-[#ff8f73] hover:bg-[#ff5d33] py-8 flex items-center justify-between px-10 group transition-all duration-200 shadow-[8px_8px_0px_0px_#1a1919] active:shadow-none active:translate-x-1 active:translate-y-1" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'" type="button">
+<span class="text-black font-['Space_Grotesk'] text-2xl font-black uppercase tracking-tighter">CALCULATE CLASH SCORE</span>
+<span class="material-symbols-outlined text-black text-4xl group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</button>
+<div class="mt-4 flex justify-center">
+<p class="text-[10px] font-mono text-outline-variant uppercase tracking-widest">Protocol V4.01 // Encryption: Active</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+</body></html>

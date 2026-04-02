@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed-variant": "#5d1979",
+                        "on-secondary-fixed-variant": "#5a5c5c",
+                        "on-error": "#490013",
+                        "outline": "#777575",
+                        "surface-container-high": "#201f1f",
+                        "surface-container-lowest": "#000000",
+                        "secondary-container": "#454747",
+                        "surface-container-low": "#131313",
+                        "error-dim": "#d73357",
+                        "surface-container": "#1a1919",
+                        "on-tertiary-fixed": "#310045",
+                        "tertiary-container": "#e197fc",
+                        "on-secondary-fixed": "#3e4040",
+                        "on-tertiary-container": "#530c6f",
+                        "on-surface": "#ffffff",
+                        "inverse-primary": "#b52900",
+                        "secondary-fixed-dim": "#d4d4d4",
+                        "surface": "#0e0e0e",
+                        "primary-fixed-dim": "#ff5d33",
+                        "primary-fixed": "#ff7856",
+                        "outline-variant": "#494847",
+                        "inverse-on-surface": "#565554",
+                        "on-secondary-container": "#d0d0d0",
+                        "tertiary-fixed": "#e197fc",
+                        "primary-container": "#ff7856",
+                        "tertiary-dim": "#d28aee",
+                        "on-surface-variant": "#adaaaa",
+                        "on-secondary": "#505252",
+                        "tertiary-fixed-dim": "#d28aee",
+                        "surface-dim": "#0e0e0e",
+                        "secondary-dim": "#d4d4d4",
+                        "secondary": "#e2e2e2",
+                        "background": "#0e0e0e",
+                        "on-primary-fixed-variant": "#5a1000",
+                        "error-container": "#a70138",
+                        "primary": "#ff8f73",
+                        "inverse-surface": "#fcf8f8",
+                        "on-tertiary": "#5e1b7a",
+                        "surface-variant": "#262626",
+                        "surface-container-highest": "#262626",
+                        "tertiary": "#e9aaff",
+                        "on-primary-fixed": "#000000",
+                        "on-primary-container": "#490b00",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-primary": "#5e1100",
+                        "surface-tint": "#ff8f73",
+                        "error": "#ff6e84",
+                        "surface-bright": "#2c2c2c",
+                        "on-error-container": "#ffb2b9",
+                        "on-background": "#ffffff",
+                        "primary-dim": "#db3400"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .tonal-shift { transition: background-color 0.15s ease-linear; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #0e0e0e; }
+        ::-webkit-scrollbar-thumb { background: #2c2c2c; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="gc-proto-style">
+  .gc-shell-header { background:#131313; border-bottom:1px solid #2c2c2c; padding:18px 24px 14px; margin-bottom:24px; }
+  .gc-shell-bar { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+  .gc-shell-left { display:flex; align-items:center; gap:12px; min-width:0; }
+  .gc-back { width:40px; height:40px; border:1px solid #2c2c2c; background:#0e0e0e; color:#ffffff; cursor:pointer; font-size:20px; line-height:1; }
+  .gc-brand { color:#ff8f73; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
+  .gc-global-nav { display:flex; gap:10px; flex-wrap:wrap; }
+  .gc-nav-btn { border:1px solid #2c2c2c; background:#0e0e0e; color:#9ca3af; padding:10px 14px; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; }
+  .gc-nav-btn.is-active { background:#ff8f73; color:#0e0e0e; border-color:#ff8f73; }
+  .gc-page-title { margin-top:14px; color:#ffffff; font-family:'Space Grotesk',sans-serif; font-size:32px; font-weight:700; letter-spacing:-0.04em; text-transform:uppercase; }
+  .gc-clickable { cursor:pointer; }
+  @media (max-width: 720px) {
+    .gc-shell-header { padding:16px 18px 12px; }
+    .gc-page-title { font-size:24px; }
+    .gc-global-nav { width:100%; }
+    .gc-nav-btn { flex:1; min-width:88px; }
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary gc-web-prototype">
+<header class="gc-shell-header">
+<div class="gc-shell-bar">
+<div class="gc-shell-left"><button class="gc-back" onclick="window.location.href='f40a5ab6deb94a27a2ea7804f20c9b73.html'" type="button">←</button><div class="gc-brand">Glow Clash</div></div>
+<nav class="gc-global-nav"><button class="gc-nav-btn" onclick="window.location.href='f40a5ab6deb94a27a2ea7804f20c9b73.html'" type="button">Home</button><button class="gc-nav-btn is-active" onclick="window.location.href='96e5494defcb4a51ab6757bb87855d05.html'" type="button">Check</button><button class="gc-nav-btn" onclick="window.location.href='79e27504adcd440c9f861be8ca0048ec.html'" type="button">Recent</button></nav>
+</div>
+<div class="gc-page-title">Onboarding / How To Use It</div>
+</header>
+
+<!-- TopAppBar Navigation suppressed for linear onboarding flow -->
+
+<main class="max-w-7xl mx-auto px-6 pb-24 md:px-12">
+<!-- Hero Section -->
+<section class="mt-12 mb-20 border-l-4 border-primary pl-8">
+<h2 class="text-5xl md:text-8xl font-headline font-bold tracking-tighter uppercase leading-[0.9] mb-6">
+                DIAGNOSTIC<br/>PROTOCOL
+            </h2>
+<p class="max-w-2xl text-lg md:text-xl text-on-surface-variant font-light leading-relaxed">
+                GLOW CLASH IS A HIGH-PRECISION CALCULATOR FOR DERMATOLOGICAL INTERACTIONS. TO IDENTIFY TOXIC COMBINATIONS, YOU MUST LOG EVERY ACTIVE STIMULUS IN YOUR CURRENT REGIMEN.
+            </p>
+</section>
+<!-- The Step-Card Model (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-24">
+<div class="md:col-span-4 mb-4">
+<h3 class="font-label text-xs tracking-widest text-primary uppercase">01. THE STEP-CARD MODEL</h3>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col justify-between aspect-square md:aspect-auto md:h-64 border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="water_drop">water_drop</span>
+<div>
+<h4 class="font-headline text-2xl font-bold uppercase mb-1">CLEANSE</h4>
+<p class="font-label text-[10px] text-outline-variant">SURFACE REMOVAL</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col justify-between aspect-square md:aspect-auto md:h-64 border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="grid_view">grid_view</span>
+<div>
+<h4 class="font-headline text-2xl font-bold uppercase mb-1">EXFOLIATE</h4>
+<p class="font-label text-[10px] text-outline-variant">STRATUM CORNEUM RADIANCE</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col justify-between aspect-square md:aspect-auto md:h-64 border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="science">science</span>
+<div>
+<h4 class="font-headline text-2xl font-bold uppercase mb-1">RETINOID</h4>
+<p class="font-label text-[10px] text-outline-variant">CELLULAR TURNOVER</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col justify-between aspect-square md:aspect-auto md:h-64 border-t border-outline-variant/20">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="colorize">colorize</span>
+<div>
+<h4 class="font-headline text-2xl font-bold uppercase mb-1">ACID</h4>
+<p class="font-label text-[10px] text-outline-variant">PH MANIPULATION</p>
+</div>
+</div>
+</section>
+<!-- Input Guidance & Examples -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-start">
+<div>
+<h3 class="font-label text-xs tracking-widest text-primary uppercase mb-6">02. INPUT GUIDANCE</h3>
+<h4 class="text-3xl font-headline font-bold uppercase leading-tight mb-8">
+                    SELECT EVERY HARSH STEP PRESENT IN YOUR ROUTINE.
+                </h4>
+<div class="space-y-12">
+<div class="relative pl-12">
+<span class="absolute left-0 top-0 font-headline text-4xl text-outline-variant/30 font-bold">01</span>
+<h5 class="font-headline text-lg font-bold mb-2 uppercase">MULTI-TASKING PRODUCTS</h5>
+<p class="text-on-surface-variant leading-relaxed">
+                            Even if one product serves multiple functions, select all relevant categories. A single formula can contain both chemical exfoliants and retinoids—both must be logged to calculate the interaction density accurately.
+                        </p>
+</div>
+<div class="relative pl-12">
+<span class="absolute left-0 top-0 font-headline text-4xl text-outline-variant/30 font-bold">02</span>
+<h5 class="font-headline text-lg font-bold mb-2 uppercase">CONSERVATIVE GUIDANCE</h5>
+<p class="text-on-surface-variant leading-relaxed">
+                            The algorithm defaults to maximum safety. If a molecular clash is mathematically possible, the system will flag it as <span class="text-error font-bold italic">HIGH RISK</span>.
+                        </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-8 md:p-12 relative overflow-hidden">
+<!-- Decorative scan line -->
+<div class="absolute top-0 left-0 w-full h-1 bg-primary/20"></div>
+<h3 class="font-label text-xs tracking-widest text-outline-variant uppercase mb-10">CASE STUDY / EXAMPLES</h3>
+<div class="space-y-12">
+<div class="border-l border-primary/40 pl-6">
+<p class="font-label text-[10px] text-primary mb-2 uppercase tracking-tighter">Scenario A</p>
+<p class="text-lg font-medium text-on-surface mb-4 italic">"Using a 2-in-1 exfoliating cleanser?"</p>
+<div class="flex gap-2">
+<span class="bg-surface-bright px-3 py-1 text-[10px] font-label font-bold uppercase">SELECT CLEANSE</span>
+<span class="bg-primary text-on-primary px-3 py-1 text-[10px] font-label font-bold uppercase">SELECT EXFOLIATE</span>
+</div>
+</div>
+<div class="border-l border-primary/40 pl-6">
+<p class="font-label text-[10px] text-primary mb-2 uppercase tracking-tighter">Scenario B</p>
+<p class="text-lg font-medium text-on-surface mb-4 italic">"A retinoid cream formulated with AHAs?"</p>
+<div class="flex gap-2">
+<span class="bg-primary text-on-primary px-3 py-1 text-[10px] font-label font-bold uppercase">SELECT RETINOID</span>
+<span class="bg-primary text-on-primary px-3 py-1 text-[10px] font-label font-bold uppercase">SELECT ACID</span>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-outline-variant/10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-error" data-icon="warning">warning</span>
+<p class="text-xs text-on-surface-variant uppercase tracking-wide leading-tight">
+                            Failure to log overlapping actives will result in an inaccurate "CLASH SCORE" and potential barrier damage.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="flex flex-col md:flex-row items-center justify-between gap-8 border-t-4 border-on-surface pt-12">
+<div class="flex-1">
+<h3 class="text-4xl font-headline font-bold uppercase leading-none mb-2">READY FOR ANALYSIS</h3>
+<p class="font-label text-[10px] tracking-widest text-outline-variant uppercase">SYSTEM STATUS: OPTIMAL // DATABASE: UPDATED</p>
+</div>
+<button class="group relative w-full md:w-auto bg-primary text-on-primary px-12 py-6 font-headline font-extrabold text-xl uppercase tracking-tighter transition-all hover:bg-primary-dim active:scale-95 flex items-center justify-center gap-4" onclick="window.location.href='96e5494defcb4a51ab6757bb87855d05.html'" type="button">
+                START PROTOCOL
+                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- Footer Meta -->
+
+<!-- No BottomNavBar for Onboarding Flow as per shell suppression rules -->
+</body></html>

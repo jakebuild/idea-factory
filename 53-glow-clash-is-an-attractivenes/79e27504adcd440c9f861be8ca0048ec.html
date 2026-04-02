@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Glow Clash | Recent Checks</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#ff8f73",
+              "outline-variant": "#494847",
+              "on-secondary-fixed-variant": "#5a5c5c",
+              "tertiary-dim": "#d28aee",
+              "surface": "#0e0e0e",
+              "primary-dim": "#db3400",
+              "on-secondary-container": "#d0d0d0",
+              "surface-tint": "#ff8f73",
+              "surface-dim": "#0e0e0e",
+              "surface-container-lowest": "#000000",
+              "surface-container-high": "#201f1f",
+              "on-tertiary": "#5e1b7a",
+              "on-primary": "#5e1100",
+              "background": "#0e0e0e",
+              "on-tertiary-fixed": "#310045",
+              "on-secondary": "#505252",
+              "on-error": "#490013",
+              "on-tertiary-container": "#530c6f",
+              "secondary": "#e2e2e2",
+              "surface-container-low": "#131313",
+              "inverse-surface": "#fcf8f8",
+              "on-tertiary-fixed-variant": "#5d1979",
+              "surface-bright": "#2c2c2c",
+              "on-primary-fixed-variant": "#5a1000",
+              "secondary-container": "#454747",
+              "primary-fixed-dim": "#ff5d33",
+              "on-surface": "#ffffff",
+              "on-primary-container": "#490b00",
+              "outline": "#777575",
+              "tertiary-fixed-dim": "#d28aee",
+              "primary-fixed": "#ff7856",
+              "tertiary": "#e9aaff",
+              "secondary-dim": "#d4d4d4",
+              "on-error-container": "#ffb2b9",
+              "secondary-fixed": "#e2e2e2",
+              "on-surface-variant": "#adaaaa",
+              "secondary-fixed-dim": "#d4d4d4",
+              "tertiary-container": "#e197fc",
+              "primary-container": "#ff7856",
+              "inverse-on-surface": "#565554",
+              "surface-variant": "#262626",
+              "on-background": "#ffffff",
+              "on-primary-fixed": "#000000",
+              "error-dim": "#d73357",
+              "surface-container": "#1a1919",
+              "inverse-primary": "#b52900",
+              "tertiary-fixed": "#e197fc",
+              "on-secondary-fixed": "#3e4040",
+              "error": "#ff6e84",
+              "surface-container-highest": "#262626",
+              "error-container": "#a70138"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Space Grotesk"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e0e0e;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .brutalist-border {
+            border: 2px solid #2c2c2c;
+        }
+        .coral-gradient {
+            background: linear-gradient(180deg, #ff8f73 0%, #db3400 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="gc-proto-style">
+  .gc-shell-header { background:#131313; border-bottom:1px solid #2c2c2c; padding:18px 24px 14px; margin-bottom:24px; }
+  .gc-shell-bar { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+  .gc-shell-left { display:flex; align-items:center; gap:12px; min-width:0; }
+  .gc-back { width:40px; height:40px; border:1px solid #2c2c2c; background:#0e0e0e; color:#ffffff; cursor:pointer; font-size:20px; line-height:1; }
+  .gc-brand { color:#ff8f73; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; letter-spacing:.18em; text-transform:uppercase; }
+  .gc-global-nav { display:flex; gap:10px; flex-wrap:wrap; }
+  .gc-nav-btn { border:1px solid #2c2c2c; background:#0e0e0e; color:#9ca3af; padding:10px 14px; font-family:'Space Grotesk',sans-serif; font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; }
+  .gc-nav-btn.is-active { background:#ff8f73; color:#0e0e0e; border-color:#ff8f73; }
+  .gc-page-title { margin-top:14px; color:#ffffff; font-family:'Space Grotesk',sans-serif; font-size:32px; font-weight:700; letter-spacing:-0.04em; text-transform:uppercase; }
+  .gc-clickable { cursor:pointer; }
+  @media (max-width: 720px) {
+    .gc-shell-header { padding:16px 18px 12px; }
+    .gc-page-title { font-size:24px; }
+    .gc-global-nav { width:100%; }
+    .gc-nav-btn { flex:1; min-width:88px; }
+  }
+</style>
+</head>
+<body class="antialiased gc-web-prototype">
+<header class="gc-shell-header">
+<div class="gc-shell-bar">
+<div class="gc-shell-left"><div class="gc-brand">Glow Clash</div></div>
+<nav class="gc-global-nav"><button class="gc-nav-btn" onclick="window.location.href='f40a5ab6deb94a27a2ea7804f20c9b73.html'" type="button">Home</button><button class="gc-nav-btn" onclick="window.location.href='96e5494defcb4a51ab6757bb87855d05.html'" type="button">Check</button><button class="gc-nav-btn is-active" onclick="window.location.href='79e27504adcd440c9f861be8ca0048ec.html'" type="button">Recent</button></nav>
+</div>
+<div class="gc-page-title">Recent Checks</div>
+</header>
+
+<!-- Top Navigation Anchor -->
+
+<main class="min-h-screen pb-32 pt-6 px-6 max-w-4xl mx-auto">
+<!-- Hero Summary Section -->
+<section class="mb-12">
+<div class="bg-surface-container-low p-8 border-l-4 border-primary">
+<p class="font-label text-primary text-xs tracking-[0.2em] mb-2 uppercase">Diagnostic Overview</p>
+<h2 class="font-headline text-5xl font-bold tracking-tighter leading-none mb-6">HIGH-CONTRAST<br/>HISTORY</h2>
+<div class="flex gap-8">
+<div>
+<p class="font-label text-on-surface-variant text-[10px] uppercase">Active Logs</p>
+<p class="font-headline text-2xl font-bold">07</p>
+</div>
+<div>
+<p class="font-label text-on-surface-variant text-[10px] uppercase">Risk Alerts</p>
+<p class="font-headline text-2xl font-bold text-primary">02</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Lightweight List of Recent Checks -->
+<div class="space-y-4">
+<!-- Entry 01: HIGH RISK -->
+<article class="bg-surface p-6 border-b-2 border-surface-bright flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-surface-container-low transition-all group gc-clickable" onclick="window.location.href='a9dd637df92d46259bcae697f8fe5cb1.html'">
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-2">
+<span class="font-label text-[10px] text-on-surface-variant tracking-widest">OCT 24, 2023</span>
+<span class="font-label text-[10px] px-2 py-0.5 bg-primary text-on-primary-container font-bold">HIGH RISK</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">Retinoid + AHA + BHA</h3>
+<p class="font-body text-sm text-on-surface-variant mt-1">Severe skin barrier compromise likely. High inflammation potential.</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="text-right hidden md:block">
+<p class="font-label text-[10px] text-on-surface-variant uppercase">Conflict Index</p>
+<p class="font-headline text-xl text-primary font-bold">92%</p>
+</div>
+<button class="bg-surface-bright p-4 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all" onclick="window.location.href='a9dd637df92d46259bcae697f8fe5cb1.html'" type="button">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Entry 02: STABLE -->
+<article class="bg-surface p-6 border-b-2 border-surface-bright flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-surface-container-low transition-all group gc-clickable" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'">
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-2">
+<span class="font-label text-[10px] text-on-surface-variant tracking-widest">OCT 22, 2023</span>
+<span class="font-label text-[10px] px-2 py-0.5 bg-surface-bright text-on-surface font-bold">STABLE</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">Vitamin C + SPF 50</h3>
+<p class="font-body text-sm text-on-surface-variant mt-1">Synergistic antioxidant protection. Safe for morning routine.</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="text-right hidden md:block">
+<p class="font-label text-[10px] text-on-surface-variant uppercase">Conflict Index</p>
+<p class="font-headline text-xl text-white font-bold">04%</p>
+</div>
+<button class="bg-surface-bright p-4 text-white group-hover:bg-on-surface group-hover:text-surface transition-all" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'" type="button">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Entry 03: MODERATE -->
+<article class="bg-surface p-6 border-b-2 border-surface-bright flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-surface-container-low transition-all group gc-clickable" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'">
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-2">
+<span class="font-label text-[10px] text-on-surface-variant tracking-widest">OCT 20, 2023</span>
+<span class="font-label text-[10px] px-2 py-0.5 bg-tertiary-container text-on-tertiary-container font-bold">MODERATE</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">Niacinamide + L-Ascorbic Acid</h3>
+<p class="font-body text-sm text-on-surface-variant mt-1">Ph sensitivity clash. May cause flushing in sensitive individuals.</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="text-right hidden md:block">
+<p class="font-label text-[10px] text-on-surface-variant uppercase">Conflict Index</p>
+<p class="font-headline text-xl text-tertiary-dim font-bold">45%</p>
+</div>
+<button class="bg-surface-bright p-4 text-white group-hover:bg-tertiary-container group-hover:text-on-tertiary-container transition-all" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'" type="button">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Entry 04: HIGH RISK -->
+<article class="bg-surface p-6 border-b-2 border-surface-bright flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-surface-container-low transition-all group gc-clickable" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'">
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-2">
+<span class="font-label text-[10px] text-on-surface-variant tracking-widest">OCT 18, 2023</span>
+<span class="font-label text-[10px] px-2 py-0.5 bg-primary text-on-primary-container font-bold">HIGH RISK</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">Benzoyl Peroxide + Adapalene</h3>
+<p class="font-body text-sm text-on-surface-variant mt-1">Aggressive acne protocol. Moisture barrier protection mandatory.</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="text-right hidden md:block">
+<p class="font-label text-[10px] text-on-surface-variant uppercase">Conflict Index</p>
+<p class="font-headline text-xl text-primary font-bold">88%</p>
+</div>
+<button class="bg-surface-bright p-4 text-primary group-hover:bg-primary group-hover:text-on-primary transition-all" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'" type="button">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Entry 05: STABLE -->
+<article class="bg-surface p-6 border-b-2 border-surface-bright flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-surface-container-low transition-all group gc-clickable" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'">
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-2">
+<span class="font-label text-[10px] text-on-surface-variant tracking-widest">OCT 15, 2023</span>
+<span class="font-label text-[10px] px-2 py-0.5 bg-surface-bright text-on-surface font-bold">STABLE</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">Ceramides + Hyaluronic Acid</h3>
+<p class="font-body text-sm text-on-surface-variant mt-1">Optimal barrier repair combination. Post-treatment recovery.</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="text-right hidden md:block">
+<p class="font-label text-[10px] text-on-surface-variant uppercase">Conflict Index</p>
+<p class="font-headline text-xl text-white font-bold">00%</p>
+</div>
+<button class="bg-surface-bright p-4 text-white group-hover:bg-on-surface group-hover:text-surface transition-all" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'" type="button">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Entry 06: STABLE -->
+<article class="bg-surface p-6 border-b-2 border-surface-bright flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-surface-container-low transition-all group gc-clickable" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'">
+<div class="flex-1">
+<div class="flex items-center gap-4 mb-2">
+<span class="font-label text-[10px] text-on-surface-variant tracking-widest">OCT 12, 2023</span>
+<span class="font-label text-[10px] px-2 py-0.5 bg-surface-bright text-on-surface font-bold">STABLE</span>
+</div>
+<h3 class="font-headline text-xl font-bold uppercase tracking-tight">Peptides + Niacinamide</h3>
+<p class="font-body text-sm text-on-surface-variant mt-1">Anti-aging support. Low irritation risk for all skin types.</p>
+</div>
+<div class="flex items-center gap-6">
+<div class="text-right hidden md:block">
+<p class="font-label text-[10px] text-on-surface-variant uppercase">Conflict Index</p>
+<p class="font-headline text-xl text-white font-bold">12%</p>
+</div>
+<button class="bg-surface-bright p-4 text-white group-hover:bg-on-surface group-hover:text-surface transition-all" onclick="window.location.href='4e642882becc4edbb45a4b83f8c85c59.html'" type="button">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Editorial Footer Meta -->
+<footer class="mt-24 border-t-2 border-surface-bright pt-12 pb-24 text-center">
+<p class="font-headline text-4xl font-extrabold text-surface-bright tracking-tighter mb-4">GLOW CLASH</p>
+<p class="font-label text-[10px] text-on-surface-variant tracking-[0.3em] uppercase">Scientific Skin Analytics</p>
+<p class="font-label text-[10px] text-on-secondary-fixed-variant mt-8 uppercase tracking-widest">Protocol Version 4.0.2</p>
+</footer>
+</main>
+<!-- Bottom Navigation Shell -->
+
+<!-- Contextual FAB - Suppression Logic: Hidden on List View to emphasize content as per instructions -->
+</body></html>
