@@ -95,3 +95,10 @@
 **Copies:** Rocket Money — proved people pay for a blunt deadline-and-dollars-at-risk reveal when the pain is silent until it is too late
 **Hook:** It kills one of the most common adult panic moments by turning a vague refill worry into one exact date you cannot ignore.
 **Submit:** idea-factory submit "Refill Clock is a fear-of-loss app that copies the Rocket Money model but applies it to prescription anxiety instead of subscriptions. You photograph a prescription label, enter roughly how many pills are left, and the app calculates your exact run-out date, refill lead time, and risk window before you get stuck without medication. The reveal is instant and screen-recordable: a blunt screen that says 'You will run out of Lexapro in 6 days and your refill usually needs 3 business days,' plus a countdown and escalating reminders before the cliff. The core loop is scan once, make tiny pill-count adjustments, and come back because refill panic is not a one-time problem."
+
+## FreshClock
+**Source:** mix-20260402-181305.md
+**Targets:** Fear of Loss
+**Copies:** Rocket Money — proved deadline-plus-dollars-at-risk reveals make invisible losses feel urgent enough to pay to avoid
+**Hook:** It turns fridge guilt into a visible countdown before your leftovers quietly become both waste and a health risk.
+**Submit:** idea-factory submit "FreshClock is a fear-of-loss app that copies the Rocket Money model but applies it to fridge waste instead of subscriptions. You snap a leftover container, grocery pack, or takeout receipt, and the app turns it into one exact eat-by deadline based on food type, storage method, and when it entered the fridge. The reveal is instant and screen-recordable: a blunt screen that says 'Eat this chicken by tomorrow 1:10 PM or toss $18 and risk a bad night,' plus a live spoil clock and escalating reminders before it becomes trash. The core loop is save food in under five seconds, watch the countdown, and come back because leftovers and half-used groceries keep quietly turning into waste."
