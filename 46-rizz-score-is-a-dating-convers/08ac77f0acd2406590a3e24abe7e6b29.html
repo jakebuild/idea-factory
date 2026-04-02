@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Review Redactions - Velocity AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#004ced",
+              "surface-dim": "#d8dadc",
+              "on-secondary-fixed": "#0d1c2e",
+              "on-primary-fixed": "#001452",
+              "surface": "#f7f9fb",
+              "on-secondary-container": "#57657a",
+              "on-error": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#891e00",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#f2f4f6",
+              "secondary-container": "#d5e3fc",
+              "primary": "#003ec7",
+              "secondary-fixed-dim": "#b9c7df",
+              "on-surface-variant": "#434656",
+              "secondary": "#515f74",
+              "on-primary": "#ffffff",
+              "surface-variant": "#e0e3e5",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#d5e3fc",
+              "inverse-primary": "#b7c4ff",
+              "outline": "#737688",
+              "surface-container": "#eceef0",
+              "tertiary": "#952200",
+              "surface-container-highest": "#e0e3e5",
+              "on-tertiary-container": "#ffddd5",
+              "on-surface": "#191c1e",
+              "error": "#ba1a1a",
+              "primary-fixed": "#dde1ff",
+              "on-tertiary-fixed": "#3c0800",
+              "on-error-container": "#93000a",
+              "inverse-surface": "#2d3133",
+              "primary-container": "#0052ff",
+              "tertiary-fixed-dim": "#ffb4a1",
+              "outline-variant": "#c3c5d9",
+              "surface-bright": "#f7f9fb",
+              "inverse-on-surface": "#eff1f3",
+              "tertiary-container": "#bf3003",
+              "on-secondary-fixed-variant": "#3a485b",
+              "on-background": "#191c1e",
+              "primary-fixed-dim": "#b7c4ff",
+              "tertiary-fixed": "#ffdbd2",
+              "on-primary-fixed-variant": "#0038b6",
+              "on-tertiary": "#ffffff",
+              "surface-container-high": "#e6e8ea",
+              "on-primary-container": "#dfe3ff",
+              "background": "#f7f9fb"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        vertical-align: middle;
+      }
+      .redaction-tag {
+        box-shadow: inset 0 1px 1px rgba(255,255,255,0.2);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="prototype-shell">
+  body{background:#f7f9fb!important;color:#191c1e!important;padding-top:92px!important;padding-bottom:114px!important;min-height:844px!important;}
+  .proto-status{position:fixed;top:0;left:0;right:0;height:28px;background:#f7f9fb;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font:600 12px/1 Inter,sans-serif;color:#191c1e;z-index:1000;border-bottom:1px solid rgba(67,70,86,.08)}
+  .proto-header{position:fixed;top:28px;left:0;right:0;height:64px;background:rgba(247,249,251,.92);backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;padding:0 18px;z-index:1000;border-bottom:1px solid rgba(67,70,86,.12)}
+  .proto-header-left{display:flex;align-items:center;gap:12px;min-width:0}
+  .proto-back{width:36px;height:36px;border:none;border-radius:18px;background:#e9eefc;color:#003ec7;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;cursor:pointer}
+  .proto-back.hidden{visibility:hidden}
+  .proto-title{font:800 18px/1.1 Manrope,sans-serif;color:#191c1e;letter-spacing:-.02em}
+  .proto-sub{font:500 11px/1 Inter,sans-serif;color:#6b7280;margin-top:4px}
+  .proto-privacy{position:fixed;left:16px;right:16px;bottom:82px;height:34px;border-radius:17px;background:rgba(255,255,255,.9);backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:center;gap:6px;font:600 12px/1 Inter,sans-serif;color:#003ec7;z-index:999;border:1px solid rgba(0,62,199,.12);text-decoration:none}
+  .proto-tabbar{position:fixed;left:12px;right:12px;bottom:12px;height:64px;border-radius:24px;background:rgba(255,255,255,.94);backdrop-filter:blur(22px);box-shadow:0 8px 30px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(3,1fr);padding:6px;z-index:1000;border:1px solid rgba(67,70,86,.08)}
+  .proto-tab{border:none;background:transparent;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#6b7280;font:600 11px/1 Inter,sans-serif;cursor:pointer}
+  .proto-tab-icon{font-size:18px;line-height:1}
+  .proto-tab.active{background:#e9eefc;color:#003ec7}
+
+  .proto-cta-row{position:fixed;left:16px;right:16px;bottom:126px;display:grid;grid-template-columns:1fr 1.2fr;gap:10px;z-index:999}
+  .proto-cta{height:44px;border:none;border-radius:18px;font:700 13px/1 Inter,sans-serif;cursor:pointer}
+  .proto-cta.secondary{background:#e9eefc;color:#003ec7}
+  .proto-cta.primary{background:linear-gradient(135deg,#003ec7 0%,#0052ff 100%);color:#fff;box-shadow:0 8px 22px rgba(0,62,199,.2)}
+</style></head>
+<body class="bg-background font-body text-on-surface min-h-screen pb-40"><div class="proto-status"><span>9:41</span><span>●●● 100%</span></div>
+<div class="proto-header">
+<div class="proto-header-left">
+<button class="proto-back" onclick="window.location.href='68da8b386b9444149fba08313e689e7d.html'">‹</button>
+<div>
+<div class="proto-title">Review Redactions</div>
+<div class="proto-sub">Paste, redact, and generate</div>
+</div>
+</div>
+<div class="proto-sub">Fast, redacted, local-first</div>
+</div>
+<div class="proto-cta-row"><button class="proto-cta secondary" onclick="window.location.href='68da8b386b9444149fba08313e689e7d.html'">Back to Edit</button><button class="proto-cta primary" onclick="window.location.href='1d69cda44d5e479da7b25e6c1f606d40.html'">Confirm &amp; Analyze</button></div><a class="proto-privacy" href="javascript:void(0)" onclick="window.location.href='be7040b55c7b47549c6ec8af7813e2f1.html'">Privacy &amp; How It Works</a><div class="proto-tabbar"><button class="proto-tab" onclick="window.location.href='3e9e43720f384eac8b151cf8719e22a6.html'"><span class="proto-tab-icon">home</span><span>Home</span></button><button class="proto-tab active" onclick="window.location.href='68da8b386b9444149fba08313e689e7d.html'"><span class="proto-tab-icon">forum</span><span>Analyze</span></button><button class="proto-tab" onclick="window.location.href='054ee4c27c234d8bad5c816652ae843b.html'"><span class="proto-tab-icon">history</span><span>History</span></button></div>
+<!-- TopAppBar -->
+<main class="pt-24 px-6 max-w-3xl mx-auto">
+<!-- Summary Header -->
+<!-- Tooling Bar (Inline) -->
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-xs uppercase tracking-widest font-bold text-on-surface-variant/60">Conversation Preview</h3>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-low hover:bg-surface-container-highest transition-colors rounded-full text-sm font-semibold text-primary">
+<span class="material-symbols-outlined text-[18px]" data-icon="edit_square">edit_square</span>
+                Manual Redact
+            </button>
+</div>
+<!-- Conversation Feed -->
+<div class="space-y-8">
+<!-- Message 1 -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2 mb-1">
+<span class="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-[10px] font-bold text-primary">AI</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-tighter">System Output</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.02)] leading-relaxed">
+                    Hello, I've processed the document. It appears that 
+                    <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-primary text-white rounded font-mono text-sm redaction-tag">
+                        [Name]
+                        <button class="hover:bg-white/20 rounded transition-colors px-0.5 leading-none">
+<span class="material-symbols-outlined text-[14px]" data-icon="close">close</span>
+</button>
+</span> 
+                    from the 
+                    <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-zinc-900 text-white rounded font-mono text-sm redaction-tag">
+                        [Location]
+                        <button class="hover:bg-white/20 rounded transition-colors px-0.5 leading-none">
+<span class="material-symbols-outlined text-[14px]" data-icon="close">close</span>
+</button>
+</span> 
+                    office has already submitted the initial claim for the Q3 audit.
+                </div>
+</div>
+<!-- Message 2 -->
+<div class="flex flex-col gap-2 items-end">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-tighter">User Input</span>
+<span class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center text-[10px] font-bold text-on-secondary-container">U</span>
+</div>
+<div class="bg-primary/5 p-6 rounded-2xl border-r-4 border-primary/20 leading-relaxed text-right max-w-[90%]">
+                    Thanks. Can you verify if 
+                    <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-primary text-white rounded font-mono text-sm redaction-tag">
+                        [Name]
+                        <button class="hover:bg-white/20 rounded transition-colors px-0.5 leading-none">
+<span class="material-symbols-outlined text-[14px]" data-icon="close">close</span>
+</button>
+</span> 
+                    approved the budget increase as well? I need to send this to 
+                    <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-primary text-white rounded font-mono text-sm redaction-tag">
+                        [Name]
+                        <button class="hover:bg-white/20 rounded transition-colors px-0.5 leading-none">
+<span class="material-symbols-outlined text-[14px]" data-icon="close">close</span>
+</button>
+</span> 
+                    by EOD.
+                </div>
+</div>
+<!-- Suggested Addition -->
+<div class="p-6 rounded-2xl border-2 border-dashed border-outline-variant bg-surface-container-low/50 flex items-start gap-4">
+<div class="p-2 bg-white rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface mb-1">Potential miss detected</h4>
+<p class="text-sm text-on-surface-variant mb-3">Should "Q3 audit" be redacted as a sensitive project name?</p>
+<button class="text-xs font-bold text-primary flex items-center gap-1 hover:underline">
+<span class="material-symbols-outlined text-[14px]" data-icon="add_circle">add_circle</span>
+                        REDACT "Q3 AUDIT"
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Actions & Shell -->
+<!-- Floating Security Chip (Aesthetic reinforcement) -->
+<div class="fixed top-20 right-6 hidden lg:block">
+<div class="bg-white/60 backdrop-blur-md p-4 rounded-2xl border border-white/40 shadow-xl flex items-center gap-3 max-w-[200px]">
+<div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+<div class="flex flex-col">
+<span class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Security Level</span>
+<span class="text-sm font-headline font-bold text-on-surface">Ultra-Secure AI</span>
+</div>
+</div>
+</div>
+</body></html>

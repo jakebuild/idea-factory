@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Idea Factory — Design Preview</title>
+<!-- IDEA_DATA injected here by design agent -->
+<script>window.IDEA_DATA = {"ideaNum": 46, "title": "Chat Unsticker", "sub": "Reply ideas for stalled dating chats, with a redaction check before AI analysis.", "score": "5/10", "deviceType": "MOBILE", "stitchId": "2798698762068971701", "startScreen": 0, "screens": [{"id": "3e9e43720f384eac8b151cf8719e22a6", "label": "Landing / Home"}, {"id": "68da8b386b9444149fba08313e689e7d", "label": "Input Screen"}, {"id": "08ac77f0acd2406590a3e24abe7e6b29", "label": "Redaction Review Screen"}, {"id": "1d69cda44d5e479da7b25e6c1f606d40", "label": "Loading / Analysis State"}, {"id": "cdcbbfd60b2b4c13857208e8c577d6dc", "label": "Results Screen"}, {"id": "054ee4c27c234d8bad5c816652ae843b", "label": "History Log Screen"}, {"id": "be7040b55c7b47549c6ec8af7813e2f1", "label": "Privacy / How It Works"}, {"id": "43e61213d0234eb3be6fdb52f133a694", "label": "Error State"}], "timeline": [{"status": "", "icon": "💡", "title": "Original Idea", "desc": "Dating chat analyzer that scored rizz and suggested one fix.", "body": "<div class=\"esect\"><div class=\"esect-label\">Original Idea</div><p>Rizz Score is a dating conversation analyzer that copies the Crystal Knows model but focuses on a sharper reveal: paste your last 10-15 messages with a match and the app scores your Rizz across four dimensions - confidence, intrigue, availability, and wit - then gives you one blunt fix to increase your reply rate. The reveal is instant: a score out of 10, a one-line diagnosis like &#x27;you are double-texting and answering too fast,&#x27; and one specific change for your next message. Works for Hinge, Bumble, Tinder, and Instagram DMs with no account required, and the loop is natural because every new match is a new test.</p><div class=\"tag-row\"><span class=\"etag blue\">v1</span></div></div>"}, {"status": "critique", "icon": "🔍", "title": "Critique v1", "desc": "Initial critique of the scoring-led dating coach concept.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "5/10", "body": "<div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>The value prop is immediately legible. &quot;Paste messages, get roasted, improve your next reply&quot; is simple enough for a stranger to understand in five seconds.</li><li>The MVP is technically lightweight. A solo developer can ship a paste box, LLM scoring, and a shareable result without needing a giant backend.</li><li>The emotional hook is strong because dating insecurity is real and people will absolutely try a tool that promises a blunt answer.</li><li>The reveal format is decent product packaging. A score, one-line diagnosis, and one next-message fix is tighter than generic AI dating advice sludge.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>&quot;Rizz Score&quot; is catchy, but the product is mostly horoscope software for texts. You are pretending there is objective signal in 10-15 cherry-picked messages when there usually is not.</li><li>Your four dimensions sound made up. Confidence, intrigue, availability, and wit are branding words, not validated predictors of reply rate.</li><li>The app claims causality it cannot prove. A bad reply rate can come from attraction mismatch, dead app users, boring profile, weak opener, bad timing, or the other person dating three other people. Your product will confidently diagnose the wrong problem a lot.</li><li>&quot;One blunt fix&quot; is a nice reveal and a bad system. Real conversations are contextual. A single prescription will be wrong often enough that users stop trusting the tool.</li><li>The retention story is thinner than you think. &quot;Every new match is a new test&quot; is not a real loop; it is just a new occasion to use the same novelty gimmick. Why does the user come back after day 1?</li><li>The product risks making people worse at dating. If the model over-indexes on teasing, scarcity, or fake confidence, you are basically mass-producing cringe with a score attached.</li><li>No account required helps conversion, but it also kills continuity, personalization, and longitudinal learning. So you lose both data moat and habit loop.</li><li>People do not naturally have clean transcripts ready to paste. They have screenshots, partial copied text, mixed timestamps, and platform formatting mess. That friction is small enough to ignore in a pitch and large enough to hurt real usage.</li><li>Privacy is not a side issue here; it is the whole trust barrier. You are asking users to paste intimate conversations involving another person who did not consent. That is creepy, risky, and conversion-killing.</li><li>The &quot;works for Hinge, Bumble, Tinder, Instagram DMs&quot; claim is mostly marketing filler. If users are just pasting text, the source app barely matters. If you imply deeper platform-specific insight, that is fake sophistication.</li><li>&quot;Copy Crystal Knows for dating&quot; is not flattering positioning. It sounds derivative before the user even opens the app.</li><li>The output is easy to generate and hard to defend. That is the worst kind of AI product: instant demo candy, weak repeated value.</li><li>Shareability is awkward. People may share a funny score once, but many will not publicly post that an app told them they text like a desperate labradoodle.</li><li>Monetization is shaky. Casual users will not pay much for one-off feedback, and power users who do care will quickly ask why they should trust this app more than ChatGPT with a better prompt.</li><li>You have a cold-start credibility problem. If the score is harsh, users call it fake. If it is flattering, users call it useless. If it is mixed, it feels generic. That is a brutal product box.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Key Questions</div><ul><li>What evidence do you have that your four scoring dimensions correlate with better reply rates rather than just sounding plausible?</li><li>Why does the user come back after day 1?</li><li>What is the trust mechanism that makes this feel smarter than &quot;paste convo into a general AI model&quot;?</li><li>How will you handle privacy, consent, storage, and deletion for copied dating conversations?</li><li>What is the smallest useful unit of input: raw pasted text, screenshots, or structured back-and-forth messages?</li><li>Are you building a joke tool, a self-improvement tool, or a serious dating assistant? The tone, retention, and monetization differ a lot.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Suggestions</div><ul><li>Stop pretending it is a precise score engine. Position it as a blunt conversation coach with probabilistic feedback, not fake scientific grading.</li><li>Cut the four-dimension framework unless you can prove it matters. One overall diagnosis plus two concrete rewrite options is more believable and more useful.</li><li>Add immediate utility beyond judgment: generate the next reply in three tones and explain the tradeoff of each.</li><li>Pick one wedge instead of &quot;all dating apps plus Instagram.&quot; For MVP, &quot;analyze your stalled dating chat and propose a better next message&quot; is cleaner.</li><li>Build around outcomes you can actually measure. Ask users whether they sent the suggestion and whether they got a reply, then use that as a crude feedback loop.</li><li>Make privacy a feature, not a footnote: local processing where possible, clear deletion language, and obvious redaction controls.</li><li>Test whether screenshots are the real input format users want. If yes, text-only paste is not the whole product.</li><li>If you want this to be more than a novelty, the better angle may be &quot;unstick dead chats&quot; rather than &quot;score your rizz.&quot; Scores are entertaining; reply suggestions are useful.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE - the barebones version is easy, but the hard part is not coding; it is making the advice feel consistently useful enough that people return instead of trying it once and bouncing.</li><li>Biggest solo complexity traps: weak retention masked by a flashy demo, privacy/trust concerns around pasted conversations, messy input formatting and screenshot handling, prompt quality drift leading to generic advice, no defensible moat versus general-purpose AI, and overclaiming predictive accuracy without real validation data.</li></ul></div>"}, {"status": "improve", "icon": "✨", "title": "Improved v2", "desc": "Scope reduced and core value clarified.", "body": "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Dropped the Rizz Score and four-dimension framework entirely. Confidence, intrigue, availability, and wit are branding words, not validated predictors. The critique was right: it was horoscope software with a numeric veneer. The new output is one blunt diagnosis + three reply options in distinct tones - which is immediately actionable and doesn&#x27;t pretend to be science.</li><li>Pivoted the core use case from &quot;score your rizz&quot; to &quot;unstick a dead chat.&quot; The critique explicitly called this out as the better angle: scores are entertaining once; reply suggestions are useful every time a conversation goes cold. This sharpens the wedge - users come with a specific, painful problem (chat died, don&#x27;t know what to say) and leave with something they can actually send tonight.</li><li>Added outcome tracking as the retention mechanic. &quot;Did you get a reply?&quot; is a one-tap question after the user sends a suggestion. Stored locally (no account), this builds a personal track record of what reply styles work for them - playful, direct, or curious. That history is the reason to come back in week 2: they have real data on themselves, not generic AI advice.</li><li>Made privacy the product headline, not a footnote. No server-side storage of conversations. Conversations are sent to the LLM API, processed, and never logged. This is stated front and center on the input screen - because the critique identified this as the whole trust barrier, not a side concern.</li><li>Cut all platform-specific claims. &quot;Works for Hinge, Bumble, Tinder, Instagram DMs&quot; was marketing filler. The input is plain pasted text. Platform doesn&#x27;t matter and pretending it does is fake sophistication.</li></ul><div class=\"tag-row\"><span class=\"etag blue\">v2</span></div></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>What&#x27;s in v1:</li><li>Text paste input with character guidance (10-15 messages)</li><li>Privacy statement on input screen (no storage, processed and discarded)</li><li>One-line diagnosis of what&#x27;s happening in the conversation</li><li>Three reply options with tone labels (playful, direct, curious) and one-line tradeoff each</li><li>&quot;Did it work?&quot; one-tap outcome tracker stored in local storage</li><li>Simple history view: past sessions and their outcomes (yes/no/waiting)</li><li>What&#x27;s out of v1:</li><li>Rizz Score or any numeric scoring - cut entirely per critique</li><li>Four-dimension framework (confidence, intrigue, availability, wit) - cut entirely</li><li>Platform-specific analysis or deep-links to dating apps - cut entirely</li><li>Screenshot input - deferred; text paste is the MVP input</li><li>Account creation or cloud sync - deferred; local storage only</li><li>Social sharing of scores - cut entirely (privacy mismatch)</li><li>Monetization/paywall - deferred to validate retention first</li><li>Estimated build time with AI coding tools: 10-14 days</li><li>LLM prompt design and testing: 2-3 days (hardest part - getting consistent, tone-differentiated output)</li><li>UI build: 4-5 days (input, results, outcome tracker, history)</li><li>Privacy copy + trust UX: 1 day</li><li>Polish + QA: 2 days</li></ul></div>"}, {"status": "critique", "icon": "🔍", "title": "Critique v2", "desc": "Second critique after the first scope-down and product reframing.", "verdict": "WORTH BUILDING", "verdictClass": "worth", "score": "6/10", "body": "<div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>The pivot is directionally correct. &quot;Unstick a dead chat&quot; is a real pain, while &quot;score your rizz&quot; was novelty garbage.</li><li>The output is now actionable. Three reply options beat a fake personality score every time.</li><li>The MVP scope is actually solo-buildable. Paste box, prompt, results, local history, done.</li><li>Cutting platform claims was smart. Plain text input is honest and keeps the product from pretending it has secret app-specific insight.</li><li>Privacy-first positioning is necessary here. Making it front-and-center is not optional, and at least this version understands that.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>This is still a thin wrapper around &quot;paste convo into ChatGPT and ask for 3 replies.&quot; If the product magic is just prompt formatting, users will defect the second they realize that.</li><li>Your core differentiator is UNVERIFIED. You claim the tool gets better because users tap whether they got a reply, but a single yes/no outcome is junk data. A reply can depend on attraction, timing, the other person being bored at work, or pure luck.</li><li>The retention story is still soft. Why does the user come back after day 1? Because another chat stalls? That is not a habit loop, that is a maybe-useful utility for intermittent pain.</li><li>&quot;Personal track record&quot; sounds better than it is. Local-only history means tiny sample sizes, no cross-user learning, no real personalization engine, and no moat.</li><li>The privacy story is cleaner in copy than in reality. &quot;We never store your messages&quot; is nice, but you are still sending intimate conversation data to a third-party LLM API. Many users will hear &quot;AI reads my dating chats&quot; and bounce.</li><li>You are one creepy screenshot away from a trust collapse. These chats often include sexual content, personal details, and identifiable info. A solo dev handling that trust surface is not trivial just because you avoided building a backend.</li><li>The diagnosis feature is still flirting with fake authority. &quot;You&#x27;ve asked four questions, they&#x27;ve asked zero&quot; is fine. Anything more interpretive starts sliding back into horoscope mode.</li><li>The three-tone structure is useful, but also dangerously template-y. If the outputs feel samey, users will notice fast: playful = tease, direct = confidence theater, curious = ask another question. That gets stale immediately.</li><li>There is no proof the app improves outcomes versus a user writing normally. That means the product cannot honestly promise results, only suggestions. The second marketing gets more ambitious than that, it becomes bullshit.</li><li>The input flow is still higher friction than the pitch admits. People do not have clean &quot;last 10-15 messages&quot; ready. They have screenshots, message bubbles, timestamps, and half-context. Manual paste is fine for MVP, but it will absolutely suppress usage.</li><li>Outcome tracking may be too weak to matter and too annoying to sustain. Most users will copy a line, send it, move on with life, and never come back to tap &quot;yes&quot; or &quot;no.&quot;</li><li>Dating conversation help is not a daily workflow. It is episodic, emotional, and highly substitutable. That is bad terrain for retention and even worse terrain for monetization.</li><li>If the blunt diagnosis is harsh, users may feel judged and churn. If it is soft, it feels generic. You still have a narrow lane between &quot;insult bot&quot; and &quot;useless coach.&quot;</li><li>You keep saying &quot;no account required&quot; like it is free upside. It also means no reminders, no sync, no recovery, no multi-device continuity, and a weaker comeback loop.</li><li>This product is useful enough to try once and weak enough to never become a business. That is the danger zone.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Key Questions</div><ul><li>Why does the user come back after day 1?</li><li>What makes this meaningfully better than a saved prompt in ChatGPT or Claude?</li><li>How often do users actually return to mark outcomes instead of forgetting instantly?</li><li>What exact privacy language can you defend if the LLM provider may retain abuse-monitoring logs or transient processing data?</li><li>How will you stop the diagnosis from drifting into overconfident fiction?</li><li>If users want screenshot upload in week one, does the MVP still hold up?</li><li>What is the monetization path if usage is occasional and trust-sensitive?</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Suggestions</div><ul><li>Strip the positioning down even further: this is a &quot;next reply generator for stalled chats,&quot; not a coach, not a system, not a personalized engine yet.</li><li>Treat diagnosis as evidence-based only. Count visible patterns in the text and avoid mind-reading claims about attraction or psychology.</li><li>Make the product win on speed. If it does not beat opening ChatGPT and pasting the same chat, you have no product.</li><li>Add redaction helpers before analysis so users can remove names and sensitive details without thinking.</li><li>Test whether users will actually log outcomes for seven days. If not, stop pretending local history is your retention engine.</li><li>Consider dropping history-as-personalization from the headline until you have enough real usage to justify it.</li><li>If screenshot demand appears immediately, either add OCR fast or admit the MVP has major input friction.</li><li>Do not build extra layers until you verify two things: users trust the paste step and at least some of them come back for a second stalled chat.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? YES - the app is small enough, but &quot;shipping&quot; is not the hard part; proving anyone trusts it and returns is.</li><li>Biggest solo complexity traps: privacy and consent optics around sending dating chats to an LLM, prompt tuning to avoid repetitive cringe replies, building trust without overclaiming, weak outcome data that looks like personalization but is not, screenshot/OCR pressure if paste friction is high, and no real moat against general-purpose AI.</li></ul></div>"}, {"status": "improve", "icon": "✨", "title": "Improved v3", "desc": "Privacy and speed repositioning sharpened the product.", "body": "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Dropped outcome tracking as the retention story. The critique was direct: yes/no outcome data is junk - a reply depends on attraction, timing, and the other person being bored at work, not whether your line was good. Framing local outcome history as &quot;personalization&quot; was a lie. V3 is honest: this is an intermittent utility. The real comeback loop is your next stalled chat, not tapping outcomes to train a fake AI coach. Outcome logging is demoted to an optional lightweight note you can leave - not the product pitch.</li><li>Added a client-side auto-redaction step as the trust differentiator. The critique identified the privacy trust gap: &quot;we don&#x27;t store your messages&quot; is incomplete when you&#x27;re still piping intimate dating chats to a third-party LLM API. V3 adds a redaction review screen between input and analysis. Before anything leaves the device, the app detects likely names, handles, and sensitive details and replaces them with placeholders ([Name], [Her], [Him]). The user reviews and confirms. This is something you cannot replicate by pasting raw text into ChatGPT - it converts the trust barrier into a visible trust-building step.</li><li>Speed becomes the headline, not personalization. The critique&#x27;s sharpest question: &quot;What makes this meaningfully better than a saved prompt in ChatGPT?&quot; The answer is: this is purpose-built for the exact moment when you&#x27;re staring at a dead chat on your phone. No blank prompt box, no &quot;how should I phrase this request,&quot; no context-setting. Open → paste → redact → tap → replies in under 30 seconds. The product must win on that benchmark or it has no reason to exist.</li><li>Diagnosis is strictly evidence-only. The critique said: count visible patterns, stop mind-reading. V3 enforces this in the prompt contract. The diagnosis can only report observable structure: message count imbalance, question ratio, response length trend, visible double-texts. It cannot interpret attraction, psychology, or what the other person is thinking. If the LLM tries to editorialize, the prompt rejects it. This keeps the tool defensible.</li></ul><div class=\"tag-row\"><span class=\"etag blue\">v3</span></div></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>What&#x27;s in v1:</li><li>Text paste input with message count guidance</li><li>Client-side auto-redaction step: detects names and identifiers, shows user a review screen with toggle-able placeholders before analysis</li><li>Privacy disclosure that is technically accurate: &quot;Your redacted conversation is sent to an AI API for processing. We do not log or store it on our end. The AI provider may process it transiently per their terms.&quot;</li><li>Evidence-only one-line diagnosis (pattern counts only, no psychology)</li><li>Three reply options: context-specific, written from actual conversation content, with a one-line &quot;when to use this&quot; note for each</li><li>Copy-to-clipboard on each reply</li><li>Optional lightweight session log stored locally: date, diagnosis snippet, which reply you copied (no outcome tracking, no stats)</li><li>What&#x27;s out of v1:</li><li>Rizz Score or any numeric scoring - cut in v1, remains cut</li><li>Four-dimension framework - cut in v1, remains cut</li><li>Platform-specific claims or deep links - cut in v1, remains cut</li><li>Screenshot / OCR input - deferred; paste is MVP input</li><li>Outcome tracking as retention mechanic - demoted from core feature to optional note field; not the product pitch</li><li>&quot;Personal track record&quot; or personalization claims - removed entirely</li><li>Summary stats (&quot;You&#x27;ve sent 7 suggestions - 5 got replies&quot;) - cut; junk data, misleading framing</li><li>Account, cloud sync, multi-device - cut; local only</li><li>Monetization / paywall - deferred until trust and return usage are validated</li><li>Estimated build time with AI coding tools: 12-14 days total</li><li>Prompt engineering and testing (consistent, context-specific, evidence-only output): 3 days</li><li>Client-side redaction logic (name/identifier detection, review UI): 2 days</li><li>UI build (landing, input, redaction review, loading, results, optional history log): 5 days</li><li>Privacy copy that is technically accurate and defensible: 1 day</li><li>QA and polish: 1-2 days</li></ul></div>"}, {"status": "critique", "icon": "🔍", "title": "Critique v3", "desc": "Validation critique of the privacy-first reply generator version.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "5/10", "body": "<div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>The scope is finally sane. Paste text, review redactions, get three replies, copy one. That is an actual 2-4 week solo build instead of a fake &quot;AI relationship coach&quot; swamp.</li><li>Cutting the fake scoring, fake personalization, and fake outcome-tracking claims was the right move. The product is less dishonest now.</li><li>The redaction review step is the one genuinely product-shaped idea here. It gives the user a visible reason not to just dump raw chats into ChatGPT.</li><li>The &quot;evidence-only&quot; diagnosis constraint is smart because it reduces bullshit and lowers the chance the app sounds like a pickup-artist horoscope generator.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>This is still one thin layer above ChatGPT, and that is the central problem. &quot;Faster than opening ChatGPT and pasting text&quot; is not a moat, it is a stopwatch challenge. If you lose by even a little, the product is dead.</li><li>Your core differentiator depends on users caring about redaction enough to change behavior. That is UNVERIFIED. Most people either do not care, or they care so much they will not paste dating chats into any AI product at all.</li><li>The retention story is still weak. You admitted it yourself: this is an intermittent utility. Fine. Then say the quiet part out loud: there may not be a business here. Why does the user come back after day 1? &quot;When another chat stalls&quot; is not a loop, it is a maybe.</li><li>The privacy pitch is less bad, but still fragile. &quot;We do not store it&quot; does not remove the fact that users are sending intimate conversations to a third-party model provider. For a product in the dating/shame/insecurity zone, that trust barrier is brutal.</li><li>Client-side auto-redaction sounds cleaner than it is. Regex and lightweight NLP will miss nicknames, inside jokes, locations, schools, workplaces, emojis with meaning, and context that still identifies people. The worst case is not &quot;it misses a token.&quot; The worst case is false confidence.</li><li>The UX tax of redaction may kill the speed promise. If users have to inspect placeholders, fix misses, and add manual redactions, your &quot;under 30 seconds&quot; headline starts rotting immediately.</li><li>Three replies in different tones is dangerously close to template sludge. If outputs feel even slightly generic, users will correctly conclude they can get the same junk from a custom prompt for free.</li><li>&quot;Evidence-only diagnosis&quot; helps defensibility, but it also compresses the value. Counting question ratios and double texts is useful exactly once. After that it risks feeling like a glorified lint check for flirting.</li><li>You are building for a user at a high-emotion moment, which sounds good until you remember high-emotion users are impatient, skeptical, and embarrassed. They will bounce hard if the first result is cringe.</li><li>Distribution is awful. People do not casually share &quot;I needed AI to rescue my dead dating chat.&quot; Privacy positioning helps trust, but it also makes virality weaker because nobody wants to post receipts.</li><li>Monetization is conveniently deferred because it is a mess. This is not an always-on workflow tool. It is an occasional panic purchase at best, which means you need either strong intent traffic or a killer consumer funnel. You currently have neither.</li><li>The improved version is more honest, but honesty alone does not create demand. It just stops you from lying to yourself while building something people might still ignore.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Key Questions</div><ul><li>Can this beat a saved ChatGPT prompt from cold open to usable reply on an actual phone, with redaction included, in repeated tests?</li><li>What percentage of target users refuse to paste chats even after seeing the redaction review screen?</li><li>How often are the three replies meaningfully specific to the conversation instead of polished generic filler?</li><li>Why does the user come back after day 1?</li><li>What acquisition channel gets embarrassed dating users into this product cheaply enough for the economics to work?</li><li>How many manual redaction fixes does a typical conversation require before the &quot;fast&quot; promise collapses?</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Suggestions</div><ul><li>Stop pretending the current wedge is enough. Test the only thing that matters: speed and trust versus a saved ChatGPT prompt. If you cannot win clearly, kill it.</li><li>Narrow the target harder. &quot;Stalled dating chats&quot; is still broad mush. Pick one use case like early-app banter that died after 5-10 messages, because the reply style and context are more consistent.</li><li>Make the product more opinionated, not just more polished. If the output is merely &quot;three decent replies,&quot; users will route around you. Consider one recommended reply plus one backup, with stronger rationale and less sludge.</li><li>Treat redaction as assistive, not protective. Say clearly that it reduces obvious identifiers, not that it safely anonymizes the conversation.</li><li>Validate with ugly prototypes before building full UI polish. Ten users on mobile with a timer will tell you more than a week of vibe-coded refinement.</li><li>If the first tests show users copy the replies but do not feel they are better than ChatGPT, do not &quot;iterate.&quot; Kill the idea or radically reposition it.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? YES - technically. Product validation in that window is much less certain because the hard part is not code, it is whether anyone cares enough to use a dedicated tool.</li><li>Biggest solo complexity traps: redaction false confidence; prompt tuning to avoid generic cringe; mobile UX friction during paste/review/copy flow; privacy copy that is precise instead of hand-wavy; finding any believable distribution channel; mistaking a buildable utility for a viable business.</li></ul></div>"}, {"status": "validate", "icon": "✅", "title": "Validated", "desc": "Design handoff approved and ready for prototype generation.", "body": "<div class=\"esect\"><div class=\"esect-label\">Validated</div><ul><li>Score: 5/10</li><li>Date: 2026-04-02 11:17</li><li>Design handoff screens: Landing / Home; Input Screen; Redaction Review Screen; Loading / Analysis State; Results Screen; History Log Screen; Privacy / How It Works Modal; Error State</li></ul><div class=\"tag-row\"><span class=\"etag green\">ready-for-design</span></div></div>"}, {"status": "design", "icon": "🎨", "title": "Designed", "desc": "Stitch screens exported and assembled into a live clickable prototype.", "body": "<div class=\"esect\"><div class=\"esect-label\">Designed</div><ul><li>Stitch project created: 2798698762068971701</li><li>Device type: MOBILE</li><li>Preview: https://jakebuild.github.io/idea-factory/46-rizz-score-is-a-dating-convers/</li></ul><div class=\"tag-row\"><span class=\"etag blue\">stitch</span><span class=\"etag blue\">mobile</span></div></div>"}]};</script>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0f1a;
+    color: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ──────────────────────────────────────── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .idea-num {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: #3b82f6; background: #1e3a5f;
+    padding: 3px 10px; border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .idea-title { font-size: 1.1rem; font-weight: 700; color: #f9fafb; }
+  .idea-sub { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+  .header-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    border-radius: 99px; padding: 4px 12px;
+    font-size: 0.75rem; color: #9ca3af;
+  }
+  .score-pill {
+    background: #1a2e1a; border: 1px solid #2d4a2d;
+    color: #86efac; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 99px;
+  }
+  .toggle-btn {
+    display: flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    color: #9ca3af; font-size: 0.75rem;
+    padding: 4px 12px; border-radius: 99px;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .toggle-btn:hover { background: #1f2937; color: #f9fafb; border-color: #374151; }
+
+  /* ── Body ────────────────────────────────────────── */
+  .body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: stretch;
+  }
+
+  /* ── Phone column ────────────────────────────────── */
+  .phone-col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 40px;
+    gap: 16px;
+    background: #0a0f1a;
+    overflow: hidden;
+  }
+
+  /* MOBILE frame */
+  .phone-frame {
+    width: 390px;
+    height: 844px;
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 0 0 10px #0f172a,
+      0 0 0 11px rgba(255,255,255,0.06),
+      0 50px 100px rgba(0,0,0,0.7);
+    background: #000;
+    flex-shrink: 0;
+  }
+
+  /* WEB frame */
+  .web-frame {
+    width: min(900px, calc(100% - 80px));
+    height: min(640px, calc(100vh - 180px));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 24px 60px rgba(0,0,0,0.6);
+    background: #1f2937;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .web-chrome {
+    height: 36px;
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .web-chrome .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .web-chrome .dot-r { background: #ef4444; }
+  .web-chrome .dot-y { background: #f59e0b; }
+  .web-chrome .dot-g { background: #22c55e; }
+  .web-chrome .url {
+    flex: 1; background: #111827; border-radius: 4px;
+    height: 20px; margin: 0 8px;
+    display: flex; align-items: center; padding: 0 10px;
+    font-size: 0.68rem; color: #6b7280;
+  }
+
+  .device-iframe {
+    width: 100%; height: 100%;
+    border: none; display: block;
+    flex: 1;
+  }
+
+  /* Switcher */
+  .switcher {
+    display: flex; gap: 6px;
+    flex-wrap: wrap; justify-content: center;
+    max-width: 600px;
+  }
+  .switcher button {
+    height: 28px; padding: 0 10px;
+    border-radius: 6px; border: 1px solid #1f2937;
+    background: #111827; color: #6b7280;
+    font-size: 0.7rem; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .switcher button:hover { background: #1f2937; color: #d1d5db; border-color: #374151; }
+  .switcher button.active { background: #1e3a5f; color: #60a5fa; border-color: #3b82f6; }
+
+  /* ── Resize handle ───────────────────────────────── */
+  .resize-handle {
+    width: 8px;
+    flex-shrink: 0;
+    cursor: col-resize;
+    position: relative;
+    background: transparent;
+    z-index: 10;
+  }
+  .resize-handle::after {
+    content: '';
+    position: absolute;
+    left: 3px; top: 0; bottom: 0;
+    width: 2px;
+    background: #1a2235;
+    transition: background 0.15s;
+  }
+  .resize-handle:hover::after { background: #374151; }
+  .resize-handle.dragging::after { background: #3b82f6; }
+
+  /* ── Timeline column ─────────────────────────────── */
+  .timeline-col {
+    width: 460px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 0.25s ease;
+    background: #0d1424;
+  }
+  .timeline-col.collapsed { width: 0; }
+
+  .timeline-header {
+    padding: 20px 28px 14px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .timeline-header h2 {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #4b5563;
+  }
+
+  .timeline-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 28px 40px;
+  }
+  .timeline-scroll::-webkit-scrollbar { width: 4px; }
+  .timeline-scroll::-webkit-scrollbar-track { background: transparent; }
+  .timeline-scroll::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 2px; }
+
+  /* ── Timeline line + dots ────────────────────────── */
+  /* --lx: horizontal center of the line/dots from .timeline-line left edge */
+  .timeline-line {
+    --lx: 8px;
+    position: relative;
+    padding-left: 28px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+  }
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--lx) - 1px); /* 2px line centered at --lx */
+    top: 10px; bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, #1e3a5f 0%, #1f2937 100%);
+    border-radius: 2px;
+  }
+
+  .entry {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .entry::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+    top: 18px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #1f2937;
+    border: 2px solid #374151;
+    z-index: 1;
+  }
+  .entry.s-critique::before { background: #78350f; border-color: #d97706; }
+  .entry.s-improve::before  { background: #1e3a5f; border-color: #3b82f6; }
+  .entry.s-validate::before { background: #14532d; border-color: #16a34a; }
+  .entry.s-design::before   { background: #312e81; border-color: #6366f1; }
+
+  /* ── Entry cards ─────────────────────────────────── */
+  .entry-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+  .entry-card:hover { border-color: #374151; }
+
+  .entry-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer; user-select: none;
+  }
+  .entry-icon { font-size: 1.1rem; flex-shrink: 0; line-height: 1; }
+  .entry-info { flex: 1; min-width: 0; }
+  .entry-title {
+    font-size: 0.85rem; font-weight: 600; color: #f9fafb;
+    display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+    line-height: 1.3;
+  }
+  .entry-desc { font-size: 0.72rem; color: #6b7280; margin-top: 3px; }
+  .entry-chevron {
+    color: #374151; font-size: 0.6rem; flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .entry.open .entry-chevron { transform: rotate(180deg); color: #6b7280; }
+
+  .verdict {
+    font-size: 0.6rem; font-weight: 700;
+    padding: 2px 6px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .verdict-needs { background: #451a03; color: #fb923c; }
+  .verdict-worth { background: #14532d; color: #86efac; }
+  .verdict-kill  { background: #450a0a; color: #f87171; }
+  .escore { font-size: 0.7rem; font-weight: 700; color: #60a5fa; }
+
+  .entry-body {
+    display: none;
+    border-top: 1px solid #1f2937;
+    padding: 14px;
+    font-size: 0.76rem; color: #9ca3af; line-height: 1.65;
+  }
+  .entry.open .entry-body { display: block; }
+
+  .esect { margin-top: 10px; }
+  .esect:first-child { margin-top: 0; }
+  .esect-label {
+    font-size: 0.62rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: #4b5563; margin-bottom: 5px;
+  }
+  .esect ul { padding-left: 14px; }
+  .esect li { margin-bottom: 3px; color: #9ca3af; }
+  .esect p { color: #9ca3af; }
+  .esect strong { color: #d1d5db; font-weight: 600; }
+  .tag-row { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+  .etag {
+    background: #0a0f1a; border: 1px solid #1f2937;
+    border-radius: 4px; padding: 2px 7px;
+    font-size: 0.66rem; color: #6b7280;
+  }
+  .etag.green { border-color: #14532d; color: #86efac; }
+  .etag.blue  { border-color: #1e3a5f; color: #60a5fa; }
+  a.ext-link { color: #818cf8; text-decoration: none; }
+  a.ext-link:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <span class="idea-num" id="hNum"></span>
+    <div>
+      <div class="idea-title" id="hTitle"></div>
+      <div class="idea-sub" id="hSub"></div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="score-pill" id="hScore"></span>
+    <span class="badge" id="hBadge"></span>
+    <button class="toggle-btn" id="toggleBtn" onclick="toggleTimeline()">
+      <span id="toggleIcon">›</span>
+      <span id="toggleLabel">Hide Journey</span>
+    </button>
+  </div>
+</div>
+
+<div class="body">
+  <div class="phone-col" id="phoneCol">
+    <div id="deviceFrame"></div>
+    <div class="switcher" id="switcher"></div>
+  </div>
+
+  <div class="resize-handle" id="resizeHandle"></div>
+
+  <div class="timeline-col" id="timelineCol">
+    <div class="timeline-header"><h2>Idea Journey</h2></div>
+    <div class="timeline-scroll">
+      <div class="timeline-line" id="timeline"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Render from IDEA_DATA ────────────────────────────
+(function () {
+  const D = window.IDEA_DATA || {};
+  const isMobile = (D.deviceType || 'MOBILE').toUpperCase() !== 'WEB';
+
+  // Header
+  document.title = 'Idea #' + D.ideaNum + ' — ' + D.title;
+  document.getElementById('hNum').textContent   = '#' + D.ideaNum;
+  document.getElementById('hTitle').textContent = D.title;
+  document.getElementById('hSub').textContent   = D.sub || '';
+  document.getElementById('hScore').textContent = D.score || '';
+  document.getElementById('hBadge').textContent = isMobile ? '📱 Mobile Prototype' : '💻 Web Prototype';
+
+  // Device frame
+  const frameContainer = document.getElementById('deviceFrame');
+  if (isMobile) {
+    frameContainer.className = 'phone-frame';
+    frameContainer.innerHTML = '<iframe id="app" class="device-iframe"></iframe>';
+  } else {
+    frameContainer.className = 'web-frame';
+    frameContainer.innerHTML =
+      '<div class="web-chrome">' +
+        '<div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>' +
+        '<div class="url" id="webUrl">preview</div>' +
+      '</div>' +
+      '<iframe id="app" class="device-iframe"></iframe>';
+  }
+
+  // Screens switcher
+  const screens = D.screens || [];
+  const startIdx = D.startScreen != null ? D.startScreen : (screens.length > 1 ? 1 : 0);
+  const switcher = document.getElementById('switcher');
+  const iframe   = document.getElementById('app');
+
+  function hideIframeScrollbars() {
+    try {
+      const style = iframe.contentDocument.createElement('style');
+      style.textContent = '::-webkit-scrollbar{display:none}*{-ms-overflow-style:none!important;scrollbar-width:none!important}';
+      iframe.contentDocument.head.appendChild(style);
+    } catch(e) {}
+  }
+  iframe.addEventListener('load', hideIframeScrollbars);
+
+  function goTo(i) {
+    iframe.src = screens[i].id + '.html';
+    switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
+    const urlEl = document.getElementById('webUrl');
+    if (urlEl) urlEl.textContent = screens[i].label;
+  }
+
+  screens.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = (i + 1) + ' · ' + s.label;
+    btn.onclick = () => goTo(i);
+    switcher.appendChild(btn);
+  });
+
+  if (screens.length) goTo(startIdx);
+
+  // Timeline
+  const timeline = document.getElementById('timeline');
+  (D.timeline || []).forEach(e => {
+    const verdictHtml = e.verdict
+      ? '<span class="verdict verdict-' + (e.verdictClass || 'needs') + '">' + e.verdict + '</span>'
+      : '';
+    const scoreHtml = e.score
+      ? '<span class="escore">' + e.score + '</span>'
+      : '';
+
+    const div = document.createElement('div');
+    div.className = 'entry' + (e.status ? ' s-' + e.status : '');
+    div.innerHTML =
+      '<div class="entry-card">' +
+        '<div class="entry-head" onclick="this.closest(\'.entry\').classList.toggle(\'open\')">' +
+          '<span class="entry-icon">' + e.icon + '</span>' +
+          '<div class="entry-info">' +
+            '<div class="entry-title">' + e.title + ' ' + verdictHtml + ' ' + scoreHtml + '</div>' +
+            '<div class="entry-desc">' + e.desc + '</div>' +
+          '</div>' +
+          '<span class="entry-chevron">▼</span>' +
+        '</div>' +
+        '<div class="entry-body">' + (e.body || '') + '</div>' +
+      '</div>';
+    timeline.appendChild(div);
+  });
+
+  // Timeline toggle
+  let open = true;
+  window.toggleTimeline = function () {
+    open = !open;
+    document.getElementById('timelineCol').classList.toggle('collapsed', !open);
+    document.getElementById('resizeHandle').style.display = open ? '' : 'none';
+    document.getElementById('toggleIcon').textContent  = open ? '›' : '‹';
+    document.getElementById('toggleLabel').textContent = open ? 'Hide Journey' : 'Show Journey';
+  };
+
+  // Drag resize
+  const handle      = document.getElementById('resizeHandle');
+  const timelineCol = document.getElementById('timelineCol');
+  let resizing = false, rx = 0, rw = 0;
+
+  handle.addEventListener('mousedown', e => {
+    if (!open) return;
+    resizing = true; rx = e.clientX; rw = timelineCol.offsetWidth;
+    handle.classList.add('dragging');
+    timelineCol.style.transition = 'none';
+    document.documentElement.style.cssText += ';cursor:col-resize!important;user-select:none!important';
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', e => {
+    if (!resizing) return;
+    const w = Math.max(280, Math.min(window.innerWidth - 500, rw + (rx - e.clientX)));
+    timelineCol.style.width = w + 'px';
+  });
+  window.addEventListener('mouseup', () => {
+    if (!resizing) return;
+    resizing = false;
+    handle.classList.remove('dragging');
+    timelineCol.style.transition = '';
+    document.documentElement.style.cursor = '';
+    document.documentElement.style.userSelect = '';
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,5 +1,37 @@
 [
   {
+    "id": "46-rizz-score-is-a-dating-convers",
+    "num": 46,
+    "title": "Chat Unsticker",
+    "subtitle": "Reply ideas for stalled dating chats, with a redaction check before AI analysis.",
+    "description": "Chat Unsticker is a one-task tool for a specific painful moment: your dating conversation has gone quiet and you don't know what to say next. It is not a coach, a scoring system, or a personalization engine. It is a reply generator optimized to be faster than thinking about it yourself. The flow: paste the last 10-15 messages, review the auto-redacted version (names and personal details are replaced with placeholders before anything leaves your device), tap Analyze, and get a one-line pattern diagnosis plus three ready-to-send replies in different tones. The diagnosis is evidence-only - it counts what's visible in the text, like \"you've sent four messages in a row\" or \"you've asked seven questions and they've asked zero.\" It does not interpret attraction or psychology. The three reply options are concrete, not templates. They are written from the actual conversation context - a playful callback to something said three messages ago, a direct question that breaks the dynamic, a curious tangent that opens a new thread. Each has a one-line note on when to use it and what it signals. Copy one, send it, done. The auto-redaction step is what makes this defensible versus pasting raw chats into ChatGPT. Before analysis, the app surfaces detected names and identifiers and asks you to confirm replacements. What reaches the LLM is a conversation between [You] and [Her], not a conversation naming real people with traceable details. You control what gets sent. There is no outcome tracking loop, no personalization engine, no claims about improving your reply rate. It's a fast, honest, privacy-conscious tool for one specific use case. If you come back, it's because another chat stalled - not because of a habit loop the product invented.",
+    "score": 5,
+    "status": "complete",
+    "deviceType": "MOBILE",
+    "category": "Social",
+    "platform": [
+      "ios",
+      "android"
+    ],
+    "tags": [
+      "dating",
+      "messaging",
+      "privacy",
+      "ai",
+      "redaction"
+    ],
+    "folder": "46-rizz-score-is-a-dating-convers",
+    "prototypeUrl": "https://jakebuild.github.io/idea-factory/46-rizz-score-is-a-dating-convers/",
+    "metaUrl": "https://jakebuild.github.io/idea-factory/46-rizz-score-is-a-dating-convers/meta.json",
+    "startScreenId": "3e9e43720f384eac8b151cf8719e22a6",
+    "startScreenUrl": "https://jakebuild.github.io/idea-factory/46-rizz-score-is-a-dating-convers/3e9e43720f384eac8b151cf8719e22a6.html",
+    "screenCount": 8,
+    "stitchId": "2798698762068971701",
+    "stitchUrl": "https://stitch.withgoogle.com/projects/2798698762068971701",
+    "publishedAt": "2026-04-02T04:33:24Z",
+    "updatedAt": "2026-04-02T04:33:24Z"
+  },
+  {
     "id": "idea-43",
     "num": 43,
     "title": "Caffeine Pulse",

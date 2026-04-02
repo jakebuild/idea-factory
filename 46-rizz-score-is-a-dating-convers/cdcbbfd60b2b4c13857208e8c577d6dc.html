@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Velocity AI - Results</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-tint": "#004ced",
+              "secondary-fixed": "#d5e3fc",
+              "inverse-primary": "#b7c4ff",
+              "on-primary-fixed-variant": "#0038b6",
+              "surface-container-high": "#e6e8ea",
+              "error-container": "#ffdad6",
+              "on-tertiary-fixed-variant": "#891e00",
+              "inverse-surface": "#2d3133",
+              "background": "#f7f9fb",
+              "on-secondary-fixed-variant": "#3a485b",
+              "inverse-on-surface": "#eff1f3",
+              "on-error": "#ffffff",
+              "secondary-container": "#d5e3fc",
+              "on-error-container": "#93000a",
+              "surface-container-low": "#f2f4f6",
+              "on-secondary-fixed": "#0d1c2e",
+              "on-secondary": "#ffffff",
+              "outline": "#737688",
+              "error": "#ba1a1a",
+              "on-tertiary-container": "#ffddd5",
+              "primary": "#003ec7",
+              "tertiary-fixed-dim": "#ffb4a1",
+              "on-surface-variant": "#434656",
+              "tertiary-fixed": "#ffdbd2",
+              "surface-bright": "#f7f9fb",
+              "on-tertiary-fixed": "#3c0800",
+              "on-primary-fixed": "#001452",
+              "on-surface": "#191c1e",
+              "on-primary": "#ffffff",
+              "secondary": "#515f74",
+              "surface-container": "#eceef0",
+              "secondary-fixed-dim": "#b9c7df",
+              "on-tertiary": "#ffffff",
+              "on-secondary-container": "#57657a",
+              "surface-variant": "#e0e3e5",
+              "on-background": "#191c1e",
+              "primary-fixed": "#dde1ff",
+              "on-primary-container": "#dfe3ff",
+              "primary-fixed-dim": "#b7c4ff",
+              "outline-variant": "#c3c5d9",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-highest": "#e0e3e5",
+              "tertiary-container": "#bf3003",
+              "primary-container": "#0052ff",
+              "surface-dim": "#d8dadc",
+              "surface": "#f7f9fb",
+              "tertiary": "#952200"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="prototype-shell">
+  body{background:#f7f9fb!important;color:#191c1e!important;padding-top:92px!important;padding-bottom:114px!important;min-height:844px!important;}
+  .proto-status{position:fixed;top:0;left:0;right:0;height:28px;background:#f7f9fb;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font:600 12px/1 Inter,sans-serif;color:#191c1e;z-index:1000;border-bottom:1px solid rgba(67,70,86,.08)}
+  .proto-header{position:fixed;top:28px;left:0;right:0;height:64px;background:rgba(247,249,251,.92);backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;padding:0 18px;z-index:1000;border-bottom:1px solid rgba(67,70,86,.12)}
+  .proto-header-left{display:flex;align-items:center;gap:12px;min-width:0}
+  .proto-back{width:36px;height:36px;border:none;border-radius:18px;background:#e9eefc;color:#003ec7;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;cursor:pointer}
+  .proto-back.hidden{visibility:hidden}
+  .proto-title{font:800 18px/1.1 Manrope,sans-serif;color:#191c1e;letter-spacing:-.02em}
+  .proto-sub{font:500 11px/1 Inter,sans-serif;color:#6b7280;margin-top:4px}
+  .proto-privacy{position:fixed;left:16px;right:16px;bottom:82px;height:34px;border-radius:17px;background:rgba(255,255,255,.9);backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:center;gap:6px;font:600 12px/1 Inter,sans-serif;color:#003ec7;z-index:999;border:1px solid rgba(0,62,199,.12);text-decoration:none}
+  .proto-tabbar{position:fixed;left:12px;right:12px;bottom:12px;height:64px;border-radius:24px;background:rgba(255,255,255,.94);backdrop-filter:blur(22px);box-shadow:0 8px 30px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(3,1fr);padding:6px;z-index:1000;border:1px solid rgba(67,70,86,.08)}
+  .proto-tab{border:none;background:transparent;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#6b7280;font:600 11px/1 Inter,sans-serif;cursor:pointer}
+  .proto-tab-icon{font-size:18px;line-height:1}
+  .proto-tab.active{background:#e9eefc;color:#003ec7}
+</style></head>
+<body class="bg-background text-on-background font-body min-h-screen pb-32"><div class="proto-status"><span>9:41</span><span>●●● 100%</span></div>
+<div class="proto-header">
+<div class="proto-header-left">
+<button class="proto-back" onclick="window.location.href='68da8b386b9444149fba08313e689e7d.html'">‹</button>
+<div>
+<div class="proto-title">Results</div>
+<div class="proto-sub">Paste, redact, and generate</div>
+</div>
+</div>
+<div class="proto-sub">Fast, redacted, local-first</div>
+</div>
+<a class="proto-privacy" href="javascript:void(0)" onclick="window.location.href='be7040b55c7b47549c6ec8af7813e2f1.html'">Privacy &amp; How It Works</a><div class="proto-tabbar"><button class="proto-tab" onclick="window.location.href='3e9e43720f384eac8b151cf8719e22a6.html'"><span class="proto-tab-icon">home</span><span>Home</span></button><button class="proto-tab active" onclick="window.location.href='68da8b386b9444149fba08313e689e7d.html'"><span class="proto-tab-icon">forum</span><span>Analyze</span></button><button class="proto-tab" onclick="window.location.href='054ee4c27c234d8bad5c816652ae843b.html'"><span class="proto-tab-icon">history</span><span>History</span></button></div>
+<!-- TopAppBar -->
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-8">
+<!-- One-Line Diagnosis Section -->
+<section class="space-y-4">
+<div class="bg-surface-container rounded-3xl p-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-6xl" data-icon="analytics">analytics</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-[10px] font-bold tracking-widest uppercase mb-4">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    AI Optimized
+                </div>
+<h2 class="text-2xl font-headline font-extrabold tracking-tight text-on-surface mb-2">
+                    Analysis Complete
+                </h2>
+<p class="text-on-surface-variant leading-relaxed">
+                    You've sent 3 messages in a row. They've asked 0 questions in the last 8 messages. <span class="font-bold text-primary">Status: Cold.</span>
+</p>
+</div>
+</section>
+<!-- Reply Strategies Grid (Asymmetric Layout) -->
+<section class="space-y-6">
+<h3 class="text-xs font-bold tracking-[0.2em] text-on-surface-variant uppercase px-1">Suggested Replies</h3>
+<div class="grid gap-6">
+<!-- Playful Card -->
+<div class="group bg-surface-container-lowest rounded-2xl p-6 shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all hover:bg-white hover:translate-y-[-2px]">
+<div class="flex justify-between items-start mb-4">
+<span class="text-[11px] font-black tracking-widest text-primary uppercase bg-primary-fixed px-2 py-0.5 rounded">PLAYFUL</span>
+<button class="text-slate-400 hover:text-primary transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="content_copy">content_copy</span>
+</button>
+</div>
+<p class="text-lg font-medium text-on-surface mb-4 leading-snug italic">
+                        "Wait, I think we're breaking a world record for the longest conversation without a single question mark. Do I win a prize?"
+                    </p>
+<div class="flex items-center gap-2 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="lightbulb">lightbulb</span>
+                        Best for breaking the tension and calling out the dynamic without being heavy.
+                    </div>
+</div>
+<!-- Direct Card -->
+<div class="group bg-surface-container-low rounded-2xl p-6 transition-all hover:bg-surface-container-lowest hover:shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<div class="flex justify-between items-start mb-4">
+<span class="text-[11px] font-black tracking-widest text-on-surface-variant uppercase bg-surface-variant px-2 py-0.5 rounded">DIRECT</span>
+<button class="text-slate-400 hover:text-primary transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="content_copy">content_copy</span>
+</button>
+</div>
+<p class="text-lg font-medium text-on-surface mb-4 leading-snug">
+                        "I'm getting the feeling I'm doing all the heavy lifting here! What's on your mind today?"
+                    </p>
+<div class="flex items-center gap-2 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="bolt">bolt</span>
+                        Clear and honest. Forces a pivot in the engagement level.
+                    </div>
+</div>
+<!-- Curious Card -->
+<div class="group bg-surface-container-low rounded-2xl p-6 transition-all hover:bg-surface-container-lowest hover:shadow-[0_4px_20px_rgba(0,0,0,0.02)]">
+<div class="flex justify-between items-start mb-4">
+<span class="text-[11px] font-black tracking-widest text-on-tertiary-fixed-variant uppercase bg-tertiary-fixed px-2 py-0.5 rounded">CURIOUS</span>
+<button class="text-slate-400 hover:text-primary transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="content_copy">content_copy</span>
+</button>
+</div>
+<p class="text-lg font-medium text-on-surface mb-4 leading-snug">
+                        "You're quite the listener! What's one thing you're actually curious about regarding [Topic]?"
+                    </p>
+<div class="flex items-center gap-2 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm" data-icon="help">help</span>
+                        Redirects the focus while maintaining a positive, open-ended tone.
+                    </div>
+</div>
+</div>
+</section>
+<!-- CTAs Section -->
+<section class="pt-4 space-y-4">
+<button class="w-full py-4 rounded-xl bg-gradient-to-br from-primary to-primary-container text-white font-bold tracking-tight shadow-lg shadow-primary/20 hover:brightness-110 transition-all active:scale-95" onclick="window.location.href='68da8b386b9444149fba08313e689e7d.html'">
+                Analyze another conversation
+            </button>
+<button class="w-full py-4 rounded-xl bg-secondary-container text-on-secondary-container font-semibold tracking-tight hover:bg-secondary-fixed transition-colors active:scale-95" onclick="window.location.href='054ee4c27c234d8bad5c816652ae843b.html'">
+                Save this session
+            </button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<!-- Visual Polish: Background Gradients -->
+</body></html>

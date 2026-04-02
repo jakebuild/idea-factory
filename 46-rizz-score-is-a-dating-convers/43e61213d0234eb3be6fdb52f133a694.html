@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Velocity AI - System Status</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#ffffff",
+              "inverse-on-surface": "#eff1f3",
+              "error-container": "#ffdad6",
+              "surface-container-highest": "#e0e3e5",
+              "secondary": "#515f74",
+              "primary-container": "#0052ff",
+              "inverse-primary": "#b7c4ff",
+              "on-primary-fixed": "#001452",
+              "primary-fixed-dim": "#b7c4ff",
+              "primary": "#003ec7",
+              "tertiary-fixed-dim": "#ffb4a1",
+              "on-primary": "#ffffff",
+              "primary-fixed": "#dde1ff",
+              "on-error": "#ffffff",
+              "surface-tint": "#004ced",
+              "on-tertiary-container": "#ffddd5",
+              "on-secondary-fixed": "#0d1c2e",
+              "on-secondary": "#ffffff",
+              "surface-container-high": "#e6e8ea",
+              "surface-container": "#eceef0",
+              "surface-bright": "#f7f9fb",
+              "error": "#ba1a1a",
+              "surface": "#f7f9fb",
+              "background": "#f7f9fb",
+              "outline": "#737688",
+              "surface-dim": "#d8dadc",
+              "surface-container-low": "#f2f4f6",
+              "tertiary": "#952200",
+              "on-error-container": "#93000a",
+              "inverse-surface": "#2d3133",
+              "on-secondary-fixed-variant": "#3a485b",
+              "on-secondary-container": "#57657a",
+              "on-primary-container": "#dfe3ff",
+              "on-background": "#191c1e",
+              "secondary-container": "#d5e3fc",
+              "outline-variant": "#c3c5d9",
+              "tertiary-fixed": "#ffdbd2",
+              "secondary-fixed": "#d5e3fc",
+              "tertiary-container": "#bf3003",
+              "secondary-fixed-dim": "#b9c7df",
+              "on-surface-variant": "#434656",
+              "surface-variant": "#e0e3e5",
+              "on-tertiary-fixed-variant": "#891e00",
+              "on-surface": "#191c1e",
+              "on-primary-fixed-variant": "#0038b6",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed": "#3c0800"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="prototype-shell">
+  body{background:#f7f9fb!important;color:#191c1e!important;padding-top:92px!important;padding-bottom:114px!important;min-height:844px!important;}
+  .proto-status{position:fixed;top:0;left:0;right:0;height:28px;background:#f7f9fb;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font:600 12px/1 Inter,sans-serif;color:#191c1e;z-index:1000;border-bottom:1px solid rgba(67,70,86,.08)}
+  .proto-header{position:fixed;top:28px;left:0;right:0;height:64px;background:rgba(247,249,251,.92);backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;padding:0 18px;z-index:1000;border-bottom:1px solid rgba(67,70,86,.12)}
+  .proto-header-left{display:flex;align-items:center;gap:12px;min-width:0}
+  .proto-back{width:36px;height:36px;border:none;border-radius:18px;background:#e9eefc;color:#003ec7;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;cursor:pointer}
+  .proto-back.hidden{visibility:hidden}
+  .proto-title{font:800 18px/1.1 Manrope,sans-serif;color:#191c1e;letter-spacing:-.02em}
+  .proto-sub{font:500 11px/1 Inter,sans-serif;color:#6b7280;margin-top:4px}
+  .proto-privacy{position:fixed;left:16px;right:16px;bottom:82px;height:34px;border-radius:17px;background:rgba(255,255,255,.9);backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:center;gap:6px;font:600 12px/1 Inter,sans-serif;color:#003ec7;z-index:999;border:1px solid rgba(0,62,199,.12);text-decoration:none}
+  .proto-tabbar{position:fixed;left:12px;right:12px;bottom:12px;height:64px;border-radius:24px;background:rgba(255,255,255,.94);backdrop-filter:blur(22px);box-shadow:0 8px 30px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(3,1fr);padding:6px;z-index:1000;border:1px solid rgba(67,70,86,.08)}
+  .proto-tab{border:none;background:transparent;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#6b7280;font:600 11px/1 Inter,sans-serif;cursor:pointer}
+  .proto-tab-icon{font-size:18px;line-height:1}
+  .proto-tab.active{background:#e9eefc;color:#003ec7}
+</style></head>
+<body class="bg-background text-on-background min-h-screen flex flex-col"><div class="proto-status"><span>9:41</span><span>●●● 100%</span></div>
+<div class="proto-header">
+<div class="proto-header-left">
+<button class="proto-back" onclick="window.location.href='68da8b386b9444149fba08313e689e7d.html'">‹</button>
+<div>
+<div class="proto-title">Try Again</div>
+<div class="proto-sub">Paste, redact, and generate</div>
+</div>
+</div>
+<div class="proto-sub">Fast, redacted, local-first</div>
+</div>
+<a class="proto-privacy" href="javascript:void(0)" onclick="window.location.href='be7040b55c7b47549c6ec8af7813e2f1.html'">Privacy &amp; How It Works</a><div class="proto-tabbar"><button class="proto-tab" onclick="window.location.href='3e9e43720f384eac8b151cf8719e22a6.html'"><span class="proto-tab-icon">home</span><span>Home</span></button><button class="proto-tab active" onclick="window.location.href='68da8b386b9444149fba08313e689e7d.html'"><span class="proto-tab-icon">forum</span><span>Analyze</span></button><button class="proto-tab" onclick="window.location.href='054ee4c27c234d8bad5c816652ae843b.html'"><span class="proto-tab-icon">history</span><span>History</span></button></div>
+<!-- TopAppBar -->
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center px-6 pt-24 pb-32">
+<div class="max-w-xl w-full text-center space-y-12">
+<!-- Visual Element: The Kinetic Error Indicator -->
+<div class="relative inline-block">
+<!-- Abstract "Glow" Layer -->
+<div class="absolute inset-0 bg-primary/10 blur-3xl rounded-full scale-150"></div>
+<div class="relative w-32 h-32 mx-auto flex items-center justify-center rounded-full bg-surface-container-lowest shadow-[0_32px_64px_rgba(0,62,199,0.06)]">
+<div class="w-24 h-24 rounded-full bg-blue-50/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="bolt" style="font-variation-settings: 'FILL' 0;">bolt</span>
+<!-- Small "broken" indicator -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-12 w-1 h-12 bg-white/80"></div>
+</div>
+</div>
+</div>
+<!-- Typography Cluster -->
+<div class="space-y-4">
+<h2 class="font-headline font-black text-4xl tracking-tight text-on-surface">
+                    Something went wrong
+                </h2>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed max-w-md mx-auto">
+                    The AI couldn't process this request. This usually happens with very long conversations or a temporary server blip. Try again or paste a shorter conversation.
+                </p>
+</div>
+<!-- Action Block -->
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<button class="w-full sm:w-auto px-8 py-4 bg-gradient-to-br from-primary to-primary-container text-on-primary font-label font-semibold rounded-xl hover:brightness-110 active:scale-95 transition-all duration-200 shadow-lg shadow-primary/20" onclick="window.location.href='1d69cda44d5e479da7b25e6c1f606d40.html'">
+                    Retry Analysis
+                </button>
+<button class="w-full sm:w-auto px-8 py-4 bg-secondary-container text-on-secondary-container font-label font-semibold rounded-xl hover:bg-surface-container-high active:scale-95 transition-all duration-200" onclick="window.location.href='68da8b386b9444149fba08313e689e7d.html'">
+                    Back to Input
+                </button>
+</div>
+<!-- Kinetic Contextual Detail -->
+<div class="pt-8 flex items-center justify-center gap-3">
+<div class="h-px w-8 bg-outline-variant/30"></div>
+<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant/60">Error Code: VEL_408_TIMEOUT</span>
+<div class="h-px w-8 bg-outline-variant/30"></div>
+</div>
+</div>
+</main>
+<!-- Content Sections / Surface Hierarchy -->
+<div class="fixed inset-0 -z-10 bg-background pointer-events-none">
+<!-- Tonal layer for depth -->
+<div class="absolute bottom-0 w-full h-[353px] bg-surface-container-low/50 blur-[100px] rounded-t-full"></div>
+</div>
+<!-- BottomNavBar -->
+</body></html>

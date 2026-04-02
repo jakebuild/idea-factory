@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Velocity AI - Privacy &amp; Transparency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#57657a",
+              "tertiary-fixed": "#ffdbd2",
+              "on-tertiary-fixed-variant": "#891e00",
+              "primary-container": "#0052ff",
+              "on-secondary-fixed-variant": "#3a485b",
+              "on-surface-variant": "#434656",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "tertiary-fixed-dim": "#ffb4a1",
+              "outline": "#737688",
+              "surface-container-high": "#e6e8ea",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#d5e3fc",
+              "surface-dim": "#d8dadc",
+              "surface-container-low": "#f2f4f6",
+              "secondary": "#515f74",
+              "background": "#f7f9fb",
+              "on-primary-fixed-variant": "#0038b6",
+              "error-container": "#ffdad6",
+              "primary": "#003ec7",
+              "inverse-surface": "#2d3133",
+              "on-tertiary": "#ffffff",
+              "surface-variant": "#e0e3e5",
+              "surface-container-highest": "#e0e3e5",
+              "tertiary": "#952200",
+              "surface-container": "#eceef0",
+              "on-tertiary-fixed": "#3c0800",
+              "tertiary-container": "#bf3003",
+              "on-primary-fixed": "#001452",
+              "on-primary-container": "#dfe3ff",
+              "secondary-fixed": "#d5e3fc",
+              "on-primary": "#ffffff",
+              "on-secondary-fixed": "#0d1c2e",
+              "surface-tint": "#004ced",
+              "on-tertiary-container": "#ffddd5",
+              "on-surface": "#191c1e",
+              "inverse-primary": "#b7c4ff",
+              "secondary-fixed-dim": "#b9c7df",
+              "error": "#ba1a1a",
+              "surface-bright": "#f7f9fb",
+              "surface": "#f7f9fb",
+              "on-error-container": "#93000a",
+              "on-background": "#191c1e",
+              "primary-fixed-dim": "#b7c4ff",
+              "primary-fixed": "#dde1ff",
+              "outline-variant": "#c3c5d9",
+              "inverse-on-surface": "#eff1f3"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-morphism {
+        backdrop-filter: blur(20px);
+        background: rgba(255, 255, 255, 0.7);
+      }
+      .text-gradient {
+        background: linear-gradient(135deg, #003ec7 0%, #0052ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="prototype-shell">
+  body{background:#f7f9fb!important;color:#191c1e!important;padding-top:92px!important;padding-bottom:114px!important;min-height:844px!important;}
+  .proto-status{position:fixed;top:0;left:0;right:0;height:28px;background:#f7f9fb;display:flex;align-items:center;justify-content:space-between;padding:0 18px;font:600 12px/1 Inter,sans-serif;color:#191c1e;z-index:1000;border-bottom:1px solid rgba(67,70,86,.08)}
+  .proto-header{position:fixed;top:28px;left:0;right:0;height:64px;background:rgba(247,249,251,.92);backdrop-filter:blur(18px);display:flex;align-items:center;justify-content:space-between;padding:0 18px;z-index:1000;border-bottom:1px solid rgba(67,70,86,.12)}
+  .proto-header-left{display:flex;align-items:center;gap:12px;min-width:0}
+  .proto-back{width:36px;height:36px;border:none;border-radius:18px;background:#e9eefc;color:#003ec7;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;cursor:pointer}
+  .proto-back.hidden{visibility:hidden}
+  .proto-title{font:800 18px/1.1 Manrope,sans-serif;color:#191c1e;letter-spacing:-.02em}
+  .proto-sub{font:500 11px/1 Inter,sans-serif;color:#6b7280;margin-top:4px}
+  .proto-privacy{position:fixed;left:16px;right:16px;bottom:82px;height:34px;border-radius:17px;background:rgba(255,255,255,.9);backdrop-filter:blur(16px);display:flex;align-items:center;justify-content:center;gap:6px;font:600 12px/1 Inter,sans-serif;color:#003ec7;z-index:999;border:1px solid rgba(0,62,199,.12);text-decoration:none}
+  .proto-tabbar{position:fixed;left:12px;right:12px;bottom:12px;height:64px;border-radius:24px;background:rgba(255,255,255,.94);backdrop-filter:blur(22px);box-shadow:0 8px 30px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(3,1fr);padding:6px;z-index:1000;border:1px solid rgba(67,70,86,.08)}
+  .proto-tab{border:none;background:transparent;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:#6b7280;font:600 11px/1 Inter,sans-serif;cursor:pointer}
+  .proto-tab-icon{font-size:18px;line-height:1}
+  .proto-tab.active{background:#e9eefc;color:#003ec7}
+</style></head>
+<body class="bg-background font-body text-on-surface antialiased"><div class="proto-status"><span>9:41</span><span>●●● 100%</span></div>
+<div class="proto-header">
+<div class="proto-header-left">
+<button class="proto-back" onclick="window.location.href='3e9e43720f384eac8b151cf8719e22a6.html'">‹</button>
+<div>
+<div class="proto-title">Privacy</div>
+<div class="proto-sub">Start from a stalled chat</div>
+</div>
+</div>
+<div class="proto-sub">Fast, redacted, local-first</div>
+</div>
+<a class="proto-privacy" href="javascript:void(0)" onclick="window.location.href='be7040b55c7b47549c6ec8af7813e2f1.html'">Privacy &amp; How It Works</a><div class="proto-tabbar"><button class="proto-tab active" onclick="window.location.href='3e9e43720f384eac8b151cf8719e22a6.html'"><span class="proto-tab-icon">home</span><span>Home</span></button><button class="proto-tab" onclick="window.location.href='68da8b386b9444149fba08313e689e7d.html'"><span class="proto-tab-icon">forum</span><span>Analyze</span></button><button class="proto-tab" onclick="window.location.href='054ee4c27c234d8bad5c816652ae843b.html'"><span class="proto-tab-icon">history</span><span>History</span></button></div>
+<!-- TopAppBar -->
+<main class="pt-24 pb-32 px-4 md:px-8 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-16">
+<div class="max-w-3xl">
+<span class="inline-flex items-center px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full text-[10px] font-bold uppercase tracking-widest mb-6">Security Protocol 4.0</span>
+<h2 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-8">Transparent by <span class="text-gradient">Architectural Design.</span></h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">Velocity AI isn't just fast; it's ephemeral. We've built a system that prioritizes your anonymity over our data collection. Here is exactly how your information flows through our pipeline.</p>
+</div>
+</section>
+<!-- Bento Grid: The Privacy Stack -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Section 5: The Redaction Step (Large Anchor) -->
+<div class="md:col-span-8 bg-surface-container rounded-3xl p-8 flex flex-col justify-between overflow-hidden relative">
+<div class="z-10">
+<div class="flex items-center gap-3 mb-6">
+<div class="p-2 bg-primary rounded-xl">
+<span class="material-symbols-outlined text-white" data-icon="shield_lock" style="font-variation-settings: 'FILL' 1;">shield_lock</span>
+</div>
+<h3 class="font-headline text-2xl font-bold">Step 1: The Redaction Engine</h3>
+</div>
+<p class="text-on-surface-variant max-w-lg mb-8 leading-relaxed">Before a single character leaves your device, our local engine identifies and redacts PII (Personally Identifiable Information). Names, addresses, and emails are scrubbed instantly.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm border border-outline-variant/15 font-mono text-sm">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-3 h-3 rounded-full bg-red-400"></div>
+<div class="w-3 h-3 rounded-full bg-amber-400"></div>
+<div class="w-3 h-3 rounded-full bg-emerald-400"></div>
+<span class="ml-2 text-xs text-outline">Local Redaction Preview</span>
+</div>
+<div class="space-y-3">
+<p class="text-on-surface"><span class="bg-slate-200 px-1 rounded">PROMPT:</span> My name is <span class="bg-primary text-primary-container px-2 rounded">[REDACTED]</span> and I live at <span class="bg-primary text-primary-container px-2 rounded">[REDACTED]</span>. Please draft a contract.</p>
+<div class="h-px bg-outline-variant/20 w-full"></div>
+<p class="text-on-surface-variant italic">// Redaction complete. 0ms latency. No data leaked.</p>
+</div>
+</div>
+</div>
+<!-- Section 2: Where it Goes -->
+<div class="md:col-span-4 bg-surface-container-low rounded-3xl p-8 border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl" data-icon="hub">hub</span>
+<h3 class="font-headline text-xl font-bold mb-4">The Destination</h3>
+<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">Redacted data is transmitted via encrypted tunnel to our enterprise partners for high-speed processing.</p>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl">
+<span class="font-bold text-sm">OpenAI Enterprise</span>
+<span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold uppercase">SOC 2 TYPE II</span>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl">
+<span class="font-bold text-sm">Anthropic Claude</span>
+<span class="text-[10px] bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-bold uppercase">HIPAA READY</span>
+</div>
+</div>
+</div>
+<!-- Section 3: Storage (Nothing on our servers) -->
+<div class="md:col-span-4 bg-surface-container-high rounded-3xl p-8 text-center flex flex-col items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-white mb-6 flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="cloud_off">cloud_off</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-3">Zero Cloud Storage</h3>
+<p class="text-sm text-on-surface-variant mb-4">We do not store your prompts or AI responses on our servers. Ever.</p>
+<div class="bg-on-surface-variant/10 px-4 py-2 rounded-full text-xs font-semibold">Local Logs Only</div>
+</div>
+<!-- Section 4: LLM Processing -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-3xl p-8 shadow-[0_32px_64px_rgba(0,0,0,0.04)] flex flex-col md:flex-row gap-8 items-center border border-outline-variant/15">
+<div class="flex-1">
+<h3 class="font-headline text-2xl font-bold mb-4">Transient Processing</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">LLM providers are contracted under strict Enterprise Privacy Terms. They process your request in a stateless "transient" window—your data is never used to train their models.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline" href="#">
+                        Review Provider Privacy Terms
+                        <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+<div class="w-full md:w-64 aspect-square bg-surface-container rounded-2xl overflow-hidden">
+<img alt="Visual representation of abstract digital data flowing and disappearing" class="w-full h-full object-cover grayscale opacity-50 mix-blend-multiply" data-alt="Abstract 3D visualization of digital particles dissolving into a clean white void representing data transience" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGocBKfU52ZGhi8Uw-r5DSJvAEPG6bHg4DXOcbxfYVuUUgcpC0ZTQ2PaCjiH3q7mJ5YwSHHJSoCznGJ6HuGdY5E0ySrNpi5bm5NGozTPMZmiKQQc2J1OJqpiyB5RiU3z2ey5jCkpBhOYfReiumUzt0MfrL-PXmYjqBQURGc3q2EEZmzPivFVXxCWUoyG5ON_oK6Ytkd4r0-N4-0Cplp0rgDhK-npUjBKWEzmPYRazf-faGy-u4uOhBXF80r70AsmBP80YRdD_Legc"/>
+</div>
+</div>
+<!-- Section 6: Contact Info -->
+<div class="md:col-span-12 bg-primary text-on-primary-container rounded-3xl p-8 md:p-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-center md:text-left">
+<h3 class="font-headline text-3xl font-extrabold mb-2">Still have concerns?</h3>
+<p class="text-on-primary-container/80">Speak directly to our Chief Security Officer about our architecture.</p>
+</div>
+<div class="flex gap-4">
+<button class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold hover:brightness-110 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                        Contact Security
+                    </button>
+<button class="bg-primary-container border border-white/20 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all">
+                        Whitepaper
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+</body></html>
