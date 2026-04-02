@@ -88,3 +88,10 @@
 **Copies:** Rocket Money — proved people will pay to stop silent money leaks when the payoff is an instant dollars-at-risk reveal
 **Hook:** It turns "I should probably return that later" into a visible money-loss clock you cannot ignore.
 **Submit:** idea-factory submit "ReturnClock is a fear-of-loss app that copies the Rocket Money model but applies it to shopping regret instead of subscriptions. Screenshot order confirmations, return-policy pages, or shipping emails, and the app extracts the exact return deadline, refund amount at risk, and any restocking fee before the window closes. The reveal is instant and screen-recordable: a blunt screen that says 'Return these shoes by Sunday 5:00 PM or lose $86,' with a live countdown and the exact refund you are about to forfeit. The core loop is save the proof once, watch the countdown, and get escalating reminders before the money is gone."
+
+## Refill Clock
+**Source:** mix-20260402-164749.md
+**Targets:** Fear of Loss
+**Copies:** Rocket Money — proved people pay for a blunt deadline-and-dollars-at-risk reveal when the pain is silent until it is too late
+**Hook:** It kills one of the most common adult panic moments by turning a vague refill worry into one exact date you cannot ignore.
+**Submit:** idea-factory submit "Refill Clock is a fear-of-loss app that copies the Rocket Money model but applies it to prescription anxiety instead of subscriptions. You photograph a prescription label, enter roughly how many pills are left, and the app calculates your exact run-out date, refill lead time, and risk window before you get stuck without medication. The reveal is instant and screen-recordable: a blunt screen that says 'You will run out of Lexapro in 6 days and your refill usually needs 3 business days,' plus a countdown and escalating reminders before the cliff. The core loop is scan once, make tiny pill-count adjustments, and come back because refill panic is not a one-time problem."
