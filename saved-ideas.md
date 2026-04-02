@@ -123,3 +123,10 @@
 **Copies:** Poised — proved professionals will pay for feedback that helps them sound sharper and more confident in high-stakes conversations
 **Hook:** It gives you a screen-recordable before-and-after confidence receipt in under 90 seconds.
 **Submit:** idea-factory submit "Panic Brake is a status app that copies the Poised model but compresses it into a sharper mobile reveal for high-stakes moments. Two minutes before a meeting, interview, sales call, or date, you read one short prompt and the app measures pace, filler words, volume consistency, and camera-based pulse, then gives you a 60-second reset drill and a second retest so the loop becomes check, reset, retest, walk in greener than before. The reveal is instant and screen-recordable: your pulse drops, your filler-word risk flips from red to green, and the app shows that you sound calmer before the conversation even begins."
+
+## BiteBack
+**Source:** mix-20260403-023404.md
+**Targets:** Health
+**Copies:** Cal AI — proved people will repeatedly scan what they are about to consume if the payoff is an instant, scary health verdict; Cal AI reportedly does $3M+/mo with photo-based food analysis
+**Hook:** It tells you whether your "small treat" tonight is quietly turning into a dentist bill later.
+**Submit:** idea-factory submit "BiteBack is a health app that copies the Cal AI model but applies it to dental anxiety instead of calories. You scan the dessert, soda, sports drink, or late-night snack you are about to have, tell the app roughly when you will brush, and it calculates a Tooth Damage Window based on sugar, acidity, stickiness, and timing. The reveal is instant and screen-recordable: a blunt warning that says your teeth stay in cavity-risk mode until a specific time tonight, plus the exact safe-brush time and one lower-damage swap so the loop becomes scan, see the damage, swap or delay, and come back because the same nighttime choices keep repeating."
