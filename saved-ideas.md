@@ -74,3 +74,10 @@
 **Copies:** Rocket Money — proved people will pay to stop silent recurring charges when the payoff is an instant money-leak reveal
 **Hook:** It catches the charge before your bank statement does.
 **Submit:** idea-factory submit "Renewal Radar is a fear-of-loss app that copies Rocket Money but focuses on a sharper reveal moment: upload screenshots of trial signups, App Store subscription pages, or renewal emails, and the app extracts the exact amount you are about to be charged, the cancellation deadline, and the hidden renewal traps before they hit your account. The reveal is instant and screen-recordable: a blunt screen that says how much money you are about to lose in the next few days unless you cancel now, plus a countdown card for each charge and a simple cancel-prep checklist. The core loop is save proof once, get escalating alerts as the deadline approaches, and come back because subscriptions and free trials keep resetting the same anxiety."
+
+## TowProof
+**Source:** mix-20260402-135641.md
+**Targets:** Fear of Loss
+**Copies:** Rocket Money — proved people will pay to avoid silent money leaks when the payoff is an instant "you are about to lose money" reveal
+**Hook:** It turns unreadable parking signs into one exact deadline before the city takes your money.
+**Submit:** idea-factory submit "TowProof is a fear-of-loss app that copies the Rocket Money model but applies it to parking anxiety instead of subscriptions. When you park, you scan the street signs and the app uses location plus OCR to translate the rules into one exact move-by deadline, the likely ticket risk, and a countdown alarm. The reveal is instant and screen-recordable: a blunt screen that says 'Move your car by 7:58 AM tomorrow or risk a $95 ticket,' plus a live countdown and one-tap reminder so users stop guessing and stop donating money to parking enforcement."
