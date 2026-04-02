@@ -1,0 +1,4 @@
+zsh:1: no matches found: good**
+zsh:6: command not found: The
+zsh:7: command not found: The
+zsh:9: no matches found: **Key
