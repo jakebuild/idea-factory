@@ -130,3 +130,10 @@
 **Copies:** Cal AI — proved people will repeatedly scan what they are about to consume if the payoff is an instant, scary health verdict; Cal AI reportedly does $3M+/mo with photo-based food analysis
 **Hook:** It tells you whether your "small treat" tonight is quietly turning into a dentist bill later.
 **Submit:** idea-factory submit "BiteBack is a health app that copies the Cal AI model but applies it to dental anxiety instead of calories. You scan the dessert, soda, sports drink, or late-night snack you are about to have, tell the app roughly when you will brush, and it calculates a Tooth Damage Window based on sugar, acidity, stickiness, and timing. The reveal is instant and screen-recordable: a blunt warning that says your teeth stay in cavity-risk mode until a specific time tonight, plus the exact safe-brush time and one lower-damage swap so the loop becomes scan, see the damage, swap or delay, and come back because the same nighttime choices keep repeating."
+
+## LensLock
+**Source:** mix-20260403-051325.md
+**Targets:** Health
+**Copies:** Alarmy — proved forced action plus visible consequences creates sticky daily behavior people will pay for
+**Hook:** It turns the stupid bedtime shortcut that wrecks your eyes into a visible clock you have to actively clear.
+**Submit:** idea-factory submit "LensLock is a health app that copies the Alarmy model but applies it to contact lens anxiety instead of waking up. You stick a cheap NFC tag on your lens case once, tap when you put your lenses in, and the app starts a wear-time clock that turns hostile near bedtime if you have not tapped the case to confirm removal. The reveal is instant and screen-recordable: a red screen says 'You've worn these lenses 15h 42m. Sleep in them tonight and tomorrow shifts into high-irritation risk,' plus a live countdown and escalating alerts until you clear it. The core loop is tap in, wear, tap out, protect your clean-eye streak, and come back because contact lens laziness is a daily problem."
