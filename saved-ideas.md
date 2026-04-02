@@ -109,3 +109,10 @@
 **Copies:** SnoreLab — proved people will pay to quantify a sleep-breathing problem when the app gives them proof they can hear and compare
 **Hook:** It turns vague sleep shame into one brutal receipt and one obvious experiment instead of generic sleep advice.
 **Submit:** idea-factory submit "Snore Receipt is a health app that copies the SnoreLab model but sharpens the reveal and the action. Leave your phone on the bed or nightstand, and by morning the app shows your total snore minutes, your worst 10-second clip, and exactly how much of the snoring happened on your back versus your side. Then it gives you one simple 3-night experiment like side-sleeping or pillow elevation so the loop becomes sleep, get the receipt, test one change, and compare tomorrow."
+
+## Glow Clash
+**Source:** mix-20260402-210442.md
+**Targets:** Attractiveness
+**Copies:** Cal AI — reportedly does $3M+/mo, proved that "scan what you're about to consume, get one scary verdict instantly" is a brutally effective conversion model
+**Hook:** It catches the expensive skincare routine that is quietly sabotaging your face the night before you need to look good.
+**Submit:** idea-factory submit "Glow Clash is an attractiveness app that copies the Cal AI model but applies it to skincare anxiety instead of calories. You scan the skincare products you plan to use tonight, and the app flags ingredient collisions that commonly lead to redness, peeling, breakouts, or next-morning irritation before a date, event, or photo day. The reveal is instant and screen-recordable: a blunt warning that says your routine is likely to make your face look worse by morning, plus the single product to remove so the loop becomes scan, get the verdict, swap one thing, and check your face tomorrow."
