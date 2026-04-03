@@ -1,0 +1,8 @@
+# Idea #60: CrushDecode is a romance app that copies the Keys AI model but applies it to conversation decoding instead of reply generation. You paste or screenshot a dating app conversation and the app maps the other person's interest level across every message as a graph — rising when they asked questions and sent long replies, dropping when they went short or took hours to respond. The reveal is instant and screen-recordable: a colored interest graph shows exactly where their engagement peaked and which specific message caused momentum to shift, with a one-sentence explanation of why that moment hurt. The loop is paste your latest conversation, see their emotional temperature charted, understand what happened, get one tactical reply framing, and come back after every new message because dating anxiety does not stop between replies.
+
+## Version: v1 (Original)
+**Date:** 2026-04-03 20:25
+**Status:** submitted
+
+## Description
+CrushDecode is a romance app that copies the Keys AI model but applies it to conversation decoding instead of reply generation. You paste or screenshot a dating app conversation and the app maps the other person's interest level across every message as a graph — rising when they asked questions and sent long replies, dropping when they went short or took hours to respond. The reveal is instant and screen-recordable: a colored interest graph shows exactly where their engagement peaked and which specific message caused momentum to shift, with a one-sentence explanation of why that moment hurt. The loop is paste your latest conversation, see their emotional temperature charted, understand what happened, get one tactical reply framing, and come back after every new message because dating anxiety does not stop between replies.
