@@ -165,3 +165,12 @@
 **Copies:** Keys AI / Rizz AI — combined $3–6M ARR, proved people will repeatedly pay to optimize dating conversations when they cannot read the other person's intent
 **Hook:** Someone screenshots their CrushDecode read and sends it to a friend saying "the app says they're still into me, look at this graph."
 **Submit:** idea-factory submit "CrushDecode is a romance app that copies the Keys AI model but applies it to conversation decoding instead of reply generation. You paste or screenshot a dating app conversation and the app maps the other person's interest level across every message as a graph — rising when they asked questions and sent long replies, dropping when they went short or took hours to respond. The reveal is instant and screen-recordable: a colored interest graph shows exactly where their engagement peaked and which specific message caused momentum to shift, with a one-sentence explanation of why that moment hurt. The loop is paste your latest conversation, see their emotional temperature charted, understand what happened, get one tactical reply framing, and come back after every new message because dating anxiety does not stop between replies."
+
+## AgeScore
+**Source:** mix-20260403-230556.md
+**Targets:** Financial Anxiety / Fear of Inadequacy
+**Copies:** Credit Karma — 130M users, $1.8B acquisition, proved people obsessively check a free anxiety-inducing financial score
+**Hook:** Most people have a vague dread about retirement savings. This turns the dread into a number — and a number you can improve.
+**Submit:** idea-factory submit "AgeScore is a financial anxiety app that copies the Credit Karma model but applies it to retirement readiness instead of credit scores. You enter your age, current savings, and monthly income — the app instantly shows your Retirement Readiness Score (0–100) and your percentile rank vs your real age cohort using Federal Reserve benchmark data. The reveal is deliberately anxiety-inducing: most people score below 50. Weekly score-check reminders pull you back. Monetize with a premium tier that gives a personalized action plan and monthly score tracking."
+
+---
