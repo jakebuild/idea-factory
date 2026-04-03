@@ -174,3 +174,12 @@
 **Submit:** idea-factory submit "AgeScore is a financial anxiety app that copies the Credit Karma model but applies it to retirement readiness instead of credit scores. You enter your age, current savings, and monthly income — the app instantly shows your Retirement Readiness Score (0–100) and your percentile rank vs your real age cohort using Federal Reserve benchmark data. The reveal is deliberately anxiety-inducing: most people score below 50. Weekly score-check reminders pull you back. Monetize with a premium tier that gives a personalized action plan and monthly score tracking."
 
 ---
+
+## HealthWrapped
+**Source:** mix-20260404-014849.md
+**Targets:** Status / Social Pride
+**Copies:** Spotify Wrapped — proved annual/monthly data reveals go massively viral with zero marketing spend; hit 30M+ new Spotify users from a single Wrapped campaign
+**Hook:** People screenshot it and post it the way they post Spotify Wrapped — it makes your health data feel like a flex, not a chore.
+**Submit:** idea-factory submit "HealthWrapped is a status app that copies the Spotify Wrapped model but applies it to your Apple Health data instead of music listening. Once a month, it pulls all your health metrics — steps, sleep, heart rate, active calories, mindful minutes — and generates a beautiful animated shareable card with your top stats: your highest single-day step count, your worst sleep week, the exact hour your stress peaks, and one surprising pattern the algorithm found. The reveal is instant and screen-recordable: a full-screen card showing your Health Month in Review, designed to be screenshot and shared, so the core loop is unlock your monthly card, see something surprising about yourself, share it, and compare with friends."
+
+---
