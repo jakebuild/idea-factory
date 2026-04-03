@@ -137,3 +137,10 @@
 **Copies:** Alarmy — proved forced action plus visible consequences creates sticky daily behavior people will pay for
 **Hook:** It turns the stupid bedtime shortcut that wrecks your eyes into a visible clock you have to actively clear.
 **Submit:** idea-factory submit "LensLock is a health app that copies the Alarmy model but applies it to contact lens anxiety instead of waking up. You stick a cheap NFC tag on your lens case once, tap when you put your lenses in, and the app starts a wear-time clock that turns hostile near bedtime if you have not tapped the case to confirm removal. The reveal is instant and screen-recordable: a red screen says 'You've worn these lenses 15h 42m. Sleep in them tonight and tomorrow shifts into high-irritation risk,' plus a live countdown and escalating alerts until you clear it. The core loop is tap in, wear, tap out, protect your clean-eye streak, and come back because contact lens laziness is a daily problem."
+
+## Reflux Receipt
+**Source:** mix-20260403-074745.md
+**Targets:** Health
+**Copies:** Cal AI — reportedly does $3M+/mo and proved people will repeatedly scan what they are about to consume when the payoff is an instant, scary health verdict
+**Hook:** It tells you before the first bite whether this snack is about to turn into a miserable night.
+**Submit:** idea-factory submit "Reflux Receipt is a health app that copies the Cal AI model but applies it to late-night heartburn anxiety instead of calories. You scan the late-night meal, dessert, drink, or snack you are about to have and enter your rough bedtime, and the app predicts your reflux-risk window based on portion size, acidity, fat, spice, and how soon you plan to lie down. The reveal is instant and screen-recordable: a blunt screen says 'If you eat this now and lie down at 11:15 PM, your highest heartburn risk window is 12:05 AM to 2:10 AM,' plus one lower-risk swap or bedtime delay so the loop becomes scan, see the damage, change one thing, and sleep better tonight."
