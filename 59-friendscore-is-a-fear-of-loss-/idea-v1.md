@@ -1,0 +1,8 @@
+# Idea #59: FriendScore is a fear of loss app that copies the Dex Personal CRM model but applies it to personal friendships instead of professional contacts. You add your closest friends once, log real connections when they happen — calls, hangouts, a real back-and-forth — and the app runs a friendship health score per person that decays visibly over time. The reveal is instant and screen-recordable: three people you consider close friends are currently below 40% health, and the top one has not had a real conversation with you in 52 days even though you both liked each other's posts last week. The loop is log a real connection, watch the score recover, get a weekly drift alert that shows exactly who is fading, and come back because the score keeps dropping every week you do not log anything.
+
+## Version: v1 (Original)
+**Date:** 2026-04-03 17:41
+**Status:** submitted
+
+## Description
+FriendScore is a fear of loss app that copies the Dex Personal CRM model but applies it to personal friendships instead of professional contacts. You add your closest friends once, log real connections when they happen — calls, hangouts, a real back-and-forth — and the app runs a friendship health score per person that decays visibly over time. The reveal is instant and screen-recordable: three people you consider close friends are currently below 40% health, and the top one has not had a real conversation with you in 52 days even though you both liked each other's posts last week. The loop is log a real connection, watch the score recover, get a weekly drift alert that shows exactly who is fading, and come back because the score keeps dropping every week you do not log anything.
