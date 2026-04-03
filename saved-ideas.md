@@ -144,3 +144,10 @@
 **Copies:** Cal AI — reportedly does $3M+/mo and proved people will repeatedly scan what they are about to consume when the payoff is an instant, scary health verdict
 **Hook:** It tells you before the first bite whether this snack is about to turn into a miserable night.
 **Submit:** idea-factory submit "Reflux Receipt is a health app that copies the Cal AI model but applies it to late-night heartburn anxiety instead of calories. You scan the late-night meal, dessert, drink, or snack you are about to have and enter your rough bedtime, and the app predicts your reflux-risk window based on portion size, acidity, fat, spice, and how soon you plan to lie down. The reveal is instant and screen-recordable: a blunt screen says 'If you eat this now and lie down at 11:15 PM, your highest heartburn risk window is 12:05 AM to 2:10 AM,' plus one lower-risk swap or bedtime delay so the loop becomes scan, see the damage, change one thing, and sleep better tonight."
+
+## Authority Receipt
+**Source:** mix-20260403-102833.md
+**Targets:** Status
+**Copies:** Crystal Knows — proved people pay for AI communication analysis when the payoff is a blunt verdict on how they come across before a high-stakes message goes out
+**Hook:** It tells ambitious people whether their own writing is quietly making them look lower-status at work.
+**Submit:** idea-factory submit "Authority Receipt is a status app that copies the Crystal Knows model but focuses on promotion and negotiation anxiety instead of generic personality analysis. You paste a Slack message, performance self-review, negotiation email, or follow-up note, and the app scores how deferential, scattered, or authority-draining it sounds before you send it. The reveal is instant and screen-recordable: a blunt card says 'This message scores 3/10 on authority because you apologized twice, buried the ask, and gave away your leverage,' then shows the stronger rewrite beside it so the loop becomes paste, get the verdict, send the sharper version, and come back before every important work message."
