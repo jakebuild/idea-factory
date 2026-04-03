@@ -1,0 +1,338 @@
+{
+  "id": "57-reflux-receipt-is-a-health-app",
+  "num": 57,
+  "title": "Reflux Receipt",
+  "subtitle": "A 7-night reflux experiment that turns late-night symptom guesses into a blunt pattern report.",
+  "description": "Reflux Receipt becomes a 7-night nighttime reflux experiment for people who already suspect they get heartburn from late eating but have never captured a clean personal pattern. The product is not a predictor, not a diagnosis tool, and not an ongoing wellness coach. It is a short protocol that helps a user log the same small set of variables for one week, then produces a blunt summary of what did and did not line up with symptoms. Each night, the user logs only the fields that matter for a first-pass reflux experiment: meal time, planned lie-down time, portion size, and up to two trigger tags from a fixed list. The trigger list is intentionally tiny: spicy, tomato/citrus, fried/fatty, alcohol, caffeine/carbonated, and chocolate/mint. The next morning, the user completes a 10-second check-in: symptoms none / mild / moderate / severe, sleep disruption yes / no, and optional note. That morning step is the only required second habit, so the app is designed around ruthless speed, reminders, and a visible 7-night countdown. The first-session value is not \"AI insight.\" It is a credible protocol with a finish line: the app tells the user exactly what they are doing for the next 7 nights, what data will be collected, and what kind of report they will get at the end. The value proposition is: \"Stop guessing. Run one clean week and get a usable pattern summary.\" That is materially better than generic reflux articles because it turns vague self-knowledge into a structured record the user can actually review. Insights are gated hard. Before 5 completed nights, the app shows no trigger conclusions at all, only progress and consistency prompts. After 5 nights, it may show limited findings with explicit confidence labels such as weak signal or moderate signal, based on simple count thresholds the user can inspect. Example: \"Symptoms followed 3 of 4 nights when you lay down within 90 minutes. Signal: weak.\" It must also be able to say \"No usable signal yet\" without trying to sound smart. That keeps the product honest and reduces fake-personalization theater. The end of the protocol is the real deliverable: a one-screen reflux summary with counts, patterns that crossed threshold, variables with no signal, and one suggested next experiment that changes only one thing, such as \"Repeat for 7 nights while keeping 2+ hours upright after dinner.\" That suggestion is framed as a self-test plan, not advice. If the user wants week-2 value, that is the answer: they come back to run one comparison round with a single variable changed, or they use the report in a doctor conversation. If users do not come back for a second round, the product still works as a one-week utility instead of pretending to be a sticky daily app. This is viable because the hard part is not model-building; it is content design and scope discipline. V1 needs a fixed trigger taxonomy, confidence thresholds, severity scale, safety copy, reminder copy, protocol instructions, and report templates. That content-prep work is part of the estimate, not hand-waved away. Three biggest assumptions that could kill the product: - VERIFIED A solo developer can ship a tiny structured tracker with reminders, thresholds, and summary reporting in 2-4 weeks if the scope stays this small. This is supported by the critique's own \"maybe\" verdict and the absence of heavy integrations. - UNVERIFIED Enough users will complete at least 5 of 7 nights to unlock a report. If this fails, the product is not a business; fallback plan: reposition it as a one-off guided protocol distributed through low-fidelity pilots, not a retention-driven app. - UNVERIFIED A 7-night summary report is valuable enough that some users will return in week 2 for a second comparison round. Because this is unverified, it is not the moat; fallback plan: treat repeat usage as upside, and pitch v1 as a finite self-assessment tool, not a habit product.",
+  "score": 7,
+  "status": "complete",
+  "deviceType": "MOBILE",
+  "category": "Health",
+  "platform": [
+    "ios",
+    "android"
+  ],
+  "tags": [
+    "reflux",
+    "heartburn",
+    "sleep",
+    "tracking",
+    "health"
+  ],
+  "folder": "57-reflux-receipt-is-a-health-app",
+  "prototypeUrl": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/",
+  "metaUrl": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/meta.json",
+  "startScreenId": "579203d9a6f6415e9a53186ab76b8106",
+  "startScreenUrl": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/579203d9a6f6415e9a53186ab76b8106.html",
+  "screenCount": 10,
+  "stitchId": "15243706986659527400",
+  "stitchUrl": "https://stitch.withgoogle.com/projects/15243706986659527400",
+  "publishedAt": "2026-04-03T01:22:12Z",
+  "updatedAt": "2026-04-03T01:22:12Z",
+  "screens": [
+    {
+      "id": "579203d9a6f6415e9a53186ab76b8106",
+      "label": "Welcome / Safety Framing",
+      "url": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/579203d9a6f6415e9a53186ab76b8106.html",
+      "order": 0
+    },
+    {
+      "id": "6a8dd68d8fe843069b9dec8a388360d5",
+      "label": "Protocol Setup",
+      "url": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/6a8dd68d8fe843069b9dec8a388360d5.html",
+      "order": 1
+    },
+    {
+      "id": "12ba79e4fde5466db28dbc8d8fbadfa2",
+      "label": "Home / Progress Tracker",
+      "url": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/12ba79e4fde5466db28dbc8d8fbadfa2.html",
+      "order": 2
+    },
+    {
+      "id": "4873cf2054d84af1bd5cd87ec8421f9a",
+      "label": "Night Log",
+      "url": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/4873cf2054d84af1bd5cd87ec8421f9a.html",
+      "order": 3
+    },
+    {
+      "id": "409f4977779f4f4a8421e6383d4be7e2",
+      "label": "Night Logged Confirmation",
+      "url": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/409f4977779f4f4a8421e6383d4be7e2.html",
+      "order": 4
+    },
+    {
+      "id": "4b1d2f8f15b343d8802a6f1860bfa744",
+      "label": "Morning Check-In",
+      "url": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/4b1d2f8f15b343d8802a6f1860bfa744.html",
+      "order": 5
+    },
+    {
+      "id": "798709f26f304cdf8e0f60d47f2434be",
+      "label": "Findings Preview",
+      "url": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/798709f26f304cdf8e0f60d47f2434be.html",
+      "order": 6
+    },
+    {
+      "id": "ec7e55c8c37b4b82aae6786ce793a5b5",
+      "label": "Final 7-Night Report",
+      "url": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/ec7e55c8c37b4b82aae6786ce793a5b5.html",
+      "order": 7
+    },
+    {
+      "id": "640bbd79012a496fa309be1424b7bea0",
+      "label": "Report Export / Share",
+      "url": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/640bbd79012a496fa309be1424b7bea0.html",
+      "order": 8
+    },
+    {
+      "id": "d3e352da781c4e3ca7856ded34ac84cd",
+      "label": "Settings / Legal / Data",
+      "url": "https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/d3e352da781c4e3ca7856ded34ac84cd.html",
+      "order": 9
+    }
+  ],
+  "journey": [
+    {
+      "stage": "",
+      "icon": "💡",
+      "title": "Original Idea",
+      "desc": "Reflux Receipt is a health app that copies the Cal AI model but applies it to late-night heartburn anxiety instead of calories.",
+      "sections": [
+        {
+          "label": "Description",
+          "items": [
+            "Reflux Receipt is a health app that copies the Cal AI model but applies it to late-night heartburn anxiety instead of calories. You scan the late-night meal, dessert, drink, or snack you are about to have and enter your rough bedtime, and the app predicts your reflux-risk window based on portion size, acidity, fat, spice, and how soon you plan to lie down. The reveal is instant and screen-recordable: a blunt screen says 'If you eat this now and lie down at 11:15 PM, your highest heartburn risk window is 12:05 AM to 2:10 AM,' plus one lower-risk swap or bedtime delay so the loop becomes scan, see the damage, change one thing, and sleep better tonight."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "critique",
+      "icon": "🔍",
+      "title": "Critique v1",
+      "desc": "Initial concept had a sharp hook but leaned on fake medical precision.",
+      "verdict": "NEEDS MAJOR WORK",
+      "verdictClass": "needs",
+      "score": "5/10",
+      "sections": [
+        {
+          "label": "What's Good",
+          "items": [
+            "The hook is instantly legible: scan a late-night food, get a blunt consequence, make one change, sleep better tonight.",
+            "It has better emotional specificity than generic nutrition apps because heartburn at night is a real, miserable, immediate problem.",
+            "A stripped-down MVP could be visually compelling and easy to demo if it stays honest and uses rough heuristics instead of fake medical precision."
+          ]
+        },
+        {
+          "label": "Brutal Feedback",
+          "items": [
+            "The core promise is trying to sound more scientific than it is. \"Highest heartburn risk window is 12:05 AM to 2:10 AM\" is fake-confidence theater unless you have real clinical backing, user-specific data, and validation. Otherwise it is astrology for acid reflux.",
+            "You are packaging a messy, deeply individual medical issue as if a camera scan can infer causality. Reflux depends on portion, ingredients, timing, body position, alcohol, caffeine, medication, anatomy, pregnancy, obesity, stress, and whether the user even has GERD versus random indigestion. Your app sees maybe 20% of that and then acts smug about the other 80%.",
+            "The \"Cal AI for reflux\" analogy is weaker than it sounds. Calories are at least anchored to widely understood nutrition data. Reflux triggers are inconsistent, subjective, and personal. A tomato sauce bomb wrecks one person and barely touches another. That makes your reveal less trustworthy and more annoying.",
+            "The product is walking straight into health-liability territory while being built as a vibe-coded solo app. If users treat this as medical guidance and it is wrong, your cute blunt screen becomes a credibility grenade.",
+            "The magic moment depends on food recognition plus portion estimation plus ingredient inference plus a reflux-scoring model. That is already too many brittle layers for a solo builder in a few weeks. If any layer is shaky, the whole reveal feels fake.",
+            "\"Screen-recordable\" is not retention. It is marketing bait. Why does the user come back after day 1? Because if the answer is just \"they eat again,\" then congratulations, you built a novelty scanner with no habit loop.",
+            "The suggested intervention is thin. \"Swap one thing\" or \"delay bedtime\" is obvious advice, not a moat. Most users already know spicy, fatty late-night food is risky. They do not need AI to tell them nachos plus lying down is a bad idea.",
+            "The app will get punished hardest by edge cases. Homemade meals, mixed dishes, cocktails, takeout containers, dessert platters, and shared plates are exactly the kinds of things people eat late at night, and they are exactly the things image-based inference handles badly.",
+            "The idea sounds clean only because it ignores the ugliest part: building the trigger logic and food-risk mappings into something structured enough to feel reliable. That \"content\" is not ready. It is a manual taxonomy and scoring job disguised as product vision.",
+            "If you keep the precision language, people will expect proof. If you remove the precision language, the wow factor drops and you are left with \"food choices that may cause heartburn,\" which is much less exciting and much more commoditized."
+          ]
+        },
+        {
+          "label": "Solo Dev",
+          "items": [
+            "Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — if the MVP drops camera-first magic, avoids medical-grade claims, uses manual food entry plus simple heuristics, and frames itself as a personal risk estimate rather than a real predictor.",
+            "Biggest solo complexity traps: image-based food recognition quality, portion-size inference, building and validating reflux trigger logic, legal/medical wording, retaining users after the first novelty scan, and handling messy mixed-food inputs without the product feeling dumb."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "improve",
+      "icon": "✨",
+      "title": "Improved v2",
+      "desc": "The camera-first predictor became a manual trigger tracker with honest risk framing.",
+      "sections": [
+        {
+          "label": "What Changed",
+          "items": [
+            "Replaced camera scanning and fake time-window prediction with manual entry, blunt risk bands, and a bedtime slider. This removes the weakest part of the original idea: pretending a solo-built scanner can infer ingredients, portions, and personal reflux causality with medical-looking precision.",
+            "Shifted the product from \"universal reflux predictor\" to \"personal trigger tracker for known nighttime reflux sufferers.\" That makes the app honest about uncertainty, lowers health-liability risk, and creates a real learning loop instead of a one-off novelty scan.",
+            "Narrowed the intervention to one actionable recommendation per check: either wait longer before lying down or reduce/remove one high-risk trigger tag. This keeps the product useful in 2-4 weeks and avoids fake optimization theater."
+          ]
+        },
+        {
+          "label": "MVP Scope",
+          "items": [
+            "What's in v1: onboarding and safety framing, evening food log with fixed trigger tags and bedtime slider, immediate risk band with one intervention, morning symptom check-in, history view, simple pattern summaries after enough logs, and streak or experiment reminders.",
+            "What's out of v1: camera scan, image recognition, portion estimation from photos, ingredient extraction, nutrition database integrations, precise time-window prediction, generalized medical advice, clinician sharing, community features, payments, and any feature that depends on user-generated content or network effects.",
+            "Estimated build time with AI coding tools: 2-3 weeks total, including UI build, starter trigger taxonomy and rule-table content prep, intervention copywriting, local data model setup, analytics events, and GitHub/App Store integration setup."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "critique",
+      "icon": "🔍",
+      "title": "Critique v2",
+      "desc": "The tracker direction was more buildable, but retention and fake-personalization risk remained.",
+      "verdict": "NEEDS MAJOR WORK",
+      "verdictClass": "needs",
+      "score": "6/10",
+      "sections": [
+        {
+          "label": "What's Good",
+          "items": [
+            "This version finally stopped pretending a solo developer can build credible food vision for a medically messy problem in a few weeks. Cutting the camera was the right move.",
+            "The repositioning is much more honest. \"Personal trigger tracker\" is a real product category. \"Universal reflux predictor\" was nonsense.",
+            "The scope is closer to something one person could ship: structured logging, simple rules, and pattern summaries are all boring but buildable.",
+            "The best part is the narrowness. Nighttime reflux for people who already know they have the problem is a sharper wedge than generic gut-health fluff."
+          ]
+        },
+        {
+          "label": "Brutal Feedback",
+          "items": [
+            "The app is still dangerously close to being a fancy symptom journal with attitude. Users already know late meals, alcohol, spicy food, and lying down are bad. If your \"insight\" is just repackaged common sense, this dies the second the novelty wears off.",
+            "The entire product lives or dies on manual compliance, and manual compliance in consumer health apps is where good intentions go to die. You need evening logging and morning logging. That is not one habit. That is two habits, at two different times, for a problem people would rather ignore.",
+            "\"14-day coach\" sounds tidy because it hides the real problem: most users will do this for 2-3 nights, get busy, and disappear. Your retention story is still mostly a sentence, not proof. Why does the user come back after day 1? Because if the answer is \"to keep journaling,\" that is weak.",
+            "The first-session value is flimsy. Before personal data exists, the app is just a rules table with a nicer tone. \"Caution if you lie down within 2 hours\" is not a magic moment. It is your app telling adults what every reflux article already says for free.",
+            "The pattern engine can easily become fake personalization theater. \"3 of the last 4 times tomato + bed within 90 minutes caused symptoms\" sounds smart, but with tiny sample sizes and tons of confounders, it can also be statistical cosplay.",
+            "Health-liability risk did not disappear just because the copy got softer. The moment you show risk bands and recommend behavior changes around symptoms, some users will read authority into it. If the onboarding and safety framing are weak, the product still looks like low-rent medical advice.",
+            "The content work is not trivial, and the pitch keeps understating that. Trigger taxonomy, wording, severity scales, interventions, pattern thresholds, confidence language, notification copy, and safety disclaimers are not filler. That is a significant chunk of the MVP.",
+            "The market is awkward. Serious reflux sufferers may want doctor-backed guidance, not a vibe-coded app. Casual sufferers may not care enough to log. You are targeting the narrow band of people miserable enough to want help but not so serious that they demand clinical credibility.",
+            "The idea claims honesty, but the \"experiment\" framing can still overpromise. If the app starts nudging users with \"try this tonight\" based on weak data, it risks sounding smarter than it is all over again.",
+            "This is not a moat. At best it is a well-packaged micro-journal with better copy. That can still be worth shipping, but do not confuse \"possible MVP\" with \"strong business.\""
+          ]
+        },
+        {
+          "label": "Solo Dev",
+          "items": [
+            "Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the mechanics are simple enough, but only if the builder resists adding fake intelligence, keeps the data model tiny, and accepts that content design and safety copy are real work, not garnish.",
+            "Biggest solo complexity traps: dual-habit retention, legal/safety wording, overfitting thin personal data into bogus insights, expanding trigger tags into a pseudo-nutrition database, notification timing, and spending too long polishing a journaling app that users may abandon by night three."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "improve",
+      "icon": "✨",
+      "title": "Improved v3",
+      "desc": "The product became a finite 7-night reflux experiment with evidence-gated findings.",
+      "sections": [
+        {
+          "label": "What Changed",
+          "items": [
+            "Replaced the open-ended \"coach\" with a strict 7-night reflux experiment. This fixes the retention and honesty problem: a short protocol is more believable than an ongoing journaling habit, and it gives users a clear finish line instead of vague self-improvement.",
+            "Removed the instant risk band and any predictive language from v1. This directly addresses the critique that early value was just common-sense advice wearing medical-looking confidence; v1 now focuses on structured evidence capture and only shows findings after enough completed nights.",
+            "Shrunk the data model to the minimum useful variables and made the output a completion report, not fake personalization. This reduces manual burden, avoids thin-data overfitting, includes the real content-design work in scope, and makes the product shippable by one person in 2-4 weeks."
+          ]
+        },
+        {
+          "label": "MVP Scope",
+          "items": [
+            "What's in v1: safety-first onboarding, 7-night protocol setup, nightly log with fixed tags and defaults, morning symptom check-in, reminder scheduling, progress countdown, evidence-gated findings after enough nights, final 7-night summary report, and export/share of the summary as plain text or PDF.",
+            "What's out of v1: instant risk bands, predictive scores, camera scan, image recognition, nutrition database integrations, ongoing coaching, community or UGC, clinician dashboard, medication tracking, wearable integrations, payments, and anything that depends on network effects, moderation, or partnerships.",
+            "Estimated build time with AI coding tools: 2.5-3.5 weeks total, including UI build, local storage and reminder integration setup, export generation, trigger taxonomy definition, confidence-threshold rules, severity scale design, onboarding and safety copy, notification copy, and report-template content prep."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "critique",
+      "icon": "🔍",
+      "title": "Critique v3",
+      "desc": "The one-week utility shape finally looked honest enough to ship and test.",
+      "verdict": "WORTH BUILDING",
+      "verdictClass": "worth",
+      "score": "7/10",
+      "sections": [
+        {
+          "label": "What's Good",
+          "items": [
+            "This is the first version that stops cosplaying as medical AI and starts acting like a small, honest utility.",
+            "The 7-night protocol is a real scope cut, not fake simplification. A solo developer can plausibly ship this if they keep it local-first and boring.",
+            "Gating conclusions until enough nights are logged is the right call. At least now the app admits that thin data is thin data.",
+            "The final report is a better product shape than an endless \"coach.\" A finite deliverable is more believable than habit-app theater."
+          ]
+        },
+        {
+          "label": "Brutal Feedback",
+          "items": [
+            "You did not solve retention. You downgraded the problem from \"daily habit app\" to \"one-week utility,\" which is smarter, but it still means the business is UNVERIFIED.",
+            "Seven nights still asks for two behaviors at two different times of day. That is compliance tax, not convenience. People with reflux already procrastinate on behavior change; now you want them to log it twice.",
+            "Your \"weak signal\" logic is still flirting with numerology. Five to seven nights is barely enough to say anything clean when portion size, stress, medication, meal composition, and bedtime timing all move together.",
+            "The tiny trigger taxonomy is good for scope and bad for truth. The minute a user's obvious trigger is missing, the app looks simplistic instead of focused.",
+            "\"Useful for doctor conversations\" is optimistic marketing. Most doctors are not waiting for a vibe-coded PDF unless it is extremely clean, concise, and clearly better than a patient saying \"late meals seem bad.\"",
+            "The product still risks feeling like premium common sense. \"Eat earlier, lie down later, avoid obvious triggers\" is not a breakthrough. If the report mostly confirms what users already suspect, they will not care enough to repeat the protocol.",
+            "Safety framing is still a real product surface, not a disclaimer you sprinkle on top. If the app sounds too cautious, it feels empty. If it sounds too confident, it sounds medically shady.",
+            "Reminders are not trivial glue work. Notification permissions, missed nights, timezone quirks, and inconsistent morning behavior can easily wreck the clean protocol experience.",
+            "Export and PDF are classic solo-dev trap features. They sound small, but they invite polish work that does nothing to prove demand.",
+            "The moat is still weak. This is a specialized compliance wrapper around a symptom diary, not some defensible engine."
+          ]
+        },
+        {
+          "label": "Solo Dev",
+          "items": [
+            "Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the core tracker is small enough, but only if the builder resists overbuilding reminders, export, and pseudo-insight logic.",
+            "Biggest solo complexity traps: notification reliability, missed-night recovery logic, thin-data threshold rules, health/safety wording, App Store review risk if claims sound medical, report/export polish creep, and taxonomy expansion into a fake nutrition project."
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "validate",
+      "icon": "✅",
+      "title": "Validated",
+      "desc": "The final concept cleared the critique gate and locked in the screen list.",
+      "sections": [
+        {
+          "label": "Score",
+          "items": [
+            "7/10",
+            "Validated on 2026-04-03"
+          ]
+        },
+        {
+          "label": "Design Handoff",
+          "items": [
+            "Welcome / Safety Framing",
+            "Protocol Setup",
+            "Home / Progress Tracker",
+            "Night Log",
+            "Night Logged Confirmation",
+            "Morning Check-In",
+            "Findings Preview",
+            "Final 7-Night Report",
+            "Report Export / Share",
+            "Settings / Legal / Data"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "design",
+      "icon": "🎨",
+      "title": "Designed",
+      "desc": "Stitch screens were generated and assembled into a clickable mobile prototype.",
+      "sections": [
+        {
+          "label": "Links",
+          "items": [
+            "Stitch: https://stitch.withgoogle.com/projects/15243706986659527400",
+            "Preview: https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/"
+          ]
+        }
+      ]
+    }
+  ],
+  "journeyHtml": [
+    "<div class=\"esect\"><div class=\"esect-label\">Description</div><ul><li>Reflux Receipt is a health app that copies the Cal AI model but applies it to late-night heartburn anxiety instead of calories. You scan the late-night meal, dessert, drink, or snack you are about to have and enter your rough bedtime, and the app predicts your reflux-risk window based on portion size, acidity, fat, spice, and how soon you plan to lie down. The reveal is instant and screen-recordable: a blunt screen says &#x27;If you eat this now and lie down at 11:15 PM, your highest heartburn risk window is 12:05 AM to 2:10 AM,&#x27; plus one lower-risk swap or bedtime delay so the loop becomes scan, see the damage, change one thing, and sleep better tonight.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>The hook is instantly legible: scan a late-night food, get a blunt consequence, make one change, sleep better tonight.</li><li>It has better emotional specificity than generic nutrition apps because heartburn at night is a real, miserable, immediate problem.</li><li>A stripped-down MVP could be visually compelling and easy to demo if it stays honest and uses rough heuristics instead of fake medical precision.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>The core promise is trying to sound more scientific than it is. &quot;Highest heartburn risk window is 12:05 AM to 2:10 AM&quot; is fake-confidence theater unless you have real clinical backing, user-specific data, and validation. Otherwise it is astrology for acid reflux.</li><li>You are packaging a messy, deeply individual medical issue as if a camera scan can infer causality. Reflux depends on portion, ingredients, timing, body position, alcohol, caffeine, medication, anatomy, pregnancy, obesity, stress, and whether the user even has GERD versus random indigestion. Your app sees maybe 20% of that and then acts smug about the other 80%.</li><li>The &quot;Cal AI for reflux&quot; analogy is weaker than it sounds. Calories are at least anchored to widely understood nutrition data. Reflux triggers are inconsistent, subjective, and personal. A tomato sauce bomb wrecks one person and barely touches another. That makes your reveal less trustworthy and more annoying.</li><li>The product is walking straight into health-liability territory while being built as a vibe-coded solo app. If users treat this as medical guidance and it is wrong, your cute blunt screen becomes a credibility grenade.</li><li>The magic moment depends on food recognition plus portion estimation plus ingredient inference plus a reflux-scoring model. That is already too many brittle layers for a solo builder in a few weeks. If any layer is shaky, the whole reveal feels fake.</li><li>&quot;Screen-recordable&quot; is not retention. It is marketing bait. Why does the user come back after day 1? Because if the answer is just &quot;they eat again,&quot; then congratulations, you built a novelty scanner with no habit loop.</li><li>The suggested intervention is thin. &quot;Swap one thing&quot; or &quot;delay bedtime&quot; is obvious advice, not a moat. Most users already know spicy, fatty late-night food is risky. They do not need AI to tell them nachos plus lying down is a bad idea.</li><li>The app will get punished hardest by edge cases. Homemade meals, mixed dishes, cocktails, takeout containers, dessert platters, and shared plates are exactly the kinds of things people eat late at night, and they are exactly the things image-based inference handles badly.</li><li>The idea sounds clean only because it ignores the ugliest part: building the trigger logic and food-risk mappings into something structured enough to feel reliable. That &quot;content&quot; is not ready. It is a manual taxonomy and scoring job disguised as product vision.</li><li>If you keep the precision language, people will expect proof. If you remove the precision language, the wow factor drops and you are left with &quot;food choices that may cause heartburn,&quot; which is much less exciting and much more commoditized.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — if the MVP drops camera-first magic, avoids medical-grade claims, uses manual food entry plus simple heuristics, and frames itself as a personal risk estimate rather than a real predictor.</li><li>Biggest solo complexity traps: image-based food recognition quality, portion-size inference, building and validating reflux trigger logic, legal/medical wording, retaining users after the first novelty scan, and handling messy mixed-food inputs without the product feeling dumb.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Replaced camera scanning and fake time-window prediction with manual entry, blunt risk bands, and a bedtime slider. This removes the weakest part of the original idea: pretending a solo-built scanner can infer ingredients, portions, and personal reflux causality with medical-looking precision.</li><li>Shifted the product from &quot;universal reflux predictor&quot; to &quot;personal trigger tracker for known nighttime reflux sufferers.&quot; That makes the app honest about uncertainty, lowers health-liability risk, and creates a real learning loop instead of a one-off novelty scan.</li><li>Narrowed the intervention to one actionable recommendation per check: either wait longer before lying down or reduce/remove one high-risk trigger tag. This keeps the product useful in 2-4 weeks and avoids fake optimization theater.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>What&#x27;s in v1: onboarding and safety framing, evening food log with fixed trigger tags and bedtime slider, immediate risk band with one intervention, morning symptom check-in, history view, simple pattern summaries after enough logs, and streak or experiment reminders.</li><li>What&#x27;s out of v1: camera scan, image recognition, portion estimation from photos, ingredient extraction, nutrition database integrations, precise time-window prediction, generalized medical advice, clinician sharing, community features, payments, and any feature that depends on user-generated content or network effects.</li><li>Estimated build time with AI coding tools: 2-3 weeks total, including UI build, starter trigger taxonomy and rule-table content prep, intervention copywriting, local data model setup, analytics events, and GitHub/App Store integration setup.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>This version finally stopped pretending a solo developer can build credible food vision for a medically messy problem in a few weeks. Cutting the camera was the right move.</li><li>The repositioning is much more honest. &quot;Personal trigger tracker&quot; is a real product category. &quot;Universal reflux predictor&quot; was nonsense.</li><li>The scope is closer to something one person could ship: structured logging, simple rules, and pattern summaries are all boring but buildable.</li><li>The best part is the narrowness. Nighttime reflux for people who already know they have the problem is a sharper wedge than generic gut-health fluff.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>The app is still dangerously close to being a fancy symptom journal with attitude. Users already know late meals, alcohol, spicy food, and lying down are bad. If your &quot;insight&quot; is just repackaged common sense, this dies the second the novelty wears off.</li><li>The entire product lives or dies on manual compliance, and manual compliance in consumer health apps is where good intentions go to die. You need evening logging and morning logging. That is not one habit. That is two habits, at two different times, for a problem people would rather ignore.</li><li>&quot;14-day coach&quot; sounds tidy because it hides the real problem: most users will do this for 2-3 nights, get busy, and disappear. Your retention story is still mostly a sentence, not proof. Why does the user come back after day 1? Because if the answer is &quot;to keep journaling,&quot; that is weak.</li><li>The first-session value is flimsy. Before personal data exists, the app is just a rules table with a nicer tone. &quot;Caution if you lie down within 2 hours&quot; is not a magic moment. It is your app telling adults what every reflux article already says for free.</li><li>The pattern engine can easily become fake personalization theater. &quot;3 of the last 4 times tomato + bed within 90 minutes caused symptoms&quot; sounds smart, but with tiny sample sizes and tons of confounders, it can also be statistical cosplay.</li><li>Health-liability risk did not disappear just because the copy got softer. The moment you show risk bands and recommend behavior changes around symptoms, some users will read authority into it. If the onboarding and safety framing are weak, the product still looks like low-rent medical advice.</li><li>The content work is not trivial, and the pitch keeps understating that. Trigger taxonomy, wording, severity scales, interventions, pattern thresholds, confidence language, notification copy, and safety disclaimers are not filler. That is a significant chunk of the MVP.</li><li>The market is awkward. Serious reflux sufferers may want doctor-backed guidance, not a vibe-coded app. Casual sufferers may not care enough to log. You are targeting the narrow band of people miserable enough to want help but not so serious that they demand clinical credibility.</li><li>The idea claims honesty, but the &quot;experiment&quot; framing can still overpromise. If the app starts nudging users with &quot;try this tonight&quot; based on weak data, it risks sounding smarter than it is all over again.</li><li>This is not a moat. At best it is a well-packaged micro-journal with better copy. That can still be worth shipping, but do not confuse &quot;possible MVP&quot; with &quot;strong business.&quot;</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the mechanics are simple enough, but only if the builder resists adding fake intelligence, keeps the data model tiny, and accepts that content design and safety copy are real work, not garnish.</li><li>Biggest solo complexity traps: dual-habit retention, legal/safety wording, overfitting thin personal data into bogus insights, expanding trigger tags into a pseudo-nutrition database, notification timing, and spending too long polishing a journaling app that users may abandon by night three.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Replaced the open-ended &quot;coach&quot; with a strict 7-night reflux experiment. This fixes the retention and honesty problem: a short protocol is more believable than an ongoing journaling habit, and it gives users a clear finish line instead of vague self-improvement.</li><li>Removed the instant risk band and any predictive language from v1. This directly addresses the critique that early value was just common-sense advice wearing medical-looking confidence; v1 now focuses on structured evidence capture and only shows findings after enough completed nights.</li><li>Shrunk the data model to the minimum useful variables and made the output a completion report, not fake personalization. This reduces manual burden, avoids thin-data overfitting, includes the real content-design work in scope, and makes the product shippable by one person in 2-4 weeks.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">MVP Scope</div><ul><li>What&#x27;s in v1: safety-first onboarding, 7-night protocol setup, nightly log with fixed tags and defaults, morning symptom check-in, reminder scheduling, progress countdown, evidence-gated findings after enough nights, final 7-night summary report, and export/share of the summary as plain text or PDF.</li><li>What&#x27;s out of v1: instant risk bands, predictive scores, camera scan, image recognition, nutrition database integrations, ongoing coaching, community or UGC, clinician dashboard, medication tracking, wearable integrations, payments, and anything that depends on network effects, moderation, or partnerships.</li><li>Estimated build time with AI coding tools: 2.5-3.5 weeks total, including UI build, local storage and reminder integration setup, export generation, trigger taxonomy definition, confidence-threshold rules, severity scale design, onboarding and safety copy, notification copy, and report-template content prep.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What&#x27;s Good</div><ul><li>This is the first version that stops cosplaying as medical AI and starts acting like a small, honest utility.</li><li>The 7-night protocol is a real scope cut, not fake simplification. A solo developer can plausibly ship this if they keep it local-first and boring.</li><li>Gating conclusions until enough nights are logged is the right call. At least now the app admits that thin data is thin data.</li><li>The final report is a better product shape than an endless &quot;coach.&quot; A finite deliverable is more believable than habit-app theater.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>You did not solve retention. You downgraded the problem from &quot;daily habit app&quot; to &quot;one-week utility,&quot; which is smarter, but it still means the business is UNVERIFIED.</li><li>Seven nights still asks for two behaviors at two different times of day. That is compliance tax, not convenience. People with reflux already procrastinate on behavior change; now you want them to log it twice.</li><li>Your &quot;weak signal&quot; logic is still flirting with numerology. Five to seven nights is barely enough to say anything clean when portion size, stress, medication, meal composition, and bedtime timing all move together.</li><li>The tiny trigger taxonomy is good for scope and bad for truth. The minute a user&#x27;s obvious trigger is missing, the app looks simplistic instead of focused.</li><li>&quot;Useful for doctor conversations&quot; is optimistic marketing. Most doctors are not waiting for a vibe-coded PDF unless it is extremely clean, concise, and clearly better than a patient saying &quot;late meals seem bad.&quot;</li><li>The product still risks feeling like premium common sense. &quot;Eat earlier, lie down later, avoid obvious triggers&quot; is not a breakthrough. If the report mostly confirms what users already suspect, they will not care enough to repeat the protocol.</li><li>Safety framing is still a real product surface, not a disclaimer you sprinkle on top. If the app sounds too cautious, it feels empty. If it sounds too confident, it sounds medically shady.</li><li>Reminders are not trivial glue work. Notification permissions, missed nights, timezone quirks, and inconsistent morning behavior can easily wreck the clean protocol experience.</li><li>Export and PDF are classic solo-dev trap features. They sound small, but they invite polish work that does nothing to prove demand.</li><li>The moat is still weak. This is a specialized compliance wrapper around a symptom diary, not some defensible engine.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev</div><ul><li>Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the core tracker is small enough, but only if the builder resists overbuilding reminders, export, and pseudo-insight logic.</li><li>Biggest solo complexity traps: notification reliability, missed-night recovery logic, thin-data threshold rules, health/safety wording, App Store review risk if claims sound medical, report/export polish creep, and taxonomy expansion into a fake nutrition project.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">Score</div><ul><li>7/10 final critique score</li><li>WORTH BUILDING verdict on April 3, 2026</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Design Handoff</div><ul><li>Welcome / Safety Framing</li><li>Protocol Setup</li><li>Home / Progress Tracker</li><li>Night Log</li><li>Night Logged Confirmation</li><li>Morning Check-In</li><li>Findings Preview</li><li>Final 7-Night Report</li><li>Report Export / Share</li><li>Settings / Legal / Data</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">Stitch Project</div><p><a class=\"ext-link\" href=\"https://stitch.withgoogle.com/projects/15243706986659527400\" target=\"_blank\" rel=\"noreferrer\">15243706986659527400</a></p></div><div class=\"esect\"><div class=\"esect-label\">Prototype</div><p><a class=\"ext-link\" href=\"https://jakebuild.github.io/idea-factory/57-reflux-receipt-is-a-health-app/\" target=\"_blank\" rel=\"noreferrer\">Live preview</a></p></div><div class=\"esect\"><div class=\"esect-label\">Device</div><p>Mobile prototype with a single framed app preview.</p></div>"
+  ]
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Early Insights - Clinical Tracker</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed-variant": "#525c6a",
+                      "tertiary-dim": "#4a5178",
+                      "secondary-container": "#d9e3f4",
+                      "on-tertiary-fixed": "#2b3257",
+                      "inverse-on-surface": "#9b9d9e",
+                      "error": "#a83836",
+                      "outline": "#767c7e",
+                      "on-primary-fixed": "#002840",
+                      "background": "#f8f9fa",
+                      "surface-container-low": "#f1f4f5",
+                      "error-container": "#fa746f",
+                      "surface": "#f8f9fa",
+                      "secondary-fixed-dim": "#cbd5e6",
+                      "tertiary-fixed-dim": "#bbc1ef",
+                      "surface-dim": "#d5dbdd",
+                      "on-primary": "#f6f9ff",
+                      "primary-dim": "#055884",
+                      "surface-variant": "#dee3e6",
+                      "secondary-fixed": "#d9e3f4",
+                      "tertiary-fixed": "#c9cffe",
+                      "secondary-dim": "#4a5462",
+                      "outline-variant": "#adb3b5",
+                      "tertiary-container": "#c9cffe",
+                      "on-tertiary": "#faf8ff",
+                      "on-error": "#fff7f6",
+                      "surface-container-high": "#e5e9eb",
+                      "inverse-surface": "#0c0f10",
+                      "surface-container-lowest": "#ffffff",
+                      "on-surface": "#2d3335",
+                      "surface-container-highest": "#dee3e6",
+                      "on-primary-container": "#003e60",
+                      "on-background": "#2d3335",
+                      "surface-tint": "#1e6491",
+                      "on-surface-variant": "#5a6062",
+                      "on-tertiary-fixed-variant": "#484e76",
+                      "secondary": "#56606e",
+                      "surface-bright": "#f8f9fa",
+                      "primary-fixed": "#88c4f6",
+                      "tertiary": "#565d85",
+                      "on-tertiary-container": "#3e456c",
+                      "primary-fixed-dim": "#7ab7e8",
+                      "error-dim": "#67040d",
+                      "on-secondary": "#f7f9ff",
+                      "inverse-primary": "#88c4f6",
+                      "primary-container": "#88c4f6",
+                      "surface-container": "#ebeef0",
+                      "on-primary-fixed-variant": "#00476d",
+                      "on-secondary-container": "#495260",
+                      "primary": "#1e6491",
+                      "on-secondary-fixed": "#36404d",
+                      "on-error-container": "#6e0a12"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Public Sans"],
+                      "label": ["Public Sans"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface leading-relaxed pb-32"><header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/90 backdrop-blur-xl border-b border-slate-200/70"><div class="flex items-center justify-between px-5 h-16"><div class="flex items-center gap-3 min-w-0"><button aria-label="Back" class="w-10 h-10 rounded-full flex items-center justify-center text-sky-800 hover:bg-slate-100 transition-colors" onclick="window.location.href='12ba79e4fde5466db28dbc8d8fbadfa2.html'"><span class="material-symbols-outlined">arrow_back</span></button><h1 class="text-lg font-bold tracking-tight text-sky-800 font-['Manrope'] truncate">Findings Preview</h1></div><div class="w-10 h-10 flex-shrink-0"></div></div></header>
+<!-- TopAppBar -->
+<main class="pt-24 pb-32 px-6 max-w-screen-xl mx-auto">
+<!-- Header Section: Data Integrity -->
+<section class="mb-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+<div class="md:col-span-7">
+<h2 class="font-headline font-extrabold text-4xl text-primary tracking-tight mb-4">Data Integrity Threshold: 3/7 Nights</h2>
+<p class="text-on-surface-variant text-lg max-w-xl">
+                        Your clinical report is currently in a gestational phase. These findings are <span class="font-semibold text-primary">preliminary</span> and subject to change as more data points stabilize your personal baseline.
+                    </p>
+</div>
+<div class="md:col-span-5 flex justify-center md:justify-end">
+<!-- Progress Orb -->
+<div class="relative w-48 h-48 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-highest" cx="96" cy="96" fill="transparent" r="80" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-primary-container" cx="96" cy="96" fill="transparent" r="80" stroke="currentColor" stroke-dasharray="502.6" stroke-dashoffset="286.5" stroke-width="12"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-headline font-bold text-3xl text-on-surface">42%</span>
+<span class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold">Integrity</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 1: Potential Patterns (Bento Style) -->
+<section class="mb-12">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline font-bold text-xl text-primary flex items-center gap-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+                    Potential Patterns
+                </h3>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Active Signal Card -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl p-8 shadow-[0px_12px_32px_rgba(45,51,53,0.06)] flex flex-col justify-between min-h-[240px] border border-outline-variant/10">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="bg-tertiary-container/40 text-on-tertiary-container px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider">Low Confidence</span>
+<span class="material-symbols-outlined text-primary-container">trending_up</span>
+</div>
+<h4 class="font-headline font-bold text-2xl text-on-surface mb-3">Slight morning fatigue correlation with screen time</h4>
+<p class="text-on-surface-variant max-w-lg">We've observed a subtle increase in subjective fatigue scores on mornings following logged device usage exceeding 120 minutes after 9:00 PM.</p>
+</div>
+<div class="mt-8 flex items-center gap-4 text-sm text-primary font-semibold">
+<span class="w-12 h-[2px] bg-primary-container"></span>
+                        Requires 4 more data points to validate
+                    </div>
+</div>
+<!-- Decorative Asset Card -->
+<div class="bg-primary overflow-hidden rounded-xl relative min-h-[240px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay" data-alt="abstract flowing blue gradient with soft organic shapes and ethereal light flares representing neurological data flows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADgFpNfvaHZEpw4pqv1s_jVbXRJcSY0zARVpv5vjNZ1-prlbPR433ckL5r1cwHzzZla2DWoC4dPPY4SXL1vfdvcGRd2Hms4kYYUJCcKtbPm0W6TdCVBoo_XqHgaop0D7E20r0CGokdbKH0pPRtYTjc4zmdmW58jBN7rzguHxK-Syf1M38ZJQ3bvXhymxVDt0256GtCsJRNvNl-FbzQfVb5nZ87-x37J_c8ViuwqjdQpH6GK4UvUgVyv2FxMETb6oYXUzz6xlGTpmDu"/>
+<div class="relative h-full p-8 flex flex-col justify-end">
+<span class="text-white/60 text-xs uppercase tracking-widest font-bold mb-1">Deep Analysis</span>
+<h4 class="text-white font-headline font-bold text-xl leading-snug">Continuous monitoring creates clinical clarity.</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Incomplete Signals -->
+<section class="mb-16">
+<h3 class="font-headline font-bold text-xl text-primary flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined">query_stats</span>
+                Incomplete Signals
+            </h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+<!-- No Usable Signal Card 1 -->
+<div class="bg-surface-container-low rounded-xl p-6 flex items-start gap-5 transition-all hover:bg-surface-container-high/50 group">
+<div class="bg-surface-container-lowest p-3 rounded-lg text-outline-variant">
+<span class="material-symbols-outlined text-2xl">bedtime</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-1">
+<h4 class="font-headline font-bold text-on-surface">Deep Sleep</h4>
+<span class="text-[10px] font-bold text-outline-variant uppercase tracking-widest">Insufficient Data</span>
+</div>
+<p class="text-on-surface-variant text-sm">Automated analysis of sleep stages requires a minimum 7-day contiguous window to filter nocturnal variances.</p>
+</div>
+</div>
+<!-- No Usable Signal Card 2 -->
+<div class="bg-surface-container-low rounded-xl p-6 flex items-start gap-5 transition-all hover:bg-surface-container-high/50">
+<div class="bg-surface-container-lowest p-3 rounded-lg text-outline-variant">
+<span class="material-symbols-outlined text-2xl">personal_injury</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-1">
+<h4 class="font-headline font-bold text-on-surface">Pain Levels</h4>
+<span class="text-[10px] font-bold text-outline-variant uppercase tracking-widest">Insufficient Data</span>
+</div>
+<p class="text-on-surface-variant text-sm">Specific triggers for somatic discomfort cannot be isolated without higher frequency daily logging.</p>
+</div>
+</div>
+<!-- No Usable Signal Card 3 -->
+<div class="bg-surface-container-low rounded-xl p-6 flex items-start gap-5 transition-all hover:bg-surface-container-high/50">
+<div class="bg-surface-container-lowest p-3 rounded-lg text-outline-variant">
+<span class="material-symbols-outlined text-2xl">mood</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-1">
+<h4 class="font-headline font-bold text-on-surface">Mood Stability</h4>
+<span class="text-[10px] font-bold text-outline-variant uppercase tracking-widest">Insufficient Data</span>
+</div>
+<p class="text-on-surface-variant text-sm">Longitudinal mood trends are currently obscured by seasonal baseline gaps.</p>
+</div>
+</div>
+<!-- No Usable Signal Card 4 -->
+<div class="bg-surface-container-low rounded-xl p-6 flex items-start gap-5 transition-all hover:bg-surface-container-high/50">
+<div class="bg-surface-container-lowest p-3 rounded-lg text-outline-variant">
+<span class="material-symbols-outlined text-2xl">nutrition</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-1">
+<h4 class="font-headline font-bold text-on-surface">Dietary Impact</h4>
+<span class="text-[10px] font-bold text-outline-variant uppercase tracking-widest">Insufficient Data</span>
+</div>
+<p class="text-on-surface-variant text-sm">Metabolic correlations require a minimum of 14 meals logged to identify significant patterns.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="max-w-3xl mx-auto text-center py-12 px-8 bg-primary/5 rounded-[2rem] border border-primary/5">
+<div class="mb-8">
+<div class="w-16 h-16 bg-primary-container/20 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">lock_open</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-on-surface mb-3">Unlock the Full Clinical Report</h3>
+<p class="text-on-surface-variant">Commit to 4 more days of active tracking to stabilize your insights and generate a downloadable provider-ready document.</p>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg shadow-[0px_12px_32px_rgba(30,100,145,0.2)] active:scale-95 transition-all duration-200 cursor-pointer" onclick="window.location.href='12ba79e4fde5466db28dbc8d8fbadfa2.html'">
+                Continue Logging to Unlock Full Report
+            </button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-xl rounded-t-[2rem] border-t border-slate-200/70 shadow-[0px_-12px_32px_rgba(45,51,53,0.06)]"><div class="flex justify-around items-center px-4 pt-3 pb-8"><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="12ba79e4fde5466db28dbc8d8fbadfa2.html" onclick="window.location.href='12ba79e4fde5466db28dbc8d8fbadfa2.html'"><span class="material-symbols-outlined mb-1">home</span><span class="text-[11px] font-medium">Home</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 bg-sky-50 text-sky-800" href="798709f26f304cdf8e0f60d47f2434be.html" onclick="window.location.href='798709f26f304cdf8e0f60d47f2434be.html'"><span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">insights</span><span class="text-[11px] font-medium">Findings</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="ec7e55c8c37b4b82aae6786ce793a5b5.html" onclick="window.location.href='ec7e55c8c37b4b82aae6786ce793a5b5.html'"><span class="material-symbols-outlined mb-1">description</span><span class="text-[11px] font-medium">Report</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="d3e352da781c4e3ca7856ded34ac84cd.html" onclick="window.location.href='d3e352da781c4e3ca7856ded34ac84cd.html'"><span class="material-symbols-outlined mb-1">settings</span><span class="text-[11px] font-medium">Settings</span></a></div></nav></body></html>

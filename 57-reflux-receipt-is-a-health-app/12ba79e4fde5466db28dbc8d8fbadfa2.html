@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Symptom Tracker - Progress</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#36404d",
+                        "surface-container": "#ebeef0",
+                        "on-tertiary-fixed": "#2b3257",
+                        "on-background": "#2d3335",
+                        "background": "#f8f9fa",
+                        "on-error-container": "#6e0a12",
+                        "primary-fixed": "#88c4f6",
+                        "on-tertiary-fixed-variant": "#484e76",
+                        "on-primary-fixed": "#002840",
+                        "on-surface-variant": "#5a6062",
+                        "primary": "#1e6491",
+                        "on-tertiary-container": "#3e456c",
+                        "on-error": "#fff7f6",
+                        "surface-tint": "#1e6491",
+                        "primary-container": "#88c4f6",
+                        "outline-variant": "#adb3b5",
+                        "on-surface": "#2d3335",
+                        "surface": "#f8f9fa",
+                        "on-primary": "#f6f9ff",
+                        "secondary": "#56606e",
+                        "primary-fixed-dim": "#7ab7e8",
+                        "secondary-fixed-dim": "#cbd5e6",
+                        "on-primary-container": "#003e60",
+                        "on-secondary": "#f7f9ff",
+                        "inverse-on-surface": "#9b9d9e",
+                        "secondary-container": "#d9e3f4",
+                        "error": "#a83836",
+                        "tertiary-fixed": "#c9cffe",
+                        "tertiary-dim": "#4a5178",
+                        "error-container": "#fa746f",
+                        "tertiary": "#565d85",
+                        "outline": "#767c7e",
+                        "surface-container-highest": "#dee3e6",
+                        "surface-container-low": "#f1f4f5",
+                        "on-secondary-container": "#495260",
+                        "surface-dim": "#d5dbdd",
+                        "on-primary-fixed-variant": "#00476d",
+                        "secondary-dim": "#4a5462",
+                        "tertiary-fixed-dim": "#bbc1ef",
+                        "surface-container-lowest": "#ffffff",
+                        "error-dim": "#67040d",
+                        "on-secondary-fixed-variant": "#525c6a",
+                        "inverse-primary": "#88c4f6",
+                        "surface-variant": "#dee3e6",
+                        "secondary-fixed": "#d9e3f4",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary": "#faf8ff",
+                        "inverse-surface": "#0c0f10",
+                        "surface-container-high": "#e5e9eb",
+                        "primary-dim": "#055884",
+                        "tertiary-container": "#c9cffe"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #f8f9fa;
+            color: #2d3335;
+        }
+        h1, h2, h3 {
+            font-family: 'Manrope', sans-serif;
+        }
+        .ethereal-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background min-h-screen pb-32"><header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/90 backdrop-blur-xl border-b border-slate-200/70"><div class="flex items-center justify-between px-5 h-16"><div class="flex items-center gap-3 min-w-0"><div class="w-10 h-10 flex-shrink-0"></div><h1 class="text-lg font-bold tracking-tight text-sky-800 font-['Manrope'] truncate">Progress Tracker</h1></div><div class="w-10 h-10 flex-shrink-0"></div></div></header>
+<!-- Top Navigation -->
+<main class="pt-24 px-6 max-w-2xl mx-auto">
+<!-- Title & Hero Header -->
+<div class="mb-10">
+<h1 class="text-3xl font-extrabold text-on-background tracking-tight mb-2">Progress Tracker</h1>
+<p class="text-on-surface-variant font-medium">Night 3 of 7</p>
+</div>
+<!-- Main Progress Orb Section -->
+<section class="relative mb-12 flex flex-col items-center">
+<div class="relative w-64 h-64 flex items-center justify-center">
+<!-- Progress Circle (SVG) -->
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-high" cx="128" cy="128" fill="transparent" r="120" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-primary transition-all duration-1000 ease-in-out" cx="128" cy="128" fill="transparent" r="120" stroke="currentColor" stroke-dasharray="753.98" stroke-dashoffset="430.84" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<!-- Central Content -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="text-5xl font-extrabold text-primary font-headline">42%</span>
+<span class="text-xs font-semibold text-on-surface-variant uppercase tracking-widest mt-1">Overall Progress</span>
+</div>
+</div>
+<!-- Contextual Status Card (Floating) -->
+<div class="mt-8 w-full bg-surface-container-lowest p-6 rounded-xl shadow-[0px_12px_32px_rgba(45,51,53,0.06)] border border-white/40">
+<div class="flex items-start gap-4">
+<div class="bg-primary-container/30 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary">nights_stay</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-on-surface mb-1">4 nights remaining until synthesis report</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Your data is being aggregated in real-time. Continuous tracking ensures high clinical accuracy for your final findings.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Next Action Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 cursor-pointer" onclick="window.location.href='4873cf2054d84af1bd5cd87ec8421f9a.html'">
+<!-- Next Action Card -->
+<div class="col-span-1 md:col-span-2 bg-gradient-to-br from-primary to-primary-dim p-6 rounded-2xl text-white shadow-lg overflow-hidden relative group">
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-[10px] font-bold uppercase tracking-wider mb-4">Upcoming Task</span>
+<h4 class="text-xl font-bold mb-2">Log Night 3 entry</h4>
+<div class="flex items-center gap-2 text-white/80 text-sm">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span>Opens in 4 hours</span>
+</div>
+</div>
+<!-- Decorative Abstract Shape -->
+<div class="absolute -right-8 -bottom-8 w-40 h-40 bg-white/10 rounded-full blur-3xl group-hover:scale-125 transition-transform duration-500"></div>
+</div>
+<!-- Reminder Status Card -->
+<div class="bg-surface-container-low p-5 rounded-2xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-tertiary mb-3">notifications_active</span>
+<h5 class="font-bold text-on-surface">Nightly reminder</h5>
+</div>
+<p class="text-sm text-on-surface-variant mt-2">Set for 10:30 PM</p>
+</div>
+<!-- Clinical Synthesis Lock Card -->
+<div class="bg-surface-container-low p-5 rounded-2xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary mb-3" style="font-variation-settings: 'FILL' 1;">lock</span>
+<h5 class="font-bold text-on-surface">Clinical findings status</h5>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-2 leading-tight">Findings Locked. Complete 7 nights to unlock your synthesis report.</p>
+</div>
+</div>
+<!-- Weekly Overview (Visualized) -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl mb-12">
+<h3 class="font-bold text-on-surface mb-6 flex items-center justify-between">
+                Tracking History
+                <span class="text-xs font-normal text-on-surface-variant">March 12 — March 18</span>
+</h3>
+<div class="flex justify-between items-end h-16 gap-2">
+<!-- Day 1 (Complete) -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-primary h-12 rounded-t-lg"></div>
+<span class="text-[10px] font-bold text-primary">N1</span>
+</div>
+<!-- Day 2 (Complete) -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-primary h-10 rounded-t-lg"></div>
+<span class="text-[10px] font-bold text-primary">N2</span>
+</div>
+<!-- Day 3 (Current) -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-primary-container h-4 rounded-t-lg animate-pulse"></div>
+<span class="text-[10px] font-bold text-primary-dim">N3</span>
+</div>
+<!-- Day 4 (Future) -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-surface-container h-2 rounded-t-lg"></div>
+<span class="text-[10px] font-medium text-outline">N4</span>
+</div>
+<!-- Day 5 (Future) -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-surface-container h-2 rounded-t-lg"></div>
+<span class="text-[10px] font-medium text-outline">N5</span>
+</div>
+<!-- Day 6 (Future) -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-surface-container h-2 rounded-t-lg"></div>
+<span class="text-[10px] font-medium text-outline">N6</span>
+</div>
+<!-- Day 7 (Future) -->
+<div class="flex-1 flex flex-col items-center gap-2">
+<div class="w-full bg-surface-container h-2 rounded-t-lg"></div>
+<span class="text-[10px] font-medium text-outline">N7</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-xl rounded-t-[2rem] border-t border-slate-200/70 shadow-[0px_-12px_32px_rgba(45,51,53,0.06)]"><div class="flex justify-around items-center px-4 pt-3 pb-8"><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 bg-sky-50 text-sky-800" href="12ba79e4fde5466db28dbc8d8fbadfa2.html" onclick="window.location.href='12ba79e4fde5466db28dbc8d8fbadfa2.html'"><span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">home</span><span class="text-[11px] font-medium">Home</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="798709f26f304cdf8e0f60d47f2434be.html" onclick="window.location.href='798709f26f304cdf8e0f60d47f2434be.html'"><span class="material-symbols-outlined mb-1">insights</span><span class="text-[11px] font-medium">Findings</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="ec7e55c8c37b4b82aae6786ce793a5b5.html" onclick="window.location.href='ec7e55c8c37b4b82aae6786ce793a5b5.html'"><span class="material-symbols-outlined mb-1">description</span><span class="text-[11px] font-medium">Report</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="d3e352da781c4e3ca7856ded34ac84cd.html" onclick="window.location.href='d3e352da781c4e3ca7856ded34ac84cd.html'"><span class="material-symbols-outlined mb-1">settings</span><span class="text-[11px] font-medium">Settings</span></a></div></nav></body></html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Protocol Setup - Symptom Tracker</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#fa746f",
+                    "on-primary-fixed": "#002840",
+                    "tertiary-fixed-dim": "#bbc1ef",
+                    "error": "#a83836",
+                    "surface-dim": "#d5dbdd",
+                    "surface": "#f8f9fa",
+                    "surface-tint": "#1e6491",
+                    "secondary-fixed": "#d9e3f4",
+                    "on-tertiary-container": "#3e456c",
+                    "on-secondary-fixed": "#36404d",
+                    "primary-container": "#88c4f6",
+                    "on-error-container": "#6e0a12",
+                    "outline-variant": "#adb3b5",
+                    "on-background": "#2d3335",
+                    "on-tertiary-fixed-variant": "#484e76",
+                    "tertiary": "#565d85",
+                    "error-dim": "#67040d",
+                    "on-tertiary": "#faf8ff",
+                    "inverse-on-surface": "#9b9d9e",
+                    "on-tertiary-fixed": "#2b3257",
+                    "primary-dim": "#055884",
+                    "surface-container": "#ebeef0",
+                    "on-primary-fixed-variant": "#00476d",
+                    "tertiary-dim": "#4a5178",
+                    "primary": "#1e6491",
+                    "inverse-primary": "#88c4f6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#dee3e6",
+                    "primary-fixed-dim": "#7ab7e8",
+                    "primary-fixed": "#88c4f6",
+                    "on-primary-container": "#003e60",
+                    "secondary-container": "#d9e3f4",
+                    "secondary-dim": "#4a5462",
+                    "on-secondary-fixed-variant": "#525c6a",
+                    "on-secondary-container": "#495260",
+                    "on-error": "#fff7f6",
+                    "secondary-fixed-dim": "#cbd5e6",
+                    "tertiary-container": "#c9cffe",
+                    "surface-bright": "#f8f9fa",
+                    "secondary": "#56606e",
+                    "on-primary": "#f6f9ff",
+                    "tertiary-fixed": "#c9cffe",
+                    "on-surface-variant": "#5a6062",
+                    "background": "#f8f9fa",
+                    "on-surface": "#2d3335",
+                    "inverse-surface": "#0c0f10",
+                    "surface-container-highest": "#dee3e6",
+                    "outline": "#767c7e",
+                    "surface-container-low": "#f1f4f5",
+                    "surface-container-high": "#e5e9eb",
+                    "on-secondary": "#f7f9ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-gradient-clinical {
+            background: linear-gradient(135deg, #1e6491 0%, #88c4f6 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface font-body text-on-surface"><header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/90 backdrop-blur-xl border-b border-slate-200/70"><div class="flex items-center justify-between px-5 h-16"><div class="flex items-center gap-3 min-w-0"><button aria-label="Back" class="w-10 h-10 rounded-full flex items-center justify-center text-sky-800 hover:bg-slate-100 transition-colors" onclick="window.location.href='579203d9a6f6415e9a53186ab76b8106.html'"><span class="material-symbols-outlined">arrow_back</span></button><h1 class="text-lg font-bold tracking-tight text-sky-800 font-['Manrope'] truncate">Protocol Setup</h1></div><div class="w-10 h-10 flex-shrink-0"></div></div></header>
+<!-- TopAppBar (Suppressed shell, but using identity from JSON) -->
+<main class="pt-24 pb-12 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Hero Section / Context -->
+<section class="space-y-2">
+<p class="text-on-surface-variant font-medium tracking-wide uppercase text-xs">Clinical Setup</p>
+<h2 class="text-3xl font-extrabold font-headline text-primary tracking-tight">Establish Your Baseline</h2>
+<p class="text-on-surface-variant leading-relaxed">Personalize your tracking window to ensure data accuracy and clinical relevance during your next observation cycle.</p>
+</section>
+<!-- Nightly Rhythm Section -->
+<section class="bg-surface-container-low rounded-xl p-6 space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">nights_stay</span>
+<h3 class="font-headline font-semibold text-on-surface">Nightly Rhythm</h3>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-5 flex items-center justify-between">
+<div>
+<label class="block text-sm font-semibold text-on-surface">Usual Bedtime</label>
+<span class="text-xs text-on-surface-variant">Used to sync your tracking notifications.</span>
+</div>
+<div class="flex items-center bg-surface-container-highest px-4 py-2 rounded-lg font-mono text-lg font-bold text-primary">
+                    22:30
+                </div>
+</div>
+</section>
+<!-- Stay Consistent Section -->
+<section class="space-y-4">
+<div class="flex items-center gap-3 px-1">
+<span class="material-symbols-outlined text-primary">notifications_active</span>
+<h3 class="font-headline font-semibold text-on-surface">Stay Consistent</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Toggle Item 1 -->
+<div class="bg-surface-container-low p-5 rounded-xl flex items-center justify-between">
+<div class="space-y-1">
+<p class="font-semibold text-sm">Nightly Reminders</p>
+<p class="text-[11px] text-on-surface-variant leading-tight">Gentle nudges before sleep.</p>
+</div>
+<div class="w-12 h-6 bg-primary rounded-full relative p-1 flex items-center justify-end">
+<div class="w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+<!-- Toggle Item 2 -->
+<div class="bg-surface-container-low p-5 rounded-xl flex items-center justify-between">
+<div class="space-y-1">
+<p class="font-semibold text-sm">Daily Summary</p>
+<p class="text-[11px] text-on-surface-variant leading-tight">Morning overview of your logs.</p>
+</div>
+<div class="w-12 h-6 bg-surface-variant rounded-full relative p-1 flex items-center justify-start">
+<div class="w-4 h-4 bg-white rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Known Triggers Section -->
+<section class="space-y-4">
+<div class="flex items-center gap-3 px-1">
+<span class="material-symbols-outlined text-primary">bolt</span>
+<h3 class="font-headline font-semibold text-on-surface">Known Triggers</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary text-sm font-medium transition-colors">Caffeine</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-surface-container-highest transition-colors">Stress</button>
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary text-sm font-medium transition-colors">Screen Time</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-surface-container-highest transition-colors">Exercise</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-surface-container-highest transition-colors">Alcohol</button>
+<button class="px-5 py-2 rounded-full bg-surface-container-high text-on-surface-variant text-sm font-medium hover:bg-surface-container-highest transition-colors">Poor Sleep</button>
+</div>
+</section>
+<!-- Info Card: Precision Logging -->
+<section class="relative overflow-hidden bg-tertiary-container rounded-2xl p-8 border border-white/20">
+<div class="relative z-10 space-y-6">
+<div class="space-y-2">
+<h3 class="font-headline text-xl font-bold text-on-tertiary-container">7 Nights of Precision Logging</h3>
+<p class="text-sm text-on-tertiary-container opacity-80 max-w-md">Our algorithm requires a consistent 7-night baseline to identify patterns between your triggers and symptoms.</p>
+</div>
+<div class="grid grid-cols-4 gap-4 pt-4">
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">bedtime</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-on-tertiary-container">Sleep</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">medical_services</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-on-tertiary-container">Pain</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">mood</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-on-tertiary-container">Mood</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-12 h-12 rounded-full bg-white/40 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary">bolt</span>
+</div>
+<span class="text-[10px] font-bold uppercase tracking-wider text-on-tertiary-container">Energy</span>
+</div>
+</div>
+</div>
+<!-- Decorative circle -->
+<div class="absolute -right-16 -bottom-16 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+</section>
+<!-- CTA Section -->
+<footer class="pt-6">
+<button class="w-full py-4 bg-gradient-clinical text-on-primary rounded-full font-headline font-bold text-lg shadow-lg active:scale-95 transition-all cursor-pointer" onclick="window.location.href='12ba79e4fde5466db28dbc8d8fbadfa2.html'">
+                Start Experiment
+            </button>
+<p class="text-center mt-4 text-xs text-on-surface-variant font-medium">You can pause your protocol at any time.</p>
+</footer>
+</main>
+<!-- Bottom Navigation Suppressed for Focused Journey -->
+</body></html>

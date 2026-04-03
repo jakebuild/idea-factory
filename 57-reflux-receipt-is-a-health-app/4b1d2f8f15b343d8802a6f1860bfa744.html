@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Morning Check-In</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Public_Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#c9cffe",
+                    "secondary-dim": "#4a5462",
+                    "surface-variant": "#dee3e6",
+                    "secondary-fixed": "#d9e3f4",
+                    "primary-dim": "#055884",
+                    "on-primary": "#f6f9ff",
+                    "surface-dim": "#d5dbdd",
+                    "tertiary-fixed-dim": "#bbc1ef",
+                    "on-surface": "#2d3335",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#e5e9eb",
+                    "inverse-surface": "#0c0f10",
+                    "on-tertiary": "#faf8ff",
+                    "on-error": "#fff7f6",
+                    "tertiary-container": "#c9cffe",
+                    "outline-variant": "#adb3b5",
+                    "outline": "#767c7e",
+                    "on-primary-fixed": "#002840",
+                    "background": "#f8f9fa",
+                    "error": "#a83836",
+                    "inverse-on-surface": "#9b9d9e",
+                    "on-tertiary-fixed": "#2b3257",
+                    "secondary-container": "#d9e3f4",
+                    "tertiary-dim": "#4a5178",
+                    "on-secondary-fixed-variant": "#525c6a",
+                    "secondary-fixed-dim": "#cbd5e6",
+                    "surface": "#f8f9fa",
+                    "surface-container-low": "#f1f4f5",
+                    "error-container": "#fa746f",
+                    "primary-container": "#88c4f6",
+                    "inverse-primary": "#88c4f6",
+                    "on-secondary": "#f7f9ff",
+                    "on-error-container": "#6e0a12",
+                    "on-secondary-fixed": "#36404d",
+                    "primary": "#1e6491",
+                    "on-secondary-container": "#495260",
+                    "on-primary-fixed-variant": "#00476d",
+                    "surface-container": "#ebeef0",
+                    "on-background": "#2d3335",
+                    "on-primary-container": "#003e60",
+                    "surface-container-highest": "#dee3e6",
+                    "error-dim": "#67040d",
+                    "primary-fixed-dim": "#7ab7e8",
+                    "on-tertiary-container": "#3e456c",
+                    "tertiary": "#565d85",
+                    "surface-bright": "#f8f9fa",
+                    "primary-fixed": "#88c4f6",
+                    "secondary": "#56606e",
+                    "on-tertiary-fixed-variant": "#484e76",
+                    "surface-tint": "#1e6491",
+                    "on-surface-variant": "#5a6062"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container min-h-screen pb-32"><header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/90 backdrop-blur-xl border-b border-slate-200/70"><div class="flex items-center justify-between px-5 h-16"><div class="flex items-center gap-3 min-w-0"><button aria-label="Back" class="w-10 h-10 rounded-full flex items-center justify-center text-sky-800 hover:bg-slate-100 transition-colors" onclick="window.location.href='12ba79e4fde5466db28dbc8d8fbadfa2.html'"><span class="material-symbols-outlined">arrow_back</span></button><h1 class="text-lg font-bold tracking-tight text-sky-800 font-['Manrope'] truncate">Morning Check-In</h1></div><div class="w-10 h-10 flex-shrink-0"></div></div></header>
+<!-- TopAppBar -->
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-10">
+<!-- Hero Instruction -->
+<section>
+<p class="text-on-surface-variant text-body-md font-medium">Tuesday, October 24</p>
+<h2 class="text-3xl font-extrabold text-on-surface mt-1 leading-tight">How are you feeling this morning?</h2>
+</section>
+<!-- Section 1: Symptom Severity Scale -->
+<section class="space-y-6">
+<div class="grid grid-cols-5 gap-3">
+<button class="flex flex-col items-center gap-3 p-4 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-200 active:scale-95 group">
+<span class="material-symbols-outlined text-3xl text-primary/40 group-hover:text-primary" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+<span class="text-xs font-semibold text-on-surface-variant">Great</span>
+</button>
+<button class="flex flex-col items-center gap-3 p-4 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-200 active:scale-95 group">
+<span class="material-symbols-outlined text-3xl text-primary/40 group-hover:text-primary" data-icon="sentiment_satisfied">sentiment_satisfied</span>
+<span class="text-xs font-semibold text-on-surface-variant">Good</span>
+</button>
+<button class="flex flex-col items-center gap-3 p-4 rounded-xl bg-surface-container-lowest shadow-sm border-2 border-primary/20 transition-all duration-200 active:scale-95 group">
+<span class="material-symbols-outlined text-3xl text-primary" data-icon="sentiment_neutral" style="font-variation-settings: 'FILL' 1;">sentiment_neutral</span>
+<span class="text-xs font-semibold text-primary">Okay</span>
+</button>
+<button class="flex flex-col items-center gap-3 p-4 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-200 active:scale-95 group">
+<span class="material-symbols-outlined text-3xl text-primary/40 group-hover:text-primary" data-icon="sentiment_dissatisfied">sentiment_dissatisfied</span>
+<span class="text-xs font-semibold text-on-surface-variant">Poor</span>
+</button>
+<button class="flex flex-col items-center gap-3 p-4 rounded-xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-200 active:scale-95 group">
+<span class="material-symbols-outlined text-3xl text-primary/40 group-hover:text-primary" data-icon="sentiment_very_dissatisfied">sentiment_very_dissatisfied</span>
+<span class="text-xs font-semibold text-on-surface-variant">Bad</span>
+</button>
+</div>
+</section>
+<!-- Section 2: Sleep Quality -->
+<section class="bg-surface-container-low rounded-2xl p-6 space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="dark_mode">dark_mode</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-on-surface">Sleep Quality</h3>
+<p class="text-sm text-on-surface-variant">Report any interruptions in your rest.</p>
+</div>
+</div>
+<!-- Toggle Component -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-14 h-8 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex gap-4 overflow-x-auto no-scrollbar py-2">
+<div class="flex-none bg-surface-container-lowest px-4 py-2 rounded-lg text-sm text-on-surface border border-outline-variant/10">Frequent waking</div>
+<div class="flex-none bg-surface-container-lowest px-4 py-2 rounded-lg text-sm text-on-surface border border-outline-variant/10">Difficulty falling asleep</div>
+<div class="flex-none bg-surface-container-lowest px-4 py-2 rounded-lg text-sm text-on-surface border border-outline-variant/10">Nightmares</div>
+</div>
+</section>
+<!-- Section 3: Additional Notes -->
+<section class="space-y-3">
+<label class="text-lg font-bold text-on-surface flex items-center gap-2" for="notes">
+<span class="material-symbols-outlined text-primary" data-icon="edit_note">edit_note</span>
+                Additional Notes
+            </label>
+<textarea class="w-full bg-surface-container-highest rounded-xl border-none focus:ring-2 focus:ring-primary-container transition-all p-4 text-on-surface placeholder:text-on-surface-variant/50" id="notes" placeholder="Anything else you noticed this morning? Emotional state, appetite, energy..." rows="4"></textarea>
+</section>
+<!-- Section 4: Visual Context (Bento style graphic) -->
+<section class="grid grid-cols-2 gap-4">
+<div class="h-32 rounded-3xl overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="close-up of dew drops on a green leaf in soft morning sunlight with clinical clean aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA36owbHJfQXTUs-y7pLV8bJYMA8vMWfLgMImU93OuqojR2xIZ3tohjGFgrbvAYGhmUvhc_EyWwaSt6wtNIqikapkUaauI4n71zPs42K0bjnzlxGxJahqKfEVJPJcYuI4KlUeIVHYssZpl-us4rZO1k7G8opOAcNwm8brL85l9RJUaZQeLEVmg9piAhZYECSJf1yS-Gv--FTLfvJNqL8_GofKPeFYd_P7a7qVoJI0JQNbzPCWoWRq7mGiOiWoH0heg95-ytyumUy-g7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+<p class="absolute bottom-4 left-4 text-white text-xs font-bold uppercase tracking-widest">Hydration</p>
+</div>
+<div class="h-32 rounded-3xl overflow-hidden relative group">
+<img class="w-full h-full object-cover" data-alt="clean minimal yoga mat in a white bright studio with soft shadows and calm vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIqu-aUIdkSkI8jCg6A7xzD0gvBjcXeIS3H7xxDLa9rwuJyWNm5vOB-lfYwXq2TF1pkY1vSmv2g9lIdA7DfHPAPG9BVGV6vZV8JrKanrQdbRzuYGP4OoReK_0_5XlDXkooEeqI6BOHlwdUazQZSj5nPkDr678MJchJjl8efsILgYdQbf9txhEtxF-7NwA6O9rMMUe8iv2l9FkC0cQe0RsbNPKj3pVaqBeKOMwrlY57zO1yHXO8OOFS0HWHwWaYG1mYUBekxWPv7ml0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/40 to-transparent"></div>
+<p class="absolute bottom-4 left-4 text-white text-xs font-bold uppercase tracking-widest">Movement</p>
+</div>
+</section>
+<!-- Action Button -->
+<footer class="pb-10">
+<button class="w-full h-16 bg-gradient-to-r from-[#1e6491] to-[#88c4f6] text-white rounded-full font-bold text-lg shadow-lg active:scale-[0.98] transition-transform flex items-center justify-center gap-2 cursor-pointer" onclick="window.location.href='12ba79e4fde5466db28dbc8d8fbadfa2.html'">
+                Complete Check-In
+                <span class="material-symbols-outlined" data-icon="check_circle">check_circle</span>
+</button>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-xl rounded-t-[2rem] border-t border-slate-200/70 shadow-[0px_-12px_32px_rgba(45,51,53,0.06)]"><div class="flex justify-around items-center px-4 pt-3 pb-8"><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 bg-sky-50 text-sky-800" href="12ba79e4fde5466db28dbc8d8fbadfa2.html" onclick="window.location.href='12ba79e4fde5466db28dbc8d8fbadfa2.html'"><span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">home</span><span class="text-[11px] font-medium">Home</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="798709f26f304cdf8e0f60d47f2434be.html" onclick="window.location.href='798709f26f304cdf8e0f60d47f2434be.html'"><span class="material-symbols-outlined mb-1">insights</span><span class="text-[11px] font-medium">Findings</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="ec7e55c8c37b4b82aae6786ce793a5b5.html" onclick="window.location.href='ec7e55c8c37b4b82aae6786ce793a5b5.html'"><span class="material-symbols-outlined mb-1">description</span><span class="text-[11px] font-medium">Report</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="d3e352da781c4e3ca7856ded34ac84cd.html" onclick="window.location.href='d3e352da781c4e3ca7856ded34ac84cd.html'"><span class="material-symbols-outlined mb-1">settings</span><span class="text-[11px] font-medium">Settings</span></a></div></nav></body></html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta content="width=390, initial-scale=1.0" name="viewport"/><meta charset="utf-8"/>
+<title>Export Report - Clinical Symptom Tracker</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-dim": "#055884",
+                    "on-error-container": "#6e0a12",
+                    "outline-variant": "#adb3b5",
+                    "on-surface-variant": "#5a6062",
+                    "tertiary-dim": "#4a5178",
+                    "tertiary": "#565d85",
+                    "primary": "#1e6491",
+                    "on-background": "#2d3335",
+                    "surface": "#f8f9fa",
+                    "on-primary": "#f6f9ff",
+                    "error-container": "#fa746f",
+                    "inverse-surface": "#0c0f10",
+                    "on-tertiary-fixed-variant": "#484e76",
+                    "surface-variant": "#dee3e6",
+                    "surface-container-highest": "#dee3e6",
+                    "on-primary-container": "#003e60",
+                    "inverse-on-surface": "#9b9d9e",
+                    "error": "#a83836",
+                    "secondary": "#56606e",
+                    "on-secondary": "#f7f9ff",
+                    "on-tertiary-fixed": "#2b3257",
+                    "on-error": "#fff7f6",
+                    "surface-container": "#ebeef0",
+                    "outline": "#767c7e",
+                    "surface-dim": "#d5dbdd",
+                    "secondary-fixed-dim": "#cbd5e6",
+                    "tertiary-container": "#c9cffe",
+                    "error-dim": "#67040d",
+                    "tertiary-fixed": "#c9cffe",
+                    "on-surface": "#2d3335",
+                    "primary-container": "#88c4f6",
+                    "on-tertiary": "#faf8ff",
+                    "background": "#f8f9fa",
+                    "inverse-primary": "#88c4f6",
+                    "secondary-dim": "#4a5462",
+                    "on-secondary-container": "#495260",
+                    "secondary-container": "#d9e3f4",
+                    "primary-fixed-dim": "#7ab7e8",
+                    "on-tertiary-container": "#3e456c",
+                    "on-secondary-fixed": "#36404d",
+                    "surface-container-high": "#e5e9eb",
+                    "tertiary-fixed-dim": "#bbc1ef",
+                    "on-primary-fixed-variant": "#00476d",
+                    "primary-fixed": "#88c4f6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f1f4f5",
+                    "surface-bright": "#f8f9fa",
+                    "surface-tint": "#1e6491",
+                    "on-secondary-fixed-variant": "#525c6a",
+                    "secondary-fixed": "#d9e3f4",
+                    "on-primary-fixed": "#002840"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased min-h-screen pb-32"><header class="fixed top-0 left-0 right-0 z-50 bg-slate-50/90 backdrop-blur-xl border-b border-slate-200/70"><div class="flex items-center justify-between px-5 h-16"><div class="flex items-center gap-3 min-w-0"><button aria-label="Back" class="w-10 h-10 rounded-full flex items-center justify-center text-sky-800 hover:bg-slate-100 transition-colors" onclick="window.location.href='ec7e55c8c37b4b82aae6786ce793a5b5.html'"><span class="material-symbols-outlined">arrow_back</span></button><h1 class="text-lg font-bold tracking-tight text-sky-800 font-['Manrope'] truncate">Export Report</h1></div><div class="w-10 h-10 flex-shrink-0"></div></div></header>
+<!-- TopAppBar -->
+<main class="pt-24 px-6 max-w-2xl mx-auto space-y-8">
+<!-- Report Summary Card -->
+<section class="relative overflow-hidden bg-surface-container-lowest rounded-xl shadow-[0px_12px_32px_rgba(45,51,53,0.06)] p-6">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-6xl" data-icon="calendar_today">calendar_today</span>
+</div>
+<div class="relative z-10">
+<span class="inline-block px-3 py-1 bg-tertiary-container text-on-tertiary-container text-xs font-semibold rounded-full mb-4">Observation Period</span>
+<h2 class="font-manrope text-2xl font-bold text-primary mb-1">Oct 24 - Oct 31, 2023</h2>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm font-medium">
+<span class="material-symbols-outlined text-base" data-icon="check_circle">check_circle</span>
+<span>7/7 Nights Logged</span>
+</div>
+</div>
+<div class="mt-6 grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-3 rounded-lg">
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold mb-1">Avg Score</p>
+<p class="text-xl font-manrope font-extrabold text-secondary">84%</p>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg">
+<p class="text-[10px] uppercase tracking-wider text-on-surface-variant font-bold mb-1">Anomalies</p>
+<p class="text-xl font-manrope font-extrabold text-error">2 detected</p>
+</div>
+</div>
+</section>
+<!-- Primary Action: PDF Export -->
+<section class="space-y-4">
+<h3 class="font-manrope text-sm font-bold uppercase tracking-widest text-on-surface-variant px-1">Clinical Artifacts</h3>
+<button class="w-full group relative overflow-hidden bg-gradient-to-br from-primary to-primary-dim p-6 rounded-xl flex items-center justify-between transition-all duration-300 active:scale-95 shadow-lg">
+<div class="flex items-center gap-5 text-left">
+<div class="bg-white/20 p-3 rounded-xl backdrop-blur-sm">
+<span class="material-symbols-outlined text-white text-3xl" data-icon="picture_as_pdf">picture_as_pdf</span>
+</div>
+<div>
+<p class="text-on-primary font-manrope font-bold text-lg">Download Provider-Ready PDF</p>
+<p class="text-white/80 text-sm">Full diagnostic report with visual trends</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-white transition-transform group-hover:translate-x-1" data-icon="chevron_right">chevron_right</span>
+</button>
+</section>
+<!-- Plain Text Export & Other Options -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<button class="flex flex-col items-start p-5 bg-surface-container-high hover:bg-surface-container-highest transition-colors rounded-xl text-left">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="content_copy">content_copy</span>
+<p class="font-manrope font-bold text-on-surface">Copy Summary as Text</p>
+<p class="text-xs text-on-surface-variant mt-1">For personal journals or quick notes</p>
+</button>
+<button class="flex flex-col items-start p-5 bg-surface-container-high hover:bg-surface-container-highest transition-colors rounded-xl text-left">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="mail">mail</span>
+<p class="font-manrope font-bold text-on-surface">Share via Email</p>
+<p class="text-xs text-on-surface-variant mt-1">Send secure link to care team</p>
+</button>
+</div>
+<!-- System Share Trigger -->
+<button class="w-full flex items-center justify-center gap-3 py-4 bg-surface-container-lowest border border-outline-variant/20 rounded-full transition-all duration-300 hover:bg-white active:scale-95 shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="ios_share">ios_share</span>
+<span class="font-manrope font-bold text-on-surface">Open System Share Sheet</span>
+</button>
+<!-- Privacy & Compliance -->
+<footer class="pt-8 pb-12 flex flex-col items-center text-center space-y-4">
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container rounded-full">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="verified_user">verified_user</span>
+<span class="text-xs font-medium text-on-surface-variant">HIPAA Compliant &amp; End-to-End Encrypted</span>
+</div>
+<p class="text-[11px] leading-relaxed text-on-surface-variant max-w-xs">
+                Your health data is private. Reports are generated locally and only shared when you explicitly authorize transmission.
+            </p>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-white/95 backdrop-blur-xl rounded-t-[2rem] border-t border-slate-200/70 shadow-[0px_-12px_32px_rgba(45,51,53,0.06)]"><div class="flex justify-around items-center px-4 pt-3 pb-8"><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="12ba79e4fde5466db28dbc8d8fbadfa2.html" onclick="window.location.href='12ba79e4fde5466db28dbc8d8fbadfa2.html'"><span class="material-symbols-outlined mb-1">home</span><span class="text-[11px] font-medium">Home</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="798709f26f304cdf8e0f60d47f2434be.html" onclick="window.location.href='798709f26f304cdf8e0f60d47f2434be.html'"><span class="material-symbols-outlined mb-1">insights</span><span class="text-[11px] font-medium">Findings</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 bg-sky-50 text-sky-800" href="ec7e55c8c37b4b82aae6786ce793a5b5.html" onclick="window.location.href='ec7e55c8c37b4b82aae6786ce793a5b5.html'"><span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">description</span><span class="text-[11px] font-medium">Report</span></a><a class="flex flex-col items-center justify-center px-5 py-2 rounded-2xl transition-transform duration-200 active:scale-90 text-slate-400 hover:text-sky-600" href="d3e352da781c4e3ca7856ded34ac84cd.html" onclick="window.location.href='d3e352da781c4e3ca7856ded34ac84cd.html'"><span class="material-symbols-outlined mb-1">settings</span><span class="text-[11px] font-medium">Settings</span></a></div></nav></body></html>
