@@ -183,3 +183,12 @@
 **Submit:** idea-factory submit "HealthWrapped is a status app that copies the Spotify Wrapped model but applies it to your Apple Health data instead of music listening. Once a month, it pulls all your health metrics — steps, sleep, heart rate, active calories, mindful minutes — and generates a beautiful animated shareable card with your top stats: your highest single-day step count, your worst sleep week, the exact hour your stress peaks, and one surprising pattern the algorithm found. The reveal is instant and screen-recordable: a full-screen card showing your Health Month in Review, designed to be screenshot and shared, so the core loop is unlock your monthly card, see something surprising about yourself, share it, and compare with friends."
 
 ---
+
+## BioAge
+**Source:** mix-20260404-043249.md
+**Targets:** Health Anxiety / Fear of Aging
+**Copies:** InsideTracker — $100M+ in revenue, proved people obsessively track a biological age number and pay to improve it, even when the score makes them feel bad
+**Hook:** "I'm 29 but apparently my body thinks it's 36 — the sleep section alone was brutal."
+**Submit:** idea-factory submit "BioAge is a health anxiety app that copies the InsideTracker model but eliminates the $200 lab-test barrier by using Apple Health data you already own. You connect Apple Health, answer 5 quick questions about diet, stress, alcohol, and supplements, and the app instantly calculates your Biological Age Score — how old your body actually is compared to your birth certificate. The reveal is immediate and screen-recordable: a single bold number showing your biological age vs your real age, followed by a per-factor breakdown showing exactly how many years each habit is adding or subtracting. The loop is check your score, fix the top factor the app flags, watch the number drop over weeks, and come back daily because the score updates as your Health data updates. Monetize with a free score reveal and a paid tier that unlocks the full factor breakdown, weekly trend tracking, and a personalized action plan."
+
+---
