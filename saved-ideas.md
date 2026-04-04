@@ -192,3 +192,12 @@
 **Submit:** idea-factory submit "BioAge is a health anxiety app that copies the InsideTracker model but eliminates the $200 lab-test barrier by using Apple Health data you already own. You connect Apple Health, answer 5 quick questions about diet, stress, alcohol, and supplements, and the app instantly calculates your Biological Age Score — how old your body actually is compared to your birth certificate. The reveal is immediate and screen-recordable: a single bold number showing your biological age vs your real age, followed by a per-factor breakdown showing exactly how many years each habit is adding or subtracting. The loop is check your score, fix the top factor the app flags, watch the number drop over weeks, and come back daily because the score updates as your Health data updates. Monetize with a free score reveal and a paid tier that unlocks the full factor breakdown, weekly trend tracking, and a personalized action plan."
 
 ---
+
+## ScreenRoast
+**Source:** mix-20260404-071634.md
+**Targets:** Productivity Anxiety / Fear of Wasting Time
+**Copies:** RescueTime — $72/year subscription, 2M+ users, proved people pay monthly for a productivity score that quantifies how badly they wasted their week
+**Hook:** The AI roast is so accurate and weirdly funny that you screenshot it and send it to a friend who was also wasting time — which immediately makes them open the app.
+**Submit:** idea-factory submit "ScreenRoast is a productivity anxiety app that copies the RescueTime model but turns your iPhone Screen Time data into a brutal AI roast instead of charts. You screenshot your weekly Screen Time report, upload it, and the app OCR-parses your usage data then generates a WasteScore (0–100) with callouts like 'You spent 3.1 hours on TikTok during your designated focus hours.' The reveal is immediate and screen-recordable: a full-screen score with the single most damning insight called out by name, app, and exact hour of day. The loop is screenshot your week, get roasted, share the Roast Card with a friend, and try to beat your score next week. Monetize with a free weekly roast and a paid tier that unlocks monthly trends, peer comparison against anonymized users your age, and a personalized worst-habit action plan."
+
+---
