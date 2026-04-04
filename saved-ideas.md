@@ -175,6 +175,15 @@
 
 ---
 
+## TalkScore
+**Source:** mix-20260404-124327.md
+**Targets:** Career Anxiety / Social Status — Fear of Sounding Incompetent
+**Copies:** Orai — 1M+ downloads, $12M Series A, proved people practice communication daily for weeks when given a score that quantifies verbal bad habits
+**Hook:** It told me I said 'um' 31 times in 60 seconds and graded my communication style as mediocre — I've been doing the drill every morning since.
+**Submit:** idea-factory submit "TalkScore is a career anxiety app that copies the Orai model but compresses it into a sharper mobile reveal moment. You record 60 seconds of yourself explaining anything, and the app transcribes it live, highlights every filler word in red, measures your speaking pace and energy consistency, then gives you a Communication Score out of 100. The reveal is instant and screen-recordable: most people score below 50, the transcript shows the damage in real time, and the app names your single worst habit — 'You said um 31 times. You're in the bottom 22% of speakers your age' — then gives one specific drill to fix it tomorrow. The core loop is record, get the brutal score, do the drill, rescore next day, and share the before-and-after because watching your score climb is the kind of progress people post about."
+
+---
+
 ## HealthWrapped
 **Source:** mix-20260404-014849.md
 **Targets:** Status / Social Pride
