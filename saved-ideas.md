@@ -201,3 +201,12 @@
 **Submit:** idea-factory submit "ScreenRoast is a productivity anxiety app that copies the RescueTime model but turns your iPhone Screen Time data into a brutal AI roast instead of charts. You screenshot your weekly Screen Time report, upload it, and the app OCR-parses your usage data then generates a WasteScore (0–100) with callouts like 'You spent 3.1 hours on TikTok during your designated focus hours.' The reveal is immediate and screen-recordable: a full-screen score with the single most damning insight called out by name, app, and exact hour of day. The loop is screenshot your week, get roasted, share the Roast Card with a friend, and try to beat your score next week. Monetize with a free weekly roast and a paid tier that unlocks monthly trends, peer comparison against anonymized users your age, and a personalized worst-habit action plan."
 
 ---
+
+## RelationshipDNA
+**Source:** mix-20260404-095954.md
+**Targets:** Romance / Fear of Repeating Relationship Patterns
+**Copies:** Lasting — $30M+ revenue, 2M+ downloads, proved couples pay $120/year for AI-powered relationship analysis
+**Hook:** "It called out my exact pattern across three ex-descriptions and I've never felt so seen and unsettled at the same time."
+**Submit:** idea-factory submit "RelationshipDNA is a romance app that copies the Lasting model but applies it to single people analyzing their past relationships instead of couples working on their current one. You describe your last 3 exes in 2 minutes — personality type, how it started, how it ended. AI identifies your attachment style, the emotional archetype you keep choosing, and the repeating pattern across all three partners. Output is a shareable Relationship DNA card showing your pattern in a single visual. The reveal is immediate and screen-recordable: a bold pattern statement like 'You've been dating the same person three times without knowing it,' followed by a per-relationship breakdown showing exactly how the pattern played out each time. The loop is complete your DNA profile, share the card, and invite an ex or a friend to see if they recognize the pattern too. Monetize with a free pattern reveal and a paid tier that unlocks the full attachment style deep-dive, a compatibility filter for what to look for next, and a weekly reflection prompt to interrupt the pattern."
+
+---
