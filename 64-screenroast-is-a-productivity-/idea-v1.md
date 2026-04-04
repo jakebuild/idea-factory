@@ -1,0 +1,8 @@
+# Idea #64: ScreenRoast is a productivity anxiety app that copies the RescueTime model but turns your iPhone Screen Time data into a brutal AI roast instead of charts. You screenshot your weekly Screen Time report, upload it, and the app OCR-parses your usage data then generates a WasteScore (0–100) with callouts like 'You spent 3.1 hours on TikTok during your designated focus hours.' The reveal is immediate and screen-recordable: a full-screen score with the single most damning insight called out by name, app, and exact hour of day. The loop is screenshot your week, get roasted, share the Roast Card with a friend, and try to beat your score next week. Monetize with a free weekly roast and a paid tier that unlocks monthly trends, peer comparison against anonymized users your age, and a personalized worst-habit action plan.
+
+## Version: v1 (Original)
+**Date:** 2026-04-04 07:19
+**Status:** submitted
+
+## Description
+ScreenRoast is a productivity anxiety app that copies the RescueTime model but turns your iPhone Screen Time data into a brutal AI roast instead of charts. You screenshot your weekly Screen Time report, upload it, and the app OCR-parses your usage data then generates a WasteScore (0–100) with callouts like 'You spent 3.1 hours on TikTok during your designated focus hours.' The reveal is immediate and screen-recordable: a full-screen score with the single most damning insight called out by name, app, and exact hour of day. The loop is screenshot your week, get roasted, share the Roast Card with a friend, and try to beat your score next week. Monetize with a free weekly roast and a paid tier that unlocks monthly trends, peer comparison against anonymized users your age, and a personalized worst-habit action plan.
