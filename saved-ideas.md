@@ -264,3 +264,12 @@
 **Copies:** NEXT Insurance — $548M in 2024 revenue, proved workers and small business owners pay quickly when paperwork gaps threaten their livelihood
 **Hook:** It turns boring renewal paperwork into an explicit countdown to lost money.
 **Submit:** idea-factory submit "CredentialCliff is a fear-of-loss app that copies the NEXT Insurance model but applies it to licensed workers at risk of losing income from expired credentials. You scan a permit, license, certification, or insurance document once, and the app extracts the expiration date, renewal steps, and supporting paperwork, then turns it into a blunt income-risk dashboard that shows which upcoming shifts or jobs are exposed. The reveal is immediate and screen-recordable: a red card saying exactly what expires when, how many workdays are at risk, and the first renewal action to take. The loop is scan once, get escalating reminders as the deadline approaches, clear the risk, and come back because most workers juggle multiple credentials with different renewal cycles."
+
+---
+
+## BufferScore
+**Source:** mix-20260408-180551.md
+**Targets:** Fear of Loss / Financial Security
+**Copies:** Credit Karma — 130M users and a $1.8B acquisition proved people obsessively check a free anxiety-inducing score when it tells them how exposed they are
+**Hook:** It gives white-collar workers a Credit Karma-style number for how panicked they should be about losing their paycheck.
+**Submit:** idea-factory submit "BufferScore is a fear-of-loss app that copies the Credit Karma model but applies it to job security instead of creditworthiness. You enter your savings, fixed monthly burn, role, industry, and rough interview readiness, and the app instantly calculates a Layoff Buffer Score showing how exposed you are if your paycheck disappears. The reveal is immediate and screen-recordable: a bold score like '34/100' with one blunt sentence explaining your runway and rehire risk, such as 'At your current burn, one bad month leaves you with 7.4 weeks of runway and below-median rehire odds.' The loop is simple: update your numbers, watch the score rise or fall with your cash buffer and market conditions, and come back weekly because job anxiety gets worse when it stays vague."
