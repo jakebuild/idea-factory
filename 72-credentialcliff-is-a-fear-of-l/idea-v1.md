@@ -1,0 +1,8 @@
+# Idea #72: CredentialCliff is a fear-of-loss app that copies the NEXT Insurance model but applies it to licensed workers at risk of losing income from expired credentials. You scan a permit, license, certification, or insurance document once, and the app extracts the expiration date, renewal steps, and supporting paperwork, then turns it into a blunt income-risk dashboard that shows which upcoming shifts or jobs are exposed. The reveal is immediate and screen-recordable: a red card saying exactly what expires when, how many workdays are at risk, and the first renewal action to take. The loop is scan once, get escalating reminders as the deadline approaches, clear the risk, and come back because most workers juggle multiple credentials with different renewal cycles.
+
+## Version: v1 (Original)
+**Date:** 2026-04-08 15:26
+**Status:** submitted
+
+## Description
+CredentialCliff is a fear-of-loss app that copies the NEXT Insurance model but applies it to licensed workers at risk of losing income from expired credentials. You scan a permit, license, certification, or insurance document once, and the app extracts the expiration date, renewal steps, and supporting paperwork, then turns it into a blunt income-risk dashboard that shows which upcoming shifts or jobs are exposed. The reveal is immediate and screen-recordable: a red card saying exactly what expires when, how many workdays are at risk, and the first renewal action to take. The loop is scan once, get escalating reminders as the deadline approaches, clear the risk, and come back because most workers juggle multiple credentials with different renewal cycles.
