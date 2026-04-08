@@ -1,38 +1,41 @@
 Verdict: NEEDS MAJOR WORK
-Score: 4/10
+Score: 5/10
 What's Actually Good:
-- You cut the most bullshit part. Removing posture detection was the right move because bedside-phone posture attribution was fantasy dressed up as insight.
-- The target user is finally specific: people whose partner told them they snore. That is much better than vague "sleep health" positioning.
-- Manual context logging is more honest than pretending sensors know things they absolutely do not know.
-- The morning "receipt" with a loudest clip is a clear payoff. Users understand that instantly.
+- Cutting posture detection was the first adult decision this idea has made. You removed the most obvious lie.
+- The "receipt" framing is still strong. A score plus one humiliating proof clip is a clean reveal people understand instantly.
+- Manual context logging is more honest than pretending the phone is a sleep lab. At least this version admits what it actually knows.
+- The target user is narrower now. "My partner says I snore and I want evidence plus a simple experiment" is a real use case, not generic wellness sludge.
 Brutal Feedback:
-- The whole product still stands on one giant UNVERIFIED assumption: reliable overnight recording on mobile, especially iOS. If that breaks, the app is dead. Not degraded. Dead.
-- "Recording app + log form + charting layer" is a laughably soft estimate. Overnight recording, background behavior, interruption handling, battery drain, storage management, crash recovery, permission edge cases, and audio post-processing are the product.
-- Your differentiator is weaker than you think. "Your worst nights had alcohol" is not magical insight. It is the kind of thing users can guess before installing, and competitors can copy in a weekend.
-- The correlation layer risks being fake-science theater. Seven nights with five binary inputs is tiny, noisy, confounded data. You are one bad week away from surfacing nonsense with a smug chart.
-- The app says "not medical" while still asking users to trust a proprietary snore score. That is the oldest health-adjacent dodge in the book. If the score is flaky, the disclaimer will not save trust.
-- Partner noise filtering is cut, but the problem is not cut. If the room has another snorer, a pet, a fan, rain sounds, or a white noise machine, your "receipt" becomes a random-number generator with a waveform.
-- Manual pre-sleep logging is retention poison. People are tired at bedtime. They do not want to fill out a tiny ritual so your analytics screen can maybe feel useful in a week.
-- Your week-2 retention story is fragile. Why does the user come back after day 1? Because maybe, after seven compliant nights, the app might tell them alcohol is bad for snoring? That is not a hook. That is delayed obviousness.
-- The 3-night experiment feature sounds neat in a doc and weak in reality. Three nights is not enough to overcome normal sleep variance, so you are building a confidence theater machine.
-- There is still no moat. SnoreLab already owns the mental category. Voice memos are free. Apple and Android already capture sleep-adjacent data. You are trapped between "too flimsy to trust" and "too small to matter."
-- There is no monetization in scope, which is fine for MVP, but it exposes another problem: if the thing works, users may only need it briefly. That means weak long-term retention and awkward business economics.
-- App Store review risk is not gone just because you removed medical claims. Background recording and health-adjacent messaging still invite scrutiny, and a solo dev does not want that fight as the core platform risk.
-- The build estimate is fantasy. A solo dev doing AI-assisted mobile work can mock the UI in weeks. Shipping reliable overnight audio capture across real devices is the part that eats the calendar alive.
+- This is still a fragile wrapper around two hard problems: overnight recording reliability and believable snore scoring. Calling it "just a recording app + log form + charting layer" is fantasy. Overnight mobile audio is the product, not a detail.
+- Your core loop still depends on an UNVERIFIED platform behavior. If iOS background recording is flaky, throttled, suspended, battery-hostile, or requires awkward keep-screen-on behavior, the app collapses immediately. That alone blocks any 8/10 fantasy score.
+- The "correlation reveal" sounds smarter than it is. With 7 nights and 5 toggles, you are basically generating horoscope-grade insights from noisy self-reported data. "Your worst nights had alcohol" is not product magic when the sample is tiny and confounded by congestion, bedtime, room noise, stress, and random sleep variation.
+- You cut posture detection, then quietly smuggled "self-reported position" back into the log list. That is not clever. That is a regression-shaped loophole. If position was cut because it was unreliable, do not rebuild the product story around a sleepy user remembering how they think they slept.
+- The retention story is still soft. Why does the user come back after day 1? "Maybe the chart gets interesting after 7 nights" is not a strong answer when the app asks for nightly effort, drains battery, records audio in the bedroom, and only produces probabilistic shrugs.
+- The loudest clip is a novelty spike, not a business. People will play it once, maybe weaponize it in a text to their partner, then move on. Novelty does not become habit just because you add a bar chart behind it.
+- "Habit tracker, not health app" lowers legal posture, but it does not erase trust burden. If the score jumps around because the fan was louder, the dog barked, or the phone was under a blanket, users will still conclude the app is bullshit.
+- The app depends on the user doing homework before bed. That is exactly when people are tired, distracted, drunk, congested, or already in bed. If they skip logging, the whole differentiator dies. If they log inconsistently, the correlations become decorative nonsense.
+- The experiment mode is weaker than it sounds. Three nights is not enough for noisy sleep behavior unless the effect is huge. So either the app gives fake confidence, or it gives hedged non-answers. Neither outcome is sticky.
+- You say partner noise filtering is out of scope, but the product is specifically for people told by partners that they snore. Great: you built a snore app for shared bedrooms while refusing to solve the shared-bedroom problem.
+- There is no moat here. SnoreLab, any sleep recorder, or even a generic journaling app could bolt on manual factors and a chart. The "manual spreadsheet work" complaint is real, but "we embedded the spreadsheet" is not a defensible product.
+- There is also no monetization thesis in scope. That is fine for an experiment, but it matters when the app requires ongoing device testing, battery edge-case handling, and platform-specific reliability work. You are volunteering for annoying infrastructure before proving people care.
+- Privacy is not free here. Bedroom audio is intimate. Even if everything is on-device, users will worry. If anything touches cloud sync later, trust gets even harder. Solo builders routinely underestimate how creepy ambient overnight recording feels.
+- The estimate is optimistic bordering on self-parody. Week 1 alone contains the entire risk stack: permissions, background behavior, all-night recording, storage, crash recovery, battery impact, clip extraction, scoring quality, and real-device testing. That is not an 8-day task unless you are counting optimism as engineering.
 Key Questions:
-- Can you prove, on a real device, that overnight recording works reliably for 6-8 hours without the app getting suspended or wrecking battery life?
-- What is the minimum honest scoring method that does not collapse in normal bedroom noise?
-- What happens when the user forgets the log for two nights in a row? Does the core value proposition just stall out?
-- Why does the user come back after day 1 if the first morning already answers the curiosity hook?
-- Why would someone use this instead of SnoreLab, a sleep recording app, or a free voice recorder plus common sense?
-- Are you building iOS-first, Android-first, or pretending both are equally feasible? They are not.
+- Does overnight recording work reliably on a real iPhone without hacks that normal users will hate?
+- Why does the user come back after day 1?
+- What minimum amount of data is required before any "correlation" is statistically honest enough to show?
+- How often will users actually complete the pre-sleep log after the first few nights?
+- What happens in the common case of a partner, pet, fan, white noise machine, open window, or podcast in the room?
+- If the score is noisy, what exact part of the product still feels valuable?
+- Why would someone use this instead of SnoreLab plus Notes plus common sense?
 Suggestions:
-- Do not build "the app" first. Build a brutal technical prototype that records one full night on target devices and outputs a rough event timeline. If that fails, kill the idea immediately.
-- Narrow the MVP further: Android-first, single-device support path, no experiment mode, no fake correlations, just nightly recording, basic score, clip, and history.
-- Replace "correlation intelligence" with brutally honest summaries until you have enough data. Example: "2 of your 3 highest-score nights had alcohol logged." That is weaker marketing, but less fraudulent.
-- Consider making the app a short-term diagnostic habit tool, not a daily habit tracker. Position it as a 7-night self-audit instead of pretending it will become a durable routine.
-- If you want a sharper wedge, solve one painful problem better than anyone else: easiest overnight capture, clearest morning clip, or fastest partner-proof evidence. Right now you are mediocre at all three on paper.
-- Put a kill metric in week 1: if overnight recording reliability is not solid, stop. Do not rationalize your way into months of tuning bedroom audio garbage.
+- Validate the platform first. Build the ugliest possible recorder prototype and test real overnight reliability on-device before designing anything else.
+- Cut the correlation theater down to simple trend views until you have enough data to say anything without embarrassing yourself.
+- Remove self-reported sleep position entirely. It is bait for rebuilding the same credibility problem you just cut.
+- Narrow v1 harder: record, extract clip, show nightly trend, optional one-tap factor tags. Skip experiment mode until you know users log consistently.
+- Consider Android-first if iOS background recording is compromised. If the core mechanic is unreliable on your target platform, the idea is dead there no matter how nice the UI is.
+- Treat shared-bedroom noise as a first-class product risk, not a footnote. If you cannot handle it, be brutally explicit in onboarding.
+- Define one real success metric: for example, percent of users who complete 7 logged nights. If that number is weak, the whole insight story is fiction.
 Solo Dev Reality Check:
-- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — only if you slash scope to Android-first and treat the first week as a feasibility test. Cross-platform MVP in that timeline is fantasy.
-- Biggest solo complexity traps: background audio restrictions on iOS, battery/storage drain from overnight recording, false positives from ambient noise, unreliable score extraction, bedtime logging compliance, and spending weeks polishing charts before proving the recording pipeline works.
+- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — but only as a much dumber prototype, and only after proving overnight recording works reliably on a real device. The pitched MVP is still too confident for the amount of unknowns.
+- Biggest solo complexity traps: iOS background recording reliability; battery drain and storage growth from all-night audio; false positives from partners, pets, fans, and white noise; tiny-sample correlation nonsense; low compliance on nightly logging; privacy/trust friction around bedroom audio; experiment mode implying confidence the data does not deserve
