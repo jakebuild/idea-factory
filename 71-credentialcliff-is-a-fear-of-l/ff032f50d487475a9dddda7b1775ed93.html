@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>CredentialCliff - Save Renewal Contact</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&amp;family=Public_Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Public_Sans', sans-serif;
+            background-color: #f9f9f9;
+            color: #2d3435;
+        }
+        .font-headline {
+            font-family: 'Work_Sans', sans-serif;
+        }
+        .glass-header {
+            background-color: rgba(249, 249, 249, 0.8);
+            backdrop-filter: blur(12px);
+        }
+        .custom-gradient-btn {
+            background: linear-gradient(145deg, #546067 0%, #48545b 100%);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed": "#fec330",
+                        "inverse-primary": "#e6f3fb",
+                        "on-primary-fixed-variant": "#515d64",
+                        "error-dim": "#4e0309",
+                        "surface": "#f9f9f9",
+                        "on-surface": "#2d3435",
+                        "secondary": "#bb1b21",
+                        "tertiary": "#7a5a00",
+                        "inverse-on-surface": "#9c9d9d",
+                        "primary-fixed-dim": "#c9d6de",
+                        "tertiary-container": "#fec330",
+                        "surface-dim": "#d4dbdd",
+                        "surface-variant": "#dde4e5",
+                        "tertiary-dim": "#6b4e00",
+                        "secondary-fixed-dim": "#ffc7c1",
+                        "primary-dim": "#48545b",
+                        "on-error": "#fff7f6",
+                        "secondary-dim": "#a90816",
+                        "on-tertiary-fixed": "#402d00",
+                        "outline": "#757c7d",
+                        "on-surface-variant": "#5a6061",
+                        "on-secondary-fixed": "#85000d",
+                        "on-tertiary-fixed-variant": "#634900",
+                        "on-secondary-container": "#a70515",
+                        "error": "#9f403d",
+                        "outline-variant": "#adb3b4",
+                        "on-tertiary": "#fff8f1",
+                        "tertiary-fixed-dim": "#efb520",
+                        "primary-container": "#d7e4ec",
+                        "surface-tint": "#546067",
+                        "primary": "#546067",
+                        "surface-container-high": "#e4e9ea",
+                        "secondary-container": "#ffdad6",
+                        "surface-container-low": "#f2f4f4",
+                        "on-secondary-fixed-variant": "#b5161e",
+                        "on-primary-container": "#47545a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#fff7f6",
+                        "inverse-surface": "#0c0f0f",
+                        "on-error-container": "#752121",
+                        "on-background": "#2d3435",
+                        "background": "#f9f9f9",
+                        "on-primary": "#f0f9ff",
+                        "on-tertiary-container": "#584000",
+                        "surface-container-highest": "#dde4e5",
+                        "surface-container": "#ebeeef",
+                        "on-primary-fixed": "#354147",
+                        "secondary-fixed": "#ffdad6",
+                        "primary-fixed": "#d7e4ec",
+                        "error-container": "#fe8983"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    fontFamily: {
+                        "headline": ["Work Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="cc-nav-style">
+  .cc-hidden { display: none !important; }
+  .cc-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 70;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(173, 179, 180, 0.25);
+  }
+  .cc-topbar-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    height: 64px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .cc-topbar-side {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .cc-topbar-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #2d3435;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cc-icon-btn {
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .cc-icon-btn .material-symbols-outlined { font-size: 22px; }
+  .cc-bottom-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 70;
+    padding: 8px 16px 24px;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(173, 179, 180, 0.18);
+  }
+  .cc-bottom-nav-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .cc-tab {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .cc-tab .material-symbols-outlined { font-size: 20px; }
+  .cc-tab.is-active { color: #2d3435; background: #e4e9ea; }
+</style></head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<div class="cc-topbar">
+<div class="cc-topbar-inner">
+<div class="cc-topbar-side"><button aria-label="Back" class="cc-icon-btn" onclick="window.location.href='07f0afe4e66c4623bf1b073afe6009a4.html'"><span class="material-symbols-outlined">arrow_back</span></button></div>
+<div class="cc-topbar-title">Renewal Contact</div>
+<div class="cc-topbar-side"><span aria-hidden="true"></span></div>
+</div>
+</div>
+
+<div class="cc-bottom-nav">
+<div class="cc-bottom-nav-inner">
+<a class="cc-tab is-active" href="d6129a1d44d54fc0bcac585fccc716bd.html" onclick="window.location.href='d6129a1d44d54fc0bcac585fccc716bd.html'">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="cc-tab" href="604fff1f77f7490f93aaecf72cd11ae7.html" onclick="window.location.href='604fff1f77f7490f93aaecf72cd11ae7.html'">
+<span class="material-symbols-outlined">send</span>
+<span>Send</span>
+</a>
+<a class="cc-tab" href="0b88c13ac1af49f49c64829a00b615eb.html" onclick="window.location.href='0b88c13ac1af49f49c64829a00b615eb.html'">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</div>
+</div>
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-header cc-hidden">
+<div class="flex justify-between items-center px-4 h-16 w-full max-w-xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface" data-icon="construction">construction</span>
+<h1 class="text-slate-950 font-black tracking-tighter text-xl uppercase font-headline">CredentialCliff</h1>
+</div>
+<button class="active:scale-95 duration-100 text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<div class="bg-outline-variant/15 h-[1px]"></div>
+</header>
+<main class="pt-24 px-6 max-w-xl mx-auto">
+<!-- Section Header: Intentional Asymmetry -->
+<section class="mb-12">
+<h2 class="font-headline font-black text-4xl text-on-surface mb-2 tracking-tight leading-none">RENEWAL CONTACT</h2>
+<div class="bg-tertiary w-16 h-2 mb-6"></div>
+<p class="text-on-surface-variant font-body text-lg max-w-[80%]">
+                This becomes your one-tap renewal action.
+            </p>
+</section>
+<!-- Form Section -->
+<div class="space-y-8">
+<div class="surface-container-low p-1">
+<!-- Instruction Box -->
+<div class="bg-surface-container-lowest p-6 border-l-4 border-primary">
+<div class="flex flex-col gap-8">
+<!-- Input Group: Broker/Insurer -->
+<div class="group">
+<label class="block text-[10px] font-bold uppercase tracking-[0.05em] text-on-surface-variant mb-2 font-label">Broker / Insurer Name</label>
+<input class="w-full bg-surface-container-highest border-none focus:ring-0 text-on-surface placeholder-outline-variant p-4 font-body border-b-2 border-transparent focus:border-primary transition-all" placeholder="e.g. Ironclad Insurance Ltd." type="text"/>
+</div>
+<!-- Grid for Phone and Email -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group">
+<label class="block text-[10px] font-bold uppercase tracking-[0.05em] text-on-surface-variant mb-2 font-label">Phone Number</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline-variant text-sm" data-icon="call">call</span>
+<input class="w-full bg-surface-container-highest border-none focus:ring-0 text-on-surface placeholder-outline-variant py-4 pl-12 pr-4 font-body border-b-2 border-transparent focus:border-primary transition-all" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+</div>
+<div class="group">
+<label class="block text-[10px] font-bold uppercase tracking-[0.05em] text-on-surface-variant mb-2 font-label">Email Address</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline-variant text-sm" data-icon="mail">mail</span>
+<input class="w-full bg-surface-container-highest border-none focus:ring-0 text-on-surface placeholder-outline-variant py-4 pl-12 pr-4 font-body border-b-2 border-transparent focus:border-primary transition-all" placeholder="renewals@insurer.com" type="email"/>
+</div>
+</div>
+</div>
+<!-- Input Group: Website -->
+<div class="group">
+<label class="block text-[10px] font-bold uppercase tracking-[0.05em] text-on-surface-variant mb-2 font-label">Client Portal / Website</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline-variant text-sm" data-icon="language">language</span>
+<input class="w-full bg-surface-container-highest border-none focus:ring-0 text-on-surface placeholder-outline-variant py-4 pl-12 pr-4 font-body border-b-2 border-transparent focus:border-primary transition-all" placeholder="https://portal.insurer.com/login" type="url"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Anchor / Industrial Mark -->
+<div class="flex items-center gap-4 py-4 opacity-40">
+<div class="h-[1px] flex-grow bg-outline-variant"></div>
+<span class="font-headline font-bold text-[10px] tracking-widest text-on-surface-variant">LEDGER REF: CONTACT_V4</span>
+<div class="h-[1px] w-12 bg-outline-variant"></div>
+</div>
+<!-- Primary Action -->
+<div class="pt-4">
+<button class="custom-gradient-btn w-full py-5 text-on-primary font-headline font-bold text-sm uppercase tracking-widest flex items-center justify-center gap-3 active:translate-y-0.5 transition-all shadow-lg shadow-on-surface/5" onclick="window.location.href='d4e28f1e563841f89d46be360c5aff8b.html'" style="cursor: pointer;" type="button">
+<span class="material-symbols-outlined" data-icon="save" style="font-variation-settings: 'FILL' 1;">save</span>
+                    SAVE RENEWAL ACTION
+                </button>
+<p class="text-[10px] text-center mt-6 text-on-surface-variant font-label uppercase tracking-widest leading-relaxed">
+                    By saving, this contact will be prioritized when <span class="text-secondary font-bold">COI Cliff</span> alerts are triggered.
+                </p>
+</div>
+</div>
+<!-- Utility Decorative Grid -->
+<div class="mt-16 grid grid-cols-4 gap-2 opacity-5">
+<div class="aspect-square bg-on-surface"></div>
+<div class="aspect-square bg-on-surface"></div>
+<div class="aspect-square bg-on-surface"></div>
+<div class="aspect-square bg-on-surface"></div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 glass-header cc-hidden">
+<div class="bg-outline-variant/15 absolute top-0 left-0 w-full h-[1px]"></div>
+<a class="flex flex-col items-center justify-center text-slate-500 py-2 px-6 hover:bg-slate-200/50 transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-slate-200 text-slate-900 rounded-sm py-2 px-6 active:translate-y-0.5 transition-all" href="#">
+<span class="material-symbols-outlined mb-1 text-slate-900" data-icon="send" style="font-variation-settings: 'FILL' 1;">send</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">SEND</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 py-2 px-6 hover:bg-slate-200/50 transition-all active:translate-y-0.5" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">SETTINGS</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>CredentialCliff - COI Detail</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&amp;family=Public+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#fec330",
+                        "inverse-primary": "#e6f3fb",
+                        "on-primary-fixed-variant": "#515d64",
+                        "error-dim": "#4e0309",
+                        "surface": "#f9f9f9",
+                        "on-surface": "#2d3435",
+                        "secondary": "#bb1b21",
+                        "tertiary": "#7a5a00",
+                        "inverse-on-surface": "#9c9d9d",
+                        "primary-fixed-dim": "#c9d6de",
+                        "tertiary-container": "#fec330",
+                        "surface-dim": "#d4dbdd",
+                        "surface-variant": "#dde4e5",
+                        "tertiary-dim": "#6b4e00",
+                        "secondary-fixed-dim": "#ffc7c1",
+                        "primary-dim": "#48545b",
+                        "on-error": "#fff7f6",
+                        "secondary-dim": "#a90816",
+                        "on-tertiary-fixed": "#402d00",
+                        "outline": "#757c7d",
+                        "on-surface-variant": "#5a6061",
+                        "on-secondary-fixed": "#85000d",
+                        "on-tertiary-fixed-variant": "#634900",
+                        "on-secondary-container": "#a70515",
+                        "error": "#9f403d",
+                        "outline-variant": "#adb3b4",
+                        "on-tertiary": "#fff8f1",
+                        "tertiary-fixed-dim": "#efb520",
+                        "primary-container": "#d7e4ec",
+                        "surface-tint": "#546067",
+                        "primary": "#546067",
+                        "surface-container-high": "#e4e9ea",
+                        "secondary-container": "#ffdad6",
+                        "surface-container-low": "#f2f4f4",
+                        "on-secondary-fixed-variant": "#b5161e",
+                        "on-primary-container": "#47545a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#fff7f6",
+                        "inverse-surface": "#0c0f0f",
+                        "on-error-container": "#752121",
+                        "on-background": "#2d3435",
+                        "background": "#f9f9f9",
+                        "on-primary": "#f0f9ff",
+                        "on-tertiary-container": "#584000",
+                        "surface-container-highest": "#dde4e5",
+                        "surface-container": "#ebeeef",
+                        "on-primary-fixed": "#354147",
+                        "secondary-fixed": "#ffdad6",
+                        "primary-fixed": "#d7e4ec",
+                        "error-container": "#fe8983"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Work Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3, .headline { font-family: 'Work Sans', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .coi-cliff-gradient {
+            background: linear-gradient(145deg, #7a5a00 0%, #fec330 100%);
+        }
+        .btn-machined {
+            background: linear-gradient(145deg, #546067 0%, #48545b 100%);
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #adb3b4; border-radius: 2px; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="cc-nav-style">
+  .cc-hidden { display: none !important; }
+  .cc-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 70;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(173, 179, 180, 0.25);
+  }
+  .cc-topbar-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    height: 64px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .cc-topbar-side {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .cc-topbar-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #2d3435;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cc-icon-btn {
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .cc-icon-btn .material-symbols-outlined { font-size: 22px; }
+  .cc-bottom-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 70;
+    padding: 8px 16px 24px;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(173, 179, 180, 0.18);
+  }
+  .cc-bottom-nav-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .cc-tab {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .cc-tab .material-symbols-outlined { font-size: 20px; }
+  .cc-tab.is-active { color: #2d3435; background: #e4e9ea; }
+</style></head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+<div class="cc-topbar">
+<div class="cc-topbar-inner">
+<div class="cc-topbar-side"><button aria-label="Back" class="cc-icon-btn" onclick="window.location.href='d6129a1d44d54fc0bcac585fccc716bd.html'"><span class="material-symbols-outlined">arrow_back</span></button></div>
+<div class="cc-topbar-title">COI Details</div>
+<div class="cc-topbar-side"><span aria-hidden="true"></span></div>
+</div>
+</div>
+
+<div class="cc-bottom-nav">
+<div class="cc-bottom-nav-inner">
+<a class="cc-tab is-active" href="d6129a1d44d54fc0bcac585fccc716bd.html" onclick="window.location.href='d6129a1d44d54fc0bcac585fccc716bd.html'">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="cc-tab" href="604fff1f77f7490f93aaecf72cd11ae7.html" onclick="window.location.href='604fff1f77f7490f93aaecf72cd11ae7.html'">
+<span class="material-symbols-outlined">send</span>
+<span>Send</span>
+</a>
+<a class="cc-tab" href="0b88c13ac1af49f49c64829a00b615eb.html" onclick="window.location.href='0b88c13ac1af49f49c64829a00b615eb.html'">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</div>
+</div>
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md cc-hidden">
+<div class="flex justify-between items-center px-4 h-16 w-full max-w-xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">construction</span>
+<span class="text-slate-950 dark:text-white font-black tracking-tighter text-xl">CredentialCliff</span>
+</div>
+<button class="hover:opacity-80 transition-opacity active:scale-95 duration-100 text-slate-500">
+<span class="material-symbols-outlined">more_vert</span>
+</button>
+</div>
+<div class="bg-slate-200 dark:bg-slate-800 h-[1px]"></div>
+</header>
+<main class="pt-20 px-4 max-w-xl mx-auto space-y-6">
+<!-- Header / Back Navigation -->
+<div class="flex items-center gap-2 mb-4">
+<button class="text-on-surface-variant hover:text-on-surface">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-2xl font-black tracking-tighter headline uppercase">Certificate Detail</h1>
+</div>
+<!-- Signature Component: The COI Cliff Monitor -->
+<div class="bg-surface-container-lowest p-6 flex items-end justify-between relative overflow-hidden">
+<div class="z-10">
+<p class="text-[10px] font-bold uppercase tracking-[0.1em] text-on-surface-variant mb-1">General Liability</p>
+<h2 class="text-3xl font-black tracking-tighter headline text-primary">GL-2024-9901</h2>
+<div class="mt-4 flex items-baseline gap-1">
+<span class="text-5xl font-black headline text-tertiary">14</span>
+<span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Days Until Lapse</span>
+</div>
+</div>
+<div class="w-1.5 h-32 coi-cliff-gradient absolute right-0 bottom-0"></div>
+<div class="flex flex-col items-end gap-2">
+<span class="bg-tertiary-container text-on-tertiary-container text-[10px] font-bold px-2 py-0.5 rounded-sm uppercase tracking-wider">Warning</span>
+<span class="text-[10px] font-bold text-on-surface-variant">EXPIRES OCT 14</span>
+</div>
+</div>
+<!-- Section: Policy Metadata -->
+<section class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant/15 pb-2">
+<h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Policy Metadata</h3>
+<button class="text-[10px] font-bold text-primary underline underline-offset-4 uppercase tracking-tighter" onclick="window.location.href='07f0afe4e66c4623bf1b073afe6009a4.html'" style="cursor: pointer;" type="button">Edit Section</button>
+</div>
+<div class="grid grid-cols-2 gap-px bg-surface-container-highest">
+<div class="bg-surface-container-lowest p-4">
+<p class="text-[10px] uppercase font-bold text-outline tracking-tighter mb-1">Effective Date</p>
+<p class="text-sm font-semibold">Jan 01, 2024</p>
+</div>
+<div class="bg-surface-container-lowest p-4">
+<p class="text-[10px] uppercase font-bold text-outline tracking-tighter mb-1">Expiration Date</p>
+<p class="text-sm font-semibold">Oct 14, 2024</p>
+</div>
+<div class="bg-surface-container-lowest p-4">
+<p class="text-[10px] uppercase font-bold text-outline tracking-tighter mb-1">Policy Number</p>
+<p class="text-sm font-semibold font-headline">771-A-X9022</p>
+</div>
+<div class="bg-surface-container-lowest p-4">
+<p class="text-[10px] uppercase font-bold text-outline tracking-tighter mb-1">Insurer</p>
+<p class="text-sm font-semibold">Pacific Iron Underwriters</p>
+</div>
+</div>
+</section>
+<!-- Section: Coverage Limits -->
+<section class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant/15 pb-2">
+<h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Coverage Limits</h3>
+<button class="text-[10px] font-bold text-primary underline underline-offset-4 uppercase tracking-tighter" onclick="window.location.href='ff032f50d487475a9dddda7b1775ed93.html'" style="cursor: pointer;" type="button">Edit Limits</button>
+</div>
+<div class="bg-surface-container-lowest overflow-hidden">
+<table class="w-full text-left">
+<tbody class="divide-y divide-surface-container-low">
+<tr class="bg-surface-container-low/30">
+<td class="p-4 text-[11px] font-medium text-on-surface-variant">General Aggregate</td>
+<td class="p-4 text-sm font-bold text-right font-headline">$2,000,000</td>
+</tr>
+<tr>
+<td class="p-4 text-[11px] font-medium text-on-surface-variant">Products - Comp/Op Agg</td>
+<td class="p-4 text-sm font-bold text-right font-headline">$2,000,000</td>
+</tr>
+<tr class="bg-surface-container-low/30">
+<td class="p-4 text-[11px] font-medium text-on-surface-variant">Personal &amp; Adv Injury</td>
+<td class="p-4 text-sm font-bold text-right font-headline">$1,000,000</td>
+</tr>
+<tr>
+<td class="p-4 text-[11px] font-medium text-on-surface-variant">Each Occurrence</td>
+<td class="p-4 text-sm font-bold text-right font-headline">$1,000,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Section: Document Controls -->
+<section class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant/15 pb-2">
+<h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Document Assets</h3>
+</div>
+<div class="bg-surface-container-low p-4 flex items-center gap-4">
+<div class="w-12 h-16 bg-surface-container-highest flex items-center justify-center border border-outline-variant/20">
+<span class="material-symbols-outlined text-outline">description</span>
+</div>
+<div class="flex-1">
+<p class="text-xs font-bold uppercase">COI_FINAL_VERIFIED.pdf</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Uploaded Sep 12, 2023 • 2.4 MB</p>
+</div>
+<div class="flex flex-col gap-2">
+<button class="text-[10px] font-bold text-primary flex items-center gap-1 bg-surface-container-lowest px-2 py-1 border border-outline-variant/15 hover:bg-white" onclick="window.location.href='79966068adfc4a5d8d5dc9ea396164a9.html'" style="cursor: pointer;" type="button">
+<span class="material-symbols-outlined text-sm">cached</span> REPLACE
+                    </button>
+<button class="text-[10px] font-bold text-secondary flex items-center gap-1 bg-surface-container-lowest px-2 py-1 border border-outline-variant/15 hover:bg-white" onclick="window.location.href='5a421092b5e14946a165e540c405930e.html'" style="cursor: pointer;" type="button">
+<span class="material-symbols-outlined text-sm">delete</span> REMOVE
+                    </button>
+</div>
+</div>
+</section>
+<!-- Section: Renewal & Contacts -->
+<section class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant/15 pb-2">
+<h3 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Renewal Contact</h3>
+</div>
+<div class="bg-surface-container-lowest p-4 grid grid-cols-1 gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">person</span>
+</div>
+<div>
+<p class="text-sm font-bold">Marcus Sterling</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Lead Broker • Sterling Insurance Group</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<a class="flex items-center gap-2 text-xs font-semibold text-primary" href="tel:5550192">
+<span class="material-symbols-outlined text-base">call</span> (555) 012-9921
+                    </a>
+<a class="flex items-center gap-2 text-xs font-semibold text-primary" href="mailto:m.sterling@sig.com">
+<span class="material-symbols-outlined text-base">mail</span> m.sterling@sig.com
+                    </a>
+</div>
+</div>
+</section>
+<!-- Reminder Toggle -->
+<section class="bg-surface-container-highest p-4 flex items-center justify-between border-l-4 border-primary">
+<div>
+<p class="text-xs font-bold uppercase tracking-tight">Active Reminders</p>
+<p class="text-[10px] text-on-surface-variant">Auto-notify broker 30 days before expiration.</p>
+</div>
+<button class="w-12 h-6 bg-primary rounded-full relative p-1 flex items-center justify-end">
+<div class="w-4 h-4 bg-white rounded-full"></div>
+</button>
+</section>
+<!-- Danger Zone -->
+<section class="pt-8 pb-12 border-t border-outline-variant/15">
+<button class="w-full py-4 border-2 border-secondary text-secondary font-black headline uppercase tracking-widest text-xs hover:bg-secondary-container transition-colors">
+                Delete ledger entry
+            </button>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md cc-hidden">
+<div class="bg-slate-200 dark:bg-slate-800 h-[1px] absolute top-0 left-0 w-full"></div>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 py-2 px-6 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 active:translate-y-0.5 transition-all" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 py-2 px-6 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 active:translate-y-0.5 transition-all" href="#">
+<span class="material-symbols-outlined">send</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">SEND</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-slate-200 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 rounded-sm py-2 px-6 active:translate-y-0.5 transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">SETTINGS</span>
+</a>
+</nav>
+</body></html>

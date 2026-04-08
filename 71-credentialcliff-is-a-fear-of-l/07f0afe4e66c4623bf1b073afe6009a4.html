@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>CredentialCliff - Confirm COI Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&amp;family=Public+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#fec330",
+                        "inverse-primary": "#e6f3fb",
+                        "on-primary-fixed-variant": "#515d64",
+                        "error-dim": "#4e0309",
+                        "surface": "#f9f9f9",
+                        "on-surface": "#2d3435",
+                        "secondary": "#bb1b21",
+                        "tertiary": "#7a5a00",
+                        "inverse-on-surface": "#9c9d9d",
+                        "primary-fixed-dim": "#c9d6de",
+                        "tertiary-container": "#fec330",
+                        "surface-dim": "#d4dbdd",
+                        "surface-variant": "#dde4e5",
+                        "tertiary-dim": "#6b4e00",
+                        "secondary-fixed-dim": "#ffc7c1",
+                        "primary-dim": "#48545b",
+                        "on-error": "#fff7f6",
+                        "secondary-dim": "#a90816",
+                        "on-tertiary-fixed": "#402d00",
+                        "outline": "#757c7d",
+                        "on-surface-variant": "#5a6061",
+                        "on-secondary-fixed": "#85000d",
+                        "on-tertiary-fixed-variant": "#634900",
+                        "on-secondary-container": "#a70515",
+                        "error": "#9f403d",
+                        "outline-variant": "#adb3b4",
+                        "on-tertiary": "#fff8f1",
+                        "tertiary-fixed-dim": "#efb520",
+                        "primary-container": "#d7e4ec",
+                        "surface-tint": "#546067",
+                        "primary": "#546067",
+                        "surface-container-high": "#e4e9ea",
+                        "secondary-container": "#ffdad6",
+                        "surface-container-low": "#f2f4f4",
+                        "on-secondary-fixed-variant": "#b5161e",
+                        "on-primary-container": "#47545a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#fff7f6",
+                        "inverse-surface": "#0c0f0f",
+                        "on-error-container": "#752121",
+                        "on-background": "#2d3435",
+                        "background": "#f9f9f9",
+                        "on-primary": "#f0f9ff",
+                        "on-tertiary-container": "#584000",
+                        "surface-container-highest": "#dde4e5",
+                        "surface-container": "#ebeeef",
+                        "on-primary-fixed": "#354147",
+                        "secondary-fixed": "#ffdad6",
+                        "primary-fixed": "#d7e4ec",
+                        "error-container": "#fe8983"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Work Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .cliff-gradient {
+            background: linear-gradient(145deg, #546067 0%, #48545b 100%);
+        }
+        .status-stamp {
+            letter-spacing: 0.05em;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="cc-nav-style">
+  .cc-hidden { display: none !important; }
+  .cc-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 70;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(173, 179, 180, 0.25);
+  }
+  .cc-topbar-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    height: 64px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .cc-topbar-side {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .cc-topbar-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #2d3435;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cc-icon-btn {
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .cc-icon-btn .material-symbols-outlined { font-size: 22px; }
+  .cc-bottom-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 70;
+    padding: 8px 16px 24px;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(173, 179, 180, 0.18);
+  }
+  .cc-bottom-nav-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .cc-tab {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .cc-tab .material-symbols-outlined { font-size: 20px; }
+  .cc-tab.is-active { color: #2d3435; background: #e4e9ea; }
+</style></head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<div class="cc-topbar">
+<div class="cc-topbar-inner">
+<div class="cc-topbar-side"><button aria-label="Back" class="cc-icon-btn" onclick="window.location.href='cb7379668ee04961b16cdb51704dd99f.html'"><span class="material-symbols-outlined">arrow_back</span></button></div>
+<div class="cc-topbar-title">Confirm Details</div>
+<div class="cc-topbar-side"><span aria-hidden="true"></span></div>
+</div>
+</div>
+
+<div class="cc-bottom-nav">
+<div class="cc-bottom-nav-inner">
+<a class="cc-tab is-active" href="d6129a1d44d54fc0bcac585fccc716bd.html" onclick="window.location.href='d6129a1d44d54fc0bcac585fccc716bd.html'">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="cc-tab" href="604fff1f77f7490f93aaecf72cd11ae7.html" onclick="window.location.href='604fff1f77f7490f93aaecf72cd11ae7.html'">
+<span class="material-symbols-outlined">send</span>
+<span>Send</span>
+</a>
+<a class="cc-tab" href="0b88c13ac1af49f49c64829a00b615eb.html" onclick="window.location.href='0b88c13ac1af49f49c64829a00b615eb.html'">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</div>
+</div>
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md cc-hidden">
+<div class="flex justify-between items-center px-4 h-16 w-full max-w-xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">construction</span>
+<h1 class="text-slate-950 dark:text-white font-black tracking-tighter text-xl">CredentialCliff</h1>
+</div>
+<nav class="hidden md:flex gap-6 items-center">
+<a class="text-slate-500 dark:text-slate-400 font-['Work_Sans'] font-bold text-lg uppercase tracking-wider hover:opacity-80 transition-opacity" href="d6129a1d44d54fc0bcac585fccc716bd.html" onclick="window.location.href='d6129a1d44d54fc0bcac585fccc716bd.html'">HOME</a>
+<a class="text-slate-500 dark:text-slate-400 font-['Work_Sans'] font-bold text-lg uppercase tracking-wider hover:opacity-80 transition-opacity" href="604fff1f77f7490f93aaecf72cd11ae7.html" onclick="window.location.href='604fff1f77f7490f93aaecf72cd11ae7.html'">SEND</a>
+<a class="text-slate-500 dark:text-slate-400 font-['Work_Sans'] font-bold text-lg uppercase tracking-wider hover:opacity-80 transition-opacity" href="0b88c13ac1af49f49c64829a00b615eb.html" onclick="window.location.href='0b88c13ac1af49f49c64829a00b615eb.html'">SETTINGS</a>
+</nav>
+</div>
+<div class="bg-slate-200 dark:bg-slate-800 h-[1px]"></div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-xl mx-auto">
+<!-- Header Intentional Asymmetry -->
+<section class="mb-12">
+<h2 class="font-headline font-extrabold text-4xl text-on-background leading-tight mb-2 uppercase tracking-tighter">
+                Verification Ledger
+            </h2>
+<p class="text-on-surface-variant font-medium text-sm border-l-4 border-primary pl-4 py-1">
+                Step 3: Document Finalization
+            </p>
+</section>
+<!-- The COI Cliff Monitor (Signature Component) -->
+<div class="bg-surface-container-low p-6 mb-8 relative overflow-hidden flex flex-col md:flex-row justify-between items-end md:items-center">
+<div class="z-10">
+<p class="font-label text-[10px] font-bold uppercase tracking-[0.1em] text-on-surface-variant mb-1">Current Proximity</p>
+<div class="flex items-baseline gap-2">
+<span class="font-headline font-black text-6xl text-on-surface">184</span>
+<span class="font-label text-xs font-bold uppercase text-on-surface-variant">Days until lapse</span>
+</div>
+</div>
+<div class="mt-4 md:mt-0 z-10">
+<span class="status-stamp bg-tertiary-container text-on-tertiary-container px-3 py-1 text-xs font-bold rounded-sm inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    READY
+                </span>
+</div>
+<!-- Decorative Industrial Background Element -->
+<div class="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]">analytics</span>
+</div>
+</div>
+<!-- Form Section -->
+<div class="space-y-8">
+<!-- Document Label (Editable) -->
+<div class="group">
+<label class="font-label font-bold text-[10px] uppercase tracking-wider text-on-surface-variant block mb-2">Document Label</label>
+<div class="flex items-center bg-surface-container-highest border-b-2 border-outline-variant focus-within:border-primary transition-colors px-4">
+<input class="bg-transparent w-full py-4 font-headline font-bold text-lg text-on-surface border-none focus:ring-0 px-0" placeholder="Enter document name" type="text" value="General Liability Proof"/>
+<span class="material-symbols-outlined text-outline-variant">edit</span>
+</div>
+</div>
+<!-- Expiration Date Field -->
+<div class="group">
+<label class="font-label font-bold text-[10px] uppercase tracking-wider text-on-surface-variant block mb-2">Policy Expiration Date</label>
+<div class="flex items-center bg-surface-container-highest border-b-2 border-outline-variant focus-within:border-primary transition-colors px-4">
+<input class="bg-transparent w-full py-4 font-headline font-bold text-lg text-on-surface border-none focus:ring-0 px-0" type="date" value="2025-06-15"/>
+<span class="material-symbols-outlined text-outline-variant">calendar_today</span>
+</div>
+<p class="mt-2 text-[11px] font-medium text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">info</span>
+                    Based on the uploaded certificate of insurance.
+                </p>
+</div>
+<!-- Preview Card -->
+<div class="bg-surface-container-lowest p-5 border border-outline-variant/15 flex gap-4">
+<div class="w-20 h-24 bg-surface-container-highest flex items-center justify-center relative group overflow-hidden">
+<img class="w-full h-full object-cover opacity-60" data-alt="a technical document blueprint showing architectural lines and stamp marks in an industrial setting with blue and white tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCif7IbRuH83IDTDeg9Jz39ByPyiksbfMExcF1AwCXqwwL2DusFv65NzJUoJdLJcp45jJyADshyUReaWBImu-46kLuB1en4eRdsp1TIV0Ymfv024G7E646cADEM3Ky_72NVwYenB79X_IjGH-Iz2epIPA2MhDS7EFLYxJwno5V97EG1rMH4ZdOpiMXO-9UMmFblJtlQ3Q0bl5eNWY7zFDfp038LRhdOTtXagKFTdDCEy-hY0Ihw8xn0EkGJWgJZCj1HSn1bs9IBBlAv"/>
+<div class="absolute inset-0 bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-2xl">visibility</span>
+</div>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<h4 class="font-headline font-bold text-sm text-on-surface uppercase tracking-tight">coi_v4_final.pdf</h4>
+<p class="text-xs text-on-surface-variant mb-3">2.4 MB • PDF Document</p>
+<button class="text-primary font-label font-bold text-[10px] uppercase underline underline-offset-4 flex items-center gap-1 hover:opacity-80 transition-opacity">
+                        View Full Ledger Record
+                    </button>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-6">
+<button class="cliff-gradient w-full py-5 text-on-primary font-headline font-extrabold text-sm uppercase tracking-widest rounded-lg flex items-center justify-center gap-3 active:scale-[0.98] transition-transform" onclick="window.location.href='ff032f50d487475a9dddda7b1775ed93.html'" style="cursor: pointer;" type="button">
+                    Continue to Ledger
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full py-4 mt-2 text-on-surface-variant font-label font-bold text-[10px] uppercase tracking-wider hover:bg-surface-container-low transition-colors">
+                    Reset Submission
+                </button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md cc-hidden">
+<div class="bg-slate-200 dark:bg-slate-800 h-[1px] absolute top-0 left-0 w-full"></div>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 py-2 px-6 active:translate-y-0.5 transition-all hover:bg-slate-200/50 dark:hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em] mt-1">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 py-2 px-6 active:translate-y-0.5 transition-all hover:bg-slate-200/50 dark:hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined">send</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em] mt-1">SEND</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-slate-200 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 rounded-sm py-2 px-6 active:translate-y-0.5 transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em] mt-1">SETTINGS</span>
+</a>
+</nav>
+</body></html>

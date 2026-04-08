@@ -1,0 +1,365 @@
+{
+  "id": "71-credentialcliff-is-a-fear-of-l",
+  "num": 71,
+  "title": "CredentialCliff",
+  "subtitle": "COI readiness for handymen who need current proof ready to resend.",
+  "description": "CredentialCliff becomes a mobile-first COI readiness utility for solo handymen who work with property managers and get asked, over and over, to send current proof of insurance before a job, vendor setup, or site approval. The product is not pitched as a new contractor operating system. It does one job: keep the latest COI easy to resend and hard to let expire. The setup is deliberately short. The user uploads their current COI, manually confirms the expiration date, saves a broker or insurer contact, and generates renewal reminders through a calendar export flow. The home screen then shows a blunt status card: Active until May 28, Expires in 20 days, Broker: Sam at ABC Insurance, and Send current COI. No weekly income math. No next-job prediction. No fake compliance intelligence. The repeat use case is practical, not aspirational. When a property manager texts, emails, or calls asking for an updated COI, the user opens the app, sees whether the document is current, and resends the latest file immediately. That is the week-2 return reason. Renewal reminders matter, but they are not the retention thesis by themselves. The product is useful in the middle of active work, not only near the expiration date. The red/yellow status card stays because it is the strongest piece of the concept, but it is now tied only to stable facts the app can actually know: current document on file, confirmed expiration date, and renewal contact path. That makes the warning credible instead of theatrical. The initial distribution wedge is specific: handymen who subcontract for small property managers. If early testing shows that this segment does not reopen the app to resend COIs, the fallback is not to widen the audience. The fallback is to reduce the product further into a lightweight send-and-remind utility and test it as a feature, not a standalone business. Three biggest assumptions that could kill the product: - Handymen working with property managers are asked to resend COIs often enough that \"current COI ready to send\" creates repeat usage beyond renewal season. UNVERIFIED - Manual setup stays low-friction enough when it is only upload + expiration date + broker contact + reminder export. VERIFIED - OCR meaningfully reduces setup time for COIs. FALSE Fallback plan for the unverified differentiator: - Do not present repeat resend behavior as a moat. It is an open risk. If users only care near expiration, reposition the product as a low-frequency renewal utility or bundle the feature into a broader contractor admin workflow later. Why would users come back in week 2? - Because the product doubles as the fastest place to check \"is my COI current?\" and resend it when a property manager asks for proof before a job. If that behavior does not appear in testing, confidence in the standalone app drops sharply.",
+  "score": 5,
+  "status": "complete",
+  "deviceType": "MOBILE",
+  "category": "Utility",
+  "platform": [
+    "ios",
+    "android"
+  ],
+  "tags": [
+    "coi",
+    "insurance",
+    "handyman",
+    "reminders",
+    "documents"
+  ],
+  "folder": "71-credentialcliff-is-a-fear-of-l",
+  "prototypeUrl": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/",
+  "metaUrl": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/meta.json",
+  "startScreenId": "ae824104e5234e6d96b6094cb7cb6697",
+  "startScreenUrl": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/ae824104e5234e6d96b6094cb7cb6697.html",
+  "screenCount": 11,
+  "stitchId": "13340312488692471267",
+  "stitchUrl": "https://stitch.withgoogle.com/projects/13340312488692471267",
+  "publishedAt": "2026-04-08T06:12:33Z",
+  "updatedAt": "2026-04-08T06:12:33Z",
+  "journey": [
+    {
+      "kind": "idea",
+      "title": "Original Idea",
+      "summary": "Fear-of-loss compliance tracker for licensed workers.",
+      "sections": [
+        {
+          "label": "description",
+          "paragraphs": [
+            "CredentialCliff is a fear-of-loss app that copies the NEXT Insurance model but applies it to licensed workers at risk of losing income from expired credentials. You scan a permit, license, certification, or insurance document once, and the app extracts the expiration date, renewal steps, and supporting paperwork, then turns it into a blunt income-risk dashboard that shows which upcoming shifts or jobs are exposed. The reveal is immediate and screen-recordable: a red card saying exactly what expires when, how many workdays are at risk, and the first renewal action to take. The loop is scan once, get escalating reminders as the deadline approaches, clear the risk, and come back because most workers juggle multiple credentials with different renewal cycles."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "critique",
+      "title": "Critique v1",
+      "verdict": "NEEDS MAJOR WORK",
+      "score": "4/10",
+      "summary": "Scope, extraction reliability, and retention were all structurally weak.",
+      "sections": [
+        {
+          "label": "what_worked",
+          "items": [
+            "The pain is real. Licensed workers do lose money when credentials lapse, so this is not a fake problem.",
+            "The \"red card\" concept is strong product theater. A blunt, screen-recordable income-risk warning is clearer than another boring reminder app.",
+            "Reminder-driven products can work when the consequence is concrete and expensive, and \"you may lose shifts\" is concrete."
+          ]
+        },
+        {
+          "label": "risks",
+          "items": [
+            "This pitch is trying to look simple by hiding the hardest parts behind verbs like \"scan,\" \"extract,\" and \"shows.\" Those are not features. Those are entire systems.",
+            "The core differentiator is UNVERIFIED. You are assuming a generic scan can reliably extract expiration dates, renewal steps, and supporting paperwork from wildly inconsistent permits, licenses, certifications, and insurance docs. That is fantasy until proven. OCRing a date is one problem. Understanding renewal requirements across states, issuers, and professions is a much uglier problem.",
+            "\"Shows which upcoming shifts or jobs are exposed\" is another hidden iceberg. Exposed according to what source of truth? Calendar? Employer scheduling software? Gig platform? Manual user input? If there is no real job data, the income-risk dashboard is theater. If there is real job data, now you need integrations, permissions, and trust you have not earned.",
+            "You are bundling at least three products into one: document scanner, compliance knowledge base, and income-risk planner. A solo dev doing vibe coding does not get to casually ship three brittle systems and call it an MVP.",
+            "Renewal steps are not stable. They differ by state, profession, credential issuer, and change over time. So now you either maintain a giant compliance database by hand, scrape a mess of government sites, or hallucinate steps with AI and hope nobody loses income because your app invented a renewal requirement.",
+            "If the app gets one credential wrong, the brand is poisoned. This is not a social toy where users forgive mistakes. If a nurse, electrician, or contractor misses a renewal because your app said the wrong thing, they will not think \"beta bug.\" They will think your app is dangerous garbage.",
+            "The retention story is thinner than the pitch thinks. \"Most workers juggle multiple credentials\" is not automatically a habit loop. Why does the user come back after day 1? Most people will scan once, maybe set reminders, then ignore the app until a push notification arrives. That is utility, not engagement.",
+            "The \"fear-of-loss\" angle cuts both ways. It creates urgency, but it also makes the experience stressful. If every session screams red-card panic, users may avoid opening it the same way people avoid bad financial news.",
+            "The addressable user base is fragmented. Licensed workers are not one market. CNA licenses, real-estate licenses, contractor insurance certs, food-handler permits, and CDL-related docs all have different rules and workflows. \"Licensed workers\" sounds broad because it is broad. Broad is exactly how a solo builder gets buried.",
+            "The onboarding is likely awful in practice. Users need to find documents, photograph them cleanly, verify extracted details, maybe enter renewal rules manually, maybe connect calendars or work schedules. That is too much setup friction for an app whose promised magic is supposed to feel instant.",
+            "The product is dangerously close to becoming \"yet another reminder app plus OCR.\" If you cannot prove better-than-reminder-level value immediately, this is a commodity with compliance anxiety layered on top."
+          ]
+        },
+        {
+          "label": "suggested_cuts",
+          "items": [
+            "Cut the generic \"all credentials for all licensed workers\" framing. Pick one niche with standardized documents and obvious consequences, like home health aides, real-estate agents, or independent contractors with COI expirations.",
+            "Strip the MVP down to expiration tracking first. Scan document, extract candidate expiration date, force user confirmation, then schedule reminders. Do not pretend you have a compliance brain before you do.",
+            "Remove automated renewal-step extraction unless you have a verified source. A link to the official renewal page is better than AI-generated nonsense.",
+            "Replace \"jobs at risk\" with a simpler user-entered estimate like \"days of work affected\" or \"weekly income exposed\" until you verify a real data source.",
+            "Design for manual correction everywhere. If users cannot easily fix the app's guesses, the product will feel incompetent fast.",
+            "Validate demand with one landing page and one profession before building a generalized platform. If one niche does not care enough to upload docs, the broad play dies immediately."
+          ]
+        },
+        {
+          "label": "solo_dev_reality_check",
+          "paragraphs": [
+            "- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — but only if the MVP is brutally narrowed to scan-or-manual entry, user-confirmed expiration dates, reminder scheduling, and a simple risk card. NO for the pitched version with reliable renewal-step extraction and actual job-risk mapping. - Biggest solo complexity traps: brittle OCR on inconsistent documents; maintaining accurate renewal requirements by profession/state; integrating calendars or scheduling systems; trust and liability from incorrect compliance advice; onboarding friction from document collection and correction; expanding into too many credential categories too early."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "idea",
+      "title": "Improved Idea v2",
+      "summary": "Narrowed the product to COI tracking with manual-first risk inputs.",
+      "sections": [
+        {
+          "label": "what_changed",
+          "items": [
+            "Narrowed the product from \"all credentials for all licensed workers\" to one wedge: independent contractors who need an active Certificate of Insurance (COI) on file to keep working. This fixes the fragmentation problem and gives the MVP one document type with a more standardized format instead of an impossible cross-profession compliance product.",
+            "Cut automated renewal-step extraction, supporting-paperwork extraction, and any claim that the app knows upcoming shifts or job risk from external systems. The app now only stores a document, suggests an expiration date when possible, forces user confirmation, and lets the user enter their own weekly income exposure and next booked job date, which removes the biggest trust and integration failures from v1.",
+            "Reframed retention around a weekly \"Work Protected?\" review instead of passive reminders alone. Users update weekly revenue exposure and next booked job date every week, so the red risk card stays current and gives them a real reason to reopen the app before the deadline panic window."
+          ]
+        },
+        {
+          "label": "description",
+          "paragraphs": [
+            "CredentialCliff becomes a manual-first COI expiration tracker for independent contractors who cannot afford to show up to a client, site, or onboarding request with expired insurance proof. The user can add one COI by taking a photo or uploading a PDF, but the app treats OCR as optional convenience only. If it can detect an expiration date with reasonable confidence, it prefills a candidate value and immediately asks the user to confirm or correct it. If OCR fails, the user enters the date manually and still gets the full product value.",
+            "The core output is a blunt red card built only from confirmed data: `COI expires in 18 days`, `weekly income exposed: $1,400`, `next booked job: Apr 23`, and `next action: contact insurer / upload renewed COI`. Instead of pretending to know renewal rules, the app asks the user to save one official renewal path: insurer portal URL, broker phone number, or renewal email. That makes the next step fast without inventing compliance advice. The app also stores the current COI file, so when a renewed version arrives the user uploads the replacement and the red card clears immediately.",
+            "Why this is better now: it is no longer three brittle products pretending to be one. It is one narrow utility for one document type, with manual correction everywhere, no external schedule integrations, and no fake compliance intelligence. The value is not \"AI knows your renewal requirements.\" The value is \"I can see exactly when my insurance proof becomes dangerous to my income, and I can fix it fast.\"",
+            "Why would users come back in week 2? Because the app asks for a lightweight weekly review every Friday: confirm the next booked job date and this week's revenue at risk. For independent contractors, client work and exposure change week to week. That review keeps the red card accurate, and uploading a renewed COI is a clear completion moment that closes the loop.",
+            "Three biggest assumptions that could kill this: - Contractors who rely on COIs will complete manual setup and maintain one weekly revenue-at-risk number because the red card is useful enough on day 1. `UNVERIFIED` - COI documents are consistent enough that OCR can reduce setup time, even though manual entry remains the fallback. `UNVERIFIED` - A weekly exposure review is enough to create week-2 retention beyond push notifications. `UNVERIFIED`",
+            "False assumption removed from v1: - \"A generic scan can reliably extract renewal steps and supporting paperwork across permits, licenses, certifications, and insurance docs.\" `FALSE`",
+            "Fallback plan for the unverified pieces: do not position OCR or weekly habit strength as the moat. If OCR is weak, ship manual entry plus file storage. If the weekly review does not stick, reposition the product as a low-frequency deadline utility and test whether users still convert on the strength of the red card plus reminders before expanding scope."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "critique",
+      "title": "Critique v2",
+      "verdict": "WORTH BUILDING",
+      "score": "6/10",
+      "summary": "The weekly-review retention idea and broad contractor framing still looked weak.",
+      "sections": [
+        {
+          "label": "what_worked",
+          "items": [
+            "This is dramatically less stupid than v1. Narrowing from \"all credentials for all licensed workers\" to one document type finally gives the product a shape.",
+            "Manual-first confirmation is the right move. You stopped pretending OCR is magic and moved the trust boundary back onto user-confirmed data.",
+            "The red risk card is still the strongest part of the concept. \"Your COI expires in 18 days and $1,400 this week is exposed\" is blunt, legible, and emotionally effective.",
+            "Saving the renewal path is smart because it turns panic into action instead of fake compliance intelligence.",
+            "This is close enough to a real solo-buildable utility that a single developer could actually test demand instead of drowning in platform fantasies."
+          ]
+        },
+        {
+          "label": "risks",
+          "items": [
+            "You did not invent a market category here. You built a sharper reminder app for one annoying document. That can still work, but stop dressing it up like a new operating system for contractor risk.",
+            "The retention story is still shaky and still UNVERIFIED. A weekly \"Work Protected?\" review sounds tidy in a product doc, but in real life it is one more chore for people already juggling jobs, invoices, and client bullshit. Why does the user come back after day 1? Because you nag them. That is not a moat. That is a notification schedule.",
+            "The product depends on users doing manual upkeep on the two most perishable fields in the app: weekly income exposure and next booked job date. Those numbers drift constantly. The second they go stale, the red card becomes fake precision theater.",
+            "You cut the impossible compliance brain, which was good, but now the value proposition is thinner than you want to admit. \"Store a COI, track expiry, keep a broker link, send reminders\" is useful, but it is also brutally easy to replicate and painfully hard to charge much for.",
+            "You are still hiding fragmentation inside the phrase \"independent contractors.\" A cleaner, handyman, photographer, DJ, and field inspector do not buy software the same way, discover products the same way, or feel COI urgency with the same frequency. If you cannot name the first wedge precisely, your marketing is still mush.",
+            "The onboarding burden is not solved. The user still has to find a COI, upload it, verify dates, enter weekly income exposure, enter next booked job, add a renewal path, and configure reminders before they feel the payoff. For a product whose whole pitch is \"don't lose work,\" that setup is longer than it should be.",
+            "OCR is correctly demoted to convenience, but it is still UNVERIFIED. If the OCR prefill is wrong often enough, it does not save setup time; it adds a trust tax because users now have to audit the machine before trusting the app.",
+            "The archive/history idea is fluff unless users actually need records for disputes or audits. Most people do not want a museum of old COIs. They want the current one not to screw them.",
+            "Reminder delivery is being treated like a solved problem when it absolutely is not. Mobile web reminder reliability is mediocre, email gets ignored, push requires app install and permissions, and SMS costs money. For this kind of product, reminder failure is not a minor bug. It is the product failing at the only job the user hired it to do.",
+            "Monetization is awkward. Users who only need this a few times a year will resist a subscription, and a one-time purchase makes reminder infrastructure and support economics uglier. If the business model is \"maybe contractors are anxious enough to pay anyway,\" that is not a business model.",
+            "There is a decent chance the real best version of this is not a standalone app at all. It may be a tiny mobile-first utility, a WhatsApp/SMS concierge, or a feature inside a broader contractor admin tool. Standalone only works if the pain is both frequent and sharp enough to earn a home-screen slot.",
+            "Your estimate still reads like happy-path math. The screens are easy. The annoying parts are reminder reliability, file handling edge cases, document replacement flows, permission friction, offline capture weirdness, and writing copy honest enough that users do not assume you give legal/compliance advice."
+          ]
+        },
+        {
+          "label": "suggested_cuts",
+          "items": [
+            "Narrow again. Pick one contractor type with frequent proof-of-insurance requests and ugly consequences for showing up with stale paperwork.",
+            "Treat the weekly review as an experiment, not as the retention thesis. If users will not maintain the risk inputs, default the product back to expiry tracking and reminder execution.",
+            "Make manual entry the true default and keep OCR behind a soft convenience layer until document accuracy is proven on real samples.",
+            "Cut history from MVP unless interviews show a real recordkeeping need. Current document, confirmed expiration, renewal path, and reminder control are enough.",
+            "Decide the platform based on reminder reliability, not developer comfort. If mobile web cannot do the job dependably, stop pretending speed-to-ship makes it the right choice.",
+            "Validate willingness to pay before polishing the vault. If nobody will pay for \"don't forget your COI,\" the product is a nice utility, not a business."
+          ]
+        },
+        {
+          "label": "solo_dev_reality_check",
+          "paragraphs": [
+            "- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — a stripped-down version is plausible, but only if the builder stops inflating the weekly review into a habit system and focuses on document tracking plus reliable reminders. - Biggest solo complexity traps: choosing a real contractor wedge instead of a fake broad one; reminder reliability across platforms; OCR confidence and correction UX; file upload/storage edge cases; permission friction for notifications; stale manual risk inputs turning the dashboard into nonsense; weak monetization for a low-frequency utility; writing copy that is useful without implying compliance advice. Design Handoff: - Screens needed: landing page, add COI method, manual COI entry, OCR review/confirmation, risk setup, home/dashboard with risk card, COI detail, reminder settings, replace COI flow, weekly review prompt, settings/support, empty states for no COI and expired COI. - Key UI interactions: upload or manually add a COI, confirm or correct extracted fields, enter income exposure and next job date, tap into the renewal link/contact, adjust reminder timing, replace the current COI with a renewed one, complete or dismiss a weekly review, edit stale risk inputs from the dashboard. - Data each screen needs: current COI file and metadata, confirmed expiration date, OCR candidate values plus confidence state, insurer/broker contact, renewal URL/email/phone, weekly income exposure, next booked job date, reminder schedule and channel, replacement history if kept, review due state, notification permission state, support/legal boundary copy."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "idea",
+      "title": "Improved Idea v3",
+      "summary": "Focused on handymen, current-COI resend, and reminder export.",
+      "sections": [
+        {
+          "label": "what_changed",
+          "items": [
+            "Narrowed the wedge from generic \"independent contractors\" to handymen who subcontract for small property managers. This fixes the biggest market-shape problem: these users get repeated COI requests, face immediate work stoppage if their proof is stale, and can be reached with a much clearer message than a broad contractor bucket.",
+            "Removed the two structurally bad inputs from v2: weekly income exposure and next booked job date. They drift too fast, make the red card dishonest, and create setup friction before value. The app now shows only confirmed status data: current COI, expiration date, renewal contact, and whether the document is ready to resend.",
+            "Cut OCR, weekly review, and history from MVP. Manual entry is the default, because it is faster to ship, easier to trust, and avoids building the product around unverified convenience features. In their place, v1 adds one stronger repeat job: when a property manager asks for proof of insurance, the user can open the app and resend the current COI in seconds."
+          ]
+        },
+        {
+          "label": "description",
+          "paragraphs": [
+            "CredentialCliff becomes a mobile-first COI readiness utility for solo handymen who work with property managers and get asked, over and over, to send current proof of insurance before a job, vendor setup, or site approval. The product is not pitched as a new contractor operating system. It does one job: keep the latest COI easy to resend and hard to let expire.",
+            "The setup is deliberately short. The user uploads their current COI, manually confirms the expiration date, saves a broker or insurer contact, and generates renewal reminders through a calendar export flow. The home screen then shows a blunt status card: `Active until May 28`, `Expires in 20 days`, `Broker: Sam at ABC Insurance`, and `Send current COI`. No weekly income math. No next-job prediction. No fake compliance intelligence.",
+            "The repeat use case is practical, not aspirational. When a property manager texts, emails, or calls asking for an updated COI, the user opens the app, sees whether the document is current, and resends the latest file immediately. That is the week-2 return reason. Renewal reminders matter, but they are not the retention thesis by themselves. The product is useful in the middle of active work, not only near the expiration date.",
+            "The red/yellow status card stays because it is the strongest piece of the concept, but it is now tied only to stable facts the app can actually know: current document on file, confirmed expiration date, and renewal contact path. That makes the warning credible instead of theatrical.",
+            "The initial distribution wedge is specific: handymen who subcontract for small property managers. If early testing shows that this segment does not reopen the app to resend COIs, the fallback is not to widen the audience. The fallback is to reduce the product further into a lightweight send-and-remind utility and test it as a feature, not a standalone business.",
+            "Three biggest assumptions that could kill the product: - Handymen working with property managers are asked to resend COIs often enough that \"current COI ready to send\" creates repeat usage beyond renewal season. `UNVERIFIED` - Manual setup stays low-friction enough when it is only upload + expiration date + broker contact + reminder export. `VERIFIED` - OCR meaningfully reduces setup time for COIs. `FALSE`",
+            "Fallback plan for the unverified differentiator: - Do not present repeat resend behavior as a moat. It is an open risk. If users only care near expiration, reposition the product as a low-frequency renewal utility or bundle the feature into a broader contractor admin workflow later.",
+            "Why would users come back in week 2? - Because the product doubles as the fastest place to check \"is my COI current?\" and resend it when a property manager asks for proof before a job. If that behavior does not appear in testing, confidence in the standalone app drops sharply."
+          ]
+        },
+        {
+          "label": "solo_mvp_scope",
+          "items": [
+            "What's in v1: one user type only (solo handymen subcontracting for property managers), one document type only (current COI), manual upload plus manual expiration-date confirmation, broker/insurer contact storage, status card, resend/share flow for the latest COI, replace-current-COI flow, calendar-based reminder export, and plain-language boundary copy saying the app does not provide legal or compliance advice.",
+            "What's out of v1: all non-COI credentials, all other contractor categories, weekly income exposure, next booked job date, weekly review prompts, OCR, archive/history, compliance-rule databases, renewal-step generation, employer or platform integrations, push notification systems, SMS, marketplace features, payments, payouts, user-generated content, moderation, team accounts, and any feature that depends on users returning to contribute data.",
+            "Estimated build time with AI coding tools: 2.5-3.5 weeks total, including 5-7 days for UI and core flows, 2-3 days for secure file upload/storage and replacement handling, 2 days for share/resend and calendar export integration setup, 2-3 days for empty states, reminder copy, legal-boundary copy, and onboarding content prep, and 3-4 days for mobile QA, file edge cases, permission friction, and deployment cleanup. This estimate includes UI build, integration setup, and the manual content-prep work for reminder text, help copy, and property-manager-focused onboarding."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "critique",
+      "title": "Critique v3",
+      "verdict": "NEEDS MAJOR WORK",
+      "score": "5/10",
+      "summary": "Repeat resend behavior and differentiation still need proof.",
+      "sections": [
+        {
+          "label": "what_worked",
+          "items": [
+            "You finally stopped pretending this is a compliance brain and cut it down to one narrow job with one document. That is the first remotely adult decision this idea has made.",
+            "The handymen-for-property-managers wedge is better than the old \"independent contractors\" mush. At least now there is a buyer context, a repeated request pattern, and a specific pain event.",
+            "Cutting OCR, fake income math, and weekly review from MVP was correct. Those features were bloat wearing a productivity costume.",
+            "\"Current COI ready to resend\" is the only part that sounds like a real week-2 use case instead of a self-congratulatory reminder app."
+          ]
+        },
+        {
+          "label": "risks",
+          "items": [
+            "This is still one small feature pretending to be a company. Strip away the framing and you have \"store one PDF, show expiry, and re-share it fast.\" Useful? Maybe. Defensible business? Not remotely proven.",
+            "Your entire standalone case hangs on one `UNVERIFIED` assumption: handymen get asked for COIs often enough that a dedicated app earns a place on their phone. If that is false, the whole product collapses into a low-frequency reminder utility people open twice a year.",
+            "The resend flow is not automatically better than the status quo. The real incumbents are phone files, email search, iCloud Drive, Google Drive, Dropbox, and \"text my broker.\" You are not competing against nothing. You are competing against habits that are already installed and free.",
+            "Manual setup is \"verified\" only in the weak sense that it is possible, not that people will happily do it for a single-document utility. Upload file, confirm date, add broker contact, export reminders, trust the app, remember the app exists: that is still a lot of ceremony for something users currently solve with a folder and a calendar event.",
+            "Calendar export is a cop-out masquerading as scope discipline. It removes engineering work from your side by dumping reminder reliability onto the user. If the reminder fails because they never added it, dismissed it, or changed phones, they will blame the product anyway.",
+            "The retention story is still fragile. Why does the user come back after day 1? Because a property manager asks again. How often is that really happening for this exact wedge? If the answer is \"not much,\" then this is not a product loop. It is an occasional document retrieval moment.",
+            "There is no real moat here. Any generic document wallet, insurer portal, broker portal, contractor admin app, or even a better file-sharing shortcut can clone this in a weekend. Being narrow helps messaging, but it also makes your ceiling tiny unless the pain is brutal and frequent.",
+            "The wedge is narrower, but distribution is still hand-wavy. How exactly does a solo developer cheaply reach \"handymen who subcontract for small property managers\" at volume? This is not a clean self-serve SaaS audience sitting on Product Hunt waiting to buy a COI utility.",
+            "You are underselling the boring ugly parts. Secure file storage, share flows, mobile permissions, replacing the current document cleanly, handling photos versus PDFs, and making the latest file obvious are all solvable, but they are exactly the kind of annoying edge-case swamp that eats a solo builder's two-week estimate.",
+            "The product risks being too low-stakes in daily behavior and too high-stakes in expectations. Users will not engage often enough to love it, but when they do use it they will expect it not to fail. That is a bad combo for a tiny standalone app.",
+            "The monetization story still stinks. Subscription pricing is absurd for a low-frequency utility, one-time pricing is weak for ongoing support/storage, and free makes it a feature test, not a business. If the best business model is \"maybe sell later once trust exists,\" you do not have a business yet.",
+            "Your own fallback admits the truth: if repeat resend behavior is weak, this should shrink into a feature or utility, not remain a standalone company. That is not a reassuring fallback. That is the likely outcome already peeking through the floorboards."
+          ]
+        },
+        {
+          "label": "suggested_cuts",
+          "items": [
+            "Treat this as a demand test for a utility, not as a startup with product-market fit already implied. The current concept has not earned that framing.",
+            "Run the ugliest possible smoke test before building much: landing page, mock status card, fake resend promise, and interviews with real handymen who work with property managers. If repeated resend demand is weak, stop.",
+            "Cut \"app\" ego wherever possible. A dead-simple mobile web utility or even a broker-assisted workflow may teach you more than polishing a standalone product shell.",
+            "Validate the incumbent comparison head-on. If users say \"I already keep the PDF in my email and that is fine,\" this idea is not differentiated enough.",
+            "Do not spend time on premium-feeling UX until you know the resend flow beats existing behavior in speed and trust.",
+            "Be honest that the best first outcome may be learning this belongs inside a bigger contractor admin product, not proving a standalone business."
+          ]
+        },
+        {
+          "label": "solo_dev_reality_check",
+          "paragraphs": [
+            "- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the stripped-down utility is buildable, but the bigger risk is not coding speed, it is building a neat little app nobody needs often enough to keep. - Biggest solo complexity traps: overestimating resend frequency; underestimating distribution difficulty for this niche wedge; treating calendar export as solved reminders; file storage and replacement edge cases on mobile; trust and privacy concerns around insurance documents; weak differentiation against email/cloud storage; building a standalone shell around what may only be a feature."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "design",
+      "title": "Design Prototype",
+      "summary": "Published a preview from directly fetched Stitch HTML.",
+      "sections": [
+        {
+          "label": "fetched_screens",
+          "items": [
+            "1: Landing / wedge-specific pitch",
+            "2: Add current COI",
+            "3: Confirm COI details",
+            "4: Save renewal contact",
+            "5: Reminder setup",
+            "6: Home / status card",
+            "7: Resend current COI",
+            "8: COI detail / edit",
+            "9: Replace current COI",
+            "10: Empty / expired states",
+            "11: Settings / support"
+          ]
+        }
+      ]
+    }
+  ],
+  "journeyHtml": [
+    "<div class=\"esect\"><div class=\"esect-label\">Description</div><p>CredentialCliff is a fear-of-loss app that copies the NEXT Insurance model but applies it to licensed workers at risk of losing income from expired credentials. You scan a permit, license, certification, or insurance document once, and the app extracts the expiration date, renewal steps, and supporting paperwork, then turns it into a blunt income-risk dashboard that shows which upcoming shifts or jobs are exposed. The reveal is immediate and screen-recordable: a red card saying exactly what expires when, how many workdays are at risk, and the first renewal action to take. The loop is scan once, get escalating reminders as the deadline approaches, clear the risk, and come back because most workers juggle multiple credentials with different renewal cycles.</p></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Actually Good</div><ul><li>The pain is real. Licensed workers do lose money when credentials lapse, so this is not a fake problem.</li><li>The &quot;red card&quot; concept is strong product theater. A blunt, screen-recordable income-risk warning is clearer than another boring reminder app.</li><li>Reminder-driven products can work when the consequence is concrete and expensive, and &quot;you may lose shifts&quot; is concrete.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>This pitch is trying to look simple by hiding the hardest parts behind verbs like &quot;scan,&quot; &quot;extract,&quot; and &quot;shows.&quot; Those are not features. Those are entire systems.</li><li>The core differentiator is UNVERIFIED. You are assuming a generic scan can reliably extract expiration dates, renewal steps, and supporting paperwork from wildly inconsistent permits, licenses, certifications, and insurance docs. That is fantasy until proven. OCRing a date is one problem. Understanding renewal requirements across states, issuers, and professions is a much uglier problem.</li><li>&quot;Shows which upcoming shifts or jobs are exposed&quot; is another hidden iceberg. Exposed according to what source of truth? Calendar? Employer scheduling software? Gig platform? Manual user input? If there is no real job data, the income-risk dashboard is theater. If there is real job data, now you need integrations, permissions, and trust you have not earned.</li><li>You are bundling at least three products into one: document scanner, compliance knowledge base, and income-risk planner. A solo dev doing vibe coding does not get to casually ship three brittle systems and call it an MVP.</li><li>Renewal steps are not stable. They differ by state, profession, credential issuer, and change over time. So now you either maintain a giant compliance database by hand, scrape a mess of government sites, or hallucinate steps with AI and hope nobody loses income because your app invented a renewal requirement.</li><li>If the app gets one credential wrong, the brand is poisoned. This is not a social toy where users forgive mistakes. If a nurse, electrician, or contractor misses a renewal because your app said the wrong thing, they will not think &quot;beta bug.&quot; They will think your app is dangerous garbage.</li><li>The retention story is thinner than the pitch thinks. &quot;Most workers juggle multiple credentials&quot; is not automatically a habit loop. Why does the user come back after day 1? Most people will scan once, maybe set reminders, then ignore the app until a push notification arrives. That is utility, not engagement.</li><li>The &quot;fear-of-loss&quot; angle cuts both ways. It creates urgency, but it also makes the experience stressful. If every session screams red-card panic, users may avoid opening it the same way people avoid bad financial news.</li><li>The addressable user base is fragmented. Licensed workers are not one market. CNA licenses, real-estate licenses, contractor insurance certs, food-handler permits, and CDL-related docs all have different rules and workflows. &quot;Licensed workers&quot; sounds broad because it is broad. Broad is exactly how a solo builder gets buried.</li><li>The onboarding is likely awful in practice. Users need to find documents, photograph them cleanly, verify extracted details, maybe enter renewal rules manually, maybe connect calendars or work schedules. That is too much setup friction for an app whose promised magic is supposed to feel instant.</li><li>The product is dangerously close to becoming &quot;yet another reminder app plus OCR.&quot; If you cannot prove better-than-reminder-level value immediately, this is a commodity with compliance anxiety layered on top.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Key Questions</div><ul><li>Which single credential category is the wedge, specifically, and why that one?</li><li>What exact source produces renewal steps, and how will you verify they are current and correct?</li><li>What exact source produces &quot;upcoming shifts or jobs at risk,&quot; and what happens when that source is unavailable?</li><li>If extraction confidence is low, what is the fallback experience that still feels useful?</li><li>Why does the user come back after day 1 other than receiving a push notification?</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Suggestions</div><ul><li>Cut the generic &quot;all credentials for all licensed workers&quot; framing. Pick one niche with standardized documents and obvious consequences, like home health aides, real-estate agents, or independent contractors with COI expirations.</li><li>Strip the MVP down to expiration tracking first. Scan document, extract candidate expiration date, force user confirmation, then schedule reminders. Do not pretend you have a compliance brain before you do.</li><li>Remove automated renewal-step extraction unless you have a verified source. A link to the official renewal page is better than AI-generated nonsense.</li><li>Replace &quot;jobs at risk&quot; with a simpler user-entered estimate like &quot;days of work affected&quot; or &quot;weekly income exposed&quot; until you verify a real data source.</li><li>Design for manual correction everywhere. If users cannot easily fix the app&#x27;s guesses, the product will feel incompetent fast.</li><li>Validate demand with one landing page and one profession before building a generalized platform. If one niche does not care enough to upload docs, the broad play dies immediately.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Changed and Why</div><ul><li>Narrowed the product from &quot;all credentials for all licensed workers&quot; to one wedge: independent contractors who need an active Certificate of Insurance (COI) on file to keep working. This fixes the fragmentation problem and gives the MVP one document type with a more standardized format instead of an impossible cross-profession compliance product.</li><li>Cut automated renewal-step extraction, supporting-paperwork extraction, and any claim that the app knows upcoming shifts or job risk from external systems. The app now only stores a document, suggests an expiration date when possible, forces user confirmation, and lets the user enter their own weekly income exposure and next booked job date, which removes the biggest trust and integration failures from v1.</li><li>Reframed retention around a weekly &quot;Work Protected?&quot; review instead of passive reminders alone. Users update weekly revenue exposure and next booked job date every week, so the red risk card stays current and gives them a real reason to reopen the app before the deadline panic window.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Improved Description</div><p>CredentialCliff becomes a manual-first COI expiration tracker for independent contractors who cannot afford to show up to a client, site, or onboarding request with expired insurance proof. The user can add one COI by taking a photo or uploading a PDF, but the app treats OCR as optional convenience only. If it can detect an expiration date with reasonable confidence, it prefills a candidate value and immediately asks the user to confirm or correct it. If OCR fails, the user enters the date manually and still gets the full product value.</p><p>The core output is a blunt red card built only from confirmed data: `COI expires in 18 days`, `weekly income exposed: $1,400`, `next booked job: Apr 23`, and `next action: contact insurer / upload renewed COI`. Instead of pretending to know renewal rules, the app asks the user to save one official renewal path: insurer portal URL, broker phone number, or renewal email. That makes the next step fast without inventing compliance advice. The app also stores the current COI file, so when a renewed version arrives the user uploads the replacement and the red card clears immediately.</p><p>Why this is better now: it is no longer three brittle products pretending to be one. It is one narrow utility for one document type, with manual correction everywhere, no external schedule integrations, and no fake compliance intelligence. The value is not &quot;AI knows your renewal requirements.&quot; The value is &quot;I can see exactly when my insurance proof becomes dangerous to my income, and I can fix it fast.&quot;</p><p>Why would users come back in week 2? Because the app asks for a lightweight weekly review every Friday: confirm the next booked job date and this week&#x27;s revenue at risk. For independent contractors, client work and exposure change week to week. That review keeps the red card accurate, and uploading a renewed COI is a clear completion moment that closes the loop.</p><p>Three biggest assumptions that could kill this:\n- Contractors who rely on COIs will complete manual setup and maintain one weekly revenue-at-risk number because the red card is useful enough on day 1. `UNVERIFIED`\n- COI documents are consistent enough that OCR can reduce setup time, even though manual entry remains the fallback. `UNVERIFIED`\n- A weekly exposure review is enough to create week-2 retention beyond push notifications. `UNVERIFIED`</p><p>False assumption removed from v1:\n- &quot;A generic scan can reliably extract renewal steps and supporting paperwork across permits, licenses, certifications, and insurance docs.&quot; `FALSE`</p><p>Fallback plan for the unverified pieces: do not position OCR or weekly habit strength as the moat. If OCR is weak, ship manual entry plus file storage. If the weekly review does not stick, reposition the product as a low-frequency deadline utility and test whether users still convert on the strength of the red card plus reminders before expanding scope.</p></div><div class=\"esect\"><div class=\"esect-label\">Open Questions</div><ul><li>Which contractor wedge should launch first inside the broader COI category: cleaners, handymen, photographers, or another group with frequent proof-of-insurance requests?</li><li>Is a user-saved insurer portal / broker contact enough as the renewal path, or do early testers still expect more guided renewal help?</li><li>Does the weekly &quot;Work Protected?&quot; review produce real week-2 retention, or is this ultimately a low-frequency reminder utility with weaker monetization?</li><li>Is OCR good enough on typical ACORD/COI documents to keep in v1 onboarding, or should manual entry be the default and OCR deferred?</li><li>Should the MVP be mobile web first for faster shipping, or native mobile first because document capture and reminders are the real product?</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Actually Good</div><ul><li>This is dramatically less stupid than v1. Narrowing from &quot;all credentials for all licensed workers&quot; to one document type finally gives the product a shape.</li><li>Manual-first confirmation is the right move. You stopped pretending OCR is magic and moved the trust boundary back onto user-confirmed data.</li><li>The red risk card is still the strongest part of the concept. &quot;Your COI expires in 18 days and $1,400 this week is exposed&quot; is blunt, legible, and emotionally effective.</li><li>Saving the renewal path is smart because it turns panic into action instead of fake compliance intelligence.</li><li>This is close enough to a real solo-buildable utility that a single developer could actually test demand instead of drowning in platform fantasies.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>You did not invent a market category here. You built a sharper reminder app for one annoying document. That can still work, but stop dressing it up like a new operating system for contractor risk.</li><li>The retention story is still shaky and still UNVERIFIED. A weekly &quot;Work Protected?&quot; review sounds tidy in a product doc, but in real life it is one more chore for people already juggling jobs, invoices, and client bullshit. Why does the user come back after day 1? Because you nag them. That is not a moat. That is a notification schedule.</li><li>The product depends on users doing manual upkeep on the two most perishable fields in the app: weekly income exposure and next booked job date. Those numbers drift constantly. The second they go stale, the red card becomes fake precision theater.</li><li>You cut the impossible compliance brain, which was good, but now the value proposition is thinner than you want to admit. &quot;Store a COI, track expiry, keep a broker link, send reminders&quot; is useful, but it is also brutally easy to replicate and painfully hard to charge much for.</li><li>You are still hiding fragmentation inside the phrase &quot;independent contractors.&quot; A cleaner, handyman, photographer, DJ, and field inspector do not buy software the same way, discover products the same way, or feel COI urgency with the same frequency. If you cannot name the first wedge precisely, your marketing is still mush.</li><li>The onboarding burden is not solved. The user still has to find a COI, upload it, verify dates, enter weekly income exposure, enter next booked job, add a renewal path, and configure reminders before they feel the payoff. For a product whose whole pitch is &quot;don&#x27;t lose work,&quot; that setup is longer than it should be.</li><li>OCR is correctly demoted to convenience, but it is still UNVERIFIED. If the OCR prefill is wrong often enough, it does not save setup time; it adds a trust tax because users now have to audit the machine before trusting the app.</li><li>The archive/history idea is fluff unless users actually need records for disputes or audits. Most people do not want a museum of old COIs. They want the current one not to screw them.</li><li>Reminder delivery is being treated like a solved problem when it absolutely is not. Mobile web reminder reliability is mediocre, email gets ignored, push requires app install and permissions, and SMS costs money. For this kind of product, reminder failure is not a minor bug. It is the product failing at the only job the user hired it to do.</li><li>Monetization is awkward. Users who only need this a few times a year will resist a subscription, and a one-time purchase makes reminder infrastructure and support economics uglier. If the business model is &quot;maybe contractors are anxious enough to pay anyway,&quot; that is not a business model.</li><li>There is a decent chance the real best version of this is not a standalone app at all. It may be a tiny mobile-first utility, a WhatsApp/SMS concierge, or a feature inside a broader contractor admin tool. Standalone only works if the pain is both frequent and sharp enough to earn a home-screen slot.</li><li>Your estimate still reads like happy-path math. The screens are easy. The annoying parts are reminder reliability, file handling edge cases, document replacement flows, permission friction, offline capture weirdness, and writing copy honest enough that users do not assume you give legal/compliance advice.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Key Questions</div><ul><li>Which exact contractor wedge launches first: cleaners, handymen, photographers, notaries, inspectors, or someone else? &quot;Independent contractors&quot; is not a wedge.</li><li>Why does the user come back after day 1 if their COI is not close to expiring and no job is at immediate risk?</li><li>What happens when the user ignores the weekly review for three weeks and the red card is built on stale income/job inputs?</li><li>What reminder channel is the real MVP: native push, email, SMS, or calendar export? Pick one and be honest about its failure modes.</li><li>Is the first paid offer a cheap annual utility, a per-document fee, or a free tool to validate demand? If you do not know, you do not know whether this is a product or a feature.</li><li>Do users actually care about upload history, or are you adding recordkeeping because the core product feels too thin?</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Suggestions</div><ul><li>Narrow again. Pick one contractor type with frequent proof-of-insurance requests and ugly consequences for showing up with stale paperwork.</li><li>Treat the weekly review as an experiment, not as the retention thesis. If users will not maintain the risk inputs, default the product back to expiry tracking and reminder execution.</li><li>Make manual entry the true default and keep OCR behind a soft convenience layer until document accuracy is proven on real samples.</li><li>Cut history from MVP unless interviews show a real recordkeeping need. Current document, confirmed expiration, renewal path, and reminder control are enough.</li><li>Decide the platform based on reminder reliability, not developer comfort. If mobile web cannot do the job dependably, stop pretending speed-to-ship makes it the right choice.</li><li>Validate willingness to pay before polishing the vault. If nobody will pay for &quot;don&#x27;t forget your COI,&quot; the product is a nice utility, not a business.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Changed and Why</div><ul><li>Narrowed the wedge from generic &quot;independent contractors&quot; to handymen who subcontract for small property managers. This fixes the biggest market-shape problem: these users get repeated COI requests, face immediate work stoppage if their proof is stale, and can be reached with a much clearer message than a broad contractor bucket.</li><li>Removed the two structurally bad inputs from v2: weekly income exposure and next booked job date. They drift too fast, make the red card dishonest, and create setup friction before value. The app now shows only confirmed status data: current COI, expiration date, renewal contact, and whether the document is ready to resend.</li><li>Cut OCR, weekly review, and history from MVP. Manual entry is the default, because it is faster to ship, easier to trust, and avoids building the product around unverified convenience features. In their place, v1 adds one stronger repeat job: when a property manager asks for proof of insurance, the user can open the app and resend the current COI in seconds.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Improved Description</div><p>CredentialCliff becomes a mobile-first COI readiness utility for solo handymen who work with property managers and get asked, over and over, to send current proof of insurance before a job, vendor setup, or site approval. The product is not pitched as a new contractor operating system. It does one job: keep the latest COI easy to resend and hard to let expire.</p><p>The setup is deliberately short. The user uploads their current COI, manually confirms the expiration date, saves a broker or insurer contact, and generates renewal reminders through a calendar export flow. The home screen then shows a blunt status card: `Active until May 28`, `Expires in 20 days`, `Broker: Sam at ABC Insurance`, and `Send current COI`. No weekly income math. No next-job prediction. No fake compliance intelligence.</p><p>The repeat use case is practical, not aspirational. When a property manager texts, emails, or calls asking for an updated COI, the user opens the app, sees whether the document is current, and resends the latest file immediately. That is the week-2 return reason. Renewal reminders matter, but they are not the retention thesis by themselves. The product is useful in the middle of active work, not only near the expiration date.</p><p>The red/yellow status card stays because it is the strongest piece of the concept, but it is now tied only to stable facts the app can actually know: current document on file, confirmed expiration date, and renewal contact path. That makes the warning credible instead of theatrical.</p><p>The initial distribution wedge is specific: handymen who subcontract for small property managers. If early testing shows that this segment does not reopen the app to resend COIs, the fallback is not to widen the audience. The fallback is to reduce the product further into a lightweight send-and-remind utility and test it as a feature, not a standalone business.</p><p>Three biggest assumptions that could kill the product:\n- Handymen working with property managers are asked to resend COIs often enough that &quot;current COI ready to send&quot; creates repeat usage beyond renewal season. `UNVERIFIED`\n- Manual setup stays low-friction enough when it is only upload + expiration date + broker contact + reminder export. `VERIFIED`\n- OCR meaningfully reduces setup time for COIs. `FALSE`</p><p>Fallback plan for the unverified differentiator:\n- Do not present repeat resend behavior as a moat. It is an open risk. If users only care near expiration, reposition the product as a low-frequency renewal utility or bundle the feature into a broader contractor admin workflow later.</p><p>Why would users come back in week 2?\n- Because the product doubles as the fastest place to check &quot;is my COI current?&quot; and resend it when a property manager asks for proof before a job. If that behavior does not appear in testing, confidence in the standalone app drops sharply.</p></div><div class=\"esect\"><div class=\"esect-label\">Solo MVP Scope</div><ul><li>What&#x27;s in v1: one user type only (solo handymen subcontracting for property managers), one document type only (current COI), manual upload plus manual expiration-date confirmation, broker/insurer contact storage, status card, resend/share flow for the latest COI, replace-current-COI flow, calendar-based reminder export, and plain-language boundary copy saying the app does not provide legal or compliance advice.</li><li>What&#x27;s out of v1: all non-COI credentials, all other contractor categories, weekly income exposure, next booked job date, weekly review prompts, OCR, archive/history, compliance-rule databases, renewal-step generation, employer or platform integrations, push notification systems, SMS, marketplace features, payments, payouts, user-generated content, moderation, team accounts, and any feature that depends on users returning to contribute data.</li><li>Estimated build time with AI coding tools: 2.5-3.5 weeks total, including 5-7 days for UI and core flows, 2-3 days for secure file upload/storage and replacement handling, 2 days for share/resend and calendar export integration setup, 2-3 days for empty states, reminder copy, legal-boundary copy, and onboarding content prep, and 3-4 days for mobile QA, file edge cases, permission friction, and deployment cleanup. This estimate includes UI build, integration setup, and the manual content-prep work for reminder text, help copy, and property-manager-focused onboarding.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Open Questions</div><ul><li>Do handymen serving small property managers actually get enough repeated COI requests to justify a dedicated tool, or is this really just a reminder feature inside a broader admin app?</li><li>Is calendar export enough as the MVP reminder channel, or do testers treat it as too manual compared with native push?</li><li>Will users trust a dedicated resend flow more than just keeping the PDF in email or phone files?</li><li>Is the first test best run as a free utility to validate repeat use, or as a cheap annual product once reminder reliability is proven?</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Actually Good</div><ul><li>You finally stopped pretending this is a compliance brain and cut it down to one narrow job with one document. That is the first remotely adult decision this idea has made.</li><li>The handymen-for-property-managers wedge is better than the old &quot;independent contractors&quot; mush. At least now there is a buyer context, a repeated request pattern, and a specific pain event.</li><li>Cutting OCR, fake income math, and weekly review from MVP was correct. Those features were bloat wearing a productivity costume.</li><li>&quot;Current COI ready to resend&quot; is the only part that sounds like a real week-2 use case instead of a self-congratulatory reminder app.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Brutal Feedback</div><ul><li>This is still one small feature pretending to be a company. Strip away the framing and you have &quot;store one PDF, show expiry, and re-share it fast.&quot; Useful? Maybe. Defensible business? Not remotely proven.</li><li>Your entire standalone case hangs on one `UNVERIFIED` assumption: handymen get asked for COIs often enough that a dedicated app earns a place on their phone. If that is false, the whole product collapses into a low-frequency reminder utility people open twice a year.</li><li>The resend flow is not automatically better than the status quo. The real incumbents are phone files, email search, iCloud Drive, Google Drive, Dropbox, and &quot;text my broker.&quot; You are not competing against nothing. You are competing against habits that are already installed and free.</li><li>Manual setup is &quot;verified&quot; only in the weak sense that it is possible, not that people will happily do it for a single-document utility. Upload file, confirm date, add broker contact, export reminders, trust the app, remember the app exists: that is still a lot of ceremony for something users currently solve with a folder and a calendar event.</li><li>Calendar export is a cop-out masquerading as scope discipline. It removes engineering work from your side by dumping reminder reliability onto the user. If the reminder fails because they never added it, dismissed it, or changed phones, they will blame the product anyway.</li><li>The retention story is still fragile. Why does the user come back after day 1? Because a property manager asks again. How often is that really happening for this exact wedge? If the answer is &quot;not much,&quot; then this is not a product loop. It is an occasional document retrieval moment.</li><li>There is no real moat here. Any generic document wallet, insurer portal, broker portal, contractor admin app, or even a better file-sharing shortcut can clone this in a weekend. Being narrow helps messaging, but it also makes your ceiling tiny unless the pain is brutal and frequent.</li><li>The wedge is narrower, but distribution is still hand-wavy. How exactly does a solo developer cheaply reach &quot;handymen who subcontract for small property managers&quot; at volume? This is not a clean self-serve SaaS audience sitting on Product Hunt waiting to buy a COI utility.</li><li>You are underselling the boring ugly parts. Secure file storage, share flows, mobile permissions, replacing the current document cleanly, handling photos versus PDFs, and making the latest file obvious are all solvable, but they are exactly the kind of annoying edge-case swamp that eats a solo builder&#x27;s two-week estimate.</li><li>The product risks being too low-stakes in daily behavior and too high-stakes in expectations. Users will not engage often enough to love it, but when they do use it they will expect it not to fail. That is a bad combo for a tiny standalone app.</li><li>The monetization story still stinks. Subscription pricing is absurd for a low-frequency utility, one-time pricing is weak for ongoing support/storage, and free makes it a feature test, not a business. If the best business model is &quot;maybe sell later once trust exists,&quot; you do not have a business yet.</li><li>Your own fallback admits the truth: if repeat resend behavior is weak, this should shrink into a feature or utility, not remain a standalone company. That is not a reassuring fallback. That is the likely outcome already peeking through the floorboards.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Key Questions</div><ul><li>Why does the user come back after day 1, specifically for this handyman/property-manager wedge, and how often does that happen in reality rather than in theory?</li><li>What is meaningfully faster in this app than opening phone files, email search, or cloud storage and sending the same PDF from there?</li><li>How will a solo builder acquire the first 50 real users in this wedge without burning months on offline hustle and bespoke onboarding?</li><li>Is calendar export actually good enough, or is it just the cheapest possible reminder implementation dressed up as intentional MVP scope?</li><li>If users only care near renewal time, why is this a standalone app instead of a tiny feature inside broader contractor admin software?</li><li>What evidence says users will trust this tool more than the systems they already use to store and send insurance documents?</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Suggestions</div><ul><li>Treat this as a demand test for a utility, not as a startup with product-market fit already implied. The current concept has not earned that framing.</li><li>Run the ugliest possible smoke test before building much: landing page, mock status card, fake resend promise, and interviews with real handymen who work with property managers. If repeated resend demand is weak, stop.</li><li>Cut &quot;app&quot; ego wherever possible. A dead-simple mobile web utility or even a broker-assisted workflow may teach you more than polishing a standalone product shell.</li><li>Validate the incumbent comparison head-on. If users say &quot;I already keep the PDF in my email and that is fine,&quot; this idea is not differentiated enough.</li><li>Do not spend time on premium-feeling UX until you know the resend flow beats existing behavior in speed and trust.</li><li>Be honest that the best first outcome may be learning this belongs inside a bigger contractor admin product, not proving a standalone business.</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">Preview</div><p>Device: MOBILE. Stitch project: 13340312488692471267.</p></div><div class=\"esect\"><div class=\"esect-label\">Screens</div><ul><li>Landing / wedge-specific pitch</li><li>Add current COI</li><li>Confirm COI details</li><li>Save renewal contact</li><li>Reminder setup</li><li>Home / status card</li><li>Resend current COI</li><li>COI detail / edit</li><li>Replace current COI</li><li>Empty / expired states</li><li>Settings / support</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Artifacts</div><div class=\"tag-row\"><span class=\"etag blue\">status: designing</span><span class=\"etag green\">score: 5/10</span></div></div>"
+  ],
+  "screens": [
+    {
+      "id": "ae824104e5234e6d96b6094cb7cb6697",
+      "label": "Landing / wedge-specific pitch",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/ae824104e5234e6d96b6094cb7cb6697.html",
+      "order": 0
+    },
+    {
+      "id": "cb7379668ee04961b16cdb51704dd99f",
+      "label": "Add current COI",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/cb7379668ee04961b16cdb51704dd99f.html",
+      "order": 1
+    },
+    {
+      "id": "07f0afe4e66c4623bf1b073afe6009a4",
+      "label": "Confirm COI details",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/07f0afe4e66c4623bf1b073afe6009a4.html",
+      "order": 2
+    },
+    {
+      "id": "ff032f50d487475a9dddda7b1775ed93",
+      "label": "Save renewal contact",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/ff032f50d487475a9dddda7b1775ed93.html",
+      "order": 3
+    },
+    {
+      "id": "d4e28f1e563841f89d46be360c5aff8b",
+      "label": "Reminder setup",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/d4e28f1e563841f89d46be360c5aff8b.html",
+      "order": 4
+    },
+    {
+      "id": "d6129a1d44d54fc0bcac585fccc716bd",
+      "label": "Home / status card",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/d6129a1d44d54fc0bcac585fccc716bd.html",
+      "order": 5
+    },
+    {
+      "id": "604fff1f77f7490f93aaecf72cd11ae7",
+      "label": "Resend current COI",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/604fff1f77f7490f93aaecf72cd11ae7.html",
+      "order": 6
+    },
+    {
+      "id": "1e6ea140978c49bea187e5fe96affa15",
+      "label": "COI detail / edit",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/1e6ea140978c49bea187e5fe96affa15.html",
+      "order": 7
+    },
+    {
+      "id": "79966068adfc4a5d8d5dc9ea396164a9",
+      "label": "Replace current COI",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/79966068adfc4a5d8d5dc9ea396164a9.html",
+      "order": 8
+    },
+    {
+      "id": "5a421092b5e14946a165e540c405930e",
+      "label": "Empty / expired states",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/5a421092b5e14946a165e540c405930e.html",
+      "order": 9
+    },
+    {
+      "id": "0b88c13ac1af49f49c64829a00b615eb",
+      "label": "Settings / support",
+      "url": "https://jakebuild.github.io/idea-factory/71-credentialcliff-is-a-fear-of-l/0b88c13ac1af49f49c64829a00b615eb.html",
+      "order": 10
+    }
+  ]
+}

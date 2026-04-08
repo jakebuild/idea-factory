@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>CredentialCliff - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800;900&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#fec330",
+                    "inverse-primary": "#e6f3fb",
+                    "on-primary-fixed-variant": "#515d64",
+                    "error-dim": "#4e0309",
+                    "surface": "#f9f9f9",
+                    "on-surface": "#2d3435",
+                    "secondary": "#bb1b21",
+                    "tertiary": "#7a5a00",
+                    "inverse-on-surface": "#9c9d9d",
+                    "primary-fixed-dim": "#c9d6de",
+                    "tertiary-container": "#fec330",
+                    "surface-dim": "#d4dbdd",
+                    "surface-variant": "#dde4e5",
+                    "tertiary-dim": "#6b4e00",
+                    "secondary-fixed-dim": "#ffc7c1",
+                    "primary-dim": "#48545b",
+                    "on-error": "#fff7f6",
+                    "secondary-dim": "#a90816",
+                    "on-tertiary-fixed": "#402d00",
+                    "outline": "#757c7d",
+                    "on-surface-variant": "#5a6061",
+                    "on-secondary-fixed": "#85000d",
+                    "on-tertiary-fixed-variant": "#634900",
+                    "on-secondary-container": "#a70515",
+                    "error": "#9f403d",
+                    "outline-variant": "#adb3b4",
+                    "on-tertiary": "#fff8f1",
+                    "tertiary-fixed-dim": "#efb520",
+                    "primary-container": "#d7e4ec",
+                    "surface-tint": "#546067",
+                    "primary": "#546067",
+                    "surface-container-high": "#e4e9ea",
+                    "secondary-container": "#ffdad6",
+                    "surface-container-low": "#f2f4f4",
+                    "on-secondary-fixed-variant": "#b5161e",
+                    "on-primary-container": "#47545a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "on-secondary": "#fff7f6",
+                    "inverse-surface": "#0c0f0f",
+                    "on-error-container": "#752121",
+                    "on-background": "#2d3435",
+                    "background": "#f9f9f9",
+                    "on-primary": "#f0f9ff",
+                    "on-tertiary-container": "#584000",
+                    "surface-container-highest": "#dde4e5",
+                    "surface-container": "#ebeeef",
+                    "on-primary-fixed": "#354147",
+                    "secondary-fixed": "#ffdad6",
+                    "primary-fixed": "#d7e4ec",
+                    "error-container": "#fe8983"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Work Sans"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .cliff-gradient {
+            background: linear-gradient(145deg, #546067 0%, #48545b 100%);
+        }
+        .ledge-shadow {
+            box-shadow: 0 8px 24px rgba(45, 52, 53, 0.06);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="cc-nav-style">
+  .cc-hidden { display: none !important; }
+  .cc-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 70;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(173, 179, 180, 0.25);
+  }
+  .cc-topbar-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    height: 64px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .cc-topbar-side {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .cc-topbar-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #2d3435;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cc-icon-btn {
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .cc-icon-btn .material-symbols-outlined { font-size: 22px; }
+  .cc-bottom-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 70;
+    padding: 8px 16px 24px;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(173, 179, 180, 0.18);
+  }
+  .cc-bottom-nav-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .cc-tab {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .cc-tab .material-symbols-outlined { font-size: 20px; }
+  .cc-tab.is-active { color: #2d3435; background: #e4e9ea; }
+</style></head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<div class="cc-topbar">
+<div class="cc-topbar-inner">
+<div class="cc-topbar-side"><span aria-hidden="true"></span></div>
+<div class="cc-topbar-title">COI Status</div>
+<div class="cc-topbar-side"><span aria-hidden="true"></span></div>
+</div>
+</div>
+
+<div class="cc-bottom-nav">
+<div class="cc-bottom-nav-inner">
+<a class="cc-tab is-active" href="d6129a1d44d54fc0bcac585fccc716bd.html" onclick="window.location.href='d6129a1d44d54fc0bcac585fccc716bd.html'">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="cc-tab" href="604fff1f77f7490f93aaecf72cd11ae7.html" onclick="window.location.href='604fff1f77f7490f93aaecf72cd11ae7.html'">
+<span class="material-symbols-outlined">send</span>
+<span>Send</span>
+</a>
+<a class="cc-tab" href="0b88c13ac1af49f49c64829a00b615eb.html" onclick="window.location.href='0b88c13ac1af49f49c64829a00b615eb.html'">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</div>
+</div>
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md cc-hidden">
+<div class="flex justify-between items-center px-4 h-16 w-full max-w-xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-950 dark:text-white" data-icon="construction">construction</span>
+<h1 class="text-slate-950 dark:text-white font-black tracking-tighter text-xl">CredentialCliff</h1>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-slate-500" data-icon="notifications">notifications</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a professional contractor in a flannel shirt with a confident expression, outdoor industrial background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJBd9F82sNyFMaeOpLIFaK0PKPAme16BymxbJw7uIeqBKcM4UYULUzbenvI_O8eGHJJSjVLBjfo8GUiRIlIj4jRPsyZfZWmLDyIOMsrgyMjIx-4gmu3t-eq_alCh9cf1HXr_rLZ_bVB0h8h4XGcBBdYLntQxvFwckHEQp2xBbBR9TiVHu2tEMoLIpgnAgAKY2W_5DU4ijHZvH6LcNpPbvGMjgN_FUpKuueYjgvONuUJdL7I6CPmYb9v0xbC6wEnOD685ZYjy3qhq9l"/>
+</div>
+</div>
+</div>
+<div class="bg-slate-200 dark:bg-slate-800 h-[1px]"></div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-xl mx-auto">
+<!-- Section: Signature COI Cliff Monitor -->
+<section class="mb-10">
+<div class="flex flex-col gap-1">
+<span class="font-headline font-bold text-slate-500 tracking-wider text-[10px] uppercase">Compliance Health</span>
+<h2 class="font-headline font-extrabold text-4xl text-on-surface tracking-tight mb-6">Master Ledger</h2>
+</div>
+<!-- The Cliff Monitor Card -->
+<div class="bg-surface-container-lowest ledge-shadow p-8 flex flex-col items-start relative overflow-hidden">
+<!-- Status Chip (Industrial Sticker Look) -->
+<div class="absolute top-0 right-0 bg-tertiary-container text-on-tertiary-container px-4 py-2 font-headline font-black text-sm tracking-widest rounded-bl-lg">
+                    READY
+                </div>
+<div class="flex items-end gap-3 mb-4">
+<div class="flex flex-col">
+<span class="font-headline font-black text-8xl text-on-surface leading-none">24</span>
+<span class="font-label font-bold text-xs uppercase tracking-[0.1em] text-on-surface-variant mt-2">Days Remaining</span>
+</div>
+<div class="h-24 w-4 bg-surface-container-highest relative overflow-hidden">
+<div class="absolute bottom-0 w-full bg-tertiary" style="height: 65%;"></div>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-[80%] mb-8">
+                    General Liability Policy <span class="font-bold text-on-surface">#GL-9920-X</span> is active. Renewal required by October 24th to avoid site lockout.
+                </p>
+<!-- Quick Actions Block -->
+<div class="w-full grid grid-cols-1 gap-3">
+<button class="cliff-gradient text-on-primary py-4 px-6 rounded-lg font-label font-bold text-sm flex items-center justify-between active:scale-95 transition-transform" onclick="window.location.href='604fff1f77f7490f93aaecf72cd11ae7.html'" style="cursor: pointer;" type="button">
+                        SEND CURRENT PROOF
+                        <span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+<div class="grid grid-cols-2 gap-3">
+<button class="bg-surface-container-low text-on-surface py-4 px-4 rounded-lg font-label font-bold text-xs flex items-center justify-center gap-2 border border-outline-variant/15 active:translate-y-0.5 transition-all" onclick="window.location.href='ff032f50d487475a9dddda7b1775ed93.html'" style="cursor: pointer;" type="button">
+<span class="material-symbols-outlined text-sm" data-icon="call">call</span>
+                            CALL BROKER
+                        </button>
+<button class="bg-surface-container-low text-on-surface py-4 px-4 rounded-lg font-label font-bold text-xs flex items-center justify-center gap-2 border border-outline-variant/15 active:translate-y-0.5 transition-all" onclick="window.location.href='79966068adfc4a5d8d5dc9ea396164a9.html'" style="cursor: pointer;" type="button">
+<span class="material-symbols-outlined text-sm" data-icon="file_upload">file_upload</span>
+                            REPLACE COI
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Data Grid -->
+<section class="grid grid-cols-12 gap-4">
+<!-- Left Data Column -->
+<div class="col-span-12 md:col-span-8 flex flex-col gap-4">
+<div class="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline font-bold text-sm uppercase tracking-wider text-on-surface">Recent Activity</h3>
+<span class="material-symbols-outlined text-primary" data-icon="history">history</span>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-2">
+<div>
+<p class="font-bold text-sm">Site Access Verified</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Lincoln Tech Plaza • 2h ago</p>
+</div>
+<span class="material-symbols-outlined text-tertiary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<div>
+<p class="font-bold text-sm">Broker Uploaded Endorsement</p>
+<p class="text-[10px] text-on-surface-variant uppercase">Workers Comp • Yesterday</p>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="description">description</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Visual Column (Asymmetric Offset) -->
+<div class="col-span-12 md:col-span-4 bg-surface-container-highest rounded-lg p-6 flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant mb-4" data-icon="qr_code_2">qr_code_2</span>
+<p class="font-headline font-bold text-[10px] uppercase tracking-widest text-on-surface-variant">Tap to Scan<br/>Site Entry</p>
+</div>
+</section>
+<!-- Secondary Ledge -->
+<section class="mt-10">
+<h3 class="font-headline font-bold text-xs uppercase tracking-[0.2em] text-on-surface-variant mb-4 ml-1">Other Coverages</h3>
+<div class="space-y-2">
+<!-- List Item 1 -->
+<div class="bg-surface-container-lowest p-5 flex items-center justify-between ledge-shadow">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="directions_car">directions_car</span>
+</div>
+<div>
+<p class="font-bold text-sm">Commercial Auto</p>
+<p class="text-[10px] text-on-surface-variant uppercase">365 Days • Active</p>
+</div>
+</div>
+<span class="text-[10px] font-black font-headline bg-tertiary/10 text-tertiary px-2 py-1">SECURE</span>
+</div>
+<!-- List Item 2 -->
+<div class="bg-surface-container-lowest p-5 flex items-center justify-between ledge-shadow">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="handyman">handyman</span>
+</div>
+<div>
+<p class="font-bold text-sm">Umbrella Liability</p>
+<p class="text-[10px] text-on-surface-variant uppercase">82 Days • Expiring Soon</p>
+</div>
+</div>
+<span class="text-[10px] font-black font-headline bg-secondary-container text-on-secondary-container px-2 py-1">WATCH</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md flex justify-around items-center px-4 pb-6 pt-2 cc-hidden">
+<!-- Active Home -->
+<a class="flex flex-col items-center justify-center bg-slate-200 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 rounded-sm py-2 px-6 active:translate-y-0.5 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em] mt-1">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 py-2 px-6 hover:bg-slate-200/50 active:translate-y-0.5 transition-all" href="604fff1f77f7490f93aaecf72cd11ae7.html" onclick="window.location.href='604fff1f77f7490f93aaecf72cd11ae7.html'">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em] mt-1">SEND</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 py-2 px-6 hover:bg-slate-200/50 active:translate-y-0.5 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em] mt-1">SETTINGS</span>
+</a>
+</nav>
+<!-- Separation line for BottomNav as per JSON -->
+<div class="fixed bottom-[72px] left-0 w-full h-[1px] bg-slate-200 dark:bg-slate-800 z-50"></div>
+</body></html>

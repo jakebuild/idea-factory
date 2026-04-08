@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>CredentialCliff | Industrial Ledger</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&amp;family=Public+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#fec330",
+                        "inverse-primary": "#e6f3fb",
+                        "on-primary-fixed-variant": "#515d64",
+                        "error-dim": "#4e0309",
+                        "surface": "#f9f9f9",
+                        "on-surface": "#2d3435",
+                        "secondary": "#bb1b21",
+                        "tertiary": "#7a5a00",
+                        "inverse-on-surface": "#9c9d9d",
+                        "primary-fixed-dim": "#c9d6de",
+                        "tertiary-container": "#fec330",
+                        "surface-dim": "#d4dbdd",
+                        "surface-variant": "#dde4e5",
+                        "tertiary-dim": "#6b4e00",
+                        "secondary-fixed-dim": "#ffc7c1",
+                        "primary-dim": "#48545b",
+                        "on-error": "#fff7f6",
+                        "secondary-dim": "#a90816",
+                        "on-tertiary-fixed": "#402d00",
+                        "outline": "#757c7d",
+                        "on-surface-variant": "#5a6061",
+                        "on-secondary-fixed": "#85000d",
+                        "on-tertiary-fixed-variant": "#634900",
+                        "on-secondary-container": "#a70515",
+                        "error": "#9f403d",
+                        "outline-variant": "#adb3b4",
+                        "on-tertiary": "#fff8f1",
+                        "tertiary-fixed-dim": "#efb520",
+                        "primary-container": "#d7e4ec",
+                        "surface-tint": "#546067",
+                        "primary": "#546067",
+                        "surface-container-high": "#e4e9ea",
+                        "secondary-container": "#ffdad6",
+                        "surface-container-low": "#f2f4f4",
+                        "on-secondary-fixed-variant": "#b5161e",
+                        "on-primary-container": "#47545a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#fff7f6",
+                        "inverse-surface": "#0c0f0f",
+                        "on-error-container": "#752121",
+                        "on-background": "#2d3435",
+                        "background": "#f9f9f9",
+                        "on-primary": "#f0f9ff",
+                        "on-tertiary-container": "#584000",
+                        "surface-container-highest": "#dde4e5",
+                        "surface-container": "#ebeeef",
+                        "on-primary-fixed": "#354147",
+                        "secondary-fixed": "#ffdad6",
+                        "primary-fixed": "#d7e4ec",
+                        "error-container": "#fe8983"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Work Sans"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Public Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Work Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="cc-nav-style">
+  .cc-hidden { display: none !important; }
+  .cc-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 70;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(173, 179, 180, 0.25);
+  }
+  .cc-topbar-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    height: 64px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .cc-topbar-side {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .cc-topbar-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #2d3435;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cc-icon-btn {
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .cc-icon-btn .material-symbols-outlined { font-size: 22px; }
+  .cc-bottom-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 70;
+    padding: 8px 16px 24px;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(173, 179, 180, 0.18);
+  }
+  .cc-bottom-nav-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .cc-tab {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .cc-tab .material-symbols-outlined { font-size: 20px; }
+  .cc-tab.is-active { color: #2d3435; background: #e4e9ea; }
+</style></head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-on-tertiary-container">
+<div class="cc-topbar">
+<div class="cc-topbar-inner">
+<div class="cc-topbar-side"><span aria-hidden="true"></span></div>
+<div class="cc-topbar-title">Keep COI Ready</div>
+<div class="cc-topbar-side"><span aria-hidden="true"></span></div>
+</div>
+</div>
+
+<div class="cc-bottom-nav">
+<div class="cc-bottom-nav-inner">
+<a class="cc-tab is-active" href="d6129a1d44d54fc0bcac585fccc716bd.html" onclick="window.location.href='d6129a1d44d54fc0bcac585fccc716bd.html'">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="cc-tab" href="604fff1f77f7490f93aaecf72cd11ae7.html" onclick="window.location.href='604fff1f77f7490f93aaecf72cd11ae7.html'">
+<span class="material-symbols-outlined">send</span>
+<span>Send</span>
+</a>
+<a class="cc-tab" href="0b88c13ac1af49f49c64829a00b615eb.html" onclick="window.location.href='0b88c13ac1af49f49c64829a00b615eb.html'">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</div>
+</div>
+
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-md cc-hidden">
+<div class="flex justify-between items-center px-4 h-16 w-full max-w-xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-900" data-icon="construction">construction</span>
+<span class="text-slate-950 font-black tracking-tighter text-xl uppercase">CredentialCliff</span>
+</div>
+<div class="hidden md:flex gap-6">
+<a class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em] text-slate-900 transition-opacity hover:opacity-80" href="d6129a1d44d54fc0bcac585fccc716bd.html" onclick="window.location.href='d6129a1d44d54fc0bcac585fccc716bd.html'">HOME</a>
+<a class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em] text-slate-500 transition-opacity hover:opacity-80" href="604fff1f77f7490f93aaecf72cd11ae7.html" onclick="window.location.href='604fff1f77f7490f93aaecf72cd11ae7.html'">SEND</a>
+<a class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em] text-slate-500 transition-opacity hover:opacity-80" href="0b88c13ac1af49f49c64829a00b615eb.html" onclick="window.location.href='0b88c13ac1af49f49c64829a00b615eb.html'">SETTINGS</a>
+</div>
+</div>
+<div class="bg-slate-200 h-[1px] w-full max-w-xl mx-auto"></div>
+</nav>
+<!-- Main Content -->
+<main class="pt-24 pb-32 px-6 max-w-xl mx-auto min-h-screen">
+<!-- Hero Section: Intentional Asymmetry -->
+<section class="mb-16">
+<h1 class="text-5xl font-black text-on-surface leading-[0.9] tracking-tighter mb-6 uppercase">
+                Keep Your <br/>
+<span class="text-primary">COI Ready</span>
+</h1>
+<p class="text-on-surface-variant font-body text-lg leading-relaxed mb-8 pr-12">
+                Don't get blocked at the gate. We manage your Certificate of Insurance so you're always ready for property manager requests.
+            </p>
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-8 py-4 rounded-lg flex items-center gap-3 active:scale-95 transition-all shadow-lg shadow-on-surface/5" onclick="window.location.href='cb7379668ee04961b16cdb51704dd99f.html'" style="cursor: pointer;" type="button">
+<span class="font-headline font-bold uppercase tracking-widest text-sm">Add Current COI</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</section>
+<!-- The "COI Cliff" Monitor (Asymmetric Highlight) -->
+<div class="mb-12 bg-surface-container-low p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1 bg-tertiary h-full"></div>
+<div class="flex flex-col gap-1">
+<span class="font-label font-bold text-[10px] uppercase tracking-[0.2em] text-on-surface-variant">Lapse Countdown</span>
+<div class="flex items-end gap-2">
+<span class="text-7xl font-black font-headline text-on-surface leading-none">14</span>
+<span class="font-label font-bold text-xs uppercase tracking-wider pb-2">Days Remaining</span>
+</div>
+<div class="mt-4 w-full h-3 bg-surface-container-highest">
+<div class="h-full bg-tertiary w-[65%]"></div>
+</div>
+</div>
+</div>
+<!-- Ledger Entries: Status Card Matrix -->
+<section class="space-y-4">
+<h2 class="font-headline font-bold text-xs uppercase tracking-[0.15em] text-outline mb-6">Credential Status Matrix</h2>
+<!-- Active State -->
+<div class="bg-surface-container-lowest border-l-4 border-tertiary p-5 flex justify-between items-center group">
+<div class="flex flex-col gap-1">
+<span class="font-headline font-extrabold text-on-surface uppercase text-sm">GL-0928-POLICY</span>
+<span class="font-body text-xs text-on-surface-variant">General Liability • State Farm</span>
+</div>
+<div class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-sm">
+<span class="font-label font-black text-[10px] uppercase tracking-tighter">Active</span>
+</div>
+</div>
+<!-- Expiring State -->
+<div class="bg-surface-container-lowest border-l-4 border-secondary-fixed text-on-secondary-fixed p-5 flex justify-between items-center">
+<div class="flex flex-col gap-1">
+<span class="font-headline font-extrabold uppercase text-sm">WC-5521-WORK</span>
+<span class="font-body text-xs opacity-80">Workers Comp • Liberty Mutual</span>
+</div>
+<div class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-sm">
+<span class="font-label font-black text-[10px] uppercase tracking-tighter">Expiring Soon</span>
+</div>
+</div>
+<!-- Expired State -->
+<div class="bg-surface-container-lowest border-l-4 border-secondary p-5 flex justify-between items-center opacity-70">
+<div class="flex flex-col gap-1">
+<span class="font-headline font-extrabold uppercase text-sm">AU-1122-AUTO</span>
+<span class="font-body text-xs">Commercial Auto • Geico</span>
+</div>
+<div class="bg-secondary text-on-secondary px-3 py-1 rounded-sm">
+<span class="font-label font-black text-[10px] uppercase tracking-tighter">Expired</span>
+</div>
+</div>
+</section>
+<!-- Feature Grid (Bento Style) -->
+<section class="mt-20 grid grid-cols-2 gap-4">
+<div class="col-span-2 bg-surface-container-highest p-6">
+<div class="bg-surface-container-lowest w-10 h-10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary" data-icon="share">share</span>
+</div>
+<h3 class="font-headline font-bold text-on-surface uppercase mb-2">Instant Share</h3>
+<p class="font-body text-sm text-on-surface-variant">Generate a unique link for property managers to view your current status without logging in.</p>
+</div>
+<div class="bg-primary text-on-primary p-6">
+<span class="material-symbols-outlined mb-4" data-icon="notifications_active">notifications_active</span>
+<h3 class="font-headline font-bold uppercase text-xs">Smart Alerts</h3>
+</div>
+<div class="bg-tertiary-container text-on-tertiary-container p-6">
+<span class="material-symbols-outlined mb-4" data-icon="history_edu">history_edu</span>
+<h3 class="font-headline font-bold uppercase text-xs">Audit Trail</h3>
+</div>
+</section>
+<!-- Visual Anchor: Contextual Imagery -->
+<div class="mt-20 relative h-64 w-full bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-40 mix-blend-multiply" data-alt="industrial construction site with crane and steel beams against a clear blue morning sky at a commercial development" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp26IaE0PTr1mob6pkvDTTzUhXJaHCTEQ1eVmXi-FLMqt5UBMR3uxQi3WDC0gtaAwEKj2owbBsziuXmuOeCM7OorowJu4Jxm3FPt1EFMGXl8h6R8htjMJbipi6WGFEx0rFTkPtoplLToqE3EZG7gyk6soAIUUG1TpLAYQlh7FZeSur33Ws4Kuj0n6LywKA4RNCXUJ_E-sdu3yGMmduGVD8rova_cY-3nPR20XhL6pMCsG9biS-Nv8G6fpCK4c7-fIKNwxihpxiHdAl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-slate-50/80 backdrop-blur-md cc-hidden">
+<div class="flex flex-col items-center justify-center bg-slate-200/50 text-slate-900 rounded-sm py-2 px-6 transition-all active:translate-y-0.5">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">HOME</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 py-2 px-6 transition-all active:translate-y-0.5">
+<span class="material-symbols-outlined" data-icon="send">send</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">SEND</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 py-2 px-6 transition-all active:translate-y-0.5">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">SETTINGS</span>
+</div>
+</nav>
+<!-- FAB Suppression: On landing page for focused action, but keeping structural space -->
+<div class="h-20"></div>
+</body></html>

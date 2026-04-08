@@ -1,5 +1,15 @@
 [
   {
+    "num": 71,
+    "title": "CredentialCliff",
+    "sub": "COI readiness for handymen who need current proof ready to resend.",
+    "score": "5/10",
+    "deviceType": "MOBILE",
+    "folder": "71-credentialcliff-is-a-fear-of-l",
+    "startScreenId": "ae824104e5234e6d96b6094cb7cb6697",
+    "status": "complete"
+  },
+  {
     "num": 17,
     "title": "Mood Tracker",
     "sub": "Tap an emoji to log how you feel each day",

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>Resend COI - CredentialCliff</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;800;900&amp;family=Public+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#fec330",
+                    "inverse-primary": "#e6f3fb",
+                    "on-primary-fixed-variant": "#515d64",
+                    "error-dim": "#4e0309",
+                    "surface": "#f9f9f9",
+                    "on-surface": "#2d3435",
+                    "secondary": "#bb1b21",
+                    "tertiary": "#7a5a00",
+                    "inverse-on-surface": "#9c9d9d",
+                    "primary-fixed-dim": "#c9d6de",
+                    "tertiary-container": "#fec330",
+                    "surface-dim": "#d4dbdd",
+                    "surface-variant": "#dde4e5",
+                    "tertiary-dim": "#6b4e00",
+                    "secondary-fixed-dim": "#ffc7c1",
+                    "primary-dim": "#48545b",
+                    "on-error": "#fff7f6",
+                    "secondary-dim": "#a90816",
+                    "on-tertiary-fixed": "#402d00",
+                    "outline": "#757c7d",
+                    "on-surface-variant": "#5a6061",
+                    "on-secondary-fixed": "#85000d",
+                    "on-tertiary-fixed-variant": "#634900",
+                    "on-secondary-container": "#a70515",
+                    "error": "#9f403d",
+                    "outline-variant": "#adb3b4",
+                    "on-tertiary": "#fff8f1",
+                    "tertiary-fixed-dim": "#efb520",
+                    "primary-container": "#d7e4ec",
+                    "surface-tint": "#546067",
+                    "primary": "#546067",
+                    "surface-container-high": "#e4e9ea",
+                    "secondary-container": "#ffdad6",
+                    "surface-container-low": "#f2f4f4",
+                    "on-secondary-fixed-variant": "#b5161e",
+                    "on-primary-container": "#47545a",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-bright": "#f9f9f9",
+                    "on-secondary": "#fff7f6",
+                    "inverse-surface": "#0c0f0f",
+                    "on-error-container": "#752121",
+                    "on-background": "#2d3435",
+                    "background": "#f9f9f9",
+                    "on-primary": "#f0f9ff",
+                    "on-tertiary-container": "#584000",
+                    "surface-container-highest": "#dde4e5",
+                    "surface-container": "#ebeeef",
+                    "on-primary-fixed": "#354147",
+                    "secondary-fixed": "#ffdad6",
+                    "primary-fixed": "#d7e4ec",
+                    "error-container": "#fe8983"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Work Sans"],
+                    "body": ["Public Sans"],
+                    "label": ["Public Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style id="cc-nav-style">
+  .cc-hidden { display: none !important; }
+  .cc-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 70;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(173, 179, 180, 0.25);
+  }
+  .cc-topbar-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    height: 64px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .cc-topbar-side {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .cc-topbar-title {
+    flex: 1;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #2d3435;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cc-icon-btn {
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .cc-icon-btn .material-symbols-outlined { font-size: 22px; }
+  .cc-bottom-nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 70;
+    padding: 8px 16px 24px;
+    background: rgba(249, 249, 249, 0.88);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(173, 179, 180, 0.18);
+  }
+  .cc-bottom-nav-inner {
+    max-width: 36rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+  }
+  .cc-tab {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: #5a6061;
+    text-decoration: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.64rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .cc-tab .material-symbols-outlined { font-size: 20px; }
+  .cc-tab.is-active { color: #2d3435; background: #e4e9ea; }
+</style></head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+<div class="cc-topbar">
+<div class="cc-topbar-inner">
+<div class="cc-topbar-side"><span aria-hidden="true"></span></div>
+<div class="cc-topbar-title">Send Current COI</div>
+<div class="cc-topbar-side"><span aria-hidden="true"></span></div>
+</div>
+</div>
+
+<div class="cc-bottom-nav">
+<div class="cc-bottom-nav-inner">
+<a class="cc-tab" href="d6129a1d44d54fc0bcac585fccc716bd.html" onclick="window.location.href='d6129a1d44d54fc0bcac585fccc716bd.html'">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="cc-tab is-active" href="604fff1f77f7490f93aaecf72cd11ae7.html" onclick="window.location.href='604fff1f77f7490f93aaecf72cd11ae7.html'">
+<span class="material-symbols-outlined">send</span>
+<span>Send</span>
+</a>
+<a class="cc-tab" href="0b88c13ac1af49f49c64829a00b615eb.html" onclick="window.location.href='0b88c13ac1af49f49c64829a00b615eb.html'">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</div>
+</div>
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md cc-hidden">
+<div class="flex justify-between items-center px-4 h-16 w-full max-w-xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">construction</span>
+<span class="text-slate-950 dark:text-white font-black tracking-tighter text-xl">CredentialCliff</span>
+</div>
+<button class="text-slate-500 dark:text-slate-400 hover:opacity-80 transition-opacity active:scale-95 duration-100">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="bg-slate-200 dark:bg-slate-800 h-[1px] w-full max-w-xl mx-auto"></div>
+</header>
+<main class="pt-20 px-4 max-w-xl mx-auto">
+<!-- Warning State: Expired Banner -->
+<div class="mb-6 p-4 bg-secondary-container rounded-lg border-l-4 border-secondary flex gap-4 items-start">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">warning</span>
+<div>
+<p class="font-headline font-bold text-on-secondary-container tracking-tight leading-tight">DOCUMENT EXPIRED</p>
+<p class="font-label text-sm text-on-secondary-container/80">Lapsed 14 days ago. New insurance verification may be required.</p>
+</div>
+</div>
+<!-- Document Preview & Summary -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div class="bg-surface-container-lowest p-2 rounded-lg shadow-sm border border-outline-variant/15">
+<div class="aspect-[3/4] bg-surface-container-highest relative overflow-hidden rounded">
+<img alt="Document preview" class="w-full h-full object-cover opacity-90 contrast-125 grayscale-[0.3]" data-alt="Close-up of a professional certificate of insurance document with stamps and signatures on high-quality cream paper stock" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0WVk7bnb2vF7eAqe4xEp21R1lrofyvGVjMB-uRHuKUoShsDfAojhZs4p4CbbKoTVIjpN55IjdLNokNI7Bk8vEe7wdEffuULVFwRa_mUZFaLbobF8d4AgUGt6wtEOQ3M1M2QZuIIeO4fU8POpUT6caT3mTpkzGlprMxkthz7YDeR8R8DEB-2x6GGp6KaMuVYxQem1L2dX3LDlVLIcX7Ts0Ns5kYbkb9FvK0bonVgmspHShNwbwjlZXBZdBh9RB4_Kp2rJH0wP-kpk3"/>
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+<div class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur p-2 rounded shadow-sm border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">zoom_in</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-between py-2">
+<div>
+<span class="font-label text-[10px] font-extrabold uppercase tracking-[0.1em] text-outline mb-1 block">Credential Type</span>
+<h2 class="font-headline text-2xl font-black text-on-surface leading-none mb-4">General Liability COI</h2>
+<div class="space-y-4">
+<div>
+<p class="font-label text-xs font-bold text-on-surface-variant uppercase">Policy Number</p>
+<p class="font-headline font-bold text-lg">GL-8829-X01</p>
+</div>
+<div>
+<p class="font-label text-xs font-bold text-on-secondary-fixed-variant uppercase">Expired On</p>
+<p class="font-headline font-bold text-lg text-secondary">Oct 12, 2023</p>
+</div>
+<div>
+<p class="font-label text-xs font-bold text-on-surface-variant uppercase">Carrier</p>
+<p class="font-headline font-bold">Harbor Mutual Assurance</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- The "COI Cliff" Monitor Logic (Simplified for Resend Screen) -->
+<div class="mb-10 bg-surface-container-low p-6 rounded relative overflow-hidden">
+<div class="flex items-baseline gap-2 mb-2">
+<span class="font-headline font-black text-5xl text-secondary">0</span>
+<span class="font-label font-bold text-xs uppercase tracking-widest text-on-surface-variant">Days Coverage Remaining</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-full"></div>
+</div>
+<p class="mt-3 font-label text-sm text-on-surface-variant italic font-semibold">Immediate renewal requested by General Contractor.</p>
+</div>
+<!-- Sharing Actions -->
+<div class="space-y-3">
+<h3 class="font-headline font-bold text-sm uppercase tracking-wider text-outline px-1">Share Credential</h3>
+<button class="w-full flex items-center justify-between p-4 bg-gradient-to-br from-primary to-primary-dim text-on-primary rounded border border-primary-dim/20 shadow-lg active:scale-[0.98] transition-all">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">send</span>
+<span class="font-headline font-bold tracking-tight">Send via Email</span>
+</div>
+<span class="material-symbols-outlined text-on-primary/50">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 bg-surface-container-lowest border border-outline-variant/15 text-on-surface rounded active:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">chat_bubble</span>
+<span class="font-headline font-bold tracking-tight">Send via Text (SMS)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 bg-surface-container-lowest border border-outline-variant/15 text-on-surface rounded active:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">link</span>
+<span class="font-headline font-bold tracking-tight">Copy Secure Link</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">content_copy</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 bg-surface-container-lowest border border-outline-variant/15 text-on-surface rounded active:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary">download</span>
+<span class="font-headline font-bold tracking-tight">Download PDF Archive</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant">file_download</span>
+</button>
+</div>
+<!-- History Footer -->
+<div class="mt-10 mb-20">
+<p class="font-label text-[10px] font-black uppercase tracking-[0.2em] text-outline-variant mb-4 px-1">Recent Sharing Activity</p>
+<div class="space-y-1 bg-surface-container-lowest rounded overflow-hidden border border-outline-variant/10 shadow-sm">
+<div class="p-3 flex justify-between items-center hover:bg-surface-container-low transition-colors">
+<div>
+<p class="text-xs font-bold font-headline">Sent to: Anderson Construction</p>
+<p class="text-[10px] text-on-surface-variant/70">Nov 14, 2023 • Via Email</p>
+</div>
+<span class="font-label text-[10px] font-extrabold text-tertiary uppercase bg-tertiary-container/30 px-2 py-0.5 rounded-sm">Delivered</span>
+</div>
+<div class="p-3 flex justify-between items-center bg-surface-container-low/30 hover:bg-surface-container-low transition-colors">
+<div>
+<p class="text-xs font-bold font-headline">Sent to: +1 (555) 012-3456</p>
+<p class="text-[10px] text-on-surface-variant/70">Nov 12, 2023 • Via SMS</p>
+</div>
+<span class="font-label text-[10px] font-extrabold text-tertiary uppercase bg-tertiary-container/30 px-2 py-0.5 rounded-sm">Viewed</span>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md cc-hidden">
+<div class="bg-slate-200 dark:bg-slate-800 h-[1px] absolute top-0 w-full"></div>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 py-2 px-6 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 active:translate-y-0.5 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">HOME</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-slate-200 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 rounded-sm py-2 px-6 active:translate-y-0.5 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">send</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">SEND</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 py-2 px-6 hover:bg-slate-200/50 dark:hover:bg-slate-800/50 active:translate-y-0.5 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">settings</span>
+<span class="font-['Public_Sans'] font-bold text-[10px] uppercase tracking-[0.05em]">SETTINGS</span>
+</a>
+</nav>
+</body></html>
