@@ -218,6 +218,13 @@
 **Hook:** "It called out my exact pattern across three ex-descriptions and I've never felt so seen and unsettled at the same time."
 **Submit:** idea-factory submit "RelationshipDNA is a romance app that copies the Lasting model but applies it to single people analyzing their past relationships instead of couples working on their current one. You describe your last 3 exes in 2 minutes — personality type, how it started, how it ended. AI identifies your attachment style, the emotional archetype you keep choosing, and the repeating pattern across all three partners. Output is a shareable Relationship DNA card showing your pattern in a single visual. The reveal is immediate and screen-recordable: a bold pattern statement like 'You've been dating the same person three times without knowing it,' followed by a per-relationship breakdown showing exactly how the pattern played out each time. The loop is complete your DNA profile, share the card, and invite an ex or a friend to see if they recognize the pattern too. Monetize with a free pattern reveal and a paid tier that unlocks the full attachment style deep-dive, a compatibility filter for what to look for next, and a weekly reflection prompt to interrupt the pattern."
 
+## Aftertaste
+**Source:** mix-20260408-152225.md
+**Targets:** Social Status / Fear of Embarrassing Yourself
+**Copies:** How We Feel — 27,349 reviews, proved people will keep logging internal states when the payoff is a clear emotional pattern they can finally understand
+**Hook:** It gives socially anxious people a forensic report on the exact conditions that turn them into their least likable self.
+**Submit:** idea-factory submit "Aftertaste is a social embarrassment app that copies the How We Feel model but applies it to morning-after regret instead of general mood tracking. After a date, party, work dinner, or late-night texting spiral, you do a 10-second check-in rating how much you regret last night, optionally attach screenshots or notes, and tag factors like drinks, sleep, and who you were with. The reveal is immediate and screen-recordable: the app names the exact recipe behind your worst mornings, like 'Your shame mornings are 4.7x more likely after tequila, under 6 hours of sleep, and texting Sam after midnight.' The loop is simple: log the morning after, watch the pattern get sharper, avoid the trigger combo next time, and come back because nobody wants to keep becoming the same regrettable version of themselves."
+
 ---
 
 ## MilestoneIQ
