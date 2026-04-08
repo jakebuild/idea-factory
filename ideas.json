@@ -1,5 +1,15 @@
 [
   {
+    "num": 72,
+    "title": "CredentialCliff",
+    "sub": "Weekly exceptions dashboard for preventing RN/LVN license lapses.",
+    "score": "7/10",
+    "deviceType": "WEB",
+    "folder": "72-credentialcliff-is-a-fear-of-l",
+    "startScreenId": "cd1c6e1ae7ce4612b80a63fc8f9f7cf7",
+    "status": "complete"
+  },
+  {
     "num": 71,
     "title": "CredentialCliff",
     "sub": "COI readiness for handymen who need current proof ready to resend.",

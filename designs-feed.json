@@ -1,5 +1,194 @@
 [
   {
+    "id": "72-credentialcliff-is-a-fear-of-l",
+    "num": 72,
+    "title": "CredentialCliff",
+    "subtitle": "Weekly exceptions dashboard for preventing RN/LVN license lapses.",
+    "description": "CredentialCliff v3 is a weekly lapse-prevention cockpit for one compliance coordinator at a small Texas nursing staffing agency. It does one job: keep RN/LVN licenses from silently expiring across a roster of 10-100 clinicians. The coordinator imports the roster from the agency's current spreadsheet, confirms license expiration dates, and from that point forward works from an exceptions queue instead of a full spreadsheet. The core product is not \"store all compliance data.\" It is \"show me exactly who needs attention this week.\" The main view groups clinicians into actionable buckets: expiring in 45 days, expiring in 21 days, expiring in 7 days, already expired, and \"stalled\" records where no next follow-up date or owner note exists. Each row shows clinician name, license type, expiration date, days remaining, last contact date, next follow-up date, and the next action note. The coordinator can update status, log outreach, set the next follow-up date, and mark a record cleared. The app sends one weekly digest email with the current exceptions list and optional deadline reminders for the 21-day and 7-day windows. This is better because it stops trying to replace the whole compliance system. It replaces the ugliest, highest-stress part: the Monday-morning review where someone has to rebuild filters, scan dates, and guess what got missed. If the app works, the measurable outcome is fewer unnoticed expirations and less coordinator time spent manually triaging the roster each week. **3 biggest assumptions that could kill the product** - VERIFIED: Small nursing staffing agencies have a real weekly workflow around expiring clinician credentials. The critique explicitly validated the buyer and the weekly queue as real, not invented. - UNVERIFIED: Agencies will switch from their spreadsheet to a dedicated exceptions workflow because it saves enough weekly time and prevents enough lapses. This is the core adoption risk, so it is not the moat. Fallback plan: run v1 as a concierge-backed layer on top of the existing spreadsheet, with setup help and weekly review support for one design partner before deciding whether to productize further. - FALSE: Document storage and prescriptive renewal checklists are necessary to make the product valuable in v1. The critique explicitly argues they add trust and maintenance burden before proving workflow fit, so they are removed. **Why would users come back in week 2?** - Because the queue changes every week. New clinicians move into the 45/21/7-day windows, some records become stalled because no follow-up date was set, and the digest email brings the coordinator back to clear exceptions. The retention mechanic is a recurring operational review, not a one-time setup task.",
+    "score": 7,
+    "status": "complete",
+    "deviceType": "WEB",
+    "category": "Utility",
+    "platform": [
+      "web"
+    ],
+    "tags": [
+      "compliance",
+      "licenses",
+      "staffing",
+      "nursing",
+      "reminders"
+    ],
+    "folder": "72-credentialcliff-is-a-fear-of-l",
+    "prototypeUrl": "https://jakebuild.github.io/idea-factory/72-credentialcliff-is-a-fear-of-l/",
+    "metaUrl": "https://jakebuild.github.io/idea-factory/72-credentialcliff-is-a-fear-of-l/meta.json",
+    "startScreenId": "cd1c6e1ae7ce4612b80a63fc8f9f7cf7",
+    "startScreenUrl": "https://jakebuild.github.io/idea-factory/72-credentialcliff-is-a-fear-of-l/cd1c6e1ae7ce4612b80a63fc8f9f7cf7.html",
+    "screenCount": 2,
+    "stitchId": "5623186457982315966",
+    "stitchUrl": "https://stitch.withgoogle.com/projects/5623186457982315966",
+    "publishedAt": "2026-04-08T08:56:11Z",
+    "updatedAt": "2026-04-08T08:56:11Z",
+    "journey": [
+      {
+        "kind": "idea",
+        "title": "Original Idea",
+        "summary": "Fear-of-loss credential tracker with scan-first automation.",
+        "sections": [
+          {
+            "label": "description",
+            "paragraphs": [
+              "CredentialCliff is a fear-of-loss app that copies the NEXT Insurance model but applies it to licensed workers at risk of losing income from expired credentials. You scan a permit, license, certification, or insurance document once, and the app extracts the expiration date, renewal steps, and supporting paperwork, then turns it into a blunt income-risk dashboard that shows which upcoming shifts or jobs are exposed. The reveal is immediate and screen-recordable: a red card saying exactly what expires when, how many workdays are at risk, and the first renewal action to take. The loop is scan once, get escalating reminders as the deadline approaches, clear the risk, and come back because most workers juggle multiple credentials with different renewal cycles."
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "critique",
+        "title": "Critique v1",
+        "verdict": "NEEDS MAJOR WORK",
+        "score": "5/10",
+        "summary": "OCR certainty, rules extraction, and broad scope all looked structurally weak.",
+        "sections": [
+          {
+            "label": "what_worked",
+            "items": []
+          },
+          {
+            "label": "risks",
+            "items": []
+          },
+          {
+            "label": "suggestions",
+            "items": []
+          }
+        ]
+      },
+      {
+        "kind": "idea",
+        "title": "Improved Idea v2",
+        "summary": "Narrowed into a staffing-agency compliance triage board.",
+        "sections": [
+          {
+            "label": "what_changed",
+            "items": [
+              "Narrowed the product from \"any licensed worker with any document\" to a compliance triage tool for small Texas nursing staffing agencies tracking only two credential types in v1: Texas RN/LVN licenses and BLS certification. This removes the horizontal rules swamp and creates a user with a real weekly workflow instead of a one-time consumer scare moment.",
+              "Removed automatic renewal-step extraction, OCR-led certainty, and \"upcoming shifts/jobs at risk.\" v1 uses manual expiry entry or CSV import, optional proof upload, human confirmation, and hand-curated checklist templates with official links. This makes the product trustworthy enough to ship because it stops pretending messy documents and schedule data can be reliably parsed in 2-4 weeks.",
+              "Shifted the retention loop from \"wait until your next renewal\" to an operational queue: every week the compliance coordinator gets a 30/14/7-day risk digest, sees who is blocked soon, marks renewal progress, and uploads proof when complete. That gives the user a reason to come back in week 2 even if no single clinician renews that day."
+            ]
+          },
+          {
+            "label": "description",
+            "paragraphs": [
+              "CredentialCliff becomes a narrow compliance triage board for small Texas nursing staffing agencies, not a consumer scan-anything app. The first customer is an agency owner or compliance coordinator managing 10-100 clinicians. In v1, they track only Texas RN/LVN licenses and BLS certification. They add clinicians manually or import a CSV from their existing spreadsheet, confirm each expiration date, assign a status, and see a blunt risk board showing who is safe, who expires in 30 days, 14 days, or 7 days, and who is already non-compliant.",
+              "Each credential record is intentionally simple: clinician name, credential type, expiration date, proof status, and a controlled renewal checklist template for that credential. The app does not promise to infer renewal rules from documents. Instead, it gives the coordinator a single place to track progress, attach renewal proof, and follow a checklist that the builder hand-curates from official sources for this one state and these two credential types. The core output is no longer \"4 shifts at risk\" based on fragile integrations. It is \"12 days until this clinician cannot legally work under your policy\" plus the exact next admin action.",
+              "This is better because it sells operational clarity, not fake certainty. The user does not need to trust a black-box scan on day 1. They only need to trust a dashboard that reflects dates they confirmed themselves. That is a much lower trust bar and a much more realistic solo-built product.",
+              "**3 biggest assumptions that could kill the product**\n- `VERIFIED`: Expired credentials create real income and staffing pain. The critique explicitly confirms the pain is real and stronger than generic productivity.\n- `UNVERIFIED`: Small nursing staffing agencies will adopt a dedicated triage board instead of staying with spreadsheets and calendar reminders. This is an adoption risk, not the moat. Fallback plan: start as a concierge spreadsheet-import service for 1-3 pilot agencies and only productize the screens they actually use weekly.\n- `FALSE`: A solo-built v1 can safely automate renewal-step extraction and document interpretation across messy credential files. This was the structural flaw in v1 and is removed from MVP scope.",
+              "**Why would users come back in week 2?**\n- Because the real user is not an individual worker waiting months for one renewal. It is a staffing/compliance operator with a living roster. Every week the app surfaces a new 30/14/7-day risk queue, sends a digest email, and tracks which clinicians still need proof. The retention mechanic is the weekly compliance review, not habit for habit's sake."
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "critique",
+        "title": "Critique v2",
+        "verdict": "NEEDS MAJOR WORK",
+        "score": "6/10",
+        "summary": "The product became more viable, but switching from spreadsheets still looked uncertain.",
+        "sections": [
+          {
+            "label": "what_worked",
+            "items": []
+          },
+          {
+            "label": "risks",
+            "items": []
+          },
+          {
+            "label": "suggestions",
+            "items": []
+          }
+        ]
+      },
+      {
+        "kind": "idea",
+        "title": "Improved Idea v3",
+        "summary": "Refocused on a weekly exceptions cockpit for one compliance coordinator.",
+        "sections": [
+          {
+            "label": "what_changed",
+            "items": [
+              "Narrowed v1 from a general credential tracker to one painful workflow for one user: a compliance coordinator at a small Texas nursing staffing agency preventing RN/LVN license lapses. This answers the critique that the wedge was too abstract and too broad; the new promise is specific and measurable: catch expiring licenses before they lapse.",
+              "Removed proof upload, BLS tracking, and maintained renewal checklists from MVP. The critique called proof upload a security and trust trap, and checklist templates a maintenance debt. v1 now stores metadata only and links out to the official Texas Board of Nursing renewal page plus internal notes, which keeps scope shippable and avoids fake authority.",
+              "Reframed the product from \"a prettier dashboard\" into a weekly exceptions workflow that saves coordinator time after import. Instead of asking users to babysit every record, the app highlights only licenses that are expiring soon, missing a next action, or overdue for follow-up. That directly addresses the \"second spreadsheet\" problem and gives users a concrete reason to return every week."
+            ]
+          },
+          {
+            "label": "description",
+            "paragraphs": [
+              "CredentialCliff v3 is a weekly lapse-prevention cockpit for one compliance coordinator at a small Texas nursing staffing agency. It does one job: keep RN/LVN licenses from silently expiring across a roster of 10-100 clinicians. The coordinator imports the roster from the agency's current spreadsheet, confirms license expiration dates, and from that point forward works from an exceptions queue instead of a full spreadsheet.",
+              "The core product is not \"store all compliance data.\" It is \"show me exactly who needs attention this week.\" The main view groups clinicians into actionable buckets: expiring in 45 days, expiring in 21 days, expiring in 7 days, already expired, and \"stalled\" records where no next follow-up date or owner note exists. Each row shows clinician name, license type, expiration date, days remaining, last contact date, next follow-up date, and the next action note. The coordinator can update status, log outreach, set the next follow-up date, and mark a record cleared. The app sends one weekly digest email with the current exceptions list and optional deadline reminders for the 21-day and 7-day windows.",
+              "This is better because it stops trying to replace the whole compliance system. It replaces the ugliest, highest-stress part: the Monday-morning review where someone has to rebuild filters, scan dates, and guess what got missed. If the app works, the measurable outcome is fewer unnoticed expirations and less coordinator time spent manually triaging the roster each week.",
+              "**3 biggest assumptions that could kill the product**\n- `VERIFIED`: Small nursing staffing agencies have a real weekly workflow around expiring clinician credentials. The critique explicitly validated the buyer and the weekly queue as real, not invented.\n- `UNVERIFIED`: Agencies will switch from their spreadsheet to a dedicated exceptions workflow because it saves enough weekly time and prevents enough lapses. This is the core adoption risk, so it is not the moat. Fallback plan: run v1 as a concierge-backed layer on top of the existing spreadsheet, with setup help and weekly review support for one design partner before deciding whether to productize further.\n- `FALSE`: Document storage and prescriptive renewal checklists are necessary to make the product valuable in v1. The critique explicitly argues they add trust and maintenance burden before proving workflow fit, so they are removed.",
+              "**Why would users come back in week 2?**\n- Because the queue changes every week. New clinicians move into the 45/21/7-day windows, some records become stalled because no follow-up date was set, and the digest email brings the coordinator back to clear exceptions. The retention mechanic is a recurring operational review, not a one-time setup task."
+            ]
+          },
+          {
+            "label": "scope",
+            "items": [
+              "What's in v1: single-user workspace for one compliance coordinator; clinician roster; one-time CSV import plus manual add/edit; Texas RN and LVN license tracking only; exceptions dashboard with 45/21/7-day, expired, and stalled views; notes and next-follow-up dates on each record; weekly digest email; reminder emails at 21 and 7 days; official outbound link to the Texas Board of Nursing renewal page; simple activity history for date/status/note changes.",
+              "What's out of v1: proof upload; BLS or any non-RN/LVN credential; OCR; document parsing; maintained renewal checklists; shift-risk or staffing integrations; multi-user collaboration; recruiter/manager portals; payments; marketplace features; user-generated content; moderation; mobile app; deep integrations with agency systems.",
+              "Estimated build time with AI coding tools: 3-4 weeks total. Roughly 3-4 days for product shaping, CSV template/sample prep, and pilot data mapping; 8-10 days for UI and core queue logic; 2-3 days for auth, reminder scheduling, and email setup; 2-3 days for import edge cases, audit history, and deploy; 3-4 days for QA with messy spreadsheets, seed data, and pilot onboarding."
+            ]
+          }
+        ]
+      },
+      {
+        "kind": "critique",
+        "title": "Critique v3",
+        "verdict": "WORTH BUILDING",
+        "score": "7/10",
+        "summary": "The narrow workflow is worth building if the weekly queue genuinely saves time.",
+        "sections": [
+          {
+            "label": "what_worked",
+            "items": []
+          },
+          {
+            "label": "risks",
+            "items": []
+          },
+          {
+            "label": "suggestions",
+            "items": []
+          }
+        ]
+      }
+    ],
+    "journeyHtml": [
+      "<div class=\"esect\"><div class=\"esect-label\">Description</div><p>CredentialCliff is a fear-of-loss app that copies the NEXT Insurance model but applies it to licensed workers at risk of losing income from expired credentials. You scan a permit, license, certification, or insurance document once, and the app extracts the expiration date, renewal steps, and supporting paperwork, then turns it into a blunt income-risk dashboard that shows which upcoming shifts or jobs are exposed. The reveal is immediate and screen-recordable: a red card saying exactly what expires when, how many workdays are at risk, and the first renewal action to take. The loop is scan once, get escalating reminders as the deadline approaches, clear the risk, and come back because most workers juggle multiple credentials with different renewal cycles.</p></div><div class=\"tag-row\"><span class=\"etag\">broad scope</span><span class=\"etag\">scan-first</span><span class=\"etag\">income risk</span></div>",
+      "",
+      "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Narrowed the product from &quot;any licensed worker with any document&quot; to a compliance triage tool for small Texas nursing staffing agencies tracking only two credential types in v1: Texas RN/LVN licenses and BLS certification. This removes the horizontal rules swamp and creates a user with a real weekly workflow instead of a one-time consumer scare moment.</li><li>Removed automatic renewal-step extraction, OCR-led certainty, and &quot;upcoming shifts/jobs at risk.&quot; v1 uses manual expiry entry or CSV import, optional proof upload, human confirmation, and hand-curated checklist templates with official links. This makes the product trustworthy enough to ship because it stops pretending messy documents and schedule data can be reliably parsed in 2-4 weeks.</li><li>Shifted the retention loop from &quot;wait until your next renewal&quot; to an operational queue: every week the compliance coordinator gets a 30/14/7-day risk digest, sees who is blocked soon, marks renewal progress, and uploads proof when complete. That gives the user a reason to come back in week 2 even if no single clinician renews that day.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Improved Description</div><p>CredentialCliff becomes a narrow compliance triage board for small Texas nursing staffing agencies, not a consumer scan-anything app. The first customer is an agency owner or compliance coordinator managing 10-100 clinicians. In v1, they track only Texas RN/LVN licenses and BLS certification. They add clinicians manually or import a CSV from their existing spreadsheet, confirm each expiration date, assign a status, and see a blunt risk board showing who is safe, who expires in 30 days, 14 days, or 7 days, and who is already non-compliant.</p><p>Each credential record is intentionally simple: clinician name, credential type, expiration date, proof status, and a controlled renewal checklist template for that credential. The app does not promise to infer renewal rules from documents. Instead, it gives the coordinator a single place to track progress, attach renewal proof, and follow a checklist that the builder hand-curates from official sources for this one state and these two credential types. The core output is no longer &quot;4 shifts at risk&quot; based on fragile integrations. It is &quot;12 days until this clinician cannot legally work under your policy&quot; plus the exact next admin action.</p><p>This is better because it sells operational clarity, not fake certainty. The user does not need to trust a black-box scan on day 1. They only need to trust a dashboard that reflects dates they confirmed themselves. That is a much lower trust bar and a much more realistic solo-built product.</p><div class=\"esect-label\">3 biggest assumptions that could kill the product</div><ul><li>`VERIFIED`: Expired credentials create real income and staffing pain. The critique explicitly confirms the pain is real and stronger than generic productivity.</li><li>`UNVERIFIED`: Small nursing staffing agencies will adopt a dedicated triage board instead of staying with spreadsheets and calendar reminders. This is an adoption risk, not the moat. Fallback plan: start as a concierge spreadsheet-import service for 1-3 pilot agencies and only productize the screens they actually use weekly.</li><li>`FALSE`: A solo-built v1 can safely automate renewal-step extraction and document interpretation across messy credential files. This was the structural flaw in v1 and is removed from MVP scope.</li></ul><div class=\"esect-label\">Why would users come back in week 2?</div><ul><li>Because the real user is not an individual worker waiting months for one renewal. It is a staffing/compliance operator with a living roster. Every week the app surfaces a new 30/14/7-day risk queue, sends a digest email, and tracks which clinicians still need proof. The retention mechanic is the weekly compliance review, not habit for habit&#x27;s sake.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo MVP Scope</div><ul><li>What&#x27;s in v1: email/password auth; one workspace for one agency; clinician roster; manual add and CSV import; two credential types only (Texas RN/LVN license and BLS); expiration countdown board with 30/14/7-day states; optional proof upload; hand-curated checklist templates with official source links; weekly digest email plus deadline reminders; audit notes on each credential.</li><li>What&#x27;s out of v1: OCR document parsing; automatic renewal-step extraction; any shift/calendar/employer integration; support for multiple states or professions; billing; team permissions beyond one admin login; mobile app; user-generated checklist content; marketplace, payouts, or worker-to-worker features.</li><li>Estimated build time with AI coding tools: 12-16 working days total. Roughly 2 days for content prep and official-source checklist drafting, 7-9 days for UI and core app logic, 1-2 days for file storage and reminder setup, and 2-3 days for QA, seed data, deploy, and pilot-ready polish.</li></ul></div>",
+      "",
+      "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Narrowed v1 from a general credential tracker to one painful workflow for one user: a compliance coordinator at a small Texas nursing staffing agency preventing RN/LVN license lapses. This answers the critique that the wedge was too abstract and too broad; the new promise is specific and measurable: catch expiring licenses before they lapse.</li><li>Removed proof upload, BLS tracking, and maintained renewal checklists from MVP. The critique called proof upload a security and trust trap, and checklist templates a maintenance debt. v1 now stores metadata only and links out to the official Texas Board of Nursing renewal page plus internal notes, which keeps scope shippable and avoids fake authority.</li><li>Reframed the product from &quot;a prettier dashboard&quot; into a weekly exceptions workflow that saves coordinator time after import. Instead of asking users to babysit every record, the app highlights only licenses that are expiring soon, missing a next action, or overdue for follow-up. That directly addresses the &quot;second spreadsheet&quot; problem and gives users a concrete reason to return every week.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Improved Description</div><p>CredentialCliff v3 is a weekly lapse-prevention cockpit for one compliance coordinator at a small Texas nursing staffing agency. It does one job: keep RN/LVN licenses from silently expiring across a roster of 10-100 clinicians. The coordinator imports the roster from the agency&#x27;s current spreadsheet, confirms license expiration dates, and from that point forward works from an exceptions queue instead of a full spreadsheet.</p><p>The core product is not &quot;store all compliance data.&quot; It is &quot;show me exactly who needs attention this week.&quot; The main view groups clinicians into actionable buckets: expiring in 45 days, expiring in 21 days, expiring in 7 days, already expired, and &quot;stalled&quot; records where no next follow-up date or owner note exists. Each row shows clinician name, license type, expiration date, days remaining, last contact date, next follow-up date, and the next action note. The coordinator can update status, log outreach, set the next follow-up date, and mark a record cleared. The app sends one weekly digest email with the current exceptions list and optional deadline reminders for the 21-day and 7-day windows.</p><p>This is better because it stops trying to replace the whole compliance system. It replaces the ugliest, highest-stress part: the Monday-morning review where someone has to rebuild filters, scan dates, and guess what got missed. If the app works, the measurable outcome is fewer unnoticed expirations and less coordinator time spent manually triaging the roster each week.</p><div class=\"esect-label\">3 biggest assumptions that could kill the product</div><ul><li>`VERIFIED`: Small nursing staffing agencies have a real weekly workflow around expiring clinician credentials. The critique explicitly validated the buyer and the weekly queue as real, not invented.</li><li>`UNVERIFIED`: Agencies will switch from their spreadsheet to a dedicated exceptions workflow because it saves enough weekly time and prevents enough lapses. This is the core adoption risk, so it is not the moat. Fallback plan: run v1 as a concierge-backed layer on top of the existing spreadsheet, with setup help and weekly review support for one design partner before deciding whether to productize further.</li><li>`FALSE`: Document storage and prescriptive renewal checklists are necessary to make the product valuable in v1. The critique explicitly argues they add trust and maintenance burden before proving workflow fit, so they are removed.</li></ul><div class=\"esect-label\">Why would users come back in week 2?</div><ul><li>Because the queue changes every week. New clinicians move into the 45/21/7-day windows, some records become stalled because no follow-up date was set, and the digest email brings the coordinator back to clear exceptions. The retention mechanic is a recurring operational review, not a one-time setup task.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo MVP Scope</div><ul><li>What&#x27;s in v1: single-user workspace for one compliance coordinator; clinician roster; one-time CSV import plus manual add/edit; Texas RN and LVN license tracking only; exceptions dashboard with 45/21/7-day, expired, and stalled views; notes and next-follow-up dates on each record; weekly digest email; reminder emails at 21 and 7 days; official outbound link to the Texas Board of Nursing renewal page; simple activity history for date/status/note changes.</li><li>What&#x27;s out of v1: proof upload; BLS or any non-RN/LVN credential; OCR; document parsing; maintained renewal checklists; shift-risk or staffing integrations; multi-user collaboration; recruiter/manager portals; payments; marketplace features; user-generated content; moderation; mobile app; deep integrations with agency systems.</li><li>Estimated build time with AI coding tools: 3-4 weeks total. Roughly 3-4 days for product shaping, CSV template/sample prep, and pilot data mapping; 8-10 days for UI and core queue logic; 2-3 days for auth, reminder scheduling, and email setup; 2-3 days for import edge cases, audit history, and deploy; 3-4 days for QA with messy spreadsheets, seed data, and pilot onboarding.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Design Handoff</div><p>List every screen/view the app needs so a designer or AI design tool can start immediately:</p><ul><li>Screen 1: Sign In — purpose: let the compliance coordinator access the workspace; key elements: email, password, sign-in action, password reset link; data it shows: account state only.</li><li>Screen 2: Create Workspace / Initial Setup — purpose: create the agency workspace and define the first import path; key elements: agency name, coordinator name, timezone, upload sample CSV link, &quot;import roster&quot; CTA; data it shows: supported fields and setup checklist.</li><li>Screen 3: CSV Import Wizard — purpose: bring the current spreadsheet into the app with minimal friction; key elements: file upload, column mapping, validation summary, duplicate warnings, preview table, confirm import action; data it shows: parsed clinician rows, expiration dates, missing values, invalid date formats.</li><li>Screen 4: Exceptions Dashboard — purpose: show the weekly action queue; key elements: summary cards for 45 days, 21 days, 7 days, expired, stalled; filter bar; searchable table; quick actions to set follow-up date, add note, and mark cleared; data it shows: clinician name, license type, expiration date, days remaining, last contact date, next follow-up date, latest note snippet.</li><li>Screen 5: Clinician Record — purpose: manage one clinician&#x27;s license tracking details; key elements: clinician header, license record, status chip, expiration date, last contact date, next follow-up date, notes timeline, activity history; data it shows: all tracked metadata for that clinician&#x27;s RN/LVN license.</li><li>Screen 6: Quick Update Drawer / Modal — purpose: let the coordinator update a record without leaving the queue; key elements: status selector, date fields, note field, save action; data it shows: current record values and recent activity.</li><li>Screen 7: Reminder Settings — purpose: control weekly digest and deadline reminder behavior; key elements: digest day selector, recipient email, 21-day toggle, 7-day toggle, test email action; data it shows: current notification settings and last send status.</li><li>Screen 8: Weekly Digest Preview — purpose: show what the Monday email contains; key elements: grouped exceptions list, counts by bucket, link back to affected records; data it shows: live records that will appear in the next digest.</li><li>Screen 9: Activity History — purpose: provide trust and traceability without handling documents; key elements: chronological event feed, filters by clinician and event type; data it shows: imports, date changes, status changes, note additions, reminder sends.</li></ul><p>Key interactions:</p><ul><li>Coordinator signs in, creates a workspace, uploads the agency spreadsheet, maps columns, and lands on the Exceptions Dashboard with the first queue populated.</li><li>From the Exceptions Dashboard, the coordinator opens a quick update modal or the full Clinician Record to log outreach, set the next follow-up date, and clear or escalate a record.</li><li>Each week, the digest email pulls the coordinator back into the Exceptions Dashboard to process newly expiring or stalled licenses.</li><li>When a record needs renewal context, the coordinator follows the outbound Texas Board of Nursing link from the clinician record and returns to update the next action internally.</li></ul></div><div class=\"tag-row\"><span class=\"etag\">exceptions queue</span><span class=\"etag\">rn/lvn</span><span class=\"etag\">weekly digest</span></div>",
+      ""
+    ],
+    "screens": [
+      {
+        "id": "1b1a5f9d7d9d4264952c019bbd170212",
+        "label": "Compliance Overview",
+        "url": "https://jakebuild.github.io/idea-factory/72-credentialcliff-is-a-fear-of-l/1b1a5f9d7d9d4264952c019bbd170212.html",
+        "order": 0
+      },
+      {
+        "id": "cd1c6e1ae7ce4612b80a63fc8f9f7cf7",
+        "label": "License Tracking",
+        "url": "https://jakebuild.github.io/idea-factory/72-credentialcliff-is-a-fear-of-l/cd1c6e1ae7ce4612b80a63fc8f9f7cf7.html",
+        "order": 1
+      }
+    ]
+  },
+  {
     "id": "71-credentialcliff-is-a-fear-of-l",
     "num": 71,
     "title": "CredentialCliff",

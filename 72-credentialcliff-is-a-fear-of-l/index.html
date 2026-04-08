@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Idea Factory — Design Preview</title>
+<!-- IDEA_DATA injected here by design agent -->
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0a0f1a;
+    color: #f9fafb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* ── Header ──────────────────────────────────────── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 32px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .header-left { display: flex; align-items: center; gap: 14px; }
+  .idea-num {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: #3b82f6; background: #1e3a5f;
+    padding: 3px 10px; border-radius: 99px;
+    flex-shrink: 0;
+  }
+  .idea-title { font-size: 1.1rem; font-weight: 700; color: #f9fafb; }
+  .idea-sub { font-size: 0.78rem; color: #6b7280; margin-top: 2px; }
+  .header-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    border-radius: 99px; padding: 4px 12px;
+    font-size: 0.75rem; color: #9ca3af;
+  }
+  .score-pill {
+    background: #1a2e1a; border: 1px solid #2d4a2d;
+    color: #86efac; font-size: 0.75rem; font-weight: 700;
+    padding: 4px 12px; border-radius: 99px;
+  }
+  .toggle-btn {
+    display: flex; align-items: center; gap: 6px;
+    background: #111827; border: 1px solid #1f2937;
+    color: #9ca3af; font-size: 0.75rem;
+    padding: 4px 12px; border-radius: 99px;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .toggle-btn:hover { background: #1f2937; color: #f9fafb; border-color: #374151; }
+
+  /* ── Body ────────────────────────────────────────── */
+  .body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    align-items: stretch;
+  }
+
+  /* ── Phone column ────────────────────────────────── */
+  .phone-col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 40px;
+    gap: 16px;
+    background: #0a0f1a;
+    overflow: hidden;
+  }
+
+  /* MOBILE frame */
+  .phone-frame {
+    width: 390px;
+    height: 844px;
+    border-radius: 48px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 0 0 10px #0f172a,
+      0 0 0 11px rgba(255,255,255,0.06),
+      0 50px 100px rgba(0,0,0,0.7);
+    background: #000;
+    flex-shrink: 0;
+  }
+
+  /* WEB frame */
+  .web-frame {
+    width: min(900px, calc(100% - 80px));
+    height: min(640px, calc(100vh - 180px));
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.08),
+      0 24px 60px rgba(0,0,0,0.6);
+    background: #1f2937;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .web-chrome {
+    height: 36px;
+    background: #1f2937;
+    border-bottom: 1px solid #374151;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+  .web-chrome .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+  }
+  .web-chrome .dot-r { background: #ef4444; }
+  .web-chrome .dot-y { background: #f59e0b; }
+  .web-chrome .dot-g { background: #22c55e; }
+  .web-chrome .url {
+    flex: 1; background: #111827; border-radius: 4px;
+    height: 20px; margin: 0 8px;
+    display: flex; align-items: center; padding: 0 10px;
+    font-size: 0.68rem; color: #6b7280;
+  }
+
+  .device-iframe {
+    width: 100%; height: 100%;
+    border: none; display: block;
+    flex: 1;
+  }
+
+  /* Switcher */
+  .switcher {
+    display: flex; gap: 6px;
+    flex-wrap: wrap; justify-content: center;
+    max-width: 600px;
+  }
+  .switcher button {
+    height: 28px; padding: 0 10px;
+    border-radius: 6px; border: 1px solid #1f2937;
+    background: #111827; color: #6b7280;
+    font-size: 0.7rem; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .switcher button:hover { background: #1f2937; color: #d1d5db; border-color: #374151; }
+  .switcher button.active { background: #1e3a5f; color: #60a5fa; border-color: #3b82f6; }
+
+  /* ── Resize handle ───────────────────────────────── */
+  .resize-handle {
+    width: 8px;
+    flex-shrink: 0;
+    cursor: col-resize;
+    position: relative;
+    background: transparent;
+    z-index: 10;
+  }
+  .resize-handle::after {
+    content: '';
+    position: absolute;
+    left: 3px; top: 0; bottom: 0;
+    width: 2px;
+    background: #1a2235;
+    transition: background 0.15s;
+  }
+  .resize-handle:hover::after { background: #374151; }
+  .resize-handle.dragging::after { background: #3b82f6; }
+
+  /* ── Timeline column ─────────────────────────────── */
+  .timeline-col {
+    width: 460px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: width 0.25s ease;
+    background: #0d1424;
+  }
+  .timeline-col.collapsed { width: 0; }
+
+  .timeline-header {
+    padding: 20px 28px 14px;
+    border-bottom: 1px solid #1a2235;
+    flex-shrink: 0;
+  }
+  .timeline-header h2 {
+    font-size: 0.68rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: #4b5563;
+  }
+
+  .timeline-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 18px 28px 40px;
+  }
+  .timeline-scroll::-webkit-scrollbar { width: 4px; }
+  .timeline-scroll::-webkit-scrollbar-track { background: transparent; }
+  .timeline-scroll::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 2px; }
+
+  /* ── Timeline line + dots ────────────────────────── */
+  /* --lx: horizontal center of the line/dots from .timeline-line left edge */
+  .timeline-line {
+    --lx: 8px;
+    position: relative;
+    padding-left: 28px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+  }
+  .timeline-line::before {
+    content: '';
+    position: absolute;
+    left: calc(var(--lx) - 1px); /* 2px line centered at --lx */
+    top: 10px; bottom: 10px;
+    width: 2px;
+    background: linear-gradient(to bottom, #1e3a5f 0%, #1f2937 100%);
+    border-radius: 2px;
+  }
+
+  .entry {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  .entry::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* dot center = 28 - 25 + 5 = 8px = --lx ✓ */
+    top: 18px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #1f2937;
+    border: 2px solid #374151;
+    z-index: 1;
+  }
+  .entry.s-critique::before { background: #78350f; border-color: #d97706; }
+  .entry.s-improve::before  { background: #1e3a5f; border-color: #3b82f6; }
+  .entry.s-validate::before { background: #14532d; border-color: #16a34a; }
+  .entry.s-design::before   { background: #312e81; border-color: #6366f1; }
+
+  /* ── Entry cards ─────────────────────────────────── */
+  .entry-card {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+  .entry-card:hover { border-color: #374151; }
+
+  .entry-head {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px;
+    cursor: pointer; user-select: none;
+  }
+  .entry-icon { font-size: 1.1rem; flex-shrink: 0; line-height: 1; }
+  .entry-info { flex: 1; min-width: 0; }
+  .entry-title {
+    font-size: 0.85rem; font-weight: 600; color: #f9fafb;
+    display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+    line-height: 1.3;
+  }
+  .entry-desc { font-size: 0.72rem; color: #6b7280; margin-top: 3px; }
+  .entry-chevron {
+    color: #374151; font-size: 0.6rem; flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .entry.open .entry-chevron { transform: rotate(180deg); color: #6b7280; }
+
+  .verdict {
+    font-size: 0.6rem; font-weight: 700;
+    padding: 2px 6px; border-radius: 4px;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .verdict-needs { background: #451a03; color: #fb923c; }
+  .verdict-worth { background: #14532d; color: #86efac; }
+  .verdict-kill  { background: #450a0a; color: #f87171; }
+  .escore { font-size: 0.7rem; font-weight: 700; color: #60a5fa; }
+
+  .entry-body {
+    display: none;
+    border-top: 1px solid #1f2937;
+    padding: 14px;
+    font-size: 0.76rem; color: #9ca3af; line-height: 1.65;
+  }
+  .entry.open .entry-body { display: block; }
+
+  .esect { margin-top: 10px; }
+  .esect:first-child { margin-top: 0; }
+  .esect-label {
+    font-size: 0.62rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: #4b5563; margin-bottom: 5px;
+  }
+  .esect ul { padding-left: 14px; }
+  .esect li { margin-bottom: 3px; color: #9ca3af; }
+  .esect p { color: #9ca3af; }
+  .esect strong { color: #d1d5db; font-weight: 600; }
+  .tag-row { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+  .etag {
+    background: #0a0f1a; border: 1px solid #1f2937;
+    border-radius: 4px; padding: 2px 7px;
+    font-size: 0.66rem; color: #6b7280;
+  }
+  .etag.green { border-color: #14532d; color: #86efac; }
+  .etag.blue  { border-color: #1e3a5f; color: #60a5fa; }
+  a.ext-link { color: #818cf8; text-decoration: none; }
+  a.ext-link:hover { text-decoration: underline; }
+</style>
+<script>window.IDEA_DATA = {"ideaNum": 72, "title": "CredentialCliff", "sub": "Weekly exceptions dashboard for preventing RN/LVN license lapses.", "score": "7/10", "deviceType": "WEB", "stitchId": "5623186457982315966", "startScreen": 1, "screens": [{"id": "1b1a5f9d7d9d4264952c019bbd170212", "label": "Compliance Overview"}, {"id": "cd1c6e1ae7ce4612b80a63fc8f9f7cf7", "label": "License Tracking"}], "timeline": [{"status": "improve", "icon": "💡", "title": "Original Idea", "desc": "Fear-of-loss concept for preventing credential-related income loss.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "5/10", "body": "<div class=\"esect\"><div class=\"esect-label\">Description</div><p>CredentialCliff is a fear-of-loss app that copies the NEXT Insurance model but applies it to licensed workers at risk of losing income from expired credentials. You scan a permit, license, certification, or insurance document once, and the app extracts the expiration date, renewal steps, and supporting paperwork, then turns it into a blunt income-risk dashboard that shows which upcoming shifts or jobs are exposed. The reveal is immediate and screen-recordable: a red card saying exactly what expires when, how many workdays are at risk, and the first renewal action to take. The loop is scan once, get escalating reminders as the deadline approaches, clear the risk, and come back because most workers juggle multiple credentials with different renewal cycles.</p></div><div class=\"tag-row\"><span class=\"etag\">broad scope</span><span class=\"etag\">scan-first</span><span class=\"etag\">income risk</span></div>"}, {"status": "critique", "icon": "🧨", "title": "Critique v1", "desc": "The original pitch hid too much complexity behind OCR and rules extraction.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "5/10", "body": ""}, {"status": "improve", "icon": "🛠️", "title": "Improved Idea v2", "desc": "Narrowed the concept to a staffing-agency compliance workflow.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "6/10", "body": "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Narrowed the product from &quot;any licensed worker with any document&quot; to a compliance triage tool for small Texas nursing staffing agencies tracking only two credential types in v1: Texas RN/LVN licenses and BLS certification. This removes the horizontal rules swamp and creates a user with a real weekly workflow instead of a one-time consumer scare moment.</li><li>Removed automatic renewal-step extraction, OCR-led certainty, and &quot;upcoming shifts/jobs at risk.&quot; v1 uses manual expiry entry or CSV import, optional proof upload, human confirmation, and hand-curated checklist templates with official links. This makes the product trustworthy enough to ship because it stops pretending messy documents and schedule data can be reliably parsed in 2-4 weeks.</li><li>Shifted the retention loop from &quot;wait until your next renewal&quot; to an operational queue: every week the compliance coordinator gets a 30/14/7-day risk digest, sees who is blocked soon, marks renewal progress, and uploads proof when complete. That gives the user a reason to come back in week 2 even if no single clinician renews that day.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Improved Description</div><p>CredentialCliff becomes a narrow compliance triage board for small Texas nursing staffing agencies, not a consumer scan-anything app. The first customer is an agency owner or compliance coordinator managing 10-100 clinicians. In v1, they track only Texas RN/LVN licenses and BLS certification. They add clinicians manually or import a CSV from their existing spreadsheet, confirm each expiration date, assign a status, and see a blunt risk board showing who is safe, who expires in 30 days, 14 days, or 7 days, and who is already non-compliant.</p><p>Each credential record is intentionally simple: clinician name, credential type, expiration date, proof status, and a controlled renewal checklist template for that credential. The app does not promise to infer renewal rules from documents. Instead, it gives the coordinator a single place to track progress, attach renewal proof, and follow a checklist that the builder hand-curates from official sources for this one state and these two credential types. The core output is no longer &quot;4 shifts at risk&quot; based on fragile integrations. It is &quot;12 days until this clinician cannot legally work under your policy&quot; plus the exact next admin action.</p><p>This is better because it sells operational clarity, not fake certainty. The user does not need to trust a black-box scan on day 1. They only need to trust a dashboard that reflects dates they confirmed themselves. That is a much lower trust bar and a much more realistic solo-built product.</p><div class=\"esect-label\">3 biggest assumptions that could kill the product</div><ul><li>`VERIFIED`: Expired credentials create real income and staffing pain. The critique explicitly confirms the pain is real and stronger than generic productivity.</li><li>`UNVERIFIED`: Small nursing staffing agencies will adopt a dedicated triage board instead of staying with spreadsheets and calendar reminders. This is an adoption risk, not the moat. Fallback plan: start as a concierge spreadsheet-import service for 1-3 pilot agencies and only productize the screens they actually use weekly.</li><li>`FALSE`: A solo-built v1 can safely automate renewal-step extraction and document interpretation across messy credential files. This was the structural flaw in v1 and is removed from MVP scope.</li></ul><div class=\"esect-label\">Why would users come back in week 2?</div><ul><li>Because the real user is not an individual worker waiting months for one renewal. It is a staffing/compliance operator with a living roster. Every week the app surfaces a new 30/14/7-day risk queue, sends a digest email, and tracks which clinicians still need proof. The retention mechanic is the weekly compliance review, not habit for habit&#x27;s sake.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo MVP Scope</div><ul><li>What&#x27;s in v1: email/password auth; one workspace for one agency; clinician roster; manual add and CSV import; two credential types only (Texas RN/LVN license and BLS); expiration countdown board with 30/14/7-day states; optional proof upload; hand-curated checklist templates with official source links; weekly digest email plus deadline reminders; audit notes on each credential.</li><li>What&#x27;s out of v1: OCR document parsing; automatic renewal-step extraction; any shift/calendar/employer integration; support for multiple states or professions; billing; team permissions beyond one admin login; mobile app; user-generated checklist content; marketplace, payouts, or worker-to-worker features.</li><li>Estimated build time with AI coding tools: 12-16 working days total. Roughly 2 days for content prep and official-source checklist drafting, 7-9 days for UI and core app logic, 1-2 days for file storage and reminder setup, and 2-3 days for QA, seed data, deploy, and pilot-ready polish.</li></ul></div>"}, {"status": "critique", "icon": "🔎", "title": "Critique v2", "desc": "The workflow looked more buildable, but spreadsheet-switching risk remained.", "verdict": "NEEDS MAJOR WORK", "verdictClass": "needs", "score": "6/10", "body": ""}, {"status": "validate", "icon": "✅", "title": "Improved Idea v3", "desc": "Focused on a weekly exceptions cockpit for RN/LVN lapse prevention.", "verdict": "WORTH BUILDING", "verdictClass": "worth", "score": "7/10", "body": "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Narrowed v1 from a general credential tracker to one painful workflow for one user: a compliance coordinator at a small Texas nursing staffing agency preventing RN/LVN license lapses. This answers the critique that the wedge was too abstract and too broad; the new promise is specific and measurable: catch expiring licenses before they lapse.</li><li>Removed proof upload, BLS tracking, and maintained renewal checklists from MVP. The critique called proof upload a security and trust trap, and checklist templates a maintenance debt. v1 now stores metadata only and links out to the official Texas Board of Nursing renewal page plus internal notes, which keeps scope shippable and avoids fake authority.</li><li>Reframed the product from &quot;a prettier dashboard&quot; into a weekly exceptions workflow that saves coordinator time after import. Instead of asking users to babysit every record, the app highlights only licenses that are expiring soon, missing a next action, or overdue for follow-up. That directly addresses the &quot;second spreadsheet&quot; problem and gives users a concrete reason to return every week.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Improved Description</div><p>CredentialCliff v3 is a weekly lapse-prevention cockpit for one compliance coordinator at a small Texas nursing staffing agency. It does one job: keep RN/LVN licenses from silently expiring across a roster of 10-100 clinicians. The coordinator imports the roster from the agency&#x27;s current spreadsheet, confirms license expiration dates, and from that point forward works from an exceptions queue instead of a full spreadsheet.</p><p>The core product is not &quot;store all compliance data.&quot; It is &quot;show me exactly who needs attention this week.&quot; The main view groups clinicians into actionable buckets: expiring in 45 days, expiring in 21 days, expiring in 7 days, already expired, and &quot;stalled&quot; records where no next follow-up date or owner note exists. Each row shows clinician name, license type, expiration date, days remaining, last contact date, next follow-up date, and the next action note. The coordinator can update status, log outreach, set the next follow-up date, and mark a record cleared. The app sends one weekly digest email with the current exceptions list and optional deadline reminders for the 21-day and 7-day windows.</p><p>This is better because it stops trying to replace the whole compliance system. It replaces the ugliest, highest-stress part: the Monday-morning review where someone has to rebuild filters, scan dates, and guess what got missed. If the app works, the measurable outcome is fewer unnoticed expirations and less coordinator time spent manually triaging the roster each week.</p><div class=\"esect-label\">3 biggest assumptions that could kill the product</div><ul><li>`VERIFIED`: Small nursing staffing agencies have a real weekly workflow around expiring clinician credentials. The critique explicitly validated the buyer and the weekly queue as real, not invented.</li><li>`UNVERIFIED`: Agencies will switch from their spreadsheet to a dedicated exceptions workflow because it saves enough weekly time and prevents enough lapses. This is the core adoption risk, so it is not the moat. Fallback plan: run v1 as a concierge-backed layer on top of the existing spreadsheet, with setup help and weekly review support for one design partner before deciding whether to productize further.</li><li>`FALSE`: Document storage and prescriptive renewal checklists are necessary to make the product valuable in v1. The critique explicitly argues they add trust and maintenance burden before proving workflow fit, so they are removed.</li></ul><div class=\"esect-label\">Why would users come back in week 2?</div><ul><li>Because the queue changes every week. New clinicians move into the 45/21/7-day windows, some records become stalled because no follow-up date was set, and the digest email brings the coordinator back to clear exceptions. The retention mechanic is a recurring operational review, not a one-time setup task.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo MVP Scope</div><ul><li>What&#x27;s in v1: single-user workspace for one compliance coordinator; clinician roster; one-time CSV import plus manual add/edit; Texas RN and LVN license tracking only; exceptions dashboard with 45/21/7-day, expired, and stalled views; notes and next-follow-up dates on each record; weekly digest email; reminder emails at 21 and 7 days; official outbound link to the Texas Board of Nursing renewal page; simple activity history for date/status/note changes.</li><li>What&#x27;s out of v1: proof upload; BLS or any non-RN/LVN credential; OCR; document parsing; maintained renewal checklists; shift-risk or staffing integrations; multi-user collaboration; recruiter/manager portals; payments; marketplace features; user-generated content; moderation; mobile app; deep integrations with agency systems.</li><li>Estimated build time with AI coding tools: 3-4 weeks total. Roughly 3-4 days for product shaping, CSV template/sample prep, and pilot data mapping; 8-10 days for UI and core queue logic; 2-3 days for auth, reminder scheduling, and email setup; 2-3 days for import edge cases, audit history, and deploy; 3-4 days for QA with messy spreadsheets, seed data, and pilot onboarding.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Design Handoff</div><p>List every screen/view the app needs so a designer or AI design tool can start immediately:</p><ul><li>Screen 1: Sign In — purpose: let the compliance coordinator access the workspace; key elements: email, password, sign-in action, password reset link; data it shows: account state only.</li><li>Screen 2: Create Workspace / Initial Setup — purpose: create the agency workspace and define the first import path; key elements: agency name, coordinator name, timezone, upload sample CSV link, &quot;import roster&quot; CTA; data it shows: supported fields and setup checklist.</li><li>Screen 3: CSV Import Wizard — purpose: bring the current spreadsheet into the app with minimal friction; key elements: file upload, column mapping, validation summary, duplicate warnings, preview table, confirm import action; data it shows: parsed clinician rows, expiration dates, missing values, invalid date formats.</li><li>Screen 4: Exceptions Dashboard — purpose: show the weekly action queue; key elements: summary cards for 45 days, 21 days, 7 days, expired, stalled; filter bar; searchable table; quick actions to set follow-up date, add note, and mark cleared; data it shows: clinician name, license type, expiration date, days remaining, last contact date, next follow-up date, latest note snippet.</li><li>Screen 5: Clinician Record — purpose: manage one clinician&#x27;s license tracking details; key elements: clinician header, license record, status chip, expiration date, last contact date, next follow-up date, notes timeline, activity history; data it shows: all tracked metadata for that clinician&#x27;s RN/LVN license.</li><li>Screen 6: Quick Update Drawer / Modal — purpose: let the coordinator update a record without leaving the queue; key elements: status selector, date fields, note field, save action; data it shows: current record values and recent activity.</li><li>Screen 7: Reminder Settings — purpose: control weekly digest and deadline reminder behavior; key elements: digest day selector, recipient email, 21-day toggle, 7-day toggle, test email action; data it shows: current notification settings and last send status.</li><li>Screen 8: Weekly Digest Preview — purpose: show what the Monday email contains; key elements: grouped exceptions list, counts by bucket, link back to affected records; data it shows: live records that will appear in the next digest.</li><li>Screen 9: Activity History — purpose: provide trust and traceability without handling documents; key elements: chronological event feed, filters by clinician and event type; data it shows: imports, date changes, status changes, note additions, reminder sends.</li></ul><p>Key interactions:</p><ul><li>Coordinator signs in, creates a workspace, uploads the agency spreadsheet, maps columns, and lands on the Exceptions Dashboard with the first queue populated.</li><li>From the Exceptions Dashboard, the coordinator opens a quick update modal or the full Clinician Record to log outreach, set the next follow-up date, and clear or escalate a record.</li><li>Each week, the digest email pulls the coordinator back into the Exceptions Dashboard to process newly expiring or stalled licenses.</li><li>When a record needs renewal context, the coordinator follows the outbound Texas Board of Nursing link from the clinician record and returns to update the next action internally.</li></ul></div><div class=\"tag-row\"><span class=\"etag\">exceptions queue</span><span class=\"etag\">rn/lvn</span><span class=\"etag\">weekly digest</span></div>"}, {"status": "validate", "icon": "🧪", "title": "Critique v3", "desc": "Validated the narrow workflow while flagging adoption and messy-import risk.", "verdict": "WORTH BUILDING", "verdictClass": "worth", "score": "7/10", "body": ""}]};</script>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <span class="idea-num" id="hNum"></span>
+    <div>
+      <div class="idea-title" id="hTitle"></div>
+      <div class="idea-sub" id="hSub"></div>
+    </div>
+  </div>
+  <div class="header-right">
+    <span class="score-pill" id="hScore"></span>
+    <span class="badge" id="hBadge"></span>
+    <button class="toggle-btn" id="toggleBtn" onclick="toggleTimeline()">
+      <span id="toggleIcon">›</span>
+      <span id="toggleLabel">Hide Journey</span>
+    </button>
+  </div>
+</div>
+
+<div class="body">
+  <div class="phone-col" id="phoneCol">
+    <div id="deviceFrame"></div>
+    <div class="switcher" id="switcher"></div>
+  </div>
+
+  <div class="resize-handle" id="resizeHandle"></div>
+
+  <div class="timeline-col" id="timelineCol">
+    <div class="timeline-header"><h2>Idea Journey</h2></div>
+    <div class="timeline-scroll">
+      <div class="timeline-line" id="timeline"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Render from IDEA_DATA ────────────────────────────
+(function () {
+  const D = window.IDEA_DATA || {};
+  const isMobile = (D.deviceType || 'MOBILE').toUpperCase() !== 'WEB';
+
+  // Header
+  document.title = 'Idea #' + D.ideaNum + ' — ' + D.title;
+  document.getElementById('hNum').textContent   = '#' + D.ideaNum;
+  document.getElementById('hTitle').textContent = D.title;
+  document.getElementById('hSub').textContent   = D.sub || '';
+  document.getElementById('hScore').textContent = D.score || '';
+  document.getElementById('hBadge').textContent = isMobile ? '📱 Mobile Prototype' : '💻 Web Prototype';
+
+  // Device frame
+  const frameContainer = document.getElementById('deviceFrame');
+  if (isMobile) {
+    frameContainer.className = 'phone-frame';
+    frameContainer.innerHTML = '<iframe id="app" class="device-iframe"></iframe>';
+  } else {
+    frameContainer.className = 'web-frame';
+    frameContainer.innerHTML =
+      '<div class="web-chrome">' +
+        '<div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div>' +
+        '<div class="url" id="webUrl">preview</div>' +
+      '</div>' +
+      '<iframe id="app" class="device-iframe"></iframe>';
+  }
+
+  // Screens switcher
+  const screens = D.screens || [];
+  const startIdx = D.startScreen != null ? D.startScreen : (screens.length > 1 ? 1 : 0);
+  const switcher = document.getElementById('switcher');
+  const iframe   = document.getElementById('app');
+
+  function hideIframeScrollbars() {
+    try {
+      const style = iframe.contentDocument.createElement('style');
+      style.textContent = '::-webkit-scrollbar{display:none}*{-ms-overflow-style:none!important;scrollbar-width:none!important}';
+      iframe.contentDocument.head.appendChild(style);
+    } catch(e) {}
+  }
+  iframe.addEventListener('load', hideIframeScrollbars);
+
+  function goTo(i) {
+    iframe.src = screens[i].id + '.html';
+    switcher.querySelectorAll('button').forEach((b, j) => b.classList.toggle('active', j === i));
+    const urlEl = document.getElementById('webUrl');
+    if (urlEl) urlEl.textContent = screens[i].label;
+  }
+
+  screens.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.textContent = (i + 1) + ' · ' + s.label;
+    btn.onclick = () => goTo(i);
+    switcher.appendChild(btn);
+  });
+
+  if (screens.length) goTo(startIdx);
+
+  // Timeline
+  const timeline = document.getElementById('timeline');
+  (D.timeline || []).forEach(e => {
+    const verdictHtml = e.verdict
+      ? '<span class="verdict verdict-' + (e.verdictClass || 'needs') + '">' + e.verdict + '</span>'
+      : '';
+    const scoreHtml = e.score
+      ? '<span class="escore">' + e.score + '</span>'
+      : '';
+
+    const div = document.createElement('div');
+    div.className = 'entry' + (e.status ? ' s-' + e.status : '');
+    div.innerHTML =
+      '<div class="entry-card">' +
+        '<div class="entry-head" onclick="this.closest(\'.entry\').classList.toggle(\'open\')">' +
+          '<span class="entry-icon">' + e.icon + '</span>' +
+          '<div class="entry-info">' +
+            '<div class="entry-title">' + e.title + ' ' + verdictHtml + ' ' + scoreHtml + '</div>' +
+            '<div class="entry-desc">' + e.desc + '</div>' +
+          '</div>' +
+          '<span class="entry-chevron">▼</span>' +
+        '</div>' +
+        '<div class="entry-body">' + (e.body || '') + '</div>' +
+      '</div>';
+    timeline.appendChild(div);
+  });
+
+  // Timeline toggle
+  let open = true;
+  window.toggleTimeline = function () {
+    open = !open;
+    document.getElementById('timelineCol').classList.toggle('collapsed', !open);
+    document.getElementById('resizeHandle').style.display = open ? '' : 'none';
+    document.getElementById('toggleIcon').textContent  = open ? '›' : '‹';
+    document.getElementById('toggleLabel').textContent = open ? 'Hide Journey' : 'Show Journey';
+  };
+
+  // Drag resize
+  const handle      = document.getElementById('resizeHandle');
+  const timelineCol = document.getElementById('timelineCol');
+  let resizing = false, rx = 0, rw = 0;
+
+  handle.addEventListener('mousedown', e => {
+    if (!open) return;
+    resizing = true; rx = e.clientX; rw = timelineCol.offsetWidth;
+    handle.classList.add('dragging');
+    timelineCol.style.transition = 'none';
+    document.documentElement.style.cssText += ';cursor:col-resize!important;user-select:none!important';
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', e => {
+    if (!resizing) return;
+    const w = Math.max(280, Math.min(window.innerWidth - 500, rw + (rx - e.clientX)));
+    timelineCol.style.width = w + 'px';
+  });
+  window.addEventListener('mouseup', () => {
+    if (!resizing) return;
+    resizing = false;
+    handle.classList.remove('dragging');
+    timelineCol.style.transition = '';
+    document.documentElement.style.cursor = '';
+    document.documentElement.style.userSelect = '';
+  });
+})();
+</script>
+</body>
+</html>
