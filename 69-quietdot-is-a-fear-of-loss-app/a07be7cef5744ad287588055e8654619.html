@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>QuietDot - Settings &amp; Support</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#d0e5f7",
+                    "outline-variant": "#b2b2ad",
+                    "tertiary-container": "#feecce",
+                    "secondary-fixed": "#d0e5f7",
+                    "surface-container-low": "#f5f4ef",
+                    "on-primary": "#e5fff2",
+                    "inverse-surface": "#0e0e0d",
+                    "background": "#fbf9f5",
+                    "tertiary-fixed-dim": "#efdec0",
+                    "secondary-dim": "#415664",
+                    "on-tertiary": "#fff8f1",
+                    "on-surface": "#31332f",
+                    "primary-dim": "#3e594e",
+                    "primary": "#4a655a",
+                    "inverse-on-surface": "#9e9d99",
+                    "primary-fixed": "#cbe9db",
+                    "surface-container": "#efeee9",
+                    "secondary-fixed-dim": "#c2d7e9",
+                    "on-error-container": "#6e0a12",
+                    "inverse-primary": "#d7f5e7",
+                    "surface": "#fbf9f5",
+                    "on-secondary-fixed": "#2e4250",
+                    "primary-fixed-dim": "#bedbce",
+                    "tertiary-dim": "#5d523b",
+                    "on-tertiary-fixed": "#50452f",
+                    "surface-tint": "#4a655a",
+                    "surface-bright": "#fbf9f5",
+                    "on-secondary": "#f5f9ff",
+                    "surface-container-high": "#e9e8e3",
+                    "on-primary-fixed": "#2a443b",
+                    "on-tertiary-fixed-variant": "#6d614a",
+                    "tertiary-fixed": "#feecce",
+                    "surface-dim": "#dadad4",
+                    "tertiary": "#6a5e46",
+                    "surface-variant": "#e3e3dc",
+                    "surface-container-highest": "#e3e3dc",
+                    "error-container": "#fa746f",
+                    "secondary": "#4d6271",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#5e605b",
+                    "error-dim": "#67040d",
+                    "error": "#a83836",
+                    "on-secondary-fixed-variant": "#4a5e6d",
+                    "outline": "#7a7b76",
+                    "on-tertiary-container": "#635740",
+                    "on-primary-fixed-variant": "#466156",
+                    "primary-container": "#cbe9db",
+                    "on-error": "#fff7f6",
+                    "on-secondary-container": "#405463",
+                    "on-background": "#31332f",
+                    "on-primary-container": "#3d574d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<header class="fixed top-0 left-0 right-0 h-20 px-6 flex items-center justify-between bg-[#fbf9f5]/92 backdrop-blur-2xl z-50 shadow-[0_8px_24px_0_rgba(49,51,47,0.04)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[#4a655a]">spa</span><span class="font-['Manrope'] font-bold tracking-tight text-[#4a655a] text-2xl">QuietDot</span></div><div class="absolute left-1/2 -translate-x-1/2 font-['Manrope'] font-bold text-lg text-on-surface">Settings</div><div class="w-10 h-10"></div></header>
+<!-- TopAppBar -->
+<main class="pt-24 px-6 max-w-2xl mx-auto pt-24 pb-32">
+<!-- Header Section -->
+<section class="mb-10">
+<h1 class="text-4xl font-headline font-bold text-on-surface tracking-tight mb-2">Settings</h1>
+<p class="text-on-surface-variant font-body">Refine your sanctuary and management preferences.</p>
+</section>
+<!-- Emergency Disclaimer (Asymmetric layout) -->
+<section class="mb-12 relative overflow-hidden rounded-[2rem] bg-error-container/10 p-8">
+<div class="relative z-10 flex flex-col md:flex-row gap-6 items-start">
+<div class="bg-error text-on-error p-3 rounded-2xl">
+<span class="material-symbols-outlined" data-icon="warning">warning</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-error mb-2">Not an Emergency Service</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed max-w-md">
+                        QuietDot is designed for scheduled check-ins and non-urgent welfare monitoring. If you are in immediate danger or experiencing a medical crisis, please contact local emergency services immediately.
+                    </p>
+</div>
+</div>
+<div class="absolute -right-4 -bottom-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-9xl" data-icon="emergency_share">emergency_share</span>
+</div>
+</section>
+<!-- Settings Groups -->
+<div class="space-y-12">
+<!-- Communications Group -->
+<section>
+<div class="flex items-center gap-3 mb-6 px-2">
+<span class="text-primary font-headline font-bold uppercase tracking-widest text-xs">Connectivity</span>
+</div>
+<div class="space-y-4">
+<!-- Manage Phone Numbers -->
+<div class="bg-surface-container-low p-6 rounded-[2rem] flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="phone_iphone">phone_iphone</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Verified Numbers</h4>
+<p class="text-xs text-on-surface-variant">2 primary numbers linked</p>
+</div>
+</div>
+<button class="bg-surface-container-lowest px-4 py-2 rounded-xl text-primary font-bold text-sm hover:bg-white transition-colors" href="660ce529ea874219a6b225af9eaeb6cb.html" onclick="window.location.href='660ce529ea874219a6b225af9eaeb6cb.html'">Manage</button>
+</div>
+<div class="bg-surface-container-lowest/50 p-4 rounded-2xl flex items-center justify-between">
+<span class="text-on-surface font-medium">+1 (555) 012-3456</span>
+<span class="text-[10px] uppercase font-bold text-primary bg-primary-container px-2 py-1 rounded-md">Primary</span>
+</div>
+</div>
+<!-- Timezone & Sync -->
+<div class="bg-surface-container-low p-6 rounded-[2rem] flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary" data-icon="schedule">schedule</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Timezone</h4>
+<p class="text-xs text-on-surface-variant">Pacific Standard Time (GMT-8)</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Notifications & Timing (Bento Card Style) -->
+<section>
+<div class="flex items-center gap-3 mb-6 px-2">
+<span class="text-primary font-headline font-bold uppercase tracking-widest text-xs">Behavioral Rhythm</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-6 rounded-[2rem] flex flex-col gap-6">
+<span class="material-symbols-outlined text-primary bg-primary-container w-10 h-10 flex items-center justify-center rounded-full" data-icon="message">message</span>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Message Timing</h4>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Check-in windows occur every 12 hours between 8 AM and 8 PM.</p>
+</div>
+<button class="mt-auto text-primary font-bold text-sm text-left">Adjust Windows</button>
+</div>
+<div class="bg-surface-container-low p-6 rounded-[2rem] flex flex-col gap-6 border-2 border-primary-container/30">
+<span class="material-symbols-outlined text-secondary bg-secondary-container w-10 h-10 flex items-center justify-center rounded-full" data-icon="hourglass_empty">hourglass_empty</span>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Reminder Delay</h4>
+<p class="text-sm text-on-surface-variant mt-1 leading-relaxed">Wait 15 minutes before secondary alert triggers.</p>
+</div>
+<div class="mt-auto h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full w-[45%] bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Support & Trust -->
+<section>
+<div class="flex items-center gap-3 mb-6 px-2">
+<span class="text-primary font-headline font-bold uppercase tracking-widest text-xs">Trust &amp; Help</span>
+</div>
+<div class="bg-surface-container-low rounded-[2.5rem] overflow-hidden">
+<!-- Support Section -->
+<div class="p-8 border-b border-surface-variant/20">
+<h4 class="font-headline font-bold text-on-surface mb-4">Support Hub</h4>
+<div class="grid grid-cols-1 gap-3">
+<a class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-2xl hover:bg-white transition-all" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="help">help</span>
+<span class="font-medium">Knowledge Base</span>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="open_in_new">open_in_new</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-2xl hover:bg-white transition-all" href="#">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-medium">Direct Message Support</span>
+</div>
+<span class="material-symbols-outlined text-outline" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Legal & Privacy Links -->
+<div class="p-8 bg-surface-container-high/30">
+<h4 class="font-headline font-bold text-on-surface-variant text-sm mb-4">Legal &amp; Privacy</h4>
+<ul class="space-y-4">
+<li class="flex items-center justify-between text-sm">
+<span class="text-on-surface-variant">Terms of Service</span>
+<span class="material-symbols-outlined text-outline text-lg" data-icon="arrow_outward">arrow_outward</span>
+</li>
+<li class="flex items-center justify-between text-sm">
+<span class="text-on-surface-variant">Privacy Policy</span>
+<span class="material-symbols-outlined text-outline text-lg" data-icon="arrow_outward">arrow_outward</span>
+</li>
+<li class="flex items-center justify-between text-sm">
+<span class="text-on-surface-variant">Cookie Preferences</span>
+<span class="material-symbols-outlined text-outline text-lg" data-icon="chevron_right">chevron_right</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Dangerous Area -->
+<section class="pb-10 px-2">
+<button class="w-full py-4 px-6 rounded-2xl bg-surface-container text-error font-headline font-bold flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="logout">logout</span>
+                    Sign Out
+                </button>
+<div class="mt-8 text-center">
+<p class="text-[10px] text-on-surface-variant font-headline uppercase tracking-[0.2em]">QuietDot Version 2.4.0 (Stable)</p>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 right-0 z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#fbf9f5]/92 backdrop-blur-2xl rounded-t-[2rem] shadow-[0_-8px_24px_0_rgba(49,51,47,0.04)]"><a class="flex flex-col items-center justify-center px-5 py-2 text-[#31332f]/70" href="48d60fdf68a446e0afc814b7098b5891.html" onclick="window.location.href='48d60fdf68a446e0afc814b7098b5891.html'"><span class="material-symbols-outlined mb-1">home</span><span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-wide">Home</span></a><a class="flex flex-col items-center justify-center px-5 py-2 text-[#31332f]/70" href="660ce529ea874219a6b225af9eaeb6cb.html" onclick="window.location.href='660ce529ea874219a6b225af9eaeb6cb.html'"><span class="material-symbols-outlined mb-1">schedule</span><span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-wide">Routine</span></a><a class="flex flex-col items-center justify-center px-5 py-2 bg-[#cbe9db] text-[#4a655a] rounded-2xl" href="a07be7cef5744ad287588055e8654619.html" onclick="window.location.href='a07be7cef5744ad287588055e8654619.html'"><span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">settings</span><span class="font-['Plus_Jakarta_Sans'] text-[11px] font-medium tracking-wide">Settings</span></a></nav></body></html>

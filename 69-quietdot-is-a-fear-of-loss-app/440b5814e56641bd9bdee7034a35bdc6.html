@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>QuietDot - Parent's Check-in</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#7a7b76",
+                    "on-error": "#fff7f6",
+                    "secondary": "#4d6271",
+                    "on-secondary-fixed": "#2e4250",
+                    "outline-variant": "#b2b2ad",
+                    "on-background": "#31332f",
+                    "error-dim": "#67040d",
+                    "surface": "#fbf9f5",
+                    "on-secondary": "#f5f9ff",
+                    "surface-container-low": "#f5f4ef",
+                    "on-primary-fixed": "#2a443b",
+                    "inverse-on-surface": "#9e9d99",
+                    "on-tertiary": "#fff8f1",
+                    "inverse-surface": "#0e0e0d",
+                    "secondary-dim": "#415664",
+                    "inverse-primary": "#d7f5e7",
+                    "secondary-fixed-dim": "#c2d7e9",
+                    "surface-container-highest": "#e3e3dc",
+                    "secondary-container": "#d0e5f7",
+                    "on-surface": "#31332f",
+                    "on-primary-fixed-variant": "#466156",
+                    "tertiary-container": "#feecce",
+                    "surface-bright": "#fbf9f5",
+                    "primary": "#4a655a",
+                    "on-primary": "#e5fff2",
+                    "on-error-container": "#6e0a12",
+                    "primary-container": "#cbe9db",
+                    "surface-tint": "#4a655a",
+                    "on-secondary-fixed-variant": "#4a5e6d",
+                    "background": "#fbf9f5",
+                    "on-secondary-container": "#405463",
+                    "error": "#a83836",
+                    "primary-fixed": "#cbe9db",
+                    "on-primary-container": "#3d574d",
+                    "on-tertiary-fixed-variant": "#6d614a",
+                    "tertiary-dim": "#5d523b",
+                    "error-container": "#fa746f",
+                    "tertiary-fixed-dim": "#efdec0",
+                    "on-tertiary-fixed": "#50452f",
+                    "on-tertiary-container": "#635740",
+                    "surface-container": "#efeee9",
+                    "on-surface-variant": "#5e605b",
+                    "primary-dim": "#3e594e",
+                    "surface-container-high": "#e9e8e3",
+                    "tertiary": "#6a5e46",
+                    "secondary-fixed": "#d0e5f7",
+                    "tertiary-fixed": "#feecce",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e3e3dc",
+                    "primary-fixed-dim": "#bedbce",
+                    "surface-dim": "#dadad4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-soft-gradient {
+            background: linear-gradient(45deg, rgba(74, 101, 90, 0.05) 0%, rgba(203, 233, 219, 0.1) 100%);
+        }
+        .breathing-glow {
+            box-shadow: 0 0 40px 10px rgba(203, 233, 219, 0.4);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-background font-body min-h-screen flex flex-col">
+<header class="fixed top-0 left-0 right-0 h-20 px-6 flex items-center justify-between bg-[#fbf9f5]/92 backdrop-blur-2xl z-50 shadow-[0_8px_24px_0_rgba(49,51,47,0.04)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[#4a655a]">spa</span><span class="font-['Manrope'] font-bold tracking-tight text-[#4a655a] text-2xl">QuietDot</span></div><div class="absolute left-1/2 -translate-x-1/2 font-['Manrope'] font-bold text-lg text-on-surface">Parent Check-in</div><div class="w-10 h-10"></div></header>
+<!-- TopAppBar -->
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col items-center justify-center px-6 pb-24 pt-24">
+<!-- Hero Section / Breathing Status Indicator -->
+<div class="w-full max-w-md text-center mb-12 space-y-8">
+<div class="relative inline-block mx-auto">
+<!-- Breathing Status Component -->
+<div class="w-32 h-32 rounded-full bg-primary-container/30 flex items-center justify-center breathing-glow">
+<div class="w-24 h-24 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="favorite" data-weight="fill" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<h1 class="font-headline font-extrabold text-3xl md:text-4xl text-on-background tracking-tight">
+                    Hi Martha, just checking in.
+                </h1>
+<p class="text-on-surface-variant text-lg max-w-[280px] mx-auto">
+                    Take a moment to let your family know you're alright.
+                </p>
+</div>
+</div>
+<!-- Primary High-Accessibility Action Card -->
+<div class="w-full max-w-md space-y-4">
+<!-- Glassmorphism Container -->
+<button class="w-full bg-surface-container-lowest border-2 border-primary/10 rounded-[2rem] p-8 text-center shadow-[0_8px_24px_rgba(49,51,47,0.04)] active:scale-95 transition-all duration-300 group">
+<div class="bg-primary rounded-2xl w-full py-6 flex flex-col items-center justify-center gap-4 text-on-primary">
+<span class="material-symbols-outlined text-5xl" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-headline font-bold text-2xl tracking-tight">I'm doing well</span>
+</div>
+</button>
+<!-- Secondary Alternative Action -->
+<button class="w-full bg-surface-container rounded-[2rem] p-6 text-center active:scale-95 transition-all duration-300">
+<div class="flex items-center justify-center gap-3 text-secondary">
+<span class="material-symbols-outlined text-3xl" data-icon="thumb_up">thumb_up</span>
+<span class="font-headline font-bold text-xl">Everything's okay</span>
+</div>
+</button>
+</div>
+<!-- Supportive Asymmetric Content -->
+<div class="mt-12 w-full max-w-md grid grid-cols-1 gap-4">
+<div class="bg-soft-gradient rounded-xl p-5 flex items-start gap-4">
+<div class="bg-white/60 p-3 rounded-lg">
+<span class="material-symbols-outlined text-primary" data-icon="history">history</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-on-surface">Last Check-in</h3>
+<p class="text-on-surface-variant text-sm">Today, 8:45 AM</p>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<!-- Visual Background Element -->
+</body></html>

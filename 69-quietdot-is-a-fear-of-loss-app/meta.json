@@ -1,0 +1,223 @@
+{
+  "id": "69-quietdot-is-a-fear-of-loss-app",
+  "num": 69,
+  "title": "QuietDot",
+  "subtitle": "Scheduled SMS check-ins so families can replace repetitive worry texts with one calm routine.",
+  "description": "QuietDot is now a lightweight scheduled check-in service for one adult child and one older parent. The child sets up a recurring check-in by entering the parent's phone number, choosing the days and time, and writing one short message. At the scheduled time, QuietDot sends a simple SMS like: \"Morning check-in from Anna. Tap once to reply.\" The parent does not install an app. They tap the link, land on a mobile web page with one large response button, and QuietDot records the result for the child.",
+  "score": 6,
+  "status": "complete",
+  "deviceType": "MOBILE",
+  "category": "Lifestyle",
+  "platform": [
+    "ios",
+    "android"
+  ],
+  "tags": [
+    "family",
+    "sms",
+    "check-in",
+    "care",
+    "routine"
+  ],
+  "folder": "69-quietdot-is-a-fear-of-loss-app",
+  "prototypeUrl": "https://jakebuild.github.io/idea-factory/69-quietdot-is-a-fear-of-loss-app/",
+  "metaUrl": "https://jakebuild.github.io/idea-factory/69-quietdot-is-a-fear-of-loss-app/meta.json",
+  "startScreenId": "660ce529ea874219a6b225af9eaeb6cb",
+  "startScreenUrl": "https://jakebuild.github.io/idea-factory/69-quietdot-is-a-fear-of-loss-app/660ce529ea874219a6b225af9eaeb6cb.html",
+  "screenCount": 4,
+  "stitchId": "1875527614247535535",
+  "stitchUrl": "https://stitch.withgoogle.com/projects/1875527614247535535",
+  "publishedAt": "2026-04-08T00:52:20Z",
+  "updatedAt": "2026-04-08T00:52:20Z",
+  "journey": [
+    {
+      "kind": "idea",
+      "title": "Original Idea",
+      "summary": "Widget-first check-in concept with escalation logic.",
+      "sections": [
+        {
+          "label": "description",
+          "paragraphs": [
+            "QuietDot is a fear-of-loss app that copies the Locket Widget model but applies it to aging-parent anxiety instead of friend photo sharing. An older parent taps one giant 'I'm okay' button each morning, and the adult child sees that status directly on a home-screen widget without opening the app. If the check-in is missed, the widget shifts from green to amber to red, then starts an escalation flow with a call prompt and backup contact. The reveal is immediate and screen-recordable: your home screen changes from 'Mom checked in at 7:14 AM' to 'No check-in yet today,' so the app sells reassurance first and panic second. The loop is simple: check in, see the streak stay calm, miss a day, feel the tension instantly, and keep coming back because relief itself becomes the habit."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "critique",
+      "title": "Critique v1",
+      "verdict": "NEEDS MAJOR WORK",
+      "score": "5/10",
+      "summary": "This is selling emotional relief, but the actual product experience can easily create more anxiety than it removes. A late check-in does not mean danger, but your whole value prop trains the child to interpret silence as threat.",
+      "sections": [
+        {
+          "label": "what_worked",
+          "items": [
+            "The core pitch is instantly understandable: \"Locket for aging-parent reassurance\" is clear, emotional, and easy to demo."
+          ]
+        },
+        {
+          "label": "risks",
+          "items": [
+            "This is selling emotional relief, but the actual product experience can easily create more anxiety than it removes. A late check-in does not mean danger, but your whole value prop trains the child to interpret silence as threat."
+          ]
+        },
+        {
+          "label": "suggested_cuts",
+          "items": [
+            "Cut the \"panic second\" positioning. Sell coordination and lightweight reassurance, not implied emergency detection."
+          ]
+        },
+        {
+          "label": "solo_dev_reality_check",
+          "paragraphs": [
+            "- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — a stripped-down MVP with one parent, one child, manual reminder scheduling, basic widget, and no real emergency orchestration is feasible. The version you described with polished escalation trust, reliable widget behavior, and low false-alarm UX is not. - Biggest solo complexity traps: widget refresh limits on iOS/Android; push notification reliability; elderly-friendly onboarding and pairing; differentiating missed check-ins from technical failure; handling timezones and quiet hours; support burden from false alarms; building trust without overpromising safety."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "idea",
+      "title": "Improved Idea v2",
+      "summary": "Calmer positioning and explicit uncertainty states.",
+      "sections": [
+        {
+          "label": "what_changed",
+          "items": [
+            "Repositioned the product from panic monitoring to a shared daily check-in ritual with a narrow promise: \"help families coordinate one lightweight check-in.\" This directly fixes the critique that the original product manufactured dread and implied emergency protection it could not deliver."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "critique",
+      "title": "Critique v2",
+      "verdict": "NEEDS MAJOR WORK",
+      "score": "6/10",
+      "summary": "The core problem still has a brutal two-sided adoption mismatch: the anxious adult child feels the pain, but the older parent does the daily labor. That is still the same structural weakness, just wrapped in calmer copy.",
+      "sections": [
+        {
+          "label": "what_worked",
+          "items": [
+            "This is materially better than v1 because it stops pretending to be emergency tech and narrows the promise to coordination instead of rescue theater."
+          ]
+        },
+        {
+          "label": "risks",
+          "items": [
+            "The core problem still has a brutal two-sided adoption mismatch: the anxious adult child feels the pain, but the older parent does the daily labor. That is still the same structural weakness, just wrapped in calmer copy."
+          ]
+        },
+        {
+          "label": "suggested_cuts",
+          "items": [
+            "Strip v1 even harder: no widget, no \"phone offline,\" no fancy state taxonomy beyond `Checked in`, `Reminder sent`, `Away mode`, and `No response yet` until actual device testing proves more."
+          ]
+        },
+        {
+          "label": "solo_dev_reality_check",
+          "paragraphs": [
+            "- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — a very stripped-down iOS-first MVP is possible, but only if you stop romanticizing the state model and cut anything that depends on unreliable background/platform behavior. - Biggest solo complexity traps: notification permission failure; pairing/invite friction for older parents; state-detection claims that are weaker than the UI implies; timezone and schedule edge cases; away mode confusion; widget refresh unreliability; support burden from false meaning, not just false alarms; pricing/support mismatch for emotionally loaded use cases."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "idea",
+      "title": "Improved Idea v3",
+      "summary": "Scheduled SMS check-ins and a no-install parent reply flow.",
+      "sections": [
+        {
+          "label": "what_changed",
+          "items": [
+            "Rebuilt the product around scheduled SMS check-ins instead of a paired native app and widget. This directly fixes the biggest structural problem in the critique: the parent no longer has to install, learn, and remember a new app just to satisfy the child's anxiety loop."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "critique",
+      "title": "Critique v3",
+      "verdict": "NEEDS MAJOR WORK",
+      "score": "6/10",
+      "summary": "The core product is still a politeness wrapper around anxiety. You did not remove the emotional burden; you automated it and pushed the parent into a recurring compliance ritual.",
+      "sections": [
+        {
+          "label": "what_worked",
+          "items": [
+            "This is the first version that sounds like a real MVP instead of a grief-tech hallucination. Cutting the parent app, widget, and fake signal soup was the correct surgery."
+          ]
+        },
+        {
+          "label": "risks",
+          "items": [
+            "The core product is still a politeness wrapper around anxiety. You did not remove the emotional burden; you automated it and pushed the parent into a recurring compliance ritual."
+          ]
+        },
+        {
+          "label": "suggested_cuts",
+          "items": [
+            "Test the behavior before you romanticize the app. Run a concierge pilot with plain SMS or keyword replies and prove weekly compliance before building dashboard polish."
+          ]
+        },
+        {
+          "label": "solo_dev_reality_check",
+          "paragraphs": [
+            "- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the narrow utility can be built, but the actual risk is behavioral and support-heavy, not coding-heavy, so the software can ship fast while the product still fails fast. - Biggest solo complexity traps: SMS deliverability and carrier filtering; trust collapse from link-based flows; timezone and recurrence bugs; duplicate/expired response links; emotionally loaded support when replies are missed; compliance/consent handling; overbuilding dashboard/settings before validating parent behavior; accidental regression into pseudo-emergency expectations."
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "design",
+      "title": "Design Prototype",
+      "summary": "Published a preview from directly fetched Stitch HTML.",
+      "sections": [
+        {
+          "label": "fetched_screens",
+          "items": [
+            "1: Landing / Product Promise",
+            "2: Child Setup Wizard",
+            "5: Parent Check-in Page",
+            "10: Settings / Trust & Help"
+          ]
+        }
+      ]
+    }
+  ],
+  "journeyHtml": [
+    "<div class=\"esect\"><div class=\"esect-label\">Original Description</div><p>QuietDot is a fear-of-loss app that copies the Locket Widget model but applies it to aging-parent anxiety instead of friend photo sharing. An older parent taps one giant &#39;I&#39;m okay&#39; button each morning, and the adult child sees that status directly on a home-screen widget without opening the app. If the check-in is missed, the widget shifts from green to amber to red, then starts an escalation flow with a call prompt and backup contact. The reveal is immediate and screen-recordable: your home screen changes from &#39;Mom checked in at 7:14 AM&#39; to &#39;No check-in yet today,&#39; so the app sells reassurance first and panic second. The loop is simple: check in, see the streak stay calm, miss a day, feel the tension instantly, and keep coming back because relief itself becomes the habit.</p></div><div class=\"esect\"><div class=\"esect-label\">Version</div><div class=\"tag-row\"><span class=\"etag\">v1</span><span class=\"etag\">submitted</span></div></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Worked</div><ul><li>The core pitch is instantly understandable: &quot;Locket for aging-parent reassurance&quot; is clear, emotional, and easy to demo.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Risks</div><ul><li>This is selling emotional relief, but the actual product experience can easily create more anxiety than it removes. A late check-in does not mean danger, but your whole value prop trains the child to interpret silence as threat.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Suggested Cuts</div><ul><li>Cut the &quot;panic second&quot; positioning. Sell coordination and lightweight reassurance, not implied emergency detection.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev Reality Check</div><p>- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — a stripped-down MVP with one parent, one child, manual reminder scheduling, basic widget, and no real emergency orchestration is feasible. The version you described with polished escalation trust, reliable widget behavior, and low false-alarm UX is not. - Biggest solo complexity traps: widget refresh limits on iOS/Android; push notification reliability; elderly-friendly onboarding and pairing; differentiating missed check-ins from technical failure; handling timezones and quiet hours; support burden from false alarms; building trust without overpromising safety.</p></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Repositioned the product from panic monitoring to a shared daily check-in ritual with a narrow promise: &quot;help families coordinate one lightweight check-in.&quot; This directly fixes the critique that the original product manufactured dread and implied emergency protection it could not deliver.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Improved Description</div><p>QuietDot becomes a lightweight family ritual app for one parent and one adult child, not a safety system. The parent gets one large daily &quot;Checked in&quot; button plus an optional preset note like &quot;Home all day&quot; or &quot;Out for appointments.&quot; The child gets a calm status view that answers one practical question: &quot;Did today&#39;s check-in happen, and if not, what do we actually know?&quot;</p></div><div class=\"esect\"><div class=\"esect-label\">Open Questions</div><ul><li>Assumption check: will at least 5-10 parent/child pairs actually complete a daily check-in for 10-14 days, or does the habit collapse after novelty wears off?</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Worked</div><ul><li>This is materially better than v1 because it stops pretending to be emergency tech and narrows the promise to coordination instead of rescue theater.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Risks</div><ul><li>The core problem still has a brutal two-sided adoption mismatch: the anxious adult child feels the pain, but the older parent does the daily labor. That is still the same structural weakness, just wrapped in calmer copy.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Suggested Cuts</div><ul><li>Strip v1 even harder: no widget, no &quot;phone offline,&quot; no fancy state taxonomy beyond `Checked in`, `Reminder sent`, `Away mode`, and `No response yet` until actual device testing proves more.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev Reality Check</div><p>- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — a very stripped-down iOS-first MVP is possible, but only if you stop romanticizing the state model and cut anything that depends on unreliable background/platform behavior. - Biggest solo complexity traps: notification permission failure; pairing/invite friction for older parents; state-detection claims that are weaker than the UI implies; timezone and schedule edge cases; away mode confusion; widget refresh unreliability; support burden from false meaning, not just false alarms; pricing/support mismatch for emotionally loaded use cases.</p></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Changed</div><ul><li>Rebuilt the product around scheduled SMS check-ins instead of a paired native app and widget. This directly fixes the biggest structural problem in the critique: the parent no longer has to install, learn, and remember a new app just to satisfy the child&#39;s anxiety loop.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Improved Description</div><p>QuietDot is now a lightweight scheduled check-in service for one adult child and one older parent. The child sets up a recurring check-in by entering the parent&#39;s phone number, choosing the days and time, and writing one short message. At the scheduled time, QuietDot sends a simple SMS like: &quot;Morning check-in from Anna. Tap once to reply.&quot; The parent does not install an app. They tap the link, land on a mobile web page with one large response button, and QuietDot records the result for the child.</p></div><div class=\"esect\"><div class=\"esect-label\">Solo MVP Scope</div><ul><li>What&#39;s in v1: child-only setup flow, parent phone number entry, recurring schedule setup, 2-3 editable SMS templates, link-based parent check-in page, one follow-up reminder, child dashboard with `Checked in` / `Reminder sent` / `Paused` / `No response yet`, manual `Call now`, pause schedule, basic reply history, and trust-setting copy that explicitly says this is not emergency monitoring.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Open Questions</div><ul><li>Will older parents trust and tap an SMS link from a family check-in message, or is reply-by-keyword SMS the better v1 interaction?</li></ul></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">What Worked</div><ul><li>This is the first version that sounds like a real MVP instead of a grief-tech hallucination. Cutting the parent app, widget, and fake signal soup was the correct surgery.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Risks</div><ul><li>The core product is still a politeness wrapper around anxiety. You did not remove the emotional burden; you automated it and pushed the parent into a recurring compliance ritual.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Suggested Cuts</div><ul><li>Test the behavior before you romanticize the app. Run a concierge pilot with plain SMS or keyword replies and prove weekly compliance before building dashboard polish.</li></ul></div><div class=\"esect\"><div class=\"esect-label\">Solo Dev Reality Check</div><p>- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — the narrow utility can be built, but the actual risk is behavioral and support-heavy, not coding-heavy, so the software can ship fast while the product still fails fast. - Biggest solo complexity traps: SMS deliverability and carrier filtering; trust collapse from link-based flows; timezone and recurrence bugs; duplicate/expired response links; emotionally loaded support when replies are missed; compliance/consent handling; overbuilding dashboard/settings before validating parent behavior; accidental regression into pseudo-emergency expectations.</p></div>",
+    "<div class=\"esect\"><div class=\"esect-label\">Summary</div><p>Built the preview package and metadata from directly fetched Stitch HTML.</p><p>Skipped screens that could not be fetched from Stitch instead of generating local replacements.</p></div><div class=\"esect\"><div class=\"esect-label\">Fetched Screens</div><div class=\"tag-row\"><span class=\"etag blue\">#1 Landing</span><span class=\"etag blue\">#2 Setup</span><span class=\"etag blue\">#5 Parent Check-in</span><span class=\"etag blue\">#10 Settings</span></div></div><div class=\"esect\"><div class=\"esect-label\">Links</div><p><a class=\"ext-link\" href=\"https://jakebuild.github.io/idea-factory/69-quietdot-is-a-fear-of-loss-app/\">Live preview</a></p><p><a class=\"ext-link\" href=\"https://stitch.withgoogle.com/projects/1875527614247535535\">Open in Stitch</a></p></div>"
+  ],
+  "screens": [
+    {
+      "id": "48d60fdf68a446e0afc814b7098b5891",
+      "label": "Landing",
+      "url": "https://jakebuild.github.io/idea-factory/69-quietdot-is-a-fear-of-loss-app/48d60fdf68a446e0afc814b7098b5891.html",
+      "order": 0
+    },
+    {
+      "id": "660ce529ea874219a6b225af9eaeb6cb",
+      "label": "Setup",
+      "url": "https://jakebuild.github.io/idea-factory/69-quietdot-is-a-fear-of-loss-app/660ce529ea874219a6b225af9eaeb6cb.html",
+      "order": 1
+    },
+    {
+      "id": "440b5814e56641bd9bdee7034a35bdc6",
+      "label": "Parent Check-in",
+      "url": "https://jakebuild.github.io/idea-factory/69-quietdot-is-a-fear-of-loss-app/440b5814e56641bd9bdee7034a35bdc6.html",
+      "order": 2
+    },
+    {
+      "id": "a07be7cef5744ad287588055e8654619",
+      "label": "Settings",
+      "url": "https://jakebuild.github.io/idea-factory/69-quietdot-is-a-fear-of-loss-app/a07be7cef5744ad287588055e8654619.html",
+      "order": 3
+    }
+  ]
+}
