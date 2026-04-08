@@ -1,0 +1,8 @@
+# Idea #73: BufferScore is a fear-of-loss app that copies the Credit Karma model but applies it to job security instead of creditworthiness. You enter your savings, fixed monthly burn, role, industry, and rough interview readiness, and the app instantly calculates a Layoff Buffer Score showing how exposed you are if your paycheck disappears. The reveal is immediate and screen-recordable: a bold score like '34/100' with one blunt sentence explaining your runway and rehire risk, such as 'At your current burn, one bad month leaves you with 7.4 weeks of runway and below-median rehire odds.' The loop is simple: update your numbers, watch the score rise or fall with your cash buffer and market conditions, and come back weekly because job anxiety gets worse when it stays vague.
+
+## Version: v1 (Original)
+**Date:** 2026-04-08 18:09
+**Status:** submitted
+
+## Description
+BufferScore is a fear-of-loss app that copies the Credit Karma model but applies it to job security instead of creditworthiness. You enter your savings, fixed monthly burn, role, industry, and rough interview readiness, and the app instantly calculates a Layoff Buffer Score showing how exposed you are if your paycheck disappears. The reveal is immediate and screen-recordable: a bold score like '34/100' with one blunt sentence explaining your runway and rehire risk, such as 'At your current burn, one bad month leaves you with 7.4 weeks of runway and below-median rehire odds.' The loop is simple: update your numbers, watch the score rise or fall with your cash buffer and market conditions, and come back weekly because job anxiety gets worse when it stays vague.
