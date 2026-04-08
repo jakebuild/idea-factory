@@ -1,5 +1,15 @@
 [
   {
+    "num": 73,
+    "title": "BufferScore",
+    "sub": "A blunt layoff-readiness audit for software engineers.",
+    "score": "6/10",
+    "deviceType": "MOBILE",
+    "folder": "73-bufferscore-is-a-fear-of-loss-",
+    "startScreenId": "ae86d515c77044cd9218fafece47e473",
+    "status": "complete"
+  },
+  {
     "num": 72,
     "title": "CredentialCliff",
     "sub": "Weekly exceptions dashboard for preventing RN/LVN license lapses.",

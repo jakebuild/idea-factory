@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<title>BUFFERSCORE V3 | Audit Recheck</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space_Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#324052",
+                    "surface-dim": "#060e20",
+                    "surface-bright": "#002867",
+                    "on-surface": "#dee5ff",
+                    "error-container": "#7f2927",
+                    "on-primary-fixed": "#3c4042",
+                    "secondary-container": "#2e3c4e",
+                    "error": "#ee7d77",
+                    "inverse-surface": "#faf8ff",
+                    "surface-container-low": "#06122d",
+                    "outline": "#5b74b1",
+                    "inverse-primary": "#5c5f61",
+                    "on-secondary-container": "#b1c0d6",
+                    "on-surface-variant": "#91aaeb",
+                    "tertiary-fixed-dim": "#e72f2d",
+                    "secondary-dim": "#909fb4",
+                    "error-dim": "#bb5551",
+                    "on-tertiary-container": "#000000",
+                    "surface-container-high": "#031d4b",
+                    "surface-container": "#05183c",
+                    "on-secondary": "#122131",
+                    "on-tertiary": "#4a0003",
+                    "on-secondary-fixed-variant": "#4e5d6f",
+                    "surface-container-highest": "#00225a",
+                    "on-primary-fixed-variant": "#595c5e",
+                    "surface-container-lowest": "#000000",
+                    "on-tertiary-fixed": "#000000",
+                    "tertiary": "#ff7165",
+                    "secondary": "#909fb4",
+                    "on-background": "#dee5ff",
+                    "tertiary-dim": "#e02928",
+                    "on-error": "#490106",
+                    "inverse-on-surface": "#4d556b",
+                    "on-tertiary-fixed-variant": "#220001",
+                    "secondary-fixed-dim": "#c6d6ec",
+                    "primary-fixed": "#e0e3e5",
+                    "surface": "#060e20",
+                    "surface-tint": "#c4c7c9",
+                    "on-error-container": "#ff9993",
+                    "background": "#060e20",
+                    "surface-variant": "#00225a",
+                    "on-primary-container": "#ced1d2",
+                    "on-primary": "#3d4142",
+                    "tertiary-container": "#fa3d38",
+                    "outline-variant": "#2b4680",
+                    "primary": "#c4c7c9",
+                    "primary-container": "#444749",
+                    "primary-fixed-dim": "#d2d5d7",
+                    "primary-dim": "#b6b9bb",
+                    "secondary-fixed": "#d4e4fa",
+                    "tertiary-fixed": "#fa3d38"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #060e20;
+            color: #dee5ff;
+            font-family: 'Inter', sans-serif;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1px;
+            background-color: #2b468026;
+        }
+        input:focus {
+            outline: none;
+            border-bottom-color: #c4c7c9 !important;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="codex-preview-nav">
+body{padding-top:72px !important;padding-bottom:88px !important;}
+.codex-topbar{position:fixed;top:0;left:0;right:0;z-index:999;background:#060e20;border-bottom:1px solid rgba(43,70,128,.35);}
+.codex-topbar-inner{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;background:#06122d;}
+.codex-nav-slot{width:44px;height:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.codex-back{border:none;background:transparent;color:#c4c7c9;font-size:24px;font-weight:700;cursor:pointer;line-height:1;}
+.codex-title-wrap{min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.codex-kicker{font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#909fb4;}
+.codex-title{font-family:'Inter',sans-serif;font-size:18px;font-weight:900;letter-spacing:-.02em;text-transform:uppercase;color:#dee5ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
+.codex-bottomnav{position:fixed;left:0;right:0;bottom:0;height:72px;display:flex;align-items:center;justify-content:space-around;background:#060e20;border-top:1px solid rgba(43,70,128,.35);z-index:999;}
+.codex-bottomnav button{flex:1;height:100%;border:none;background:transparent;color:#5b74b1;font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;}
+.codex-bottomnav button.active{background:#002867;color:#dee5ff;}
+.codex-bottomnav .material-symbols-outlined{font-size:22px;}
+</style>
+</head>
+<body class="min-h-screen pb-24"><header class="codex-topbar"><div class="codex-topbar-inner"><div class="codex-nav-slot"><button class="codex-back" onclick="window.location.href='8f48b3b38b08419c91fb8d41da2639aa.html'">‹</button></div><div class="codex-title-wrap"><div class="codex-kicker">Screen 08</div><div class="codex-title">Recheck Audit</div></div><div class="codex-nav-slot"></div></div></header>
+<!-- TopAppBar -->
+
+<main class="max-w-6xl mx-auto px-6 pt-12">
+<!-- Header Section -->
+<div class="mb-12 border-l-4 border-primary pl-6">
+<p class="font-label text-secondary text-xs uppercase tracking-[0.2em] mb-2">RE-ENTRY PROTOCOL</p>
+<h2 class="font-headline text-4xl font-extrabold tracking-tight text-on-surface uppercase">Audit Recheck</h2>
+<p class="text-on-surface-variant max-w-xl mt-4 font-body leading-relaxed">Adjust your tactical parameters. We've pre-filled your last known data for Runway and Liquid Assets. Update what has changed to recalculate your risk score instantly.</p>
+</div>
+<!-- Main Bento Audit Interface -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Column Left: Parameter Re-verification -->
+<div class="md:col-span-4 space-y-6">
+<!-- Pre-filled Runway Card -->
+<div class="bg-surface-container-low p-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-2 opacity-10">
+<span class="material-symbols-outlined text-6xl" data-icon="history">history</span>
+</div>
+<label class="font-label text-[10px] text-secondary tracking-widest uppercase block mb-4">Prior Runway (Months)</label>
+<input class="w-full bg-transparent border-b border-outline-variant text-4xl font-headline font-black text-primary focus:border-primary pb-2 transition-all" type="text" value="6.5"/>
+<p class="text-[10px] font-label text-outline mt-2 uppercase">Verified 12 Days Ago</p>
+</div>
+<!-- Pre-filled Assets Card -->
+<div class="bg-surface-container-low p-6">
+<label class="font-label text-[10px] text-secondary tracking-widest uppercase block mb-4">Liquid Assets (USD)</label>
+<div class="flex items-baseline gap-2">
+<span class="text-xl text-primary font-bold">$</span>
+<input class="w-full bg-transparent border-b border-outline-variant text-4xl font-headline font-black text-primary focus:border-primary pb-2 transition-all" type="text" value="42,500.00"/>
+</div>
+<p class="text-[10px] font-label text-outline mt-2 uppercase">Stable Status Recorded</p>
+</div>
+<!-- Session Persistence Warning -->
+<div class="bg-surface-container-highest p-4 border-l-4 border-tertiary">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="no_accounts">no_accounts</span>
+<div>
+<p class="font-label text-[10px] text-tertiary tracking-widest uppercase font-bold">Anonymous Session</p>
+<p class="text-xs text-on-surface-variant mt-1">No account required. Results are stored in local cache. If you clear browser data, this audit log will be permanently purged.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Column Right: The "Change" Matrix -->
+<div class="md:col-span-8 space-y-6">
+<div class="bg-surface-container p-8">
+<div class="flex justify-between items-center mb-8">
+<h3 class="font-headline text-2xl font-bold text-on-surface uppercase tracking-tighter">What has changed?</h3>
+<span class="bg-surface-bright text-primary px-3 py-1 font-label text-[10px] tracking-widest uppercase">Delta Inputs Required</span>
+</div>
+<!-- Tactical Toggles -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<!-- Toggle 1 -->
+<div class="bg-surface-container-low p-4 flex justify-between items-center border border-transparent hover:border-outline-variant transition-all cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary" data-icon="description">description</span>
+<div>
+<p class="font-label text-xs font-bold uppercase text-on-surface">Updated Resume</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Recalculate Hireability</p>
+</div>
+</div>
+<div class="w-12 h-6 bg-surface-container-highest relative">
+<div class="absolute right-1 top-1 w-4 h-4 bg-primary"></div>
+</div>
+</div>
+<!-- Toggle 2 -->
+<div class="bg-surface-container-low p-4 flex justify-between items-center border border-transparent hover:border-outline-variant transition-all cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary" data-icon="trending_down">trending_down</span>
+<div>
+<p class="font-label text-xs font-bold uppercase text-on-surface">Reduced Spend</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Extend Burn-down</p>
+</div>
+</div>
+<div class="w-12 h-6 bg-surface-container-highest relative">
+<div class="absolute left-1 top-1 w-4 h-4 bg-outline-variant"></div>
+</div>
+</div>
+<!-- Toggle 3 -->
+<div class="bg-surface-container-low p-4 flex justify-between items-center border border-transparent hover:border-outline-variant transition-all cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary" data-icon="work">work</span>
+<div>
+<p class="font-label text-xs font-bold uppercase text-on-surface">New Leads</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Pipeline Intensity</p>
+</div>
+</div>
+<div class="w-12 h-6 bg-surface-container-highest relative">
+<div class="absolute left-1 top-1 w-4 h-4 bg-outline-variant"></div>
+</div>
+</div>
+<!-- Toggle 4 -->
+<div class="bg-surface-container-low p-4 flex justify-between items-center border border-transparent hover:border-outline-variant transition-all cursor-pointer group">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary" data-icon="security">security</span>
+<div>
+<p class="font-label text-xs font-bold uppercase text-on-surface">Emergency Use</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Liquidity Impact</p>
+</div>
+</div>
+<div class="w-12 h-6 bg-surface-container-highest relative">
+<div class="absolute left-1 top-1 w-4 h-4 bg-outline-variant"></div>
+</div>
+</div>
+</div>
+<!-- Descriptive Change Area -->
+<div class="mb-8">
+<label class="font-label text-[10px] text-secondary tracking-widest uppercase block mb-2">Narrative Update (Optional)</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant p-4 text-sm font-body text-on-surface focus:border-primary transition-all resize-none" placeholder="Briefly describe shifts in your career or financial landscape..." rows="4"></textarea>
+</div>
+<!-- Action Zone -->
+<div class="flex flex-col md:flex-row gap-4 items-center">
+<button class="w-full md:w-auto px-12 py-4 bg-primary text-on-primary font-label font-bold uppercase tracking-[0.2em] text-sm flex items-center justify-center gap-3 hover:bg-primary-dim transition-none active:scale-[0.98]" onclick="window.location.href='8f48b3b38b08419c91fb8d41da2639aa.html'" style="cursor:pointer;cursor:pointer">
+<span class="material-symbols-outlined" data-icon="refresh">refresh</span>
+                            Recalculate Results
+                        </button>
+<div class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest text-center md:text-left">
+                            Protocol Version 3.12.0 <br/>
+                            Last Calculation: 12.04.2024
+                        </div>
+</div>
+</div>
+<!-- Result Summary Overlay (Preview) -->
+<div class="bg-surface-container-low p-6 border-t-2 border-secondary-dim">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+<div>
+<p class="font-label text-[10px] text-secondary-dim uppercase tracking-widest">Current Projected Score</p>
+<h4 class="text-5xl font-black font-headline tracking-tighter text-on-surface">742</h4>
+</div>
+<div class="h-12 w-px bg-outline-variant hidden md:block"></div>
+<div class="flex-1">
+<p class="text-xs font-body text-on-surface-variant leading-relaxed">
+<span class="text-secondary font-bold">STATUS: STABLE.</span> Based on your prior data, your Buffer Score remains in the 70th percentile. Adjusting "Reduced Spend" may elevate you to the 80th.
+                            </p>
+</div>
+<div class="w-full md:w-auto h-2 md:h-16 md:w-2 bg-secondary"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="codex-bottomnav"><button class="" onclick="window.location.href='3c130b3d570842c6b585d4791d0b24eb.html'"><span class="material-symbols-outlined">home_app_logo</span><span>Home</span></button><button class="active" onclick="window.location.href='ae86d515c77044cd9218fafece47e473.html'"><span class="material-symbols-outlined">analytics</span><span>Audit</span></button><button class="" onclick="window.location.href='431583048e944e5d8b3921e03b9f2546.html'" style="cursor:pointer"><span class="material-symbols-outlined">bolt</span><span>Queue</span></button><button class="" onclick="window.location.href='b65a14c2ef3149b88d44f501408558a5.html'" style="cursor:pointer"><span class="material-symbols-outlined">menu_book</span><span>Method</span></button></nav></body></html>

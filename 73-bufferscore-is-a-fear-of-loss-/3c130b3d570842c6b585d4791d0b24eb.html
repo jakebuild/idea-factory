@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space_Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#324052",
+                    "surface-dim": "#060e20",
+                    "surface-bright": "#002867",
+                    "on-surface": "#dee5ff",
+                    "error-container": "#7f2927",
+                    "on-primary-fixed": "#3c4042",
+                    "secondary-container": "#2e3c4e",
+                    "error": "#ee7d77",
+                    "inverse-surface": "#faf8ff",
+                    "surface-container-low": "#06122d",
+                    "outline": "#5b74b1",
+                    "inverse-primary": "#5c5f61",
+                    "on-secondary-container": "#b1c0d6",
+                    "on-surface-variant": "#91aaeb",
+                    "tertiary-fixed-dim": "#e72f2d",
+                    "secondary-dim": "#909fb4",
+                    "error-dim": "#bb5551",
+                    "on-tertiary-container": "#000000",
+                    "surface-container-high": "#031d4b",
+                    "surface-container": "#05183c",
+                    "on-secondary": "#122131",
+                    "on-tertiary": "#4a0003",
+                    "on-secondary-fixed-variant": "#4e5d6f",
+                    "surface-container-highest": "#00225a",
+                    "on-primary-fixed-variant": "#595c5e",
+                    "surface-container-lowest": "#000000",
+                    "on-tertiary-fixed": "#000000",
+                    "tertiary": "#ff7165",
+                    "secondary": "#909fb4",
+                    "on-background": "#dee5ff",
+                    "tertiary-dim": "#e02928",
+                    "on-error": "#490106",
+                    "inverse-on-surface": "#4d556b",
+                    "on-tertiary-fixed-variant": "#220001",
+                    "secondary-fixed-dim": "#c6d6ec",
+                    "primary-fixed": "#e0e3e5",
+                    "surface": "#060e20",
+                    "surface-tint": "#c4c7c9",
+                    "on-error-container": "#ff9993",
+                    "background": "#060e20",
+                    "surface-variant": "#00225a",
+                    "on-primary-container": "#ced1d2",
+                    "on-primary": "#3d4142",
+                    "tertiary-container": "#fa3d38",
+                    "outline-variant": "#2b4680",
+                    "primary": "#c4c7c9",
+                    "primary-container": "#444749",
+                    "primary-fixed-dim": "#d2d5d7",
+                    "primary-dim": "#b6b9bb",
+                    "secondary-fixed": "#d4e4fa",
+                    "tertiary-fixed": "#fa3d38"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "0px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mechanical-hover:hover {
+            background-color: #002867;
+        }
+        body {
+            background-color: #060e20;
+            color: #dee5ff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="codex-preview-nav">
+body{padding-top:72px !important;padding-bottom:88px !important;}
+.codex-topbar{position:fixed;top:0;left:0;right:0;z-index:999;background:#060e20;border-bottom:1px solid rgba(43,70,128,.35);}
+.codex-topbar-inner{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;background:#06122d;}
+.codex-nav-slot{width:44px;height:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.codex-back{border:none;background:transparent;color:#c4c7c9;font-size:24px;font-weight:700;cursor:pointer;line-height:1;}
+.codex-title-wrap{min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.codex-kicker{font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#909fb4;}
+.codex-title{font-family:'Inter',sans-serif;font-size:18px;font-weight:900;letter-spacing:-.02em;text-transform:uppercase;color:#dee5ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
+.codex-bottomnav{position:fixed;left:0;right:0;bottom:0;height:72px;display:flex;align-items:center;justify-content:space-around;background:#060e20;border-top:1px solid rgba(43,70,128,.35);z-index:999;}
+.codex-bottomnav button{flex:1;height:100%;border:none;background:transparent;color:#5b74b1;font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;}
+.codex-bottomnav button.active{background:#002867;color:#dee5ff;}
+.codex-bottomnav .material-symbols-outlined{font-size:22px;}
+</style>
+</head>
+<body class="font-body selection:bg-surface-bright selection:text-white"><header class="codex-topbar"><div class="codex-topbar-inner"><div class="codex-nav-slot"></div><div class="codex-title-wrap"><div class="codex-kicker">Screen 01</div><div class="codex-title">Landing</div></div><div class="codex-nav-slot"></div></div></header>
+<!-- TopAppBar -->
+
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-0 border-none">
+<div class="lg:col-span-7 flex flex-col justify-center py-12 lg:py-20">
+<div class="inline-flex bg-surface-container-high px-3 py-1 mb-6 w-fit">
+<span class="font-label text-[10px] text-tertiary tracking-[0.2em] uppercase">SYSTEM PROTOCOL 09-V3</span>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-[0.85] text-on-surface mb-8">
+                    THE BLUNT <br/>AUDIT.
+                </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl font-light leading-relaxed mb-10">
+                    A clinical, high-density assessment of your professional leverage. No motivational padding. Just pure data on your engineering runway and market readiness.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 font-label font-bold text-xs tracking-widest uppercase hover:bg-primary-dim transition-none flex items-center justify-center gap-3" onclick="window.location.href='ae86d515c77044cd9218fafece47e473.html'" style="cursor:pointer">
+                        INITIALIZE AUDIT
+                        <span class="material-symbols-outlined text-[18px]" data-icon="bolt">bolt</span>
+</button>
+<button class="border border-outline-variant/30 text-on-surface px-8 py-4 font-label font-bold text-xs tracking-widest uppercase hover:bg-surface-bright transition-none flex items-center justify-center" onclick="window.location.href='b65a14c2ef3149b88d44f501408558a5.html'" style="cursor:pointer">
+                        VIEW METHODOLOGY
+                    </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative mt-12 lg:mt-0">
+<div class="bg-surface-container-low p-8 border-l-4 border-tertiary relative overflow-hidden">
+<div class="flex justify-between items-start mb-12">
+<div>
+<p class="font-label text-[10px] text-secondary tracking-widest uppercase mb-1">AGGREGATE SCORE</p>
+<h2 class="text-7xl font-black text-on-surface tracking-tighter">742</h2>
+</div>
+<div class="text-right">
+<p class="font-label text-[10px] text-tertiary tracking-widest uppercase mb-1">RISK LEVEL</p>
+<p class="font-label text-xl font-bold text-tertiary uppercase">MODERATE</p>
+</div>
+</div>
+<div class="space-y-6">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-4">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label text-[10px] text-secondary-dim tracking-widest uppercase">FINANCIAL RUNWAY</span>
+<span class="font-label text-sm font-bold text-on-surface">14.2 MO</span>
+</div>
+<div class="w-full h-1 bg-surface-container">
+<div class="bg-secondary-fixed h-full w-[70%]"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-4">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label text-[10px] text-secondary-dim tracking-widest uppercase">SEARCH READINESS</span>
+<span class="font-label text-sm font-bold text-tertiary">CRITICAL</span>
+</div>
+<div class="w-full h-1 bg-surface-container">
+<div class="bg-tertiary h-full w-[22%]"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-4">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label text-[10px] text-secondary-dim tracking-widest uppercase">MARKET LIQUIDITY</span>
+<span class="font-label text-sm font-bold text-on-surface">STABLE</span>
+</div>
+<div class="w-full h-1 bg-surface-container">
+<div class="bg-on-surface-variant h-full w-[55%]"></div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="lock" style="font-variation-settings: 'FILL' 1;">lock</span>
+<p class="font-label text-[10px] text-secondary-dim uppercase tracking-wider">LOCAL CALCULATION ONLY. NO PII UPLOADED.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust & Philosophy Bento -->
+<section class="mt-32 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-surface-container-low p-10 flex flex-col justify-between min-h-[320px]">
+<div>
+<h3 class="font-headline font-black text-2xl uppercase tracking-tight mb-4">OBJECTIVE CLARITY</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">
+                        We don't provide "career advice." We provide a deterministic output based on your specific stack, market demand, and burn rate. If your runway is short, we tell you exactly how short.
+                    </p>
+</div>
+<div class="flex items-center gap-6 mt-8">
+<div class="flex flex-col">
+<span class="font-label text-[24px] font-bold">128+</span>
+<span class="font-label text-[9px] text-secondary tracking-widest uppercase">MARKET SIGNALS</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[24px] font-bold">0.0s</span>
+<span class="font-label text-[9px] text-secondary tracking-widest uppercase">SERVER LATENCY</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-10 flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-4xl text-tertiary mb-6" data-icon="security">security</span>
+<h3 class="font-headline font-bold text-lg uppercase mb-2">ZERO PII STORAGE</h3>
+<p class="font-label text-xs text-on-surface-variant uppercase leading-loose tracking-widest">
+                    Your financial and professional data stays in your browser. Our logic is local. We see nothing.
+                </p>
+</div>
+</section>
+<!-- The "Why" Section - High Density -->
+<section class="mt-24 border-t border-outline-variant/20 pt-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<span class="font-label text-[10px] text-secondary tracking-widest uppercase mb-4 block">DESIGNED FOR ENGINEERS</span>
+<h2 class="text-4xl font-black uppercase tracking-tighter mb-8 leading-none">NO FLUFF. <br/>JUST VITAL SIGNS.</h2>
+<p class="text-on-surface-variant mb-12 max-w-md">
+                        The modern tech market is volatile. BufferScore V3 was built to strip away the optimism and give you the cold, hard numbers you need to make tactical decisions about your future.
+                    </p>
+<ul class="space-y-8">
+<li class="flex gap-6">
+<div class="flex-shrink-0 w-8 h-8 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="check">check</span>
+</div>
+<div>
+<h4 class="font-headline font-bold uppercase text-sm mb-1">Network Depth Audit</h4>
+<p class="text-xs text-on-surface-variant uppercase font-label tracking-wide">Quantify how many warm leads are actually reachable within 72 hours.</p>
+</div>
+</li>
+<li class="flex gap-6">
+<div class="flex-shrink-0 w-8 h-8 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="check">check</span>
+</div>
+<div>
+<h4 class="font-headline font-bold uppercase text-sm mb-1">Technical Debt Mapping</h4>
+<p class="text-xs text-on-surface-variant uppercase font-label tracking-wide">Calculate the decay rate of your current tech stack in the active hiring market.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="relative bg-surface-container-lowest border border-outline-variant/10 p-2">
+<img class="w-full grayscale brightness-75 contrast-125 mix-blend-screen opacity-60" data-alt="abstract close-up of a high-tech computer server rack with glowing blue and white data indicators and technical circuitry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSh5j3RRe-bNQ17kYol79dPn4-xM9oT4QpqDebQNIKooYsSsizMw8ZJWkbFJ8UwkateInBD_NudBUSzC-_Rhb70S1WU1J74aIU-89HSfQiyYUxBK0xMlcfOHU-OjNNx3w3bK8dMW_nYIZYA_O0OkJ4WlryXGd3GvZp39aIhd38eR9fWxlt5WXG1uSEbGNbxoylC50OeXrKaadtUE8YFXGP8jV-4_oYdynma3LkD0cvpJQgVTFHCu1XDfXh3YWmD9Hjolu2Ry3qR_Zg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<div class="bg-surface/90 backdrop-blur-xl p-6 border-l-4 border-primary">
+<p class="font-label text-[10px] text-primary tracking-[0.3em] uppercase mb-2">SYSTEM STATUS</p>
+<p class="text-sm font-bold uppercase tracking-tight">V3 ALGORITHM IS CURRENTLY LIVE. MARKET DATA SYNCED 4M AGO.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="mt-32 mb-20 text-center">
+<h2 class="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-12">DETERMINE YOUR POSITION.</h2>
+<button class="bg-primary text-on-primary px-12 py-6 font-label font-bold text-sm tracking-[0.3em] uppercase hover:bg-primary-dim transition-none" onclick="window.location.href='ae86d515c77044cd9218fafece47e473.html'" style="cursor:pointer">
+                INITIALIZE AUDIT NOW
+            </button>
+<p class="mt-8 font-label text-[10px] text-secondary uppercase tracking-[0.2em]">60-SECOND INITIALIZATION. NO ACCOUNT REQUIRED.</p>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center h-16 bg-[#060e20] z-50 border-none">
+<button class="flex flex-col items-center justify-center bg-[#002867] text-[#c4c7c9] p-2 flex-1 h-full">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+<span class="font-['Space_Grotesk'] text-[8px] uppercase tracking-widest mt-1">DASHBOARD</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#444749] p-2 flex-1 h-full hover:bg-[#031d4b]">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-['Space_Grotesk'] text-[8px] uppercase tracking-widest mt-1">AUDIT</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#444749] p-2 flex-1 h-full hover:bg-[#031d4b]">
+<span class="material-symbols-outlined" data-icon="bolt">bolt</span>
+<span class="font-['Space_Grotesk'] text-[8px] uppercase tracking-widest mt-1">ACTIONS</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#444749] p-2 flex-1 h-full hover:bg-[#031d4b]" onclick="window.location.href='b65a14c2ef3149b88d44f501408558a5.html'" style="cursor:pointer">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-['Space_Grotesk'] text-[8px] uppercase tracking-widest mt-1">METHOD</span>
+</button>
+</div>
+<nav class="codex-bottomnav"><button class="active" onclick="window.location.href='3c130b3d570842c6b585d4791d0b24eb.html'"><span class="material-symbols-outlined">home_app_logo</span><span>Home</span></button><button class="" onclick="window.location.href='ae86d515c77044cd9218fafece47e473.html'"><span class="material-symbols-outlined">analytics</span><span>Audit</span></button><button class="" onclick="window.location.href='431583048e944e5d8b3921e03b9f2546.html'" style="cursor:pointer"><span class="material-symbols-outlined">bolt</span><span>Queue</span></button><button class="" onclick="window.location.href='b65a14c2ef3149b88d44f501408558a5.html'" style="cursor:pointer"><span class="material-symbols-outlined">menu_book</span><span>Method</span></button></nav></body></html>

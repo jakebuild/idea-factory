@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space_Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#324052",
+                        "surface-dim": "#060e20",
+                        "surface-bright": "#002867",
+                        "on-surface": "#dee5ff",
+                        "error-container": "#7f2927",
+                        "on-primary-fixed": "#3c4042",
+                        "secondary-container": "#2e3c4e",
+                        "error": "#ee7d77",
+                        "inverse-surface": "#faf8ff",
+                        "surface-container-low": "#06122d",
+                        "outline": "#5b74b1",
+                        "inverse-primary": "#5c5f61",
+                        "on-secondary-container": "#b1c0d6",
+                        "on-surface-variant": "#91aaeb",
+                        "tertiary-fixed-dim": "#e72f2d",
+                        "secondary-dim": "#909fb4",
+                        "error-dim": "#bb5551",
+                        "on-tertiary-container": "#000000",
+                        "surface-container-high": "#031d4b",
+                        "surface-container": "#05183c",
+                        "on-secondary": "#122131",
+                        "on-tertiary": "#4a0003",
+                        "on-secondary-fixed-variant": "#4e5d6f",
+                        "surface-container-highest": "#00225a",
+                        "on-primary-fixed-variant": "#595c5e",
+                        "surface-container-lowest": "#000000",
+                        "on-tertiary-fixed": "#000000",
+                        "tertiary": "#ff7165",
+                        "secondary": "#909fb4",
+                        "on-background": "#dee5ff",
+                        "tertiary-dim": "#e02928",
+                        "on-error": "#490106",
+                        "inverse-on-surface": "#4d556b",
+                        "on-tertiary-fixed-variant": "#220001",
+                        "secondary-fixed-dim": "#c6d6ec",
+                        "primary-fixed": "#e0e3e5",
+                        "surface": "#060e20",
+                        "surface-tint": "#c4c7c9",
+                        "on-error-container": "#ff9993",
+                        "background": "#060e20",
+                        "surface-variant": "#00225a",
+                        "on-primary-container": "#ced1d2",
+                        "on-primary": "#3d4142",
+                        "tertiary-container": "#fa3d38",
+                        "outline-variant": "#2b4680",
+                        "primary": "#c4c7c9",
+                        "primary-container": "#444749",
+                        "primary-fixed-dim": "#d2d5d7",
+                        "primary-dim": "#b6b9bb",
+                        "secondary-fixed": "#d4e4fa",
+                        "tertiary-fixed": "#fa3d38"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #060e20; }
+        ::-webkit-scrollbar-thumb { background: #2b4680; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="codex-preview-nav">
+body{padding-top:72px !important;padding-bottom:88px !important;}
+.codex-topbar{position:fixed;top:0;left:0;right:0;z-index:999;background:#060e20;border-bottom:1px solid rgba(43,70,128,.35);}
+.codex-topbar-inner{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;background:#06122d;}
+.codex-nav-slot{width:44px;height:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.codex-back{border:none;background:transparent;color:#c4c7c9;font-size:24px;font-weight:700;cursor:pointer;line-height:1;}
+.codex-title-wrap{min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.codex-kicker{font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#909fb4;}
+.codex-title{font-family:'Inter',sans-serif;font-size:18px;font-weight:900;letter-spacing:-.02em;text-transform:uppercase;color:#dee5ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
+.codex-bottomnav{position:fixed;left:0;right:0;bottom:0;height:72px;display:flex;align-items:center;justify-content:space-around;background:#060e20;border-top:1px solid rgba(43,70,128,.35);z-index:999;}
+.codex-bottomnav button{flex:1;height:100%;border:none;background:transparent;color:#5b74b1;font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;}
+.codex-bottomnav button.active{background:#002867;color:#dee5ff;}
+.codex-bottomnav .material-symbols-outlined{font-size:22px;}
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-surface-bright selection:text-white"><header class="codex-topbar"><div class="codex-topbar-inner"><div class="codex-nav-slot"></div><div class="codex-title-wrap"><div class="codex-kicker">Screen 09</div><div class="codex-title">Methodology</div></div><div class="codex-nav-slot"></div></div></header>
+<!-- TopAppBar -->
+
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Section: The Philosophy -->
+<section class="mb-20">
+<div class="mb-4">
+<span class="font-label text-secondary tracking-[0.3em] uppercase text-xs">V3_PROTOCOL_DOCUMENTATION</span>
+</div>
+<h1 class="font-headline font-black text-5xl md:text-7xl uppercase tracking-tighter mb-8 bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent">
+                Preparedness,<br/>Not Prediction.
+            </h1>
+<div class="bg-surface-container-high p-8 border-l-4 border-tertiary">
+<p class="font-body text-xl text-on-surface leading-relaxed max-w-3xl">
+                    BUFFERSCORE V3 is a risk mitigation engine, not a crystal ball. We analyze the structural integrity of your financial and operational runway to determine survival probability during high-variance market events.
+                </p>
+</div>
+</section>
+<!-- Methodological Rubric (Bento-style Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20 border border-outline-variant/20 mb-20">
+<!-- Pillar 1: Runway -->
+<div class="bg-surface-container-low p-10 flex flex-col justify-between aspect-square md:aspect-auto">
+<div>
+<div class="font-label text-primary text-sm mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-xs">analytics</span>
+                        [01] THE RUNWAY RUBRIC
+                    </div>
+<h2 class="font-headline text-3xl font-bold uppercase tracking-tight mb-6">Structural Duration</h2>
+<p class="text-on-surface-variant leading-7 mb-6">
+                        Calculation of absolute liquid capital against current burn velocity. We apply a 15% "Operational Friction" tax to all reported balances to account for unforeseen exit costs.
+                    </p>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant pb-2">
+<span class="font-label text-xs text-secondary uppercase">Metric 1.A</span>
+<span class="font-label text-sm text-on-surface">Burn Volatility Coefficient</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant pb-2">
+<span class="font-label text-xs text-secondary uppercase">Metric 1.B</span>
+<span class="font-label text-sm text-on-surface">Liquidity Depth Ratio</span>
+</div>
+</div>
+</div>
+<!-- Pillar 2: Readiness -->
+<div class="bg-surface-container-low p-10 flex flex-col justify-between aspect-square md:aspect-auto">
+<div>
+<div class="font-label text-primary text-sm mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-xs">bolt</span>
+                        [02] THE READINESS RUBRIC
+                    </div>
+<h2 class="font-headline text-3xl font-bold uppercase tracking-tight mb-6">Agility Response</h2>
+<p class="text-on-surface-variant leading-7 mb-6">
+                        Evaluation of the team's ability to execute "Plan B" maneuvers within a 48-hour window. This includes technical redundancy, regulatory padding, and market pivot speed.
+                    </p>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-end border-b border-outline-variant pb-2">
+<span class="font-label text-xs text-secondary uppercase">Metric 2.A</span>
+<span class="font-label text-sm text-on-surface">Pivot Inertia Score</span>
+</div>
+<div class="flex justify-between items-end border-b border-outline-variant pb-2">
+<span class="font-label text-xs text-secondary uppercase">Metric 2.B</span>
+<span class="font-label text-sm text-on-surface">Redundancy Density</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Exclusions List -->
+<section class="mb-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-1">
+<h3 class="font-label text-tertiary uppercase tracking-widest text-sm mb-4">EXCLUSIONARY_LOGIC</h3>
+<p class="text-secondary text-sm leading-relaxed">
+                    The following variables are omitted from BUFFERSCORE V3 to maintain objective technical integrity. Inclusion of these metrics introduces emotional bias.
+                </p>
+</div>
+<div class="md:col-span-2 space-y-2">
+<div class="bg-surface-container p-6 flex justify-between items-center group hover:bg-surface-bright transition-none">
+<div class="flex items-center gap-4">
+<span class="text-tertiary font-label">01</span>
+<span class="font-headline font-bold uppercase text-lg">Personal Networking</span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-sm">close</span>
+</div>
+<div class="bg-surface-container p-6 flex justify-between items-center group hover:bg-surface-bright transition-none">
+<div class="flex items-center gap-4">
+<span class="text-tertiary font-label">02</span>
+<span class="font-headline font-bold uppercase text-lg">Market Luck/Sentiment</span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-sm">close</span>
+</div>
+<div class="bg-surface-container p-6 flex justify-between items-center group hover:bg-surface-bright transition-none">
+<div class="flex items-center gap-4">
+<span class="text-tertiary font-label">03</span>
+<span class="font-headline font-bold uppercase text-lg">Narrative Momentum</span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-sm">close</span>
+</div>
+<div class="bg-surface-container p-6 flex justify-between items-center group hover:bg-surface-bright transition-none">
+<div class="flex items-center gap-4">
+<span class="text-tertiary font-label">04</span>
+<span class="font-headline font-bold uppercase text-lg">Intangible IP Value</span>
+</div>
+<span class="material-symbols-outlined text-tertiary text-sm">close</span>
+</div>
+</div>
+</section>
+<!-- The "Audit Entry" Disclaimer -->
+<section class="bg-surface-container-lowest border border-outline-variant p-8 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 select-none">
+<span class="font-label text-9xl">ALPHA</span>
+</div>
+<div class="relative z-10 max-w-2xl">
+<div class="flex items-center gap-2 text-error mb-6">
+<span class="material-symbols-outlined">warning</span>
+<span class="font-label text-xs uppercase tracking-widest font-bold">Protocol Disclaimer</span>
+</div>
+<h4 class="font-headline text-3xl font-black uppercase mb-6 leading-tight">Explicit Integrity Notice</h4>
+<p class="text-on-surface-variant font-body mb-8 leading-relaxed">
+                    This interface provides a sovereign ledger of risk. BUFFERSCORE does not offer financial advice. By utilizing this data, you acknowledge that market conditions are chaotic and that survival is a function of preparedness, not a guarantee of the model. 
+                </p>
+<div class="flex flex-col md:flex-row gap-4">
+<button class="bg-primary text-on-primary font-label font-bold text-xs uppercase px-8 py-4 hover:bg-primary-dim transition-none flex items-center justify-center gap-2" onclick="window.location.href='ae86d515c77044cd9218fafece47e473.html'" style="cursor:pointer;cursor:pointer">
+                        I ACKNOWLEDGE PROTOCOL <span class="material-symbols-outlined text-sm">check_circle</span>
+</button>
+<button class="border border-outline-variant text-on-surface font-label font-bold text-xs uppercase px-8 py-4 hover:bg-surface-bright transition-none flex items-center justify-center gap-2" onclick="window.location.href='b65a14c2ef3149b88d44f501408558a5.html'" style="cursor:pointer">
+                        DOWNLOAD FULL WHITE PAPER <span class="material-symbols-outlined text-sm">download</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Decorative Map Section (Contextual) -->
+<section class="mt-20">
+<div class="relative h-64 w-full bg-surface-container-low grayscale contrast-125 brightness-50 border border-outline-variant overflow-hidden">
+<img alt="Topographic map visualization with data nodes" class="w-full h-full object-cover" data-alt="Monochrome dark topographic data map with glowing blue nodes and network connections indicating infrastructure density" data-location="Global Infrastructure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAte4a2VTu8AkDFCwfaFy8ZCtiOouJEf0P87uWK36yetr2Fbol0cz96TMadg5dwHDplS_uAqt63k4-dNj7suIGo_lxHhme-5MGTvuvoHDiE-C9moTkyPtfV0MpvyvGesz1sctNmog8gqtoUHgXI0CSUzgW9wcWTttN8I5vGxSpqR-s5AzO9zGs5bGOY50dOJIfCKeqHHgUteC2uqXYKz1BVTLjiSRSxrrjXBB1CylPDvFVJw3PL-N7j1UUM4PubtG_g3-UNmg2qOgF7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<span class="font-label text-[10px] text-primary uppercase tracking-[0.4em]">NODAL_SITUATION_ROOM_V3</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="codex-bottomnav"><button class="" onclick="window.location.href='3c130b3d570842c6b585d4791d0b24eb.html'"><span class="material-symbols-outlined">home_app_logo</span><span>Home</span></button><button class="" onclick="window.location.href='ae86d515c77044cd9218fafece47e473.html'"><span class="material-symbols-outlined">analytics</span><span>Audit</span></button><button class="" onclick="window.location.href='431583048e944e5d8b3921e03b9f2546.html'" style="cursor:pointer"><span class="material-symbols-outlined">bolt</span><span>Queue</span></button><button class="active" onclick="window.location.href='b65a14c2ef3149b88d44f501408558a5.html'" style="cursor:pointer"><span class="material-symbols-outlined">menu_book</span><span>Method</span></button></nav></body></html>

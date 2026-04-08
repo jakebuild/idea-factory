@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space_Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#324052",
+                    "surface-dim": "#060e20",
+                    "surface-bright": "#002867",
+                    "on-surface": "#dee5ff",
+                    "error-container": "#7f2927",
+                    "on-primary-fixed": "#3c4042",
+                    "secondary-container": "#2e3c4e",
+                    "error": "#ee7d77",
+                    "inverse-surface": "#faf8ff",
+                    "surface-container-low": "#06122d",
+                    "outline": "#5b74b1",
+                    "inverse-primary": "#5c5f61",
+                    "on-secondary-container": "#b1c0d6",
+                    "on-surface-variant": "#91aaeb",
+                    "tertiary-fixed-dim": "#e72f2d",
+                    "secondary-dim": "#909fb4",
+                    "error-dim": "#bb5551",
+                    "on-tertiary-container": "#000000",
+                    "surface-container-high": "#031d4b",
+                    "surface-container": "#05183c",
+                    "on-secondary": "#122131",
+                    "on-tertiary": "#4a0003",
+                    "on-secondary-fixed-variant": "#4e5d6f",
+                    "surface-container-highest": "#00225a",
+                    "on-primary-fixed-variant": "#595c5e",
+                    "surface-container-lowest": "#000000",
+                    "on-tertiary-fixed": "#000000",
+                    "tertiary": "#ff7165",
+                    "secondary": "#909fb4",
+                    "on-background": "#dee5ff",
+                    "tertiary-dim": "#e02928",
+                    "on-error": "#490106",
+                    "inverse-on-surface": "#4d556b",
+                    "on-tertiary-fixed-variant": "#220001",
+                    "secondary-fixed-dim": "#c6d6ec",
+                    "primary-fixed": "#e0e3e5",
+                    "surface": "#060e20",
+                    "surface-tint": "#c4c7c9",
+                    "on-error-container": "#ff9993",
+                    "background": "#060e20",
+                    "surface-variant": "#00225a",
+                    "on-primary-container": "#ced1d2",
+                    "on-primary": "#3d4142",
+                    "tertiary-container": "#fa3d38",
+                    "outline-variant": "#2b4680",
+                    "primary": "#c4c7c9",
+                    "primary-container": "#444749",
+                    "primary-fixed-dim": "#d2d5d7",
+                    "primary-dim": "#b6b9bb",
+                    "secondary-fixed": "#d4e4fa",
+                    "tertiary-fixed": "#fa3d38"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #060e20; }
+        ::-webkit-scrollbar-thumb { background: #2b4680; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="codex-preview-nav">
+body{padding-top:72px !important;padding-bottom:88px !important;}
+.codex-topbar{position:fixed;top:0;left:0;right:0;z-index:999;background:#060e20;border-bottom:1px solid rgba(43,70,128,.35);}
+.codex-topbar-inner{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;background:#06122d;}
+.codex-nav-slot{width:44px;height:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.codex-back{border:none;background:transparent;color:#c4c7c9;font-size:24px;font-weight:700;cursor:pointer;line-height:1;}
+.codex-title-wrap{min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.codex-kicker{font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#909fb4;}
+.codex-title{font-family:'Inter',sans-serif;font-size:18px;font-weight:900;letter-spacing:-.02em;text-transform:uppercase;color:#dee5ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
+.codex-bottomnav{position:fixed;left:0;right:0;bottom:0;height:72px;display:flex;align-items:center;justify-content:space-around;background:#060e20;border-top:1px solid rgba(43,70,128,.35);z-index:999;}
+.codex-bottomnav button{flex:1;height:100%;border:none;background:transparent;color:#5b74b1;font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;}
+.codex-bottomnav button.active{background:#002867;color:#dee5ff;}
+.codex-bottomnav .material-symbols-outlined{font-size:22px;}
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-surface-bright selection:text-white"><header class="codex-topbar"><div class="codex-topbar-inner"><div class="codex-nav-slot"><button class="codex-back" onclick="window.location.href='4a0317b4291b4e64938c469f15a13e00.html'">‹</button></div><div class="codex-title-wrap"><div class="codex-kicker">Screen 05</div><div class="codex-title">Results Summary</div></div><div class="codex-nav-slot"></div></div></header>
+<!-- TopAppBar -->
+
+<main class="pt-24 pb-20 px-6 max-w-7xl mx-auto min-h-screen">
+<!-- Hero Summary Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-1 mb-12">
+<div class="lg:col-span-8 bg-surface-container-low p-8 flex flex-col justify-between">
+<div>
+<span class="font-label text-xs tracking-[0.2em] text-outline mb-4 block uppercase">Audit Outcome // Sector 05</span>
+<h1 class="font-headline text-5xl font-black tracking-tighter text-on-surface mb-6 uppercase">
+                        Status: <span class="text-tertiary">Vulnerable</span>
+</h1>
+<p class="text-on-surface-variant text-xl leading-relaxed max-w-2xl">
+                        You have <span class="text-primary font-bold">4 months of runway</span>, but your search materials are stale. The sovereign ledger indicates structural weakness in your pivot capacity.
+                    </p>
+</div>
+<div class="mt-12">
+<button class="bg-primary text-on-primary font-label font-bold text-sm tracking-widest px-8 py-4 uppercase hover:bg-primary-dim transition-none flex items-center gap-4" onclick="window.location.href='431583048e944e5d8b3921e03b9f2546.html'" style="cursor:pointer">
+                        View Ranked Actions
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-4 bg-surface-bright p-8 flex flex-col justify-center items-center text-center">
+<span class="font-label text-xs tracking-[0.2em] text-on-primary-container mb-2 uppercase">Composite Score</span>
+<div class="text-[8rem] font-black tracking-tighter leading-none text-primary-fixed">B-</div>
+<div class="w-full h-1 bg-surface-container-highest mt-4">
+<div class="w-[65%] h-full bg-tertiary"></div>
+</div>
+<span class="font-label text-[10px] mt-4 text-on-primary-container tracking-widest uppercase">Threshold 82.0 // Current 64.5</span>
+</div>
+</div>
+<!-- Metric Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-1 mb-12">
+<div class="bg-surface-container-low p-8 border-l-4 border-secondary">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label text-xs tracking-widest text-outline uppercase">Runway Grade</span>
+<span class="font-label text-xl text-secondary">B-</span>
+</div>
+<div class="text-3xl font-headline font-bold text-on-surface mb-2">124 Days</div>
+<p class="text-sm text-on-surface-variant font-label uppercase">Liquidity Profile: Moderate</p>
+</div>
+<div class="bg-surface-container-low p-8 border-l-4 border-tertiary">
+<div class="flex justify-between items-start mb-6">
+<span class="font-label text-xs tracking-widest text-outline uppercase">Search Readiness</span>
+<span class="font-label text-xl text-tertiary">C+</span>
+</div>
+<div class="text-3xl font-headline font-bold text-on-surface mb-2">High Friction</div>
+<p class="text-sm text-on-surface-variant font-label uppercase">Material Freshness: Critical</p>
+</div>
+</div>
+<!-- Vulnerability Bento -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-1">
+<div class="lg:col-span-3 mb-4">
+<h2 class="font-label text-xs tracking-[0.3em] text-outline uppercase">Top Vulnerability Vectors</h2>
+</div>
+<!-- Reason 1 -->
+<div class="bg-surface-container-lowest p-6 group">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-10 h-10 bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="history">history</span>
+</div>
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Risk 01</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-3 uppercase">Stale Resume</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                    CV has not been indexed or verified in 430 days. Market compatibility score has decayed by 24%.
+                </p>
+<div class="h-[2px] bg-surface-container-highest w-full">
+<div class="bg-tertiary w-full h-full"></div>
+</div>
+</div>
+<!-- Reason 2 -->
+<div class="bg-surface-container-lowest p-6">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-10 h-10 bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="trending_down">trending_down</span>
+</div>
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Risk 02</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-3 uppercase">Market Volatility</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                    Sector-specific hiring freezes identified in 12 major nodes. Pivot paths are narrowing.
+                </p>
+<div class="h-[2px] bg-surface-container-highest w-full">
+<div class="bg-tertiary w-3/4 h-full"></div>
+</div>
+</div>
+<!-- Reason 3 -->
+<div class="bg-surface-container-lowest p-6">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-10 h-10 bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary" data-icon="account_balance">account_balance</span>
+</div>
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Risk 03</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-on-surface mb-3 uppercase">Concentration Risk</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                    90% of emergency capital tied to a single asset class. Liquidation speed is insufficient.
+                </p>
+<div class="h-[2px] bg-surface-container-highest w-full">
+<div class="bg-tertiary w-1/2 h-full"></div>
+</div>
+</div>
+</div>
+<!-- Decorative Branding Element -->
+<div class="mt-24 border-t border-outline-variant pt-8 flex justify-between items-end opacity-40">
+<div class="max-w-xs">
+<p class="font-label text-[10px] tracking-tighter uppercase leading-tight">
+                    This audit is a point-in-time calculation. Market conditions fluctuate. Verify all ledger entries before execution.
+                </p>
+</div>
+<div class="text-right">
+<span class="font-headline font-black text-2xl tracking-tighter uppercase">V.3.0.12-ALPHA</span>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="codex-bottomnav"><button class="" onclick="window.location.href='3c130b3d570842c6b585d4791d0b24eb.html'"><span class="material-symbols-outlined">home_app_logo</span><span>Home</span></button><button class="" onclick="window.location.href='ae86d515c77044cd9218fafece47e473.html'"><span class="material-symbols-outlined">analytics</span><span>Audit</span></button><button class="active" onclick="window.location.href='431583048e944e5d8b3921e03b9f2546.html'" style="cursor:pointer"><span class="material-symbols-outlined">bolt</span><span>Queue</span></button><button class="" onclick="window.location.href='b65a14c2ef3149b88d44f501408558a5.html'" style="cursor:pointer"><span class="material-symbols-outlined">menu_book</span><span>Method</span></button></nav></body></html>

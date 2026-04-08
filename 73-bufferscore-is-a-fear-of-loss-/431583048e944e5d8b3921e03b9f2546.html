@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#324052",
+                    "surface-dim": "#060e20",
+                    "surface-bright": "#002867",
+                    "on-surface": "#dee5ff",
+                    "error-container": "#7f2927",
+                    "on-primary-fixed": "#3c4042",
+                    "secondary-container": "#2e3c4e",
+                    "error": "#ee7d77",
+                    "inverse-surface": "#faf8ff",
+                    "surface-container-low": "#06122d",
+                    "outline": "#5b74b1",
+                    "inverse-primary": "#5c5f61",
+                    "on-secondary-container": "#b1c0d6",
+                    "on-surface-variant": "#91aaeb",
+                    "tertiary-fixed-dim": "#e72f2d",
+                    "secondary-dim": "#909fb4",
+                    "error-dim": "#bb5551",
+                    "on-tertiary-container": "#000000",
+                    "surface-container-high": "#031d4b",
+                    "surface-container": "#05183c",
+                    "on-secondary": "#122131",
+                    "on-tertiary": "#4a0003",
+                    "on-secondary-fixed-variant": "#4e5d6f",
+                    "surface-container-highest": "#00225a",
+                    "on-primary-fixed-variant": "#595c5e",
+                    "surface-container-lowest": "#000000",
+                    "on-tertiary-fixed": "#000000",
+                    "tertiary": "#ff7165",
+                    "secondary": "#909fb4",
+                    "on-background": "#dee5ff",
+                    "tertiary-dim": "#e02928",
+                    "on-error": "#490106",
+                    "inverse-on-surface": "#4d556b",
+                    "on-tertiary-fixed-variant": "#220001",
+                    "secondary-fixed-dim": "#c6d6ec",
+                    "primary-fixed": "#e0e3e5",
+                    "surface": "#060e20",
+                    "surface-tint": "#c4c7c9",
+                    "on-error-container": "#ff9993",
+                    "background": "#060e20",
+                    "surface-variant": "#00225a",
+                    "on-primary-container": "#ced1d2",
+                    "on-primary": "#3d4142",
+                    "tertiary-container": "#fa3d38",
+                    "outline-variant": "#2b4680",
+                    "primary": "#c4c7c9",
+                    "primary-container": "#444749",
+                    "primary-fixed-dim": "#d2d5d7",
+                    "primary-dim": "#b6b9bb",
+                    "secondary-fixed": "#d4e4fa",
+                    "tertiary-fixed": "#fa3d38"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #060e20;
+            color: #dee5ff;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="codex-preview-nav">
+body{padding-top:72px !important;padding-bottom:88px !important;}
+.codex-topbar{position:fixed;top:0;left:0;right:0;z-index:999;background:#060e20;border-bottom:1px solid rgba(43,70,128,.35);}
+.codex-topbar-inner{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;background:#06122d;}
+.codex-nav-slot{width:44px;height:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.codex-back{border:none;background:transparent;color:#c4c7c9;font-size:24px;font-weight:700;cursor:pointer;line-height:1;}
+.codex-title-wrap{min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.codex-kicker{font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#909fb4;}
+.codex-title{font-family:'Inter',sans-serif;font-size:18px;font-weight:900;letter-spacing:-.02em;text-transform:uppercase;color:#dee5ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
+.codex-bottomnav{position:fixed;left:0;right:0;bottom:0;height:72px;display:flex;align-items:center;justify-content:space-around;background:#060e20;border-top:1px solid rgba(43,70,128,.35);z-index:999;}
+.codex-bottomnav button{flex:1;height:100%;border:none;background:transparent;color:#5b74b1;font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;}
+.codex-bottomnav button.active{background:#002867;color:#dee5ff;}
+.codex-bottomnav .material-symbols-outlined{font-size:22px;}
+</style>
+</head>
+<body class="font-body selection:bg-surface-bright selection:text-white overflow-x-hidden"><header class="codex-topbar"><div class="codex-topbar-inner"><div class="codex-nav-slot"><button class="codex-back" onclick="window.location.href='8f48b3b38b08419c91fb8d41da2639aa.html'">‹</button></div><div class="codex-title-wrap"><div class="codex-kicker">Screen 06</div><div class="codex-title">Action Queue</div></div><div class="codex-nav-slot"></div></div></header>
+<!-- TopAppBar -->
+
+<main class="max-w-5xl mx-auto px-6 pt-8 pb-32">
+<!-- Header Section -->
+<div class="mb-12 border-l-4 border-primary pl-6">
+<p class="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-2">Protocol: Active Response</p>
+<h2 class="text-4xl md:text-5xl font-black tracking-tight text-on-surface uppercase mb-4">Ranked Action Queue</h2>
+<p class="text-on-surface-variant max-w-2xl font-body leading-relaxed">
+                Tactical interventions prioritized by systemic impact and execution velocity. Implement sequentially to optimize your Buffer Score.
+            </p>
+</div>
+<!-- Metric Overview Strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1 mb-12 bg-outline-variant/20">
+<div class="bg-surface-container-low p-6 flex flex-col gap-1">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Active Tasks</span>
+<span class="text-3xl font-black text-primary">08</span>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col gap-1">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Total Impact</span>
+<span class="text-3xl font-black text-tertiary">+142 PTS</span>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col gap-1">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Queue Status</span>
+<span class="text-3xl font-black text-secondary uppercase">Critical</span>
+</div>
+</div>
+<!-- Action Queue -->
+<div class="flex flex-col gap-4">
+<!-- Action 01 -->
+<div class="group relative bg-surface-container-low hover:bg-surface-container transition-none border-none overflow-hidden cursor-pointer" onclick="window.location.href='3f54bb6dc41b40559dc5368dd689f9ab.html'" style="cursor:pointer">
+<!-- Status Ribbon -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary"></div>
+<div class="p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-start gap-6">
+<span class="font-label text-2xl font-bold text-tertiary/40 mt-1">01</span>
+<div>
+<h3 class="text-xl font-bold text-on-surface mb-1 group-hover:text-primary transition-none">UPDATE RESUME</h3>
+<p class="text-sm text-on-surface-variant font-body mb-4">Optimization of professional profile to meet current sector algorithmic demands.</p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Impact</span>
+<span class="bg-tertiary text-on-tertiary px-2 py-0.5 text-[10px] font-bold font-label uppercase">High</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Est. Time</span>
+<span class="text-on-surface text-[10px] font-bold font-label">120 MIN</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 self-end md:self-center">
+<span class="material-symbols-outlined text-outline group-hover:text-primary" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+<!-- Expanded Content (Simulated logic/design) -->
+<div class="hidden md:block border-t border-outline-variant/10 bg-surface-container-lowest/50 p-6 mx-8 mb-8">
+<p class="font-label text-[10px] tracking-widest text-secondary uppercase mb-3">Rationale</p>
+<p class="text-sm italic text-on-surface-variant border-l border-outline-variant pl-4 leading-relaxed">
+                        Failure to align technical keywords with active market scrapers represents a 42% risk factor in time-to-hire metrics during unexpected displacement events.
+                    </p>
+</div>
+</div>
+<!-- Action 02 -->
+<div class="group relative bg-surface-container-low hover:bg-surface-container transition-none border-none overflow-hidden cursor-pointer" onclick="window.location.href='3f54bb6dc41b40559dc5368dd689f9ab.html'" style="cursor:pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary"></div>
+<div class="p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-start gap-6">
+<span class="font-label text-2xl font-bold text-tertiary/40 mt-1">02</span>
+<div>
+<h3 class="text-xl font-bold text-on-surface mb-1 group-hover:text-primary transition-none">BUILD TARGET LIST</h3>
+<p class="text-sm text-on-surface-variant font-body mb-4">Identification of 25 resilient entities within the primary and secondary industrial domains.</p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Impact</span>
+<span class="bg-tertiary text-on-tertiary px-2 py-0.5 text-[10px] font-bold font-label uppercase">High</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Est. Time</span>
+<span class="text-on-surface text-[10px] font-bold font-label">180 MIN</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 self-end md:self-center">
+<span class="material-symbols-outlined text-outline group-hover:text-primary" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Action 03 -->
+<div class="group relative bg-surface-container-low hover:bg-surface-container transition-none border-none overflow-hidden cursor-pointer" onclick="window.location.href='3f54bb6dc41b40559dc5368dd689f9ab.html'" style="cursor:pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary"></div>
+<div class="p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-start gap-6">
+<span class="font-label text-2xl font-bold text-secondary/40 mt-1">03</span>
+<div>
+<h3 class="text-xl font-bold text-on-surface mb-1 group-hover:text-primary transition-none">SLASH DISCRETIONARY SPEND</h3>
+<p class="text-sm text-on-surface-variant font-body mb-4">Immediate suspension of non-essential subscription tiers and luxury overheads.</p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Impact</span>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 text-[10px] font-bold font-label uppercase">Med</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Est. Time</span>
+<span class="text-on-surface text-[10px] font-bold font-label">45 MIN</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 self-end md:self-center">
+<span class="material-symbols-outlined text-outline group-hover:text-primary" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Action 04 -->
+<div class="group relative bg-surface-container-low hover:bg-surface-container transition-none border-none overflow-hidden cursor-pointer" onclick="window.location.href='3f54bb6dc41b40559dc5368dd689f9ab.html'" style="cursor:pointer">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary"></div>
+<div class="p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-start gap-6">
+<span class="font-label text-2xl font-bold text-secondary/40 mt-1">04</span>
+<div>
+<h3 class="text-xl font-bold text-on-surface mb-1 group-hover:text-primary transition-none">SECURE LIQUIDITY RESERVE</h3>
+<p class="text-sm text-on-surface-variant font-body mb-4">Transfer of volatile assets to stable, short-term treasury-backed accounts.</p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Impact</span>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-0.5 text-[10px] font-bold font-label uppercase">Med</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label text-[10px] tracking-widest text-secondary uppercase">Est. Time</span>
+<span class="text-on-surface text-[10px] font-bold font-label">30 MIN</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 self-end md:self-center">
+<span class="material-symbols-outlined text-outline group-hover:text-primary" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- System Footer Note -->
+<div class="mt-16 p-8 bg-surface-container-high border-l-4 border-outline flex flex-col md:flex-row gap-8 items-start">
+<div class="bg-surface-dim p-4">
+<span class="material-symbols-outlined text-primary scale-125" data-icon="info">info</span>
+</div>
+<div>
+<h4 class="font-label text-sm tracking-widest text-on-surface uppercase mb-2">Protocol Note 006-A</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                    Queue order is calculated dynamically based on real-time market volatility and your current liquidity runway. Completion of Item 01 triggers an automatic score re-audit within 180 seconds of confirmation.
+                </p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+<!-- Decorative Elements -->
+<div class="fixed top-0 right-0 w-64 h-64 opacity-10 pointer-events-none overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-bl from-primary to-transparent blur-3xl"></div>
+</div>
+<div class="fixed bottom-32 left-8 hidden lg:block opacity-20 pointer-events-none">
+<div class="font-label text-[10px] tracking-[1em] uppercase vertical-text rotate-180" style="writing-mode: vertical-rl;">
+            SYSTEM_INTEGRITY_PROTOCOL_V3.0.0
+        </div>
+</div>
+<nav class="codex-bottomnav"><button class="" onclick="window.location.href='3c130b3d570842c6b585d4791d0b24eb.html'"><span class="material-symbols-outlined">home_app_logo</span><span>Home</span></button><button class="" onclick="window.location.href='ae86d515c77044cd9218fafece47e473.html'"><span class="material-symbols-outlined">analytics</span><span>Audit</span></button><button class="active" onclick="window.location.href='431583048e944e5d8b3921e03b9f2546.html'" style="cursor:pointer"><span class="material-symbols-outlined">bolt</span><span>Queue</span></button><button class="" onclick="window.location.href='b65a14c2ef3149b88d44f501408558a5.html'" style="cursor:pointer"><span class="material-symbols-outlined">menu_book</span><span>Method</span></button></nav></body></html>

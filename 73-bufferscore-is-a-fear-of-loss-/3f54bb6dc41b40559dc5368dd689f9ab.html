@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space_Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#324052",
+                    "surface-dim": "#060e20",
+                    "surface-bright": "#002867",
+                    "on-surface": "#dee5ff",
+                    "error-container": "#7f2927",
+                    "on-primary-fixed": "#3c4042",
+                    "secondary-container": "#2e3c4e",
+                    "error": "#ee7d77",
+                    "inverse-surface": "#faf8ff",
+                    "surface-container-low": "#06122d",
+                    "outline": "#5b74b1",
+                    "inverse-primary": "#5c5f61",
+                    "on-secondary-container": "#b1c0d6",
+                    "on-surface-variant": "#91aaeb",
+                    "tertiary-fixed-dim": "#e72f2d",
+                    "secondary-dim": "#909fb4",
+                    "error-dim": "#bb5551",
+                    "on-tertiary-container": "#000000",
+                    "surface-container-high": "#031d4b",
+                    "surface-container": "#05183c",
+                    "on-secondary": "#122131",
+                    "on-tertiary": "#4a0003",
+                    "on-secondary-fixed-variant": "#4e5d6f",
+                    "surface-container-highest": "#00225a",
+                    "on-primary-fixed-variant": "#595c5e",
+                    "surface-container-lowest": "#000000",
+                    "on-tertiary-fixed": "#000000",
+                    "tertiary": "#ff7165",
+                    "secondary": "#909fb4",
+                    "on-background": "#dee5ff",
+                    "tertiary-dim": "#e02928",
+                    "on-error": "#490106",
+                    "inverse-on-surface": "#4d556b",
+                    "on-tertiary-fixed-variant": "#220001",
+                    "secondary-fixed-dim": "#c6d6ec",
+                    "primary-fixed": "#e0e3e5",
+                    "surface": "#060e20",
+                    "surface-tint": "#c4c7c9",
+                    "on-error-container": "#ff9993",
+                    "background": "#060e20",
+                    "surface-variant": "#00225a",
+                    "on-primary-container": "#ced1d2",
+                    "on-primary": "#3d4142",
+                    "tertiary-container": "#fa3d38",
+                    "outline-variant": "#2b4680",
+                    "primary": "#c4c7c9",
+                    "primary-container": "#444749",
+                    "primary-fixed-dim": "#d2d5d7",
+                    "primary-dim": "#b6b9bb",
+                    "secondary-fixed": "#d4e4fa",
+                    "tertiary-fixed": "#fa3d38"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #060e20;
+            color: #dee5ff;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="codex-preview-nav">
+body{padding-top:72px !important;padding-bottom:88px !important;}
+.codex-topbar{position:fixed;top:0;left:0;right:0;z-index:999;background:#060e20;border-bottom:1px solid rgba(43,70,128,.35);}
+.codex-topbar-inner{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;background:#06122d;}
+.codex-nav-slot{width:44px;height:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.codex-back{border:none;background:transparent;color:#c4c7c9;font-size:24px;font-weight:700;cursor:pointer;line-height:1;}
+.codex-title-wrap{min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.codex-kicker{font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#909fb4;}
+.codex-title{font-family:'Inter',sans-serif;font-size:18px;font-weight:900;letter-spacing:-.02em;text-transform:uppercase;color:#dee5ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
+.codex-bottomnav{position:fixed;left:0;right:0;bottom:0;height:72px;display:flex;align-items:center;justify-content:space-around;background:#060e20;border-top:1px solid rgba(43,70,128,.35);z-index:999;}
+.codex-bottomnav button{flex:1;height:100%;border:none;background:transparent;color:#5b74b1;font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;}
+.codex-bottomnav button.active{background:#002867;color:#dee5ff;}
+.codex-bottomnav .material-symbols-outlined{font-size:22px;}
+</style>
+</head>
+<body class="min-h-screen pb-24"><header class="codex-topbar"><div class="codex-topbar-inner"><div class="codex-nav-slot"><button class="codex-back" onclick="window.location.href='431583048e944e5d8b3921e03b9f2546.html'">‹</button></div><div class="codex-title-wrap"><div class="codex-kicker">Screen 07</div><div class="codex-title">Action Detail</div></div><div class="codex-nav-slot"></div></div></header>
+
+<main class="max-w-4xl mx-auto px-6 py-12 space-y-12">
+<section class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="w-1 h-12 bg-tertiary"></span>
+<div>
+<p class="font-label text-xs tracking-widest text-secondary-dim uppercase">ACTION PROTOCOL 07-A</p>
+<h1 class="text-4xl md:text-5xl font-black tracking-tight text-on-surface uppercase">Update Resume to V3 Standards</h1>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-0">
+<div class="md:col-span-2 bg-surface-container-low p-8 border-l-4 border-surface-bright">
+<h2 class="font-label text-sm font-bold tracking-widest text-primary mb-6 uppercase">SECTION 01: WHY IT MATTERS</h2>
+<div class="space-y-6">
+<p class="text-lg leading-relaxed text-on-surface-variant">
+                        Modern recruitment relies on <span class="text-on-surface font-bold">Applicant Tracking Systems (ATS)</span>. These autonomous filters scan for specific structural triggers and semantic keywords. If your resume fails the initial parsing logic, your profile is discarded before a human ever views it.
+                    </p>
+<div class="bg-surface-container-highest p-6 space-y-4">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="warning">warning</span>
+<p class="font-label text-xs text-on-surface uppercase leading-tight">CRITICAL FAILURE RISK: 84% OF LEGACY RESUMES ARE UNREADABLE BY V3 ATS PARSERS.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high p-8 flex flex-col justify-center items-center text-center">
+<p class="font-label text-[10px] tracking-[0.2em] text-secondary mb-2 uppercase">IMPACT MAGNITUDE</p>
+<div class="text-7xl font-black text-on-surface tracking-tighter">+42%</div>
+<p class="font-label text-xs text-primary-dim uppercase mt-2">VISIBILITY INCREASE</p>
+</div>
+</section>
+<section class="space-y-8">
+<h2 class="font-label text-sm font-bold tracking-widest text-primary uppercase flex items-center gap-3">
+<span class="w-8 h-[1px] bg-outline-variant"></span>
+                SECTION 02: WHAT "DONE" LOOKS LIKE
+                <span class="flex-grow h-[1px] bg-outline-variant"></span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest p-8 border-t border-outline-variant">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="picture_as_pdf">picture_as_pdf</span>
+<span class="font-label text-[10px] bg-surface-bright px-2 py-1 text-on-surface">MANDATORY</span>
+</div>
+<h3 class="font-bold text-xl text-on-surface mb-2">FILE FORMAT ARCHITECTURE</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Must be exported as a flattened PDF. No interactive elements, no complex tables, and no multi-column layouts that break linear parsing logic.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 border-t border-outline-variant">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="key">key</span>
+<span class="font-label text-[10px] bg-surface-bright px-2 py-1 text-on-surface">OPTIMIZED</span>
+</div>
+<h3 class="font-bold text-xl text-on-surface mb-2">KEYWORD SYNCHRONIZATION</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Alignment with job-specific technical stacks. 95% semantic match required for Top-Tier status in the Score-Grid.</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 flex flex-col md:flex-row items-center gap-8 border border-outline-variant/20">
+<div class="w-full md:w-1/3 aspect-[3/4] bg-surface-container-highest overflow-hidden relative group">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim to-transparent opacity-60"></div>
+<img alt="resume preview" class="w-full h-full object-cover mix-blend-luminosity" data-alt="Modern minimalist resume layout on a dark background with sharp grid lines and clean typography in a professional setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-zHm2XoZ7JpYpazaSfJ40g29QOORI-9au8OC_hGW8gab9jzbMEeHgKUSAJoN_Px6ywmbL-fozF6kJdm2aqS-fP925NDeOhzOOmURNLt85NdZSTnFI3stlibAwH2-hBTmx_rtDDKN8COwK7oE8V7QY6BcGqhMcGjZBEcLlRFIXvbZlUkgAxVW98bd1fQ6M398SH0R9Nh2ruY1Gi5UxoMHypE9V_KuBX6-RCc-5MhbtTjS2gQPkz9bURNJ-gLI5K0upsqaoXnB5ZhCH"/>
+<div class="absolute bottom-4 left-4 font-label text-[10px] text-white/50 uppercase">V3_TEMPLATE_PREVIEW.RAW</div>
+</div>
+<div class="flex-grow space-y-4">
+<h4 class="font-bold text-on-surface uppercase tracking-tight">Technical Specification Checklist:</h4>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm font-label text-secondary-dim">
+<span class="material-symbols-outlined text-xs" data-icon="check_box" style="font-variation-settings: 'FILL' 1;">check_box</span>
+                            STANDARD SYSTEM FONTS ONLY (INTER, ROBOTO, COLIBRI)
+                        </li>
+<li class="flex items-center gap-3 text-sm font-label text-secondary-dim">
+<span class="material-symbols-outlined text-xs" data-icon="check_box" style="font-variation-settings: 'FILL' 1;">check_box</span>
+                            NO GRAPHICS OR HEADSHOTS
+                        </li>
+<li class="flex items-center gap-3 text-sm font-label text-secondary-dim">
+<span class="material-symbols-outlined text-xs" data-icon="check_box" style="font-variation-settings: 'FILL' 1;">check_box</span>
+                            SINGLE COLUMN DOCUMENT FLOW
+                        </li>
+<li class="flex items-center gap-3 text-sm font-label text-secondary-dim">
+<span class="material-symbols-outlined text-xs" data-icon="check_box" style="font-variation-settings: 'FILL' 1;">check_box</span>
+                            CHRONOLOGICAL WORK HISTORY ONLY
+                        </li>
+</ul>
+</div>
+</div>
+</section>
+<section class="flex flex-col md:flex-row gap-4 pt-12 border-t border-outline-variant/30">
+<button class="flex-1 bg-primary text-on-primary font-label font-bold py-6 px-8 flex justify-between items-center group transition-none hover:bg-primary-dim">
+<span>MARK AS COMPLETE</span>
+<span class="material-symbols-outlined transform group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<a class="flex-1 border border-outline text-on-surface font-label font-bold py-6 px-8 flex justify-between items-center hover:bg-surface-container-high transition-none" href="431583048e944e5d8b3921e03b9f2546.html" onclick="window.location.href='431583048e944e5d8b3921e03b9f2546.html'" style="cursor:pointer">
+<span>RETURN TO QUEUE</span>
+<span class="material-symbols-outlined" data-icon="list">list</span>
+</a>
+</section>
+</main>
+
+<nav class="codex-bottomnav"><button class="" onclick="window.location.href='3c130b3d570842c6b585d4791d0b24eb.html'"><span class="material-symbols-outlined">home_app_logo</span><span>Home</span></button><button class="" onclick="window.location.href='ae86d515c77044cd9218fafece47e473.html'"><span class="material-symbols-outlined">analytics</span><span>Audit</span></button><button class="active" onclick="window.location.href='431583048e944e5d8b3921e03b9f2546.html'" style="cursor:pointer"><span class="material-symbols-outlined">bolt</span><span>Queue</span></button><button class="" onclick="window.location.href='b65a14c2ef3149b88d44f501408558a5.html'" style="cursor:pointer"><span class="material-symbols-outlined">menu_book</span><span>Method</span></button></nav></body></html>

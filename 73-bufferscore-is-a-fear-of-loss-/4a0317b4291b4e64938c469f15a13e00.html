@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=390, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space_Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#324052",
+                    "surface-dim": "#060e20",
+                    "surface-bright": "#002867",
+                    "on-surface": "#dee5ff",
+                    "error-container": "#7f2927",
+                    "on-primary-fixed": "#3c4042",
+                    "secondary-container": "#2e3c4e",
+                    "error": "#ee7d77",
+                    "inverse-surface": "#faf8ff",
+                    "surface-container-low": "#06122d",
+                    "outline": "#5b74b1",
+                    "inverse-primary": "#5c5f61",
+                    "on-secondary-container": "#b1c0d6",
+                    "on-surface-variant": "#91aaeb",
+                    "tertiary-fixed-dim": "#e72f2d",
+                    "secondary-dim": "#909fb4",
+                    "error-dim": "#bb5551",
+                    "on-tertiary-container": "#000000",
+                    "surface-container-high": "#031d4b",
+                    "surface-container": "#05183c",
+                    "on-secondary": "#122131",
+                    "on-tertiary": "#4a0003",
+                    "on-secondary-fixed-variant": "#4e5d6f",
+                    "surface-container-highest": "#00225a",
+                    "on-primary-fixed-variant": "#595c5e",
+                    "surface-container-lowest": "#000000",
+                    "on-tertiary-fixed": "#000000",
+                    "tertiary": "#ff7165",
+                    "secondary": "#909fb4",
+                    "on-background": "#dee5ff",
+                    "tertiary-dim": "#e02928",
+                    "on-error": "#490106",
+                    "inverse-on-surface": "#4d556b",
+                    "on-tertiary-fixed-variant": "#220001",
+                    "secondary-fixed-dim": "#c6d6ec",
+                    "primary-fixed": "#e0e3e5",
+                    "surface": "#060e20",
+                    "surface-tint": "#c4c7c9",
+                    "on-error-container": "#ff9993",
+                    "background": "#060e20",
+                    "surface-variant": "#00225a",
+                    "on-primary-container": "#ced1d2",
+                    "on-primary": "#3d4142",
+                    "tertiary-container": "#fa3d38",
+                    "outline-variant": "#2b4680",
+                    "primary": "#c4c7c9",
+                    "primary-container": "#444749",
+                    "primary-fixed-dim": "#d2d5d7",
+                    "primary-dim": "#b6b9bb",
+                    "secondary-fixed": "#d4e4fa",
+                    "tertiary-fixed": "#fa3d38"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Space Grotesk"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .mechanical-hover:hover {
+            background-color: #002867;
+            transition: 0ms;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<style id="codex-preview-nav">
+body{padding-top:72px !important;padding-bottom:88px !important;}
+.codex-topbar{position:fixed;top:0;left:0;right:0;z-index:999;background:#060e20;border-bottom:1px solid rgba(43,70,128,.35);}
+.codex-topbar-inner{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;gap:12px;background:#06122d;}
+.codex-nav-slot{width:44px;height:44px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.codex-back{border:none;background:transparent;color:#c4c7c9;font-size:24px;font-weight:700;cursor:pointer;line-height:1;}
+.codex-title-wrap{min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.codex-kicker{font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#909fb4;}
+.codex-title{font-family:'Inter',sans-serif;font-size:18px;font-weight:900;letter-spacing:-.02em;text-transform:uppercase;color:#dee5ff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
+.codex-bottomnav{position:fixed;left:0;right:0;bottom:0;height:72px;display:flex;align-items:center;justify-content:space-around;background:#060e20;border-top:1px solid rgba(43,70,128,.35);z-index:999;}
+.codex-bottomnav button{flex:1;height:100%;border:none;background:transparent;color:#5b74b1;font-family:'Space Grotesk',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;}
+.codex-bottomnav button.active{background:#002867;color:#dee5ff;}
+.codex-bottomnav .material-symbols-outlined{font-size:22px;}
+</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-surface-bright"><header class="codex-topbar"><div class="codex-topbar-inner"><div class="codex-nav-slot"><button class="codex-back" onclick="window.location.href='9292031f5174423ba3ca46d9e5962644.html'">‹</button></div><div class="codex-title-wrap"><div class="codex-kicker">Screen 04</div><div class="codex-title">Save Result</div></div><div class="codex-nav-slot"></div></div></header>
+<!-- TopAppBar -->
+
+<main class="min-h-screen pt-8 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Audit Progress Track -->
+<div class="flex items-center gap-1 mb-12">
+<div class="h-1 flex-1 bg-surface-bright"></div>
+<div class="h-1 flex-1 bg-surface-bright"></div>
+<div class="h-1 flex-1 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Left: Strategic Summary -->
+<div class="md:col-span-7">
+<h1 class="text-4xl md:text-5xl font-black tracking-tighter text-on-surface mb-6 uppercase leading-[0.9]">
+                    Finalize <br/>Data Ledger.
+                </h1>
+<p class="text-on-surface-variant font-body text-lg mb-10 max-w-prose">
+                    You have reached the final layer of the BufferScore protocol. We do not store persistent identities. Provide a destination for your audit results below.
+                </p>
+<!-- Information Block -->
+<div class="bg-surface-container-low p-8 mb-8 relative">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-outline"></div>
+<div class="flex flex-col gap-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<div>
+<h4 class="font-label text-xs tracking-widest uppercase text-secondary-dim mb-1">SOVEREIGN PRIVACY</h4>
+<p class="text-sm font-body leading-relaxed">Encryption is applied locally. Your email is used only for result delivery and a singular 14-day recheck alert.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">history</span>
+<div>
+<h4 class="font-label text-xs tracking-widest uppercase text-secondary-dim mb-1">NON-RECURRING</h4>
+<p class="text-sm font-body leading-relaxed">This is a one-time surgical audit. Returning is optional; your data path is cleared after 24 hours of inactivity.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Interactive Form Well -->
+<div class="md:col-span-5">
+<div class="bg-surface-container-high p-1 border border-outline-variant/15">
+<div class="bg-surface p-8">
+<h3 class="font-label text-xs tracking-[0.3em] uppercase text-primary mb-8">SECURE ENDPOINT</h3>
+<div class="space-y-10">
+<!-- Email Input -->
+<div class="group">
+<label class="block font-label text-[10px] tracking-widest uppercase text-[#444749] mb-2">EMAIL DESTINATION</label>
+<input class="w-full bg-transparent border-none border-b border-outline-variant py-3 px-0 text-primary placeholder:text-[#444749] focus:ring-0 focus:border-primary transition-all font-label text-lg" placeholder="USER@PROTOCOL.SYS" type="email"/>
+</div>
+<!-- Checkbox Reminder -->
+<div class="flex items-start gap-4 cursor-pointer group">
+<div class="relative flex items-center justify-center mt-1">
+<input class="peer appearance-none w-5 h-5 border border-outline-variant bg-transparent checked:bg-primary checked:border-primary focus:ring-0 transition-none" type="checkbox"/>
+<span class="material-symbols-outlined absolute text-on-primary text-sm opacity-0 peer-checked:opacity-100 pointer-events-none">check</span>
+</div>
+<div>
+<label class="font-label text-xs tracking-wider uppercase cursor-pointer text-on-surface">14-Day Recheck Protocol</label>
+<p class="text-[11px] text-[#444749] leading-tight mt-1">Single automated alert to verify security status after 336 hours. No marketing.</p>
+</div>
+</div>
+<!-- Execution Area -->
+<div class="pt-4">
+<button class="w-full bg-primary text-on-primary font-label font-bold py-5 text-sm tracking-[0.2em] uppercase mechanical-hover flex items-center justify-center gap-3" onclick="window.location.href='8f48b3b38b08419c91fb8d41da2639aa.html'" style="cursor:pointer">
+                                    EXECUTE FINAL AUDIT
+                                    <span class="material-symbols-outlined text-sm">bolt</span>
+</button>
+<div class="mt-6 flex justify-center">
+<p class="text-[10px] font-label tracking-widest text-[#444749] uppercase flex items-center gap-2">
+<span class="material-symbols-outlined text-[12px]">lock</span>
+                                        TLS 1.3 / AES-256 ACTIVE
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Data Block -->
+<div class="mt-8 grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4">
+<div class="font-label text-[10px] text-secondary tracking-widest uppercase mb-1">LATENCY</div>
+<div class="text-xl font-bold tracking-tighter">0.04 MS</div>
+</div>
+<div class="bg-surface-container-low p-4">
+<div class="font-label text-[10px] text-secondary tracking-widest uppercase mb-1">NODES</div>
+<div class="text-xl font-bold tracking-tighter">48 ACTIVE</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Anchor: Audit Engine Render -->
+<div class="mt-20 relative w-full h-[300px] overflow-hidden grayscale opacity-40">
+<img alt="Digital infrastructure" class="w-full h-full object-cover" data-alt="abstract close-up of server hardware with blinking lights and cooling fans in a dark data center, tactical tech aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoDRGTKc3sWwuuacbOZXuv57liE-qvhSyX1_eEeSmjJmxC5Kc2tcpg3geHVC81OazsPtmBUlQ5UT6W1iL1MR-9NNX8dJqGjhX1A7ElFtKClA7doV5SZmNxnvmEYdoMIlH7OzB9nYj1_4kT4GjnXFrd4iQVtyR1e-Tiqrhg-sQ8FrCr63ilMyQ7hkIaLDL1nQfvOM8lsYxaCx7FQ-VrOWofFAE5Gar1H0SHhdYYbQQBCLFOyAqOpCWTxwP3HdhdvlrPVR1lTzlpt0r7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background"></div>
+</div>
+</main>
+<!-- BottomNavBar -->
+
+<nav class="codex-bottomnav"><button class="" onclick="window.location.href='3c130b3d570842c6b585d4791d0b24eb.html'"><span class="material-symbols-outlined">home_app_logo</span><span>Home</span></button><button class="active" onclick="window.location.href='ae86d515c77044cd9218fafece47e473.html'"><span class="material-symbols-outlined">analytics</span><span>Audit</span></button><button class="" onclick="window.location.href='431583048e944e5d8b3921e03b9f2546.html'" style="cursor:pointer"><span class="material-symbols-outlined">bolt</span><span>Queue</span></button><button class="" onclick="window.location.href='b65a14c2ef3149b88d44f501408558a5.html'" style="cursor:pointer"><span class="material-symbols-outlined">menu_book</span><span>Method</span></button></nav></body></html>
