@@ -1,0 +1,8 @@
+# Idea #69: QuietDot is a fear-of-loss app that copies the Locket Widget model but applies it to aging-parent anxiety instead of friend photo sharing. An older parent taps one giant 'I'm okay' button each morning, and the adult child sees that status directly on a home-screen widget without opening the app. If the check-in is missed, the widget shifts from green to amber to red, then starts an escalation flow with a call prompt and backup contact. The reveal is immediate and screen-recordable: your home screen changes from 'Mom checked in at 7:14 AM' to 'No check-in yet today,' so the app sells reassurance first and panic second. The loop is simple: check in, see the streak stay calm, miss a day, feel the tension instantly, and keep coming back because relief itself becomes the habit.
+
+## Version: v1 (Original)
+**Date:** 2026-04-08 07:28
+**Status:** submitted
+
+## Description
+QuietDot is a fear-of-loss app that copies the Locket Widget model but applies it to aging-parent anxiety instead of friend photo sharing. An older parent taps one giant 'I'm okay' button each morning, and the adult child sees that status directly on a home-screen widget without opening the app. If the check-in is missed, the widget shifts from green to amber to red, then starts an escalation flow with a call prompt and backup contact. The reveal is immediate and screen-recordable: your home screen changes from 'Mom checked in at 7:14 AM' to 'No check-in yet today,' so the app sells reassurance first and panic second. The loop is simple: check in, see the streak stay calm, miss a day, feel the tension instantly, and keep coming back because relief itself becomes the habit.
