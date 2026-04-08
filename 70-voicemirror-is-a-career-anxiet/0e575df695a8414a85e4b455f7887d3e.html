@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+
+<title>VoiceMirror - Session History</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#e1e9ee",
+                        "secondary-fixed": "#cbe7f5",
+                        "tertiary": "#4b626e",
+                        "tertiary-fixed": "#cde6f4",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#d9e4ea",
+                        "primary-fixed-dim": "#c4d6eb",
+                        "surface-dim": "#cfdce3",
+                        "on-secondary-fixed-variant": "#455f6b",
+                        "surface-tint": "#4e6072",
+                        "on-secondary-container": "#3c5561",
+                        "background": "#f8f9fb",
+                        "primary-fixed": "#d2e5fa",
+                        "error": "#9f403d",
+                        "on-primary-container": "#425465",
+                        "tertiary-dim": "#3f5661",
+                        "on-tertiary-fixed-variant": "#475f6a",
+                        "tertiary-fixed-dim": "#bfd8e5",
+                        "on-tertiary-fixed": "#2b424d",
+                        "error-container": "#fe8983",
+                        "on-tertiary-container": "#3e5560",
+                        "surface-container": "#e8eff3",
+                        "primary-dim": "#425465",
+                        "on-surface-variant": "#566166",
+                        "on-tertiary": "#f2faff",
+                        "secondary-dim": "#3d5762",
+                        "inverse-surface": "#0b0f10",
+                        "inverse-primary": "#d4e7fd",
+                        "secondary-fixed-dim": "#bdd9e6",
+                        "surface-container-highest": "#d9e4ea",
+                        "secondary-container": "#cbe7f5",
+                        "on-surface": "#2a3439",
+                        "tertiary-container": "#cde6f4",
+                        "surface-bright": "#f8f9fb",
+                        "on-primary-fixed-variant": "#4b5d6f",
+                        "primary": "#4e6072",
+                        "on-primary": "#f4f8ff",
+                        "on-error-container": "#752121",
+                        "primary-container": "#d2e5fa",
+                        "outline": "#717c82",
+                        "on-error": "#fff7f6",
+                        "secondary": "#49636f",
+                        "on-secondary-fixed": "#29434e",
+                        "outline-variant": "#a9b4b9",
+                        "on-background": "#2a3439",
+                        "surface": "#f8f9fb",
+                        "error-dim": "#4e0309",
+                        "inverse-on-surface": "#9a9d9f",
+                        "surface-container-low": "#f0f4f7",
+                        "on-secondary": "#f2faff",
+                        "on-primary-fixed": "#2f4152"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-layering {
+            transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<meta content="width=390, initial-scale=1.0" name="viewport"/></head>
+<body class="bg-background text-on-background font-body antialiased">
+<!-- TopAppBar -->
+<header class="bg-slate-50 dark:bg-slate-950 fixed top-0 w-full z-40 border-b border-slate-200/50 dark:border-slate-800/50">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto" onclick="window.location.href='2da8a59e20e8447981a55a4605b8c1c8.html'">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300 cursor-pointer">VoiceMirror</span>
+<h1 class="text-xl font-bold tracking-tighter text-slate-800 dark:text-slate-100 font-headline">VoiceMirror</h1>
+</div>
+<div class="flex items-center gap-6" onclick="window.location.href='2da8a59e20e8447981a55a4605b8c1c8.html'">
+<nav class="hidden md:flex gap-8">
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-slate-900 transition-colors" href="#" onclick="window.location.href='2da8a59e20e8447981a55a4605b8c1c8.html'">Dashboard</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-slate-900 transition-colors" href="#" onclick="window.location.href='2da8a59e20e8447981a55a4605b8c1c8.html'">Story Bank</a>
+<a class="text-slate-900 dark:text-white font-semibold" href="#" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">History</a>
+</nav>
+<div class="w-8 h-8 rounded-full overflow-hidden bg-surface-container-high">
+<img alt="user_profile_avatar" class="w-full h-full object-cover" data-alt="Professional portrait of a man in a modern office setting with soft natural lighting and a confident expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvHn6EXlB_f45P6ig8sFLPCxx8nY4sqibwOs__BQ6Eo6xtI_tSrtLCIi-xlWPoszIV5L_dKXkTKCIqCrSyQ5mFWyQHEqxtESVPeQ9Ox4df0JyiY88JQW4pgzGfMvzo2EUrTog9sJx28SzJJv0hFDhr8h4S7IdD_Ax1alhj8s5Td9WF8HalcY5xauxdxC60APodzUWGdrmBTeWcO74xYbMOoy0XVKcDFJYyHgpiAaNudvF1JVjAeRSRnIf9thiY2ZnKhQq-usHjVlLw"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto min-h-screen">
+<!-- Editorial Header Section -->
+<section class="mb-16 grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<h2 class="font-headline font-extrabold text-5xl md:text-6xl text-primary tracking-tight mb-4">Past Sessions</h2>
+<p class="text-on-surface-variant text-lg max-w-xl">Review your journey through the Architectural Mentorship. Reflect on past recordings and track your STAR progress.</p>
+</div>
+<div class="md:col-span-4 flex flex-col items-start md:items-end gap-2">
+<span class="text-xs uppercase tracking-widest font-bold text-outline">Performance Index</span>
+<div class="flex items-baseline gap-2">
+<span class="text-4xl font-headline font-bold text-primary">84%</span>
+<span class="text-on-surface-variant text-sm font-medium">+3.2% vs last week</span>
+</div>
+</div>
+</section>
+<!-- Session Timeline -->
+<div class="relative" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<!-- Ghost Timeline Line -->
+<div class="absolute left-8 top-0 bottom-0 w-px bg-outline-variant opacity-20"></div>
+<div class="flex flex-col gap-12 relative z-10" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<!-- Session Item 1 (Today) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<div class="md:col-span-1 flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center border-4 border-background shadow-sm">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">today</span>
+</div>
+</div>
+<div class="md:col-span-11 pt-4" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<div class="mb-2 flex items-center gap-4">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Conflict Resolution Drill</h3>
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold uppercase tracking-wider">Active Drill</span>
+</div>
+<p class="text-on-surface-variant mb-6">Today, 2:45 PM • 12 mins recorded</p>
+<!-- Bento Grid for Session Details -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<!-- Linked Story Card -->
+<div class="lg:col-span-2 p-8 rounded-xl bg-surface-container-low border border-transparent hover:bg-surface-container-lowest transition-all duration-300 group" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<div class="flex justify-between items-start mb-6">
+<div>
+<p class="text-xs font-bold text-outline uppercase tracking-widest mb-1">Linked Story Card</p>
+<h4 class="text-xl font-bold text-on-surface group-hover:text-primary transition-colors">The Scaling Challenge 2023</h4>
+</div>
+<span class="material-symbols-outlined text-outline">database</span>
+</div>
+<div class="flex gap-2 mb-6">
+<span class="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant rounded text-[10px] font-bold">S</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant rounded text-[10px] font-bold">T</span>
+<span class="px-2 py-0.5 bg-primary-container text-on-primary-container rounded text-[10px] font-bold">A</span>
+<span class="px-2 py-0.5 bg-surface-container-highest text-on-surface-variant rounded text-[10px] font-bold">R</span>
+</div>
+<div class="flex justify-between items-center" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-bold text-sm flex items-center gap-2 hover:bg-primary-dim transition-all" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+                                        Resume Session
+                                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<div class="text-right">
+<p class="text-xs font-bold text-outline">CRITIQUE</p>
+<p class="text-sm font-medium text-on-surface-variant italic">"Action phase needs more detail..."</p>
+</div>
+</div>
+</div>
+<!-- Mini Reflection Glass -->
+<div class="p-6 rounded-xl bg-gradient-to-br from-primary-container to-secondary-container relative overflow-hidden flex flex-col justify-between">
+<div class="absolute inset-0 bg-white/10 opacity-30 pointer-events-none" style="background-image: linear-gradient(135deg, transparent 0%, transparent 45%, rgba(255,255,255,0.4) 50%, transparent 55%, transparent 100%);"></div>
+<div class="relative z-10">
+<p class="text-xs font-bold text-on-primary-container uppercase tracking-widest mb-2">Confidence Score</p>
+<div class="text-4xl font-headline font-extrabold text-on-primary-container">72%</div>
+</div>
+<div class="relative z-10 flex items-center gap-2 text-on-primary-container/80 text-sm">
+<span class="material-symbols-outlined text-sm">insights</span>
+<span>Improvement identified in 'Result' phase</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Session Item 2 (Yesterday) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start opacity-80" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<div class="md:col-span-1 flex flex-col items-center" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center border-4 border-background shadow-sm" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<span class="material-symbols-outlined text-outline">history</span>
+</div>
+</div>
+<div class="md:col-span-11 pt-4">
+<div class="mb-2 flex items-center gap-4">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Architectural Leadership</h3>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant rounded-full text-xs font-bold uppercase tracking-wider">Completed</span>
+</div>
+<p class="text-on-surface-variant mb-6">Yesterday, 10:15 AM • 24 mins recorded</p>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Detail Card -->
+<div class="lg:col-span-3 p-8 rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-all duration-300">
+<div class="flex flex-col md:flex-row justify-between gap-6">
+<div class="flex-1">
+<p class="text-xs font-bold text-outline uppercase tracking-widest mb-2">Summary Transcript Highlight</p>
+<p class="text-on-surface italic leading-relaxed">"...the primary architectural decision was to decouple the authentication layer, which allowed the team to move 3x faster in the subsequent sprint cycle..."</p>
+</div>
+<div class="flex md:flex-col justify-around md:justify-center items-center gap-4 border-l border-outline-variant/20 md:pl-8">
+<div class="text-center">
+<p class="text-[10px] font-bold text-outline uppercase mb-1">Clarity</p>
+<span class="text-lg font-bold text-primary">A-</span>
+</div>
+<div class="text-center">
+<p class="text-[10px] font-bold text-outline uppercase mb-1">Pacing</p>
+<span class="text-lg font-bold text-primary">B+</span>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Session Item 3 (Previous) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start opacity-60" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<div class="md:col-span-1 flex flex-col items-center" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center border-4 border-background shadow-sm" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<span class="material-symbols-outlined text-outline">history</span>
+</div>
+</div>
+<div class="md:col-span-11 pt-4" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<div class="mb-2 flex items-center gap-4">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Behavioral Interview: Mentorship</h3>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant rounded-full text-xs font-bold uppercase tracking-wider">Completed</span>
+</div>
+<p class="text-on-surface-variant mb-6">Oct 24, 2023 • 18 mins recorded</p>
+<div class="flex gap-4" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<div class="px-6 py-4 rounded-xl bg-surface-container-low text-sm font-medium text-on-surface-variant border-l-4 border-primary">
+                                Focused on "Empowering Junior Developers" story card.
+                            </div>
+<button class="text-primary font-bold text-sm flex items-center gap-2 hover:underline" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+                                View Full Report <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- NavigationDrawer (Desktop Side) - Hidden on Mobile, Visual Anchor for Large Screens -->
+<aside class="hidden xl:flex fixed left-0 top-0 h-full w-80 bg-slate-50 dark:bg-slate-950 flex-col p-6 z-50 border-r border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-3 mb-10">
+<div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white">mic</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-slate-900 dark:text-white leading-tight">Interview Prep</h4>
+<p class="text-[10px] text-slate-500 font-medium uppercase tracking-widest">The Architectural Mentorship</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2 flex-grow">
+<a class="flex items-center gap-4 px-4 py-3 text-slate-600 dark:text-slate-400 font-manrope text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-900 hover:pl-2 transition-all duration-200" href="#" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<span class="material-symbols-outlined text-lg">mic</span>
+                Practice Sessions
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-600 dark:text-slate-400 font-manrope text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-900 hover:pl-2 transition-all duration-200" href="#" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<span class="material-symbols-outlined text-lg">insights</span>
+                Performance Insights
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-600 dark:text-slate-400 font-manrope text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-900 hover:pl-2 transition-all duration-200" href="#" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'">
+<span class="material-symbols-outlined text-lg">lock</span>
+                Privacy Settings
+            </a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-600 dark:text-slate-400 font-manrope text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-900 hover:pl-2 transition-all duration-200" href="#">
+<span class="material-symbols-outlined text-lg">help</span>
+                Help Center
+            </a>
+</nav>
+<div class="pt-6 border-t border-slate-200 dark:border-slate-800">
+<div class="flex items-center justify-between text-[10px] text-slate-400 font-bold uppercase tracking-widest">
+<span>System Status</span>
+<span class="text-emerald-500">v1.0.4</span>
+</div>
+</div>
+</aside>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl flex justify-around items-center px-4 pb-6 pt-3 shadow-[0_-4px_20px_rgba(0,0,0,0.03)] border-t border-slate-200/50"><a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1.5" href="#" onclick="window.location.href='2da8a59e20e8447981a55a4605b8c1c8.html'"><span class="material-symbols-outlined">dashboard</span><span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Dashboard</span></a><a class="flex flex-col items-center justify-center text-slate-400 px-4 py-1.5" href="#" onclick="window.location.href='2da8a59e20e8447981a55a4605b8c1c8.html'"><span class="material-symbols-outlined">database</span><span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">Story Bank</span></a><a class="flex flex-col items-center justify-center text-slate-900 bg-slate-100 rounded-xl px-4 py-1.5" href="#" onclick="window.location.href='0e575df695a8414a85e4b455f7887d3e.html'"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">history</span><span class="font-inter text-[11px] font-medium tracking-wide uppercase mt-1">History</span></a></nav>
+</body></html>

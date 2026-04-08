@@ -298,5 +298,15 @@
     "folder": "69-quietdot-is-a-fear-of-loss-app",
     "startScreenId": "660ce529ea874219a6b225af9eaeb6cb",
     "status": "complete"
+  },
+  {
+    "num": 70,
+    "title": "VoiceMirror",
+    "sub": "Behavioral interview rehearsal with critique-first story drilling.",
+    "score": "6/10",
+    "deviceType": "MOBILE",
+    "folder": "70-voicemirror-is-a-career-anxiet",
+    "startScreenId": "2da8a59e20e8447981a55a4605b8c1c8",
+    "status": "complete"
   }
 ]
