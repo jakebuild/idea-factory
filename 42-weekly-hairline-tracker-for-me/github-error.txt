@@ -1,0 +1,4 @@
+git push origin main failed:
+To https://github.com/jakebuild/idea-factory
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at a399b4bf24805ec60d8a338d4e2c97a29d63b802 but expected 13ec4b001c013a6f9ea676e4c24abdac01612803)
+error: failed to push some refs to 'https://github.com/jakebuild/idea-factory'
