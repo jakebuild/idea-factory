@@ -5,7 +5,7 @@ What's Actually Good:
 - The screenshot upload constraint is smart for MVP because it avoids building device-level tracking on day 1.
 - The reveal moment is naturally shareable if the roast is genuinely sharp and visually punchy.
 Brutal Feedback:
-- The idea is selling fake precision. A weekly Screen Time screenshot usually does not contain enough structured detail to reliably infer "exact hour of day" behavior, let alone "during your designated focus hours." That is not a small gap. That is the core promise being built on missing data.
+- The idea is selling fake precision. A weekly Screen Time screenshot usually does not contain enough structured detail to reliably infer "exact hour of day" behavior, let alone "during your designated focus hours." That is not a small gap. That is the main product promise resting on data you do not actually have.
 - The product confuses novelty with retention. Getting roasted once is funny. Getting roasted every week is homework. Why does the user come back after day 1?
 - "WasteScore" sounds objective, but the scoring logic will be arbitrary unless you define a credible model. If the score feels made up, the whole app becomes a gimmick generator.
 - OCR on user screenshots is messy in the real world: cropped images, dark mode, different locales, notification overlays, partial screenshots, low-resolution uploads, and changed iOS layouts. You are building on brittle input, so your "instant reveal" will frequently fail exactly when the user is most ready to judge you.
@@ -17,6 +17,7 @@ Brutal Feedback:
 - Shareability is overstated. People say they want brutally honest accountability; most do not want to post evidence that they wasted 11 hours on Instagram.
 - This is not actually "RescueTime for iPhone." RescueTime works because the data is continuous, structured, and longitudinal. Your version is a periodic screenshot parser with attitude.
 - If the roast quality is soft, the app dies because the product is the writing. If the roast quality is too harsh, the app dies because users bounce. That tone line is narrower than the pitch admits.
+- The monetization story is fantasy layering. You do not have an MVP people need yet, but you are already stapling on subscriptions, benchmarking, and coaching. That is how solo builders turn a joke-worthy wedge into a half-built SaaS graveyard.
 Key Questions:
 - Can a single weekly iPhone Screen Time screenshot actually provide enough data to support the promised insights, especially hour-of-day callouts? If not, the concept needs a different input model.
 - Why does the user come back after day 1, beyond curiosity and self-loathing?
@@ -31,5 +32,5 @@ Suggestions:
 - Position it as comedic accountability, not pseudo-scientific behavioral analysis. The current pitch oversells analytical depth you probably cannot deliver.
 - Test the workflow manually on 30-50 real Screen Time screenshots before building much. If extraction fails or the roast outputs feel repetitive, that is your answer.
 Solo Dev Reality Check:
-- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — but only if the MVP is reduced to upload screenshot, extract a few reliable metrics, generate one roast, and save weekly history. The paid tier as pitched is too much for a few-week solo build.
+- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — but only if the MVP is brutally cut to upload screenshot, extract a few reliable metrics, generate one roast, and save weekly history. The paid tier as pitched is not a few-week solo build. It is a scope trap.
 - Biggest solo complexity traps: unreliable OCR and screenshot parsing across device states; inventing a WasteScore that feels fair instead of random; building a repeat-use loop for a product users may only enjoy once; handling sensitive personal data and privacy expectations; peer comparison requiring a clean dataset you will not have; scope creep from trends, subscriptions, sharing, and action plans.
