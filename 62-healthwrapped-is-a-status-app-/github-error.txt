@@ -1,0 +1,3 @@
+To https://github.com/jakebuild/idea-factory
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 5a00b700fa7d801be2f7c1b76889e7dd5776f4a5 but expected d7de1d8960eb14de2a556fc3736d4385fb2d0c88)
+error: failed to push some refs to 'https://github.com/jakebuild/idea-factory'
