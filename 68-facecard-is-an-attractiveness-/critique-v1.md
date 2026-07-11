@@ -8,6 +8,8 @@ Brutal Feedback:
 - This is fake precision cosplay. "Trustworthiness 6.1/10" and "move 6 inches closer for +1.4" is not insight. It is numerology with better UI.
 - Photofeeler works because strangers are the product. Their whole value is real human reaction. You are deleting the source of truth and pretending the wrapper still matters.
 - The core differentiator is UNVERIFIED. You are betting the whole idea on a vision model being able to judge trustworthiness, competence, and likeability from one image in a way users actually believe. That is nowhere near proven.
+- A general vision model can describe visible photo traits; it cannot honestly validate counterfactual claims like "+1.4 points if you move six inches closer." To make that claim defensible, you need a large, demographically balanced set of controlled before-and-after photos plus human ratings. You do not have a product until that dataset exists, and assembling it is months of research and manual operations, not a weekend of vibe coding.
+- Score consistency will expose the trick. Crop the same image slightly, upload it twice, or change compression and the model may produce different numbers. Users will A/B test the scoring system before they A/B test their photos, and one obvious contradiction destroys trust.
 - The advice engine is the real product, and it is the part most likely to suck. Generic advice feels useless, aggressive advice feels insulting, and highly specific advice is hard to generate consistently without making things up.
 - The positioning is sloppy. LinkedIn and dating are not the same use case. Professional credibility and dating appeal are different emotional jobs, different language, and different tolerance for bullshit. Trying to serve both is lazy scope.
 - The retention loop is mostly fantasy. Why does the user come back after day 1? Because they found another selfie? That is not retention. That is occasional insecurity.
@@ -20,6 +22,7 @@ Brutal Feedback:
 Key Questions:
 - What is the actual scoring engine, and why should anyone believe it is measuring anything real rather than producing plausible-looking fiction?
 - What evidence do you have that users agree with the model's scores or suggested fixes? Until that exists, the differentiator is UNVERIFIED.
+- Where will the calibration dataset come from, how many human ratings per image will it contain, and how will you measure demographic error instead of merely hoping the API is fair?
 - Why does the user come back after day 1?
 - Are you building for dating photos or professional headshots? Pick one.
 - How will you stop the output from feeling random, insulting, or biased across different demographics and styles?
@@ -31,7 +34,8 @@ Suggestions:
 - Replace invented personality scores with plain heuristics users can understand: lighting, crop, eye contact, face size, background clutter, expression, and sharpness.
 - Make the MVP choose the strongest image from a small set instead of pretending it can diagnose your social value from one photo.
 - Validate trust manually before building billing. If users do not believe the outputs, the product is dead no matter how polished the UI is.
+- Run a concierge test first: collect consented photo pairs, have real people rate them, then compare blinded human judgments with the AI's ranking and advice. If the model cannot reliably pick the human-preferred photo, stop.
 - Use temporary processing and default deletion only. Persistent storage for sensitive face uploads is more liability than leverage at this stage.
 Solo Dev Reality Check:
-- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — one person can ship the upload flow and AI wrapper fast, but not the credibility, calibration, privacy handling, moderation, and trust work that decide whether this is useful or embarrassing.
-- Biggest solo complexity traps: proving scores are not random, generating photo-specific advice that does not feel generic or cruel, handling sensitive face-image privacy and deletion, moderating minors and explicit uploads, dealing with bias backlash, and inventing a retention loop stronger than anxious re-uploading.
+- Can one person ship this in 2-4 weeks with AI coding tools? MAYBE — one person can ship a convincing-looking upload flow and AI wrapper in that window, but cannot ship the validation dataset, calibration, demographic testing, privacy handling, moderation, and trust work required to make its central claims credible.
+- Biggest solo complexity traps: sourcing and manually labeling a representative calibration dataset, proving scores are stable rather than prompt-generated noise, validating claimed point improvements, generating advice that is specific without being fabricated or cruel, handling sensitive face-image privacy and deletion, moderating minors and explicit uploads, dealing with bias backlash, and inventing a retention loop stronger than anxious re-uploading.
