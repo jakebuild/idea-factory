@@ -20,6 +20,7 @@ Brutal Feedback:
 - The three goals are not cleanly separable. A useful weekly update often informs, demonstrates progress, and asks for support simultaneously. Forcing one goal may produce worse advice; supporting mixtures complicates the rubric and UI.
 - There is no credible acquisition or pricing story. SEO demand for "weekly manager update coach" is likely narrow, paid acquisition makes no sense for a low-frequency utility, and career creators can give away the same prompt as lead bait. A technically buildable app can still be commercially dead.
 - The fallback to monthly self-reviews is not comforting. It admits the retention thesis may fail, and monthly or annual review preparation is even less frequent. That repositioning would turn the evidence bank into the main product without proving users will maintain it.
+- The scope contradicts its own value proposition: self-reviews are explicitly out of v1, yet the evidence bank is sold on eventual self-review reuse. Without a review builder or a genuinely useful export, the app asks users to accumulate data for a payoff it does not actually deliver; adding that payoff later expands the product beyond the claimed narrow wedge.
 - Nothing here depends on an external partnership, which is good, but the core differentiator and retention loop remain UNVERIFIED. Under the scoring rules, this cannot earn 8/10, and current evidence does not justify 7/10 either.
 Key Questions:
 - Why does the user come back after day 1?
@@ -36,6 +37,7 @@ Suggestions:
 - Test the product against its real competitor. Give half the users a polished reusable ChatGPT prompt and half the proposed workflow. If the dedicated product does not win on time, trust, or reuse, kill it.
 - Start with a single persona and native format, such as mid-level remote software engineers sending Friday email updates during a promotion cycle. Specificity will expose whether the rubric is useful or merely generic business-writing advice.
 - Reduce the MVP to one workspace: paste, contextual critique, editable rewrite, and an explicit checkbox for each evidence item to export as Markdown. Do not build search, filters, session detail, accounts, or a permanent bank until reuse is observed.
+- Drop the concise-versus-warmer rewrite toggle from the first prototype. It is generic AI garnish that adds another output branch to evaluate without testing the core question: whether anyone trusts and reuses the critique.
 - Let users state manager preferences in one short free-text field and preserve uncertainty in the critique. The app should say when advice depends on context instead of laundering guesses through rubric cards.
 - Budget at least 5-8 working days for recruiting examples, anonymizing them, defining edge cases, and running blind output comparisons. That work is part of the product, not optional prelaunch polish.
 - Publish a brutally specific data policy in the interface: model provider, retention setting, storage location, deletion behavior, and whether submitted text is used for training. If that feels uncomfortable, the product is not ready to collect workplace data.
