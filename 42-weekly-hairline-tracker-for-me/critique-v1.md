@@ -6,16 +6,16 @@ What's Actually Good:
 - The product has a plausible long-term cadence because visible hair changes take time. That is stronger than a wellness app built around a one-off novelty scan.
 Brutal Feedback:
 - This is a guided photo diary wearing a fake lab coat. Temple recession, crown visibility, and an "overall Hairline Loss Score" sound objective, but the pitch provides no evidence that phone selfies can measure them reliably.
-- The core differentiator is UNVERIFIED. Before this deserves serious confidence, you need to prove that the same person photographed under ordinary real-world conditions produces stable measurements and that genuine changes can be separated from capture noise.
+- The core differentiator is UNVERIFIED. Before this deserves serious confidence, you need to prove that repeated photos of an unchanged subject produce stable measurements, then prove the system can detect real change larger than that noise. Until then, the score is numerology with a camera permission.
 - Weekly photos are a noise generator. Hair length, haircut timing, styling, wetness, product, lighting, camera distance, lens choice, head tilt, facial tension, and how the hair is parted can all create apparent movement larger than the change you are trying to detect.
-- The 6-month projection is indefensible. A few noisy personal photos do not support a credible forecast, and hair loss is not a clean linear trend. This feature manufactures authority and could scare users into believing fiction.
+- The 6-month projection is indefensible. A few noisy personal photos do not support a credible forecast, and hair loss is not a clean linear trend. This feature manufactures authority, invites users to confuse extrapolation with prognosis, and could scare them into believing fiction.
 - A blunt score is emotionally potent but scientifically hollow. An anxious user will treat a one-point fluctuation as evidence of decline even when the app merely measured a harsher light or different comb-over.
 - Why does the user come back after day 1? "Hair anxiety" is not a sufficient answer. If results stay flat, the app feels pointless; if the score jitters, it feels broken; if it exaggerates change to drive engagement, it becomes predatory.
 - The promised "one action for the next week" is hand-waving. Useful actions quickly become medical-adjacent, repetitive, or banal. Producing safe, evidence-based guidance is ongoing editorial work, not a free feature AI can improvise responsibly.
 - Weekly is the wrong rhythm for the underlying problem. It encourages compulsive checking while offering too little real biological change to observe. The retention loop and the measurement window are fighting each other.
 - The free competitor is vicious: a recurring calendar reminder, the phone camera, and a private album. If the measurement layer is unreliable, the app is charging for ceremony around functionality users already own.
 - Privacy is not a checkbox here. You are collecting repeated face and scalp images tied to a sensitive insecurity. Cloud uploads, analytics SDKs, account recovery, deletion, export, and accidental photo exposure all become trust risks for a solo vibe-coded product.
-- The honest version has almost no moat; the differentiated version requires validation, computer vision, careful calibration, and medical restraint. That is the worst possible product sandwich for one developer.
+- The honest version has almost no moat; the differentiated version requires a labeled dataset, computer vision, repeated-measures validation, device calibration, and medical restraint. That is the worst possible product sandwich for one developer.
 - Monetization is ugly. A subscription is hard to justify for monthly comparison, while a one-time purchase leaves little incentive to support changing camera hardware and image-processing behavior.
 Key Questions:
 - What can the app truthfully claim after three captures without bluffing?
