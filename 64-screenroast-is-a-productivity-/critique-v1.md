@@ -5,7 +5,7 @@ What's Actually Good:
 - Screenshot upload is a clever MVP constraint because it avoids fighting iOS for continuous device-level tracking access.
 - A dramatic score reveal plus one specific roast could produce a genuinely shareable moment if the extraction is accurate and the writing is excellent.
 Brutal Feedback:
-- The headline promise is built on data the proposed input does not contain. A normal weekly Screen Time summary screenshot cannot reliably prove that someone spent 3.1 hours on TikTok "during designated focus hours" or identify the exact hour of day. The app is promising forensic precision from a summary image. That is either hallucination or bait-and-switch.
+- UNVERIFIED: the headline promise depends on Screen Time screenshots exposing hour-level, app-level usage data they may not contain. A normal weekly summary screenshot cannot reliably prove that someone spent 3.1 hours on TikTok "during designated focus hours" or identify the exact hour of day. The app is promising forensic precision from a summary image. That is either hallucination or bait-and-switch.
 - The idea confuses a funny demo with a durable product. One roast is novelty. A weekly screenshot ritual is unpaid data-entry work. Why does the user come back after day 1?
 - "WasteScore" is fake authority unless its formula is explicit and defensible. Is YouTube waste when it contains a coding course? Is Messages productive when it contains gossip? Screen time alone cannot infer intent, so the score will punish context it cannot see.
 - The AI is mostly decorative. Deterministic rules can find the top app and calculate totals; an LLM merely supplies insults. That makes the supposed differentiation easy to clone and hard to charge for.
