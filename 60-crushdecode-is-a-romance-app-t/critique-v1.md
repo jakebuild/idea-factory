@@ -17,6 +17,7 @@ Brutal Feedback:
 - Privacy is not a footnote. The raw material may contain names, faces, phone numbers, sexuality, health disclosures, and intimate images. A solo vibe-coded app asking for this data starts with negative trust and real breach liability.
 - Consent is absent. The other person did not agree to have private messages uploaded to an AI vendor and scored. App-store policy, model-provider terms, deletion guarantees, and user expectations all need investigation.
 - The output has a nasty calibration problem. Be negative and you intensify insecurity; be reassuring and you become validation theater; hedge honestly and the instant "decode" reveal loses its punch.
+- There is no ground truth for the thing being graphed. You cannot train, test, or honestly report accuracy on "interest" unless you collect outcomes and labels from both people, which would turn this tiny app into a research and consent project.
 - A shareable result conflicts with privacy. People may screen-record chats containing another person's identity. Redaction tooling adds complexity, and relying on users to redact creates predictable harm.
 - The market may be curious but unwilling to pay. A one-time novelty analysis is easy to try, easy to copy, and hard to convert into a subscription without deliberately feeding compulsive checking.
 - "Copies the Keys AI model" is not positioning. It advertises derivativeness and assumes a generation-oriented interaction model transfers cleanly to an interpretation product with much higher truth claims.
@@ -38,6 +39,7 @@ Suggestions:
 - Use a fixed, transparent rubric plus constrained model explanations instead of letting an LLM invent a score. This improves consistency and makes failures debuggable.
 - Position it as a one-off reflection tool with anti-spiral limits, not an always-on emotional surveillance dashboard. Do not send "time to recheck" notifications.
 - Test demand with a landing page and a manual or thin prototype before building accounts, subscriptions, native apps, screenshot import, or chat history.
+- Run the first 20 analyses manually with a declared rubric and ask users what action they took afterward. If the output merely confirms what they already believed or drives another reassurance check, stop building.
 - Compare the product blind against a plain ChatGPT prompt. If users do not strongly prefer CrushDecode's output, kill it; the chart alone is not a company.
 - Add automatic PII redaction before any sharing flow, or omit sharing entirely from the MVP despite the marketing fantasy.
 Solo Dev Reality Check:
