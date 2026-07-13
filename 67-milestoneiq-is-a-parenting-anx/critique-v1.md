@@ -13,7 +13,7 @@ Brutal Feedback:
 - Age-equivalent scores are emotionally explosive and easy to misread. “Your 14-month-old has the language development of a 17-month-old” encourages bragging; the reverse result encourages panic. Normal developmental variability gets converted into a leaderboard.
 - Parent reporting is noisy: recall errors, ambiguous interpretation, inconsistent observation across caregivers, optimism, anxiety, and cultural or language differences all contaminate the inputs. The polished growth curve launders that noise into false authority.
 - The product can cause both kinds of harm. False reassurance could delay proper screening; a false alarm could create needless anxiety and appointments. A disclaimer below an animated score does not neutralize the headline.
-- “Early warning alerts below the 25th percentile” is especially reckless because the app has not established that it can calculate a percentile. It also pushes the product from journaling toward patient-specific screening, which demands serious clinical and regulatory review—not solo vibe coding.
+- “Early warning alerts below the 25th percentile” is especially reckless because the app has not established that it can calculate a percentile. It also pushes the product from journaling toward patient-specific screening. Current FDA guidance explicitly notes that digital-health policies continue to apply to software functions intended for patients or caregivers; the exact regulatory classification is jurisdiction- and claims-dependent, but it plainly requires expert review, not solo vibe coding: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/clinical-decision-support-software
 - The claimed retention loop is coercion disguised as urgency. “Missing a week feels like falling behind” exploits parental anxiety and is not evidence of product value. Why does the user come back after day 1 once you remove fear, novelty, and the first score reveal? The idea has no honest answer.
 - The weekly cadence is mismatched with the underlying signal. Many milestones change over months, so weekly scores will often be flat and boring. If the score moves frequently, that exposes how unstable the model is; if it does not, there is little reason to subscribe.
 - Sharing is weaker than the pitch assumes. Parents may share a flattering card, but few will broadcast a concerning child-development score. The viral loop therefore selects for bragging while the valuable, sensitive use case remains private.
@@ -22,6 +22,7 @@ Brutal Feedback:
 - “Pediatrician-ready PDF” is credibility theater. A clinician may appreciate dated parent observations, but a proprietary, unvalidated age score and percentile curve are more likely to require explanation than save time.
 - “One activity to close the gap” makes an unsupported causal promise. You need a reviewed content library structured by age, domain, prerequisite skill, contraindications, accessibility, and safety. That content is not “ready”; creating and reviewing it is substantial manual work.
 - Child development data is deeply sensitive. Profiles, birth dates, developmental concerns, sharing, sibling records, notifications, exports, consent, deletion, and account security create a much higher trust burden than the friendly quiz UI suggests.
+- Distribution is missing. This is a trust product for anxious parents, yet the plan offers no credible acquisition channel, clinical endorsement, parenting-community strategy, or answer for why anyone should trust an unknown app over the CDC’s free Milestone Tracker.
 - The moat is nonexistent. The UI, reminders, charts, and share cards are trivial to copy. The only potential moat is a clinically validated longitudinal model, which is exactly the part a solo developer cannot honestly create in a few weeks.
 Key Questions:
 - What validated instrument or published evidence permits these observations to be converted into a “Developmental Age” and four domain percentiles?
@@ -31,6 +32,7 @@ Key Questions:
 - What happens when two caregivers answer the same question differently, a child performs a skill once but not consistently, or a weekly answer reverses?
 - Who reviews the prompts, scoring, activities, alert thresholds, claims, and escalation language for clinical safety?
 - What evidence says parents will pay after four free reveals rather than switch to the free CDC tracker or simply ask their pediatrician?
+- What is the acquisition channel, and why would a parent trust a solo-built, unvalidated score with their child’s development data?
 - What jurisdiction will launch first, and what privacy, child-data, advertising, and medical-software review is required there?
 Suggestions:
 - Kill the “Developmental Age,” percentile curves, gap-closing claims, sibling comparison, and early-warning alerts. Those are not bold differentiators; they are the unsafe parts.
