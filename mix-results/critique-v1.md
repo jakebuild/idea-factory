@@ -8,7 +8,7 @@ Brutal Feedback:
 - This is a spreadsheet in a Halloween costume. Savings minus monthly burn is not a product moat. It is eighth-grade math with scarier copy.
 - The "Credit Karma for layoffs" comparison is flattering nonsense. Credit Karma works because it plugs into standardized, constantly updated, hard-to-replicate credit data. Your app asks users to hand-enter a few numbers and then pretends a homemade score has the same authority. It does not.
 - "Rehire odds" is where this starts smelling fake. Based on what, exactly? The labor-market feeds, role-level benchmarks, and hiring-climate inputs are UNVERIFIED external data dependencies. Until their availability, price, coverage, update frequency, and legal usage are proven, the supposed differentiator is vapor. If the score does not use them, then "rehire odds" is decorative fiction.
-- The retention loop is weak to the point of comedy. Why does the user come back after day 1? Their emergency fund does not change every Tuesday. Their fixed expenses barely move. Their interview readiness is not a daily habit. Most users will run it once, feel judged, maybe share the number, and never open it again.
+- The retention loop is weak to the point of comedy. Why does the user come back after day 1? Their emergency fund does not change every Tuesday. Their fixed expenses barely move. Their interview readiness is not a daily habit. The claimed weekly drift only works if the app continuously ingests trustworthy market data—which is UNVERIFIED. Most users will run it once, feel judged, maybe share the number, and never open it again.
 - The emotional promise is shaky. People do not actually want a score that makes them feel helpless unless it also gives them a believable path to improve it. Right now this risks being doom-porn for employed people with anxiety.
 - You are quietly bundling multiple hard problems into one fake-simple score: personal finance, labor-market timing, career readiness, and psychology. Compressing that mess into one number does not make it smarter. It makes it more arbitrary.
 - The benchmark percentile angle is also suspect. Percentile against whom? Other users? Public data? Your own invented buckets? If you do not have a real dataset, the percentile framing is theater.
@@ -16,7 +16,7 @@ Brutal Feedback:
 - The app is dangerously close to insulting the user with obvious advice. "Spend less, save more, update your resume" is not a product experience. It is a nagging uncle with a progress bar.
 - Handling precise savings, expenses, salary, and job-risk information creates a trust and security burden wildly disproportionate to the value of the calculator. One sloppy privacy flow or analytics leak and the product looks predatory.
 - Monetization is backwards. The people most motivated by layoff fear are exactly the people least eager to add another subscription, while a one-time fee matches the usage pattern but caps revenue.
-- The concept is easy to clone. A solo dev can build it fast, which is nice, but that also means fifty other solo devs can build the same thing by next weekend.
+- The concept is easy to clone. A solo dev can build it fast, which is nice, but that also means fifty other solo devs—or one decent spreadsheet template—can reproduce the useful part by next weekend.
 Key Questions:
 - What real data makes "rehire odds" or "market conditions" credible instead of made-up product cosplay?
 - Why does the user come back after day 1?
