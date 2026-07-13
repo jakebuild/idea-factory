@@ -8,9 +8,11 @@ What's Actually Good:
 Brutal Feedback:
 - This is guilt-as-a-service. The product turns friendship into a red-number maintenance queue and then calls the resulting anxiety "health."
 - The core metric is fake precision. A 37% friendship score looks scientific while encoding little more than an arbitrary timer chosen by the developer.
+- The app confuses "relationship maintenance" with "relationship quality." It can measure elapsed time since a logged event; it cannot measure trust, affection, reciprocity, conflict, or whether either person actually enjoyed the interaction.
 - Frequency is not intimacy. Some best friends talk every two months and remain close; some people message daily and barely know each other. The flagship score fails on ordinary relationships.
 - Dex works because professional follow-up has legible ROI: deals, referrals, hiring, and career leverage. "CRM for people you love" risks making friendship feel transactional without offering comparable payoff.
 - The instant reveal is a demo, not durable value. It works once. Then the app becomes another chore whose job is to remind users they are failing at a more important chore.
+- The proposed recovery animation rewards data entry, not friendship. Users can make the scary number turn green by logging something, which makes the product trivially gameable and severs the metric from the claimed real-world outcome.
 - Manual logging is lethal. The product only knows what the user remembers to enter, so forgotten calls make the app confidently wrong. The people most likely to need help maintaining friendships are least likely to maintain pristine CRM data.
 - Passive logging is not a credible escape hatch. Reliable call, SMS, WhatsApp, Instagram, FaceTime, and in-person interaction data is unavailable through one clean cross-platform interface. Any automation-dependent version is UNVERIFIED and would be capped below 8/10 regardless.
 - Contact import is not the hard part. Inferring a "real back-and-forth" from fragmented, privacy-sensitive platform data is the hard part, and it is far beyond a sensible 2-4 week solo MVP.
@@ -41,6 +43,7 @@ Suggestions:
 - Keep v1 manual-only and say so. Build around two-second logging instead of betting the product on inaccessible social and messaging data.
 - Let users define a loose cadence per person and support "naturally low-frequency" relationships so the app does not punish normal variation.
 - Run a no-code concierge test for four weeks before building: send 15-20 target users one weekly prompt and measure whether they actually reach out, keep logging, and ask to continue.
+- Set a hard validation bar before coding: at least half of testers must still log interactions and act on prompts in week four, and several must volunteer to pay. Anything weaker means the retention loop is mostly notification guilt.
 - Validate willingness to return and act before adding accounts, imports, AI summaries, notes, streaks, gamification, or cross-platform sync.
 - Add humane controls: pause a friendship, mark life circumstances, hide scores, snooze prompts, and delete all data. If these controls feel like too much scope, that is evidence the score mechanic is the wrong product.
 - Accept the likely ceiling: if the test works, this is probably a focused paid utility or a feature inside an existing personal CRM, not a venture-scale company.
